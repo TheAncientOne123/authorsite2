@@ -6,6 +6,19 @@
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.featureImage {
+  width: 160px;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
 }
