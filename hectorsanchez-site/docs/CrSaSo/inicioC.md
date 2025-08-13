@@ -1,0 +1,10 @@
+---
+id: inicioC
+title: Inicio — Crónicas de Sangre y Sombras
+---
+
+Bienvenido a la sección **Crónicas de Sangre y Sombras**.
+
+Aquí encontrarás la cronología, personajes y detalles narrativos de este universo.
+
+> Esta página es la portada de la documentación del universo "Crónicas de Sangre y Sombras".
