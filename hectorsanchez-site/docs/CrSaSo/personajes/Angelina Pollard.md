@@ -1,0 +1,1 @@
+Angelina Pollard es una de las identidades falsas de [Tamara Dobrescu](Tamara%20Dobrescu.md) y la que usa para presentarse con [Cassian Thorne](Cassian%20Thorne.md), [Archie Woodward](Archie%20Woodward.md) y [Marco Giannotti](Marco%20Giannotti.md).

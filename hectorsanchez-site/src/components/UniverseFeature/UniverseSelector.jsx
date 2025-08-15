@@ -8,13 +8,13 @@ const universes = [
     title: 'El Orbe de los Destinos',
     description: 'Un reino amurallado por la historia y la magia, donde los destinos se entrelazan.',
     image: '/img/portadaLowQual.png',
-    path: '/orbe/inicio',
+    path: '/orbe',
   },
   {
     title: 'Crónicas de Sangre y Sombras',
     description: 'Oscuridad, sangre, deseo y una guerra secreta que cambiará la historia.',
     image: '/img/portadaNMLowQual.png',
-    path: '/CrSaSo/inicio',
+    path: '/CrSaSo',
   },
   // Puedes añadir más universos aquí en el futuro
 ];

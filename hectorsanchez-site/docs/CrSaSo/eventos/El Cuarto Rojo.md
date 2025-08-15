@@ -1,0 +1,61 @@
+- **Ubicación principal:** [Villa Lobos](Villa%20Lobos.md), sector residencial de [Crystal Square](Crystal%20Square.md), [Nueva Ámsterdam](Nueva%20Ámsterdam.md)
+    
+- **Investigadores a cargo:** [Cassian Thorne](Cassian%20Thorne.md) y [Lucia Sinclair](../Personajes/Lucia%20Sinclair.md)
+    
+- **Estado:** [Caso resuelto](Caso%20resuelto.md) de manera extraoficial.
+    
+- **Conexiones clave:** [Archie Woodward](Archie%20Woodward.md), [Jessica McCarthy](Jessica%20McCarthy.md), [La Cruz](La%20Cruz.md), [La Familia McCarthy](La%20Familia%20McCarthy.md), [La Familia Chapman](La%20Familia%20Chapman.md)
+
+## Descripción General
+
+El llamado **Caso de El Cuarto Rojo** fue un **homicidio brutal de naturaleza anómala** ocurrido en el interior de una mansión ubicada en el fraccionamiento [Villa Lobos](Villa%20Lobos.md), conocido por su alta densidad de familias influyentes en [Nueva Ámsterdam](Nueva%20Ámsterdam.md). El nombre proviene del estado en que fue encontrada la habitación del crimen: completamente bañada en sangre, con paredes, cama y mobiliario cubiertos por restos biológicos, formando lo que parecía una escena deliberadamente compuesta como mensaje o advertencia.
+
+Fue el primer caso en unir formalmente a la agente federal [Lucia Sinclair](../Personajes/Lucia%20Sinclair.md) y al detective [Cassian Thorne](Cassian%20Thorne.md) como fuerza conjunta entre el [Buró Federal de Investigación](Buró%20Federal%20de%20Investigación.md) y la [La Comisaría de Nueva Ámsterdam](La%20Comisaría%20de%20Nueva%20Ámsterdam.md), bajo la supervisión del jefe de detectives [Dorian Blackwood](Dorian%20Blackwood.md).
+
+### Naturaleza del crimen
+
+> _“Las paredes, antes blancas, ahora eran el lienzo de un asesinato grotesco y brutal. [...] La sangre goteaba lentamente por las paredes, similar a las gotas de lluvia que corrían por las ventanas.”_ — Testimonio de Lucía Sinclair
+
+La escena del crimen mostraba una violencia inusual: la víctima, presumiblemente una mujer, había sido aplastada contra la cama con una fuerza inhumana, al punto que fragmentos de hueso y piel quedaron incrustados en la estructura del mueble. Se recuperaron elementos biológicos incompatibles con humanos, como un colmillo pequeño y un mechón de pelo endurecido no perteneciente a ninguna especie doméstica reconocida. Ambos objetos desaparecieron o se degradaron inexplicablemente poco después de ser recolectados.
+
+### Cronología de los eventos
+
+#### 1. **Descubrimiento del crimen**
+
+Los oficiales locales, liderados por el oficial Erikson, hallaron la escena en la habitación del joven [Ryan Chapman](Ryan%20Chapman.md). El hallazgo llevó al jefe [Dorian Blackwood](Dorian%20Blackwood.md) a solicitar la intervención federal.
+
+#### 2. **Llegada de los federales**
+
+[Lucia Sinclair](../Personajes/Lucia%20Sinclair.md) arriba con el equipo forense y es asignada a trabajar junto al detective [Cassian Thorne](Cassian%20Thorne.md). La relación entre ambos comienza con tensión, pero evoluciona durante la investigación.
+
+#### 3. **Interrogatorio a la familia Chapman**
+
+El patriarca [Frederick Chapman](Frederick%20Chapman.md) menciona que sus hermanos durmieron en la habitación del hijo debido a remodelaciones. Identifica a la víctima como su cuñada. Niega tener enemigos y sugiere posibles tensiones políticas en la zona. Se declara enemigo de los perros, hecho relevante al descubrirse un colmillo en la escena.
+
+#### 4. **Descubrimientos en la escena**
+
+- Se encuentra un colmillo de apariencia canina que se desintegra en las manos de la agente Sinclair.
+    
+- Se recupera un dedo femenino con esmalte azul.
+    
+- Se identifica un cabello de raíz negra y puntas blancas, posiblemente de origen animal o anómalo.
+    
+- El cadáver está fusionado con la cama.
+    
+- Cassian identifica huellas que salen de la habitación y cruzan el jardín trasero hacia la residencia vecina: la propiedad de [La Familia McCarthy](La%20Familia%20McCarthy.md)
+
+#### 5. **Interrogatorio de la familia McCarthy**
+
+Thorne y Sinclair accedieron a la propiedad con el respaldo de la jurisdicción federal de Sinclair, lo que facilitó la entrada a la [Mansión McCarthy](Mansión%20McCarthy.md). Fueron recibidos con cortesía protocolaria por parte del personal de servicio y el mismo [Alan McCarthy](Alan%20McCarthy.md), quien, pese a su compostura, mostró signos de molestia por la intrusión policial.
+
+Durante el interrogatorio, McCarthy declaró haber estado trabajando en su oficina durante la madrugada del crimen. Su esposa se encontraba durmiendo, y su hija, [Jessica McCarthy](Jessica%20McCarthy.md), estaba en su habitación estudiando para un examen. Ambas coartadas resultaron consistentes.
+
+Lucía Sinclair realizó preguntas adicionales con tono empático y profesional. Thorne adoptó un enfoque más directo. Ambos coincidieron en que la familia mantenía una fachada impecable, pero sin evidencia clara para vincularlos al crimen.
+
+#### 6. Separación
+
+Ante la falta de pistas consistentes, los protagonistas deciden tomar rumbos separados.
+
+- [Cassian Thorne](Cassian%20Thorne.md) se dirige al [Centro Histórico](Centro%20Histórico.md).
+    
+- [Lucia Sinclair](../Personajes/Lucia%20Sinclair.md) se traslada a  [La Biblioteca de Nueva Ámsterdam](La%20Biblioteca%20de%20Nueva%20Ámsterdam.md).

@@ -1,0 +1,11 @@
+**Tipo:** Cabaret, salón de espectáculos y zona neutral  
+**Ubicación:** Distrito nocturno, centro histórico de [Nueva Ámsterdam](Nueva%20Ámsterdam.md)  
+**Propietaria:** [Veronica Black](../Personajes/Veronica%20Black.md)  
+**Afiliaciones:** Neutral; mantiene acuerdos no escritos con [ La Comisaría de Nueva Ámsterdam](%20La%20Comisaría%20de%20Nueva%20Ámsterdam)
+**Apariciones clave:** _Necromancia a medianoche_ (preparación de Lucía Sinclair en el evento de [La Infiltración Católica](La%20Infiltración%20Católica.md))
+
+**El Club Palace** es uno de los establecimientos más icónicos del distrito nocturno de Nueva Ámsterdam, célebre por su arquitectura art déco, su iluminación teatral y su inquebrantable código de conducta. Bajo la dirección de la legendaria [Veronica Black](../Personajes/Veronica%20Black.md), el lugar se ha consolidado como mucho más que un cabaret: es una fortaleza social, una casa de transformaciones y un santuario para quienes saben guardar secretos.
+
+Desde el exterior, el Club Palace proyecta una estética elegante y contenida: una marquesina dorada, un letrero de neón discreto, y una alfombra roja siempre impecable. En el interior, la decoración combina terciopelo rojo, columnas de mármol y luces cálidas que difuminan las tensiones. El escenario principal se reserva para cantantes, bailarinas y músicos de primer nivel; mientras que las secciones privadas —protegidas por cortinas pesadas y protocolos de confidencialidad— sirven como espacio para negociaciones delicadas, favores secretos o simples confesiones.
+
+Pero el atractivo del Palace no se limita al entretenimiento. Muchos entran buscando anonimato, asesoría o una nueva identidad. **Verónica Black**, con su séquito de estilistas, maquilladoras, costureras y escoltas, ofrece una experiencia única: el renacimiento. Es aquí donde [Lucia Sinclair](../Personajes/Lucia%20Sinclair.md) fue completamente transformada para infiltrarse en una secta religiosa, entrenada no solo en estética, sino en defensa, ocultación de armas y manipulación psicológica.

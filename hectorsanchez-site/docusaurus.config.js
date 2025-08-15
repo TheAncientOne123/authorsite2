@@ -8,6 +8,31 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import {resolve } from 'node:path';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+/**@type {[string, import('@docusaurus/plugin-content-docs').Options]} */
+const docsOrbe = [
+  '@docusaurus/plugin-content-docs',
+  {
+    id: 'orbe',
+    path: 'docs/orbe',
+    routeBasePath: 'orbe',
+    sidebarPath: resolve('./orbe_sidebars.js'),
+    breadcrumbs: true,
+  },
+];
+
+/**@type {[string, import('@docusaurus/plugin-content-docs').Options]} */
+const docsCronicas = [
+  '@docusaurus/plugin-content-docs',
+  {
+    id: 'cronicas',
+    path: 'docs/CrSaSo',
+    routeBasePath: 'CrSaSo',
+    sidebarPath: resolve('./docs/CrSaSo/cronicas_sidebars.js'),
+    breadcrumbs: true,
+  },
+];
+
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'El Códice',
@@ -44,33 +69,16 @@ const config = {
     [
       'classic',
       {
-        docs: {
-          path: 'docs',                 // una sola carpeta de docs
-          routeBasePath: '/',           // docs en la raíz del sitio
-          sidebarPath: resolve('./sidebars.js'),
-          breadcrumbs: true,  
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        docs: false,
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
       },
     ],
   ],
+
+  plugins: [docsOrbe, docsCronicas],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -100,6 +108,7 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+
 };
 
 export default config;

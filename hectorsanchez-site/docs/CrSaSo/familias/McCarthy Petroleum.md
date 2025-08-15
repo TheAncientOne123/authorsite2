@@ -1,0 +1,7 @@
+Empresa petrolera de [La Familia McCarthy](La%20Familia%20McCarthy.md). [Alan McCarthy](Alan%20McCarthy.md) es su dueño actualmente.
+
+Artículos relacionados:
+[La Refinería McCarthy](La%20Refinería%20McCarthy.md)
+[Raven District](Raven%20District.md)
+[Archie Woodward](Archie%20Woodward.md)
+[Tamara Dobrescu](Tamara%20Dobrescu.md)
