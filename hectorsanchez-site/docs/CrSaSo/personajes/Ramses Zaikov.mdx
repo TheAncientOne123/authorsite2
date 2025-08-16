@@ -1,0 +1,6 @@
+
+Reservado, desconfiado, calculador. Ramses es el otro colíder de la familia Zaikov, contraparte y contrapeso de su hermano Ian. Donde Ian ve una oportunidad, Ramses ve una amenaza. Es el estratega que mantiene la estructura, el protector del núcleo familiar, el hombre que nunca sonríe sin motivo.
+
+Ramses desconfía abiertamente de figuras externas, en especial de autoridades como agentes federales. Tiene un historial de traiciones personales, entre ellas la huida de su hermana Irene, lo que refuerza su intolerancia hacia la deslealtad. Este trauma no sanado lo convierte en un hombre metódico, obsesionado con el control y la planificación, aunque en años recientes ha aprendido a ceder algo de esa rigidez a favor de la improvisación, confiando en que Ian canalice el caos sin destruirlo todo.
+
+En sus pasiones —como la carpintería, la lectura estratégica o los rituales familiares— Ramses es perfeccionista. Su obsesión por la precisión lo convierte en un organizador brillante y en una figura temida, pero también profundamente admirada por su clan.
