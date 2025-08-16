@@ -1,1 +1,0 @@
-Y en donde [Cassian Thorne](Cassian%20Thorne.md) y ella recibieron un entrenamiento básico dentro de las fuerzas de los [Cazadores](Cazadores.md) y [Brujas](Brujas.md), lo suficiente para crear su vínculo. 

@@ -3,7 +3,7 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   CrSaSoSidebar: [
-    { type: 'doc', id: 'index', label: 'Inicio' },
+    { type: 'doc', id: 'index', label: 'Crónicas de Sangre y Sombra' },
 
     // Portadas (una por grupo), SIN categorías:
     { type: 'doc', id: 'eventos-portada', label: 'Eventos' },

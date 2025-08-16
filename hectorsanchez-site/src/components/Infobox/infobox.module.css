@@ -1,10 +1,87 @@
+:root {
+  --ibox-border: #a2a9b1;            /* gris wiki */
+  --ibox-header-bg: var(--ifm-background-surface-color);
+  --ibox-label-bg: var(--ifm-background-surface-color);
+  --ibox-text: var(--ifm-font-color-base);
+}
+
 .infobox {
+  border: 1px solid var(--ibox-border);
+  border-collapse: separate;
+  border-radius: 2px;
   background: var(--ifm-background-surface-color);
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: 8px;
-  padding: 1rem;
-  float: right;
-  width: 20rem;
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
+  color: var(--ibox-text);
+  width: 300px;
+  max-width: 100%;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  margin: 0 0 1rem 1rem;   /* separa del contenido */
+  float: right;            /* estilo wiki: a la derecha en desktop */
+}
+
+@media (max-width: 996px) {
+  .infobox {
+    float: none;
+    margin: 1rem auto;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 1rem;
+}
+
+.header {
+  background: var(--ibox-header-bg);
+  border-bottom: 1px solid var(--ibox-border);
+  padding: 8px 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.figure {
+  margin: 0;
+  padding: 8px 8px 0 8px;
+  text-align: center;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--ibox-border);
+  background: #fff;
+}
+
+.caption {
+  font-size: 0.86rem;
+  color: #54595d;
+  padding: 6px 4px 8px 4px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.label {
+  vertical-align: top;
+  width: 40%;
+  background: var(--ibox-label-bg);
+  border-top: 1px solid var(--ibox-border);
+  border-right: 1px solid var(--ibox-border);
+  padding: 6px 8px;
+  font-weight: 600;
+}
+
+.value {
+  vertical-align: top;
+  width: 60%;
+  border-top: 1px solid var(--ibox-border);
+  padding: 6px 8px;
+}
+
+.extra {
+  border-top: 1px solid var(--ibox-border);
+  padding: 8px;
 }

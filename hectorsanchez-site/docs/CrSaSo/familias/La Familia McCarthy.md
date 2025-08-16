@@ -1,1 +1,0 @@
-Miembros: [Jessica McCarthy](Jessica%20McCarthy.md) y [Alan McCarthy](Alan%20McCarthy.md) 

@@ -1,1 +1,0 @@
-Es la familia donde pertenece la esposa de [Alan McCarthy](Alan%20McCarthy.md). No se menciona en ningún momento el nombre de la madre de Jessica, pero sí se resalta que son los dueños del [El Balneario Rushmore](El%20Balneario%20Rushmore.md). 
