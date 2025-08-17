@@ -81,6 +81,7 @@ const config = {
   plugins: [docsOrbe, docsCronicas],
 
   themeConfig:
+
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
@@ -99,6 +100,16 @@ const config = {
           },
         ],
       },
+
+      announcementBar:{
+        id: 'spoiler_notice_v1',
+        content: 'Este códice contiene spoilers de las obras. Se recomienda leer los libros antes de consultar.',
+        backgroundColor: '#1f2937',
+        textColor: '#e5e7eb',
+        isCloseable: true,
+      },
+
+
       footer: {
         style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} El Códice. Built with Docusaurus.`,
