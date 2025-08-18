@@ -85,3 +85,60 @@
   border-top: 1px solid var(--ibox-border);
   padding: 8px;
 }
+
+.figureCarousel { position: relative; overflow: hidden; }
+.imgIsCarousel { transition: opacity 180ms ease; display: block; width: 100%; }
+
+.badge {
+  position: absolute;
+  top: 10px; left: 10px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--ifm-color-primary) 18%, transparent);
+  border: 1px solid var(--ibox-border);
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  width: 34px; height: 34px;
+  border-radius: 999px;
+  display: grid; place-items: center;
+  background: color-mix(in oklab, var(--ifm-background-surface-color) 80%, transparent);
+  border: 1px solid var(--ibox-border);
+  cursor: pointer;
+}
+.navBtn:hover { filter: brightness(1.05); }
+.left { left: 8px; }
+.right { right: 8px; }
+
+.dots {
+  position: absolute; left: 0; right: 0; top: 8px;
+  display: flex; gap: 6px; justify-content: center;
+}
+.dot {
+  width: 8px; height: 8px; border-radius: 999px;
+  border: 1px solid var(--ibox-border);
+  background: color-mix(in oklab, var(--ifm-background-surface-color) 70%, transparent);
+}
+.dotActive { background: var(--ifm-color-primary); border-color: var(--ifm-color-primary); }
+
+.figureCarousel { position: relative; overflow: hidden; }
+
+/* contenedor para apilar imágenes */
+.stage { position: relative; }
+/* la capa antigua se posiciona encima mientras se desvanece */
+.layer { position: absolute; inset: 0; }
+
+/* animaciones */
+@keyframes iboxFadeIn { from { opacity: 0 } to { opacity: 1 } }
+@keyframes iboxFadeOut { from { opacity: 1 } to { opacity: 0 } }
+
+.fadeIn  { animation: iboxFadeIn 220ms ease; }
+.fadeOut { animation: iboxFadeOut 220ms ease; }
+
+/* opcional: asegura botones por encima del fade */
+.navBtn { z-index: 2; }
+.dots   { z-index: 2; }
+
