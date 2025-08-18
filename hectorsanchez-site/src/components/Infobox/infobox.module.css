@@ -43,13 +43,14 @@
   margin: 0;
   padding: 8px 8px 0 8px;
   text-align: center;
+  background: transparent;
 }
 
 .img {
   max-width: 100%;
   height: auto;
   border: 1px solid var(--ibox-border);
-  background: #fff;
+  background: transparent;
 }
 
 .caption {
@@ -127,7 +128,7 @@
 .figureCarousel { position: relative; overflow: hidden; }
 
 /* contenedor para apilar imágenes */
-.stage { position: relative; }
+.stage { position: relative; background: transparent;}
 /* la capa antigua se posiciona encima mientras se desvanece */
 .layer { position: absolute; inset: 0; }
 
