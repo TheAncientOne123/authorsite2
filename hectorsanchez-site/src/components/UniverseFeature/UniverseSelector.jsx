@@ -9,14 +9,15 @@ const universes = [
     description: 'Un reino amurallado por la historia y la magia, donde los destinos se entrelazan.',
     image: '/img/portadaLowQual.png',
     path: '/orbe',
+    comingSoon: true,            // <- nuevo
   },
   {
     title: 'Crónicas de Sangre y Sombras',
     description: 'Oscuridad, sangre, deseo y una guerra secreta que cambiará la historia.',
     image: '/img/portadaNMLowQual.png',
     path: '/CrSaSo',
+    comingSoon: false,
   },
-  // Puedes añadir más universos aquí en el futuro
 ];
 
 export default function UniverseSelector() {
@@ -29,21 +30,27 @@ export default function UniverseSelector() {
         </div>
       </div>
 
-      
       <div className={styles.universeGrid}>
-        {universes.map((universe, idx) => (
+        {universes.map((u, idx) => {
+          const isDisabled = u.comingSoon;
+          const CardTag = isDisabled ? 'div' : Link;           // <- sin Link si está en proceso
+          const cardProps = isDisabled ? { 'aria-disabled': true } : { to: u.path };
 
-          <Link
-           key={idx} 
-           to={universe.path}
-           className={clsx('text--center', styles.universeCard)}>
-          
-           
-           <img src={universe.image} alt={universe.title} className={styles.universeImage} />
-            <h3>{universe.title}</h3>
-            <p>{universe.description}</p>
-          </Link> 
-        ))}
+          return (
+            <CardTag
+              key={idx}
+              {...cardProps}
+              className={clsx('text--center', styles.universeCard, isDisabled && styles.disabled)}
+              title={isDisabled ? 'Próximamente' : undefined}
+            >
+              <img src={u.image} alt={u.title} className={styles.universeImage} />
+              <h3>{u.title}</h3>
+              <p>{u.description}</p>
+
+              {isDisabled && <span className={styles.badge}>Próximamente</span>}
+            </CardTag>
+          );
+        })}
       </div>
     </section>
   );

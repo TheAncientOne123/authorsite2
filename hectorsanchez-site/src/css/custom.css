@@ -76,4 +76,60 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+:root[data-theme='light'] {
+  --ifm-link-color: #2761F5;
+  --ifm-link-hover-color: #2761F5;
+  --ifm-link-visited-color: #2761F5;
+  --ifm-link-decoration: none;            /* sin subrayado por defecto */
+  --ifm-link-hover-decoration: underline; /* subrayado en hover */
+}
 
+/* Si quieres limitarlo al contenido de docs/tablas (no navbar) */
+/* Si algún estilo previo forzó el subrayado, neutralízalo en el contenido */
+[data-theme='light'] .theme-doc-markdown a,
+[data-theme='light'] .markdown a,
+[data-theme='light'] table a,
+[data-theme='light'] .infobox a {         /* ajusta .infobox a tu clase real si cambia */
+  text-decoration: none !important;
+}
+
+[data-theme='light'] .theme-doc-markdown a:hover,
+[data-theme='light'] .markdown a:hover,
+[data-theme='light'] table a:hover,
+[data-theme='light'] .infobox a:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+
+/* 2) Transición simétrica del color del link (aplica en ambos sentidos) */
+html[data-theme] .theme-doc-markdown a,
+html[data-theme] .markdown a,
+html[data-theme] table a,
+html[data-theme] .infobox a {
+  transition: color 200ms ease-in-out, text-decoration-color 200ms ease-in-out;
+}
+
+/* 3) Asegura no subrayar por defecto en light (por si algún estilo lo fuerza) */
+[data-theme='light'] .theme-doc-markdown a,
+[data-theme='light'] .markdown a,
+[data-theme='light'] table a,
+[data-theme='light'] .infobox a {
+  text-decoration: none;
+}
+[data-theme='light'] .theme-doc-markdown a:hover,
+[data-theme='light'] .markdown a:hover,
+[data-theme='light'] table a:hover,
+[data-theme='light'] .infobox a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* 4) Accesibilidad: respeta reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme] .theme-doc-markdown a,
+  html[data-theme] .markdown a,
+  html[data-theme] table a,
+  html[data-theme] .infobox a {
+    transition: none;
+  }
+}
