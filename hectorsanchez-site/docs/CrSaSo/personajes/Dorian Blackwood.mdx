@@ -6,22 +6,28 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Dorian Blackwood"
-  image={{ src: '/img/personajes/dorian-blackwood.jpg', alt: 'Dorian Blackwood' }}
-  caption="Jefe de Detectives de Nueva Ámsterdam"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Profesión', value: 'Jefe de Detectives' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">La Comisaría de Nueva Ámsterdam</Link> },
-    { label: 'Edad', value: '52 años' },
-    { label: 'Nacionalidad', value: 'Estadounidense' },
-    { label: 'Subordinado destacado', value: <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Dorian Blackwood"
+    image={{ src: '/img/personajes/dorian-blackwood.jpg', alt: 'Dorian Blackwood' }}
+    caption="Jefe de Detectives de Nueva Ámsterdam"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Profesión', value: 'Jefe de Detectives' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">La Comisaría de Nueva Ámsterdam</Link> },
+      { label: 'Edad', value: '52 años' },
+      { label: 'Nacionalidad', value: 'Estadounidense' },
+      { label: 'Subordinado destacado', value: <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+
+)}
+</BrowserOnly>
 
 # Dorian Blackwood
 

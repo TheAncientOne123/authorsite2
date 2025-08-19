@@ -6,21 +6,28 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Kingston Graham"
-  image={{ src: '/img/personajes/kingston-graham.jpg', alt: 'Kingston Graham' }}
-  caption="Operador clave del Buró Federal de Investigación"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Cargo', value: 'Alto funcionario; mano derecha del Director' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link> },
-    { label: 'Sede', value: <Link to="/CrSaSo/lugares/Washington%20D.%20C.">Washington D. C.</Link> },
-    { label: 'Programa', value: 'Reclutamiento Secreto (apoyo de Hoover; vínculos con MI5)' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Kingston Graham"
+    image={{ src: '/img/personajes/kingston-graham.jpg', alt: 'Kingston Graham' }}
+    caption="Operador clave del Buró Federal de Investigación"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Cargo', value: 'Alto funcionario; mano derecha del Director' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link> },
+      { label: 'Sede', value: <Link to="/CrSaSo/lugares/Washington%20D.%20C.">Washington D. C.</Link> },
+      { label: 'Programa', value: 'Reclutamiento Secreto (apoyo de Hoover; vínculos con MI5)' },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+
+
+)}
+</BrowserOnly>
 
 **Alias conocidos:** “Director Graham”, “mano derecha del Director General del Buró”  
 **Afiliaciones:** <Link to="/CrSaSo/otros/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link>  

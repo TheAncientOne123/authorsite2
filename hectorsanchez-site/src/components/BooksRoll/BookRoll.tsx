@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import styles from './BookRoll.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export type Book = {
   title: string;
@@ -35,7 +36,7 @@ function BookRoll({ items = books, ariaLabel = 'Carrete de libros' }: Props) {
             <Link to={b.href} className={styles.link}>
               <img
                 loading="lazy"
-                src={b.cover}
+                src={useBaseUrl(b.cover)}
                 alt={`Portada de ${b.title}`}
                 className={styles.image}
               />

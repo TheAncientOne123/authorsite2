@@ -6,22 +6,28 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Tamara Dobrescu"
-  image={{ src: '/img/personajes/tamara-dobrescu.jpg', alt: 'Tamara Dobrescu' }}
-  caption="Científica; Rapax Hominum"
-  rows={[
-    { label: 'Género', value: 'Femenino' },
-    { label: 'Estado', value: 'Activa' },
-    { label: 'Linaje', value: 'Familia Dobrescu' },
-    { label: 'Alias', value: <Link to="/CrSaSo/personajes/Angelina%20Pollard">Angelina Pollard</Link> },
-    { label: 'Profesión', value: 'Científica (McCarthy Petroleum, pasado); ocultista; estratega; cantante' },
-    { label: 'Parentesco', value: <>Hermana de <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link></> },
-    { label: 'Base de operaciones', value: <><Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">El Balneario Rushmore</Link> (reciente); <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link> (pasado)</> },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Tamara Dobrescu"
+    image={{ src: '/img/personajes/tamara-dobrescu.jpg', alt: 'Tamara Dobrescu' }}
+    caption="Científica; Rapax Hominum"
+    rows={[
+      { label: 'Género', value: 'Femenino' },
+      { label: 'Estado', value: 'Activa' },
+      { label: 'Linaje', value: 'Familia Dobrescu' },
+      { label: 'Alias', value: <Link to="/CrSaSo/personajes/Angelina%20Pollard">Angelina Pollard</Link> },
+      { label: 'Profesión', value: 'Científica (McCarthy Petroleum, pasado); ocultista; estratega; cantante' },
+      { label: 'Parentesco', value: <>Hermana de <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link></> },
+      { label: 'Base de operaciones', value: <><Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">El Balneario Rushmore</Link> (reciente); <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link> (pasado)</> },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+
+)}
+</BrowserOnly>
 
 ## Resumen
 

@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './UniverseSelector.module.css';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const universes = [
   {
@@ -42,7 +43,7 @@ export default function UniverseSelector() {
               className={clsx('text--center', styles.universeCard, isDisabled && styles.disabled)}
               title={isDisabled ? 'Próximamente' : undefined}
             >
-              <img src={u.image} alt={u.title} className={styles.universeImage} />
+             <img src={useBaseUrl(u.image)} alt={u.title} className={styles.universeImage} />
               <h3>{u.title}</h3>
               <p>{u.description}</p>
 

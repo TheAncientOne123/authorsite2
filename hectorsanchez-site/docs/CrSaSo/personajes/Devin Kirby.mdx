@@ -6,20 +6,26 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Devin Kirby"
-  image={{ src: '/img/personajes/devin-kirby.png', alt: 'Devin Kirby' }}
-  caption="Camarógrafo de Atlantic News"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Profesión', value: 'Camarógrafo' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Atlantic%20News">Atlantic News</Link> },
-    { label: 'Equipo', value: <><Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link></> },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Devin Kirby"
+    image={{ src: '/img/personajes/devin-kirby.png', alt: 'Devin Kirby' }}
+    caption="Camarógrafo de Atlantic News"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Profesión', value: 'Camarógrafo' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Atlantic%20News">Atlantic News</Link> },
+      { label: 'Equipo', value: <><Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link></> },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+
+)}
+</BrowserOnly>
 
 # Devin Kirby
 

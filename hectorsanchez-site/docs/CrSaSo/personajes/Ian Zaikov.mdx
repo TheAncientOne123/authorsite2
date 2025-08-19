@@ -6,22 +6,27 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Ian Zaikov"
-  image={{ src: '/img/personajes/ian-zaikov.jpg', alt: 'Ian Zaikov' }}
-  caption="Especialista en cuchillos de la Familia Zaikov"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Rol', value: 'Asalto/abordaje; especialista en cuchillos' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
-    { label: 'Hermanos', value: <><Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>, <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link>, <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori Zaikov</Link></> },
-    { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
-    { label: 'Armas preferidas', value: 'Cuchillos dobles (tipo carnicero)' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Ian Zaikov"
+    image={{ src: '/img/personajes/ian-zaikov.jpg', alt: 'Ian Zaikov' }}
+    caption="Especialista en cuchillos de la Familia Zaikov"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Rol', value: 'Asalto/abordaje; especialista en cuchillos' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
+      { label: 'Hermanos', value: <><Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>, <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link>, <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori Zaikov</Link></> },
+      { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
+      { label: 'Armas preferidas', value: 'Cuchillos dobles (tipo carnicero)' },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+)}
+</BrowserOnly>
 
 ## Perfil general
 

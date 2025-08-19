@@ -6,23 +6,34 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Ramses Zaikov"
-  image={{ src: '/img/personajes/Ramses-Zaikov.jpg', alt: 'Ramses Zaikov' }}
-  caption="Cerebro operativo de la Familia Zaikov"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Rol', value: 'Estratega; colíder de las Águilas del Nido' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
-    { label: 'Hermanos', value: <><Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>, <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>, <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori Zaikov</Link>, <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim Ramazan Zaikov</Link></> },
-    { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
-    { label: 'Apariencia', value: 'Cabello castaño rojizo con canas en sienes; ojos verdes; barba en candado' },
-    { label: 'Estilo', value: 'Camisa blanca con tirantes; botones superiores desabrochados' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+  {() => (
+    <Infobox
+      title="Ramses Zaikov"
+      image={{ src: '/img/personajes/Ramses-Zaikov.jpg', alt: 'Ramses Zaikov' }}
+      caption="Cerebro operativo de la Familia Zaikov"
+      rows={[
+        { label: 'Género', value: 'Masculino' },
+        { label: 'Estado', value: 'Activo' },
+        { label: 'Rol', value: 'Estratega; colíder de las Águilas del Nido' },
+        { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
+        { label: 'Hermanos', value: <>
+            <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori Zaikov</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim Ramazan Zaikov</Link>
+          </>
+        },
+        { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
+        { label: 'Apariencia', value: 'Cabello castaño rojizo con canas en sienes; ojos verdes; barba en candado' },
+        { label: 'Estilo', value: 'Camisa blanca con tirantes; botones superiores desabrochados' },
+        { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      ]}
+    />
+  )}
+</BrowserOnly>
 
 Reservado, desconfiado, calculador. **Ramses Zaikov** es el otro colíder de la familia, contraparte y contrapeso de su hermano <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link>. Donde Ian ve una oportunidad, Ramses ve una amenaza. Es el **estratega** que mantiene la estructura, el **protector del núcleo familiar**, el hombre que nunca sonríe sin motivo.
 

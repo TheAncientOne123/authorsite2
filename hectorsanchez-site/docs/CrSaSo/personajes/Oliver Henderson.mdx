@@ -6,21 +6,26 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Oliver Henderson"
-  image={{ src: '/img/personajes/oliver-henderson.png', alt: 'Oliver Henderson' }}
-  caption="Reportero de Atlantic News; bajo tutela vampírica"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Fallecido (absorbido por la Reina de la Oscuridad en la Refinería McCarthy)' },
-    { label: 'Profesión', value: 'Reportero / productor de campo' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Atlantic%20News">Atlantic News</Link> },
-    { label: 'Equipo', value: <><Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, <Link to="/CrSaSo/personajes/Susan%20Barnes">Susan Barnes</Link>, <Link to="/CrSaSo/personajes/Andrew%20Sheppard">Andrew Sheppard</Link></> },
-    { label: 'Relaciones', value: <>Vínculo con <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>; mordido por <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia</Link>; tutelado por <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link></> },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Oliver Henderson"
+    image={{ src: '/img/personajes/oliver-henderson.png', alt: 'Oliver Henderson' }}
+    caption="Reportero de Atlantic News; bajo tutela vampírica"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Fallecido (absorbido por la Reina de la Oscuridad en la Refinería McCarthy)' },
+      { label: 'Profesión', value: 'Reportero / productor de campo' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Atlantic%20News">Atlantic News</Link> },
+      { label: 'Equipo', value: <><Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, <Link to="/CrSaSo/personajes/Susan%20Barnes">Susan Barnes</Link>, <Link to="/CrSaSo/personajes/Andrew%20Sheppard">Andrew Sheppard</Link></> },
+      { label: 'Relaciones', value: <>Vínculo con <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>; mordido por <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia</Link>; tutelado por <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link></> },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+)}
+</BrowserOnly>
 
 ## Perfil general
 

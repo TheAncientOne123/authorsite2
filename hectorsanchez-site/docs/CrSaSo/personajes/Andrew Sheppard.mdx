@@ -8,21 +8,26 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Andrew Sheppard"
-  image={{ src: '/img/personajes/Andrew-Sheppard.png', alt: 'Andrew Sheppard' }}
-  caption="Historiador"
-  rows={[
-    {label: 'Género', value: 'Masculino'},
-    {label: 'Estado', value: 'Fallecido'},
-    {label: 'Profesión', value: 'Historiador | Consultor académico  '},
-    {label: 'Especialidad', value: 'Historia esotérica y arquitectura gótica del noreste '},
-    {label: 'Afilicación', value: 'Atlantic News (consultor externo / narrador del documental) '},
-    {label: 'Primera Aparición', value: 'Necromancia a Medianoche'},
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Andrew Sheppard"
+    image={{ src: '/img/personajes/Andrew-Sheppard.png', alt: 'Andrew Sheppard' }}
+    caption="Historiador"
+    rows={[
+      {label: 'Género', value: 'Masculino'},
+      {label: 'Estado', value: 'Fallecido'},
+      {label: 'Profesión', value: 'Historiador | Consultor académico  '},
+      {label: 'Especialidad', value: 'Historia esotérica y arquitectura gótica del noreste '},
+      {label: 'Afilicación', value: 'Atlantic News (consultor externo / narrador del documental) '},
+      {label: 'Primera Aparición', value: 'Necromancia a Medianoche'},
+    ]}
+  />
 
+)}
+</BrowserOnly>
 
 Andrew Sheppard fue el historiador invitado por el equipo de <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> (<Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News </Link>) para contextualizar el documental sobre el <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20Ámsterdam">Castillo de Nueva Ámsterdam</Link>. Conocedor de genealogías locales y del simbolismo arquitectónico, fungió como guía erudita durante la exploración del castillo y su red oculta.
 

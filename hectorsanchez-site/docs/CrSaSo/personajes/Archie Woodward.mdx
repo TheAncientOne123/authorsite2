@@ -6,22 +6,29 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Archie Woodward"
-  image={{ src: '/img/personajes/ArchieWoodward.jpg', alt: 'Archie Woodward' }}
-  caption="Científico (humano); ex jefe de científicos de McCarthy Petroleum"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Oficios', value: 'Ingeniero petrolero; ocultista e ilusionista aficionado; coleccionista, científico' },
-    { label: 'Afiliación', value: 'Ninguna' },
-        { label: 'Alias', value: 'Aldric Shadowborne' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-    { label: 'Cónyuges', value: 'Sagira Bostros, Alisha Floyd, Isla Butler, Arina Olegnova, Cira Montenegro, Abdiel Porter' },
-    { label: 'Residencias', value: <><Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>, Residencia la calle August Sierra</> },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Archie Woodward"
+    image={{ src: '/img/personajes/ArchieWoodward.jpg', alt: 'Archie Woodward' }}
+    caption="Científico (humano); ex jefe de científicos de McCarthy Petroleum"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Oficios', value: 'Ingeniero petrolero; ocultista e ilusionista aficionado; coleccionista, científico' },
+      { label: 'Afiliación', value: 'Ninguna' },
+          { label: 'Alias', value: 'Aldric Shadowborne' },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      { label: 'Cónyuges', value: 'Sagira Bostros, Alisha Floyd, Isla Butler, Arina Olegnova, Cira Montenegro, Abdiel Porter' },
+      { label: 'Residencias', value: <><Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>, Residencia la calle August Sierra</> },
+    ]}
+  />
+
+)}
+
+</BrowserOnly>
 
 
 **Ocupación conocida:** Ilusionista, ocultista, lector de tarot, coleccionista de rarezas; ex jefe de científicos en <Link to="/CrSaSo/familias/mccarthy-petroleum">McCarthy Petroleum</Link>.  

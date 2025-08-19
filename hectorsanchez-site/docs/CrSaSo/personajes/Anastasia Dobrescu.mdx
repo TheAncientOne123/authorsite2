@@ -8,23 +8,27 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Anastasia Dobrescu"
-  image={{ src: '/img/personajes/anastasia-dobrescu.jpg', alt: 'Anastasia Dobrescu de Valaquia' }}
-  caption="Rapax Hominum"
-  rows={[
-    {label: 'Género', value: 'Femenino'},
-    { label: 'Estado', value: 'Activa' },
-    { label: 'Afiliación', value: "Familia Dobrescu" },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-    { label: 'Cónyuge', value: 'Desconocido'},
-    { label: 'Residencia Temporal', value: <Link to= "/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20Ámsterdam">El Castillo de Nueva Ámsterdam</Link>},
 
-    
-    
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Anastasia Dobrescu"
+    image={{ src: '/img/personajes/anastasia-dobrescu.jpg', alt: 'Anastasia Dobrescu de Valaquia' }}
+    caption="Rapax Hominum"
+    rows={[
+      {label: 'Género', value: 'Femenino'},
+      { label: 'Estado', value: 'Activa' },
+      { label: 'Afiliación', value: "Familia Dobrescu" },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      { label: 'Cónyuge', value: 'Desconocido'},
+      { label: 'Residencia Temporal', value: <Link to= "/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20Ámsterdam">El Castillo de Nueva Ámsterdam</Link>},
+    ]}
+  />
+  
+)}
+</BrowserOnly>
 
 
 ## Perfil General

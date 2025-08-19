@@ -6,25 +6,30 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Jessica McCarthy"
-  images={[
-    { src: '/img/personajes/jessica-mccarthy.png', alt: 'Jessica McCarthy', label: 'Humana' },
-    { src: '/img/personajes/jessica-monstruo.png', alt: 'Jessica transformada', label: 'Monstruo' },
-  ]}  caption="Heredera de McCarthy Petroleum; eje de la profecía"
-  rows={[
-    { label: 'Género', value: 'Femenino' },
-    { label: 'Estado', value: 'Fallecida / Transformada (Reina de la Oscuridad)' },
-    { label: 'Profesión', value: 'Estudiante de medicina' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">La Familia McCarthy</Link> },
-    { label: 'Padres', value: <> <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> y Griselda Puckett </> },
-    { label: 'Vínculos', value: <><Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> (relación), <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> (pretendiente)</> },
-    { label: 'Particularidad', value: <>Portadora del <Link to="/CrSaSo/otros/Elemento%20121">Elemento 121</Link>; collar de cuarzo como regulador</> },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Jessica McCarthy"
+    images={[
+      { src: '/img/personajes/jessica-mccarthy.png', alt: 'Jessica McCarthy', label: 'Humana' },
+      { src: '/img/personajes/jessica-monstruo.png', alt: 'Jessica transformada', label: 'Monstruo' },
+    ]}  caption="Heredera de McCarthy Petroleum; eje de la profecía"
+    rows={[
+      { label: 'Género', value: 'Femenino' },
+      { label: 'Estado', value: 'Fallecida / Transformada (Reina de la Oscuridad)' },
+      { label: 'Profesión', value: 'Estudiante de medicina' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">La Familia McCarthy</Link> },
+      { label: 'Padres', value: <> <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> y Griselda Puckett </> },
+      { label: 'Vínculos', value: <><Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> (relación), <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> (pretendiente)</> },
+      { label: 'Particularidad', value: <>Portadora del <Link to="/CrSaSo/otros/Elemento%20121">Elemento 121</Link>; collar de cuarzo como regulador</> },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
 
+)}
+</BrowserOnly>
 
 
 ## Resumen biográfico

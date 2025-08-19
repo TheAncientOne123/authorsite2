@@ -6,23 +6,28 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Irene Zaikov"
-  image={{ src: '/img/personajes/irene-zaikov.jpg', alt: 'Irene Zaikov' }}
-  caption="Rama Ozturk–Zaikov; exesposa de Cassian Thorne"
-  rows={[
-    { label: 'Género', value: 'Femenino' },
-    { label: 'Estado', value: 'Activa (paradero desconocido)' },
-    { label: 'Nombre legal', value: 'Irene Ozturk–Zaikov' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link> },
-    { label: 'Padres', value: 'Mohammed Ozturk y Milenna Zaikov' },
-    { label: 'Relación previa', value: <>Exesposa de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link></> },
-    { label: 'Residencia', value: <>Anterior: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>; Actual: Desconocida</> },
-    { label: 'Ocupación', value: 'Mesera (anteriormente)' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Irene Zaikov"
+    image={{ src: '/img/personajes/irene-zaikov.jpg', alt: 'Irene Zaikov' }}
+    caption="Rama Ozturk–Zaikov; exesposa de Cassian Thorne"
+    rows={[
+      { label: 'Género', value: 'Femenino' },
+      { label: 'Estado', value: 'Activa (paradero desconocido)' },
+      { label: 'Nombre legal', value: 'Irene Ozturk–Zaikov' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link> },
+      { label: 'Padres', value: 'Mohammed Ozturk y Milenna Zaikov' },
+      { label: 'Relación previa', value: <>Exesposa de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link></> },
+      { label: 'Residencia', value: <>Anterior: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>; Actual: Desconocida</> },
+      { label: 'Ocupación', value: 'Mesera (anteriormente)' },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+)}
+</BrowserOnly>
 
 ## Perfil general
 

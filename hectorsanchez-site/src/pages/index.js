@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import BookStore from '@site/src/components/BookStoreFeatures/BookStore.jsx';
 import UniverseSelector from '@site/src/components/UniverseFeature/UniverseSelector';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -43,7 +44,7 @@ export default function Home() {
           <div className="row">
             <div className = "col col--8 col--offset-2 text--center">
               <Heading as="h2">Sobre el autor</Heading>
-              <img src = "/img/logoDark.png" alt="Logo" className ={styles.authorImage} />
+              <img src = {useBaseUrl("/img/logoDark.png")} alt="Logo" className ={styles.authorImage} />
               <p>
                 Soy Héctor Sánchez, un autor apasionado por la creación de mundos fantásticos e historias épicas. 
                 Aunque soy relativamente nuevo en la escritura, siento una pasión innata 

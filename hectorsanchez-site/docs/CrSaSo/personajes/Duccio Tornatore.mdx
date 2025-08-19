@@ -6,21 +6,27 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Duccio Tornatore"
-  image={{ src: '/img/personajes/duccio-tornatore.png', alt: 'Duccio Tornatore' }}
-  caption="Heredero menor de la Familia Tornatore"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Cargo', value: 'Miembro menor; socialité' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">La Familia Tornatore</Link> },
-    { label: 'Parentesco', value: <>Hijo de <Link to="/CrSaSo/personajes/Angelo%20Tornatore">Angelo Tornatore</Link>; hermano de <Link to="/CrSaSo/personajes/Pollione%20Tornatore">Pollione Tornatore</Link></> },
-    { label: 'Residencia', value: 'Nueva Ámsterdam' },
-    { label: 'Primera mención', value: 'La Mujer Carmesí' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Duccio Tornatore"
+    image={{ src: '/img/personajes/duccio-tornatore.png', alt: 'Duccio Tornatore' }}
+    caption="Heredero menor de la Familia Tornatore"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Cargo', value: 'Miembro menor; socialité' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">La Familia Tornatore</Link> },
+      { label: 'Parentesco', value: <>Hijo de <Link to="/CrSaSo/personajes/Angelo%20Tornatore">Angelo Tornatore</Link>; hermano de <Link to="/CrSaSo/personajes/Pollione%20Tornatore">Pollione Tornatore</Link></> },
+      { label: 'Residencia', value: 'Nueva Ámsterdam' },
+      { label: 'Primera mención', value: 'La Mujer Carmesí' },
+    ]}
+  />
+
+)}
+</BrowserOnly>
 
 # Duccio Tornatore
 

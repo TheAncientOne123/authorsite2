@@ -1,17 +1,12 @@
-import React, {useCallback, useMemo, useRef, useState, useEffect} from 'react';
+import React, {useMemo, useState, useEffect, useRef} from 'react';
 import clsx from 'clsx';
+import {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
 import styles from './infobox.module.css';
 
 /**
- * Infobox estilo Wikipedia con carrusel opcional
- * Props:
- * - title?: string
- * - image?: { src: string; alt?: string; width?: number; height?: number }
- * - images?: Array<{ src: string; alt?: string; label?: string }>
- * - caption?: React.ReactNode
- * - rows?: Array<{ label: React.ReactNode; value: React.ReactNode }>
- * - className?: string
- * - sticky?: boolean
+ * Infobox estilo Wikipedia con carrusel opcional (JS)
+ * - Usa CSS Module `infobox.module.css`
+ * - Reemplaza hooks incorrectos por `withBaseUrl`
  */
 export default function Infobox({
   title,
@@ -23,179 +18,98 @@ export default function Infobox({
   sticky = false,
   children,
 }) {
-  // Normaliza a un arreglo de frames; mantiene compatibilidad con `image`
+  const {withBaseUrl} = useBaseUrlUtils();
+
   const frames = useMemo(() => {
     if (Array.isArray(images) && images.length > 0) return images;
-    if (image?.src) return [{ src: image.src, alt: image.alt }];
+    if (image && image.src) return [{src: image.src, alt: image.alt, label: image.label}];
     return [];
   }, [images, image]);
 
-  const [prevIdx, setPrevIdx] = useState(null);
-  const [anim, setAnim] = useState(false);
   const [idx, setIdx] = useState(0);
-  const total = frames.length;
-  const clamp = (n) => (total === 0 ? 0 : (n + total) % total);
-  const goPrev = useCallback(() => {
-    if (total <= 1) return;
-    setIdx((i) => {
-      setPrevIdx(i);
-      setAnim(true);
-      return clamp(i - 1);
-    });
-  }, [total]);
+  const last = frames.length - 1;
+  const containerRef = useRef(null);
 
-  const goNext = useCallback(() => {
-    if (total <= 1) return;
-    setIdx((i) => {
-      setPrevIdx(i);
-      setAnim(true);
-      return clamp(i + 1);
-    });
-  }, [total]);
-
-  const goTo = useCallback((i) => {
-    setIdx((curr) => {
-      const next = clamp(i);
-      if (next === curr) return curr;
-      setPrevIdx(curr);
-      setAnim(true);
-      return next;
-    });
-  }, [total]);
+  const goPrev = () => setIdx((i) => (i > 0 ? i - 1 : last));
+  const goNext = () => setIdx((i) => (i < last ? i + 1 : 0));
+  const goTo = (i) => setIdx(() => (i >= 0 && i <= last ? i : 0));
 
   useEffect(() => {
-    if (!anim) return;
-    const t = setTimeout(() => {
-      setAnim(false);
-      setPrevIdx(null);
-    }, 220); // duración del fade
-    return () => clearTimeout(t);
-  }, [anim]);
+    const el = containerRef.current;
+    if (!el) return;
+    const onKey = (e) => {
+      if (e.key === 'ArrowLeft') goPrev();
+      if (e.key === 'ArrowRight') goNext();
+    };
+    el.addEventListener('keydown', onKey);
+    return () => el.removeEventListener('keydown', onKey);
+  }, [last]);
 
-
-
-  // Gestos de swipe (pointer events)
-  const startX = useRef(null);
-  const onPointerDown = (e) => {
-    const el = e.target;
-    if(el && el.closest && el.closest('button')) return;
-    startX.current = e.clientX;
-  };
-  const onPointerUp = (e) => {
-    if (startX.current == null) return;
-    const dx = e.clientX - startX.current;
-    startX.current = null;
-    if (Math.abs(dx) > 40) {
-      if (dx > 0) goPrev(); else goNext();
-    }
-  };
-  const onPointerLeave = () => {
-  startX.current = null;
-};
-
-  const onKeyDown = (e) => {
-    if (total <= 1) return;
-    if (e.key === 'ArrowLeft') { e.preventDefault(); goPrev(); }
-    if (e.key === 'ArrowRight') { e.preventDefault(); goNext(); }
-  };
+  const imgSrc = (f) => (f?.src ? withBaseUrl(f.src) : undefined);
+  const current = frames[idx];
 
   return (
-    <aside
-      className={clsx(styles.infobox, sticky && styles.sticky, className)}
-      role="complementary"
-      aria-label={title || 'Infobox'}
+    <section
+      ref={containerRef}
+      tabIndex={0}
+      className={clsx(styles.infobox, className, sticky && styles.sticky)}
+      aria-label={title || 'Ficha'}
     >
-      {title ? <div className={styles.header}>{title}</div> : null}
+      {title && <header className={styles.header}>{title}</header>}
 
-      {total > 0 ? (
-        <figure
-          className={clsx(styles.figure, total > 1 && styles.figureCarousel)}
-          role={total > 1 ? 'group' : undefined}
-          aria-roledescription={total > 1 ? 'carrusel de imágenes' : undefined}
-          aria-label={typeof title === 'string' ? title : 'Infobox media'}
-          tabIndex={total > 1 ? 0 : -1}
-          onKeyDown={onKeyDown}
-          onPointerDown={onPointerDown}
-          onPointerUp={onPointerUp}
-          onPointerLeave={onPointerLeave}
-        >
+      {frames.length > 0 && (
+        <figure className={clsx(styles.figure, frames.length > 1 && styles.figureCarousel)}>
           <div className={styles.stage}>
-            {prevIdx != null && prevIdx !== idx && (
-              <img
-                className={clsx(styles.img, styles.layer, styles.fadeOut)}
-                src={frames[prevIdx].src}
-                alt={frames[prevIdx].alt || ''}
-                loading="lazy"
-              />
-            )}
             <img
               key={idx}
-              className={clsx(styles.img, total > 1 && styles.imgIsCarousel, anim && styles.fadeIn)}
-              src={frames[idx].src}
-              alt={frames[idx].alt || ''}
+              src={imgSrc(current)}
+              alt={current?.alt || title || ''}
+              className={clsx(styles.img, frames.length > 1 && styles.imgIsCarousel, styles.fadeIn)}
               loading="lazy"
+              decoding="async"
             />
-            
-            {frames[idx].label ? <span className={styles.badge}>{frames[idx].label}</span> : null}
-          </div>
+            {current?.label && <span className={styles.badge}>{current.label}</span>}
 
-          {caption ? <figcaption className={styles.caption}>{caption}</figcaption> : null}
+            {frames.length > 1 && (
+              <>
+                <button type="button" className={clsx(styles.navBtn, styles.left)} aria-label="Anterior" onClick={goPrev}>‹</button>
+                <button type="button" className={clsx(styles.navBtn, styles.right)} aria-label="Siguiente" onClick={goNext}>›</button>
+              </>
+            )}
 
-          {total > 1 && (
-            <>
-              <button
-                type="button"
-                className={clsx(styles.navBtn, styles.left)}
-                aria-label="Imagen anterior"
-                onClick={goPrev}
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden>
-                  <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-              <button
-                type="button"
-                className={clsx(styles.navBtn, styles.right)}
-                aria-label="Imagen siguiente"
-                onClick={goNext}
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden>
-                  <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-
-              <div className={styles.dots} role="tablist" aria-label="Selector de imagen">
+            {frames.length > 1 && (
+              <div className={styles.dots} role="tablist">
                 {frames.map((_, i) => (
                   <button
                     key={i}
                     type="button"
                     role="tab"
                     aria-selected={i === idx}
-                    aria-label={`Ir a imagen ${i + 1}`}
-                    onClick={() => goTo(i)}
                     className={clsx(styles.dot, i === idx && styles.dotActive)}
+                    onClick={() => goTo(i)}
                   />
                 ))}
               </div>
-            </>
-          )}
+            )}
+          </div>
+          {caption && <figcaption className={styles.caption}>{caption}</figcaption>}
         </figure>
-      ) : null}
+      )}
 
-      {rows?.length ? (
+      {rows?.length > 0 && (
         <table className={styles.table}>
           <tbody>
-            {rows.map((r, i) => (
+            {rows.map((row, i) => (
               <tr key={i}>
-                <th className={styles.label}>{r.label}</th>
-                <td className={styles.value}>{r.value}</td>
+                <td className={styles.label}>{row.label}</td>
+                <td className={styles.value}>{row.value}</td>
               </tr>
             ))}
           </tbody>
         </table>
-      ) : null}
+      )}
 
-      {children ? <div className={styles.extra}>{children}</div> : null}
-    </aside>
+      {children && <div className={styles.extra}>{children}</div>}
+    </section>
   );
 }

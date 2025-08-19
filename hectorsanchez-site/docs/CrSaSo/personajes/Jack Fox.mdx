@@ -6,23 +6,28 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Jack Fox"
-  image={{ src: '/img/personajes/jack-fox.png', alt: 'Jack Fox' }}
-  caption="Director/Prod. de Atlantic News"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Profesión', value: 'Director y productor (Atlantic News)' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Atlantic%20News">Atlantic News</Link> },
-    { label: 'Equipo', value: <><Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>, <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, <Link to="/CrSaSo/personajes/Susan%20Barnes">Susan Barnes</Link></> },
-    { label: 'Relación clave', value: <>Pareja de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link> la noche de <Link to="/CrSaSo/lugares/Monte%20Galbrook">Monte Galbrook</Link></> },
-    { label: 'Familia', value: 'Familia Fox (propietarios de Atlantic News)' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Jack Fox"
+    image={{ src: '/img/personajes/jack-fox.png', alt: 'Jack Fox' }}
+    caption="Director/Prod. de Atlantic News"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Profesión', value: 'Director y productor (Atlantic News)' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Atlantic%20News">Atlantic News</Link> },
+      { label: 'Equipo', value: <><Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>, <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, <Link to="/CrSaSo/personajes/Susan%20Barnes">Susan Barnes</Link></> },
+      { label: 'Relación clave', value: <>Pareja de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link> la noche de <Link to="/CrSaSo/lugares/Monte%20Galbrook">Monte Galbrook</Link></> },
+      { label: 'Familia', value: 'Familia Fox (propietarios de Atlantic News)' },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
 
+)}
+</BrowserOnly>
 
 ## Perfil general
 

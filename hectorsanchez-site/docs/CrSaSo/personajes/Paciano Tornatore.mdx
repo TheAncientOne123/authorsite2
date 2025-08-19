@@ -6,22 +6,27 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Paciano Tornatore"
-  image={{ src: '/img/personajes/paciano-tornatore.jpg', alt: 'Paciano Tornatore' }}
-  caption="Heredero y arquitecto de la 'legalización' de la Familia Tornatore"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Cargo', value: 'Heredero y estratega financiero' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">La Familia Tornatore</Link> },
-    { label: 'Parentesco', value: <>Hijo de <Link to="/CrSaSo/personajes/Angelo%20Tornatore">Angelo Tornatore</Link>; hermano de <Link to="/CrSaSo/personajes/Pollione%20Tornatore">Pollione</Link> y <Link to="/CrSaSo/personajes/Duccio%20Tornatore">Duccio</Link></> },
-    { label: 'Áreas de influencia', value: 'Inmobiliario, financiero, farmacéutico' },
-    { label: 'Residencia', value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> },
-    { label: 'Primera mención', value: 'Material enciclopédico de Crónicas de Sangre y Sombra' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Paciano Tornatore"
+    image={{ src: '/img/personajes/paciano-tornatore.jpg', alt: 'Paciano Tornatore' }}
+    caption="Heredero y arquitecto de la 'legalización' de la Familia Tornatore"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Cargo', value: 'Heredero y estratega financiero' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">La Familia Tornatore</Link> },
+      { label: 'Parentesco', value: <>Hijo de <Link to="/CrSaSo/personajes/Angelo%20Tornatore">Angelo Tornatore</Link>; hermano de <Link to="/CrSaSo/personajes/Pollione%20Tornatore">Pollione</Link> y <Link to="/CrSaSo/personajes/Duccio%20Tornatore">Duccio</Link></> },
+      { label: 'Áreas de influencia', value: 'Inmobiliario, financiero, farmacéutico' },
+      { label: 'Residencia', value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> },
+      { label: 'Primera mención', value: 'Material enciclopédico de Crónicas de Sangre y Sombra' },
+    ]}
+  />
+)}
+</BrowserOnly>
 
 ## Perfil general
 

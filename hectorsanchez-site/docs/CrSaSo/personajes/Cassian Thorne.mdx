@@ -6,23 +6,29 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Cassian Thorne"
-  image={{ src: '/img/personajes/cassian-thorne.jpg', alt: 'Cassian Thorne' }}
-  caption="Detective de la Policía de Nueva Ámsterdam"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Desconocido' },
-    { label: 'Profesión', value: 'Detective, Sección de Homicidios' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">La Comisaría de Nueva Ámsterdam</Link> },
-    { label: 'Edad', value: '36 años' },
-    { label: 'Nacionalidad', value: 'Estadounidense' },
-    { label: 'Pareja/Compañera', value: <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> },
-    { label: 'Padre', value: 'Caleb Thorne (†)' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Cassian Thorne"
+    image={{ src: '/img/personajes/cassian-thorne.jpg', alt: 'Cassian Thorne' }}
+    caption="Detective de la Policía de Nueva Ámsterdam"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Desconocido' },
+      { label: 'Profesión', value: 'Detective, Sección de Homicidios' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">La Comisaría de Nueva Ámsterdam</Link> },
+      { label: 'Edad', value: '36 años' },
+      { label: 'Nacionalidad', value: 'Estadounidense' },
+      { label: 'Pareja/Compañera', value: <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> },
+      { label: 'Padre', value: 'Caleb Thorne (†)' },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+
+)}
+</BrowserOnly>
 
 # Cassian Thorne
 
@@ -34,7 +40,7 @@ Cassian Thorne es un detective experimentado y perspicaz de la ciudad de <Link t
 ## Eventos de Necromancia a Medianoche
 
 ### El Caso del Cuarto Rojo
-El detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> es asignado como enlace local en <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> para colaborar con la agente federal <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, enviada por el <Link to="/CrSaSo/otros/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link> con el objetivo de investigar una serie de asesinatos de naturaleza atípica. Su primer caso conjunto es el de <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>, ocurrido en el fraccionamiento <Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link> dentro del sector residencial de <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>. Desde la llegada de Sinclair, Thorne debe equilibrar su escepticismo inicial con los crecientes indicios de fenómenos paranormales, así como con la tensión profesional y emocional que se desarrolla entre ambos.
+El detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> es asignado como enlace local en <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> para colaborar con la agente federal <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, enviada por el <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link> con el objetivo de investigar una serie de asesinatos de naturaleza atípica. Su primer caso conjunto es el de <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>, ocurrido en el fraccionamiento <Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link> dentro del sector residencial de <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>. Desde la llegada de Sinclair, Thorne debe equilibrar su escepticismo inicial con los crecientes indicios de fenómenos paranormales, así como con la tensión profesional y emocional que se desarrolla entre ambos.
 
 ### Primer Sospechoso
 Tras el hallazgo inicial en <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>, Thorne y Sinclair deciden dividir esfuerzos: él se dirige al <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link> mientras ella acude a la biblioteca de la ciudad. Las investigaciones paralelas los conducen de vuelta a la <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">Comisaría</Link>, donde descubren que ambos seguían al mismo sospechoso: <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>.

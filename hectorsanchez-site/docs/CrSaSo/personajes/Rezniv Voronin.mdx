@@ -6,22 +6,29 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Rezniv Voronin"
-  image={{ src: '/img/personajes/rezniv-voronin.png', alt: 'Rezniv Voronin' }}
-  caption="Patriarca de la Familia Voronin"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Fallecido (abatido en la Refinería McCarthy)' },
-    { label: 'Especie', value: 'Vampiro (linaje ancestral / rapax hominum)' },
-    { label: 'Cargo', value: 'Patriarca; líder teocrático' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Voronin">La Familia Voronin</Link> },
-    { label: 'Armas distintivas', value: 'Lanza ritual; daga de obsidiana' },
-    { label: 'Apariencia', value: 'Alto; barba blanca; sombrero de ala ancha; voz grave' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+
+  <Infobox
+    title="Rezniv Voronin"
+    image={{ src: '/img/personajes/rezniv-voronin.png', alt: 'Rezniv Voronin' }}
+    caption="Patriarca de la Familia Voronin"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Fallecido (abatido en la Refinería McCarthy)' },
+      { label: 'Especie', value: 'Vampiro (linaje ancestral / rapax hominum)' },
+      { label: 'Cargo', value: 'Patriarca; líder teocrático' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Voronin">La Familia Voronin</Link> },
+      { label: 'Armas distintivas', value: 'Lanza ritual; daga de obsidiana' },
+      { label: 'Apariencia', value: 'Alto; barba blanca; sombrero de ala ancha; voz grave' },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+
+)}
+</BrowserOnly>
 
 ## Perfil general
 

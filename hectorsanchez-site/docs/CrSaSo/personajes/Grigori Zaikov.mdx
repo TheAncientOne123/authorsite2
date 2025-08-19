@@ -6,22 +6,27 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Grigori Zaikov"
-  image={{ src: '/img/personajes/grigori-zaikov.jpg', alt: 'Grigori Zaikov' }}
-  caption="Fuerza de choque de la Familia Zaikov"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Rol', value: 'Fuerza de choque; refuerzo táctico' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
-    { label: 'Hermanos', value: <><Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>, <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>, <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link></> },
-    { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
-    { label: 'Estilo de combate', value: 'Cuerpo a cuerpo; agarres, empuje y resistencia; tácticas antillanza' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Grigori Zaikov"
+    image={{ src: '/img/personajes/grigori-zaikov.jpg', alt: 'Grigori Zaikov' }}
+    caption="Fuerza de choque de la Familia Zaikov"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Rol', value: 'Fuerza de choque; refuerzo táctico' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
+      { label: 'Hermanos', value: <><Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>, <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>, <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link></> },
+      { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
+      { label: 'Estilo de combate', value: 'Cuerpo a cuerpo; agarres, empuje y resistencia; tácticas antillanza' },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+)}
+</BrowserOnly>
 
 ## Perfil general
 

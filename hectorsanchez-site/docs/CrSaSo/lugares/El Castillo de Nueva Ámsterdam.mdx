@@ -6,33 +6,41 @@ updated: 2025-08-17
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
 
 # Castillo de Nueva Ámsterdam
 
-<Infobox
-  title="Castillo de Nueva Ámsterdam"
-  caption="Residencia neogótica con invernaderos y catacumbas"
-  image={{ src: '/img/lugares/el-castillo-de-nueva-amsterdam.png', alt: 'Castillo' }}
-  rows={[
-    { label: 'Ubicación', value: <>Afueras (región este) de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link></> },
-    { label: 'Tipo', value: 'Castillo / residencia nobiliaria' },
-    { label: 'Estilo', value: 'Neogótico con motivos dacios; invernaderos y catacumbas' },
-    { label: 'Estado actual', value: 'Abandonado; restauración eclesiástica inconclusa' },
-    { label: 'Propiedad registrada', value: 'Sin dueño oficial; último intento de restauración por la Iglesia Católica' },
-    { label: 'Relevancia', value: 'Escenario del despertar de Anastasia Dobrescu y primera evidencia clara de fenómeno vampírico' },
-    { label: 'Personajes vinculados', value: <>
-      <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, 
-      <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, 
-      <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>, 
-      <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, 
-      <Link to="/CrSaSo/personajes/Susan%20Barnes">Susan Barnes</Link>, 
-      <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, 
-      <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>, 
-      <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, 
-      <Link to="/CrSaSo/personajes/Andrew%20Sheppard">Andrew Sheppard</Link>
-    </> },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Castillo de Nueva Ámsterdam"
+    caption="Residencia neogótica con invernaderos y catacumbas"
+    image={{ src: '/img/lugares/el-castillo-de-nueva-amsterdam.png', alt: 'Castillo' }}
+    rows={[
+      { label: 'Ubicación', value: <>Afueras (región este) de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Tipo', value: 'Castillo / residencia nobiliaria' },
+      { label: 'Estilo', value: 'Neogótico con motivos dacios; invernaderos y catacumbas' },
+      { label: 'Estado actual', value: 'Abandonado; restauración eclesiástica inconclusa' },
+      { label: 'Propiedad registrada', value: 'Sin dueño oficial; último intento de restauración por la Iglesia Católica' },
+      { label: 'Relevancia', value: 'Escenario del despertar de Anastasia Dobrescu y primera evidencia clara de fenómeno vampírico' },
+      { label: 'Personajes vinculados', value: <>
+        <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, 
+        <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, 
+        <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>, 
+        <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, 
+        <Link to="/CrSaSo/personajes/Susan%20Barnes">Susan Barnes</Link>, 
+        <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, 
+        <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>, 
+        <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, 
+        <Link to="/CrSaSo/personajes/Andrew%20Sheppard">Andrew Sheppard</Link>
+      </> },
+    ]}
+  />
+
+
+)}
+</BrowserOnly>
 
 **Nombre oficial:** Castillo de Nueva Ámsterdam  
 **Ubicación:** Afueras de Nueva Ámsterdam, región este  

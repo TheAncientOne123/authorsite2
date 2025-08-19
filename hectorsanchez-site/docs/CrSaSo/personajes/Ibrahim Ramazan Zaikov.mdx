@@ -6,21 +6,26 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Ibrahim Ramazan Zaikov"
-  image={{ src: '/img/personajes/ibrahim-ramazan-zaikov.jpg', alt: 'Ibrahim Ramazan Zaikov' }}
-  caption="Consejero y mayor de la Familia Zaikov"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo (lesionado durante la defensa de la mansión)' },
-    { label: 'Rol', value: 'Consejero; infiltración/mezcla; escudo en combate' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
-    { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
-    { label: 'Rasgos distintivos', value: 'Turbante; barba negra densa; talante sereno' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Ibrahim Ramazan Zaikov"
+    image={{ src: '/img/personajes/ibrahim-ramazan-zaikov.jpg', alt: 'Ibrahim Ramazan Zaikov' }}
+    caption="Consejero y mayor de la Familia Zaikov"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo (lesionado durante la defensa de la mansión)' },
+      { label: 'Rol', value: 'Consejero; infiltración/mezcla; escudo en combate' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
+      { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
+      { label: 'Rasgos distintivos', value: 'Turbante; barba negra densa; talante sereno' },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+)}
+</BrowserOnly>
 
 ## Perfil general
 

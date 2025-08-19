@@ -7,29 +7,35 @@ updated: 2025-08-17
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
 # Brujas
 
-<Infobox
-  title="Brujas"
-  caption="«Sin vínculo no hay poder que perdure»"
-  image={{ src: '/img/simbolos/luna.png', alt: 'Luna' }}
-  rows={[
-    { label: 'Tipo', value: 'Linaje arcano / Orden esotérica (Brujas Vinculadas)' },
-    { label: 'Sede / Territorio', value: <>Red descentralizada en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>; nodos en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> y herbolarias del <Link to="/CrSaSo/lugares/El%20Nido">Nido</Link></> },
-    { label: 'Liderazgo', value: 'Consejo laxo de matriarcas y maestras de círculo; tutorías individuales' },
-    { label: 'Ámbito', value: 'Magia de vínculo con cazadores; revelación, protección, rituales de sangre, herbolaria y alquimia' },
-    { label: 'Aliados', value: <><Link to="/CrSaSo/familias/Cazadores">Cazadores</Link> (pareja vinculada); alianzas puntuales con investigadores y prensa independiente</> },
-    { label: 'Rivales', value: <>Rapax Hominum (p. ej. <Link to="/CrSaSo/familias/Familia%20Voronin">Voronin</Link>, <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>)</> },
-    { label: 'Estado', value: 'Activo (clandestino)' },
-    { label: 'Eventos clave', value: <>
-      Entrenamiento básico en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>; 
-      <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>; 
-      señales de despertar en el <Link to="/CrSaSo/lugares/Balneario%20Rushmore">Balneario Rushmore</Link>; 
-      clímax en la <Link to="/CrSaSo/lugares/Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>
-    </> },
-    { label: 'Miembros notables', value: <><Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> (bruja en formación); <Link to="/CrSaSo/personajes/Cecilia%20Giannotti">Cecilia Giannotti</Link> (bruja experimentada)</> },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+  {() => (
+    <Infobox
+      title="Brujas"
+      caption="«Sin vínculo no hay poder que perdure»"
+      image={{ src: '/img/simbolos/luna.png', alt: 'Luna' }}
+      rows={[
+        { label: 'Tipo', value: 'Linaje arcano / Orden esotérica (Brujas Vinculadas)' },
+        { label: 'Sede / Territorio', value: <>Red descentralizada en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>; nodos en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> y herbolarias del <Link to="/CrSaSo/lugares/El%20Nido">Nido</Link></> },
+        { label: 'Liderazgo', value: 'Consejo laxo de matriarcas y maestras de círculo; tutorías individuales' },
+        { label: 'Ámbito', value: 'Magia de vínculo con cazadores; revelación, protección, rituales de sangre, herbolaria y alquimia' },
+        { label: 'Aliados', value: <><Link to="/CrSaSo/familias/Cazadores">Cazadores</Link> (pareja vinculada); alianzas puntuales con investigadores y prensa independiente</> },
+        { label: 'Rivales', value: <>Rapax Hominum (p. ej. <Link to="/CrSaSo/familias/Familia%20Voronin">Voronin</Link>, <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>)</> },
+        { label: 'Estado', value: 'Activo (clandestino)' },
+        { label: 'Eventos clave', value: <>
+          Entrenamiento básico en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>; 
+          <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>; 
+          señales de despertar en el <Link to="/CrSaSo/lugares/Balneario%20Rushmore">Balneario Rushmore</Link>; 
+          clímax en la <Link to="/CrSaSo/lugares/Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>
+        </> },
+        { label: 'Miembros notables', value: <><Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> (bruja en formación); <Link to="/CrSaSo/personajes/Cecilia%20Giannotti">Cecilia Giannotti</Link> (bruja experimentada)</> },
+      ]}
+    />
+  )}
+</BrowserOnly>
 
 ## Resumen General
 

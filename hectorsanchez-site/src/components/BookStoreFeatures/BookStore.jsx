@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './BookStore.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const books = [
   {
@@ -27,7 +28,7 @@ export default function BookStoreGrid() {
           {books.map((book, idx) => (
             <div key={idx} className="col col--3 text--center">
               <a href={book.link} target="_blank" rel="noopener noreferrer">
-                <img src={book.cover} alt={book.title} className={styles.bookCover} />
+                <img src={useBaseUrl(book.cover)} alt={book.title} className={styles.bookCover} />
                 <button className={clsx('button button--primary button--block', styles.buyButton)}>Comprar</button>
               </a>
             </div>

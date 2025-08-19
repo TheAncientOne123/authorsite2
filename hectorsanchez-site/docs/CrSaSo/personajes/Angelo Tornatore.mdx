@@ -6,22 +6,29 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Angelo Tornatore"
-  image={{ src: '/img/personajes/angelo-tornatore.png', alt: 'Angelo Tornatore' }}
-  caption="Patriarca de la Familia Tornatore"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Cargo', value: 'Capo; patriarca de la organización' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">La Familia Tornatore</Link> },
-    { label: 'Residencia', value: <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link> },
-    { label: 'Primera mención', value: 'Crónicas de Sangre y Sombra (material enciclopédico)' },
-    { label: 'Hijo', value: <Link to="/CrSaSo/personajes/Pollione%20Tornatore">Pollione Tornatore</Link> },
-  ]}
-/>
 
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Angelo Tornatore"
+    image={{ src: '/img/personajes/angelo-tornatore.png', alt: 'Angelo Tornatore' }}
+    caption="Patriarca de la Familia Tornatore"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Cargo', value: 'Capo; patriarca de la organización' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">La Familia Tornatore</Link> },
+      { label: 'Residencia', value: <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link> },
+      { label: 'Primera mención', value: 'Crónicas de Sangre y Sombra (material enciclopédico)' },
+      { label: 'Hijo', value: <Link to="/CrSaSo/personajes/Pollione%20Tornatore">Pollione Tornatore</Link> },
+    ]}
+  />
+
+
+)}
+</BrowserOnly>
 
 ## Perfil general
 

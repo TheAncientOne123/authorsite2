@@ -6,21 +6,27 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Cecilia Giannotti"
-  image={{ src: '/img/personajes/cecilia-giannotti.png', alt: 'Cecilia Giannotti' }}
-  caption="Bruja de la Catedral de Santa Regina"
-  rows={[
-    { label: 'Género', value: 'Femenino' },
-    { label: 'Estado', value: 'Fallecida (durante los sucesos de la catedral)' },
-    { label: 'Naturaleza', value: 'Bruja (strega)' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> },
-    { label: 'Hermanos', value: <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> },
-    { label: 'Rol', value: <>Mentora de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link></> },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Cecilia Giannotti"
+    image={{ src: '/img/personajes/cecilia-giannotti.png', alt: 'Cecilia Giannotti' }}
+    caption="Bruja de la Catedral de Santa Regina"
+    rows={[
+      { label: 'Género', value: 'Femenino' },
+      { label: 'Estado', value: 'Fallecida (durante los sucesos de la catedral)' },
+      { label: 'Naturaleza', value: 'Bruja (strega)' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> },
+      { label: 'Hermanos', value: <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> },
+      { label: 'Rol', value: <>Mentora de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link></> },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+
+)}
+</BrowserOnly>
 
 ## Perfil general
 

@@ -6,22 +6,27 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Jayson Branch"
-  image={{ src: '/img/personajes/jayson-branch.png', alt: 'Jayson Branch' }}
-  caption="Jefe de Seguridad de la Familia McCarthy"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Profesión', value: 'Jefe de seguridad; táctico operativo' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">La Familia McCarthy</Link> },
-    { label: 'Mano derecha', value: 'Anya' },
-    { label: 'Equipo', value: 'Taylor, Bryce, Daniel (unidad previa)' },
-    { label: 'Base', value: <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link> },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Jayson Branch"
+    image={{ src: '/img/personajes/jayson-branch.png', alt: 'Jayson Branch' }}
+    caption="Jefe de Seguridad de la Familia McCarthy"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Profesión', value: 'Jefe de seguridad; táctico operativo' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">La Familia McCarthy</Link> },
+      { label: 'Mano derecha', value: 'Anya' },
+      { label: 'Equipo', value: 'Taylor, Bryce, Daniel (unidad previa)' },
+      { label: 'Base', value: <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link> },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+)}
+</BrowserOnly>
 
 ## Perfil general
 

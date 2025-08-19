@@ -6,22 +6,29 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Ryan Chapman"
-  image={{ src: '/img/personajes/ryan-chapman.png', alt: 'Ryan Chapman' }}
-  caption="Testigo del caso «El Cuarto Rojo»"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Condición', value: 'Estudiante universitario; testigo' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Chapman">La Familia Chapman</Link> },
-    { label: 'Padre', value: <Link to="/CrSaSo/personajes/Frederick%20Chapman">Frederick Chapman</Link> },
-    { label: 'Residencia', value: <><Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link>, <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link></> },
-    { label: 'Universidad', value: 'Universidad de Nueva Ámsterdam' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+
+  <Infobox
+    title="Ryan Chapman"
+    image={{ src: '/img/personajes/ryan-chapman.png', alt: 'Ryan Chapman' }}
+    caption="Testigo del caso «El Cuarto Rojo»"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Condición', value: 'Estudiante universitario; testigo' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Chapman">La Familia Chapman</Link> },
+      { label: 'Padre', value: <Link to="/CrSaSo/personajes/Frederick%20Chapman">Frederick Chapman</Link> },
+      { label: 'Residencia', value: <><Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link>, <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link></> },
+      { label: 'Universidad', value: 'Universidad de Nueva Ámsterdam' },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+
+)}
+</BrowserOnly>
 
 ## **Perfil**
 

@@ -6,24 +6,31 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
-
-<Infobox
-  title="Alan McCarthy"
-  image={{ src: '/img/personajes/alan-mccarthy.jpg', alt: 'Alan McCarthy' }}
-  caption="Empresario industrial, CEO de McCarthy Petroleum."
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Fallecido' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link> },
-    { label: 'Ocupación', value: 'Capitalista, negociador; CEO de McCarthy Petroleum' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-    { label: 'Cónyuge', value: 'Griselda Puckett' },
-    { label: 'Hijos', value: <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link> },
-    { label: 'Residencia', value: <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link> },
-  ]}
-/>
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 # Alan McCarthy
+
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Alan McCarthy"
+    image={{ src: '/img/personajes/alan-mccarthy.jpg', alt: 'Alan McCarthy' }}
+    caption="Empresario industrial, CEO de McCarthy Petroleum."
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Fallecido' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link> },
+      { label: 'Ocupación', value: 'Capitalista, negociador; CEO de McCarthy Petroleum' },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      { label: 'Cónyuge', value: 'Griselda Puckett' },
+      { label: 'Hijos', value: <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link> },
+      { label: 'Residencia', value: <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link> },
+    ]}
+  />
+
+)}
+</BrowserOnly>
+
 
 ## Perfil General
 

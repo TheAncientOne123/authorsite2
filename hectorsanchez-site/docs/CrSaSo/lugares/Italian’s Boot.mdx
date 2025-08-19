@@ -6,24 +6,31 @@ updated: 2025-08-17
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
 
 # Italian’s Boot
 
-<Infobox
-  title="Italian’s Boot"
-  caption="Gastronomía napolitana con sótano de favores"
-  image={{ src: '/img/lugares/italian-boot.png', alt: 'Bota Italiana' }}
-  rows={[
-    { label: 'Tipo', value: 'Restaurante-bar italiano; fachada de operaciones' },
-    { label: 'Ubicación', value: <>Distrito comercial de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>, cerca del río</> },
-    { label: 'Propietario', value: <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">La Familia Tornatore</Link> },
-    { label: 'Afiliaciones', value: 'Mafia italiana (Tornatore)' },
-    { label: 'Estado actual', value: <>Destruido tras el atentado que inició la <Link to="/CrSaSo/eventos/La%20Semana%20Negra">Semana Negra</Link></> },
-    { label: 'Especialidad', value: 'Cocina napolitana, música en vivo, reservado de negocios' },
-    { label: 'Política de la casa', value: 'Orden estricto; “nunca se dispara dentro”… hasta el atentado' },
-    { label: 'Relevancia', value: <>Detonante de la <Link to="/CrSaSo/eventos/La%20Semana%20Negra">Semana Negra</Link>; 8 víctimas con signos de violencia anómala</> },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Italian’s Boot"
+    caption="Gastronomía napolitana con sótano de favores"
+    image={{ src: '/img/lugares/italian-boot.png', alt: 'Bota Italiana' }}
+    rows={[
+      { label: 'Tipo', value: 'Restaurante-bar italiano; fachada de operaciones' },
+      { label: 'Ubicación', value: <>Distrito comercial de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>, cerca del río</> },
+      { label: 'Propietario', value: <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">La Familia Tornatore</Link> },
+      { label: 'Afiliaciones', value: 'Mafia italiana (Tornatore)' },
+      { label: 'Estado actual', value: <>Destruido tras el atentado que inició la <Link to="/CrSaSo/eventos/La%20Semana%20Negra">Semana Negra</Link></> },
+      { label: 'Especialidad', value: 'Cocina napolitana, música en vivo, reservado de negocios' },
+      { label: 'Política de la casa', value: 'Orden estricto; “nunca se dispara dentro”… hasta el atentado' },
+      { label: 'Relevancia', value: <>Detonante de la <Link to="/CrSaSo/eventos/La%20Semana%20Negra">Semana Negra</Link>; 8 víctimas con signos de violencia anómala</> },
+    ]}
+  />
+
+)}
+</BrowserOnly>
 
 **Tipo:** Restaurante-bar italiano, fachada de operaciones mafiosas  
 **Ubicación:** Distrito comercial de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>, cerca del río  

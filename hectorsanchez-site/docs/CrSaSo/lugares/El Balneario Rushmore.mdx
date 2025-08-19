@@ -6,24 +6,30 @@ updated: 2025-08-17
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
 
 # Balneario Rushmore
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Balneario Rushmore"
+    image={{ src: '/img/lugares/balneario-rushmore.png', alt: 'Balneario Rushmore' }}
+    caption="Ruina patriótica convertida en laboratorio encubierto"
+    rows={[
+      { label: 'Ubicación', value: <>Afueras de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Tipo', value: 'Parque acuático temático (balneario) — instalación encubierta' },
+      { label: 'Estado', value: 'Abandonado (uso clandestino intermitente)' },
+      { label: 'Afiliaciones', value: <><Link to="/CrSaSo/familias/Familia%20Puckett">Familia Puckett</Link>; <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>; <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>; <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>; <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link></> },
+      { label: 'Eventos relevantes', value: <><Link to="/CrSaSo/otros/Elemento%20121">Experimentos con el Elemento 121</Link>; Infiltración de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>; Transformación de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link>; Intervención de <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia</Link>; Huida de <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link></> },
+      { label: 'Personajes relacionados', value: <><Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>, <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link></> },
+      { label: 'Señal clave', value: 'Olor a cloro en la ropa de Tamara (pista inicial del laboratorio clandestino)' },
+      { label: 'Consecuencia', value: <>Deriva de la investigación hacia la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link></> },
+    ]}
+  />
 
-<Infobox
-  title="Balneario Rushmore"
-  image={{ src: '/img/lugares/balneario-rushmore.png', alt: 'Balneario Rushmore' }}
-  caption="Ruina patriótica convertida en laboratorio encubierto"
-  rows={[
-    { label: 'Ubicación', value: <>Afueras de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link></> },
-    { label: 'Tipo', value: 'Parque acuático temático (balneario) — instalación encubierta' },
-    { label: 'Estado', value: 'Abandonado (uso clandestino intermitente)' },
-    { label: 'Afiliaciones', value: <><Link to="/CrSaSo/familias/Familia%20Puckett">Familia Puckett</Link>; <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>; <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>; <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>; <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link></> },
-    { label: 'Eventos relevantes', value: <><Link to="/CrSaSo/otros/Elemento%20121">Experimentos con el Elemento 121</Link>; Infiltración de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>; Transformación de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link>; Intervención de <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia</Link>; Huida de <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link></> },
-    { label: 'Personajes relacionados', value: <><Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>, <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link></> },
-    { label: 'Señal clave', value: 'Olor a cloro en la ropa de Tamara (pista inicial del laboratorio clandestino)' },
-    { label: 'Consecuencia', value: <>Deriva de la investigación hacia la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link></> },
-  ]}
-/>
+)}
+</BrowserOnly>
 
 ## Resumen general
 

@@ -6,21 +6,26 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Marco Giannotti"
-  image={{ src: '/img/personajes/marco-giannotti.jpg', alt: 'Marco Giannotti' }}
-  caption="Cazador clandestino; táctico de los Vinculados"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Rol', value: 'Cazador' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Los%20Vinculados">Los Vinculados</Link> },
-    { label: 'Base', value: <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> },
-    { label: 'Hermana', value: <Link to="/CrSaSo/personajes/Cecilia%20Giannotti">Cecilia Giannotti (†)</Link> },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Marco Giannotti"
+    image={{ src: '/img/personajes/marco-giannotti.jpg', alt: 'Marco Giannotti' }}
+    caption="Cazador clandestino; táctico de los Vinculados"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Rol', value: 'Cazador' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link> },
+      { label: 'Base', value: <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> },
+      { label: 'Hermana', value: <Link to="/CrSaSo/personajes/Cecilia%20Giannotti">Cecilia Giannotti (†)</Link> },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+)}
+</BrowserOnly>
 
 ## Perfil general
 

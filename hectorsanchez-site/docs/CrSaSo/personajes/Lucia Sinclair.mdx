@@ -6,25 +6,30 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Lucia Sinclair"
-  image={{ src: '/img/personajes/lucia-sinclair.jpg', alt: 'Lucia Sinclair' }}
-  caption="Agente especial del Buró Federal de Investigación"
-  rows={[
-    { label: 'Género', value: 'Femenino' },
-    { label: 'Estado', value: 'Activa (suspendida temporalmente; reclutada a programa secreto)' },
-    { label: 'Profesión', value: 'Agente Especial' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link> },
-    { label: 'Socio local', value: <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> },
-    { label: 'Contacto en el Buró', value: <Link to="/CrSaSo/personajes/Kingston%20Graham">Kingston Graham</Link> },
-    { label: 'Edad', value: '27 años' },
-    { label: 'Formación', value: 'Oxford (psicología, con honores)' },
-    { label: 'Origen familiar', value: 'Raíces militares' },
-    { label: 'Base', value: <Link to="/CrSaSo/lugares/Washington%20D.%20C.">Washington D. C.</Link> },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Lucia Sinclair"
+    image={{ src: '/img/personajes/lucia-sinclair.jpg', alt: 'Lucia Sinclair' }}
+    caption="Agente especial del Buró Federal de Investigación"
+    rows={[
+      { label: 'Género', value: 'Femenino' },
+      { label: 'Estado', value: 'Activa (suspendida temporalmente; reclutada a programa secreto)' },
+      { label: 'Profesión', value: 'Agente Especial' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link> },
+      { label: 'Socio local', value: <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> },
+      { label: 'Contacto en el Buró', value: <Link to="/CrSaSo/personajes/Kingston%20Graham">Kingston Graham</Link> },
+      { label: 'Edad', value: '27 años' },
+      { label: 'Formación', value: 'Oxford (psicología, con honores)' },
+      { label: 'Origen familiar', value: 'Raíces militares' },
+      { label: 'Base', value: <Link to="/CrSaSo/lugares/Washington%20D.%20C.">Washington D. C.</Link> },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+)}
+</BrowserOnly>
 
 
 ## Información general

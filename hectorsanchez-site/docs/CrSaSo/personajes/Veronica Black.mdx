@@ -6,21 +6,27 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Verónica Black"
-  image={{ src: '/img/personajes/veronica-black.png', alt: 'Verónica Black' }}
-  caption="Propietaria y madame del Club Palace"
-  rows={[
-    { label: 'Género', value: 'Femenino' },
-    { label: 'Estado', value: 'Activa' },
-    { label: 'Ocupación', value: 'Dueña y operadora del Club Palace' },
-    { label: 'Afiliación', value: <>Independiente; acuerdos con <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">La Comisaría de Nueva Ámsterdam</Link></> },
-    { label: 'Base', value: <Link to="/CrSaSo/lugares/Club%20Palace">Club Palace</Link> },
-    { label: 'Mano derecha', value: <Link to="/CrSaSo/personajes/Maisie%20Stewart">Maisie Stewart</Link> },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+
+  <Infobox
+    title="Verónica Black"
+    image={{ src: '/img/personajes/veronica-black.png', alt: 'Verónica Black' }}
+    caption="Propietaria y madame del Club Palace"
+    rows={[
+      { label: 'Género', value: 'Femenino' },
+      { label: 'Estado', value: 'Activa' },
+      { label: 'Ocupación', value: 'Dueña y operadora del Club Palace' },
+      { label: 'Afiliación', value: <>Independiente; acuerdos con <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">La Comisaría de Nueva Ámsterdam</Link></> },
+      { label: 'Base', value: <Link to="/CrSaSo/lugares/Club%20Palace">Club Palace</Link> },
+      { label: 'Mano derecha', value: <Link to="/CrSaSo/personajes/Maisie%20Stewart">Maisie Stewart</Link> },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+)}
+</BrowserOnly>
 
 **Alias conocidos:** “La Madame”  
 **Apariciones clave:** <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link> (apoyo encubierto), coordinación de accesos y encubrimientos en el <Link to="/CrSaSo/lugares/Club%20Palace">Club Palace</Link>.

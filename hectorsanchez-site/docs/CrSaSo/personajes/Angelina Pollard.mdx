@@ -6,20 +6,26 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Angelina Pollard"
-  image={{ src: '/img/personajes/angelina-pollard.png', alt: 'Angelina Pollard (alias de Tamara Dobrescu)' }}
-  caption="Alias público de Tamara Dobrescu"
-  rows={[
-    { label: 'Género', value: 'Femenino' },
-    { label: 'Estado', value: 'Activa' },
-    { label: 'Identidad real', value: <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> },
-    { label: 'Profesión', value: 'Científica (McCarthy Petroleum), ocultista; performer bajo alias' },
-    { label: 'Afiliación', value: 'Familia Dobrescu (linaje); vínculos pasados con McCarthy Petroleum' },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Angelina Pollard"
+    image={{ src: '/img/personajes/angelina-pollard.png', alt: 'Angelina Pollard (alias de Tamara Dobrescu)' }}
+    caption="Alias público de Tamara Dobrescu"
+    rows={[
+      { label: 'Género', value: 'Femenino' },
+      { label: 'Estado', value: 'Activa' },
+      { label: 'Identidad real', value: <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> },
+      { label: 'Profesión', value: 'Científica (McCarthy Petroleum), ocultista; performer bajo alias' },
+      { label: 'Afiliación', value: 'Familia Dobrescu (linaje); vínculos pasados con McCarthy Petroleum' },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+  
+)}
+</BrowserOnly>
 
 
 **Resumen**

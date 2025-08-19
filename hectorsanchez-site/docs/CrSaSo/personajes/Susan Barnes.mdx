@@ -6,20 +6,25 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Susan Barnes"
-  image={{ src: '/img/personajes/susan-barnes.jpg', alt: 'Susan Barnes' }}
-  caption="Ingeniera de sonido de Atlantic News"
-  rows={[
-    { label: 'Género', value: 'Femenino' },
-    { label: 'Estado', value: 'Fallecida (catacumbas del Castillo de Nueva Ámsterdam)' },
-    { label: 'Profesión', value: 'Ingeniera de sonido | Productora técnica' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Atlantic%20News">Atlantic News</Link> },
-    { label: 'Equipo', value: <><Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>, <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, <Link to="/CrSaSo/personajes/Andrew%20Sheppard">Andrew Sheppard</Link></> },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Susan Barnes"
+    image={{ src: '/img/personajes/susan-barnes.jpg', alt: 'Susan Barnes' }}
+    caption="Ingeniera de sonido de Atlantic News"
+    rows={[
+      { label: 'Género', value: 'Femenino' },
+      { label: 'Estado', value: 'Fallecida (catacumbas del Castillo de Nueva Ámsterdam)' },
+      { label: 'Profesión', value: 'Ingeniera de sonido | Productora técnica' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/otros/Atlantic%20News">Atlantic News</Link> },
+      { label: 'Equipo', value: <><Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>, <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, <Link to="/CrSaSo/personajes/Andrew%20Sheppard">Andrew Sheppard</Link></> },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+)}
+</BrowserOnly>
 
 **Profesión:** Ingeniera de sonido | Productora técnica  
 **Afiliación:** <Link to="/CrSaSo/otros/Atlantic%20News">Atlantic News</Link>  

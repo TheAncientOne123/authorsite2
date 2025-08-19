@@ -6,31 +6,36 @@ updated: 2025-08-17
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
 
 # Cazadores
-
-<Infobox
-  title="Cazadores"
-  caption="«Acero en la mano, pacto en el corazón»"
-  image={{ src: '/img/simbolos/sol.png', alt: 'Sol' }}
-  rows={[
-    { label: 'Tipo', value: 'Orden operativa / Hermandad secreta (Cazadores Vinculados)' },
-    { label: 'Sede / Territorio', value: <>Red descentralizada en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>; nodos de entrenamiento en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> y enclaves discretos</> },
-    { label: 'Liderazgo', value: 'Capitanes de célula y mentores; coordinación por consejo informal' },
-    { label: 'Ámbito', value: 'Erradicación de Rapax (vampiros), contención de amenazas anómalas, protección de brujas vinculadas' },
-    { label: 'Aliados', value: <><Link to="/CrSaSo/familias/Brujas">Brujas</Link> (pareja vinculada); cooperación puntual con <Link to="/CrSaSo/lugares/La%20Comisaría%20de%20Nueva%20Ámsterdam">la Comisaría</Link> y el <Link to="/CrSaSo/organizaciones/Bur%C3%B3%20Federal">Buró Federal</Link></> },
-    { label: 'Rivales', value: <>Clanes de Rapax (p. ej. <Link to="/CrSaSo/familias/Familia%20Voronin">Voronin</Link>).</> },
-    { label: 'Estado', value: 'Activo (clandestino)' },
-    { label: 'Eventos clave', value: <>
-      Entrenamientos en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral</Link>; 
-      <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>; 
-      <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>; 
-      señales de vínculo en el <Link to="/CrSaSo/lugares/Balneario%20Rushmore">Balneario Rushmore</Link>; 
-      clímax en la <Link to="/CrSaSo/lugares/Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>
-    </> },
-    { label: 'Miembros notables', value: <><Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> (Cazador Vinculado); <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link></> },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Cazadores"
+    caption="«Acero en la mano, pacto en el corazón»"
+    image={{ src: '/img/simbolos/sol.png', alt: 'Sol' }}
+    rows={[
+      { label: 'Tipo', value: 'Orden operativa / Hermandad secreta (Cazadores Vinculados)' },
+      { label: 'Sede / Territorio', value: <>Red descentralizada en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>; nodos de entrenamiento en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> y enclaves discretos</> },
+      { label: 'Liderazgo', value: 'Capitanes de célula y mentores; coordinación por consejo informal' },
+      { label: 'Ámbito', value: 'Erradicación de Rapax (vampiros), contención de amenazas anómalas, protección de brujas vinculadas' },
+      { label: 'Aliados', value: <><Link to="/CrSaSo/familias/Brujas">Brujas</Link> (pareja vinculada); cooperación puntual con <Link to="/CrSaSo/lugares/La%20Comisaría%20de%20Nueva%20Ámsterdam">la Comisaría</Link> y el <Link to="/CrSaSo/organizaciones/Bur%C3%B3%20Federal">Buró Federal</Link></> },
+      { label: 'Rivales', value: <>Clanes de Rapax (p. ej. <Link to="/CrSaSo/familias/Familia%20Voronin">Voronin</Link>).</> },
+      { label: 'Estado', value: 'Activo (clandestino)' },
+      { label: 'Eventos clave', value: <>
+        Entrenamientos en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral</Link>; 
+        <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>; 
+        <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>; 
+        señales de vínculo en el <Link to="/CrSaSo/lugares/Balneario%20Rushmore">Balneario Rushmore</Link>; 
+        clímax en la <Link to="/CrSaSo/lugares/Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>
+      </> },
+      { label: 'Miembros notables', value: <><Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> (Cazador Vinculado); <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link></> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
 ### Resumen General
 

@@ -6,29 +6,32 @@ updated: 2025-08-17
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
 
 # Biblioteca de Nueva Ámsterdam
 
-<Infobox
-  title="Biblioteca de Nueva Ámsterdam"
-  caption="El ‘Monte Olimpo’ del conocimiento urbano"
-  image={{ src: '/img/lugares/biblioteca-amsterdam.png', alt: 'biblioteca' }}
-  rows={[
-    { label: 'Tipo', value: 'Institución cultural pública' },
-    { label: 'Ubicación', value: <>Límite noreste del <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link>, frente al Parque de los Insomnes</> },
-    { label: 'Estilo arquitectónico', value: 'Neoclásico simbólico (columnas dóricas, friso con deidades olímpicas)' },
-    { label: 'Fundación', value: 'Finales del siglo XIX' },
-    { label: 'Colecciones', value: 'Hemeroteca, Sala de Raros (folklore, ocultismo), Mapoteca, Archivo urbano' },
-    { label: 'Acceso', value: 'Público; secciones restringidas con carta de investigación' },
-    { label: 'Personal clave', value: 'Bibliotecario principal (no divulgado), portando cruz ornamental' },
-    { label: 'Eventos notables', value: <>Consulta de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> sobre sucesos anómalos durante <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>; encuentro con <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>; debate sobre el <Link to="/CrSaSo/lugares/Castillo%20de%20Nueva%20Ámsterdam">Castillo de Nueva Ámsterdam</Link></> },
-    { label: 'Estado', value: 'Activo' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Biblioteca de Nueva Ámsterdam"
+    caption="El ‘Monte Olimpo’ del conocimiento urbano"
+    image={{ src: '/img/lugares/biblioteca-amsterdam.png', alt: 'biblioteca' }}
+    rows={[
+      { label: 'Tipo', value: 'Institución cultural pública' },
+      { label: 'Ubicación', value: <>Límite noreste del <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link>, frente al Parque de los Insomnes</> },
+      { label: 'Estilo arquitectónico', value: 'Neoclásico simbólico (columnas dóricas, friso con deidades olímpicas)' },
+      { label: 'Fundación', value: 'Finales del siglo XIX' },
+      { label: 'Colecciones', value: 'Hemeroteca, Sala de Raros (folklore, ocultismo), Mapoteca, Archivo urbano' },
+      { label: 'Acceso', value: 'Público; secciones restringidas con carta de investigación' },
+      { label: 'Personal clave', value: 'Bibliotecario principal (no divulgado), portando cruz ornamental' },
+      { label: 'Eventos notables', value: <>Consulta de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> sobre sucesos anómalos durante <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>; encuentro con <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>; debate sobre el <Link to="/CrSaSo/lugares/Castillo%20de%20Nueva%20Ámsterdam">Castillo de Nueva Ámsterdam</Link></> },
+      { label: 'Estado', value: 'Activo' },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-**Tipo:** Institución cultural pública  
-**Ubicación:** Límite noreste del Centro Histórico, frente al Parque de los Insomnes  
-**Estilo arquitectónico:** Neoclásico simbólico
 
 ## Descripción general
 

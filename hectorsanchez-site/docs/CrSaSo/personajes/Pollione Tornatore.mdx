@@ -6,22 +6,29 @@ updated: 2025-08-16
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="Pollione Tornatore"
-  image={{ src: '/img/personajes/pollione-tornatore.png', alt: 'Pollione Tornatore' }}
-  caption="Operador y negociador de la Familia Tornatore"
-  rows={[
-    { label: 'Género', value: 'Masculino' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Cargo', value: 'Operador/negociador; enlace con la comisaría' },
-    { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">La Familia Tornatore</Link> },
-    { label: 'Parentesco', value: <>Hijo de <Link to="/CrSaSo/personajes/Angelo%20Tornatore">Angelo Tornatore</Link>; hermano de <Link to="/CrSaSo/personajes/Paciano%20Tornatore">Paciano</Link> y <Link to="/CrSaSo/personajes/Duccio%20Tornatore">Duccio</Link></> },
-    { label: 'Residencia', value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> },
-    { label: 'Contactos clave', value: <><Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link></> },
-    { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Pollione Tornatore"
+    image={{ src: '/img/personajes/pollione-tornatore.png', alt: 'Pollione Tornatore' }}
+    caption="Operador y negociador de la Familia Tornatore"
+    rows={[
+      { label: 'Género', value: 'Masculino' },
+      { label: 'Estado', value: 'Activo' },
+      { label: 'Cargo', value: 'Operador/negociador; enlace con la comisaría' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">La Familia Tornatore</Link> },
+      { label: 'Parentesco', value: <>Hijo de <Link to="/CrSaSo/personajes/Angelo%20Tornatore">Angelo Tornatore</Link>; hermano de <Link to="/CrSaSo/personajes/Paciano%20Tornatore">Paciano</Link> y <Link to="/CrSaSo/personajes/Duccio%20Tornatore">Duccio</Link></> },
+      { label: 'Residencia', value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> },
+      { label: 'Contactos clave', value: <><Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link></> },
+      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+    ]}
+  />
+
+
+)}
+</BrowserOnly>
 
 ## Descripción general
 
