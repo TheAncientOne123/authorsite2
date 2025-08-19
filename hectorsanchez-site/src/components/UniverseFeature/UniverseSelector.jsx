@@ -8,7 +8,6 @@ const universes = [
     title: 'El Orbe de los Destinos',
     description: 'Un reino amurallado por la historia y la magia, donde los destinos se entrelazan.',
     image: '/img/portadaLowQual.png',
-    path: '/orbe',
     comingSoon: true,            // <- nuevo
   },
   {
