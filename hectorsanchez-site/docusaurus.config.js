@@ -54,6 +54,8 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'TheAncientOne123', // Usually your GitHub org/user name.
   projectName: 'authorsite2', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
