@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhectorsanchez_site=self.webpackChunkhectorsanchez_site||[]).push([[4096],{1410:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"orbe"}')}}]);
