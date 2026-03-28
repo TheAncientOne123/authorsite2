@@ -1,0 +1,49 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authorImage {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.bookCover {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.bookCover:hover {
+  transform: scale(1.05);
+}
+
+.aboutAuthor, .bookStore {
+  margin-top: 4rem;
+}
+
+/* Enlace envolvente sin estilos de .button (evita el bloque amarillo alrededor de la portada) */
+.cardLink {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-decoration: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: inherit;
+  padding: 0;
+}
+
+.cardLink:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.buyButton {
+  margin-top: 1rem;
+}

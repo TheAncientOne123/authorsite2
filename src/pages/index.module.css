@@ -1,0 +1,60 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Modo claro: fondo del hero = primary oscuro → subtítulo claro */
+.heroBanner :global(.hero__subtitle) {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Modo oscuro: primary del tema = amarillo/dorado → subtítulo oscuro (evita texto blanco sobre amarillo) */
+:global([data-theme='dark']) .heroBanner :global(.hero__subtitle) {
+  color: #1b1b1d;
+  opacity: 0.92;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authorImage {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.bookCover {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.bookCover:hover {
+  transform: scale(1.05);
+}
+
+.aboutAuthor, .bookStore {
+  margin-top: 4rem;
+}
+
+.buyButton{
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}

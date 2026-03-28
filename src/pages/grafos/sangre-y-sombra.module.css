@@ -1,0 +1,5 @@
+/* Refuerza la cadena flex hasta Sigma (contenedor con altura > 0). */
+.layoutFill {
+  flex: 1 1 0%;
+  min-height: 0;
+}
