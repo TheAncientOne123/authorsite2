@@ -27,9 +27,17 @@ export default function BookStoreGrid() {
         <div className="row" style={{ justifyContent: 'center', gap: '2rem', marginTop: '2rem' }}>
           {books.map((book, idx) => (
             <div key={idx} className="col col--3 text--center">
-              <a href={book.link} target="_blank" rel="noopener noreferrer">
-                <img src={useBaseUrl(book.cover)} alt={book.title} className={styles.bookCover} />
-                <button className={clsx('button button--primary button--block', styles.buyButton)}>Comprar</button>
+              <a
+                href={book.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.cardLink}
+                aria-label={`Comprar ${book.title} en Amazon (se abre en una pestaña nueva)`}
+              >
+                <img src={useBaseUrl(book.cover)} alt="" className={styles.bookCover} />
+                <span className={clsx('button button--primary button--block', styles.buyButton)}>
+                  Comprar
+                </span>
               </a>
             </div>
           ))}

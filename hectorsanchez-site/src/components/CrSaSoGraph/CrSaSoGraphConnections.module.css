@@ -1,0 +1,59 @@
+.connections {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  max-height: min(38vh, 280px);
+  overflow-y: auto;
+  color: var(--ifm-font-color-base);
+}
+
+.connectionsTitle {
+  font-size: 0.95rem;
+  margin: 0 0 0.65rem;
+  color: var(--ifm-font-color-base);
+}
+
+.connectionGroup {
+  margin-bottom: 0.75rem;
+}
+
+.connectionGroupTitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+  margin: 0 0 0.35rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.connectionList {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.88rem;
+}
+
+.connectionLink {
+  display: inline;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .connectionLink {
+  color: #93c5fd;
+}
+
+.connectionLink:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+[data-theme='dark'] .connectionLink:hover {
+  color: #bfdbfe;
+}

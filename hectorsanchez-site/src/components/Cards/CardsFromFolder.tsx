@@ -1,6 +1,7 @@
 import React, {useMemo, useState} from 'react';
 import Link from '@docusaurus/Link';
 import {useAllDocsData} from '@docusaurus/plugin-content-docs/client';
+import {getCrSaSoBookByKey, getCrSaSoLibroColor} from '@site/src/data/crSaSoBooks';
 import styles from './cards.module.css';
 
 
@@ -162,7 +163,7 @@ export default function CardsFromFolder({
       const joined = [title, description, idTail, slugTail, ...tags.map(String)].join(' ');
       return {d, title, description, href: computeHref(d), norm: normalize(joined)};
     });
-  }, [docs]);
+  }, [docs, basePrefix]);
 
   // Simple AND search over whitespace tokens
   const tokens = useMemo(() => normalize(query).split(/\s+/).filter(Boolean), [query]);
@@ -210,14 +211,36 @@ export default function CardsFromFolder({
         </div>
       ) : (
         <div className={styles.grid}>
-          {filtered.map(({d, title, description, href}) => (
-            <Link key={d.id} to={href} className={styles.card}>
-              <div className={styles.title}>{highlight(title, query)}</div>
-              {description ? (
-                <div className={styles.desc}>{highlight(description, query)}</div>
-              ) : null}
-            </Link>
-          ))}
+          {filtered.map(({d, title, description, href}) => {
+            const libroKey =
+              typeof (d.frontMatter as {libro?: unknown})?.libro === 'string'
+                ? ((d.frontMatter as {libro: string}).libro)
+                : null;
+            const libroMeta = getCrSaSoBookByKey(libroKey);
+            const accent = libroMeta ? getCrSaSoLibroColor(libroKey) : undefined;
+            return (
+              <Link
+                key={d.id}
+                to={href}
+                className={styles.card}
+                style={
+                  accent
+                    ? ({['--card-libro-accent' as string]: accent} as React.CSSProperties)
+                    : undefined
+                }
+              >
+                {libroMeta ? (
+                  <span className={styles.libroBadge} title={libroMeta.label}>
+                    {libroMeta.label}
+                  </span>
+                ) : null}
+                <div className={styles.title}>{highlight(title, query)}</div>
+                {description ? (
+                  <div className={styles.desc}>{highlight(description, query)}</div>
+                ) : null}
+              </Link>
+            );
+          })}
         </div>
       )}
     </div>

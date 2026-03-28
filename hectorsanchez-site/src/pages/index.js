@@ -4,7 +4,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import BookStore from '@site/src/components/BookStoreFeatures/BookStore.jsx';
-import UniverseSelector from '@site/src/components/UniverseFeature/UniverseSelector';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import Heading from '@theme/Heading';
@@ -35,8 +34,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Inicio`}
-      description="Description will go into a meta tag in <head />">
+      title="Inicio"
+      description="El Códice: compendio de fantasía de Héctor Sánchez — personajes, lugares, eventos y sagas como Crónicas de Sangre y Sombra y El Orbe de los Destinos.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

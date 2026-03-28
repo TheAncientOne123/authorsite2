@@ -1,0 +1,191 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  /* Llenar el contenedor principal de Docusaurus (Sigma necesita altura definida en la cadena CSS). */
+  flex: 1 1 0%;
+  min-height: 0;
+  width: 100%;
+  background: var(--ifm-background-color);
+}
+
+.toolbar {
+  flex: 0 0 auto;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.toolbarRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* Mismo acento que el resto del sitio (--ifm-color-primary: dorado en oscuro, casi negro en claro) */
+.volver {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0.4rem 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+.volver:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.volver:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legendSwatch {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.main {
+  flex: 1 1 0%;
+  display: grid;
+  grid-template-columns: 1fr minmax(220px, 280px);
+  grid-template-rows: 1fr;
+  min-height: 0;
+  align-items: stretch;
+}
+
+.graphColumn {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+}
+
+@media (max-width: 996px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50vh, 1fr) auto;
+  }
+}
+
+.canvasWrap {
+  position: relative;
+  flex: 1 1 0%;
+  min-height: 0;
+  height: 100%;
+  min-height: 50vh;
+  background: #4b5563;
+}
+
+.sigma {
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+  /* @react-sigma/core: fondo del contenedor y color de limpieza WebGL vía capa inferior */
+  --sigma-background-color: #4b5563;
+  --sigma-controls-background-color: rgba(55, 65, 81, 0.95);
+  --sigma-controls-background-color-hover: rgba(75, 85, 99, 0.95);
+  --sigma-controls-border-color: rgba(255, 255, 255, 0.22);
+  --sigma-controls-color: #ffffff;
+}
+
+.panel {
+  align-self: start;
+  max-height: 100%;
+  padding: 1rem;
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+  overflow: auto;
+}
+
+@media (max-width: 996px) {
+  .panel {
+    border-left: none;
+    border-top: 1px solid var(--ifm-color-emphasis-200);
+  }
+}
+
+.panelTitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.panelImageWrap {
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.panelImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.panelExcerpt {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  margin-bottom: 0.65rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .panelExcerpt {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.panelMeta {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.panelMetaMuted {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-bottom: 0.5rem;
+}
+
+.panelHint {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.fallback {
+  padding: 2rem;
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto;
+}

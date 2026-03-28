@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "prebuild": "node scripts/build-graph-crSaSo.mjs",
+    "prestart": "node scripts/build-graph-crSaSo.mjs",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
@@ -15,19 +17,25 @@
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
-    "@docusaurus/plugin-content-docs": "^3.8.1",
+    "@docusaurus/plugin-content-docs": "3.8.1",
     "@docusaurus/preset-classic": "3.8.1",
     "@mdx-js/react": "^3.0.0",
+    "@react-sigma/core": "^5.0.6",
     "@tippyjs/react": "^4.2.6",
     "clsx": "^2.0.0",
+    "graphology": "^0.26.0",
+    "graphology-layout-forceatlas2": "^0.10.1",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "sigma": "^3.0.2",
     "tippy.js": "^6.3.7"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.8.1",
-    "@docusaurus/types": "3.8.1"
+    "@docusaurus/types": "3.8.1",
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3"
   },
   "browserslist": {
     "production": [

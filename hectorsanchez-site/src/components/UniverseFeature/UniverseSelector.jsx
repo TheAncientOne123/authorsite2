@@ -9,13 +9,14 @@ const universes = [
     title: 'El Orbe de los Destinos',
     description: 'Un reino amurallado por la historia y la magia, donde los destinos se entrelazan.',
     image: '/img/portadaLowQual.png',
-    comingSoon: true,            // <- nuevo
+    comingSoon: true,
   },
   {
-    title: 'Crónicas de Sangre y Sombras',
+    title: 'Crónicas de Sangre y Sombra',
     description: 'Oscuridad, sangre, deseo y una guerra secreta que cambiará la historia.',
     image: '/img/portadaNMLowQual.png',
     path: '/CrSaSo',
+    graphPath: '/grafos/sangre-y-sombra',
     comingSoon: false,
   },
 ];
@@ -33,22 +34,33 @@ export default function UniverseSelector() {
       <div className={styles.universeGrid}>
         {universes.map((u, idx) => {
           const isDisabled = u.comingSoon;
-          const CardTag = isDisabled ? 'div' : Link;           // <- sin Link si está en proceso
-          const cardProps = isDisabled ? { 'aria-disabled': true } : { to: u.path };
+
+          if (isDisabled) {
+            return (
+              <div
+                key={idx}
+                className={clsx(styles.universeCard, styles.disabled)}
+                aria-disabled
+              >
+                <img src={useBaseUrl(u.image)} alt={u.title} className={styles.universeImage} />
+                <h3>{u.title}</h3>
+                <p>{u.description}</p>
+                <span className={styles.badge}>Próximamente</span>
+              </div>
+            );
+          }
 
           return (
-            <CardTag
-              key={idx}
-              {...cardProps}
-              className={clsx('text--center', styles.universeCard, isDisabled && styles.disabled)}
-              title={isDisabled ? 'Próximamente' : undefined}
-            >
-             <img src={useBaseUrl(u.image)} alt={u.title} className={styles.universeImage} />
-              <h3>{u.title}</h3>
-              <p>{u.description}</p>
-
-              {isDisabled && <span className={styles.badge}>Próximamente</span>}
-            </CardTag>
+            <div key={idx} className={styles.universeCard}>
+              <Link
+                to={u.path}
+                className={clsx(styles.universeCardLink)}
+              >
+                <img src={useBaseUrl(u.image)} alt={u.title} className={styles.universeImage} />
+                <h3>{u.title}</h3>
+                <p>{u.description}</p>
+              </Link>
+            </div>
           );
         })}
       </div>

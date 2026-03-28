@@ -36,6 +36,7 @@ const docsCronicas = [
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'El Códice',
+  tagline: 'Compendio de obras, personajes y universos de Héctor Sánchez.',
   favicon: 'img/favicon.ico',
 
 
@@ -57,8 +58,8 @@ const config = {
   deploymentBranch: 'gh-pages',
 
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -87,12 +88,11 @@ const config = {
 
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/logoDark.png',
       navbar: {
         title: 'El Códice',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'El Códice — logotipo',
           src: 'img/logoDark.png',
         },
         items: [
