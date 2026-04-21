@@ -28,3 +28,36 @@ export function getCrSaSoLibroColor(key: string | null | undefined): string {
 export function isValidCrSaSoLibroKey(key: string): boolean {
   return byKey.has(key);
 }
+
+function compareNormLabel(s: string): string {
+  return s
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/\p{Diacritic}+/gu, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+const labelNormToKey = new Map<string, string>(
+  CR_SA_SO_BOOKS.map((b) => [compareNormLabel(b.label), b.key]),
+);
+
+function slugifyLoose(s: string): string {
+  return s.trim().toLowerCase().replace(/\s+/g, '-');
+}
+
+/**
+ * Convierte variantes de clave o título de libro a la clave canónica en crSaSoBooks
+ * (p. ej. "Necromancia a Medianoche", "necromancia-a-medianoche" → "necromancia-medianoche").
+ */
+export function normalizeCrSaSoBookFilterValue(raw: string): string {
+  const t = raw.trim();
+  if (!t) return t;
+  if (byKey.has(t)) return t;
+  const asSlug = slugifyLoose(t);
+  if (byKey.has(asSlug)) return asSlug;
+  const fromLabel = labelNormToKey.get(compareNormLabel(t));
+  if (fromLabel) return fromLabel;
+  if (asSlug === 'necromancia-a-medianoche') return 'necromancia-medianoche';
+  return t;
+}

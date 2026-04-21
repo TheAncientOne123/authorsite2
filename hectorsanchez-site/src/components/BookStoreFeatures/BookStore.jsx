@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import clsx from 'clsx';
 import styles from './BookStore.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -6,12 +6,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 const books = [
   {
     title: 'El Orbe de los Destinos',
-    cover: '/img/portadaLowQual.png',
+    cover: '/img/orbe/portadaLowQual.png',
     link: 'https://www.amazon.com.mx/ORBE-DESTINOS-REINO-LUDRIAN-Spanish/dp/B0D9NH2DS5',
   },
   {
     title: 'Necromancia a Medianoche',
-    cover: '/img/portadaNMLowQual.png',
+    cover: '/img/cronicas-sangre/portadaNMLowQual.png',
     link: 'https://www.amazon.com.mx/Necromancia-Medianoche-Historias-Oscuras-Spanish/dp/B0FHBYZWRS',
   },
   // Agregar más libros aquí

@@ -16,7 +16,8 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --doc-sidebar-width: clamp(220px,22vw, 360px);
-  --doc-sidebar-hidden-width: 0px;
+  /* Ancho mínimo al colapsar: franja clickeable para volver a mostrar la sidebar (theme hideable). 0px la deja sin hit target. */
+  --doc-sidebar-hidden-width: 32px;
 }
 
 @media (min-width: 1600px) {

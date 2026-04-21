@@ -8,15 +8,22 @@ const UNIVERSE_SELECTOR = '/universes';
 /** @type {{ path: string; label: string }[]} */
 const DOC_UNIVERSES = [
   {path: '/CrSaSo', label: 'Crónicas de Sangre y Sombra'},
+  {path: '/Meridian', label: 'Meridian'},
   {path: '/orbe', label: 'El Orbe de los Destinos'},
 ];
 
 const LABELS = {
+  bestiario: 'Bestiario',
+  campañas: 'Campañas',
+  clases: 'Clases',
   eventos: 'Eventos',
+  facciones: 'Facciones',
   familias: 'Familias y Organizaciones',
   lugares: 'Lugares',
-  personajes: 'Personajes',
+  mapa: 'Mapa',
   otros: 'Otros',
+  personajes: 'Personajes',
+  razas: 'Razas',
 };
 
 function prettify(s) {

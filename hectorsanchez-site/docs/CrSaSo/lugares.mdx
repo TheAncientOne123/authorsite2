@@ -13,4 +13,12 @@ Atlas de ciudades, distritos y enclaves clave de Nueva Ámsterdam y sus frontera
 
 ---
 # Buscador
-<CardsFromFolder folder="lugares" pluginId="cronicas" />
+<CardsFromFolder
+  folder="lugares"
+  pluginId="cronicas"
+  filterDimensions={[
+    { key: 'tipo', label: 'Tipo' },
+    { key: 'region', label: 'Región' },
+    { key: 'peligro', label: 'Peligro' },
+  ]}
+/>

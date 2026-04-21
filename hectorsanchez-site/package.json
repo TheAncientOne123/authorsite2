@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "prebuild": "node scripts/build-graph-crSaSo.mjs",
-    "prestart": "node scripts/build-graph-crSaSo.mjs",
+    "prebuild": "node scripts/build-graph-crSaSo.mjs && node scripts/build-card-preview-meta.mjs",
+    "prestart": "node scripts/build-graph-crSaSo.mjs && node scripts/build-card-preview-meta.mjs",
+    "build-card-preview-meta": "node scripts/build-card-preview-meta.mjs",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",

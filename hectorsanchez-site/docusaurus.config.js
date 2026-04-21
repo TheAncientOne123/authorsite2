@@ -1,4 +1,4 @@
-// @ts-check
+﻿// @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
@@ -32,12 +32,24 @@ const docsCronicas = [
   },
 ];
 
+/**@type {[string, import('@docusaurus/plugin-content-docs').Options]} */
+const docsMeridian = [
+  '@docusaurus/plugin-content-docs',
+  {
+    id: 'meridian',
+    path: 'docs/meridian',
+    routeBasePath: 'Meridian',
+    sidebarPath: resolve('./meridian_sidebars.js'),
+    breadcrumbs: true,
+  },
+];
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'El Códice',
   tagline: 'Compendio de obras, personajes y universos de Héctor Sánchez.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/flavicon/favicon.ico',
 
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -82,18 +94,23 @@ const config = {
     ],
   ],
 
-  plugins: [docsOrbe, docsCronicas],
+  plugins: [docsOrbe, docsCronicas, docsMeridian],
 
   themeConfig:
 
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/logoDark.png',
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
+      image: 'img/flavicon/logoDark.png',
       navbar: {
         title: 'El Códice',
         logo: {
           alt: 'El Códice — logotipo',
-          src: 'img/logoDark.png',
+          src: 'img/flavicon/logoDark.png',
         },
         items: [
           {

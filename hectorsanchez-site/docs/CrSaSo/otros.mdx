@@ -15,4 +15,11 @@ Colección de documentos y temas que no encajan en las categorías principales p
 
 ---
 # Buscador
-<CardsFromFolder folder="otros" pluginId="cronicas" />
+<CardsFromFolder
+  folder="otros"
+  pluginId="cronicas"
+  filterDimensions={[
+    { key: 'categoria', label: 'Categoría' },
+    { key: 'tipo_elemento', label: 'Tipo' },
+  ]}
+/>

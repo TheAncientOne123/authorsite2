@@ -1,0 +1,408 @@
+{
+  "generatedAt": "2026-04-21T21:15:29.640Z",
+  "orbe": {
+    "index": {
+      "excerpt": "Bienvenido al códice del universo de El Orbe de los Destinos. La documentación detallada de este universo se irá ampliando con el tiempo; mientras tanto puedes explorar $1."
+    }
+  },
+  "cronicas": {
+    "eventos": {
+      "excerpt": "Esta sección reúne los hitos canónicos del universo: crisis, atentados, descubrimientos y giros que marcaron a Nueva Ámsterdam y sus facciones. Cada ficha resume qué ocurrió, cuándo y dónde, quiénes intervinieron y por qué fue relevante, con enlaces a personajes y lugares relacionados. Usa el buscador para encontrar eventos por nombre, época o facción y explorar las conexiones entre tramas. --- Bu"
+    },
+    "familia": {
+      "excerpt": "Directorio de linajes, clanes, órdenes y corporaciones que mueven los hilos del mundo. Cada ficha resume su origen, estructura, líderes, territorios de influencia y rivalidades, con enlaces a personajes y eventos relacionados. --- Buscador"
+    },
+    "index_c": {
+      "excerpt": "Crónicas de Sangre y Sombra es un universo de intrigas góticas, corporaciones energéticas, linajes antiguos y artes ocultas. Aquí conviven familias de alto poder con brujas, Rapax Hominum y periodistas que empujan la verdad a la luz. Este portal reúne su documentación viva: libros publicados, líneas de tiempo, personajes, facciones y lugares clave. > Esta página es la portada de la documentación d"
+    },
+    "lugares": {
+      "excerpt": "Atlas de ciudades, distritos y enclaves clave de Nueva Ámsterdam y sus fronteras. Cada ficha indica ubicación, tipo de sitio, breve historia, facciones que lo controlan y eventos relevantes, con enlaces a personajes y familias relacionadas. --- Buscador"
+    },
+    "otros": {
+      "excerpt": "Colección de documentos y temas que no encajan en las categorías principales pero enriquecen el universo: artefactos, leyendas, conceptos y notas especiales. Aquí encontrarás piezas singulares que expanden la mitología y ofrecen nuevas perspectivas sobre los hechos y personajes. Usa el buscador para explorar estos contenidos adicionales. --- Buscador"
+    },
+    "personajes": {
+      "excerpt": "Los personajes son el eje narrativo de toda historia y Crónicas de Sangre y Sombra no es la excepción. Cada figura aquí registrada incluye datos biográficos, afiliaciones y su papel en los acontecimientos principales. Este directorio está organizados en fichas individuales, que pueden contener información reveladora de la trama. El lector encontrará: - Protagonistas y antagonistas, con su evolució"
+    },
+    "eventos/Caso resuelto": {
+      "excerpt": "Cierre policial del “Cuarto Rojo”; pizza de celebración, visita al Oliver transformado y ataque en el departamento de Cassian que anticipa la masacre en Santa Regina."
+    },
+    "eventos/Desaparicion de Jessica McCarthy": {
+      "excerpt": "Abducción en Monte Galbrook; giro que reorienta la investigación hacia lo sobrenatural"
+    },
+    "eventos/El Cuarto Rojo": {
+      "excerpt": "Escena del crimen inicial del caso"
+    },
+    "eventos/Interrogación de Archie Woodward": {
+      "excerpt": "Entrevista táctica en la comisaría; confirma alias “Aldric Shadowborne” y abre la pista hacia la Infiltración Católica"
+    },
+    "eventos/La Infiltración Católica": {
+      "excerpt": "Operación encubierta en la Catedral de Santa Regina para identificar y penetrar a la célula de “La Cruz”"
+    },
+    "eventos/La Semana Negra": {
+      "excerpt": "Semana de violencia urbana desatada tras el ataque en Italian’s Boot; conocida popularmente como “La Guerra de las Pizzas”"
+    },
+    "eventos/Masacre de la Catedral de Santa Regina": {
+      "excerpt": "Asalto devastador contra la célula de Los Vinculados; punto de quiebre tras la Semana Negra"
+    },
+    "familias/Brujas": {
+      "excerpt": "Linaje arcano de mujeres vinculadas a un cazador; magia de pacto, revelación y protección que opera en la sombra de Nueva Ámsterdam.",
+      "image": "/img/cronicas-sangre/simbolos/luna.png",
+      "imageAlt": "Brujas"
+    },
+    "familias/Cazadores": {
+      "excerpt": "Orden operativa nacida para combatir a los Rapax (vampiros) y fuerzas afines; su poder se completa al vincularse con una bruja.",
+      "image": "/img/cronicas-sangre/simbolos/sol.png",
+      "imageAlt": "Cazadores"
+    },
+    "familias/Familia Puckett": {
+      "excerpt": "Dinastía local propietaria del Balneario Rushmore; familia materna de Jessica McCarthy y aliada por matrimonio con los McCarthy."
+    },
+    "familias/La Cruz": {
+      "excerpt": "Alias provisional usado por Cassian y Lucía para identificar a una red clandestina de signo religioso; luego asociada formalmente con “Los Vinculados”."
+    },
+    "familias/La Familia Chapman": {
+      "excerpt": "Dinastía empresarial de la alta residencial de Nueva Ámsterdam; dueños de una firma de colchones de lujo y eje del caso “El Cuarto Rojo”."
+    },
+    "familias/La Familia McCarthy": {
+      "excerpt": "Dinastía petrolera de Nueva Ámsterdam; poder económico y político detrás de McCarthy Petroleum, eje de los eventos ligados al Elemento 121."
+    },
+    "familias/La Familia Santorelli": {
+      "excerpt": "Mafia italiana de perfil discreto y estrategia diplomática; protectores oficiosos de la célula de los Vinculados en Nueva Ámsterdam."
+    },
+    "familias/La Familia Tornatore": {
+      "excerpt": "Mafia italiana asentada en Nueva Ámsterdam; imperio mixto de crimen y fachadas legales, rival histórico de los Santorelli."
+    },
+    "familias/La Familia Voronin": {
+      "excerpt": "Clan vampírico ancestral de raíz carpática; culto profético devoto de la Reina de la Oscuridad y antagonista central en la crisis McCarthy."
+    },
+    "familias/La Familia Zaikov": {
+      "excerpt": "Clan mafioso balcánico que gobierna El Nido con mano firme y fachada comunitaria; aliados tácticos de Cassian Thorne en momentos clave."
+    },
+    "familias/Los Vinculados": {
+      "excerpt": "Orden secreta de brujas y cazadores unida por un vínculo arcano para erradicar a los Rapax (vampiros); su célula en Nueva Ámsterdam cayó en la Masacre de la Catedral."
+    },
+    "familias/McCarthy Petroleum": {
+      "excerpt": "Conglomerado petrolero de la familia McCarthy; eje industrial de Nueva Ámsterdam y foco de la conspiración del Elemento 121."
+    },
+    "lugares/Atlantic News": {
+      "excerpt": "Principal corporación periodística de Nueva Ámsterdam, fundada por la familia Fox y núcleo informativo de la costa este."
+    },
+    "lugares/Bronze Fish": {
+      "excerpt": "Restaurante de mariscos en el centro de Nueva Ámsterdam, punto de encuentro clave entre Lucía Sinclair y Oliver Henderson."
+    },
+    "lugares/Buró Federal de Investigación": {
+      "excerpt": "Institución de investigación criminal y seguridad nacional de EE.UU. con atribuciones extendidas a lo sobrenatural y conspirativo."
+    },
+    "lugares/Catedral de Santa Regina": {
+      "excerpt": "Principal templo católico de Nueva Ámsterdam; centro de poder eclesiástico, conspiraciones y escenario de la masacre homónima."
+    },
+    "lugares/Centro Histórico": {
+      "excerpt": "Distrito urbano y núcleo nocturno de Nueva Ámsterdam; corazón decadente de clubes, información subterránea y violencia elegante. Escenario clave durante el caso «El Cuarto Rojo»."
+    },
+    "lugares/Club Palace": {
+      "excerpt": "Cabaret y salón de espectáculos del distrito nocturno del Centro Histórico; zona neutral regida por Veronica Black, clave para la preparación de Lucía en La Infiltración Católica."
+    },
+    "lugares/Crystal Square": {
+      "excerpt": "Zona residencial suburbana de clase media-alta al sur de Nueva Ámsterdam; planeación cerrada, baja incidencia delictiva reportada y escenario periférico del caso «El Cuarto Rojo»."
+    },
+    "lugares/El Balneario Rushmore": {
+      "excerpt": "Parque acuático temático abandonado en las afueras de Nueva Ámsterdam; convertido en laboratorio encubierto ligado al Elemento 121 y escenario de infiltraciones y confrontes clave.",
+      "image": "/img/cronicas-sangre/lugares/balneario-rushmore.png",
+      "imageAlt": "Balneario Rushmore"
+    },
+    "lugares/El Castillo de Nueva Ámsterdam": {
+      "excerpt": "Fortaleza neogótica del siglo XIX en las afueras de la ciudad; abandonada, ligada a una rama exiliada de nobleza rumana y escenario del despertar de Anastasia Dobrescu.",
+      "image": "/img/cronicas-sangre/lugares/el-castillo-de-nueva-amsterdam.png",
+      "imageAlt": "Castillo de Nueva Ámsterdam"
+    },
+    "lugares/El Nido": {
+      "excerpt": "Barrio densamente poblado y núcleo cultural de Nueva Ámsterdam; control comunitario con tolerancia ambigua, economía informal y conexiones con la Familia Zaikov."
+    },
+    "lugares/Gilded Cat": {
+      "excerpt": "Salón de apuestas y juegos de azar en el Centro Histórico; recinto elegante con política estricta de anonimato y reputación ambigua."
+    },
+    "lugares/Italian’s Boot": {
+      "excerpt": "Restaurante-bar italiano y fachada operativa de la Familia Tornatore; su destrucción detonó la Semana Negra en Nueva Ámsterdam.",
+      "image": "/img/cronicas-sangre/lugares/italian-boot.png",
+      "imageAlt": "Italian’s Boot"
+    },
+    "lugares/La Biblioteca de Nueva Ámsterdam": {
+      "excerpt": "Institución cultural pública en el límite noreste del Centro Histórico; archivo neoclásico con hemeroteca y sala de raros. Nodo clave durante El Cuarto Rojo.",
+      "image": "/img/cronicas-sangre/lugares/biblioteca-amsterdam.png",
+      "imageAlt": "Biblioteca de Nueva Ámsterdam"
+    },
+    "lugares/La Comisaría de Nueva Ámsterdam": {
+      "excerpt": "Sede principal de la policía local; centro operativo de investigaciones, interrogatorios y forense. Epicentro narrativo durante El Cuarto Rojo y la antesala de la Semana Negra."
+    },
+    "lugares/La Refinería McCarthy": {
+      "excerpt": "Antiguo bastión industrial de la Familia McCarthy; escenario del clímax con la Reina de la Oscuridad y la caída de Cassian Thorne."
+    },
+    "lugares/Mansión McCarthy": {
+      "excerpt": "Residencia señorial del Distrito Norte; símbolo de poder discreto de la Familia McCarthy y escenario del asedio Voronin previo al clímax en la Refinería."
+    },
+    "lugares/Mercado Viejo": {
+      "excerpt": "Zona urbana referida en el códice como corazón comercial entre el Centro Histórico y las vías del tranvía. Esta entrada amplía el mapa narrativo para enlaces internos; puedes desarrollar aquí historia, atmósfera y eventos cuando lo desees."
+    },
+    "lugares/Monte Galbrook": {
+      "excerpt": "Mirador forestal y zona natural al norte de Nueva Ámsterdam; escenario de la desaparición de Jessica McCarthy y foco de rumores no humanos."
+    },
+    "lugares/Nueva Ámsterdam": {
+      "excerpt": "Ciudad ficticia en la costa noreste de EE. UU.; núcleo gótico-noir donde se entrelazan poder institucional y raíces ocultistas. Escenario central de Necromancia a Medianoche."
+    },
+    "lugares/Pizzas' Juan": {
+      "excerpt": "Pizzería mexicana de barrio en Nueva Ámsterdam; pausa íntima y táctica de Cassian y Lucía durante “Caso Resuelto”, donde atan cabos sobre Alan McCarthy y el Elemento 121."
+    },
+    "lugares/Raven District": {
+      "excerpt": "Complejo industrial periférico de McCarthy Petroleum; laboratorio subterráneo donde Tamara Dobrescu y Archie Woodward sintetizaron por primera vez el Elemento 121. Destruido en 1899."
+    },
+    "lugares/Scarlet Horn": {
+      "excerpt": "Club de jazz y bar clandestino del Centro Histórico; semillero de artistas y nodo de actividades semilegales. Primer encuentro entre Cassian y Tamara (como “Angelina Pollard”)."
+    },
+    "lugares/Velvet Trumpet": {
+      "excerpt": "Bar-lounge del Centro Histórico con tarima semicircular, piano siempre afinado y programación de música en vivo; ambiente melancólico y clientela diversa."
+    },
+    "lugares/Villa Lobos": {
+      "excerpt": "Fraccionamiento cerrado dentro de Crystal Square; escena del caso «El Cuarto Rojo» y residencia de la familia McCarthy y los Chapman."
+    },
+    "lugares/Wendell Pines": {
+      "excerpt": "Reserva natural que marca el límite norte de Nueva Ámsterdam en la narrativa. Página de anclaje para enlaces desde otros lugares; amplía con ecología, rutas o tramas cuando corresponda."
+    },
+    "lugares/Whispering Keys": {
+      "excerpt": "Club de jazz clandestino en los subniveles del Centro Histórico; acceso por contraseña semanal bajo una tienda de pianos abandonada. Neutral, con clientela de informantes y seres ambiguos."
+    },
+    "libros/index": {
+      "excerpt": "Fichas y referencias a las novelas de Crónicas de Sangre y Sombra. - $1 - $1"
+    },
+    "libros/La Mujer Carmesí": {
+      "excerpt": "Título referenciado en el códice como continuación de la saga. Contenido ampliado próximamente; enlaza aquí desde otras fichas según vaya publicándose material."
+    },
+    "libros/Necromancia a Medianoche": {
+      "excerpt": "Obra central de Crónicas de Sangre y Sombra. Puedes enlazar aquí desde personajes y lugares; para comprar la edición impresa o digital visita la página de inicio del sitio (sección «Adquiere mis libros»)."
+    },
+    "otros/Elemento 121": {
+      "excerpt": "Compuesto alquímico-bioquímico inestable sintetizado en Raven District (Prueba 121); clave en la conspiración de Nueva Ámsterdam."
+    },
+    "personajes/Alan McCarthy": {
+      "excerpt": "Empresario, patriarca de la familia McCarthy.",
+      "image": "/img/cronicas-sangre/personajes/alan-mccarthy.jpg",
+      "imageAlt": "Alan McCarthy"
+    },
+    "personajes/Anastasia Dobrescu": {
+      "excerpt": "Rapax Hominum, vulgarmente conocida como una vampira",
+      "image": "/img/cronicas-sangre/personajes/anastasia-dobrescu.jpg",
+      "imageAlt": "Anastasia Dobrescu"
+    },
+    "personajes/Andrew Sheppard": {
+      "excerpt": "Historiador",
+      "image": "/img/cronicas-sangre/personajes/Andrew-Sheppard.png",
+      "imageAlt": "Andrew Sheppard"
+    },
+    "personajes/Angelina Pollard": {
+      "excerpt": "Alias público de Tamara Dobrescu; identidad usada en contextos sociales y de investigación",
+      "image": "/img/cronicas-sangre/personajes/angelina-pollard.png",
+      "imageAlt": "Angelina Pollard"
+    },
+    "personajes/Angelo Tornatore": {
+      "excerpt": "Patriarca de la Familia Tornatore; capo criminal de Nueva Ámsterdam",
+      "image": "/img/cronicas-sangre/personajes/angelo-tornatore.png",
+      "imageAlt": "Angelo Tornatore"
+    },
+    "personajes/Archie Woodward": {
+      "excerpt": "Jack of all trades master of none",
+      "image": "/img/cronicas-sangre/personajes/ArchieWoodward.jpg",
+      "imageAlt": "Archie Woodward"
+    },
+    "personajes/Cassian Thorne": {
+      "excerpt": "Detective de la Policía de Nueva Ámsterdam; protagonista de Necromancia a Medianoche",
+      "image": "/img/cronicas-sangre/personajes/cassian-thorne.jpg",
+      "imageAlt": "Cassian Thorne",
+      "filters": {
+        "libro": "necromancia-medianoche"
+      }
+    },
+    "personajes/Cecilia Giannotti": {
+      "excerpt": "Bruja vinculada a la Catedral de Santa Regina; mentora de Cassian y Lucia",
+      "image": "/img/cronicas-sangre/personajes/cecilia-giannotti.png",
+      "imageAlt": "Cecilia Giannotti"
+    },
+    "personajes/Devin Kirby": {
+      "excerpt": "Camarógrafo de Atlantic News",
+      "image": "/img/cronicas-sangre/personajes/devin-kirby.png",
+      "imageAlt": "Devin Kirby"
+    },
+    "personajes/Dorian Blackwood": {
+      "excerpt": "Jefe de detectives de la comisaría de Nueva Ámsterdam",
+      "image": "/img/cronicas-sangre/personajes/dorian-blackwood.jpg",
+      "imageAlt": "Dorian Blackwood"
+    },
+    "personajes/Duccio Tornatore": {
+      "excerpt": "Heredero menor de la Familia Tornatore; socialité impulsivo e imprevisible",
+      "image": "/img/cronicas-sangre/personajes/duccio-tornatore.png",
+      "imageAlt": "Duccio Tornatore"
+    },
+    "personajes/Frederick Chapman": {
+      "excerpt": "Patriarca de la familia Chapman; empresario de colchones",
+      "image": "/img/cronicas-sangre/personajes/frederick-chapman.png",
+      "imageAlt": "Frederick Chapman"
+    },
+    "personajes/Greta Zaikov": {
+      "excerpt": "Francotiradora de las “Águilas del Nido” (Familia Zaikov)",
+      "image": "/img/cronicas-sangre/personajes/greta-zaikov.png",
+      "imageAlt": "Greta Zaikov"
+    },
+    "personajes/Grigori Zaikov": {
+      "excerpt": "“Tanque” de las Águilas del Nido; fuerza de choque de la Familia Zaikov",
+      "image": "/img/cronicas-sangre/personajes/grigori-zaikov.jpg",
+      "imageAlt": "Grigori Zaikov"
+    },
+    "personajes/Ian Zaikov": {
+      "excerpt": "Especialista en cuchillos; punta de lanza de las Águilas del Nido (Familia Zaikov)",
+      "image": "/img/cronicas-sangre/personajes/ian-zaikov.jpg",
+      "imageAlt": "Ian Zaikov"
+    },
+    "personajes/Ibrahim Ramazan Zaikov": {
+      "excerpt": "Mayor consejero de las Águilas del Nido; corazón espiritual de la Familia Zaikov",
+      "image": "/img/cronicas-sangre/personajes/ibrahim-ramazan-zaikov.jpg",
+      "imageAlt": "Ibrahim Ramazan Zaikov"
+    },
+    "personajes/Irene Zaikov": {
+      "excerpt": "Exesposa de Cassian Thorne; integrante de la rama Ozturk–Zaikov",
+      "image": "/img/cronicas-sangre/personajes/irene-zaikov.jpg",
+      "imageAlt": "Irene Zaikov"
+    },
+    "personajes/Jack Fox": {
+      "excerpt": "Director y productor de Atlantic News; heredero del medio; testigo clave de Necromancia a Medianoche",
+      "image": "/img/cronicas-sangre/personajes/jack-fox.png",
+      "imageAlt": "Jack Fox",
+      "filters": {
+        "libro": "necromancia-medianoche"
+      }
+    },
+    "personajes/Jayson Branch": {
+      "excerpt": "Jefe de seguridad de la Familia McCarthy; coordinador táctico durante Necromancia a Medianoche",
+      "image": "/img/cronicas-sangre/personajes/jayson-branch.png",
+      "imageAlt": "Jayson Branch"
+    },
+    "personajes/Jessica McCarthy": {
+      "excerpt": "Heredera de la fortuna McCarthy; portadora del Elemento 121",
+      "image": "/img/cronicas-sangre/personajes/jessica-mccarthy.png",
+      "imageAlt": "Jessica McCarthy"
+    },
+    "personajes/Kingston Graham": {
+      "excerpt": "Alto funcionario del Buró; operador clave del programa secreto y reclutador de Lucia Sinclair",
+      "image": "/img/cronicas-sangre/personajes/kingston-graham.jpg",
+      "imageAlt": "Kingston Graham"
+    },
+    "personajes/Logan Crane": {
+      "excerpt": "Detective de la Policía de Nueva Ámsterdam; enlace operativo del equipo Thorne–Sinclair",
+      "image": "/img/cronicas-sangre/personajes/logan-crane.png",
+      "imageAlt": "Logan Crane"
+    },
+    "personajes/Lucia Sinclair": {
+      "excerpt": "Agente especial del Buró; co-protagonista y eje federal de la investigación en Nueva Ámsterdam",
+      "image": "/img/cronicas-sangre/personajes/lucia-sinclair.jpg",
+      "imageAlt": "Lucia Sinclair",
+      "filters": {
+        "libro": "necromancia-medianoche"
+      }
+    },
+    "personajes/Maisie Stewart": {
+      "excerpt": "Hostess/encargada y mano derecha de Verónica Black en el Club Palace; apoyo clave durante la Infiltración Católica",
+      "image": "/img/cronicas-sangre/personajes/maisie-stewart.png",
+      "imageAlt": "Maisie Stewart"
+    },
+    "personajes/Marco Giannotti": {
+      "excerpt": "Cazador clandestino y táctico de los Vinculados; mentor temporal de Cassian y Lucia",
+      "image": "/img/cronicas-sangre/personajes/marco-giannotti.jpg",
+      "imageAlt": "Marco Giannotti"
+    },
+    "personajes/Oliver Henderson": {
+      "excerpt": "Reportero de Atlantic News; vampirizado tras el Castillo; catalizador del destino de Jessica",
+      "image": "/img/cronicas-sangre/personajes/oliver-henderson.png",
+      "imageAlt": "Oliver Henderson"
+    },
+    "personajes/Paciano Tornatore": {
+      "excerpt": "Heredero mayor y estratega financiero de la Familia Tornatore",
+      "image": "/img/cronicas-sangre/personajes/paciano-tornatore.jpg",
+      "imageAlt": "Paciano Tornatore"
+    },
+    "personajes/Pollione Tornatore": {
+      "excerpt": "Operador y negociador de la Familia Tornatore; enlace pragmático con la policía",
+      "image": "/img/cronicas-sangre/personajes/pollione-tornatore.png",
+      "imageAlt": "Pollione Tornatore"
+    },
+    "personajes/Ramses Zaikov": {
+      "excerpt": "Estratega y cerebro operativo de la Familia Zaikov; colíder de las “Águilas del Nido”",
+      "image": "/img/cronicas-sangre/personajes/Ramses-Zaikov.jpg",
+      "imageAlt": "Ramses Zaikov"
+    },
+    "personajes/Rezniv Voronin": {
+      "excerpt": "Patriarca de la Familia Voronin; fanático de la Reina de la Oscuridad y antagonista del clímax en la refinería",
+      "image": "/img/cronicas-sangre/personajes/rezniv-voronin.png",
+      "imageAlt": "Rezniv Voronin"
+    },
+    "personajes/Ryan Chapman": {
+      "excerpt": "Hijo de Frederick Chapman; testigo clave del caso “El Cuarto Rojo”",
+      "image": "/img/cronicas-sangre/personajes/ryan-chapman.png",
+      "imageAlt": "Ryan Chapman"
+    },
+    "personajes/Susan Barnes": {
+      "excerpt": "Ingeniera de sonido de Atlantic News; miembro del equipo del documental del Castillo de Nueva Ámsterdam",
+      "image": "/img/cronicas-sangre/personajes/susan-barnes.jpg",
+      "imageAlt": "Susan Barnes"
+    },
+    "personajes/Tamara Dobrescu": {
+      "excerpt": "Científica del linaje Dobrescu; alias público “Angelina Pollard”.",
+      "image": "/img/cronicas-sangre/personajes/tamara-dobrescu.JPG",
+      "imageAlt": "Tamara Dobrescu"
+    },
+    "personajes/Veronica Black": {
+      "excerpt": "Dueña y “madame” del Club Palace; operadora influyente con acuerdos tácticos con la comisaría",
+      "image": "/img/cronicas-sangre/personajes/veronica-black.png",
+      "imageAlt": "Verónica Black"
+    }
+  },
+  "meridian": {
+    "index": {
+      "excerpt": "Bienvenido a la wiki de Meridian. Este espacio reúne el contenido canónico del mundo, sus reglas, facciones, razas, clases, criaturas, eventos y campañas. Su propósito es servir como una base de consulta clara y en expansión, tanto para jugadores como para directores de mesa y lectores del proyecto. Meridian es un universo de fantasía, conflicto y aventura, donde distintas especies, reinos, ideolo"
+    },
+    "bestiario/dragones": {
+      "excerpt": "Los dragones son criaturas antiguas, colosales y profundamente conectadas con las corrientes mágicas del mundo. Su sola existencia parece desafiar la separación entre bestia y fenómeno natural, pues no son únicamente animales de gran tamaño, sino entidades vivientes cuya fisiología, comportamiento y presencia alteran el entorno que habitan. En todas sus variantes, los dragones destacan por su extr",
+      "image": "/img/meridian-contenidos/wyvern.jpg",
+      "imageAlt": "Los Dragones"
+    },
+    "bestiario/index": {
+      "excerpt": "El bestiario de Meridian reúne a las criaturas, bestias, monstruos y entidades que habitan el mundo, desde depredadores naturales y especies extraordinarias hasta horrores antiguos cuya sola existencia altera el equilibrio de la realidad. Aquí se documentan no solo sus rasgos más visibles, sino también su naturaleza, comportamiento, peligrosidad, hábitats y el lugar que ocupan dentro del imaginari"
+    },
+    "campañas/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arcos narrativos o mesas de juego del universo Meridian."
+    },
+    "clases/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arquetipos, profesiones o vocaciones del universo Meridian."
+    },
+    "eventos/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la cronología y sucesos relevantes del universo Meridian."
+    },
+    "eventos/La_Gran_Fiesta_Del_Baron_Matadragones": {
+      "excerpt": "Hace ochenta años, la guerra que transformó Meridian llegó a su fin… pero no todas sus consecuencias murieron con ella. Durante el conflicto, los elfos recurrieron a una estrategia desesperada: la producción masiva de dragones. Criaturas nacidas para la guerra, criadas sin el tiempo, la disciplina ni el desarrollo que un dragón requiere para convertirse en algo más que un arma. Mientras la guerra "
+    },
+    "mapa/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación geográfica y cartográfica del universo Meridian."
+    },
+    "facciones/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de grupos, órdenes y bandos del universo Meridian."
+    },
+    "personajes/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de figuras clave del universo Meridian."
+    },
+    "personajes/valter-wischard": {
+      "excerpt": "Hechicero de La Corte Solar; alias público “Valter el Matadragones”.",
+      "image": "/img/meridian-contenidos/valter-wischard.png",
+      "imageAlt": "Valter Wischard"
+    },
+    "razas/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de pueblos y linajes del universo Meridian."
+    }
+  }
+}
