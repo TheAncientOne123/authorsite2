@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import clsx from 'clsx';
 import styles from './UniverseSelector.module.css';
 import Link from '@docusaurus/Link';
@@ -8,15 +8,22 @@ const universes = [
   {
     title: 'El Orbe de los Destinos',
     description: 'Un reino amurallado por la historia y la magia, donde los destinos se entrelazan.',
-    image: '/img/portadaLowQual.png',
+    image: '/img/orbe/portadaLowQual.png',
     comingSoon: true,
   },
   {
     title: 'Crónicas de Sangre y Sombra',
     description: 'Oscuridad, sangre, deseo y una guerra secreta que cambiará la historia.',
-    image: '/img/portadaNMLowQual.png',
+    image: '/img/cronicas-sangre/portadaNMLowQual.png',
     path: '/CrSaSo',
     graphPath: '/grafos/sangre-y-sombra',
+    comingSoon: false,
+  },
+  {
+    title: 'Meridian',
+    description: 'Facciones, razas, campañas y un mapa en expansión: el códice de un mundo por descubrir.',
+    image: '/img/meridian-contenidos/meridian-portada.png',
+    path: '/Meridian',
     comingSoon: false,
   },
 ];

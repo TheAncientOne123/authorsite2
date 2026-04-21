@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Link from '@docusaurus/Link';
 import styles from './BookRoll.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -15,7 +15,7 @@ export const books: Book[] = [
   {
     title: 'Necromancia a Medianoche',
     href: 'https://www.amazon.com.mx/Necromancia-Medianoche-Historias-Oscuras-Spanish/dp/B0FHBYZWRS',
-    cover: '/img/portadaNMLowQual.png',
+    cover: '/img/cronicas-sangre/portadaNMLowQual.png',
     year: 'Desde 2025',
     tagline: 'Nueva Ámsterdam, 1929.',
   },

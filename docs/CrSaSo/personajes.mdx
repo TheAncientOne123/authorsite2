@@ -22,4 +22,17 @@ El lector encontrará:
 
 # Buscador 
 ---
-<CardsFromFolder folder="personajes" pluginId="cronicas" />
+<CardsFromFolder
+  folder="personajes"
+  pluginId="cronicas"
+  filterDimensions={[
+    { key: 'asociacion', label: 'Asociación' },
+    { key: 'genero', label: 'Género' },
+    { key: 'clase', label: 'Clase / profesión' },
+    { key: 'aparicion', label: 'Primera aparición' },
+    { key: 'raza', label: 'Raza' },
+    { key: 'nacionalidad', label: 'Nacionalidad' },
+    { key: 'estado', label: 'Estado' },
+    { key: 'libro', label: 'Libro' },
+  ]}
+/>

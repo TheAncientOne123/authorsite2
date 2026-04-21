@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+﻿import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 const FeatureList = [
   {
     title: 'Explora el Universo',
-    image: '/img/universo.png',
+    image: '/img/landing-page/universo.png',
     description: (
       <>
         Sumérgete en los mundos, ciudades, razas y secretos que habitan mis historias.
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Conoce a los personajes',
-    image: '/img/personajes.png',
+    image: '/img/landing-page/personajes.png',
     description: (
       <>
         Cada historia está marcada por las decisiones de sus protagonistas.
@@ -26,7 +26,7 @@ const FeatureList = [
   },
   {
     title: 'Accede a los libros',
-    image: '/img/libros.png',
+    image: '/img/landing-page/libros.png',
     description: (
       <>
         Descubre mis obras publicadas, orden de lectura, datos curiosos, inspiraciones y más.
