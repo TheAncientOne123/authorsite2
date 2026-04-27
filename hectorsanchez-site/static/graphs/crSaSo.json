@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-21T19:39:20.884Z",
+  "generatedAt": "2026-04-22T19:06:45.841Z",
   "universe": "CrSaSo",
   "nodes": [
     {
@@ -57,6 +57,22 @@
       "libro": null,
       "degree": 19,
       "excerpt": "Asalto devastador contra la célula de Los Vinculados; punto de quiebre tras la Semana Negra"
+    },
+    {
+      "id": "libros/La Mujer Carmesí",
+      "label": "La Mujer Carmesí",
+      "category": "libros",
+      "libro": null,
+      "degree": 1,
+      "excerpt": "Continuación anunciada de la saga Crónicas de Sangre y Sombra."
+    },
+    {
+      "id": "libros/Necromancia a Medianoche",
+      "label": "Necromancia a Medianoche",
+      "category": "libros",
+      "libro": null,
+      "degree": 4,
+      "excerpt": "Novela de la saga Crónicas de Sangre y Sombra."
     },
     {
       "id": "familias/Brujas",
@@ -159,20 +175,12 @@
       "excerpt": "Conglomerado petrolero de la familia McCarthy; eje industrial de Nueva Ámsterdam y foco de la conspiración del Elemento 121."
     },
     {
-      "id": "libros/La Mujer Carmesí",
-      "label": "La Mujer Carmesí",
-      "category": "libros",
+      "id": "otros/Elemento 121",
+      "label": "Elemento 121",
+      "category": "otros",
       "libro": null,
-      "degree": 1,
-      "excerpt": "Continuación anunciada de la saga Crónicas de Sangre y Sombra."
-    },
-    {
-      "id": "libros/Necromancia a Medianoche",
-      "label": "Necromancia a Medianoche",
-      "category": "libros",
-      "libro": null,
-      "degree": 4,
-      "excerpt": "Novela de la saga Crónicas de Sangre y Sombra."
+      "degree": 19,
+      "excerpt": "Compuesto alquímico-bioquímico inestable sintetizado en Raven District (Prueba 121); clave en la conspiración de Nueva Ámsterdam."
     },
     {
       "id": "lugares/Atlantic News",
@@ -389,14 +397,6 @@
       "libro": null,
       "degree": 3,
       "excerpt": "Club de jazz clandestino en los subniveles del Centro Histórico; acceso por contraseña semanal bajo una tienda de pianos abandonada. Neutral, con clientela de informantes y seres ambiguos."
-    },
-    {
-      "id": "otros/Elemento 121",
-      "label": "Elemento 121",
-      "category": "otros",
-      "libro": null,
-      "degree": 19,
-      "excerpt": "Compuesto alquímico-bioquímico inestable sintetizado en Raven District (Prueba 121); clave en la conspiración de Nueva Ámsterdam."
     },
     {
       "id": "personajes/Alan McCarthy",
@@ -1661,6 +1661,38 @@
       "target": "personajes/Jessica McCarthy"
     },
     {
+      "source": "lugares/Raven District",
+      "target": "otros/Elemento 121"
+    },
+    {
+      "source": "otros/Elemento 121",
+      "target": "personajes/Tamara Dobrescu"
+    },
+    {
+      "source": "otros/Elemento 121",
+      "target": "personajes/Archie Woodward"
+    },
+    {
+      "source": "otros/Elemento 121",
+      "target": "personajes/Jessica McCarthy"
+    },
+    {
+      "source": "eventos/Desaparicion de Jessica McCarthy",
+      "target": "otros/Elemento 121"
+    },
+    {
+      "source": "lugares/La Refinería McCarthy",
+      "target": "otros/Elemento 121"
+    },
+    {
+      "source": "lugares/Nueva Ámsterdam",
+      "target": "otros/Elemento 121"
+    },
+    {
+      "source": "familias/La Familia Voronin",
+      "target": "otros/Elemento 121"
+    },
+    {
       "source": "lugares/Atlantic News",
       "target": "personajes/Jack Fox"
     },
@@ -2266,10 +2298,6 @@
     },
     {
       "source": "lugares/Raven District",
-      "target": "otros/Elemento 121"
-    },
-    {
-      "source": "lugares/Raven District",
       "target": "personajes/Tamara Dobrescu"
     },
     {
@@ -2331,34 +2359,6 @@
     {
       "source": "lugares/Velvet Trumpet",
       "target": "lugares/Whispering Keys"
-    },
-    {
-      "source": "otros/Elemento 121",
-      "target": "personajes/Tamara Dobrescu"
-    },
-    {
-      "source": "otros/Elemento 121",
-      "target": "personajes/Archie Woodward"
-    },
-    {
-      "source": "otros/Elemento 121",
-      "target": "personajes/Jessica McCarthy"
-    },
-    {
-      "source": "eventos/Desaparicion de Jessica McCarthy",
-      "target": "otros/Elemento 121"
-    },
-    {
-      "source": "lugares/La Refinería McCarthy",
-      "target": "otros/Elemento 121"
-    },
-    {
-      "source": "lugares/Nueva Ámsterdam",
-      "target": "otros/Elemento 121"
-    },
-    {
-      "source": "familias/La Familia Voronin",
-      "target": "otros/Elemento 121"
     },
     {
       "source": "personajes/Alan McCarthy",

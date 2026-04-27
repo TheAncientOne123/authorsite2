@@ -3,7 +3,7 @@ title: Bestiario
 sidebar_label: Bestiario
 ---
 
-import CardsFromFolder from '@site/src/components/Cards/CardsFromFolder';
+import BestiaryCard from '@site/src/components/BestiaryCard';
 
 # Bestiario
 
@@ -13,4 +13,13 @@ Aquí se documentan no solo sus rasgos más visibles, sino también su naturalez
 
 Este apartado existe como una referencia para comprender mejor las amenazas, maravillas y misterios de Meridian. Con el tiempo, sus entradas irán ampliándose para sustituir fichas provisionales por contenido canónico más detallado.
 
-<CardsFromFolder folder="bestiario" pluginId="meridian" />
+---
+
+<BestiaryCard
+  title="Dragones"
+  to="/Meridian/bestiario/dragones"
+  image={{ src: '/img/meridian-contenidos/drakon.jpg', alt: 'Wyvern' }}
+>
+  Wyvern, Drakon y Leviatán: tres linajes distintos unidos por longevidad, magia y poder destructivo.
+  Desde el vuelo bípedo de los wyvern hasta los reinos acuáticos de los leviatanes.
+</BestiaryCard>
