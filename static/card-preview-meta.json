@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-22T19:06:46.048Z",
+  "generatedAt": "2026-05-17T03:58:27.761Z",
   "orbe": {
     "index": {
       "excerpt": "Bienvenido al códice del universo de El Orbe de los Destinos. La documentación detallada de este universo se irá ampliando con el tiempo; mientras tanto puedes explorar $1."
@@ -45,6 +45,46 @@
     "eventos/Masacre de la Catedral de Santa Regina": {
       "excerpt": "Asalto devastador contra la célula de Los Vinculados; punto de quiebre tras la Semana Negra"
     },
+    "familias/Brujas": {
+      "excerpt": "Linaje arcano de mujeres vinculadas a un cazador; magia de pacto, revelación y protección que opera en la sombra de Nueva Ámsterdam.",
+      "image": "/img/cronicas-sangre/simbolos/luna.png",
+      "imageAlt": "Brujas"
+    },
+    "familias/Cazadores": {
+      "excerpt": "Orden operativa nacida para combatir a los Rapax (vampiros) y fuerzas afines; su poder se completa al vincularse con una bruja.",
+      "image": "/img/cronicas-sangre/simbolos/sol.png",
+      "imageAlt": "Cazadores"
+    },
+    "familias/Familia Puckett": {
+      "excerpt": "Dinastía local propietaria del Balneario Rushmore; familia materna de Jessica McCarthy y aliada por matrimonio con los McCarthy."
+    },
+    "familias/La Cruz": {
+      "excerpt": "Alias provisional usado por Cassian y Lucía para identificar a una red clandestina de signo religioso; luego asociada formalmente con “Los Vinculados”."
+    },
+    "familias/La Familia Chapman": {
+      "excerpt": "Dinastía empresarial de la alta residencial de Nueva Ámsterdam; dueños de una firma de colchones de lujo y eje del caso “El Cuarto Rojo”."
+    },
+    "familias/La Familia McCarthy": {
+      "excerpt": "Dinastía petrolera de Nueva Ámsterdam; poder económico y político detrás de McCarthy Petroleum, eje de los eventos ligados al Elemento 121."
+    },
+    "familias/La Familia Santorelli": {
+      "excerpt": "Mafia italiana de perfil discreto y estrategia diplomática; protectores oficiosos de la célula de los Vinculados en Nueva Ámsterdam."
+    },
+    "familias/La Familia Tornatore": {
+      "excerpt": "Mafia italiana asentada en Nueva Ámsterdam; imperio mixto de crimen y fachadas legales, rival histórico de los Santorelli."
+    },
+    "familias/La Familia Voronin": {
+      "excerpt": "Clan vampírico ancestral de raíz carpática; culto profético devoto de la Reina de la Oscuridad y antagonista central en la crisis McCarthy."
+    },
+    "familias/La Familia Zaikov": {
+      "excerpt": "Clan mafioso balcánico que gobierna El Nido con mano firme y fachada comunitaria; aliados tácticos de Cassian Thorne en momentos clave."
+    },
+    "familias/Los Vinculados": {
+      "excerpt": "Orden secreta de brujas y cazadores unida por un vínculo arcano para erradicar a los Rapax (vampiros); su célula en Nueva Ámsterdam cayó en la Masacre de la Catedral."
+    },
+    "familias/McCarthy Petroleum": {
+      "excerpt": "Conglomerado petrolero de la familia McCarthy; eje industrial de Nueva Ámsterdam y foco de la conspiración del Elemento 121."
+    },
     "libros/index": {
       "excerpt": "Fichas y referencias a las novelas de Crónicas de Sangre y Sombra. - $1 - $1"
     },
@@ -53,6 +93,9 @@
     },
     "libros/Necromancia a Medianoche": {
       "excerpt": "Obra central de Crónicas de Sangre y Sombra. Puedes enlazar aquí desde personajes y lugares; para comprar la edición impresa o digital visita la página de inicio del sitio (sección «Adquiere mis libros»)."
+    },
+    "otros/Elemento 121": {
+      "excerpt": "Compuesto alquímico-bioquímico inestable sintetizado en Raven District (Prueba 121); clave en la conspiración de Nueva Ámsterdam."
     },
     "lugares/Atlantic News": {
       "excerpt": "Principal corporación periodística de Nueva Ámsterdam, fundada por la familia Fox y núcleo informativo de la costa este."
@@ -139,49 +182,6 @@
     },
     "lugares/Whispering Keys": {
       "excerpt": "Club de jazz clandestino en los subniveles del Centro Histórico; acceso por contraseña semanal bajo una tienda de pianos abandonada. Neutral, con clientela de informantes y seres ambiguos."
-    },
-    "familias/Brujas": {
-      "excerpt": "Linaje arcano de mujeres vinculadas a un cazador; magia de pacto, revelación y protección que opera en la sombra de Nueva Ámsterdam.",
-      "image": "/img/cronicas-sangre/simbolos/luna.png",
-      "imageAlt": "Brujas"
-    },
-    "familias/Cazadores": {
-      "excerpt": "Orden operativa nacida para combatir a los Rapax (vampiros) y fuerzas afines; su poder se completa al vincularse con una bruja.",
-      "image": "/img/cronicas-sangre/simbolos/sol.png",
-      "imageAlt": "Cazadores"
-    },
-    "familias/Familia Puckett": {
-      "excerpt": "Dinastía local propietaria del Balneario Rushmore; familia materna de Jessica McCarthy y aliada por matrimonio con los McCarthy."
-    },
-    "familias/La Cruz": {
-      "excerpt": "Alias provisional usado por Cassian y Lucía para identificar a una red clandestina de signo religioso; luego asociada formalmente con “Los Vinculados”."
-    },
-    "familias/La Familia Chapman": {
-      "excerpt": "Dinastía empresarial de la alta residencial de Nueva Ámsterdam; dueños de una firma de colchones de lujo y eje del caso “El Cuarto Rojo”."
-    },
-    "familias/La Familia McCarthy": {
-      "excerpt": "Dinastía petrolera de Nueva Ámsterdam; poder económico y político detrás de McCarthy Petroleum, eje de los eventos ligados al Elemento 121."
-    },
-    "familias/La Familia Santorelli": {
-      "excerpt": "Mafia italiana de perfil discreto y estrategia diplomática; protectores oficiosos de la célula de los Vinculados en Nueva Ámsterdam."
-    },
-    "familias/La Familia Tornatore": {
-      "excerpt": "Mafia italiana asentada en Nueva Ámsterdam; imperio mixto de crimen y fachadas legales, rival histórico de los Santorelli."
-    },
-    "familias/La Familia Voronin": {
-      "excerpt": "Clan vampírico ancestral de raíz carpática; culto profético devoto de la Reina de la Oscuridad y antagonista central en la crisis McCarthy."
-    },
-    "familias/La Familia Zaikov": {
-      "excerpt": "Clan mafioso balcánico que gobierna El Nido con mano firme y fachada comunitaria; aliados tácticos de Cassian Thorne en momentos clave."
-    },
-    "familias/Los Vinculados": {
-      "excerpt": "Orden secreta de brujas y cazadores unida por un vínculo arcano para erradicar a los Rapax (vampiros); su célula en Nueva Ámsterdam cayó en la Masacre de la Catedral."
-    },
-    "familias/McCarthy Petroleum": {
-      "excerpt": "Conglomerado petrolero de la familia McCarthy; eje industrial de Nueva Ámsterdam y foco de la conspiración del Elemento 121."
-    },
-    "otros/Elemento 121": {
-      "excerpt": "Compuesto alquímico-bioquímico inestable sintetizado en Raven District (Prueba 121); clave en la conspiración de Nueva Ámsterdam."
     },
     "personajes/Alan McCarthy": {
       "excerpt": "Empresario, patriarca de la familia McCarthy.",
@@ -383,11 +383,17 @@
     "eventos/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la cronología y sucesos relevantes del universo Meridian."
     },
+    "eventos/la-masacre-de-valona": {
+      "excerpt": "Val'Ona, cuyo nombre significa la ciudad de las cien cascadas doradas, fue durante el apogeo del Imperio Ranamano la ciudad con mayor población de salamandras dentro de sus dominios. En términos prácticos, no solo era una ciudad importante: era la capital soñada de las Salamandras Libres, el símbolo de lo que algún día creían poder reclamar como propio. Las Salamandras Libres habitaban la Isla Man"
+    },
     "eventos/La_Gran_Fiesta_Del_Baron_Matadragones": {
       "excerpt": "Hace ochenta años, la guerra que transformó Meridian llegó a su fin… pero no todas sus consecuencias murieron con ella. Durante el conflicto, los elfos recurrieron a una estrategia desesperada: la producción masiva de dragones. Criaturas nacidas para la guerra, criadas sin el tiempo, la disciplina ni el desarrollo que un dragón requiere para convertirse en algo más que un arma. Mientras la guerra "
     },
     "clases/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arquetipos, profesiones o vocaciones del universo Meridian."
+    },
+    "facciones/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de grupos, órdenes y bandos del universo Meridian."
     },
     "personajes/aquila-milvus": {
       "excerpt": "Guerrero de la Casa Milvus, respetado por su linaje… temido por lo que oculta.",
@@ -501,9 +507,6 @@
       "excerpt": "Aventurero que tras vender todo excepto sus pantalones, obtuvo un hacha colosal.",
       "image": "/img/meridian-contenidos/zab-norgram.png",
       "imageAlt": "Zab Norgram"
-    },
-    "facciones/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de grupos, órdenes y bandos del universo Meridian."
     },
     "mapa/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación geográfica y cartográfica del universo Meridian."

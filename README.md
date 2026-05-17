@@ -1,4 +1,4 @@
-# El Códice (hectorsanchez-site)
+# El Códice
 
 Sitio estático con [Docusaurus](https://docusaurus.io/). El blog del preset está desactivado en `docusaurus.config.js`; la documentación vive en los plugins `orbe` y `cronicas`.
 
@@ -42,7 +42,7 @@ Genera el sitio en la carpeta `build`.
 
 ## Despliegue
 
-El repositorio incluye un workflow de GitHub Actions que ejecuta `npm ci` y `npm run build` dentro de `hectorsanchez-site` y publica el artefacto en GitHub Pages.
+El repositorio incluye un workflow de GitHub Actions que ejecuta `npm ci` y `npm run build` en la raíz y publica el artefacto en GitHub Pages.
 
 Despliegue manual con la CLI de Docusaurus (rama `gh-pages`):
 
