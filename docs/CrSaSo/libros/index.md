@@ -1,8 +1,13 @@
 ---
-id: index-libros
 title: Libros
+updated: 2026-05-17
+type: libro
+saga: crsaso
+libro: necromancia-medianoche
+id: index-libros
 sidebar_label: Libros
 ---
+
 
 # Libros de la saga
 

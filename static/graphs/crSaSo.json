@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-05-17T03:58:27.586Z",
+  "generatedAt": "2026-05-17T22:36:45.245Z",
   "universe": "CrSaSo",
   "nodes": [
+    {
+      "id": "objetos-conceptos",
+      "label": "Objetos y conceptos",
+      "category": "raíz",
+      "libro": null,
+      "degree": 0,
+      "excerpt": "Directorio de otros contenidos de Crónicas de Sangre y Sombra."
+    },
+    {
+      "id": "eventos/Batalla en la Refinería McCarthy",
+      "label": "Batalla en la Refinería McCarthy",
+      "category": "eventos",
+      "libro": null,
+      "degree": 0
+    },
     {
       "id": "eventos/Caso resuelto",
       "label": "Caso Resuelto",
@@ -27,11 +42,18 @@
       "excerpt": "Escena del crimen inicial del caso"
     },
     {
+      "id": "eventos/El Incidente de Raven District",
+      "label": "El Incidente de Raven District",
+      "category": "eventos",
+      "libro": null,
+      "degree": 0
+    },
+    {
       "id": "eventos/Interrogación de Archie Woodward",
       "label": "La interrogación de Archie Woodward",
       "category": "eventos",
       "libro": null,
-      "degree": 19,
+      "degree": 18,
       "excerpt": "Entrevista táctica en la comisaría; confirma alias “Aldric Shadowborne” y abre la pista hacia la Infiltración Católica"
     },
     {
@@ -63,7 +85,7 @@
       "label": "Brujas",
       "category": "familias",
       "libro": null,
-      "degree": 16,
+      "degree": 17,
       "excerpt": "Linaje arcano de mujeres vinculadas a un cazador; magia de pacto, revelación y protección que opera en la sombra de Nueva Ámsterdam.",
       "image": "/img/cronicas-sangre/simbolos/luna.png",
       "imageAlt": "Brujas"
@@ -79,11 +101,18 @@
       "imageAlt": "Cazadores"
     },
     {
+      "id": "familias/Familia De Fazio",
+      "label": "Familia De Fazio",
+      "category": "familias",
+      "libro": null,
+      "degree": 0
+    },
+    {
       "id": "familias/Familia Puckett",
       "label": "Familia Puckett",
       "category": "familias",
       "libro": null,
-      "degree": 6,
+      "degree": 5,
       "excerpt": "Dinastía local propietaria del Balneario Rushmore; familia materna de Jessica McCarthy y aliada por matrimonio con los McCarthy."
     },
     {
@@ -107,7 +136,7 @@
       "label": "Familia McCarthy",
       "category": "familias",
       "libro": null,
-      "degree": 18,
+      "degree": 17,
       "excerpt": "Dinastía petrolera de Nueva Ámsterdam; poder económico y político detrás de McCarthy Petroleum, eje de los eventos ligados al Elemento 121."
     },
     {
@@ -171,7 +200,7 @@
       "label": "Necromancia a Medianoche",
       "category": "libros",
       "libro": null,
-      "degree": 4,
+      "degree": 3,
       "excerpt": "Novela de la saga Crónicas de Sangre y Sombra."
     },
     {
@@ -235,7 +264,7 @@
       "label": "Balneario Rushmore",
       "category": "lugares",
       "libro": null,
-      "degree": 21,
+      "degree": 20,
       "excerpt": "Parque acuático temático abandonado en las afueras de Nueva Ámsterdam; convertido en laboratorio encubierto ligado al Elemento 121 y escenario de infiltraciones y confrontes clave.",
       "image": "/img/cronicas-sangre/lugares/balneario-rushmore.png",
       "imageAlt": "Balneario Rushmore"
@@ -255,7 +284,7 @@
       "label": "El Nido",
       "category": "lugares",
       "libro": null,
-      "degree": 17,
+      "degree": 16,
       "excerpt": "Barrio densamente poblado y núcleo cultural de Nueva Ámsterdam; control comunitario con tolerancia ambigua, economía informal y conexiones con la Familia Zaikov."
     },
     {
@@ -291,7 +320,7 @@
       "label": "La Comisaría de Nueva Ámsterdam",
       "category": "lugares",
       "libro": null,
-      "degree": 17,
+      "degree": 18,
       "excerpt": "Sede principal de la policía local; centro operativo de investigaciones, interrogatorios y forense. Epicentro narrativo durante El Cuarto Rojo y la antesala de la Semana Negra."
     },
     {
@@ -307,8 +336,15 @@
       "label": "Mansión McCarthy",
       "category": "lugares",
       "libro": null,
-      "degree": 29,
+      "degree": 28,
       "excerpt": "Residencia señorial del Distrito Norte; símbolo de poder discreto de la Familia McCarthy y escenario del asedio Voronin previo al clímax en la Refinería."
+    },
+    {
+      "id": "lugares/maple Valley",
+      "label": "maple Valley",
+      "category": "lugares",
+      "libro": null,
+      "degree": 0
     },
     {
       "id": "lugares/Mercado Viejo",
@@ -323,7 +359,7 @@
       "label": "Monte Galbrook",
       "category": "lugares",
       "libro": null,
-      "degree": 11,
+      "degree": 10,
       "excerpt": "Mirador forestal y zona natural al norte de Nueva Ámsterdam; escenario de la desaparición de Jessica McCarthy y foco de rumores no humanos."
     },
     {
@@ -339,7 +375,7 @@
       "label": "Pizzas’ Juan",
       "category": "lugares",
       "libro": null,
-      "degree": 8,
+      "degree": 7,
       "excerpt": "Pizzería mexicana de barrio en Nueva Ámsterdam; pausa íntima y táctica de Cassian y Lucía durante “Caso Resuelto”, donde atan cabos sobre Alan McCarthy y el Elemento 121."
     },
     {
@@ -391,19 +427,96 @@
       "excerpt": "Club de jazz clandestino en los subniveles del Centro Histórico; acceso por contraseña semanal bajo una tienda de pianos abandonada. Neutral, con clientela de informantes y seres ambiguos."
     },
     {
-      "id": "otros/Elemento 121",
-      "label": "Elemento 121",
-      "category": "otros",
+      "id": "objetos-conceptos/Criptidae Librum",
+      "label": "Criptidae Librum",
+      "category": "objetos-conceptos",
       "libro": null,
-      "degree": 19,
+      "degree": 0
+    },
+    {
+      "id": "objetos-conceptos/Daga de Obsidiana",
+      "label": "Daga de Obsidiana",
+      "category": "objetos-conceptos",
+      "libro": null,
+      "degree": 0
+    },
+    {
+      "id": "objetos-conceptos/Elemento 121",
+      "label": "Elemento 121",
+      "category": "objetos-conceptos",
+      "libro": null,
+      "degree": 10,
       "excerpt": "Compuesto alquímico-bioquímico inestable sintetizado en Raven District (Prueba 121); clave en la conspiración de Nueva Ámsterdam."
+    },
+    {
+      "id": "objetos-conceptos/Monedas de Latón",
+      "label": "Monedas de Latón",
+      "category": "objetos-conceptos",
+      "libro": null,
+      "degree": 0
+    },
+    {
+      "id": "objetos-conceptos/Munición Especial",
+      "label": "Munición Especial",
+      "category": "objetos-conceptos",
+      "libro": null,
+      "degree": 0
+    },
+    {
+      "id": "objetos-conceptos/Profecía de la Reina de la Oscuridad",
+      "label": "Profecía de la Reina de la Oscuridad",
+      "category": "objetos-conceptos",
+      "libro": null,
+      "degree": 0
+    },
+    {
+      "id": "objetos-conceptos/Profecía de los Vinculados",
+      "label": "Profecía de los Vinculados",
+      "category": "objetos-conceptos",
+      "libro": null,
+      "degree": 0
+    },
+    {
+      "id": "objetos-conceptos/Recetario de las Brujas",
+      "label": "Recetario de las Brujas",
+      "category": "objetos-conceptos",
+      "libro": null,
+      "degree": 0
+    },
+    {
+      "id": "objetos-conceptos/Reina de la Oscuridad",
+      "label": "Reina de la Oscuridad",
+      "category": "objetos-conceptos",
+      "libro": null,
+      "degree": 0
+    },
+    {
+      "id": "objetos-conceptos/Reino de las sombras",
+      "label": "Reino de las sombras",
+      "category": "objetos-conceptos",
+      "libro": null,
+      "degree": 0
+    },
+    {
+      "id": "objetos-conceptos/Tomo de los Vinculados",
+      "label": "Tomo de los Vinculados",
+      "category": "objetos-conceptos",
+      "libro": null,
+      "degree": 0
+    },
+    {
+      "id": "objetos-conceptos/Vinculo de Sangre",
+      "label": "Vinculo de Sangre",
+      "category": "objetos-conceptos",
+      "libro": null,
+      "degree": 0
     },
     {
       "id": "personajes/Alan McCarthy",
       "label": "Alan McCarthy",
       "category": "personajes",
       "libro": null,
-      "degree": 19,
+      "degree": 18,
       "excerpt": "Empresario, patriarca de la familia McCarthy.",
       "image": "/img/cronicas-sangre/personajes/alan-mccarthy.jpg",
       "imageAlt": "Alan McCarthy"
@@ -433,7 +546,7 @@
       "label": "Angelina Pollard",
       "category": "personajes",
       "libro": null,
-      "degree": 13,
+      "degree": 12,
       "excerpt": "Alias público de Tamara Dobrescu; identidad usada en contextos sociales y de investigación",
       "image": "/img/cronicas-sangre/personajes/angelina-pollard.png",
       "imageAlt": "Angelina Pollard"
@@ -449,6 +562,14 @@
       "imageAlt": "Angelo Tornatore"
     },
     {
+      "id": "personajes/Anya Rudzki",
+      "label": "Anya Rudzki",
+      "category": "personajes",
+      "libro": null,
+      "degree": 0,
+      "excerpt": "Anya es una operativa de seguridad profesional de alto rango, reconocida como la mano derecha de Jayson Branch, el jefe de seguridad de la familia McCarthy en Nueva Ámsterdam. Su rol principal consiste en la coordinación operativa y protección táctica de los intereses de la familia frente a amenazas externas, destacándose por su temple y lealtad durante la crisis de los Rapax Hominum. Aparece como una figura clave en la organización de la defensa de la mansión McCarthy, siendo una de las pocas integrantes de su unidad que logra sobrevivir al asalto directo de la facción de los Voronin. Anya es"
+    },
+    {
       "id": "personajes/Archie Woodward",
       "label": "Archie Woodward",
       "category": "personajes",
@@ -459,31 +580,41 @@
       "imageAlt": "Archie Woodward"
     },
     {
+      "id": "personajes/Caleb Thorne",
+      "label": "Caleb Thorne",
+      "category": "personajes",
+      "libro": "necromancia-medianoche",
+      "degree": 2,
+      "excerpt": "Padre de Cassian Thorne; muerto como héroe al interceptar balas destinadas a Dorian Blackwood durante una emboscada mafiosa",
+      "image": "/img/cronicas-sangre/personajes/caleb-thorne.jpg",
+      "imageAlt": "Caleb Thorne"
+    },
+    {
       "id": "personajes/Cassian Thorne",
       "label": "Cassian Thorne",
       "category": "personajes",
       "libro": "necromancia-medianoche",
-      "degree": 50,
+      "degree": 54,
       "excerpt": "Detective de la Policía de Nueva Ámsterdam; protagonista de Necromancia a Medianoche",
       "image": "/img/cronicas-sangre/personajes/cassian-thorne.jpg",
       "imageAlt": "Cassian Thorne"
     },
     {
-      "id": "personajes/Cecilia Giannotti",
-      "label": "Cecilia Giannotti",
+      "id": "personajes/Cecilia Amadeo",
+      "label": "Cecilia Amadeo",
       "category": "personajes",
       "libro": null,
       "degree": 11,
       "excerpt": "Bruja vinculada a la Catedral de Santa Regina; mentora de Cassian y Lucia",
       "image": "/img/cronicas-sangre/personajes/cecilia-giannotti.png",
-      "imageAlt": "Cecilia Giannotti"
+      "imageAlt": "Cecilia Amadeo"
     },
     {
       "id": "personajes/Devin Kirby",
       "label": "Devin Kirby",
       "category": "personajes",
       "libro": null,
-      "degree": 12,
+      "degree": 11,
       "excerpt": "Camarógrafo de Atlantic News",
       "image": "/img/cronicas-sangre/personajes/devin-kirby.png",
       "imageAlt": "Devin Kirby"
@@ -493,7 +624,7 @@
       "label": "Dorian Blackwood",
       "category": "personajes",
       "libro": null,
-      "degree": 18,
+      "degree": 16,
       "excerpt": "Jefe de detectives de la comisaría de Nueva Ámsterdam",
       "image": "/img/cronicas-sangre/personajes/dorian-blackwood.jpg",
       "imageAlt": "Dorian Blackwood"
@@ -623,7 +754,7 @@
       "label": "Lucia Sinclair",
       "category": "personajes",
       "libro": "necromancia-medianoche",
-      "degree": 51,
+      "degree": 46,
       "excerpt": "Agente especial del Buró; co-protagonista y eje federal de la investigación en Nueva Ámsterdam",
       "image": "/img/cronicas-sangre/personajes/lucia-sinclair.jpg",
       "imageAlt": "Lucia Sinclair"
@@ -806,7 +937,7 @@
     },
     {
       "source": "eventos/Desaparicion de Jessica McCarthy",
-      "target": "personajes/Cecilia Giannotti"
+      "target": "personajes/Cecilia Amadeo"
     },
     {
       "source": "eventos/Desaparicion de Jessica McCarthy",
@@ -974,10 +1105,6 @@
     },
     {
       "source": "eventos/Interrogación de Archie Woodward",
-      "target": "otros/Elemento 121"
-    },
-    {
-      "source": "eventos/Interrogación de Archie Woodward",
       "target": "familias/La Cruz"
     },
     {
@@ -1042,7 +1169,7 @@
     },
     {
       "source": "eventos/La Infiltración Católica",
-      "target": "personajes/Cecilia Giannotti"
+      "target": "personajes/Cecilia Amadeo"
     },
     {
       "source": "eventos/La Infiltración Católica",
@@ -1126,7 +1253,7 @@
     },
     {
       "source": "eventos/Masacre de la Catedral de Santa Regina",
-      "target": "personajes/Cecilia Giannotti"
+      "target": "personajes/Cecilia Amadeo"
     },
     {
       "source": "eventos/Masacre de la Catedral de Santa Regina",
@@ -1198,7 +1325,7 @@
     },
     {
       "source": "familias/Brujas",
-      "target": "personajes/Cecilia Giannotti"
+      "target": "personajes/Cecilia Amadeo"
     },
     {
       "source": "familias/Brujas",
@@ -1267,10 +1394,6 @@
     {
       "source": "familias/Familia Puckett",
       "target": "lugares/El Balneario Rushmore"
-    },
-    {
-      "source": "familias/Familia Puckett",
-      "target": "otros/Elemento 121"
     },
     {
       "source": "familias/Familia Puckett",
@@ -1385,10 +1508,6 @@
       "target": "lugares/Nueva Ámsterdam"
     },
     {
-      "source": "familias/La Familia McCarthy",
-      "target": "otros/Elemento 121"
-    },
-    {
       "source": "familias/La Familia Santorelli",
       "target": "lugares/Centro Histórico"
     },
@@ -1426,7 +1545,7 @@
     },
     {
       "source": "familias/La Familia Santorelli",
-      "target": "personajes/Cecilia Giannotti"
+      "target": "personajes/Cecilia Amadeo"
     },
     {
       "source": "familias/La Familia Tornatore",
@@ -1574,7 +1693,7 @@
     },
     {
       "source": "familias/Los Vinculados",
-      "target": "personajes/Cecilia Giannotti"
+      "target": "personajes/Cecilia Amadeo"
     },
     {
       "source": "familias/Cazadores",
@@ -1643,10 +1762,6 @@
     {
       "source": "familias/McCarthy Petroleum",
       "target": "personajes/Tamara Dobrescu"
-    },
-    {
-      "source": "familias/McCarthy Petroleum",
-      "target": "otros/Elemento 121"
     },
     {
       "source": "familias/McCarthy Petroleum",
@@ -1722,7 +1837,7 @@
     },
     {
       "source": "lugares/Catedral de Santa Regina",
-      "target": "personajes/Cecilia Giannotti"
+      "target": "personajes/Cecilia Amadeo"
     },
     {
       "source": "lugares/Centro Histórico",
@@ -1827,10 +1942,6 @@
     {
       "source": "lugares/El Balneario Rushmore",
       "target": "personajes/Anastasia Dobrescu"
-    },
-    {
-      "source": "lugares/El Balneario Rushmore",
-      "target": "otros/Elemento 121"
     },
     {
       "source": "lugares/El Balneario Rushmore",
@@ -2074,10 +2185,6 @@
     },
     {
       "source": "lugares/Mansión McCarthy",
-      "target": "otros/Elemento 121"
-    },
-    {
-      "source": "lugares/Mansión McCarthy",
       "target": "personajes/Jessica McCarthy"
     },
     {
@@ -2181,10 +2288,6 @@
       "target": "lugares/Monte Galbrook"
     },
     {
-      "source": "lugares/Monte Galbrook",
-      "target": "otros/Elemento 121"
-    },
-    {
       "source": "familias/La Familia McCarthy",
       "target": "lugares/Monte Galbrook"
     },
@@ -2249,10 +2352,6 @@
       "target": "personajes/Alan McCarthy"
     },
     {
-      "source": "lugares/Pizzas' Juan",
-      "target": "otros/Elemento 121"
-    },
-    {
       "source": "eventos/La Semana Negra",
       "target": "lugares/Pizzas' Juan"
     },
@@ -2263,10 +2362,6 @@
     {
       "source": "lugares/Nueva Ámsterdam",
       "target": "lugares/Raven District"
-    },
-    {
-      "source": "lugares/Raven District",
-      "target": "otros/Elemento 121"
     },
     {
       "source": "lugares/Raven District",
@@ -2333,40 +2428,44 @@
       "target": "lugares/Whispering Keys"
     },
     {
-      "source": "otros/Elemento 121",
+      "source": "lugares/Raven District",
+      "target": "objetos-conceptos/Elemento 121"
+    },
+    {
+      "source": "objetos-conceptos/Elemento 121",
       "target": "personajes/Tamara Dobrescu"
     },
     {
-      "source": "otros/Elemento 121",
+      "source": "objetos-conceptos/Elemento 121",
       "target": "personajes/Archie Woodward"
     },
     {
-      "source": "otros/Elemento 121",
+      "source": "familias/McCarthy Petroleum",
+      "target": "objetos-conceptos/Elemento 121"
+    },
+    {
+      "source": "objetos-conceptos/Elemento 121",
       "target": "personajes/Jessica McCarthy"
     },
     {
       "source": "eventos/Desaparicion de Jessica McCarthy",
-      "target": "otros/Elemento 121"
+      "target": "objetos-conceptos/Elemento 121"
     },
     {
       "source": "lugares/La Refinería McCarthy",
-      "target": "otros/Elemento 121"
+      "target": "objetos-conceptos/Elemento 121"
     },
     {
       "source": "lugares/Nueva Ámsterdam",
-      "target": "otros/Elemento 121"
+      "target": "objetos-conceptos/Elemento 121"
     },
     {
       "source": "familias/La Familia Voronin",
-      "target": "otros/Elemento 121"
+      "target": "objetos-conceptos/Elemento 121"
     },
     {
       "source": "personajes/Alan McCarthy",
       "target": "personajes/Jessica McCarthy"
-    },
-    {
-      "source": "otros/Elemento 121",
-      "target": "personajes/Alan McCarthy"
     },
     {
       "source": "personajes/Alan McCarthy",
@@ -2429,10 +2528,6 @@
       "target": "personajes/Marco Giannotti"
     },
     {
-      "source": "otros/Elemento 121",
-      "target": "personajes/Angelina Pollard"
-    },
-    {
       "source": "familias/McCarthy Petroleum",
       "target": "personajes/Angelina Pollard"
     },
@@ -2489,24 +2584,44 @@
       "target": "personajes/Tamara Dobrescu"
     },
     {
+      "source": "lugares/La Comisaría de Nueva Ámsterdam",
+      "target": "personajes/Caleb Thorne"
+    },
+    {
+      "source": "personajes/Caleb Thorne",
+      "target": "personajes/Cassian Thorne"
+    },
+    {
+      "source": "personajes/Cassian Thorne",
+      "target": "personajes/Irene Zaikov"
+    },
+    {
       "source": "personajes/Cassian Thorne",
       "target": "personajes/Lucia Sinclair"
+    },
+    {
+      "source": "familias/Brujas",
+      "target": "personajes/Cassian Thorne"
+    },
+    {
+      "source": "personajes/Cassian Thorne",
+      "target": "personajes/Tamara Dobrescu"
     },
     {
       "source": "lugares/El Nido",
       "target": "personajes/Cassian Thorne"
     },
     {
-      "source": "personajes/Cassian Thorne",
-      "target": "personajes/Oliver Henderson"
+      "source": "objetos-conceptos/Elemento 121",
+      "target": "personajes/Cassian Thorne"
     },
     {
       "source": "personajes/Cassian Thorne",
-      "target": "personajes/Dorian Blackwood"
+      "target": "personajes/Marco Giannotti"
     },
     {
       "source": "personajes/Cassian Thorne",
-      "target": "personajes/Pollione Tornatore"
+      "target": "personajes/Cecilia Amadeo"
     },
     {
       "source": "personajes/Cassian Thorne",
@@ -2514,23 +2629,31 @@
     },
     {
       "source": "personajes/Cassian Thorne",
-      "target": "personajes/Tamara Dobrescu"
-    },
-    {
-      "source": "personajes/Cecilia Giannotti",
-      "target": "personajes/Marco Giannotti"
+      "target": "personajes/Oliver Henderson"
     },
     {
       "source": "personajes/Cassian Thorne",
-      "target": "personajes/Cecilia Giannotti"
+      "target": "personajes/Rezniv Voronin"
     },
     {
-      "source": "personajes/Cecilia Giannotti",
+      "source": "personajes/Cassian Thorne",
+      "target": "personajes/Dorian Blackwood"
+    },
+    {
+      "source": "personajes/Anastasia Dobrescu",
+      "target": "personajes/Cassian Thorne"
+    },
+    {
+      "source": "personajes/Cecilia Amadeo",
+      "target": "personajes/Marco Giannotti"
+    },
+    {
+      "source": "personajes/Cecilia Amadeo",
       "target": "personajes/Lucia Sinclair"
     },
     {
       "source": "lugares/Nueva Ámsterdam",
-      "target": "personajes/Cecilia Giannotti"
+      "target": "personajes/Cecilia Amadeo"
     },
     {
       "source": "personajes/Devin Kirby",
@@ -2543,18 +2666,6 @@
     {
       "source": "personajes/Devin Kirby",
       "target": "personajes/Susan Barnes"
-    },
-    {
-      "source": "libros/Necromancia a Medianoche",
-      "target": "personajes/Dorian Blackwood"
-    },
-    {
-      "source": "personajes/Dorian Blackwood",
-      "target": "personajes/Lucia Sinclair"
-    },
-    {
-      "source": "personajes/Dorian Blackwood",
-      "target": "personajes/Veronica Black"
     },
     {
       "source": "personajes/Angelo Tornatore",
@@ -2703,10 +2814,6 @@
     {
       "source": "lugares/Mansión McCarthy",
       "target": "personajes/Ibrahim Ramazan Zaikov"
-    },
-    {
-      "source": "personajes/Cassian Thorne",
-      "target": "personajes/Irene Zaikov"
     },
     {
       "source": "lugares/El Nido",
@@ -2877,34 +2984,6 @@
       "target": "personajes/Logan Crane"
     },
     {
-      "source": "lugares/El Nido",
-      "target": "personajes/Lucia Sinclair"
-    },
-    {
-      "source": "personajes/Lucia Sinclair",
-      "target": "personajes/Veronica Black"
-    },
-    {
-      "source": "personajes/Lucia Sinclair",
-      "target": "personajes/Marco Giannotti"
-    },
-    {
-      "source": "personajes/Anastasia Dobrescu",
-      "target": "personajes/Lucia Sinclair"
-    },
-    {
-      "source": "otros/Elemento 121",
-      "target": "personajes/Lucia Sinclair"
-    },
-    {
-      "source": "personajes/Devin Kirby",
-      "target": "personajes/Lucia Sinclair"
-    },
-    {
-      "source": "personajes/Lucia Sinclair",
-      "target": "personajes/Oliver Henderson"
-    },
-    {
       "source": "lugares/Club Palace",
       "target": "personajes/Maisie Stewart"
     },
@@ -2925,7 +3004,7 @@
       "target": "personajes/Maisie Stewart"
     },
     {
-      "source": "personajes/Cassian Thorne",
+      "source": "personajes/Lucia Sinclair",
       "target": "personajes/Marco Giannotti"
     },
     {
@@ -2953,6 +3032,10 @@
       "target": "personajes/Tamara Dobrescu"
     },
     {
+      "source": "personajes/Lucia Sinclair",
+      "target": "personajes/Oliver Henderson"
+    },
+    {
       "source": "familias/La Familia Voronin",
       "target": "personajes/Oliver Henderson"
     },
@@ -2978,6 +3061,10 @@
     },
     {
       "source": "lugares/Nueva Ámsterdam",
+      "target": "personajes/Pollione Tornatore"
+    },
+    {
+      "source": "personajes/Cassian Thorne",
       "target": "personajes/Pollione Tornatore"
     },
     {
@@ -3011,10 +3098,6 @@
     {
       "source": "personajes/Dorian Blackwood",
       "target": "personajes/Ramses Zaikov"
-    },
-    {
-      "source": "personajes/Cassian Thorne",
-      "target": "personajes/Rezniv Voronin"
     },
     {
       "source": "personajes/Rezniv Voronin",
@@ -3054,6 +3137,14 @@
     },
     {
       "source": "lugares/Nueva Ámsterdam",
+      "target": "personajes/Veronica Black"
+    },
+    {
+      "source": "personajes/Lucia Sinclair",
+      "target": "personajes/Veronica Black"
+    },
+    {
+      "source": "personajes/Dorian Blackwood",
       "target": "personajes/Veronica Black"
     },
     {

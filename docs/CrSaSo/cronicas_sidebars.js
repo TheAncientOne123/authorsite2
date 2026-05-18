@@ -10,7 +10,7 @@ const sidebars = {
     { type: 'doc', id: 'familia-portada', label: 'Familias y Organizaciones' },
     { type: 'doc', id: 'lugares-portada', label: 'Lugares' },
     { type: 'doc', id: 'personajes-portada', label: 'Personajes' },
-    { type: 'doc', id: 'otros-portada', label: 'Otros' },
+    { type: 'doc', id: 'objetos-conceptos-portada', label: 'Objetos y conceptos' },
   ],
   
 };

@@ -18,8 +18,8 @@ const booksConfig = JSON.parse(fs.readFileSync(booksJsonPath, 'utf8'));
 
 const EXCERPT_MAX = 400;
 
-/** Claves top-level que se copian a filters si no existen ya en cards_filters. */
-const LEGACY_FILTER_KEYS = ['libro'];
+/** Claves top-level del frontmatter que se copian a filters (si no están en cards_filters). */
+const LEGACY_FILTER_KEYS = ['libro', 'genero', 'estado', 'raza', 'type', 'saga'];
 
 /** @type {{ id: string; contentDir: string }[]} */
 const PLUGINS = [
@@ -122,6 +122,11 @@ function extractFilters(data) {
   }
 
   normalizeBookKeysInFilters(out);
+
+  if (out.libro && out.aparicion === undefined) {
+    out.aparicion = out.libro;
+  }
+
   return out;
 }
 
