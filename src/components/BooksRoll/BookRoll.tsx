@@ -15,7 +15,7 @@ export const books: Book[] = [
   {
     title: 'Necromancia a Medianoche',
     href: 'https://www.amazon.com.mx/Necromancia-Medianoche-Historias-Oscuras-Spanish/dp/B0FHBYZWRS',
-    cover: '/img/cronicas-sangre/portadaNMLowQual.png',
+    cover: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual',
     year: 'Desde 2025',
     tagline: 'Nueva Ámsterdam, 1929.',
   },

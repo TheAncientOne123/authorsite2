@@ -116,6 +116,8 @@ import Link from '@docusaurus/Link';
 <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link>
 <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>
 <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link>
+<Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>
+
 
 ## Lugares
 
@@ -135,7 +137,7 @@ import Link from '@docusaurus/Link';
 <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">La Comisaría de Nueva Ámsterdam</Link>
 <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>
 <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>
-<Link to="/CrSaSo/lugares/maple%20Valley">maple Valley</Link>
+<Link to="/CrSaSo/lugares/Maple%20Valley">Maple Valley</Link>
 <Link to="/CrSaSo/lugares/Mercado%20Viejo">Mercado Viejo</Link>
 <Link to="/CrSaSo/lugares/Monte%20Galbrook">Monte Galbrook</Link>
 <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>

@@ -11,20 +11,77 @@ raza: Humano
 ---
 
 
-**Anya** es una operativa de seguridad profesional de alto rango, reconocida como la mano derecha de Jayson Branch, el jefe de seguridad de la familia McCarthy en Nueva Ámsterdam. Su rol principal consiste en la coordinación operativa y protección táctica de los intereses de la familia frente a amenazas externas, destacándose por su temple y lealtad durante la crisis de los *Rapax Hominum*.
+import Infobox from '@site/src/components/Infobox';
+import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-Aparece como una figura clave en la organización de la defensa de la mansión McCarthy, siendo una de las pocas integrantes de su unidad que logra sobrevivir al asalto directo de la facción de los Voronin.
+# Anya Rudzki
+
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Anya Rudzki"
+    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/q_auto/f_auto/v1779166937/anya-rudzki_ygy0zb.png', alt: 'Anya Rudzki' }}
+    caption="Operativa de seguridad de élite"
+    rows={[
+      {
+        label: 'Alias / Apodos',
+        value: (
+          <>
+            Mano derecha de{' '}
+            <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>
+          </>
+        ),
+      },
+      { label: 'Estado actual', value: 'Activa (Herida)' },
+      { label: 'Edad', value: 'No especificada' },
+      {
+        label: 'Residencia',
+        value: <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>,
+      },
+      { label: 'Especie', value: 'Humana' },
+      { label: 'Género', value: 'Femenino' },
+      { label: 'Familiares clave', value: 'No mencionados' },
+      { label: 'Ocupación', value: 'Operativa de seguridad de élite' },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            Seguridad de la{' '}
+            <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">familia McCarthy</Link>
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 56
+          </>
+        ),
+      },
+    ]}
+  />
+)}
+</BrowserOnly>
+
+**Anya Rudzki** es una operativa de seguridad profesional de alto rango, reconocida como la mano derecha de <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>, el jefe de seguridad de la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link> en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>. Su rol principal consiste en la coordinación operativa y protección táctica de los intereses de la familia frente a amenazas externas, destacándose por su temple y lealtad durante la crisis de los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>.
+
+Aparece como una figura clave en la organización de la defensa de la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>, siendo una de las pocas integrantes de su unidad que logra sobrevivir al asalto directo de la facción de los <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>.
 
 ## Perfil y Personalidad
 
-Anya es descrita como una mujer de apariencia imponente y actitud cínica. Físicamente, posee ojos azules penetrantes y críticos, cejas oscuras y una cabellera rubia que cae en ondas hasta los hombros. Tras los eventos en la mansión, su rostro queda marcado por una profunda cicatriz causada por garras, lo cual, según las fuentes, acentúa su presencia intimidante.
+Anya es descrita como una mujer de apariencia imponente y actitud cínica. Físicamente, posee ojos azules penetrantes y críticos, cejas oscuras y una cabellera rubia que cae en ondas hasta los hombros. Tras los eventos en la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>, su rostro queda marcado por una profunda cicatriz causada por garras, lo cual, según las fuentes, acentúa su presencia intimidante.
 
 Psicológicamente, muestra una personalidad estoica y evaluadora. Se le observa frecuentemente sosteniendo cigarrillos con desinterés mientras analiza a sus aliados con escepticismo. Posee una determinación inquebrantable y un sentido del deber que la impulsa a querer continuar el combate incluso después de sufrir heridas graves, cuestionando las órdenes que buscan apartarla del peligro por su seguridad.
 
 ## Habilidades y Equipo
 
 Como operativa de élite, Anya posee formación avanzada en tácticas de vigilancia, combate y manejo de crisis.
-*   **Capacidades Tácticas:** Experta en control de accesos y vigilancia perimetral; fue la encargada de comandar la entrada principal de la mansión durante la fiesta de Jessica McCarthy.
+*   **Capacidades Tácticas:** Experta en control de accesos y vigilancia perimetral; fue la encargada de comandar la entrada principal de la mansión durante la fiesta de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>.
 *   **Resistencia Física:** Demostró una capacidad de recuperación notable al mantenerse operativa y lúcida tras un enfrentamiento directo con los Voronin que resultó en la muerte de la mayoría de sus compañeros.
 *   **Equipo:** Aunque su armamento personal no se detalla minuciosamente, tiene acceso al búnker de armamento de alta potencia de los McCarthy, que incluye rifles, explosivos y munición especializada.
 
@@ -33,14 +90,14 @@ Como operativa de élite, Anya posee formación avanzada en tácticas de vigilan
 ### Necromancia a Medianoche
 
 #### El Asedio a la Mansión McCarthy
-Anya es presentada durante la planificación de la seguridad para la fiesta de cumpleaños de Jessica McCarthy. Jayson Branch la asigna como líder de la vigilancia en la entrada principal del recinto. Durante la irrupción de los Voronin, Anya participa en la defensa de la propiedad, enfrentándose a los atacantes sobrenaturales. En el transcurso de la carnicería, su unidad es diezmada, perdiendo a compañeros como Nicholas, Olsen, Luka y Emmett. Anya sobrevive al ataque, pero sufre una severa herida de garras en la parte derecha del rostro.
+Anya es presentada durante la planificación de la seguridad para la fiesta de cumpleaños de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>. <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link> la asigna como líder de la vigilancia en la entrada principal del recinto. Durante la irrupción de los <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>, Anya participa en la defensa de la propiedad, enfrentándose a los atacantes sobrenaturales. En el transcurso de la carnicería, su unidad es diezmada, perdiendo a compañeros como Nicholas, Olsen, Luka y Emmett. Anya sobrevive al ataque, pero sufre una severa herida de garras en la parte derecha del rostro.
 
 #### La Batalla Final
-Tras el funeral de Alan McCarthy y la revelación de la profecía de la Reina de la Oscuridad, el grupo se prepara para el asalto a la Refinería McCarthy. Anya, a pesar de sus heridas y de estar bajo cuidado médico en una ambulancia, intenta incorporarse a la misión final. Sostiene una acalorada discusión con Jayson Branch, argumentando que su deber como su mano derecha es acompañarlo en las decisiones más difíciles. Sin embargo, Jayson le ordena permanecer atrás, confesando que no puede permitirse perder al último miembro de su equipo original. Anya acepta la orden a regañadientes, permaneciendo en la mansión mientras los aliados parten hacia la refinería.
+Tras la revelación de la profecía de la <Link to="/CrSaSo/personajes/Reina%20de%20la%20Oscuridad">Reina de la Oscuridad</Link>, el grupo se prepara para el asalto a la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>. Anya, a pesar de sus heridas y de estar bajo cuidado médico en una ambulancia, intenta incorporarse a la misión final. Sostiene una acalorada discusión con <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>, argumentando que su deber como su mano derecha es acompañarlo en las decisiones más difíciles. Sin embargo, Jayson le ordena permanecer atrás, confesando que no puede permitirse perder al último miembro de su equipo original. Anya acepta la orden a regañadientes, permaneciendo en la mansión mientras los aliados parten hacia la refinería.
 
 ## Relaciones Clave
 
-*   **Jayson Branch:** Existe un vínculo de lealtad profunda y respeto mutuo. Jayson confía plenamente en su criterio operativo, mientras que ella actúa como su contrapunto en la toma de decisiones críticas. El jefe de seguridad muestra un instinto protector hacia ella tras la pérdida del resto de sus hombres.
+*   <Link to="/CrSaSo/personajes/Jayson%20Branch">**Jayson Branch**</Link>: Existe un vínculo de lealtad profunda y respeto mutuo. Jayson confía plenamente en su criterio operativo, mientras que ella actúa como su contrapunto en la toma de decisiones críticas. El jefe de seguridad muestra un instinto protector hacia ella tras la pérdida del resto de sus hombres.
 *   **Unidad de Seguridad:** Anya compartía una relación de camaradería profesional con los operativos Nicholas, Olsen, Luka y Emmett antes de que fueran abatidos por los Voronin.
 
 ## Curiosidades

@@ -6,12 +6,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 const books = [
   {
     title: 'El Orbe de los Destinos',
-    cover: '/img/orbe/portadaLowQual.png',
+    cover: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/orbe/portadaLowQual',
     link: 'https://www.amazon.com.mx/ORBE-DESTINOS-REINO-LUDRIAN-Spanish/dp/B0D9NH2DS5',
   },
   {
     title: 'Necromancia a Medianoche',
-    cover: '/img/cronicas-sangre/portadaNMLowQual.png',
+    cover: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual',
     link: 'https://www.amazon.com.mx/Necromancia-Medianoche-Historias-Oscuras-Spanish/dp/B0FHBYZWRS',
   },
   // Agregar más libros aquí

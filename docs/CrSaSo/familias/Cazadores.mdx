@@ -2,7 +2,7 @@
 title: Cazadores
 description: Orden operativa nacida para combatir a los Rapax (vampiros) y fuerzas afines; su poder se completa al vincularse con una bruja.
 updated: 2026-05-17
-type: familia
+type: organizacion
 saga: crsaso
 libro: necromancia-medianoche
 ---
@@ -19,35 +19,71 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
   <Infobox
     title="Cazadores"
     caption="«Acero en la mano, pacto en el corazón»"
-    image={{ src: '/img/cronicas-sangre/simbolos/sol.png', alt: 'Sol' }}
+    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/simbolos/sol', alt: 'Sol' }}
     rows={[
-      { label: 'Tipo', value: 'Orden operativa / Hermandad secreta (Cazadores Vinculados)' },
-      { label: 'Sede / Territorio', value: <>Red descentralizada en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>; nodos de entrenamiento en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> y enclaves discretos</> },
-      { label: 'Liderazgo', value: 'Capitanes de célula y mentores; coordinación por consejo informal' },
-      { label: 'Ámbito', value: 'Erradicación de Rapax (vampiros), contención de amenazas anómalas, protección de brujas vinculadas' },
-      { label: 'Aliados', value: <><Link to="/CrSaSo/familias/Brujas">Brujas</Link> (pareja vinculada); cooperación puntual con <Link to="/CrSaSo/lugares/La%20Comisaría%20de%20Nueva%20Ámsterdam">la Comisaría</Link> y el <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal</Link></> },
-      { label: 'Rivales', value: <>Clanes de Rapax (p. ej. <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>).</> },
-      { label: 'Estado', value: 'Activo (clandestino)' },
-      { label: 'Eventos clave', value: <>
-        Entrenamientos en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral</Link>; 
-        <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>; 
-        <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>; 
-        señales de vínculo en el <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">Balneario Rushmore</Link>; 
-        clímax en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>
-      </> },
-      { label: 'Miembros notables', value: <><Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> (Cazador Vinculado); <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link></> },
+      {
+        label: 'Estado actual',
+        value: (
+          <>
+            Activos (en reorganización tras la{' '}
+            <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">
+              masacre de Nueva Ámsterdam
+            </Link>
+            )
+          </>
+        ),
+      },
+      { label: 'Especie', value: 'Humana (con capacidades latentes)' },
+      { label: 'Género', value: 'Predominantemente masculino (en las parejas documentadas)' },
+      {
+        label: 'Miembros clave',
+        value: (
+          <>
+            <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Gianotti</Link>, A. Fábregas
+            (histórico)
+          </>
+        ),
+      },
+      {
+        label: 'Ocupación',
+        value: (
+          <>
+            Exterminio de <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>;
+            protección de la humanidad
+          </>
+        ),
+      },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>; Iglesia Católica
+            (ciertas facciones)
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>,
+            cap. 11 (mencionados), cap. 37 (identificados)
+          </>
+        ),
+      },
     ]}
   />
 )}
 </BrowserOnly>
 
-**Los Cazadores** constituyen la mitad activa y combatiente de "Los Vinculados", un linaje humano ancestral destinado a enfrentar a los *Rapax Hominum* (depredadores naturales del hombre). Según los registros del *Tomo de los Vinculados*, los Cazadores nacen con una "pieza única" en su esencia que no encaja con nadie más que con su contraparte, la Bruja, formando un vínculo simbiótico diseñado para la supervivencia de la especie.
+**Los Cazadores** constituyen la mitad activa y combatiente de <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>, un linaje humano ancestral destinado a enfrentar a los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link> (depredadores naturales del hombre). Según los registros del <Link to="/CrSaSo/objetos-conceptos/Tomo%20de%20los%20Vinculados">Tomo de los Vinculados</Link>, los Cazadores nacen con una "pieza única" en su esencia que no encaja con nadie más que con su contraparte, la <Link to="/CrSaSo/familias/Brujas">Bruja</Link>, formando un vínculo simbiótico diseñado para la supervivencia de la especie.
 
-Aunque a menudo se les ha confundido históricamente con perseguidores de lo oculto, su verdadera función es actuar como el brazo ejecutor en una guerra secreta que se libra desde los inicios de la civilización. En la Nueva Ámsterdam de 1929, operan desde la clandestinidad, a menudo infiltrados en las fuerzas del orden o bajo el amparo de instituciones eclesiásticas como la Catedral de Santa Regina.
+Aunque a menudo se les ha confundido históricamente con perseguidores de lo oculto, su verdadera función es actuar como el brazo ejecutor en una guerra secreta que se libra desde los inicios de la civilización. En la <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> de 1929, operan desde la clandestinidad, a menudo infiltrados en las fuerzas del orden o bajo el amparo de instituciones eclesiásticas como la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>.
 
 ## Perfil y Personalidad
 
-Psicológicamente, los Cazadores suelen presentar una naturaleza resistente y, en ocasiones, solitaria hasta que su vínculo es activado. Se caracterizan por un coraje que bordea la imprudencia y una determinación inquebrantable para proteger a su Bruja vinculada. No son seres sobrenaturales per se, sino humanos que han "superado los límites de la naturaleza" a través de la unión con su alma gemela.
+Psicológicamente, los Cazadores suelen presentar una naturaleza resistente y, en ocasiones, solitaria hasta que su vínculo es activado. Se caracterizan por un coraje que bordea la imprudencia y una determinación inquebrantable para proteger a su <Link to="/CrSaSo/familias/Brujas">Bruja</Link> vinculada. No son seres sobrenaturales per se, sino humanos que han "superado los límites de la naturaleza" a través de la unión con su alma gemela.
 
 Físicamente, poseen una capacidad de recuperación y regeneración superior a la del humano promedio tras activar el vínculo, permitiéndoles sanar heridas graves en tiempos reducidos. Su entrenamiento enfatiza el combate cuerpo a cuerpo y la precisión táctica, siendo capaces de mantener la calma incluso frente a manifestaciones de horror indescriptible.
 
@@ -56,9 +92,9 @@ Físicamente, poseen una capacidad de recuperación y regeneración superior a l
 El poder de un Cazador es limitado por sí solo, pero se magnifica exponencialmente al operar en sincronía con una Bruja.
 
 *   **Capacidades Tácticas:** Expertos en diversas formas de combate, desde el boxeo clásico hasta tácticas de asalto militar.
-*   **Visión Guiada (Vínculo):** A través de un "hilo rojo" invisible, el Cazador puede recibir la visión de la Bruja, permitiéndole identificar esferas azules que marcan el punto débil de un *Rapax*, incluso cuando este se encuentra en el plano de las sombras.
-*   **Munición Especializada:** Utilizan **balas de oro** para abatir machos *Rapax* y **balas de plata** para las hembras; estos metales detienen la regeneración del depredador e infligen heridas irreparables.
-*   **Monedas de Latón:** Artefactos de enlace que vibran ante la presencia de un enemigo y sirven como brújula para localizar a su pareja vinculada.
+*   **Visión Guiada (Vínculo):** A través de un "hilo rojo" invisible, el Cazador puede recibir la visión de la <Link to="/CrSaSo/familias/Brujas">Bruja</Link>, permitiéndole identificar esferas azules que marcan el punto débil de un <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax</Link>, incluso cuando este se encuentra en el plano de las sombras.
+*   **<Link to="/CrSaSo/objetos-conceptos/Munici%C3%B3n%20Especial">Munición Especial</Link>**: Utilizan **balas de oro** para abatir machos <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax</Link> y **balas de plata** para las hembras; estos metales detienen la regeneración del depredador e infligen heridas irreparables.
+*   **<Link to="/CrSaSo/objetos-conceptos/Monedas%20de%20lat%C3%B3n">Monedas de Latón</Link>**: Artefactos de enlace que vibran ante la presencia de un enemigo y sirven como brújula para localizar a su pareja vinculada.
 
 ## Biografía / Historia
 
@@ -75,12 +111,12 @@ Los Cazadores restantes y sus aliados civiles se reagrupan para evitar que los V
 
 ## Relaciones Clave
 
-*   **Brujas:** Sus parejas fundamentales. La lealtad entre ambos es el núcleo de su poder; un Cazador sin su Bruja pierde la capacidad de ver los puntos débiles de sus enemigos.
-*   **Rapax Hominum:** Sus depredadores naturales y enemigos jurados. La historia de los Cazadores es, esencialmente, la crónica de su lucha contra estos seres.
+*   <Link to="/CrSaSo/familias/Brujas">**Bruja**</Link>: Sus parejas fundamentales. La lealtad entre ambos es el núcleo de su poder; un Cazador sin su Bruja pierde la capacidad de ver los puntos débiles de sus enemigos.
+*   <Link to="/CrSaSo/familias/Rapax%20Hominum">**Rapax Hominum**</Link>: Sus depredadores naturales y enemigos jurados. La historia de los Cazadores es, esencialmente, la crónica de su lucha contra estos seres.
 *   **La Iglesia Católica:** Ha servido históricamente como refugio y fachada para la orden, aunque la relación es compleja y a menudo marcada por el secretismo.
 
 ## Curiosidades
 
 *   **Precedentes Históricos:** Uno de los primeros registros exitosos de su efectividad data de la Inquisición Española, documentado por el cazador A. Fábregas.
-*   **Vínculo de Sangre:** Para activar las monedas de latón y el enlace total, el Cazador y la Bruja deben derramar su sangre sobre los artefactos.
+*   <Link to="/CrSaSo/objetos-conceptos/Vinculo%20de%20Sangre">**Vinculo de Sangre**</Link> Para activar las monedas de latón y el enlace total, el Cazador y la Bruja deben derramar su sangre sobre los artefactos.
 *   **La Trampa del Pasado:** Se dice que el eslabón más débil del vínculo suele ser el hombre (Cazador), debido a la tendencia humana hacia el apego y la duda.

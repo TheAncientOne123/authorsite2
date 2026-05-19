@@ -14,49 +14,97 @@ import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+# Andrew Sheppard
+
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Andrew Sheppard"
-    image={{ src: '/img/cronicas-sangre/personajes/Andrew-Sheppard.png', alt: 'Andrew Sheppard' }}
+    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/Andrew-Sheppard', alt: 'Andrew Sheppard' }}
     caption="Historiador"
     rows={[
-      {label: 'Género', value: 'Masculino'},
-      {label: 'Estado', value: 'Fallecido'},
-      {label: 'Profesión', value: 'Historiador | Consultor académico  '},
-      {label: 'Especialidad', value: 'Historia esotérica y arquitectura gótica del noreste '},
-      {label: 'Afilicación', value: 'Atlantic News (consultor externo / narrador del documental) '},
-      {label: 'Primera Aparición', value: 'Necromancia a Medianoche'},
+      { label: 'Estado actual', value: 'Fallecido' },
+      {
+        label: 'Edad',
+        value: 'No especificada (descrito como un hombre de mediana edad con canas)',
+      },
+      {
+        label: 'Residencia',
+        value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>,
+      },
+      { label: 'Especie', value: 'Humana' },
+      { label: 'Género', value: 'Masculino' },
+      {
+        label: 'Ocupación',
+        value: 'Historiador; narrador de documentales',
+      },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link> (contratado para el
+            documental del Castillo)
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 16
+          </>
+        ),
+      },
     ]}
   />
-
 )}
 </BrowserOnly>
 
-Andrew Sheppard fue el historiador invitado por el equipo de <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> (<Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News </Link>) para contextualizar el documental sobre el <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">Castillo de Nueva Ámsterdam</Link>. Conocedor de genealogías locales y del simbolismo arquitectónico, fungió como guía erudita durante la exploración del castillo y su red oculta.
+**Andrew Sheppard** fue un distinguido historiador y académico de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>, reconocido por su vasto conocimiento en arquitectura gótica y lenguas romances arcaicas. Su carrera profesional lo llevó a colaborar como consultor y narrador oficial para un proyecto documental de la cadena <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link>, centrado en la historia y los mitos del <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">Castillo de Nueva Ámsterdam</Link>.
 
-Durante la incursión al castillo, **Sheppard** acompañó a <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>, <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, <Link to="/CrSaSo/personajes/Susan%20Barnes">Susan Barnes</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>, aportando lecturas in situ de inscripciones, hipótesis sobre estructuras no cartografiadas (catacumbas) y valoración histórica de hallazgos.
+A pesar de su inicial escepticismo ante la presencia de autoridades federales en sitios históricos, su participación fue crucial para el descubrimiento de las catacumbas ocultas de la familia <Link to="/CrSaSo/familias/La%20Familia%20Dobrescu">Dobrescu</Link>. Sheppard fue el responsable de identificar y traducir la profética inscripción del sarcófago de <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>, un evento que precedió trágicamente a su muerte.
 
-Fue **asesinado** durante el violento despertar de <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link> en las profundidades del castillo. Su muerte, junto con la de Susan Barnes, ocurre en el primer ataque del Rapax en la cripta.
+## Perfil y Personalidad
 
-## Rasgos y aportes
-- Erudición práctica: interpreta inscripciones y señales arquitectónicas en tiempo real durante la exploración.
-- Narrador/voz del proyecto: provee el marco académico que legitima el documental de Atlantic News.
-- Puente entre prensa y autoridades: su presencia ayuda a sostener el acceso del equipo al sitio histórico.
+Físicamente, el doctor Sheppard es descrito como un hombre de apariencia madura, con canas en el cabello y un aire reservado que proyectaba autoridad académica. Solía vestir de manera práctica para el trabajo de campo y portaba gafas de lectura, indispensables para su labor con documentos antiguos.
 
-## Apariciones destacadas
-- **Traslado al castillo con el equipo** (presentado como “doctor Sheppard”, historiador y narrador).
-- **Descubrimiento de la cripta** y evaluación de su relevancia histórica.
-- **Escena del sarcófago**: inspección de la tumba principal previa al despertar.
-- **Ataque en la cripta**: muerte de Sheppard durante el primer estallido de violencia del Rapax.
+Psicológicamente, Sheppard era un apasionado de su oficio, mostrando una reverencia casi religiosa por la arquitectura antigua y el orden histórico. Era un hombre meticuloso y protector de las ruinas, llegando a molestarse ante cualquier intento de manipulación del entorno por parte de personas no expertas. Aunque inicialmente se mostraba serio y crítico con las teorías poco convencionales, era capaz de mostrar un entusiasmo juvenil ante descubrimientos de gran relevancia histórica.
 
-## Notas canónicas y contrastes
-- **Afiliación con Atlantic News**: en la novela, se establece que el equipo pertenece a Atlantic News (propiedad de la familia Fox); Sheppard actúa como historiador/narrador externo. La enciclopedia lo fija como **consultor**.
-- **Causa de muerte**: el texto sugiere la autoría del ataque por parte de la entidad recién despertada (Anastasia Dobrescu). La enciclopedia **consolida** esta atribución.
+## Habilidades y Equipo
 
-## Véase también
-- <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>
-- <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>
-- <Link to="/CrSaSo/personajes/Susan%20Barnes">Susan Barnes</Link>
-- <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>
-- <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">El Castillo de Nueva Ámsterdam</Link>
+Sheppard poseía capacidades intelectuales de alto nivel, fundamentales para la investigación arqueológica y lingüística:
+*   **Lingüística Antigua:** Experto en lenguas romances arcaicas, con la capacidad de traducir dialectos rumanos antiguos derivados del latín vulgar.
+*   **Análisis Arquitectónico:** Poseía un ojo experto para identificar elementos técnicos del estilo gótico, como arcos ojivales, relieves ornamentales y estructuras abovedadas.
+*   **Investigación de Campo:** Capacitado para realizar expediciones en terrenos difíciles y documentar hallazgos de forma científica.
+
+**Equipo notable:**
+*   **Mochila de investigación:** Contenía notas detalladas, mapas del castillo y diversos documentos históricos.
+*   **Gafas de lectura:** Utilizadas constantemente para el análisis de inscripciones y textos.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### La expedición al Castillo de Nueva Ámsterdam
+Andrew Sheppard fue reclutado por <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> y <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> para servir como la voz experta en un documental sobre las ruinas del castillo de la familia Dobrescu. Durante el ascenso al sitio, Sheppard demostró su pasión por el lugar, defendiendo su valor frente a la modernidad y criticando la intrusión de la agente federal Lucía Sinclair, a quien consideraba innecesaria para una labor académica. Al entrar en la estructura principal, Sheppard guio al equipo a través de los restos arquitectónicos, fascinado por la resistencia de los materiales originales.
+
+#### El Descubrimiento de las Catacumbas
+Cuando <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> logró localizar una entrada secreta tras un muro de ladrillos, Sheppard se mostró eufórico, calificando el hallazgo como un "hito histórico" sin precedentes, ya que no existían registros oficiales de tales pasajes en los planos conocidos del castillo. Al descender a la cámara oculta, el doctor Sheppard centró su atención en un sarcófago imponente. Tras limpiar el polvo de siglos, tradujo con precisión la inscripción arcaica que identificaba el cuerpo de <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link> y mencionaba una misión que ella debía cumplir tras su "despertar".
+
+#### Muerte y entierro
+Tras la apertura accidental del sarcófago por parte de <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link> y el despertar de Anastasia en un estado de furia depredadora, Sheppard intentó huir hacia la salida del castillo. Sin embargo, fue alcanzado por la criatura en el salón principal. Anastasia, impulsada por un hambre insaciable tras dos años de letargo, le fracturó la columna vertebral y se alimentó de su sangre. Su cuerpo fue posteriormente enterrado de forma provisional por la propia Anastasia en los terrenos traseros del castillo, donde ella misma rezó un responso en latín y colocó una cruz de madera sobre su tumba. Seis meses después de los hechos, se confirmó que sus restos fueron recuperados por las autoridades y entregados a sus seres queridos para un funeral apropiado.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Jack%20Fox">**Jack Fox**</Link>: Su director y productor; mantenían una relación profesional de respeto, aunque Sheppard despreciaba el enfoque sensacionalista que Jack a veces sugería.
+*   <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucía Sinclair**</Link>: Inicialmente Sheppard se mostró escéptico y distante con ella, pero terminó trabajando de la mano en el descubrimiento de las catacumbas.
+*   <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">**Anastasia Dobrescu**</Link>: Su relación fue estrictamente académica hasta el momento del despertar de esta última, convirtiéndose involuntariamente en su presa.
+
+## Curiosidades
+
+*   Afirmaba que si el estilo Gótico fuera una persona, el Castillo de Nueva Ámsterdam sería su hogar definitivo.
+*   A pesar de su edad avanzada y formalidad académica, su reacción ante el descubrimiento de las catacumbas fue descrita como la de un niño con un juguete nuevo.
+*   Fue uno de los pocos humanos en tiempos modernos capaz de traducir fluidamente el rumano arcaico de la región de Valaquia.

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-17T23:55:50.520Z",
+  "generatedAt": "2026-05-19T04:58:29.985Z",
   "orbe": {
     "index": {
       "excerpt": "Bienvenido al códice del universo de El Orbe de los Destinos. La documentación detallada de este universo se irá ampliando con el tiempo; mientras tanto puedes explorar $1."
@@ -24,88 +24,9 @@
     "personajes": {
       "excerpt": "Los personajes son el eje narrativo de toda historia y Crónicas de Sangre y Sombra no es la excepción. Cada figura aquí registrada incluye datos biográficos, afiliaciones y su papel en los acontecimientos principales. Este directorio está organizados en fichas individuales, que pueden contener información reveladora de la trama. El lector encontrará: - Protagonistas y antagonistas, con su evolució"
     },
-    "eventos/Batalla en la Refinería McCarthy": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/Caso resuelto": {
-      "excerpt": "Cierre policial del “Cuarto Rojo”; pizza de celebración, visita al Oliver transformado y ataque en el departamento de Cassian que anticipa la masacre en Santa Regina.",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/Desaparicion de Jessica McCarthy": {
-      "excerpt": "Abducción en Monte Galbrook; giro que reorienta la investigación hacia lo sobrenatural",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/El Cuarto Rojo": {
-      "excerpt": "Escena del crimen inicial del caso",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/El Incidente de Raven District": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/Interrogación de Archie Woodward": {
-      "excerpt": "Entrevista táctica en la comisaría; confirma alias “Aldric Shadowborne” y abre la pista hacia la Infiltración Católica",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/La Infiltración Católica": {
-      "excerpt": "Operación encubierta en la Catedral de Santa Regina para identificar y penetrar a la célula de “La Cruz”",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/La Semana Negra": {
-      "excerpt": "Semana de violencia urbana desatada tras el ataque en Italian’s Boot; conocida popularmente como “La Guerra de las Pizzas”",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/Masacre de la Catedral de Santa Regina": {
-      "excerpt": "Asalto devastador contra la célula de Los Vinculados; punto de quiebre tras la Semana Negra",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
     "familias/Brujas": {
       "excerpt": "Linaje arcano de mujeres vinculadas a un cazador; magia de pacto, revelación y protección que opera en la sombra de Nueva Ámsterdam.",
-      "image": "/img/cronicas-sangre/simbolos/luna.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/simbolos/luna",
       "imageAlt": "Brujas",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -116,11 +37,11 @@
     },
     "familias/Cazadores": {
       "excerpt": "Orden operativa nacida para combatir a los Rapax (vampiros) y fuerzas afines; su poder se completa al vincularse con una bruja.",
-      "image": "/img/cronicas-sangre/simbolos/sol.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/simbolos/sol",
       "imageAlt": "Cazadores",
       "filters": {
         "libro": "necromancia-medianoche",
-        "type": "familia",
+        "type": "organizacion",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       }
@@ -223,6 +144,15 @@
         "aparicion": "necromancia-medianoche"
       }
     },
+    "familias/Rapax Hominum": {
+      "excerpt": "Especie depredadora evolucionada, vulgarmente conocida como vampiros; depredadores naturales del hombre con presencia global.",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "raza",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      }
+    },
     "libros/index": {
       "excerpt": "Fichas y referencias a las novelas de Crónicas de Sangre y Sombra. - $1 - $1",
       "filters": {
@@ -246,6 +176,85 @@
       "filters": {
         "libro": "necromancia-medianoche",
         "type": "libro",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      }
+    },
+    "eventos/Batalla en la Refinería McCarthy": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      }
+    },
+    "eventos/Caso resuelto": {
+      "excerpt": "Cierre policial del “Cuarto Rojo”; pizza de celebración, visita al Oliver transformado y ataque en el departamento de Cassian que anticipa la masacre en Santa Regina.",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      }
+    },
+    "eventos/Desaparicion de Jessica McCarthy": {
+      "excerpt": "Abducción en Monte Galbrook; giro que reorienta la investigación hacia lo sobrenatural",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      }
+    },
+    "eventos/El Cuarto Rojo": {
+      "excerpt": "Escena del crimen inicial del caso",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      }
+    },
+    "eventos/El Incidente de Raven District": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      }
+    },
+    "eventos/Interrogación de Archie Woodward": {
+      "excerpt": "Entrevista táctica en la comisaría; confirma alias “Aldric Shadowborne” y abre la pista hacia la Infiltración Católica",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      }
+    },
+    "eventos/La Infiltración Católica": {
+      "excerpt": "Operación encubierta en la Catedral de Santa Regina para identificar y penetrar a la célula de “La Cruz”",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      }
+    },
+    "eventos/La Semana Negra": {
+      "excerpt": "Semana de violencia urbana desatada tras el ataque en Italian’s Boot; conocida popularmente como “La Guerra de las Pizzas”",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      }
+    },
+    "eventos/Masacre de la Catedral de Santa Regina": {
+      "excerpt": "Asalto devastador contra la célula de Los Vinculados; punto de quiebre tras la Semana Negra",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       }
@@ -315,7 +324,7 @@
     },
     "lugares/El Balneario Rushmore": {
       "excerpt": "Parque acuático temático abandonado en las afueras de Nueva Ámsterdam; convertido en laboratorio encubierto ligado al Elemento 121 y escenario de infiltraciones y confrontes clave.",
-      "image": "/img/cronicas-sangre/lugares/balneario-rushmore.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/lugares/balneario-rushmore",
       "imageAlt": "Balneario Rushmore",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -326,7 +335,7 @@
     },
     "lugares/El Castillo de Nueva Ámsterdam": {
       "excerpt": "Fortaleza neogótica del siglo XIX en las afueras de la ciudad; abandonada, ligada a una rama exiliada de nobleza rumana y escenario del despertar de Anastasia Dobrescu.",
-      "image": "/img/cronicas-sangre/lugares/el-castillo-de-nueva-amsterdam.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/lugares/el-castillo-de-nueva-amsterdam",
       "imageAlt": "Castillo de Nueva Ámsterdam",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -355,7 +364,7 @@
     },
     "lugares/Italian’s Boot": {
       "excerpt": "Restaurante-bar italiano y fachada operativa de la Familia Tornatore; su destrucción detonó la Semana Negra en Nueva Ámsterdam.",
-      "image": "/img/cronicas-sangre/lugares/italian-boot.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/lugares/italian-boot",
       "imageAlt": "Italian’s Boot",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -366,7 +375,7 @@
     },
     "lugares/La Biblioteca de Nueva Ámsterdam": {
       "excerpt": "Institución cultural pública en el límite noreste del Centro Histórico; archivo neoclásico con hemeroteca y sala de raros. Nodo clave durante El Cuarto Rojo.",
-      "image": "/img/cronicas-sangre/lugares/biblioteca-amsterdam.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/lugares/biblioteca-amsterdam",
       "imageAlt": "Biblioteca de Nueva Ámsterdam",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -403,6 +412,7 @@
       }
     },
     "lugares/Maple Valley": {
+      "excerpt": "Suburbio residencial de clase media en la periferia de Nueva Ámsterdam; casa de seguridad de Archie Woodward durante el caso del Cuarto Rojo.",
       "filters": {
         "libro": "necromancia-medianoche",
         "type": "lugar",
@@ -599,7 +609,7 @@
     },
     "personajes/Alan McCarthy": {
       "excerpt": "Empresario, patriarca de la familia McCarthy.",
-      "image": "/img/cronicas-sangre/personajes/alan-mccarthy.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/alan-mccarthy",
       "imageAlt": "Alan McCarthy",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -613,7 +623,7 @@
     },
     "personajes/Anastasia Dobrescu": {
       "excerpt": "Rapax Hominum, vulgarmente conocida como una vampira",
-      "image": "/img/cronicas-sangre/personajes/anastasia-dobrescu.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/anastasia-dobrescu",
       "imageAlt": "Anastasia Dobrescu",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -627,7 +637,7 @@
     },
     "personajes/Andrew Sheppard": {
       "excerpt": "Historiador",
-      "image": "/img/cronicas-sangre/personajes/Andrew-Sheppard.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/Andrew-Sheppard",
       "imageAlt": "Andrew Sheppard",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -639,23 +649,9 @@
         "aparicion": "necromancia-medianoche"
       }
     },
-    "personajes/Angelina Pollard": {
-      "excerpt": "Alias público de Tamara Dobrescu; identidad usada en contextos sociales y de investigación",
-      "image": "/img/cronicas-sangre/personajes/angelina-pollard.png",
-      "imageAlt": "Angelina Pollard",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "genero": "Femenino",
-        "estado": "Activa",
-        "raza": "Humano",
-        "type": "personaje",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
     "personajes/Angelo Tornatore": {
       "excerpt": "Patriarca de la Familia Tornatore; capo criminal de Nueva Ámsterdam",
-      "image": "/img/cronicas-sangre/personajes/angelo-tornatore.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/angelo-tornatore",
       "imageAlt": "Angelo Tornatore",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -668,7 +664,7 @@
       }
     },
     "personajes/Anya Rudzki": {
-      "excerpt": "Anya es una operativa de seguridad profesional de alto rango, reconocida como la mano derecha de Jayson Branch, el jefe de seguridad de la familia McCarthy en Nueva Ámsterdam. Su rol principal consiste en la coordinación operativa y protección táctica de los intereses de la familia frente a amenazas externas, destacándose por su temple y lealtad durante la crisis de los Rapax Hominum. Aparece como",
+      "excerpt": "Ficha de Anya Rudzki en Crónicas de Sangre y Sombra.",
       "filters": {
         "libro": "necromancia-medianoche",
         "genero": "Femenino",
@@ -681,7 +677,7 @@
     },
     "personajes/Archie Woodward": {
       "excerpt": "Jack of all trades master of none",
-      "image": "/img/cronicas-sangre/personajes/ArchieWoodward.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ArchieWoodward",
       "imageAlt": "Archie Woodward",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -709,12 +705,12 @@
     },
     "personajes/Cassian Thorne": {
       "excerpt": "Detective de la Policía de Nueva Ámsterdam; protagonista de Necromancia a Medianoche",
-      "image": "/img/cronicas-sangre/personajes/cassian-thorne.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/cassian-thorne",
       "imageAlt": "Cassian Thorne",
       "filters": {
         "libro": "necromancia-medianoche",
         "genero": "Masculino",
-        "estado": "Desaparecido (presunto fallecido)",
+        "estado": "Desaparecido",
         "raza": "Humano",
         "type": "personaje",
         "saga": "crsaso",
@@ -723,12 +719,12 @@
     },
     "personajes/Cecilia Amadeo": {
       "excerpt": "Bruja vinculada a la Catedral de Santa Regina; mentora de Cassian y Lucia",
-      "image": "/img/cronicas-sangre/personajes/cecilia-giannotti.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/cecilia-giannotti",
       "imageAlt": "Cecilia Amadeo",
       "filters": {
         "libro": "necromancia-medianoche",
         "genero": "Femenino",
-        "estado": "Fallecida (durante los sucesos de la catedral)",
+        "estado": "Fallecido",
         "raza": "Humano",
         "type": "personaje",
         "saga": "crsaso",
@@ -737,7 +733,7 @@
     },
     "personajes/Devin Kirby": {
       "excerpt": "Camarógrafo de Atlantic News",
-      "image": "/img/cronicas-sangre/personajes/devin-kirby.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/devin-kirby",
       "imageAlt": "Devin Kirby",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -751,7 +747,7 @@
     },
     "personajes/Dorian Blackwood": {
       "excerpt": "Jefe de detectives de la comisaría de Nueva Ámsterdam",
-      "image": "/img/cronicas-sangre/personajes/dorian-blackwood.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/dorian-blackwood",
       "imageAlt": "Dorian Blackwood",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -765,7 +761,7 @@
     },
     "personajes/Duccio Tornatore": {
       "excerpt": "Heredero menor de la Familia Tornatore; socialité impulsivo e imprevisible",
-      "image": "/img/cronicas-sangre/personajes/duccio-tornatore.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/duccio-tornatore",
       "imageAlt": "Duccio Tornatore",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -779,7 +775,7 @@
     },
     "personajes/Frederick Chapman": {
       "excerpt": "Patriarca de la familia Chapman; empresario de colchones",
-      "image": "/img/cronicas-sangre/personajes/frederick-chapman.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/frederick-chapman",
       "imageAlt": "Frederick Chapman",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -793,7 +789,7 @@
     },
     "personajes/Greta Zaikov": {
       "excerpt": "Francotiradora de las “Águilas del Nido” (Familia Zaikov)",
-      "image": "/img/cronicas-sangre/personajes/greta-zaikov.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/greta-zaikov",
       "imageAlt": "Greta Zaikov",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -807,7 +803,7 @@
     },
     "personajes/Grigori Zaikov": {
       "excerpt": "“Tanque” de las Águilas del Nido; fuerza de choque de la Familia Zaikov",
-      "image": "/img/cronicas-sangre/personajes/grigori-zaikov.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/grigori-zaikov",
       "imageAlt": "Grigori Zaikov",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -821,7 +817,7 @@
     },
     "personajes/Ian Zaikov": {
       "excerpt": "Especialista en cuchillos; punta de lanza de las Águilas del Nido (Familia Zaikov)",
-      "image": "/img/cronicas-sangre/personajes/ian-zaikov.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ian-zaikov",
       "imageAlt": "Ian Zaikov",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -835,7 +831,7 @@
     },
     "personajes/Ibrahim Ramazan Zaikov": {
       "excerpt": "Mayor consejero de las Águilas del Nido; corazón espiritual de la Familia Zaikov",
-      "image": "/img/cronicas-sangre/personajes/ibrahim-ramazan-zaikov.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ibrahim-ramazan-zaikov",
       "imageAlt": "Ibrahim Ramazan Zaikov",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -849,7 +845,7 @@
     },
     "personajes/Irene Zaikov": {
       "excerpt": "Exesposa de Cassian Thorne; integrante de la rama Ozturk–Zaikov",
-      "image": "/img/cronicas-sangre/personajes/irene-zaikov.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/irene-zaikov",
       "imageAlt": "Irene Zaikov",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -863,7 +859,7 @@
     },
     "personajes/Jack Fox": {
       "excerpt": "Director y productor de Atlantic News; heredero del medio; testigo clave de Necromancia a Medianoche",
-      "image": "/img/cronicas-sangre/personajes/jack-fox.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jack-fox",
       "imageAlt": "Jack Fox",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -877,7 +873,7 @@
     },
     "personajes/Jayson Branch": {
       "excerpt": "Jefe de seguridad de la Familia McCarthy; coordinador táctico durante Necromancia a Medianoche",
-      "image": "/img/cronicas-sangre/personajes/jayson-branch.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jayson-branch",
       "imageAlt": "Jayson Branch",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -891,7 +887,7 @@
     },
     "personajes/Jessica McCarthy": {
       "excerpt": "Heredera de la fortuna McCarthy; portadora del Elemento 121",
-      "image": "/img/cronicas-sangre/personajes/jessica-mccarthy.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jessica-mccarthy",
       "imageAlt": "Jessica McCarthy",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -905,7 +901,7 @@
     },
     "personajes/Kingston Graham": {
       "excerpt": "Alto funcionario del Buró; operador clave del programa secreto y reclutador de Lucia Sinclair",
-      "image": "/img/cronicas-sangre/personajes/kingston-graham.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/kingston-graham",
       "imageAlt": "Kingston Graham",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -919,7 +915,7 @@
     },
     "personajes/Logan Crane": {
       "excerpt": "Detective de la Policía de Nueva Ámsterdam; enlace operativo del equipo Thorne–Sinclair",
-      "image": "/img/cronicas-sangre/personajes/logan-crane.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/logan-crane",
       "imageAlt": "Logan Crane",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -933,7 +929,7 @@
     },
     "personajes/Lucia Sinclair": {
       "excerpt": "Agente especial del Buró; co-protagonista y eje federal de la investigación en Nueva Ámsterdam",
-      "image": "/img/cronicas-sangre/personajes/lucia-sinclair.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/lucia-sinclair",
       "imageAlt": "Lucia Sinclair",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -947,7 +943,7 @@
     },
     "personajes/Maisie Stewart": {
       "excerpt": "Hostess/encargada y mano derecha de Verónica Black en el Club Palace; apoyo clave durante la Infiltración Católica",
-      "image": "/img/cronicas-sangre/personajes/maisie-stewart.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/maisie-stewart",
       "imageAlt": "Maisie Stewart",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -961,7 +957,7 @@
     },
     "personajes/Marco Giannotti": {
       "excerpt": "Cazador clandestino y táctico de los Vinculados; mentor temporal de Cassian y Lucia",
-      "image": "/img/cronicas-sangre/personajes/marco-giannotti.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/marco-giannotti",
       "imageAlt": "Marco Giannotti",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -975,7 +971,7 @@
     },
     "personajes/Oliver Henderson": {
       "excerpt": "Reportero de Atlantic News; vampirizado tras el Castillo; catalizador del destino de Jessica",
-      "image": "/img/cronicas-sangre/personajes/oliver-henderson.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/oliver-henderson",
       "imageAlt": "Oliver Henderson",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -989,7 +985,7 @@
     },
     "personajes/Paciano Tornatore": {
       "excerpt": "Heredero mayor y estratega financiero de la Familia Tornatore",
-      "image": "/img/cronicas-sangre/personajes/paciano-tornatore.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/paciano-tornatore",
       "imageAlt": "Paciano Tornatore",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -1003,7 +999,7 @@
     },
     "personajes/Pollione Tornatore": {
       "excerpt": "Operador y negociador de la Familia Tornatore; enlace pragmático con la policía",
-      "image": "/img/cronicas-sangre/personajes/pollione-tornatore.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/pollione-tornatore",
       "imageAlt": "Pollione Tornatore",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -1017,7 +1013,7 @@
     },
     "personajes/Ramses Zaikov": {
       "excerpt": "Estratega y cerebro operativo de la Familia Zaikov; colíder de las “Águilas del Nido”",
-      "image": "/img/cronicas-sangre/personajes/Ramses-Zaikov.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/Ramses-Zaikov",
       "imageAlt": "Ramses Zaikov",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -1031,7 +1027,7 @@
     },
     "personajes/Rezniv Voronin": {
       "excerpt": "Patriarca de la Familia Voronin; fanático de la Reina de la Oscuridad y antagonista del clímax en la refinería",
-      "image": "/img/cronicas-sangre/personajes/rezniv-voronin.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/rezniv-voronin",
       "imageAlt": "Rezniv Voronin",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -1045,7 +1041,7 @@
     },
     "personajes/Ryan Chapman": {
       "excerpt": "Hijo de Frederick Chapman; testigo clave del caso “El Cuarto Rojo”",
-      "image": "/img/cronicas-sangre/personajes/ryan-chapman.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ryan-chapman",
       "imageAlt": "Ryan Chapman",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -1059,7 +1055,7 @@
     },
     "personajes/Susan Barnes": {
       "excerpt": "Ingeniera de sonido de Atlantic News; miembro del equipo del documental del Castillo de Nueva Ámsterdam",
-      "image": "/img/cronicas-sangre/personajes/susan-barnes.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/susan-barnes",
       "imageAlt": "Susan Barnes",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -1073,7 +1069,7 @@
     },
     "personajes/Tamara Dobrescu": {
       "excerpt": "Científica del linaje Dobrescu; alias público “Angelina Pollard”.",
-      "image": "/img/cronicas-sangre/personajes/tamara-dobrescu.JPG",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/tamara-dobrescu",
       "imageAlt": "Tamara Dobrescu",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -1087,7 +1083,7 @@
     },
     "personajes/Veronica Black": {
       "excerpt": "Dueña y “madame” del Club Palace; operadora influyente con acuerdos tácticos con la comisaría",
-      "image": "/img/cronicas-sangre/personajes/veronica-black.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/veronica-black",
       "imageAlt": "Verónica Black",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -1106,19 +1102,16 @@
     },
     "bestiario/dragones": {
       "excerpt": "Los dragones son criaturas antiguas, colosales y profundamente conectadas con las corrientes mágicas del mundo. Su sola existencia parece desafiar la separación entre bestia y fenómeno natural, pues no son únicamente animales de gran tamaño, sino entidades vivientes cuya fisiología, comportamiento y presencia alteran el entorno que habitan. En todas sus variantes, los dragones destacan por su extr",
-      "image": "/img/meridian-contenidos/wyvern.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/wyvern",
       "imageAlt": "Dragones"
     },
     "bestiario/index": {
       "excerpt": "El bestiario de Meridian reúne a las criaturas, bestias, monstruos y entidades que habitan el mundo, desde depredadores naturales y especies extraordinarias hasta horrores antiguos cuya sola existencia altera el equilibrio de la realidad. Aquí se documentan no solo sus rasgos más visibles, sino también su naturaleza, comportamiento, peligrosidad, hábitats y el lugar que ocupan dentro del imaginari",
-      "image": "/img/meridian-contenidos/drakon.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/drakon",
       "imageAlt": "Bestiario"
     },
     "campañas/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arcos narrativos o mesas de juego del universo Meridian."
-    },
-    "clases/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arquetipos, profesiones o vocaciones del universo Meridian."
     },
     "eventos/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la cronología y sucesos relevantes del universo Meridian."
@@ -1129,18 +1122,18 @@
     "eventos/La_Gran_Fiesta_Del_Baron_Matadragones": {
       "excerpt": "Hace ochenta años, la guerra que transformó Meridian llegó a su fin… pero no todas sus consecuencias murieron con ella. Durante el conflicto, los elfos recurrieron a una estrategia desesperada: la producción masiva de dragones. Criaturas nacidas para la guerra, criadas sin el tiempo, la disciplina ni el desarrollo que un dragón requiere para convertirse en algo más que un arma. Mientras la guerra "
     },
-    "facciones/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de grupos, órdenes y bandos del universo Meridian."
-    },
     "mapa/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación geográfica y cartográfica del universo Meridian."
     },
-    "razas/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de pueblos y linajes del universo Meridian."
+    "facciones/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de grupos, órdenes y bandos del universo Meridian."
+    },
+    "clases/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arquetipos, profesiones o vocaciones del universo Meridian."
     },
     "personajes/aquila-milvus": {
       "excerpt": "Guerrero de la Casa Milvus, respetado por su linaje… temido por lo que oculta.",
-      "image": "/img/meridian-contenidos/aquila-milvus.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/aquila-milvus",
       "imageAlt": "Aquila Milvus",
       "filters": {
         "estado": "Activo",
@@ -1149,7 +1142,7 @@
     },
     "personajes/aris-dewulf": {
       "excerpt": "Maga prodigio del Reino del Sol, cuya obsesión por el conocimiento y su linaje la han llevado a convertirse en una figura tan admirada como peligrosa.",
-      "image": "/img/meridian-contenidos/aris-dewulf.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/aris-dewulf",
       "imageAlt": "Aris Dewulf",
       "filters": {
         "estado": "Activo",
@@ -1158,7 +1151,7 @@
     },
     "personajes/astrid-cyndwyl": {
       "excerpt": "Princesa del Reino del Sol, forjada en guerra y devota al imperio que juró proteger.",
-      "image": "/img/meridian-contenidos/astrid-cyndwyl.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/astrid-cyndwyl",
       "imageAlt": "Astrid Cyndwyl",
       "filters": {
         "estado": "Activo",
@@ -1167,7 +1160,7 @@
     },
     "personajes/atlas-corvidae": {
       "excerpt": "Aeriano cuervo que escapó de su vida como experimento y ahora combate usando su propio cuerpo modificado y toxinas preparadas.",
-      "image": "/img/meridian-contenidos/atlas-corvidae.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/atlas-corvidae",
       "imageAlt": "Atlas Corvidae",
       "filters": {
         "estado": "Activo",
@@ -1203,7 +1196,7 @@
     },
     "personajes/cal-strife": {
       "excerpt": "Superviviente de una masacre, ahora cazarrecompensas de los Mensajeros de Daloz impulsado por una fe distorsionada y sed de venganza.",
-      "image": "/img/meridian-contenidos/cal-strife.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/cal-strife",
       "imageAlt": "Cal Strife",
       "filters": {
         "estado": "Activo",
@@ -1212,7 +1205,7 @@
     },
     "personajes/camp-yeipy": {
       "excerpt": "Enano errante que sobrevivió a la caída de su ciudad y ahora recorre el mundo cargando con el peso de haber vivido.",
-      "image": "/img/meridian-contenidos/camp-yeipy.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/camp-yeipy",
       "imageAlt": "Camp Yeipy",
       "filters": {
         "estado": "Activo",
@@ -1251,7 +1244,7 @@
     },
     "personajes/maggie-karp": {
       "excerpt": "Única superviviente de una villa arrasada por dragones, ahora aprendiz del barón y encargada de sus festividades.",
-      "image": "/img/meridian-contenidos/maggie-karp.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/maggie-karp",
       "imageAlt": "Maggie Karp",
       "filters": {
         "estado": "Activo",
@@ -1287,7 +1280,7 @@
     },
     "personajes/robatron": {
       "excerpt": "Autómata diseñado para robar que superó su programación… y a su creador.",
-      "image": "/img/meridian-contenidos/robatron.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/robatron",
       "imageAlt": "Robatrón",
       "filters": {
         "estado": "Activo",
@@ -1296,7 +1289,7 @@
     },
     "personajes/salazar-suarius": {
       "excerpt": "Antigua salamandra sanadora de guerra que cambió el campo de batalla por el escenario de fiestas infantiles.",
-      "image": "/img/meridian-contenidos/salazar-suarius.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/salazar-suarius",
       "imageAlt": "Salazar Suarius",
       "filters": {
         "estado": "Activo",
@@ -1323,7 +1316,7 @@
     },
     "personajes/valter-wischard": {
       "excerpt": "Hechicero de La Corte Solar; alias público “Valter el Matadragones”.",
-      "image": "/img/meridian-contenidos/valter-wischard.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/valter-wischard",
       "imageAlt": "Valter Wischard",
       "filters": {
         "estado": "Activo",
@@ -1332,12 +1325,15 @@
     },
     "personajes/zab-norgram": {
       "excerpt": "Aventurero que tras vender todo excepto sus pantalones, obtuvo un hacha colosal.",
-      "image": "/img/meridian-contenidos/zab-norgram.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/zab-norgram",
       "imageAlt": "Zab Norgram",
       "filters": {
         "estado": "Activo",
         "raza": "Elfo"
       }
+    },
+    "razas/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de pueblos y linajes del universo Meridian."
     }
   }
 }

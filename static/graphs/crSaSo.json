@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-17T22:36:45.245Z",
+  "generatedAt": "2026-05-19T04:58:29.811Z",
   "universe": "CrSaSo",
   "nodes": [
     {
@@ -14,14 +14,14 @@
       "id": "eventos/Batalla en la Refinería McCarthy",
       "label": "Batalla en la Refinería McCarthy",
       "category": "eventos",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 0
     },
     {
       "id": "eventos/Caso resuelto",
       "label": "Caso Resuelto",
       "category": "eventos",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 9,
       "excerpt": "Cierre policial del “Cuarto Rojo”; pizza de celebración, visita al Oliver transformado y ataque en el departamento de Cassian que anticipa la masacre en Santa Regina."
     },
@@ -29,7 +29,7 @@
       "id": "eventos/Desaparicion de Jessica McCarthy",
       "label": "La Desaparición de Jessica McCarthy",
       "category": "eventos",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 21,
       "excerpt": "Abducción en Monte Galbrook; giro que reorienta la investigación hacia lo sobrenatural"
     },
@@ -37,7 +37,7 @@
       "id": "eventos/El Cuarto Rojo",
       "label": "El Cuarto Rojo",
       "category": "eventos",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 29,
       "excerpt": "Escena del crimen inicial del caso"
     },
@@ -45,153 +45,46 @@
       "id": "eventos/El Incidente de Raven District",
       "label": "El Incidente de Raven District",
       "category": "eventos",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 0
     },
     {
       "id": "eventos/Interrogación de Archie Woodward",
       "label": "La interrogación de Archie Woodward",
       "category": "eventos",
-      "libro": null,
-      "degree": 18,
+      "libro": "necromancia-medianoche",
+      "degree": 17,
       "excerpt": "Entrevista táctica en la comisaría; confirma alias “Aldric Shadowborne” y abre la pista hacia la Infiltración Católica"
     },
     {
       "id": "eventos/La Infiltración Católica",
       "label": "La Infiltración Católica",
       "category": "eventos",
-      "libro": null,
-      "degree": 23,
+      "libro": "necromancia-medianoche",
+      "degree": 22,
       "excerpt": "Operación encubierta en la Catedral de Santa Regina para identificar y penetrar a la célula de “La Cruz”"
     },
     {
       "id": "eventos/La Semana Negra",
       "label": "La Semana Negra",
       "category": "eventos",
-      "libro": null,
-      "degree": 21,
+      "libro": "necromancia-medianoche",
+      "degree": 22,
       "excerpt": "Semana de violencia urbana desatada tras el ataque en Italian’s Boot; conocida popularmente como “La Guerra de las Pizzas”"
     },
     {
       "id": "eventos/Masacre de la Catedral de Santa Regina",
       "label": "La Masacre de la Catedral de Santa Regina",
       "category": "eventos",
-      "libro": null,
-      "degree": 19,
+      "libro": "necromancia-medianoche",
+      "degree": 21,
       "excerpt": "Asalto devastador contra la célula de Los Vinculados; punto de quiebre tras la Semana Negra"
-    },
-    {
-      "id": "familias/Brujas",
-      "label": "Brujas",
-      "category": "familias",
-      "libro": null,
-      "degree": 17,
-      "excerpt": "Linaje arcano de mujeres vinculadas a un cazador; magia de pacto, revelación y protección que opera en la sombra de Nueva Ámsterdam.",
-      "image": "/img/cronicas-sangre/simbolos/luna.png",
-      "imageAlt": "Brujas"
-    },
-    {
-      "id": "familias/Cazadores",
-      "label": "Cazadores",
-      "category": "familias",
-      "libro": null,
-      "degree": 15,
-      "excerpt": "Orden operativa nacida para combatir a los Rapax (vampiros) y fuerzas afines; su poder se completa al vincularse con una bruja.",
-      "image": "/img/cronicas-sangre/simbolos/sol.png",
-      "imageAlt": "Cazadores"
-    },
-    {
-      "id": "familias/Familia De Fazio",
-      "label": "Familia De Fazio",
-      "category": "familias",
-      "libro": null,
-      "degree": 0
-    },
-    {
-      "id": "familias/Familia Puckett",
-      "label": "Familia Puckett",
-      "category": "familias",
-      "libro": null,
-      "degree": 5,
-      "excerpt": "Dinastía local propietaria del Balneario Rushmore; familia materna de Jessica McCarthy y aliada por matrimonio con los McCarthy."
-    },
-    {
-      "id": "familias/La Cruz",
-      "label": "La Cruz",
-      "category": "familias",
-      "libro": null,
-      "degree": 10,
-      "excerpt": "Alias provisional usado por Cassian y Lucía para identificar a una red clandestina de signo religioso; luego asociada formalmente con “Los Vinculados”."
-    },
-    {
-      "id": "familias/La Familia Chapman",
-      "label": "Familia Chapman",
-      "category": "familias",
-      "libro": null,
-      "degree": 10,
-      "excerpt": "Dinastía empresarial de la alta residencial de Nueva Ámsterdam; dueños de una firma de colchones de lujo y eje del caso “El Cuarto Rojo”."
-    },
-    {
-      "id": "familias/La Familia McCarthy",
-      "label": "Familia McCarthy",
-      "category": "familias",
-      "libro": null,
-      "degree": 17,
-      "excerpt": "Dinastía petrolera de Nueva Ámsterdam; poder económico y político detrás de McCarthy Petroleum, eje de los eventos ligados al Elemento 121."
-    },
-    {
-      "id": "familias/La Familia Santorelli",
-      "label": "Familia Santorelli",
-      "category": "familias",
-      "libro": null,
-      "degree": 12,
-      "excerpt": "Mafia italiana de perfil discreto y estrategia diplomática; protectores oficiosos de la célula de los Vinculados en Nueva Ámsterdam."
-    },
-    {
-      "id": "familias/La Familia Tornatore",
-      "label": "Familia Tornatore",
-      "category": "familias",
-      "libro": null,
-      "degree": 12,
-      "excerpt": "Mafia italiana asentada en Nueva Ámsterdam; imperio mixto de crimen y fachadas legales, rival histórico de los Santorelli."
-    },
-    {
-      "id": "familias/La Familia Voronin",
-      "label": "Familia Voronin",
-      "category": "familias",
-      "libro": null,
-      "degree": 20,
-      "excerpt": "Clan vampírico ancestral de raíz carpática; culto profético devoto de la Reina de la Oscuridad y antagonista central en la crisis McCarthy."
-    },
-    {
-      "id": "familias/La Familia Zaikov",
-      "label": "Familia Zaikov",
-      "category": "familias",
-      "libro": null,
-      "degree": 17,
-      "excerpt": "Clan mafioso balcánico que gobierna El Nido con mano firme y fachada comunitaria; aliados tácticos de Cassian Thorne en momentos clave."
-    },
-    {
-      "id": "familias/Los Vinculados",
-      "label": "Los Vinculados",
-      "category": "familias",
-      "libro": null,
-      "degree": 18,
-      "excerpt": "Orden secreta de brujas y cazadores unida por un vínculo arcano para erradicar a los Rapax (vampiros); su célula en Nueva Ámsterdam cayó en la Masacre de la Catedral."
-    },
-    {
-      "id": "familias/McCarthy Petroleum",
-      "label": "McCarthy Petroleum",
-      "category": "familias",
-      "libro": null,
-      "degree": 17,
-      "excerpt": "Conglomerado petrolero de la familia McCarthy; eje industrial de Nueva Ámsterdam y foco de la conspiración del Elemento 121."
     },
     {
       "id": "libros/La Mujer Carmesí",
       "label": "La Mujer Carmesí",
       "category": "libros",
-      "libro": null,
+      "libro": "mujer-carmesi",
       "degree": 1,
       "excerpt": "Continuación anunciada de la saga Crónicas de Sangre y Sombra."
     },
@@ -199,15 +92,137 @@
       "id": "libros/Necromancia a Medianoche",
       "label": "Necromancia a Medianoche",
       "category": "libros",
-      "libro": null,
-      "degree": 3,
+      "libro": "necromancia-medianoche",
+      "degree": 12,
       "excerpt": "Novela de la saga Crónicas de Sangre y Sombra."
+    },
+    {
+      "id": "familias/Brujas",
+      "label": "Brujas",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 17,
+      "excerpt": "Linaje arcano de mujeres vinculadas a un cazador; magia de pacto, revelación y protección que opera en la sombra de Nueva Ámsterdam.",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/simbolos/luna",
+      "imageAlt": "Brujas"
+    },
+    {
+      "id": "familias/Cazadores",
+      "label": "Cazadores",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 16,
+      "excerpt": "Orden operativa nacida para combatir a los Rapax (vampiros) y fuerzas afines; su poder se completa al vincularse con una bruja.",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/simbolos/sol",
+      "imageAlt": "Cazadores"
+    },
+    {
+      "id": "familias/Familia De Fazio",
+      "label": "Familia De Fazio",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 1
+    },
+    {
+      "id": "familias/Familia Puckett",
+      "label": "Familia Puckett",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 5,
+      "excerpt": "Dinastía local propietaria del Balneario Rushmore; familia materna de Jessica McCarthy y aliada por matrimonio con los McCarthy."
+    },
+    {
+      "id": "familias/La Cruz",
+      "label": "La Cruz",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 13,
+      "excerpt": "Alias provisional usado por Cassian y Lucía para identificar a una red clandestina de signo religioso; luego asociada formalmente con “Los Vinculados”."
+    },
+    {
+      "id": "familias/La Familia Chapman",
+      "label": "Familia Chapman",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 11,
+      "excerpt": "Dinastía empresarial de la alta residencial de Nueva Ámsterdam; dueños de una firma de colchones de lujo y eje del caso “El Cuarto Rojo”."
+    },
+    {
+      "id": "familias/La Familia Dobrescu",
+      "label": "La Familia Dobrescu",
+      "category": "familias",
+      "libro": null,
+      "degree": 1
+    },
+    {
+      "id": "familias/La Familia McCarthy",
+      "label": "Familia McCarthy",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 18,
+      "excerpt": "Dinastía petrolera de Nueva Ámsterdam; poder económico y político detrás de McCarthy Petroleum, eje de los eventos ligados al Elemento 121."
+    },
+    {
+      "id": "familias/La Familia Santorelli",
+      "label": "Familia Santorelli",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 14,
+      "excerpt": "Mafia italiana de perfil discreto y estrategia diplomática; protectores oficiosos de la célula de los Vinculados en Nueva Ámsterdam."
+    },
+    {
+      "id": "familias/La Familia Tornatore",
+      "label": "Familia Tornatore",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 13,
+      "excerpt": "Mafia italiana asentada en Nueva Ámsterdam; imperio mixto de crimen y fachadas legales, rival histórico de los Santorelli."
+    },
+    {
+      "id": "familias/La Familia Voronin",
+      "label": "Familia Voronin",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 21,
+      "excerpt": "Clan vampírico ancestral de raíz carpática; culto profético devoto de la Reina de la Oscuridad y antagonista central en la crisis McCarthy."
+    },
+    {
+      "id": "familias/La Familia Zaikov",
+      "label": "Familia Zaikov",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 18,
+      "excerpt": "Clan mafioso balcánico que gobierna El Nido con mano firme y fachada comunitaria; aliados tácticos de Cassian Thorne en momentos clave."
+    },
+    {
+      "id": "familias/Los Vinculados",
+      "label": "Los Vinculados",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 19,
+      "excerpt": "Orden secreta de brujas y cazadores unida por un vínculo arcano para erradicar a los Rapax (vampiros); su célula en Nueva Ámsterdam cayó en la Masacre de la Catedral."
+    },
+    {
+      "id": "familias/McCarthy Petroleum",
+      "label": "McCarthy Petroleum",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 16,
+      "excerpt": "Conglomerado petrolero de la familia McCarthy; eje industrial de Nueva Ámsterdam y foco de la conspiración del Elemento 121."
+    },
+    {
+      "id": "familias/Rapax Hominum",
+      "label": "Rapax Hominum",
+      "category": "familias",
+      "libro": "necromancia-medianoche",
+      "degree": 14,
+      "excerpt": "Especie depredadora evolucionada, vulgarmente conocida como vampiros; depredadores naturales del hombre con presencia global."
     },
     {
       "id": "lugares/Atlantic News",
       "label": "Atlantic News",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 9,
       "excerpt": "Principal corporación periodística de Nueva Ámsterdam, fundada por la familia Fox y núcleo informativo de la costa este."
     },
@@ -215,23 +230,23 @@
       "id": "lugares/Bronze Fish",
       "label": "Bronze Fish",
       "category": "lugares",
-      "libro": null,
-      "degree": 4,
+      "libro": "necromancia-medianoche",
+      "degree": 6,
       "excerpt": "Restaurante de mariscos en el centro de Nueva Ámsterdam, punto de encuentro clave entre Lucía Sinclair y Oliver Henderson."
     },
     {
       "id": "lugares/Buró Federal de Investigación",
       "label": "Buró Federal",
       "category": "lugares",
-      "libro": null,
-      "degree": 8,
+      "libro": "necromancia-medianoche",
+      "degree": 7,
       "excerpt": "Institución de investigación criminal y seguridad nacional de EE.UU. con atribuciones extendidas a lo sobrenatural y conspirativo."
     },
     {
       "id": "lugares/Catedral de Santa Regina",
       "label": "Catedral de Santa Regina",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 17,
       "excerpt": "Principal templo católico de Nueva Ámsterdam; centro de poder eclesiástico, conspiraciones y escenario de la masacre homónima."
     },
@@ -239,51 +254,51 @@
       "id": "lugares/Centro Histórico",
       "label": "Centro Histórico",
       "category": "lugares",
-      "libro": null,
-      "degree": 18,
+      "libro": "necromancia-medianoche",
+      "degree": 17,
       "excerpt": "Distrito urbano y núcleo nocturno de Nueva Ámsterdam; corazón decadente de clubes, información subterránea y violencia elegante. Escenario clave durante el caso «El Cuarto Rojo»."
     },
     {
       "id": "lugares/Club Palace",
       "label": "Club Palace",
       "category": "lugares",
-      "libro": null,
-      "degree": 7,
+      "libro": "necromancia-medianoche",
+      "degree": 8,
       "excerpt": "Cabaret y salón de espectáculos del distrito nocturno del Centro Histórico; zona neutral regida por Veronica Black, clave para la preparación de Lucía en La Infiltración Católica."
     },
     {
       "id": "lugares/Crystal Square",
       "label": "Crystal Square",
       "category": "lugares",
-      "libro": null,
-      "degree": 11,
+      "libro": "necromancia-medianoche",
+      "degree": 13,
       "excerpt": "Zona residencial suburbana de clase media-alta al sur de Nueva Ámsterdam; planeación cerrada, baja incidencia delictiva reportada y escenario periférico del caso «El Cuarto Rojo»."
     },
     {
       "id": "lugares/El Balneario Rushmore",
       "label": "Balneario Rushmore",
       "category": "lugares",
-      "libro": null,
-      "degree": 20,
+      "libro": "necromancia-medianoche",
+      "degree": 18,
       "excerpt": "Parque acuático temático abandonado en las afueras de Nueva Ámsterdam; convertido en laboratorio encubierto ligado al Elemento 121 y escenario de infiltraciones y confrontes clave.",
-      "image": "/img/cronicas-sangre/lugares/balneario-rushmore.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/lugares/balneario-rushmore",
       "imageAlt": "Balneario Rushmore"
     },
     {
       "id": "lugares/El Castillo de Nueva Ámsterdam",
       "label": "Castillo de Nueva Ámsterdam",
       "category": "lugares",
-      "libro": null,
-      "degree": 11,
+      "libro": "necromancia-medianoche",
+      "degree": 12,
       "excerpt": "Fortaleza neogótica del siglo XIX en las afueras de la ciudad; abandonada, ligada a una rama exiliada de nobleza rumana y escenario del despertar de Anastasia Dobrescu.",
-      "image": "/img/cronicas-sangre/lugares/el-castillo-de-nueva-amsterdam.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/lugares/el-castillo-de-nueva-amsterdam",
       "imageAlt": "Castillo de Nueva Ámsterdam"
     },
     {
       "id": "lugares/El Nido",
       "label": "El Nido",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 16,
       "excerpt": "Barrio densamente poblado y núcleo cultural de Nueva Ámsterdam; control comunitario con tolerancia ambigua, economía informal y conexiones con la Familia Zaikov."
     },
@@ -291,7 +306,7 @@
       "id": "lugares/Gilded Cat",
       "label": "Gilded Cat",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 1,
       "excerpt": "Salón de apuestas y juegos de azar en el Centro Histórico; recinto elegante con política estricta de anonimato y reputación ambigua."
     },
@@ -299,58 +314,59 @@
       "id": "lugares/Italian’s Boot",
       "label": "Italian’s Boot",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 11,
       "excerpt": "Restaurante-bar italiano y fachada operativa de la Familia Tornatore; su destrucción detonó la Semana Negra en Nueva Ámsterdam.",
-      "image": "/img/cronicas-sangre/lugares/italian-boot.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/lugares/italian-boot",
       "imageAlt": "Italian’s Boot"
     },
     {
       "id": "lugares/La Biblioteca de Nueva Ámsterdam",
       "label": "Biblioteca de Nueva Ámsterdam",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 8,
       "excerpt": "Institución cultural pública en el límite noreste del Centro Histórico; archivo neoclásico con hemeroteca y sala de raros. Nodo clave durante El Cuarto Rojo.",
-      "image": "/img/cronicas-sangre/lugares/biblioteca-amsterdam.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/lugares/biblioteca-amsterdam",
       "imageAlt": "Biblioteca de Nueva Ámsterdam"
     },
     {
       "id": "lugares/La Comisaría de Nueva Ámsterdam",
       "label": "La Comisaría de Nueva Ámsterdam",
       "category": "lugares",
-      "libro": null,
-      "degree": 18,
+      "libro": "necromancia-medianoche",
+      "degree": 17,
       "excerpt": "Sede principal de la policía local; centro operativo de investigaciones, interrogatorios y forense. Epicentro narrativo durante El Cuarto Rojo y la antesala de la Semana Negra."
     },
     {
       "id": "lugares/La Refinería McCarthy",
       "label": "Refinería McCarthy",
       "category": "lugares",
-      "libro": null,
-      "degree": 30,
+      "libro": "necromancia-medianoche",
+      "degree": 29,
       "excerpt": "Antiguo bastión industrial de la Familia McCarthy; escenario del clímax con la Reina de la Oscuridad y la caída de Cassian Thorne."
     },
     {
       "id": "lugares/Mansión McCarthy",
       "label": "Mansión McCarthy",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 28,
       "excerpt": "Residencia señorial del Distrito Norte; símbolo de poder discreto de la Familia McCarthy y escenario del asedio Voronin previo al clímax en la Refinería."
     },
     {
-      "id": "lugares/maple Valley",
-      "label": "maple Valley",
+      "id": "lugares/Maple Valley",
+      "label": "Maple Valley",
       "category": "lugares",
-      "libro": null,
-      "degree": 0
+      "libro": "necromancia-medianoche",
+      "degree": 10,
+      "excerpt": "Suburbio residencial de clase media en la periferia de Nueva Ámsterdam; casa de seguridad de Archie Woodward durante el caso del Cuarto Rojo."
     },
     {
       "id": "lugares/Mercado Viejo",
       "label": "Mercado Viejo",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 1,
       "excerpt": "Barrio comercial del centro-sureste de Nueva Ámsterdam, citado en la ficción como núcleo de tránsito junto al tranvía elevado."
     },
@@ -358,7 +374,7 @@
       "id": "lugares/Monte Galbrook",
       "label": "Monte Galbrook",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 10,
       "excerpt": "Mirador forestal y zona natural al norte de Nueva Ámsterdam; escenario de la desaparición de Jessica McCarthy y foco de rumores no humanos."
     },
@@ -366,15 +382,15 @@
       "id": "lugares/Nueva Ámsterdam",
       "label": "Nueva Ámsterdam",
       "category": "lugares",
-      "libro": null,
-      "degree": 45,
+      "libro": "necromancia-medianoche",
+      "degree": 52,
       "excerpt": "Ciudad ficticia en la costa noreste de EE. UU.; núcleo gótico-noir donde se entrelazan poder institucional y raíces ocultistas. Escenario central de Necromancia a Medianoche."
     },
     {
       "id": "lugares/Pizzas' Juan",
       "label": "Pizzas’ Juan",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 7,
       "excerpt": "Pizzería mexicana de barrio en Nueva Ámsterdam; pausa íntima y táctica de Cassian y Lucía durante “Caso Resuelto”, donde atan cabos sobre Alan McCarthy y el Elemento 121."
     },
@@ -382,23 +398,23 @@
       "id": "lugares/Raven District",
       "label": "Raven District",
       "category": "lugares",
-      "libro": null,
-      "degree": 11,
+      "libro": "necromancia-medianoche",
+      "degree": 10,
       "excerpt": "Complejo industrial periférico de McCarthy Petroleum; laboratorio subterráneo donde Tamara Dobrescu y Archie Woodward sintetizaron por primera vez el Elemento 121. Destruido en 1899."
     },
     {
       "id": "lugares/Scarlet Horn",
       "label": "Scarlet Horn",
       "category": "lugares",
-      "libro": null,
-      "degree": 6,
+      "libro": "necromancia-medianoche",
+      "degree": 5,
       "excerpt": "Club de jazz y bar clandestino del Centro Histórico; semillero de artistas y nodo de actividades semilegales. Primer encuentro entre Cassian y Tamara (como “Angelina Pollard”)."
     },
     {
       "id": "lugares/Velvet Trumpet",
       "label": "Velvet Trumpet",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 2,
       "excerpt": "Bar-lounge del Centro Histórico con tarima semicircular, piano siempre afinado y programación de música en vivo; ambiente melancólico y clientela diversa."
     },
@@ -406,7 +422,7 @@
       "id": "lugares/Villa Lobos",
       "label": "Villa Lobos",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 11,
       "excerpt": "Fraccionamiento cerrado dentro de Crystal Square; escena del caso «El Cuarto Rojo» y residencia de la familia McCarthy y los Chapman."
     },
@@ -414,7 +430,7 @@
       "id": "lugares/Wendell Pines",
       "label": "Wendell Pines",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 1,
       "excerpt": "Reserva estatal al norte de Nueva Ámsterdam, límite geográfico citado en Monte Galbrook."
     },
@@ -422,7 +438,7 @@
       "id": "lugares/Whispering Keys",
       "label": "Whispering Keys",
       "category": "lugares",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 3,
       "excerpt": "Club de jazz clandestino en los subniveles del Centro Histórico; acceso por contraseña semanal bajo una tienda de pianos abandonada. Neutral, con clientela de informantes y seres ambiguos."
     },
@@ -430,153 +446,143 @@
       "id": "objetos-conceptos/Criptidae Librum",
       "label": "Criptidae Librum",
       "category": "objetos-conceptos",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 0
     },
     {
       "id": "objetos-conceptos/Daga de Obsidiana",
       "label": "Daga de Obsidiana",
       "category": "objetos-conceptos",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 0
     },
     {
       "id": "objetos-conceptos/Elemento 121",
       "label": "Elemento 121",
       "category": "objetos-conceptos",
-      "libro": null,
-      "degree": 10,
+      "libro": "necromancia-medianoche",
+      "degree": 11,
       "excerpt": "Compuesto alquímico-bioquímico inestable sintetizado en Raven District (Prueba 121); clave en la conspiración de Nueva Ámsterdam."
     },
     {
       "id": "objetos-conceptos/Monedas de Latón",
       "label": "Monedas de Latón",
       "category": "objetos-conceptos",
-      "libro": null,
-      "degree": 0
+      "libro": "necromancia-medianoche",
+      "degree": 1
     },
     {
       "id": "objetos-conceptos/Munición Especial",
       "label": "Munición Especial",
       "category": "objetos-conceptos",
-      "libro": null,
-      "degree": 0
+      "libro": "necromancia-medianoche",
+      "degree": 1
     },
     {
       "id": "objetos-conceptos/Profecía de la Reina de la Oscuridad",
       "label": "Profecía de la Reina de la Oscuridad",
       "category": "objetos-conceptos",
-      "libro": null,
-      "degree": 0
+      "libro": "necromancia-medianoche",
+      "degree": 1
     },
     {
       "id": "objetos-conceptos/Profecía de los Vinculados",
       "label": "Profecía de los Vinculados",
       "category": "objetos-conceptos",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 0
     },
     {
       "id": "objetos-conceptos/Recetario de las Brujas",
       "label": "Recetario de las Brujas",
       "category": "objetos-conceptos",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 0
     },
     {
       "id": "objetos-conceptos/Reina de la Oscuridad",
       "label": "Reina de la Oscuridad",
       "category": "objetos-conceptos",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 0
     },
     {
       "id": "objetos-conceptos/Reino de las sombras",
       "label": "Reino de las sombras",
       "category": "objetos-conceptos",
-      "libro": null,
-      "degree": 0
+      "libro": "necromancia-medianoche",
+      "degree": 2
     },
     {
       "id": "objetos-conceptos/Tomo de los Vinculados",
       "label": "Tomo de los Vinculados",
       "category": "objetos-conceptos",
-      "libro": null,
-      "degree": 0
+      "libro": "necromancia-medianoche",
+      "degree": 1
     },
     {
       "id": "objetos-conceptos/Vinculo de Sangre",
       "label": "Vinculo de Sangre",
       "category": "objetos-conceptos",
-      "libro": null,
-      "degree": 0
+      "libro": "necromancia-medianoche",
+      "degree": 1
     },
     {
       "id": "personajes/Alan McCarthy",
       "label": "Alan McCarthy",
       "category": "personajes",
-      "libro": null,
-      "degree": 18,
+      "libro": "necromancia-medianoche",
+      "degree": 22,
       "excerpt": "Empresario, patriarca de la familia McCarthy.",
-      "image": "/img/cronicas-sangre/personajes/alan-mccarthy.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/alan-mccarthy",
       "imageAlt": "Alan McCarthy"
     },
     {
       "id": "personajes/Anastasia Dobrescu",
       "label": "Anastasia Dobrescu",
       "category": "personajes",
-      "libro": null,
-      "degree": 16,
+      "libro": "necromancia-medianoche",
+      "degree": 21,
       "excerpt": "Rapax Hominum, vulgarmente conocida como una vampira",
-      "image": "/img/cronicas-sangre/personajes/anastasia-dobrescu.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/anastasia-dobrescu",
       "imageAlt": "Anastasia Dobrescu"
     },
     {
       "id": "personajes/Andrew Sheppard",
       "label": "Andrew Sheppard",
       "category": "personajes",
-      "libro": null,
-      "degree": 8,
+      "libro": "necromancia-medianoche",
+      "degree": 11,
       "excerpt": "Historiador",
-      "image": "/img/cronicas-sangre/personajes/Andrew-Sheppard.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/Andrew-Sheppard",
       "imageAlt": "Andrew Sheppard"
-    },
-    {
-      "id": "personajes/Angelina Pollard",
-      "label": "Angelina Pollard",
-      "category": "personajes",
-      "libro": null,
-      "degree": 12,
-      "excerpt": "Alias público de Tamara Dobrescu; identidad usada en contextos sociales y de investigación",
-      "image": "/img/cronicas-sangre/personajes/angelina-pollard.png",
-      "imageAlt": "Angelina Pollard"
     },
     {
       "id": "personajes/Angelo Tornatore",
       "label": "Angelo Tornatore",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 5,
       "excerpt": "Patriarca de la Familia Tornatore; capo criminal de Nueva Ámsterdam",
-      "image": "/img/cronicas-sangre/personajes/angelo-tornatore.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/angelo-tornatore",
       "imageAlt": "Angelo Tornatore"
     },
     {
       "id": "personajes/Anya Rudzki",
       "label": "Anya Rudzki",
       "category": "personajes",
-      "libro": null,
-      "degree": 0,
-      "excerpt": "Anya es una operativa de seguridad profesional de alto rango, reconocida como la mano derecha de Jayson Branch, el jefe de seguridad de la familia McCarthy en Nueva Ámsterdam. Su rol principal consiste en la coordinación operativa y protección táctica de los intereses de la familia frente a amenazas externas, destacándose por su temple y lealtad durante la crisis de los Rapax Hominum. Aparece como una figura clave en la organización de la defensa de la mansión McCarthy, siendo una de las pocas integrantes de su unidad que logra sobrevivir al asalto directo de la facción de los Voronin. Anya es"
+      "libro": "necromancia-medianoche",
+      "degree": 4,
+      "excerpt": "Ficha de Anya Rudzki en Crónicas de Sangre y Sombra."
     },
     {
       "id": "personajes/Archie Woodward",
       "label": "Archie Woodward",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 23,
       "excerpt": "Jack of all trades master of none",
-      "image": "/img/cronicas-sangre/personajes/ArchieWoodward.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ArchieWoodward",
       "imageAlt": "Archie Woodward"
     },
     {
@@ -584,7 +590,7 @@
       "label": "Caleb Thorne",
       "category": "personajes",
       "libro": "necromancia-medianoche",
-      "degree": 2,
+      "degree": 5,
       "excerpt": "Padre de Cassian Thorne; muerto como héroe al interceptar balas destinadas a Dorian Blackwood durante una emboscada mafiosa",
       "image": "/img/cronicas-sangre/personajes/caleb-thorne.jpg",
       "imageAlt": "Caleb Thorne"
@@ -594,109 +600,109 @@
       "label": "Cassian Thorne",
       "category": "personajes",
       "libro": "necromancia-medianoche",
-      "degree": 54,
+      "degree": 55,
       "excerpt": "Detective de la Policía de Nueva Ámsterdam; protagonista de Necromancia a Medianoche",
-      "image": "/img/cronicas-sangre/personajes/cassian-thorne.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/cassian-thorne",
       "imageAlt": "Cassian Thorne"
     },
     {
       "id": "personajes/Cecilia Amadeo",
       "label": "Cecilia Amadeo",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 11,
       "excerpt": "Bruja vinculada a la Catedral de Santa Regina; mentora de Cassian y Lucia",
-      "image": "/img/cronicas-sangre/personajes/cecilia-giannotti.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/cecilia-giannotti",
       "imageAlt": "Cecilia Amadeo"
     },
     {
       "id": "personajes/Devin Kirby",
       "label": "Devin Kirby",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 11,
       "excerpt": "Camarógrafo de Atlantic News",
-      "image": "/img/cronicas-sangre/personajes/devin-kirby.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/devin-kirby",
       "imageAlt": "Devin Kirby"
     },
     {
       "id": "personajes/Dorian Blackwood",
       "label": "Dorian Blackwood",
       "category": "personajes",
-      "libro": null,
-      "degree": 16,
+      "libro": "necromancia-medianoche",
+      "degree": 29,
       "excerpt": "Jefe de detectives de la comisaría de Nueva Ámsterdam",
-      "image": "/img/cronicas-sangre/personajes/dorian-blackwood.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/dorian-blackwood",
       "imageAlt": "Dorian Blackwood"
     },
     {
       "id": "personajes/Duccio Tornatore",
       "label": "Duccio Tornatore",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 4,
       "excerpt": "Heredero menor de la Familia Tornatore; socialité impulsivo e imprevisible",
-      "image": "/img/cronicas-sangre/personajes/duccio-tornatore.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/duccio-tornatore",
       "imageAlt": "Duccio Tornatore"
     },
     {
       "id": "personajes/Frederick Chapman",
       "label": "Frederick Chapman",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 9,
       "excerpt": "Patriarca de la familia Chapman; empresario de colchones",
-      "image": "/img/cronicas-sangre/personajes/frederick-chapman.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/frederick-chapman",
       "imageAlt": "Frederick Chapman"
     },
     {
       "id": "personajes/Greta Zaikov",
       "label": "Greta Zaikov",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 13,
       "excerpt": "Francotiradora de las “Águilas del Nido” (Familia Zaikov)",
-      "image": "/img/cronicas-sangre/personajes/greta-zaikov.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/greta-zaikov",
       "imageAlt": "Greta Zaikov"
     },
     {
       "id": "personajes/Grigori Zaikov",
       "label": "Grigori Zaikov",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 9,
       "excerpt": "“Tanque” de las Águilas del Nido; fuerza de choque de la Familia Zaikov",
-      "image": "/img/cronicas-sangre/personajes/grigori-zaikov.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/grigori-zaikov",
       "imageAlt": "Grigori Zaikov"
     },
     {
       "id": "personajes/Ian Zaikov",
       "label": "Ian Zaikov",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 14,
       "excerpt": "Especialista en cuchillos; punta de lanza de las Águilas del Nido (Familia Zaikov)",
-      "image": "/img/cronicas-sangre/personajes/ian-zaikov.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ian-zaikov",
       "imageAlt": "Ian Zaikov"
     },
     {
       "id": "personajes/Ibrahim Ramazan Zaikov",
       "label": "Ibrahim Ramazan Zaikov",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 11,
       "excerpt": "Mayor consejero de las Águilas del Nido; corazón espiritual de la Familia Zaikov",
-      "image": "/img/cronicas-sangre/personajes/ibrahim-ramazan-zaikov.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ibrahim-ramazan-zaikov",
       "imageAlt": "Ibrahim Ramazan Zaikov"
     },
     {
       "id": "personajes/Irene Zaikov",
       "label": "Irene Zaikov",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 8,
       "excerpt": "Exesposa de Cassian Thorne; integrante de la rama Ozturk–Zaikov",
-      "image": "/img/cronicas-sangre/personajes/irene-zaikov.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/irene-zaikov",
       "imageAlt": "Irene Zaikov"
     },
     {
@@ -706,47 +712,47 @@
       "libro": "necromancia-medianoche",
       "degree": 21,
       "excerpt": "Director y productor de Atlantic News; heredero del medio; testigo clave de Necromancia a Medianoche",
-      "image": "/img/cronicas-sangre/personajes/jack-fox.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jack-fox",
       "imageAlt": "Jack Fox"
     },
     {
       "id": "personajes/Jayson Branch",
       "label": "Jayson Branch",
       "category": "personajes",
-      "libro": null,
-      "degree": 15,
+      "libro": "necromancia-medianoche",
+      "degree": 17,
       "excerpt": "Jefe de seguridad de la Familia McCarthy; coordinador táctico durante Necromancia a Medianoche",
-      "image": "/img/cronicas-sangre/personajes/jayson-branch.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jayson-branch",
       "imageAlt": "Jayson Branch"
     },
     {
       "id": "personajes/Jessica McCarthy",
       "label": "Jessica McCarthy",
       "category": "personajes",
-      "libro": null,
-      "degree": 25,
+      "libro": "necromancia-medianoche",
+      "degree": 26,
       "excerpt": "Heredera de la fortuna McCarthy; portadora del Elemento 121",
-      "image": "/img/cronicas-sangre/personajes/jessica-mccarthy.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jessica-mccarthy",
       "imageAlt": "Jessica McCarthy"
     },
     {
       "id": "personajes/Kingston Graham",
       "label": "Kingston Graham",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 9,
       "excerpt": "Alto funcionario del Buró; operador clave del programa secreto y reclutador de Lucia Sinclair",
-      "image": "/img/cronicas-sangre/personajes/kingston-graham.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/kingston-graham",
       "imageAlt": "Kingston Graham"
     },
     {
       "id": "personajes/Logan Crane",
       "label": "Logan Crane",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 11,
       "excerpt": "Detective de la Policía de Nueva Ámsterdam; enlace operativo del equipo Thorne–Sinclair",
-      "image": "/img/cronicas-sangre/personajes/logan-crane.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/logan-crane",
       "imageAlt": "Logan Crane"
     },
     {
@@ -754,119 +760,119 @@
       "label": "Lucia Sinclair",
       "category": "personajes",
       "libro": "necromancia-medianoche",
-      "degree": 46,
+      "degree": 53,
       "excerpt": "Agente especial del Buró; co-protagonista y eje federal de la investigación en Nueva Ámsterdam",
-      "image": "/img/cronicas-sangre/personajes/lucia-sinclair.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/lucia-sinclair",
       "imageAlt": "Lucia Sinclair"
     },
     {
       "id": "personajes/Maisie Stewart",
       "label": "Maisie Stewart",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 5,
       "excerpt": "Hostess/encargada y mano derecha de Verónica Black en el Club Palace; apoyo clave durante la Infiltración Católica",
-      "image": "/img/cronicas-sangre/personajes/maisie-stewart.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/maisie-stewart",
       "imageAlt": "Maisie Stewart"
     },
     {
       "id": "personajes/Marco Giannotti",
       "label": "Marco Giannotti",
       "category": "personajes",
-      "libro": null,
-      "degree": 19,
+      "libro": "necromancia-medianoche",
+      "degree": 18,
       "excerpt": "Cazador clandestino y táctico de los Vinculados; mentor temporal de Cassian y Lucia",
-      "image": "/img/cronicas-sangre/personajes/marco-giannotti.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/marco-giannotti",
       "imageAlt": "Marco Giannotti"
     },
     {
       "id": "personajes/Oliver Henderson",
       "label": "Oliver Henderson",
       "category": "personajes",
-      "libro": null,
-      "degree": 22,
+      "libro": "necromancia-medianoche",
+      "degree": 23,
       "excerpt": "Reportero de Atlantic News; vampirizado tras el Castillo; catalizador del destino de Jessica",
-      "image": "/img/cronicas-sangre/personajes/oliver-henderson.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/oliver-henderson",
       "imageAlt": "Oliver Henderson"
     },
     {
       "id": "personajes/Paciano Tornatore",
       "label": "Paciano Tornatore",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 5,
       "excerpt": "Heredero mayor y estratega financiero de la Familia Tornatore",
-      "image": "/img/cronicas-sangre/personajes/paciano-tornatore.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/paciano-tornatore",
       "imageAlt": "Paciano Tornatore"
     },
     {
       "id": "personajes/Pollione Tornatore",
       "label": "Pollione Tornatore",
       "category": "personajes",
-      "libro": null,
-      "degree": 11,
+      "libro": "necromancia-medianoche",
+      "degree": 15,
       "excerpt": "Operador y negociador de la Familia Tornatore; enlace pragmático con la policía",
-      "image": "/img/cronicas-sangre/personajes/pollione-tornatore.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/pollione-tornatore",
       "imageAlt": "Pollione Tornatore"
     },
     {
       "id": "personajes/Ramses Zaikov",
       "label": "Ramses Zaikov",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 10,
       "excerpt": "Estratega y cerebro operativo de la Familia Zaikov; colíder de las “Águilas del Nido”",
-      "image": "/img/cronicas-sangre/personajes/Ramses-Zaikov.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/Ramses-Zaikov",
       "imageAlt": "Ramses Zaikov"
     },
     {
       "id": "personajes/Rezniv Voronin",
       "label": "Rezniv Voronin",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 9,
       "excerpt": "Patriarca de la Familia Voronin; fanático de la Reina de la Oscuridad y antagonista del clímax en la refinería",
-      "image": "/img/cronicas-sangre/personajes/rezniv-voronin.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/rezniv-voronin",
       "imageAlt": "Rezniv Voronin"
     },
     {
       "id": "personajes/Ryan Chapman",
       "label": "Ryan Chapman",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 6,
       "excerpt": "Hijo de Frederick Chapman; testigo clave del caso “El Cuarto Rojo”",
-      "image": "/img/cronicas-sangre/personajes/ryan-chapman.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ryan-chapman",
       "imageAlt": "Ryan Chapman"
     },
     {
       "id": "personajes/Susan Barnes",
       "label": "Susan Barnes",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 8,
       "excerpt": "Ingeniera de sonido de Atlantic News; miembro del equipo del documental del Castillo de Nueva Ámsterdam",
-      "image": "/img/cronicas-sangre/personajes/susan-barnes.jpg",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/susan-barnes",
       "imageAlt": "Susan Barnes"
     },
     {
       "id": "personajes/Tamara Dobrescu",
       "label": "Tamara Dobrescu",
       "category": "personajes",
-      "libro": null,
-      "degree": 27,
+      "libro": "necromancia-medianoche",
+      "degree": 30,
       "excerpt": "Científica del linaje Dobrescu; alias público “Angelina Pollard”.",
-      "image": "/img/cronicas-sangre/personajes/tamara-dobrescu.JPG",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/tamara-dobrescu",
       "imageAlt": "Tamara Dobrescu"
     },
     {
       "id": "personajes/Veronica Black",
       "label": "Verónica Black",
       "category": "personajes",
-      "libro": null,
+      "libro": "necromancia-medianoche",
       "degree": 9,
       "excerpt": "Dueña y “madame” del Club Palace; operadora influyente con acuerdos tácticos con la comisaría",
-      "image": "/img/cronicas-sangre/personajes/veronica-black.png",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/veronica-black",
       "imageAlt": "Verónica Black"
     }
   ],
@@ -1098,10 +1104,6 @@
     {
       "source": "eventos/Interrogación de Archie Woodward",
       "target": "personajes/Tamara Dobrescu"
-    },
-    {
-      "source": "eventos/Interrogación de Archie Woodward",
-      "target": "personajes/Angelina Pollard"
     },
     {
       "source": "eventos/Interrogación de Archie Woodward",
@@ -1340,40 +1342,8 @@
       "target": "lugares/Raven District"
     },
     {
-      "source": "familias/Cazadores",
-      "target": "lugares/Nueva Ámsterdam"
-    },
-    {
-      "source": "familias/Cazadores",
-      "target": "lugares/Catedral de Santa Regina"
-    },
-    {
-      "source": "familias/Cazadores",
-      "target": "lugares/La Comisaría de Nueva Ámsterdam"
-    },
-    {
-      "source": "familias/Cazadores",
-      "target": "lugares/Buró Federal de Investigación"
-    },
-    {
-      "source": "familias/Cazadores",
-      "target": "familias/La Familia Voronin"
-    },
-    {
-      "source": "eventos/El Cuarto Rojo",
+      "source": "eventos/Masacre de la Catedral de Santa Regina",
       "target": "familias/Cazadores"
-    },
-    {
-      "source": "eventos/La Infiltración Católica",
-      "target": "familias/Cazadores"
-    },
-    {
-      "source": "familias/Cazadores",
-      "target": "lugares/El Balneario Rushmore"
-    },
-    {
-      "source": "familias/Cazadores",
-      "target": "lugares/La Refinería McCarthy"
     },
     {
       "source": "familias/Cazadores",
@@ -1385,7 +1355,39 @@
     },
     {
       "source": "familias/Cazadores",
-      "target": "personajes/Lucia Sinclair"
+      "target": "familias/Rapax Hominum"
+    },
+    {
+      "source": "familias/Cazadores",
+      "target": "familias/Los Vinculados"
+    },
+    {
+      "source": "familias/Cazadores",
+      "target": "libros/Necromancia a Medianoche"
+    },
+    {
+      "source": "familias/Cazadores",
+      "target": "objetos-conceptos/Tomo de los Vinculados"
+    },
+    {
+      "source": "familias/Cazadores",
+      "target": "lugares/Nueva Ámsterdam"
+    },
+    {
+      "source": "familias/Cazadores",
+      "target": "lugares/Catedral de Santa Regina"
+    },
+    {
+      "source": "familias/Cazadores",
+      "target": "objetos-conceptos/Munición Especial"
+    },
+    {
+      "source": "familias/Cazadores",
+      "target": "objetos-conceptos/Monedas de Latón"
+    },
+    {
+      "source": "familias/Cazadores",
+      "target": "objetos-conceptos/Vinculo de Sangre"
     },
     {
       "source": "familias/Familia Puckett",
@@ -1588,6 +1590,10 @@
       "target": "personajes/Rezniv Voronin"
     },
     {
+      "source": "familias/Cazadores",
+      "target": "familias/La Familia Voronin"
+    },
+    {
       "source": "familias/La Familia Voronin",
       "target": "familias/Los Vinculados"
     },
@@ -1696,10 +1702,6 @@
       "target": "personajes/Cecilia Amadeo"
     },
     {
-      "source": "familias/Cazadores",
-      "target": "familias/Los Vinculados"
-    },
-    {
       "source": "eventos/El Cuarto Rojo",
       "target": "familias/Los Vinculados"
     },
@@ -1774,6 +1776,54 @@
     {
       "source": "familias/McCarthy Petroleum",
       "target": "personajes/Jessica McCarthy"
+    },
+    {
+      "source": "familias/Rapax Hominum",
+      "target": "lugares/Nueva Ámsterdam"
+    },
+    {
+      "source": "familias/Rapax Hominum",
+      "target": "personajes/Anastasia Dobrescu"
+    },
+    {
+      "source": "familias/Rapax Hominum",
+      "target": "personajes/Tamara Dobrescu"
+    },
+    {
+      "source": "familias/Rapax Hominum",
+      "target": "personajes/Rezniv Voronin"
+    },
+    {
+      "source": "familias/Rapax Hominum",
+      "target": "personajes/Oliver Henderson"
+    },
+    {
+      "source": "familias/Rapax Hominum",
+      "target": "objetos-conceptos/Profecía de la Reina de la Oscuridad"
+    },
+    {
+      "source": "familias/La Familia Voronin",
+      "target": "familias/Rapax Hominum"
+    },
+    {
+      "source": "familias/Rapax Hominum",
+      "target": "libros/Necromancia a Medianoche"
+    },
+    {
+      "source": "familias/Rapax Hominum",
+      "target": "objetos-conceptos/Reino de las sombras"
+    },
+    {
+      "source": "familias/Los Vinculados",
+      "target": "familias/Rapax Hominum"
+    },
+    {
+      "source": "familias/Rapax Hominum",
+      "target": "personajes/Jessica McCarthy"
+    },
+    {
+      "source": "familias/La Cruz",
+      "target": "familias/Rapax Hominum"
     },
     {
       "source": "lugares/Atlantic News",
@@ -1874,10 +1924,6 @@
     {
       "source": "lugares/Centro Histórico",
       "target": "personajes/Cassian Thorne"
-    },
-    {
-      "source": "lugares/Centro Histórico",
-      "target": "personajes/Angelina Pollard"
     },
     {
       "source": "lugares/Centro Histórico",
@@ -2256,6 +2302,46 @@
       "target": "lugares/Mansión McCarthy"
     },
     {
+      "source": "lugares/Maple Valley",
+      "target": "lugares/Nueva Ámsterdam"
+    },
+    {
+      "source": "lugares/Maple Valley",
+      "target": "personajes/Archie Woodward"
+    },
+    {
+      "source": "lugares/La Comisaría de Nueva Ámsterdam",
+      "target": "lugares/Maple Valley"
+    },
+    {
+      "source": "libros/Necromancia a Medianoche",
+      "target": "lugares/Maple Valley"
+    },
+    {
+      "source": "eventos/El Cuarto Rojo",
+      "target": "lugares/Maple Valley"
+    },
+    {
+      "source": "familias/La Cruz",
+      "target": "lugares/Maple Valley"
+    },
+    {
+      "source": "lugares/Maple Valley",
+      "target": "personajes/Dorian Blackwood"
+    },
+    {
+      "source": "lugares/Maple Valley",
+      "target": "personajes/Cassian Thorne"
+    },
+    {
+      "source": "lugares/Maple Valley",
+      "target": "personajes/Lucia Sinclair"
+    },
+    {
+      "source": "lugares/Catedral de Santa Regina",
+      "target": "lugares/Maple Valley"
+    },
+    {
       "source": "lugares/Monte Galbrook",
       "target": "lugares/Nueva Ámsterdam"
     },
@@ -2392,10 +2478,6 @@
       "target": "personajes/Tamara Dobrescu"
     },
     {
-      "source": "lugares/Scarlet Horn",
-      "target": "personajes/Angelina Pollard"
-    },
-    {
       "source": "lugares/Nueva Ámsterdam",
       "target": "lugares/Villa Lobos"
     },
@@ -2464,8 +2546,28 @@
       "target": "objetos-conceptos/Elemento 121"
     },
     {
+      "source": "lugares/Crystal Square",
+      "target": "personajes/Alan McCarthy"
+    },
+    {
+      "source": "lugares/Nueva Ámsterdam",
+      "target": "personajes/Alan McCarthy"
+    },
+    {
       "source": "personajes/Alan McCarthy",
       "target": "personajes/Jessica McCarthy"
+    },
+    {
+      "source": "libros/Necromancia a Medianoche",
+      "target": "personajes/Alan McCarthy"
+    },
+    {
+      "source": "familias/Rapax Hominum",
+      "target": "personajes/Alan McCarthy"
+    },
+    {
+      "source": "personajes/Alan McCarthy",
+      "target": "personajes/Jayson Branch"
     },
     {
       "source": "personajes/Alan McCarthy",
@@ -2477,19 +2579,67 @@
     },
     {
       "source": "personajes/Alan McCarthy",
-      "target": "personajes/Rezniv Voronin"
+      "target": "personajes/Cassian Thorne"
+    },
+    {
+      "source": "personajes/Alan McCarthy",
+      "target": "personajes/Lucia Sinclair"
     },
     {
       "source": "personajes/Anastasia Dobrescu",
       "target": "personajes/Tamara Dobrescu"
     },
     {
-      "source": "personajes/Andrew Sheppard",
+      "source": "libros/Necromancia a Medianoche",
+      "target": "personajes/Anastasia Dobrescu"
+    },
+    {
+      "source": "objetos-conceptos/Reino de las sombras",
+      "target": "personajes/Anastasia Dobrescu"
+    },
+    {
+      "source": "personajes/Anastasia Dobrescu",
+      "target": "personajes/Oliver Henderson"
+    },
+    {
+      "source": "personajes/Anastasia Dobrescu",
+      "target": "personajes/Lucia Sinclair"
+    },
+    {
+      "source": "personajes/Anastasia Dobrescu",
+      "target": "personajes/Cassian Thorne"
+    },
+    {
+      "source": "personajes/Anastasia Dobrescu",
+      "target": "personajes/Jessica McCarthy"
+    },
+    {
+      "source": "personajes/Anastasia Dobrescu",
       "target": "personajes/Jack Fox"
+    },
+    {
+      "source": "lugares/Nueva Ámsterdam",
+      "target": "personajes/Andrew Sheppard"
     },
     {
       "source": "lugares/Atlantic News",
       "target": "personajes/Andrew Sheppard"
+    },
+    {
+      "source": "libros/Necromancia a Medianoche",
+      "target": "personajes/Andrew Sheppard"
+    },
+    {
+      "source": "familias/La Familia Dobrescu",
+      "target": "personajes/Andrew Sheppard"
+    },
+    {
+      "source": "personajes/Anastasia Dobrescu",
+      "target": "personajes/Andrew Sheppard"
+    },
+    {
+      "source": "personajes/Andrew Sheppard",
+      "target": "personajes/Jack Fox"
     },
     {
       "source": "personajes/Andrew Sheppard",
@@ -2497,55 +2647,11 @@
     },
     {
       "source": "personajes/Andrew Sheppard",
-      "target": "personajes/Devin Kirby"
-    },
-    {
-      "source": "personajes/Andrew Sheppard",
-      "target": "personajes/Susan Barnes"
-    },
-    {
-      "source": "personajes/Andrew Sheppard",
       "target": "personajes/Lucia Sinclair"
     },
     {
-      "source": "personajes/Anastasia Dobrescu",
-      "target": "personajes/Andrew Sheppard"
-    },
-    {
-      "source": "personajes/Angelina Pollard",
-      "target": "personajes/Tamara Dobrescu"
-    },
-    {
-      "source": "personajes/Angelina Pollard",
-      "target": "personajes/Cassian Thorne"
-    },
-    {
-      "source": "personajes/Angelina Pollard",
-      "target": "personajes/Archie Woodward"
-    },
-    {
-      "source": "personajes/Angelina Pollard",
-      "target": "personajes/Marco Giannotti"
-    },
-    {
-      "source": "familias/McCarthy Petroleum",
-      "target": "personajes/Angelina Pollard"
-    },
-    {
-      "source": "lugares/Raven District",
-      "target": "personajes/Angelina Pollard"
-    },
-    {
-      "source": "personajes/Alan McCarthy",
-      "target": "personajes/Angelina Pollard"
-    },
-    {
-      "source": "personajes/Angelina Pollard",
-      "target": "personajes/Jessica McCarthy"
-    },
-    {
-      "source": "lugares/El Balneario Rushmore",
-      "target": "personajes/Angelina Pollard"
+      "source": "personajes/Andrew Sheppard",
+      "target": "personajes/Devin Kirby"
     },
     {
       "source": "lugares/Nueva Ámsterdam",
@@ -2554,6 +2660,22 @@
     {
       "source": "personajes/Angelo Tornatore",
       "target": "personajes/Pollione Tornatore"
+    },
+    {
+      "source": "personajes/Anya Rudzki",
+      "target": "personajes/Jayson Branch"
+    },
+    {
+      "source": "lugares/Nueva Ámsterdam",
+      "target": "personajes/Anya Rudzki"
+    },
+    {
+      "source": "familias/La Familia McCarthy",
+      "target": "personajes/Anya Rudzki"
+    },
+    {
+      "source": "libros/Necromancia a Medianoche",
+      "target": "personajes/Anya Rudzki"
     },
     {
       "source": "personajes/Archie Woodward",
@@ -2584,12 +2706,24 @@
       "target": "personajes/Tamara Dobrescu"
     },
     {
-      "source": "lugares/La Comisaría de Nueva Ámsterdam",
+      "source": "lugares/Nueva Ámsterdam",
       "target": "personajes/Caleb Thorne"
     },
     {
       "source": "personajes/Caleb Thorne",
       "target": "personajes/Cassian Thorne"
+    },
+    {
+      "source": "personajes/Caleb Thorne",
+      "target": "personajes/Dorian Blackwood"
+    },
+    {
+      "source": "personajes/Caleb Thorne",
+      "target": "personajes/Lucia Sinclair"
+    },
+    {
+      "source": "lugares/Bronze Fish",
+      "target": "personajes/Caleb Thorne"
     },
     {
       "source": "personajes/Cassian Thorne",
@@ -2640,10 +2774,6 @@
       "target": "personajes/Dorian Blackwood"
     },
     {
-      "source": "personajes/Anastasia Dobrescu",
-      "target": "personajes/Cassian Thorne"
-    },
-    {
       "source": "personajes/Cecilia Amadeo",
       "target": "personajes/Marco Giannotti"
     },
@@ -2666,6 +2796,62 @@
     {
       "source": "personajes/Devin Kirby",
       "target": "personajes/Susan Barnes"
+    },
+    {
+      "source": "lugares/Nueva Ámsterdam",
+      "target": "personajes/Dorian Blackwood"
+    },
+    {
+      "source": "personajes/Dorian Blackwood",
+      "target": "personajes/Veronica Black"
+    },
+    {
+      "source": "familias/La Familia Tornatore",
+      "target": "personajes/Dorian Blackwood"
+    },
+    {
+      "source": "lugares/Club Palace",
+      "target": "personajes/Dorian Blackwood"
+    },
+    {
+      "source": "lugares/Bronze Fish",
+      "target": "personajes/Dorian Blackwood"
+    },
+    {
+      "source": "lugares/Crystal Square",
+      "target": "personajes/Dorian Blackwood"
+    },
+    {
+      "source": "familias/La Familia Chapman",
+      "target": "personajes/Dorian Blackwood"
+    },
+    {
+      "source": "personajes/Dorian Blackwood",
+      "target": "personajes/Lucia Sinclair"
+    },
+    {
+      "source": "lugares/El Castillo de Nueva Ámsterdam",
+      "target": "personajes/Dorian Blackwood"
+    },
+    {
+      "source": "familias/La Familia Santorelli",
+      "target": "personajes/Dorian Blackwood"
+    },
+    {
+      "source": "familias/La Familia Zaikov",
+      "target": "personajes/Dorian Blackwood"
+    },
+    {
+      "source": "personajes/Dorian Blackwood",
+      "target": "personajes/Logan Crane"
+    },
+    {
+      "source": "personajes/Dorian Blackwood",
+      "target": "personajes/Jayson Branch"
+    },
+    {
+      "source": "personajes/Dorian Blackwood",
+      "target": "personajes/Pollione Tornatore"
     },
     {
       "source": "personajes/Angelo Tornatore",
@@ -2856,10 +3042,6 @@
       "target": "personajes/Jack Fox"
     },
     {
-      "source": "personajes/Anastasia Dobrescu",
-      "target": "personajes/Jack Fox"
-    },
-    {
       "source": "personajes/Jack Fox",
       "target": "personajes/Lucia Sinclair"
     },
@@ -2870,10 +3052,6 @@
     {
       "source": "libros/La Mujer Carmesí",
       "target": "personajes/Jack Fox"
-    },
-    {
-      "source": "personajes/Alan McCarthy",
-      "target": "personajes/Jayson Branch"
     },
     {
       "source": "personajes/Jayson Branch",
@@ -2956,10 +3134,6 @@
       "target": "personajes/Kingston Graham"
     },
     {
-      "source": "personajes/Dorian Blackwood",
-      "target": "personajes/Logan Crane"
-    },
-    {
       "source": "personajes/Cassian Thorne",
       "target": "personajes/Logan Crane"
     },
@@ -2984,6 +3158,22 @@
       "target": "personajes/Logan Crane"
     },
     {
+      "source": "familias/Cazadores",
+      "target": "personajes/Lucia Sinclair"
+    },
+    {
+      "source": "objetos-conceptos/Elemento 121",
+      "target": "personajes/Lucia Sinclair"
+    },
+    {
+      "source": "personajes/Lucia Sinclair",
+      "target": "personajes/Marco Giannotti"
+    },
+    {
+      "source": "personajes/Lucia Sinclair",
+      "target": "personajes/Tamara Dobrescu"
+    },
+    {
       "source": "lugares/Club Palace",
       "target": "personajes/Maisie Stewart"
     },
@@ -3004,10 +3194,6 @@
       "target": "personajes/Maisie Stewart"
     },
     {
-      "source": "personajes/Lucia Sinclair",
-      "target": "personajes/Marco Giannotti"
-    },
-    {
       "source": "personajes/Jessica McCarthy",
       "target": "personajes/Marco Giannotti"
     },
@@ -3022,10 +3208,6 @@
     {
       "source": "personajes/Oliver Henderson",
       "target": "personajes/Susan Barnes"
-    },
-    {
-      "source": "personajes/Anastasia Dobrescu",
-      "target": "personajes/Oliver Henderson"
     },
     {
       "source": "personajes/Oliver Henderson",
@@ -3064,11 +3246,27 @@
       "target": "personajes/Pollione Tornatore"
     },
     {
+      "source": "libros/Necromancia a Medianoche",
+      "target": "personajes/Pollione Tornatore"
+    },
+    {
+      "source": "familias/Familia De Fazio",
+      "target": "personajes/Pollione Tornatore"
+    },
+    {
+      "source": "familias/La Familia Santorelli",
+      "target": "personajes/Pollione Tornatore"
+    },
+    {
       "source": "personajes/Cassian Thorne",
       "target": "personajes/Pollione Tornatore"
     },
     {
-      "source": "personajes/Dorian Blackwood",
+      "source": "eventos/La Semana Negra",
+      "target": "personajes/Pollione Tornatore"
+    },
+    {
+      "source": "personajes/Lucia Sinclair",
       "target": "personajes/Pollione Tornatore"
     },
     {
@@ -3076,11 +3274,7 @@
       "target": "personajes/Pollione Tornatore"
     },
     {
-      "source": "lugares/Catedral de Santa Regina",
-      "target": "personajes/Pollione Tornatore"
-    },
-    {
-      "source": "personajes/Lucia Sinclair",
+      "source": "eventos/Masacre de la Catedral de Santa Regina",
       "target": "personajes/Pollione Tornatore"
     },
     {
@@ -3120,6 +3314,10 @@
       "target": "personajes/Ryan Chapman"
     },
     {
+      "source": "personajes/Andrew Sheppard",
+      "target": "personajes/Susan Barnes"
+    },
+    {
       "source": "personajes/Lucia Sinclair",
       "target": "personajes/Susan Barnes"
     },
@@ -3132,6 +3330,14 @@
       "target": "personajes/Tamara Dobrescu"
     },
     {
+      "source": "libros/Necromancia a Medianoche",
+      "target": "personajes/Tamara Dobrescu"
+    },
+    {
+      "source": "familias/La Cruz",
+      "target": "personajes/Tamara Dobrescu"
+    },
+    {
       "source": "lugares/La Comisaría de Nueva Ámsterdam",
       "target": "personajes/Veronica Black"
     },
@@ -3141,10 +3347,6 @@
     },
     {
       "source": "personajes/Lucia Sinclair",
-      "target": "personajes/Veronica Black"
-    },
-    {
-      "source": "personajes/Dorian Blackwood",
       "target": "personajes/Veronica Black"
     },
     {

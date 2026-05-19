@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 const FeatureList = [
   {
     title: 'Explora el Universo',
-    image: '/img/landing-page/universo.png',
+    image: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/landing-page/universo',
     description: (
       <>
         Sumérgete en los mundos, ciudades, razas y secretos que habitan mis historias.
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Conoce a los personajes',
-    image: '/img/landing-page/personajes.png',
+    image: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/landing-page/personajes',
     description: (
       <>
         Cada historia está marcada por las decisiones de sus protagonistas.
@@ -26,7 +26,7 @@ const FeatureList = [
   },
   {
     title: 'Accede a los libros',
-    image: '/img/landing-page/libros.png',
+    image: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/landing-page/libros',
     description: (
       <>
         Descubre mis obras publicadas, orden de lectura, datos curiosos, inspiraciones y más.

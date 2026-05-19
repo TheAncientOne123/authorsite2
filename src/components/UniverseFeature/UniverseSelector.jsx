@@ -8,13 +8,13 @@ const universes = [
   {
     title: 'El Orbe de los Destinos',
     description: 'Un reino amurallado por la historia y la magia, donde los destinos se entrelazan.',
-    image: '/img/orbe/portadaLowQual.png',
+    image: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/orbe/portadaLowQual',
     comingSoon: true,
   },
   {
     title: 'Crónicas de Sangre y Sombra',
     description: 'Oscuridad, sangre, deseo y una guerra secreta que cambiará la historia.',
-    image: '/img/cronicas-sangre/portadaNMLowQual.png',
+    image: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual',
     path: '/CrSaSo',
     graphPath: '/grafos/sangre-y-sombra',
     comingSoon: false,
@@ -22,7 +22,7 @@ const universes = [
   {
     title: 'Meridian',
     description: 'Facciones, razas, campañas y un mapa en expansión: el códice de un mundo por descubrir.',
-    image: '/img/meridian-contenidos/meridian-portada.png',
+    image: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/meridian-portada',
     path: '/Meridian',
     comingSoon: false,
   },

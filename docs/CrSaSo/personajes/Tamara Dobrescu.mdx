@@ -16,61 +16,136 @@ import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+# Tamara Dobrescu
+
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Tamara Dobrescu"
-    image={{ src: '/img/cronicas-sangre/personajes/tamara-dobrescu.JPG', alt: 'Tamara Dobrescu' }}
+    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/tamara-dobrescu', alt: 'Tamara Dobrescu' }}
     caption="Científica; Rapax Hominum"
     rows={[
+      {
+        label: 'Alias / Apodos',
+        value: (
+          <>
+            <Link to="/CrSaSo/personajes/Angelina%20Pollard">Angelina Pollard</Link>, Tammy
+          </>
+        ),
+      },
+      { label: 'Estado actual', value: 'Activa' },
+      {
+        label: 'Edad',
+        value: 'Siglos de antigüedad (apariencia de <30 años)',
+      },
+      {
+        label: 'Residencia',
+        value: (
+          <>
+            Castle Street,{' '}
+            <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>
+          </>
+        ),
+      },
+      {
+        label: 'Especie',
+        value: (
+          <>
+            <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link> (vampiro)
+          </>
+        ),
+      },
       { label: 'Género', value: 'Femenino' },
-      { label: 'Estado', value: 'Activa' },
-      { label: 'Linaje', value: 'Familia Dobrescu' },
-      { label: 'Alias', value: <Link to="/CrSaSo/personajes/Angelina%20Pollard">Angelina Pollard</Link> },
-      { label: 'Profesión', value: 'Científica (McCarthy Petroleum, pasado); ocultista; estratega; cantante' },
-      { label: 'Parentesco', value: <>Hermana de <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link></> },
-      { label: 'Base de operaciones', value: <><Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">El Balneario Rushmore</Link> (reciente); <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link> (pasado)</> },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      {
+        label: 'Familiares clave',
+        value: (
+          <>
+            Voivoda de Valaquia (padre);{' '}
+            <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link> (hermana
+            melliza)
+          </>
+        ),
+      },
+      {
+        label: 'Ocupación',
+        value: 'Científica / investigadora; cantante de jazz',
+      },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            Casa Dobrescu;{' '}
+            <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link> (anteriormente)
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 5
+          </>
+        ),
+      },
     ]}
   />
-
 )}
 </BrowserOnly>
 
-## Resumen
+**Tamara Dobrescu**, conocida bajo la identidad encubierta de **Angelina Pollard**, es una integrante de la antigua estirpe de los Dobrescu y una de las figuras más influyentes y enigmáticas de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>. A diferencia de su hermana <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia</Link>, Tamara ha dedicado su existencia a la experimentación científica y alquímica, buscando trascender las limitaciones de su especie y de la humanidad.
 
-Integrante del linaje Dobrescu y figura central del conflicto en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>. Opera con identidad pública bajo el alias <Link to="/CrSaSo/personajes/Angelina%20Pollard">Angelina Pollard</Link> para moverse en ambientes sociales y de investigación. Su objetivo declarado es extender el tiempo útil de la vida humana; su método y pragmatismo la sitúan en tensión constante con su hermana, <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia</Link>.
+Es la responsable intelectual de la creación del <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">**Elemento 121**</Link>, una sustancia derivada del petróleo con propiedades regenerativas extremas. Su ambición de crear una raza híbrida e inmortal la ha llevado a colaborar con corporaciones energéticas y a enfrentarse tanto a los <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link> como a su propia familia, posicionándose como una operadora estratégica en la sombra.
 
-## Rol en la obra
+## Perfil y Personalidad
 
-- Laboratorios del <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link>. Colaboró con <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> en <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link>. De ese trabajo surgió el <Link to="/CrSaSo/otros/Elemento%20121">Elemento 121</Link>. Posteriormente, el laboratorio fue destruido y sólo quedó una muestra que Archie logró rescatar.
-- Reencuentro con Archie. Años después le advirtió sobre la peligrosidad del 121 y le pidió insumos de alquimia para resolver un dilema familiar.
-- Caso McCarthy. Pactó con <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> para intervenir sobre <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>; dirigió procedimientos experimentales en el <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">Balneario Rushmore</Link>. La alianza se rompió por falta de resultados.
-- Reclutamiento de Oliver. En el <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">castillo</Link> alinea a <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> a su causa con el argumento de salvar a Jessica, presentando a Anastasia como obstáculo táctico.
+Tamara posee una belleza descrita como "incandescente", diseñada evolutivamente para la seducción y el mimetismo social. Físicamente destaca por su cabellera azabache que cae como "cascadas de noche", ojos canelos que pueden tornarse rojos bajo estrés o sed de sangre y una piel pálida e impecable. Suele vestir con elegancia, destacando su vestido negro de escote en V y cinturón metálico utilizado durante sus presentaciones en el <Link to="/CrSaSo/lugares/Scarlet%20Horn">Scarlet Horn</Link>.
 
-## Habilidades observadas
+Psicológicamente, es una mujer pragmática, ambiciosa y poseedora de un "ego humano" que incluso sus voces internas critican. Cree firmemente que la eternidad es un don que debería compartirse con los humanos para evitar que sus sueños mueran prematuramente. Es calculadora y manipuladora, capaz de engañar a experimentados detectives como Cassian Thorne mediante la creación de una fachada de vulnerabilidad. A pesar de su frialdad, conserva un vínculo emocional complejo con su hermana y una visión utópica (aunque destructiva) de un mundo sin muerte.
 
-Rasgos Rapax: fuerza y velocidad superiores, resistencia a balas comunes, manifestaciones de ojos rojos y garras bajo estrés, sensibilidad para detectar presencias cercanas. Vulnerabilidad aumentada a la plata.
+## Habilidades y Equipo
 
-## Cronología breve
+Como una <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link> de alto rango, Tamara posee capacidades que superan los límites humanos:
+*   **Manipulación de Sombras:** Puede desplazarse a través del "Reino de las Sombras", saltando entre fragmentos de penumbra para viajar a grandes velocidades.
+*   **Fuerza y Velocidad Inhumanas:** Capaz de someter a humanos y otros Rapax con facilidad; su fuerza es comparada con una "tormenta interior".
+*   **Regeneración y Veneno:** Su sangre posee propiedades curativas (alquimia) y su mordida inyecta un veneno que puede matar o transformar al receptor.
+*   **Intelecto Científico:** Experta en ingeniería petrolera y alquimia; codescubridora del <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>.
+*   **Telepatía Aumentada:** Capacidad para comunicarse y vigilar a otros, habilidad que intentó enseñar a su pupilo.
 
-- 1899: Experimentos en el <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link>; surgimiento del <Link to="/CrSaSo/otros/Elemento%20121">Elemento 121</Link>; destrucción del laboratorio.
-- ~2 años antes de los hechos recientes: Reencuentro con Archie y advertencia sobre el 121.
-- Semanas recientes: Trato con <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan</Link>; experimentos en el <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">Balneario Rushmore</Link>; ruptura de la alianza.
-- Noche del castillo: Reclutamiento/manipulación de <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver</Link> en el <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">Castillo de Nueva Ámsterdam</Link>.
+**Equipo:**
+*   **Dagas de combate:** Armas blancas que utiliza con precisión letal.
+*   **Balas de Plata:** Aunque es vulnerable a ellas, las utiliza como herramienta de extorsión y conocimiento contra sus enemigos.
 
-## Notas canónicas y contrastes
+## Biografía / Historia
 
-- Alias: <Link to="/CrSaSo/personajes/Angelina%20Pollard">Angelina Pollard</Link> es el nombre de escena; Tamara Dobrescu es la identidad real.
-- Autoría del <Link to="/CrSaSo/otros/Elemento%20121">Elemento 121</Link>: el testimonio de <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie</Link> atribuye el hallazgo a su trabajo conjunto con Angelina; otras reconstrucciones internas ponen el acento en la fase experimental que conduce a su formulación. La enciclopedia conserva ambas líneas como contraste.
+### Necromancia a Medianoche
 
-## Véase también
+#### El Incidente de Raven District (1899)
+Bajo el patrocinio de <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>, Tamara trabajó como mano derecha del científico <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>. Juntos descubrieron el <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link> en el petróleo. Advirtiendo los peligros del compuesto, Tamara provocó una explosión premeditada para destruir el laboratorio y casi todas las muestras, desapareciendo del ojo público durante décadas.
 
-- <Link to="/CrSaSo/personajes/Angelina%20Pollard">Angelina Pollard</Link>
-- <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>
-- <Link to="/CrSaSo/otros/Elemento%20121">Elemento 121</Link>
-- <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>
-- <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>
-- <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>
-- <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">El Balneario Rushmore</Link>
-- <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link>
+#### El Caso del Cuarto Rojo y el Scarlet Horn (1929)
+Reaparece en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link> como la cantante de jazz Angelina Pollard. En el bar <Link to="/CrSaSo/lugares/Scarlet%20Horn">Scarlet Horn</Link>, seduce al detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> para obtener protección contra <Link to="/CrSaSo/familias/La%20Cruz">La Cruz</Link>, una secta que la perseguía. Tras una emboscada en su departamento, revela su nombre a Cassian y establece un vínculo íntimo con él antes de desaparecer, advirtiéndole que no la busque por su propia seguridad.
+
+#### La Rivalidad de las Mellizas
+Se revela que Tamara encerró a su hermana <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia</Link> en un sarcófago durante dos años para evitar que interfiriera en sus planes con <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>. Tamara buscaba usar la sangre de Jessica (inyectada con el <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>) para perfeccionar su proyecto de hibridación. Tras el despertar de Anastasia, ambas se enfrentan en una batalla brutal en el castillo, que termina con Tamara inmovilizando temporalmente a su hermana con aceite de muérdago.
+
+#### Alianza y Batalla en la Refinería
+Ante la amenaza de los <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>, quienes planeaban sacrificar a Jessica para resucitar a la <Link to="/CrSaSo/personajes/Reina%20de%20la%20Oscuridad">Reina de la Oscuridad</Link>, Tamara se ve obligada a aliarse con Anastasia, <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>. Durante la batalla final en la <Link to="/CrSaSo/lugares/Refinería%20McCarthy">Refinería McCarthy</Link>, Tamara lucha codo con codo con su hermana, demostrando una sincronización perfecta que culmina con la decapitación de la Reina de la Oscuridad. Tras la victoria, Tamara desaparece nuevamente entre las sombras de la ciudad.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">**Anastasia Dobrescu**</Link>: Su hermana melliza. Su relación es una constante lucha entre el odio, la competencia ideológica y un lazo de sangre inquebrantable.
+*   <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link>: Detective al que manipuló y por el que siente una atracción genuina. Ella afirma que él le "pertenece" por conocer su nombre.
+*   <Link to="/CrSaSo/personajes/Oliver%20Henderson">**Oliver Henderson**</Link>: Su aprendiz. Tamara lo reclutó tras ser mordido por Anastasia, aunque terminó perdiendo el control sobre él cuando este se alió con los Voronin.
+*   <Link to="/CrSaSo/personajes/Archie%20Woodward">**Archie Woodward**</Link>: Antiguo colega científico. Aunque lo abandonó tras la explosión de 1899, volvió a contactarlo años después para obtener suministros alquímicos.
+*   <Link to="/CrSaSo/personajes/Jessica%20McCarthy">**Jessica McCarthy**</Link>: Su sujeto de estudio principal y herramienta para la profecía. Tamara afirmaba querer "salvarla", aunque su interés era mayormente científico.
+
+## Curiosidades
+
+*   Cree que conocer el nombre verdadero de alguien otorga poder sobre esa persona, razón por la cual usaba un alias.
+*   Es descrita como la contraparte "oscura" de su hermana (cabello negro vs. cabello rubio), simbolizando una dualidad de nacimiento.
+*   Posee un rechazo por el vino, prefiriendo mantener sus sentidos agudos, a diferencia de otros de su especie.
+*   Su voz interna es cínica y a menudo la incita a abandonar sus pretensiones de moralidad humana.
+*   Dejó un rastro de olor a cloro de alberca que permitió a Cassian Thorne localizar su escondite en el Balneario Rushmore.
