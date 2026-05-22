@@ -58,7 +58,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return json(res, 405, {error: 'Método no permitido'}, origin);
   }
 
-  if (!isAllowedOrigin(origin)) {
+  if (!isAllowedOrigin(origin, {allowMissing: true})) {
     return json(res, 403, {error: 'Origen no permitido'}, origin);
   }
 

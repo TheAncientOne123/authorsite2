@@ -164,10 +164,10 @@ Docusaurus expone la URL vía `customFields.chatApiUrl` en [`docusaurus.config.j
 
 ## CORS
 
-Orígenes permitidos (ver [`lib/chat/cors.ts`](../../lib/chat/cors.ts)):
+Orígenes permitidos (ver [`lib/chat/cors.ts`](../../lib/chat/cors.ts)) — comparación **case-insensitive** del host:
 
-- `https://TheAncientOne123.github.io` — producción
-- `http://localhost:3000` — dev Docusaurus
+- `https://TheAncientOne123.github.io` (GitHub Pages; el navegador envía el host en minúsculas)
+- `http://localhost:3000` y `http://127.0.0.1:3000` (dev Docusaurus)
 
 ---
 
