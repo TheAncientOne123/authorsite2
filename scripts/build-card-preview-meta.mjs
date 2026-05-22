@@ -1,4 +1,7 @@
-// Genera static/card-preview-meta.json: vista previa (excerpt, imagen) + filters para CardsFromFolder.
+// Genera static/card-preview-meta.json: vista previa (excerpt, imagen, fechas) + filters para CardsFromFolder.
+//
+// Imagen: frontmatter `image` (prioridad) o src del Infobox en el MDX.
+// Fechas: `updated` y opcional `created` (YYYY-MM-DD) para tarjetas y artículos recientes.
 //
 // Filtros: bloque YAML opcional `cards_filters` (objeto clave → string o lista de strings).
 // Claves legacy top-level (p. ej. `libro:`) se fusionan si no chocan con cards_filters.
@@ -179,6 +182,34 @@ function extractInfoboxImage(raw) {
 }
 
 /**
+ * @param {unknown} v
+ * @returns {string | undefined}
+ */
+function parseDateField(v) {
+  if (v instanceof Date && !Number.isNaN(v.getTime())) {
+    return v.toISOString().slice(0, 10);
+  }
+  if (typeof v === 'string' && /^\d{4}-\d{2}-\d{2}/.test(v.trim())) {
+    return v.trim().slice(0, 10);
+  }
+  return undefined;
+}
+
+/**
+ * @param {Record<string, unknown>} data
+ * @returns {{ updated?: string; created?: string }}
+ */
+function extractDates(data) {
+  /** @type {{ updated?: string; created?: string }} */
+  const out = {};
+  const updated = parseDateField(data.updated);
+  const created = parseDateField(data.created);
+  if (updated) out.updated = updated;
+  if (created) out.created = created;
+  return out;
+}
+
+/**
  * @param {Record<string, unknown>} data
  * @param {string} content
  * @param {string} raw
@@ -231,10 +262,13 @@ function buildPreviewPart(data, content, raw, titleFallback) {
 function buildDocEntry(data, content, raw, titleFallback) {
   const filters = extractFilters(data);
   const preview = buildPreviewPart(data, content, raw, titleFallback);
+  const dates = extractDates(data);
 
-  if (!preview && Object.keys(filters).length === 0) return null;
+  if (!preview && Object.keys(filters).length === 0 && !dates.updated && !dates.created) {
+    return null;
+  }
 
-  /** @type {{ excerpt?: string; image?: string; imageAlt?: string; filters?: Record<string, string | string[]> }} */
+  /** @type {Record<string, unknown>} */
   const entry = {};
   if (preview) {
     entry.excerpt = preview.excerpt;
@@ -244,6 +278,8 @@ function buildDocEntry(data, content, raw, titleFallback) {
     }
   }
   if (Object.keys(filters).length) entry.filters = filters;
+  if (dates.updated) entry.updated = dates.updated;
+  if (dates.created) entry.created = dates.created;
   return entry;
 }
 

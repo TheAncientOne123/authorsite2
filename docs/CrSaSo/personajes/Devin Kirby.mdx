@@ -1,12 +1,12 @@
 ---
 title: Devin Kirby
 description: Camarógrafo de Atlantic News
-updated: 2026-05-17
+updated: 2026-05-21
 type: personaje
 saga: crsaso
 libro: necromancia-medianoche
 genero: Masculino
-estado: Activo
+estado: Desaparecido
 raza: Humano
 ---
 
@@ -14,44 +14,93 @@ import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+# Devin Kirby
+
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Devin Kirby"
-    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/devin-kirby', alt: 'Devin Kirby' }}
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/devin-kirby',
+      alt: 'Devin Kirby',
+    }}
     caption="Camarógrafo de Atlantic News"
     rows={[
+      { label: 'Estado actual', value: 'Desaparecido' },
+      { label: 'Edad', value: 'No especificada' },
+      {
+        label: 'Residencia',
+        value: <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>,
+      },
+      { label: 'Especie', value: 'Humano' },
       { label: 'Género', value: 'Masculino' },
-      { label: 'Estado', value: 'Activo' },
-      { label: 'Profesión', value: 'Camarógrafo' },
-      { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link> },
-      { label: 'Equipo', value: <><Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link></> },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      { label: 'Familiares clave', value: 'No mencionados' },
+      {
+        label: 'Ocupación',
+        value: 'Camarógrafo y técnico audiovisual de Atlantic News',
+      },
+      {
+        label: 'Afiliación',
+        value: <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link>,
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 16
+          </>
+        ),
+      },
     ]}
   />
-
 )}
 </BrowserOnly>
 
-# Devin Kirby
+**Devin Kirby** es el camarógrafo principal y encargado técnico del equipo periodístico liderado por el reportero <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> y el director <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>. Su rol en la narrativa es fundamental como el documentalista visual de los fenómenos sobrenaturales que asolan <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> en 1929, siendo el responsable de capturar las únicas evidencias fílmicas de la existencia de los <Link to="/CrSaSo/objetos-conceptos/Rapax%20Hominum">Rapax Hominum</Link>.
 
-### Perfil general
+A lo largo de la investigación del <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">Caso del Cuarto Rojo</Link>, Devin transita de ser un mero observador técnico a un apoyo logístico vital para los Vinculados, participando activamente en el asalto a la <Link to="/CrSaSo/lugares/Refinería%20McCarthy">Refinería McCarthy</Link>. Su desaparición posterior al conflicto constituye uno de los misterios sin resolver más significativos para el <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link>.
 
-**Devin Kirby** es el camarógrafo del equipo de <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link> que acompaña a <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> y <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>. De perfil discreto pero esencial, documenta los eventos clave de _Necromancia a Medianoche_ y brinda apoyo logístico cuando la operación lo requiere.
+## Perfil y Personalidad
 
-### Momentos destacados
+Físicamente, Devin proyecta una imagen de concentración absoluta, caracterizada por un ceño fruncido y una mirada fija en los ajustes de su equipo. Es un individuo que prioriza su labor técnica sobre la interacción social, mostrando a menudo un desinterés o apatía por los aspectos humanos de las tragedias que filma. Es un individuo que prioriza su labor técnica sobre la interacción social, mostrando a menudo un desinterés o apatía por los aspectos humanos de las tragedias que filma.
 
-- **<Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">El Castillo de Nueva Ámsterdam</Link>**: Desciende con el equipo a las criptas **operando cámara e iluminación**, registrando el hallazgo del sarcófago principal.
-- **<Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">El Balneario Rushmore</Link>**: Llega con la furgoneta de prensa y muestra su equipo (video y fotografía), manteniéndose cerca del perímetro para **no comprometer** el material.
-- **<Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">La Refinería McCarthy</Link>**: Asume **conducción y maniobras** de la furgoneta de <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link> como **punto de apoyo móvil**; responde a indicaciones de acercamiento/retirada mientras intenta preservar grabaciones del asalto final.
+Psicológicamente, demuestra un pragmatismo que raya en la frialdad. Por ejemplo, al conocer a la agente <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, califica de "aburrido" el hecho de que ella no haya matado a nadie en cumplimiento de su deber. No obstante, posee un temple inquebrantable; es capaz de mantener su cámara operativa y su pulso firme incluso bajo fuego directo o frente a manifestaciones de horror sobrenatural que harían huir a otros civiles.
 
-### Véase también
+## Habilidades y Equipo
 
-- <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>
-- <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>
-- <Link to="/CrSaSo/personajes/Susan%20Barnes">Susan Barnes</Link>
-- <Link to="/CrSaSo/personajes/Andrew%20Sheppard">Andrew Sheppard</Link>
-- <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link>
-- <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">El Castillo de Nueva Ámsterdam</Link>
-- <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">La Refinería McCarthy</Link>
-- <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">El Balneario Rushmore</Link>
+Como especialista técnico de <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link>, Devin posee un dominio avanzado de las herramientas de comunicación y supervivencia:
+*   **Cinematografía y Fotografía de Campo:** Experto en la manipulación de cámaras de video y fotográficas de la época, con la capacidad de ajustar niveles de luz y enfoque en condiciones de combate o penumbra.
+*   **Conducción Defensiva:** Demostró ser un conductor hábil y rápido, logrando maniobrar vehículos en situaciones de alta presión para rescatar al equipo de zonas de peligro inmediato.
+*   **Gestión Logística:** Capaz de improvisar soluciones tácticas, como el uso de bidones de gasolina para apoyar a los Vinculados en el control de amenazas mediante el fuego.
+
+**Equipo notable:**
+*   **Cámaras Profesionales:** Porta equipo audiovisual de la cadena *Atlantic News*, incluyendo cintas de grabación y carretes fotográficos.
+*   **Furgoneta Técnica:** Responsable del mantenimiento y operación del transporte del equipo periodístico.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Despertar en el Castillo
+Durante la expedición al <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">Castillo de Nueva Ámsterdam</Link> para filmar un documental, Devin es el responsable físico de la apertura del sarcófago de <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>. Actuando con una curiosidad impulsiva, empujó la tapa de piedra, liberando a la *Rapax* de su letargo de dos años. Tras la masacre inicial de su equipo, logró llegar a la furgoneta y facilitó la huida de <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>, <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>.
+
+#### El Incidente del Balneario Rushmore
+Devin colaboró con <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> en la vigilancia encubierta de la familia McCarthy, logrando localizar su escondite en el balneario abandonado. Durante el enfrentamiento contra la bestia Jessica, Devin fue quien proveyó los bidones de gasolina que permitieron a <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Gianotti</Link> y <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link> crear un círculo de fuego para contener a la criatura.
+
+#### La Batalla de la Refinería y Desaparición
+En el clímax de la historia, Devin asumió temporalmente el volante de la furgoneta de <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link> para infiltrar a los aliados en el complejo industrial de <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link>. Documentó los momentos finales de la batalla contra la <Link to="/CrSaSo/personajes/Reina%20de%20la%20Oscuridad">Reina de la Oscuridad</Link> y su ejército de muertos. Seis meses después de los eventos, el director <Link to="/CrSaSo/personajes/Kingston%20Graham">Kingston Graham</Link> informó que Devin Kirby le dio la única prueba irrefutable de lo ocurrido en la refinería, antes de desaparecer misteriosamente.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Jack%20Fox">**Jack Fox**</Link>: Su director y jefe inmediato. Aunque Jack suele recriminarle su falta de habilidades sociales, confía plenamente en su capacidad para capturar "la historia del siglo".
+*   <Link to="/CrSaSo/personajes/Oliver%20Henderson">**Oliver Henderson**</Link>: Compañero de equipo en <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link>.
+*   <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucia Sinclair**</Link>: Inicialmente escéptico hacia ella, terminó colaborando táctica y logísticamente en las misiones de campo de la agente.
+
+## Curiosidades
+
+*   Según Jack Fox, basándose en la astrología, Devin es un "Libra poco sociable".
+*   Es el único personaje que consumía alimentos (una manzana del frutero de los McCarthy) con total despreocupación mientras se discutía el destino del mundo.
+*   La única cinta que el FBI pudo recuperar de los hechos en la refinería fue enviada por Jack Fox, pero las grabaciones originales de alta calidad desaparecieron junto con Devin.

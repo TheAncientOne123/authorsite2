@@ -1,7 +1,7 @@
 ---
 title: Cecilia Amadeo
 description: Bruja vinculada a la Catedral de Santa Regina; mentora de Cassian y Lucia
-updated: 2026-05-17
+updated: 2026-05-21
 type: personaje
 saga: crsaso
 libro: necromancia-medianoche
@@ -14,49 +14,115 @@ import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+# Cecilia Amadeo
+
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Cecilia Amadeo"
-    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/cecilia-giannotti', alt: 'Cecilia Amadeo' }}
-    caption="Bruja de la Catedral de Santa Regina"
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/cecilia-giannotti',
+      alt: 'Cecilia Amadeo',
+    }}
+    caption="Bruja vinculada"
     rows={[
+      { label: 'Alias / Apodos', value: 'Bruja Vinculada' },
+      { label: 'Estado actual', value: 'Fallecida' },
+      { label: 'Edad', value: 'No especificada (adulta)' },
+      {
+        label: 'Residencia',
+        value: (
+          <>
+            <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>,{' '}
+            <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>
+          </>
+        ),
+      },
+      {
+        label: 'Especie',
+        value: 'Humana'   
+      },
       { label: 'Género', value: 'Femenino' },
-      { label: 'Estado', value: 'Fallecida (durante los sucesos de la catedral)' },
-      { label: 'Naturaleza', value: 'Bruja (strega)' },
-      { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> },
-      { label: 'Hermanos', value: <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> },
-      { label: 'Rol', value: <>Mentora de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link></> },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      {
+        label: 'Relaciones clave',
+        value: (
+          <>
+            <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Gianotti</Link> (pareja vinculada)
+          </>
+        ),
+      },
+      {
+        label: 'Ocupación',
+        value: 'Líder de la célula de Los Vinculados en Nueva Ámsterdam (Catedral de Santa Regina)',
+      },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>;{' '}
+            <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 36
+          </>
+        ),
+      },
     ]}
   />
-
 )}
 </BrowserOnly>
 
-## Perfil general
+**Cecilia** fue una destacada integrante del linaje de los Vinculados, operando desde la clandestinidad en la Catedral de Santa Regina en Nueva Ámsterdam. Como "Bruja", formaba una simbiosis mística con su contraparte, el "Cazador" <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Gianotti</Link>, constituyendo una de las parejas más experimentadas en la guerra secreta contra los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>.
 
-Cecilia Amadeo fue una figura crucial en la guerra secreta entre los **Rapax Hominum** y los defensores de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Vinculada a la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>, comparte con <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> una vida de discreción, disciplina y protección del recinto sagrado. Su carácter templado y su juicio estratégico la convirtieron en mediadora natural entre facciones con intereses contrapuestos.
+Su papel fue fundamental en la identificación y activación de las capacidades latentes de la agente <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> y el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>. A través de sus conocimientos en alquimia y metafísica, Cecilia actuó como el puente entre el mundo terrenal y el plano de las sombras, hasta su trágico fallecimiento durante la incursión enemiga en el recinto sagrado.
 
-## Rol en el conflicto
+## Perfil y Personalidad
 
-Tras los hechos de la <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">Infiltración Católica</Link>, Cecilia y Marco se volvieron aliados esenciales de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>. Ella asumió la formación teórico-mágica: ritos de protección, preparación de tóxicos y detección de energías oscuras; mientras Marco enfatizó el combate físico y el uso de armamento.
+Cecilia es descrita físicamente como una mujer de apariencia serena y angelical. Poseía una mirada de un azul solemne y profundo, complementada por pecas que resaltaban sobre su piel clara. Tras su vestimenta habitual de monja, ocultaba una frondosa cascada de rizos dorados que Lucia Sinclair describió como poseedores de un "brillo casi etéreo".
 
-## Habilidades
+Psicológicamente, manifestaba una personalidad estoica y maternal, dotada de una sabiduría que parecía trascender su tiempo. Poseía una voz suave pero cargada de autoridad, capaz de hipnotizar o calmar incluso en situaciones de alta tensión. Era una analista profunda de la naturaleza humana, creyendo firmemente que el alma y los vínculos emocionales (como el de las "almas gemelas") eran reacciones químicas y espirituales destinadas a la supervivencia de la especie.
 
-- Rituales y liturgia arcana (vibración de copas, transmutaciones básicas)
-- Drenaje de fuerza por contacto directo
-- Percepción de presencias y evaluación de amenazas
+## Habilidades y Equipo
 
-## Muerte y legado
+Como Bruja de alto rango, Cecilia poseía capacidades sensoriales y ritualísticas avanzadas:
+*   **Visión Sombría:** Capacidad para percibir el plano de las sombras e identificar los puntos débiles (esferas azules) de los Rapax.
+*   **Análisis Espiritual:** A través de rituales con lodo, hierbas e incienso, era capaz de escanear el cuerpo espiritual de otros individuos para detectar desequilibrios o traumas.
+*   **Drenaje de Energía:** En situaciones de combate, demostró la capacidad de drenar la fuerza física de sus oponentes mediante el contacto directo.
 
-Cecilia cae durante los sucesos conocidos como la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>. Su ausencia deja una huella emocional en Marco y un referente moral para Cassian y Lucia. Entre los guardianes del templo, se le recuerda como una mentora prudente y decisiva cuya última acción ayudó a preservar vidas en la catedral.
+**Equipo notable:**
+*   **Recetario de Brujas:** Un tomo ancestral de cuero desgastado que contenía fórmulas para ungüentos, pociones y rituales fundamentales para el linaje.
+*   <Link to="/CrSaSo/objetos-conceptos/Monedas%20de%20Lat%C3%B3n">**Monedas de Latón**</Link>: Artefactos grabados con el sol y la luna utilizados para la detección de Rapax y comunicación entre Vinculados.
+*   **Instrumental Ritual:** Copas metálicas adornadas con símbolos católicos y un cazo utilizado para la transmutación de elementos durante sus consultas místicas.
 
-## Véase también
+## Biografía / Historia
 
-- <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>
-- <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>
-- <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>
-- <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>
-- <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>
-- <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>
+### Necromancia a Medianoche
+
+#### El Descubrimiento de los Nuevos Vinculados
+Cecilia aparece por primera vez en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>, recibiendo a <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> bajo la fachada de una consulta de infertilidad. Durante un ritual en una sala lúgubre, Cecilia utiliza lodo y plantas secas para inducir una visión en Lucia, confirmando que ella es la "Bruja Luminosa" que el linaje ha estado buscando. En este proceso, sufre un desgaste físico considerable que incluye sangrado nasal, revelando la intensidad de la conexión mística.
+
+#### El Entrenamiento y la Entrega del Legado
+Tras un altercado inicial con <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, Cecilia aboga por la paz y la colaboración entre las parejas de <Link to="/CrSaSo/familias/Los%20Vinculados">los Vinculados</Link>. Junto a <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Gianotti</Link>, inicia el entrenamiento táctico y espiritual de Lucia y Cassian en el atrio de la catedral. Durante esta etapa, les hace entrega de armamento especializado (balas de oro y plata) y monedas de latón, vinculándolas mediante un ritual de sangre. Como acto final de mentoría, entrega su recetario personal a Lucia, asegurando la continuidad del conocimiento místico.
+
+#### La Masacre en la Catedral
+La vida de Cecilia llega a su fin cuando <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, utilizando los poderes de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, lanza un ataque preventivo contra la Catedral de Santa Regina. Cecilia perece en la masacre junto a dieciséis personas más. Su cuerpo es encontrado por los protagonistas bajo el altar principal, siendo mecido por un <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Gianotti</Link> devastado, quien le susurra canciones de cuna en italiano en un estado de fragmentación mental profunda.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Marco%20Giannotti">**Marco Gianotti**</Link>: Su pareja vinculada y alma gemela. Cecilia definía este lazo como "el más poderoso que existe", superior incluso a los vínculos biológicos.
+*   <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucia Sinclair**</Link>: Su aprendiz y sucesora. Cecilia la reconoció inmediatamente como una igual y le confió el recetario de su linaje.
+*   <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link>: Lo identificó como el Cazador vinculado de Lucia, protegiéndolo de la hostilidad inicial de Marco.
+
+## Curiosidades
+
+*   Cecilia afirmaba que se necesita "toda una aldea para criar a un niño," citando este adagio para explicar la importancia de los vínculos sociales en la supervivencia.
+*   Su ritual de escaneo espiritual provocaba una vibración tan intensa que era capaz de abollar físicamente copas de metal cercanas.
+*   Marco portaba un medallón con su fotografía (descrita con pecas y ojos azules), el cual besó solemnemente antes de partir hacia la batalla final en la refinería.

@@ -1,0 +1,146 @@
+.root {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.note {
+  font-size: 0.88rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.metricsGrid {
+  display: grid;
+  gap: 0.65rem 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.metricCard {
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.metricLabel {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 0.2rem;
+}
+
+.metricValue {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.chartsGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 2rem;
+}
+
+.chartCard {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.chartCardWide {
+  grid-column: 1 / -1;
+}
+
+.chartCardPie {
+  grid-column: 1 / -1;
+}
+
+.chartPieWrap {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.chartHint {
+  margin: -0.35rem 0 0.5rem;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+  text-align: center;
+}
+
+.chartTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-font-color-base);
+}
+
+.chartLoading {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+  padding: 2rem;
+  text-align: center;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+}
+
+.characterTable {
+  width: 100%;
+  margin: 0;
+  font-size: 0.9rem;
+  border-collapse: collapse;
+}
+
+.characterTable th,
+.characterTable td {
+  padding: 0.5rem 0.85rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  text-align: left;
+}
+
+.characterTable th {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-emphasis-600);
+  background: var(--ifm-color-emphasis-100);
+}
+
+.characterTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.characterTable tbody tr:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.numCol {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}

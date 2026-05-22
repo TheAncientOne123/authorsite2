@@ -60,6 +60,11 @@ export default function DocBreadcrumbs() {
     return null;
   }
 
+  // CrSaSo: breadcrumbs desactivados (portada y fichas del universo).
+  if (docsBasePath === '/CrSaSo') {
+    return null;
+  }
+
   const atDocsBase =
     location.pathname === resolvedBase || location.pathname === `${resolvedBase}/`;
   const rel = location.pathname.slice(resolvedBase.length).replace(/^\/+/, '');

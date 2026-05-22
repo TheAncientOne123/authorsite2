@@ -1,111 +1,47 @@
 ---
+
 title: Crónicas de Sangre y Sombra
+
 slug: /
+
 id: index
+
 sidebar_label: Crónicas de Sangre y Sombra
+
 ---
 
-import Link from '@docusaurus/Link';
+
+
 import BookRoll from '@site/src/components/BooksRoll/BookRoll';
 
+import RecentArticles from '@site/src/components/UniverseHome/RecentArticles';
+
+
+
 {/* Intro del universo */}
+
 # Crónicas de Sangre y Sombra
 
-Crónicas de Sangre y Sombra es un universo de intrigas góticas, corporaciones energéticas, linajes antiguos y artes ocultas. Aquí conviven familias de alto poder con brujas, Rapax Hominum y periodistas que empujan la verdad a la luz. Este portal reúne su documentación viva: libros publicados, líneas de tiempo, personajes, facciones y lugares clave. 
+
+
+Crónicas de Sangre y Sombra es un universo de intrigas góticas, corporaciones energéticas, linajes antiguos y artes ocultas. Aquí conviven familias de alto poder con brujas, Rapax Hominum y periodistas que empujan la verdad a la luz. Este portal reúne su documentación viva: libros publicados, líneas de tiempo, personajes, facciones y lugares clave.
+
+
 
 > Esta página es la portada de la documentación del universo "Crónicas de Sangre y Sombra".
 
 
-{/* Carrete/Galería de libros */}
 
 ## Libros del universo
+
 
 
 <BookRoll />
 
 
-## Cómo navegar esta documentación
 
-<div className="crSaSoNavGrid">
-  <div className="crSaSoNavCard">
-    <span className="crSaSoNavDot" style={{background: '#eab93d'}} />
-    <div>
-      <strong>Libros y material canónico</strong>
-      <p>Portadas, sinopsis y líneas de tiempo de cada entrega publicada.</p>
-    </div>
-  </div>
-  <div className="crSaSoNavCard">
-    <span className="crSaSoNavDot" style={{background: '#f87171'}} />
-    <div>
-      <strong>Personajes y familias</strong>
-      <p>Fichas individuales, linajes y sus vínculos dentro del universo.</p>
-    </div>
-  </div>
-  <div className="crSaSoNavCard">
-    <span className="crSaSoNavDot" style={{background: '#34d399'}} />
-    <div>
-      <strong>Lugares y facciones</strong>
-      <p>Mapa de territorios, corporaciones y organizaciones activas.</p>
-    </div>
-  </div>
-  <div className="crSaSoNavCard">
-    <span className="crSaSoNavDot" style={{background: '#60a5fa'}} />
-    <div>
-      <strong>Cronología y eventos</strong>
-      <p>Línea del tiempo de sucesos clave ordenados por fecha in-universe.</p>
-    </div>
-  </div>
-</div>
+<RecentArticles pluginId="cronicas" limit={3} />
 
-<p className="crSaSoNavNote">Sugerencias de mejora o correcciones son bienvenidas — este índice se actualizará conforme crezca el universo.</p>
 
-## Grafo de relaciones
 
-<p className="crSaSoGraphLead">
-  Una vista interactiva del universo donde cada <strong>nodo</strong> es una entrada del códice —personajes, lugares, eventos, familias u otras rutas— y cada <strong>arista</strong> es un vínculo documentado entre dos fichas.
-</p>
 
-<div className="crSaSoGraphCards">
-  <div className="crSaSoGraphCard">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/>
-      <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
-      <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
-    </svg>
-    <div>
-      <strong>Clic en un nodo</strong>
-      <p>Muestra resumen, categoría y conexiones directas. Abre la ficha o salta a otro nodo sin salir del grafo.</p>
-    </div>
-  </div>
-  <div className="crSaSoGraphCard">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <circle cx="6" cy="6" r="3" fill="#f87171" stroke="none"/><circle cx="18" cy="6" r="3" fill="#34d399" stroke="none"/>
-      <circle cx="6" cy="18" r="3" fill="#60a5fa" stroke="none"/><circle cx="18" cy="18" r="3" fill="#fbbf24" stroke="none"/>
-    </svg>
-    <div>
-      <strong>Color por categoría</strong>
-      <p>Personajes, lugares, eventos y familias tienen colores distintos, igual que la leyenda del visor.</p>
-    </div>
-  </div>
-  <div className="crSaSoGraphCard">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
-    </svg>
-    <div>
-      <strong>Siempre actualizado</strong>
-      <p>Al añadir o enlazar fichas nuevas, regenera el sitio para que el JSON del grafo esté al día.</p>
-    </div>
-  </div>
-</div>
-
-<div className="crSaSoGraphCtaWrap">
-  <Link className="button button--primary button--lg crSaSoGraphCtaBtn" to="/grafos/sangre-y-sombra">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{flexShrink: 0}}>
-      <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
-      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
-    </svg>
-    Abrir el grafo de relaciones
-  </Link>
-</div>
-
-{/* Poner link a un forms */}

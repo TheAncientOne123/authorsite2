@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import LoreChatSection from '@site/src/components/LoreChat/LoreChatSection';
 import BookStore from '@site/src/components/BookStoreFeatures/BookStore.jsx';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -39,6 +40,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <LoreChatSection />
         <section className ={clsx('container', styles.aboutAuthor)}>
           <div className="row">
             <div className = "col col--8 col--offset-2 text--center">

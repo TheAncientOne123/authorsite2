@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-19T04:58:29.985Z",
+  "generatedAt": "2026-05-22T00:58:39.085Z",
   "orbe": {
     "index": {
       "excerpt": "Bienvenido al códice del universo de El Orbe de los Destinos. La documentación detallada de este universo se irá ampliando con el tiempo; mientras tanto puedes explorar $1."
@@ -24,6 +24,94 @@
     "personajes": {
       "excerpt": "Los personajes son el eje narrativo de toda historia y Crónicas de Sangre y Sombra no es la excepción. Cada figura aquí registrada incluye datos biográficos, afiliaciones y su papel en los acontecimientos principales. Este directorio está organizados en fichas individuales, que pueden contener información reveladora de la trama. El lector encontrará: - Protagonistas y antagonistas, con su evolució"
     },
+    "eventos/Batalla en la Refinería McCarthy": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "eventos/Caso resuelto": {
+      "excerpt": "Cierre policial del “Cuarto Rojo”; pizza de celebración, visita al Oliver transformado y ataque en el departamento de Cassian que anticipa la masacre en Santa Regina.",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "eventos/Desaparicion de Jessica McCarthy": {
+      "excerpt": "Abducción en Monte Galbrook; giro que reorienta la investigación hacia lo sobrenatural",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "eventos/El Cuarto Rojo": {
+      "excerpt": "Escena del crimen inicial del caso",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "eventos/El Incidente de Raven District": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "eventos/Interrogación de Archie Woodward": {
+      "excerpt": "Entrevista táctica en la comisaría; confirma alias “Aldric Shadowborne” y abre la pista hacia la Infiltración Católica",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "eventos/La Infiltración Católica": {
+      "excerpt": "Operación encubierta en la Catedral de Santa Regina para identificar y penetrar a la célula de “La Cruz”",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "eventos/La Semana Negra": {
+      "excerpt": "Semana de violencia urbana desatada tras el ataque en Italian’s Boot; conocida popularmente como “La Guerra de las Pizzas”",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "eventos/Masacre de la Catedral de Santa Regina": {
+      "excerpt": "Asalto devastador contra la célula de Los Vinculados; punto de quiebre tras la Semana Negra",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
     "familias/Brujas": {
       "excerpt": "Linaje arcano de mujeres vinculadas a un cazador; magia de pacto, revelación y protección que opera en la sombra de Nueva Ámsterdam.",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/simbolos/luna",
@@ -33,7 +121,8 @@
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/Cazadores": {
       "excerpt": "Orden operativa nacida para combatir a los Rapax (vampiros) y fuerzas afines; su poder se completa al vincularse con una bruja.",
@@ -44,7 +133,8 @@
         "type": "organizacion",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/Familia De Fazio": {
       "filters": {
@@ -52,7 +142,8 @@
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/Familia Puckett": {
       "excerpt": "Dinastía local propietaria del Balneario Rushmore; familia materna de Jessica McCarthy y aliada por matrimonio con los McCarthy.",
@@ -61,7 +152,8 @@
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/La Cruz": {
       "excerpt": "Alias provisional usado por Cassian y Lucía para identificar a una red clandestina de signo religioso; luego asociada formalmente con “Los Vinculados”.",
@@ -70,7 +162,8 @@
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/La Familia Chapman": {
       "excerpt": "Dinastía empresarial de la alta residencial de Nueva Ámsterdam; dueños de una firma de colchones de lujo y eje del caso “El Cuarto Rojo”.",
@@ -79,7 +172,8 @@
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/La Familia McCarthy": {
       "excerpt": "Dinastía petrolera de Nueva Ámsterdam; poder económico y político detrás de McCarthy Petroleum, eje de los eventos ligados al Elemento 121.",
@@ -88,7 +182,8 @@
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/La Familia Santorelli": {
       "excerpt": "Mafia italiana de perfil discreto y estrategia diplomática; protectores oficiosos de la célula de los Vinculados en Nueva Ámsterdam.",
@@ -97,7 +192,8 @@
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/La Familia Tornatore": {
       "excerpt": "Mafia italiana asentada en Nueva Ámsterdam; imperio mixto de crimen y fachadas legales, rival histórico de los Santorelli.",
@@ -106,7 +202,8 @@
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/La Familia Voronin": {
       "excerpt": "Clan vampírico ancestral de raíz carpática; culto profético devoto de la Reina de la Oscuridad y antagonista central en la crisis McCarthy.",
@@ -115,7 +212,8 @@
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/La Familia Zaikov": {
       "excerpt": "Clan mafioso balcánico que gobierna El Nido con mano firme y fachada comunitaria; aliados tácticos de Cassian Thorne en momentos clave.",
@@ -124,7 +222,8 @@
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/Los Vinculados": {
       "excerpt": "Orden secreta de brujas y cazadores unida por un vínculo arcano para erradicar a los Rapax (vampiros); su célula en Nueva Ámsterdam cayó en la Masacre de la Catedral.",
@@ -133,7 +232,8 @@
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/McCarthy Petroleum": {
       "excerpt": "Conglomerado petrolero de la familia McCarthy; eje industrial de Nueva Ámsterdam y foco de la conspiración del Elemento 121.",
@@ -142,7 +242,8 @@
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "familias/Rapax Hominum": {
       "excerpt": "Especie depredadora evolucionada, vulgarmente conocida como vampiros; depredadores naturales del hombre con presencia global.",
@@ -151,7 +252,8 @@
         "type": "raza",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "libros/index": {
       "excerpt": "Fichas y referencias a las novelas de Crónicas de Sangre y Sombra. - $1 - $1",
@@ -160,104 +262,32 @@
         "type": "libro",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "libros/La Mujer Carmesí": {
-      "excerpt": "Título referenciado en el códice como continuación de la saga. Contenido ampliado próximamente; enlaza aquí desde otras fichas según vaya publicándose material.",
+      "excerpt": "Continuación anunciada de la saga Crónicas de Sangre y Sombra. El material ampliado de esta ficha se publicará conforme avance el códice.",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual",
+      "imageAlt": "La Mujer Carmesí",
       "filters": {
         "libro": "mujer-carmesi",
         "type": "libro",
         "saga": "crsaso",
         "aparicion": "mujer-carmesi"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "libros/Necromancia a Medianoche": {
-      "excerpt": "Obra central de Crónicas de Sangre y Sombra. Puedes enlazar aquí desde personajes y lugares; para comprar la edición impresa o digital visita la página de inicio del sitio (sección «Adquiere mis libros»).",
+      "excerpt": "Novela de fantasía oscura ambientada en Nueva Ámsterdam, 1929. Un detective y una agente federal investigan una cadena de asesinatos con indicios sobrenaturales mientras corporaciones, linajes antiguos y cultos ocultos mueven sus piezas en la sombra.",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual",
+      "imageAlt": "Necromancia a Medianoche",
       "filters": {
         "libro": "necromancia-medianoche",
         "type": "libro",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/Batalla en la Refinería McCarthy": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/Caso resuelto": {
-      "excerpt": "Cierre policial del “Cuarto Rojo”; pizza de celebración, visita al Oliver transformado y ataque en el departamento de Cassian que anticipa la masacre en Santa Regina.",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/Desaparicion de Jessica McCarthy": {
-      "excerpt": "Abducción en Monte Galbrook; giro que reorienta la investigación hacia lo sobrenatural",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/El Cuarto Rojo": {
-      "excerpt": "Escena del crimen inicial del caso",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/El Incidente de Raven District": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/Interrogación de Archie Woodward": {
-      "excerpt": "Entrevista táctica en la comisaría; confirma alias “Aldric Shadowborne” y abre la pista hacia la Infiltración Católica",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/La Infiltración Católica": {
-      "excerpt": "Operación encubierta en la Catedral de Santa Regina para identificar y penetrar a la célula de “La Cruz”",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/La Semana Negra": {
-      "excerpt": "Semana de violencia urbana desatada tras el ataque en Italian’s Boot; conocida popularmente como “La Guerra de las Pizzas”",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
-    },
-    "eventos/Masacre de la Catedral de Santa Regina": {
-      "excerpt": "Asalto devastador contra la célula de Los Vinculados; punto de quiebre tras la Semana Negra",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Atlantic News": {
       "excerpt": "Principal corporación periodística de Nueva Ámsterdam, fundada por la familia Fox y núcleo informativo de la costa este.",
@@ -266,7 +296,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Bronze Fish": {
       "excerpt": "Restaurante de mariscos en el centro de Nueva Ámsterdam, punto de encuentro clave entre Lucía Sinclair y Oliver Henderson.",
@@ -275,7 +306,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Buró Federal de Investigación": {
       "excerpt": "Institución de investigación criminal y seguridad nacional de EE.UU. con atribuciones extendidas a lo sobrenatural y conspirativo.",
@@ -284,7 +316,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Catedral de Santa Regina": {
       "excerpt": "Principal templo católico de Nueva Ámsterdam; centro de poder eclesiástico, conspiraciones y escenario de la masacre homónima.",
@@ -293,7 +326,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Centro Histórico": {
       "excerpt": "Distrito urbano y núcleo nocturno de Nueva Ámsterdam; corazón decadente de clubes, información subterránea y violencia elegante. Escenario clave durante el caso «El Cuarto Rojo».",
@@ -302,7 +336,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Club Palace": {
       "excerpt": "Cabaret y salón de espectáculos del distrito nocturno del Centro Histórico; zona neutral regida por Veronica Black, clave para la preparación de Lucía en La Infiltración Católica.",
@@ -311,7 +346,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Crystal Square": {
       "excerpt": "Zona residencial suburbana de clase media-alta al sur de Nueva Ámsterdam; planeación cerrada, baja incidencia delictiva reportada y escenario periférico del caso «El Cuarto Rojo».",
@@ -320,7 +356,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/El Balneario Rushmore": {
       "excerpt": "Parque acuático temático abandonado en las afueras de Nueva Ámsterdam; convertido en laboratorio encubierto ligado al Elemento 121 y escenario de infiltraciones y confrontes clave.",
@@ -331,7 +368,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/El Castillo de Nueva Ámsterdam": {
       "excerpt": "Fortaleza neogótica del siglo XIX en las afueras de la ciudad; abandonada, ligada a una rama exiliada de nobleza rumana y escenario del despertar de Anastasia Dobrescu.",
@@ -342,7 +380,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/El Nido": {
       "excerpt": "Barrio densamente poblado y núcleo cultural de Nueva Ámsterdam; control comunitario con tolerancia ambigua, economía informal y conexiones con la Familia Zaikov.",
@@ -351,7 +390,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Gilded Cat": {
       "excerpt": "Salón de apuestas y juegos de azar en el Centro Histórico; recinto elegante con política estricta de anonimato y reputación ambigua.",
@@ -360,7 +400,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Italian’s Boot": {
       "excerpt": "Restaurante-bar italiano y fachada operativa de la Familia Tornatore; su destrucción detonó la Semana Negra en Nueva Ámsterdam.",
@@ -371,7 +412,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/La Biblioteca de Nueva Ámsterdam": {
       "excerpt": "Institución cultural pública en el límite noreste del Centro Histórico; archivo neoclásico con hemeroteca y sala de raros. Nodo clave durante El Cuarto Rojo.",
@@ -382,7 +424,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/La Comisaría de Nueva Ámsterdam": {
       "excerpt": "Sede principal de la policía local; centro operativo de investigaciones, interrogatorios y forense. Epicentro narrativo durante El Cuarto Rojo y la antesala de la Semana Negra.",
@@ -391,7 +434,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/La Refinería McCarthy": {
       "excerpt": "Antiguo bastión industrial de la Familia McCarthy; escenario del clímax con la Reina de la Oscuridad y la caída de Cassian Thorne.",
@@ -400,7 +444,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Mansión McCarthy": {
       "excerpt": "Residencia señorial del Distrito Norte; símbolo de poder discreto de la Familia McCarthy y escenario del asedio Voronin previo al clímax en la Refinería.",
@@ -409,7 +454,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Maple Valley": {
       "excerpt": "Suburbio residencial de clase media en la periferia de Nueva Ámsterdam; casa de seguridad de Archie Woodward durante el caso del Cuarto Rojo.",
@@ -418,7 +464,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Mercado Viejo": {
       "excerpt": "Zona urbana referida en el códice como corazón comercial entre el Centro Histórico y las vías del tranvía. Esta entrada amplía el mapa narrativo para enlaces internos; puedes desarrollar aquí historia, atmósfera y eventos cuando lo desees.",
@@ -427,7 +474,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Monte Galbrook": {
       "excerpt": "Mirador forestal y zona natural al norte de Nueva Ámsterdam; escenario de la desaparición de Jessica McCarthy y foco de rumores no humanos.",
@@ -436,7 +484,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Nueva Ámsterdam": {
       "excerpt": "Ciudad ficticia en la costa noreste de EE. UU.; núcleo gótico-noir donde se entrelazan poder institucional y raíces ocultistas. Escenario central de Necromancia a Medianoche.",
@@ -445,7 +494,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Pizzas' Juan": {
       "excerpt": "Pizzería mexicana de barrio en Nueva Ámsterdam; pausa íntima y táctica de Cassian y Lucía durante “Caso Resuelto”, donde atan cabos sobre Alan McCarthy y el Elemento 121.",
@@ -454,7 +504,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Raven District": {
       "excerpt": "Complejo industrial periférico de McCarthy Petroleum; laboratorio subterráneo donde Tamara Dobrescu y Archie Woodward sintetizaron por primera vez el Elemento 121. Destruido en 1899.",
@@ -463,7 +514,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Scarlet Horn": {
       "excerpt": "Club de jazz y bar clandestino del Centro Histórico; semillero de artistas y nodo de actividades semilegales. Primer encuentro entre Cassian y Tamara (como “Angelina Pollard”).",
@@ -472,7 +524,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Velvet Trumpet": {
       "excerpt": "Bar-lounge del Centro Histórico con tarima semicircular, piano siempre afinado y programación de música en vivo; ambiente melancólico y clientela diversa.",
@@ -481,7 +534,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Villa Lobos": {
       "excerpt": "Fraccionamiento cerrado dentro de Crystal Square; escena del caso «El Cuarto Rojo» y residencia de la familia McCarthy y los Chapman.",
@@ -490,7 +544,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Wendell Pines": {
       "excerpt": "Reserva natural que marca el límite norte de Nueva Ámsterdam en la narrativa. Página de anclaje para enlaces desde otros lugares; amplía con ecología, rutas o tramas cuando corresponda.",
@@ -499,7 +554,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "lugares/Whispering Keys": {
       "excerpt": "Club de jazz clandestino en los subniveles del Centro Histórico; acceso por contraseña semanal bajo una tienda de pianos abandonada. Neutral, con clientela de informantes y seres ambiguos.",
@@ -508,7 +564,8 @@
         "type": "lugar",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "objetos-conceptos/Criptidae Librum": {
       "filters": {
@@ -516,7 +573,8 @@
         "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "objetos-conceptos/Daga de Obsidiana": {
       "filters": {
@@ -524,7 +582,8 @@
         "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "objetos-conceptos/Elemento 121": {
       "excerpt": "Compuesto alquímico-bioquímico inestable sintetizado en Raven District (Prueba 121); clave en la conspiración de Nueva Ámsterdam.",
@@ -533,7 +592,8 @@
         "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "objetos-conceptos/Monedas de Latón": {
       "filters": {
@@ -541,7 +601,8 @@
         "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "objetos-conceptos/Munición Especial": {
       "filters": {
@@ -549,7 +610,8 @@
         "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "objetos-conceptos/Profecía de la Reina de la Oscuridad": {
       "filters": {
@@ -557,7 +619,8 @@
         "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "objetos-conceptos/Profecía de los Vinculados": {
       "filters": {
@@ -565,7 +628,8 @@
         "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "objetos-conceptos/Recetario de las Brujas": {
       "filters": {
@@ -573,7 +637,8 @@
         "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "objetos-conceptos/Reina de la Oscuridad": {
       "filters": {
@@ -581,7 +646,8 @@
         "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "objetos-conceptos/Reino de las sombras": {
       "filters": {
@@ -589,7 +655,8 @@
         "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "objetos-conceptos/Tomo de los Vinculados": {
       "filters": {
@@ -597,7 +664,8 @@
         "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "objetos-conceptos/Vinculo de Sangre": {
       "filters": {
@@ -605,7 +673,8 @@
         "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Alan McCarthy": {
       "excerpt": "Empresario, patriarca de la familia McCarthy.",
@@ -619,7 +688,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Anastasia Dobrescu": {
       "excerpt": "Rapax Hominum, vulgarmente conocida como una vampira",
@@ -633,7 +703,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Andrew Sheppard": {
       "excerpt": "Historiador",
@@ -647,7 +718,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Angelo Tornatore": {
       "excerpt": "Patriarca de la Familia Tornatore; capo criminal de Nueva Ámsterdam",
@@ -661,10 +733,13 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Anya Rudzki": {
       "excerpt": "Ficha de Anya Rudzki en Crónicas de Sangre y Sombra.",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/q_auto/f_auto/v1779166937/anya-rudzki_ygy0zb.png",
+      "imageAlt": "Anya Rudzki",
       "filters": {
         "libro": "necromancia-medianoche",
         "genero": "Femenino",
@@ -673,7 +748,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-18"
     },
     "personajes/Archie Woodward": {
       "excerpt": "Jack of all trades master of none",
@@ -687,7 +763,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Caleb Thorne": {
       "excerpt": "Padre de Cassian Thorne; muerto como héroe al interceptar balas destinadas a Dorian Blackwood durante una emboscada mafiosa",
@@ -701,7 +778,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Cassian Thorne": {
       "excerpt": "Detective de la Policía de Nueva Ámsterdam; protagonista de Necromancia a Medianoche",
@@ -715,7 +793,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Cecilia Amadeo": {
       "excerpt": "Bruja vinculada a la Catedral de Santa Regina; mentora de Cassian y Lucia",
@@ -729,7 +808,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-21"
     },
     "personajes/Devin Kirby": {
       "excerpt": "Camarógrafo de Atlantic News",
@@ -738,12 +818,13 @@
       "filters": {
         "libro": "necromancia-medianoche",
         "genero": "Masculino",
-        "estado": "Activo",
+        "estado": "Desaparecido",
         "raza": "Humano",
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-21"
     },
     "personajes/Dorian Blackwood": {
       "excerpt": "Jefe de detectives de la comisaría de Nueva Ámsterdam",
@@ -757,7 +838,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Duccio Tornatore": {
       "excerpt": "Heredero menor de la Familia Tornatore; socialité impulsivo e imprevisible",
@@ -771,7 +853,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Frederick Chapman": {
       "excerpt": "Patriarca de la familia Chapman; empresario de colchones",
@@ -785,7 +868,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Greta Zaikov": {
       "excerpt": "Francotiradora de las “Águilas del Nido” (Familia Zaikov)",
@@ -799,7 +883,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Grigori Zaikov": {
       "excerpt": "“Tanque” de las Águilas del Nido; fuerza de choque de la Familia Zaikov",
@@ -813,7 +898,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Ian Zaikov": {
       "excerpt": "Especialista en cuchillos; punta de lanza de las Águilas del Nido (Familia Zaikov)",
@@ -827,7 +913,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Ibrahim Ramazan Zaikov": {
       "excerpt": "Mayor consejero de las Águilas del Nido; corazón espiritual de la Familia Zaikov",
@@ -841,7 +928,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Irene Zaikov": {
       "excerpt": "Exesposa de Cassian Thorne; integrante de la rama Ozturk–Zaikov",
@@ -855,7 +943,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Jack Fox": {
       "excerpt": "Director y productor de Atlantic News; heredero del medio; testigo clave de Necromancia a Medianoche",
@@ -869,7 +958,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Jayson Branch": {
       "excerpt": "Jefe de seguridad de la Familia McCarthy; coordinador táctico durante Necromancia a Medianoche",
@@ -883,7 +973,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Jessica McCarthy": {
       "excerpt": "Heredera de la fortuna McCarthy; portadora del Elemento 121",
@@ -897,7 +988,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Kingston Graham": {
       "excerpt": "Alto funcionario del Buró; operador clave del programa secreto y reclutador de Lucia Sinclair",
@@ -911,7 +1003,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Logan Crane": {
       "excerpt": "Detective de la Policía de Nueva Ámsterdam; enlace operativo del equipo Thorne–Sinclair",
@@ -925,7 +1018,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Lucia Sinclair": {
       "excerpt": "Agente especial del Buró; co-protagonista y eje federal de la investigación en Nueva Ámsterdam",
@@ -939,7 +1033,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Maisie Stewart": {
       "excerpt": "Hostess/encargada y mano derecha de Verónica Black en el Club Palace; apoyo clave durante la Infiltración Católica",
@@ -953,7 +1048,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Marco Giannotti": {
       "excerpt": "Cazador clandestino y táctico de los Vinculados; mentor temporal de Cassian y Lucia",
@@ -967,7 +1063,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Oliver Henderson": {
       "excerpt": "Reportero de Atlantic News; vampirizado tras el Castillo; catalizador del destino de Jessica",
@@ -981,7 +1078,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Paciano Tornatore": {
       "excerpt": "Heredero mayor y estratega financiero de la Familia Tornatore",
@@ -995,7 +1093,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Pollione Tornatore": {
       "excerpt": "Operador y negociador de la Familia Tornatore; enlace pragmático con la policía",
@@ -1009,7 +1108,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Ramses Zaikov": {
       "excerpt": "Estratega y cerebro operativo de la Familia Zaikov; colíder de las “Águilas del Nido”",
@@ -1023,7 +1123,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Rezniv Voronin": {
       "excerpt": "Patriarca de la Familia Voronin; fanático de la Reina de la Oscuridad y antagonista del clímax en la refinería",
@@ -1037,7 +1138,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Ryan Chapman": {
       "excerpt": "Hijo de Frederick Chapman; testigo clave del caso “El Cuarto Rojo”",
@@ -1051,7 +1153,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Susan Barnes": {
       "excerpt": "Ingeniera de sonido de Atlantic News; miembro del equipo del documental del Castillo de Nueva Ámsterdam",
@@ -1065,7 +1168,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Tamara Dobrescu": {
       "excerpt": "Científica del linaje Dobrescu; alias público “Angelina Pollard”.",
@@ -1079,7 +1183,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     },
     "personajes/Veronica Black": {
       "excerpt": "Dueña y “madame” del Club Palace; operadora influyente con acuerdos tácticos con la comisaría",
@@ -1093,7 +1198,8 @@
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
-      }
+      },
+      "updated": "2026-05-17"
     }
   },
   "meridian": {
@@ -1113,23 +1219,25 @@
     "campañas/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arcos narrativos o mesas de juego del universo Meridian."
     },
+    "clases/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arquetipos, profesiones o vocaciones del universo Meridian."
+    },
     "eventos/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la cronología y sucesos relevantes del universo Meridian."
     },
     "eventos/la-masacre-de-valona": {
-      "excerpt": "Val'Ona, cuyo nombre significa la ciudad de las cien cascadas doradas, fue durante el apogeo del Imperio Ranamano la ciudad con mayor población de salamandras dentro de sus dominios. En términos prácticos, no solo era una ciudad importante: era la capital soñada de las Salamandras Libres, el símbolo de lo que algún día creían poder reclamar como propio. Las Salamandras Libres habitaban la Isla Man"
+      "excerpt": "Val'Ona, cuyo nombre significa la ciudad de las cien cascadas doradas, fue durante el apogeo del Imperio Ranamano la ciudad con mayor población de salamandras dentro de sus dominios. En términos prácticos, no solo era una ciudad importante: era la capital soñada de las Salamandras Libres, el símbolo de lo que algún día creían poder reclamar como propio. Las Salamandras Libres habitaban la Isla Man",
+      "updated": "2026-04-22"
     },
     "eventos/La_Gran_Fiesta_Del_Baron_Matadragones": {
-      "excerpt": "Hace ochenta años, la guerra que transformó Meridian llegó a su fin… pero no todas sus consecuencias murieron con ella. Durante el conflicto, los elfos recurrieron a una estrategia desesperada: la producción masiva de dragones. Criaturas nacidas para la guerra, criadas sin el tiempo, la disciplina ni el desarrollo que un dragón requiere para convertirse en algo más que un arma. Mientras la guerra "
-    },
-    "mapa/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación geográfica y cartográfica del universo Meridian."
+      "excerpt": "Hace ochenta años, la guerra que transformó Meridian llegó a su fin… pero no todas sus consecuencias murieron con ella. Durante el conflicto, los elfos recurrieron a una estrategia desesperada: la producción masiva de dragones. Criaturas nacidas para la guerra, criadas sin el tiempo, la disciplina ni el desarrollo que un dragón requiere para convertirse en algo más que un arma. Mientras la guerra ",
+      "updated": "2026-04-22"
     },
     "facciones/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de grupos, órdenes y bandos del universo Meridian."
     },
-    "clases/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arquetipos, profesiones o vocaciones del universo Meridian."
+    "mapa/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación geográfica y cartográfica del universo Meridian."
     },
     "personajes/aquila-milvus": {
       "excerpt": "Guerrero de la Casa Milvus, respetado por su linaje… temido por lo que oculta.",
@@ -1138,7 +1246,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Aeriano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/aris-dewulf": {
       "excerpt": "Maga prodigio del Reino del Sol, cuya obsesión por el conocimiento y su linaje la han llevado a convertirse en una figura tan admirada como peligrosa.",
@@ -1147,7 +1256,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Humano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/astrid-cyndwyl": {
       "excerpt": "Princesa del Reino del Sol, forjada en guerra y devota al imperio que juró proteger.",
@@ -1156,7 +1266,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Humano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/atlas-corvidae": {
       "excerpt": "Aeriano cuervo que escapó de su vida como experimento y ahora combate usando su propio cuerpo modificado y toxinas preparadas.",
@@ -1165,7 +1276,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Aeriano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/borin-aralmus": {
       "excerpt": "Santo enano de la forja, considerado el primero en dar forma al metal y fundador del acto mismo de crear.",
@@ -1174,7 +1286,8 @@
       "filters": {
         "estado": "Fallecido",
         "raza": "Enano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/borin-efkei": {
       "excerpt": "Comerciante enano especializado en objetos raros y componentes peligrosos, una figura pragmática en los márgenes del mercado.",
@@ -1183,7 +1296,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Enano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/borin-kalt": {
       "excerpt": "Enano veterano considerado héroe por los pueblos que protegió, símbolo de justicia y fortaleza en decadencia.",
@@ -1192,7 +1306,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Enano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/cal-strife": {
       "excerpt": "Superviviente de una masacre, ahora cazarrecompensas de los Mensajeros de Daloz impulsado por una fe distorsionada y sed de venganza.",
@@ -1201,7 +1316,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Humano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/camp-yeipy": {
       "excerpt": "Enano errante que sobrevivió a la caída de su ciudad y ahora recorre el mundo cargando con el peso de haber vivido.",
@@ -1210,7 +1326,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Enano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/dorothy-strife": {
       "excerpt": "Heredera de la Casa Strife, esgrimista refinada que oculta sus verdaderas convicciones bajo una fachada de lealtad familiar.",
@@ -1219,7 +1336,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Humano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/icar-corvidae": {
       "excerpt": "Aeriano cuervo y científico de los Inventores del Viento, cuya visión del progreso lo llevó a convertir a su propio hermano en experimento.",
@@ -1228,7 +1346,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Aeriano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de figuras clave del universo Meridian."
@@ -1240,7 +1359,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Humano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/maggie-karp": {
       "excerpt": "Única superviviente de una villa arrasada por dragones, ahora aprendiz del barón y encargada de sus festividades.",
@@ -1249,7 +1369,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Humana"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/mateo-de-saltiyork": {
       "excerpt": "Herrero humano de un pequeño pueblo, definido más por su constancia que por la ambición.",
@@ -1258,7 +1379,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Humano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/minerva-albayto": {
       "excerpt": "Aeriana de la estirpe búho, obsesionada con el conocimiento arcano y marcada por una soberbia cultivada desde la cuna.",
@@ -1267,7 +1389,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Aeriano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/rene-crobul": {
       "excerpt": "Ranamano cazarrecompensas del Enclave Urindar, conocido por su arrogancia y su eficacia implacable.",
@@ -1276,7 +1399,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Ranamano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/robatron": {
       "excerpt": "Autómata diseñado para robar que superó su programación… y a su creador.",
@@ -1285,7 +1409,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Autónomo"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/salazar-suarius": {
       "excerpt": "Antigua salamandra sanadora de guerra que cambió el campo de batalla por el escenario de fiestas infantiles.",
@@ -1294,7 +1419,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Salamandra"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/sydrax-voss": {
       "excerpt": "Antigua salamandra de guerra, hoy maestro de magia, que aún carga con los ecos de los hechizos que juró dejar atrás.",
@@ -1303,7 +1429,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Salamandra"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/thalrik-varn": {
       "excerpt": "Un enano astuto que, además de dominar la forja, ha perfeccionado el arte del trueque hasta convertirlo en un arma.",
@@ -1312,7 +1439,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Enano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/valter-wischard": {
       "excerpt": "Hechicero de La Corte Solar; alias público “Valter el Matadragones”.",
@@ -1321,7 +1449,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Humano"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "personajes/zab-norgram": {
       "excerpt": "Aventurero que tras vender todo excepto sus pantalones, obtuvo un hacha colosal.",
@@ -1330,7 +1459,8 @@
       "filters": {
         "estado": "Activo",
         "raza": "Elfo"
-      }
+      },
+      "updated": "2026-04-21"
     },
     "razas/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de pueblos y linajes del universo Meridian."

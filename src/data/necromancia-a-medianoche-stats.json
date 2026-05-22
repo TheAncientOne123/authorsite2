@@ -1,0 +1,16 @@
+{
+  "words": 146245,
+  "characters_with_spaces": 882479,
+  "characters_without_spaces": 736143,
+  "lines": 14204,
+  "sentences": 13299,
+  "paragraphs": 1,
+  "reading_time_silent_min": 585,
+  "reading_time_aloud_min": 1125,
+  "avg_words_per_sentence": 11.0,
+  "avg_words_per_paragraph": 146245.0,
+  "lexical_richness_ttr": 0.108,
+  "dialogue_ratio": 0.1999,
+  "analyzed_at": "2026-05-20T23:16:45.287316+00:00",
+  "lang": "es"
+}

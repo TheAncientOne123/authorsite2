@@ -7,9 +7,12 @@
 # Generated files
 .docusaurus
 .cache-loader
+data/lore-corpus.json
+.vercel
 
 # Cloudinary upload manifest (local)
 scripts/output/
+scripts/manuscript-analysis/output/
 
 # Misc
 .DS_Store

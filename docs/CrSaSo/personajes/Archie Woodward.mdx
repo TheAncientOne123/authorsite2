@@ -14,62 +14,115 @@ import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+# Archie Woodward
+
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Archie Woodward"
-    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ArchieWoodward', alt: 'Archie Woodward' }}
-    caption="Científico (humano); ex jefe de científicos de McCarthy Petroleum"
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ArchieWoodward',
+      alt: 'Archie Woodward',
+    }}
+    caption="Ilusionista; consultor policial"
     rows={[
+      {
+        label: 'Alias / Apodos',
+        value: 'Aldric Shadowborne, El Magnífico, Mago de los mil trucos',
+      },
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Edad', value: 'Aproximadamente 54-55 años' },
+      {
+        label: 'Residencia',
+        value: (
+          <>
+            Augustus Sierra 235,{' '}
+            <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>;{' '}
+            <Link to="/CrSaSo/lugares/Maple%20Valley">Maple Valley</Link> (temporal)
+          </>
+        ),
+      },
+      { label: 'Especie', value: 'Humano' },
       { label: 'Género', value: 'Masculino' },
-      { label: 'Estado', value: 'Activo' },
-      { label: 'Oficios', value: 'Ingeniero petrolero; ocultista e ilusionista aficionado; coleccionista, científico' },
-      { label: 'Afiliación', value: 'Ninguna' },
-          { label: 'Alias', value: 'Aldric Shadowborne' },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-      { label: 'Cónyuges', value: 'Sagira Bostros, Alisha Floyd, Isla Butler, Arina Olegnova, Cira Montenegro, Abdiel Porter' },
-      { label: 'Residencias', value: <><Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>, Residencia la calle August Sierra</> },
+      {
+        label: 'Ocupación',
+        value: 'Ingeniero petrolero (anteriormente); ilusionista / vidente; consultor policial',
+      },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link> (anteriormente);{' '}
+            <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">
+              Departamento de Policía de Nueva Ámsterdam
+            </Link>
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>{' '}
+            (mencionado, cap. 9)
+          </>
+        ),
+      },
     ]}
   />
-
 )}
-
 </BrowserOnly>
 
-**Ocupación conocida:** Ilusionista, ocultista, lector de tarot, coleccionista de rarezas; ex jefe de científicos en <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link>.  
-**Ubicación conocida:** Residencia (Calle Augustus Sierra #235); posteriormente, tienda esotérica en <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> bajo el nombre de _Aldric Shadowborne_.
+**Archie Woodward** es un brillante ingeniero petrolero y científico graduado con honores en el MIT, cuya carrera dio un giro drástico tras el trágico incidente en Raven District en 1899. Tras el descubrimiento del "Elemento 121" y la posterior explosión del laboratorio donde trabajaba, se refugió en el anonimato bajo el seudónimo de **Aldric Shadowborne**, operando como vidente e ilusionista en el distrito de la <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>.
 
-#### Resumen
+Poseedor de un vasto conocimiento técnico y místico, Woodward se convierte en una pieza fundamental para la resolución del <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">Caso del Cuarto Rojo</Link> al actuar como puente entre el mundo corporativo de <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link> y la realidad de los <Link to="/CrSaSo/otros/Rapax%20Hominum">Rapax Hominum</Link>. Su papel evoluciona de sospechoso a consultor oficial del <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">Departamento de Policía de Nueva Ámsterdam</Link>.
 
-Archie Woodward es un personaje excéntrico, erudito autodidacta y maestro del disfraz. Su guarida reúne libros antiguos, objetos anatómicos y artefactos esotéricos; por su biblioteca y métodos, los protagonistas lo perfilan como un **todólogo** capaz de reinventarse cuando conviene. Operó durante años en las sombras de Nueva Ámsterdam, moviéndose entre la comunidad ocultista y el mundo académico, hasta quedar atrapado en el caso McCarthy.
+## Perfil y Personalidad
 
-#### Relación con la investigación
+Físicamente, Woodward destaca por un prominente bigote negro con puntas curvadas hacia arriba y un cabello oscuro peinado meticulosamente hacia atrás. Suele vestir atuendos teatrales que incluyen chalecos morados con grabados rituales. A pesar de su apariencia de hombre maduro, conserva una agilidad sorprendente, siendo capaz de realizar maniobras físicas complejas como dislocarse el pulgar para escapar de ataduras.
 
-Durante la investigación del caso de <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>, <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> localizaron una dirección vinculada a préstamos de libros raros; la residencia resultó ser la guarida de Woodward (abandonada), con **memorabilia** del antiguo mago escénico _Aldric Shadowborne_, lo que permitió conectar ambas identidades.
+Psicológicamente, Archie es descrito como un hombre marcado por traumas del pasado ("trastornado"), lo que le confiere un sentido del humor ácido y sarcástico. Es un individuo extremadamente culto, un "todólogo" interesado en la anatomía animal, la alquimia, la psicología y la literatura. A pesar de su paranoia y cinismo inicial, demuestra una naturaleza compasiva y paternal hacia sus aliados, actuando como consejero emocional para <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>.
 
-Posteriormente lo hallaron en su tienda en <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>. Allí, Woodward demostró teatralidad y **un conocimiento profundo** sobre <Link to="/CrSaSo/personajes/Angelina%20Pollard">Angelina Pollard</Link> y la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>. Su reacción al escuchar ciertos nombres evidenció conexiones que intentaba ocultar, provocando una persecución tras usar humo para escapar.
+## Habilidades y Equipo
 
-Finalmente, fue capturado con apoyo de la <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link> (Águilas del Nido). Logró huir brevemente robando el coche de Lucía Sinclair, hasta que un disparo de la francotiradora <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link> detuvo su fuga. Su detención aportó claves críticas.
+Archie Woodward combina capacidades intelectuales de élite con habilidades de espectáculo:
+*   **Capacidades Intelectuales:** Experto en ingeniería petrolera, química y análisis de materiales regenerativos. Posee conocimientos avanzados en alquimia y botánica medicinal.
+*   **Ilusionismo y Escapismo:** Maestro del engaño visual y táctico. Utiliza bombas de humo rosado para desaparecer y es experto en desatarse de esposas mediante la dislocación de articulaciones.
+*   **Adivinación y Tarot:** Posee una aguda intuición y destreza en la lectura de cartas, que utiliza para analizar perfiles psicológicos y situaciones críticas.
 
-Tras su interrogatorio, se ofreció como **consejero** de la comisaría en un intento de redención. <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link> fue escéptico y lo dejó a cargo de Cassian y Lucía; con el tiempo, Archie se ganó su confianza y colaboró en operaciones posteriores, incluida <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>.
+**Equipo notable:**
+*   **Caja de herramientas de vidente:** Barajas de tarot y "humo de invisibilidad".
+*   **Plantas medicinales:** Diversos ungüentos y hierbas preparadas según fórmulas antiguas para la recuperación física.
+*   **Armamento:** Como consultor policial, porta armas de fuego estándar y munición especializada de alta potencia para enfrentar amenazas sobrenaturales.
 
-#### Habilidades y perfil psicológico
+## Biografía / Historia
 
-- Cambia de identidad con facilidad; experto en **ilusionismo** y evasión.
-- Conocimientos avanzados (formales e informales) en **ocultismo, química, criptografía y actuación**.
-- Carácter teatral y grandilocuente, alterna arrogancia con lucidez. Coopera por interés y trueque, pero su información ha sido crucial para comprender el **Elemento 121** y sus implicaciones.
+### Necromancia a Medianoche
 
-#### Notas canónicas y contrastes
+#### El Incidente de Raven District (1899)
+Archie fue el jefe de científicos de <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link> en los laboratorios del <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link>. Junto a su asistente, <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, descubrió el <Link to="/CrSaSo/otros/Elemento%20121">Elemento 121</Link>, una sustancia con propiedades regenerativas extremas. Tras una explosión premeditada por Tamara que mató a nueve de sus colegas, Archie recuperó la última muestra sobreviviente y se la entregó a <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> antes de abandonar la empresa y desaparecer bajo su identidad de mago.
 
-- **Formación y cargo:** Ingeniero petrolero del MIT; **ex jefe de científicos de McCarthy Petroleum**.
-- **Elemento 121:** Descubierto en el contexto McCarthy; versiones internas atribuyen el hallazgo a **Angelina Pollard**; otras fuentes subrayan el papel instrumental de **Tamara Dobrescu** en los avances. Archie rescató una **muestra** tras la explosión de Raven District y **se la entregó a Alan McCarthy**.
-- **Raven District (1899):** Explosión premeditada que destruyó el laboratorio y casi todas las muestras. Nueve muertos y un desfigurado.
-- **Persecución:** Un grupo denominado **La Cruz** lo busca; salir de la protección de los **Zaikov** en el Nido lo puso en riesgo.
+#### Captura en "El Nido"
+En 1929, Woodward es localizado en su establecimiento del barrio "El Nido" por los detectives <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>. Tras un intento de fuga cinematográfico que incluyó una persecución por un bazar, fue interceptado por Sinclair y retenido por la familia <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Zaikov</Link>. Durante su interrogatorio, reveló la naturaleza del <Link to="/CrSaSo/otros/Elemento%20121">Elemento 121</Link> y advirtió sobre el peligro que representaba Tamara.
 
-## Véase también
+#### La Protección en Maple Valley
+Debido a la información crítica que poseía, fue puesto bajo protección de testigos en una casa de seguridad en el suburbio de <Link to="/CrSaSo/lugares/Maple%20Valley">Maple Valley</Link>. Allí fue asaltado por la secta católica <Link to="/CrSaSo/familias/La%20Cruz">La Cruz</Link>, siendo interrogado bajo amenaza antes de ser rescatado por Thorne y el jefe <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>. Tras este evento, formalizó su papel como consejero de la comisaría.
 
-- <Link to="/CrSaSo/otros/Elemento%20121">Elemento 121</Link>
-- <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link>
-- <Link to="/CrSaSo/personajes/Angelina%20Pollard">Angelina Pollard</Link>
-- <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>
-- <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>
+#### El Asalto a la Refinería McCarthy
+Woodward fue una pieza estratégica en la batalla final. Utilizando su conocimiento como ingeniero, coordinó la colocación de cargas explosivas en las estructuras críticas de la <Link to="/CrSaSo/lugares/Refinería%20McCarthy">Refinería McCarthy</Link> para destruir el ejército de muertos levantado por la <Link to="/CrSaSo/personajes/Reina%20de%20la%20Oscuridad">Reina de la Oscuridad</Link>. Sobrevivió al colapso del complejo y asistió posteriormente al funeral de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> junto al resto de aliados.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">**Tamara Dobrescu**</Link>: Su antigua mano derecha; Woodward guarda sentimientos encontrados hacia ella, reconociendo su genio pero temiendo su ambición destructiva.
+*   <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link>: Desarrolla un vínculo de mentoría, dándole consejos sobre la vulnerabilidad humana y empujándolo a aceptar sus sentimientos por Lucia.
+*   <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucia Sinclair**</Link>: Pasa de ser su captora a una colega a la que instruye en remedios medicinales y botánica básica.
+*   <Link to="/CrSaSo/personajes/Alan%20McCarthy">**Alan McCarthy**</Link>: Antiguo empleador y amigo; Woodward se sintió culpable por haberle entregado la sustancia que condenó a Jessica.
+
+## Curiosidades
+
+*   Afirma que "el mejor amigo del hombre no es el perro, sino el caballo", citando su importancia en las conquistas históricas.
+*   Es capaz de distinguir diferentes tipos de cloro basándose en recuerdos de su infancia.
+*   Su firma es una "T" estilizada en documentos antiguos, aunque esto suele confundirse con las marcas de Tamara.
+*   Posee una colección de libros sobre "críptidos" denominada *Criptidae Librum*.

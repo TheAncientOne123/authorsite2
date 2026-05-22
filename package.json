@@ -7,6 +7,9 @@
     "prebuild": "node scripts/build-graph-crSaSo.mjs && node scripts/build-card-preview-meta.mjs",
     "prestart": "node scripts/build-graph-crSaSo.mjs && node scripts/build-card-preview-meta.mjs",
     "build-card-preview-meta": "node scripts/build-card-preview-meta.mjs",
+    "build:lore-corpus": "node scripts/build-lore-corpus.mjs",
+    "vercel-build": "npm run build:lore-corpus",
+    "dev:chat-api": "npx vercel dev --listen 3001",
     "cloudinary:demo": "node --env-file=.env scripts/cloudinary-demo.mjs",
     "cloudinary:upload": "node --env-file=.env scripts/upload-static-images.mjs",
     "cloudinary:upload:dry": "node --env-file=.env scripts/upload-static-images.mjs --dry-run",
@@ -15,6 +18,8 @@
     "cloudinary:migrate": "node scripts/replace-cloudinary-urls.mjs --regenerate",
     "cloudinary:prune-static": "node scripts/prune-static-img.mjs",
     "cloudinary:prune-static:dry": "node scripts/prune-static-img.mjs --dry-run",
+    "analyze-manuscript": "python scripts/manuscript-analysis/analyze_pdf.py",
+    "sync-manuscript-stats": "python -c \"import json;from pathlib import Path;r=Path('scripts/manuscript-analysis/output/stats.json');d=json.load(open(r,encoding='utf-8'));d.pop('source_pdf',None);json.dump(d,open('src/data/necromancia-manuscript-stats.json','w',encoding='utf-8'),ensure_ascii=False,indent=2);print('OK src/data/necromancia-manuscript-stats.json')\"",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
@@ -38,15 +43,19 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "recharts": "^3.8.1",
     "sigma": "^3.0.2",
-    "tippy.js": "^6.3.7"
+    "tippy.js": "^6.3.7",
+    "@google/generative-ai": "^0.24.0"
   },
   "devDependencies": {
     "@docusaurus/faster": "3.10.1",
     "@docusaurus/module-type-aliases": "3.10.1",
     "@docusaurus/types": "3.10.1",
+    "@vercel/node": "^5.0.0",
     "fast-glob": "^3.3.3",
-    "gray-matter": "^4.0.3"
+    "gray-matter": "^4.0.3",
+    "vercel": "^44.0.0"
   },
   "browserslist": {
     "production": [
@@ -61,6 +70,6 @@
     ]
   },
   "engines": {
-    "node": ">=18.0"
+    "node": "20.x"
   }
 }

@@ -1,0 +1,540 @@
+{
+  "title": "Necromancia a Medianoche",
+  "lang": "es",
+  "parts": [
+    {
+      "title": "Prólogo",
+      "page_start": 1,
+      "page_end": 4
+    },
+    {
+      "title": "Primera Parte — Cassian Thorne",
+      "page_start": 5,
+      "page_end": 63
+    },
+    {
+      "title": "Segunda Parte — Archie Woodward",
+      "page_start": 64,
+      "page_end": 115
+    },
+    {
+      "title": "Tercera Parte — El Castillo de Nueva Ámsterdam",
+      "page_start": 116,
+      "page_end": 169
+    },
+    {
+      "title": "Cuarta Parte — Receso de 15 minutos para el café",
+      "page_start": 170,
+      "page_end": 212
+    },
+    {
+      "title": "Quinta Parte — Infiltración Católica",
+      "page_start": 213,
+      "page_end": 261
+    },
+    {
+      "title": "Sexta Parte — Caso Resuelto",
+      "page_start": 262,
+      "page_end": 314
+    },
+    {
+      "title": "Séptima Parte — El Balneario Rushmore",
+      "page_start": 315,
+      "page_end": 360
+    },
+    {
+      "title": "Octava Parte — La Mansión McCarthy",
+      "page_start": 361,
+      "page_end": 410
+    },
+    {
+      "title": "Novena Parte — Necromancia a Medianoche",
+      "page_start": 411,
+      "page_end": 451
+    },
+    {
+      "title": "Epílogo",
+      "page_start": 452,
+      "page_end": 458
+    }
+  ],
+  "chapter_patterns": [
+    "^\\s*CAP[IÍ]TULO\\s+",
+    "^\\s*Cap[ií]tulo\\s+",
+    "^\\s*PARTE\\s+",
+    "^\\s*Parte\\s+",
+    "^\\s*EP[IÍ]LOGO\\s*",
+    "^\\s*Ep[ií]logo\\s*"
+  ],
+  "characters": [
+    {
+      "id": "cassian-thorne",
+      "label": "Cassian Thorne",
+      "aliases": [
+        "Cassian Thorne",
+        "Cassian",
+        "Thorne"
+      ]
+    },
+    {
+      "id": "lucia-sinclair",
+      "label": "Lucía Sinclair",
+      "aliases": [
+        "Lucía Sinclair",
+        "Lucia Sinclair",
+        "Lucía",
+        "Lucia",
+        "Sinclair"
+      ]
+    },
+    {
+      "id": "dorian-blackwood",
+      "label": "Dorian Blackwood",
+      "aliases": [
+        "Dorian Blackwood",
+        "Dorian",
+        "Blackwood"
+      ]
+    },
+    {
+      "id": "archie-woodward",
+      "label": "Archie Woodward",
+      "aliases": [
+        "Archie Woodward",
+        "Archie",
+        "Woodward",
+        "Aldric Shadowborne",
+        "Aldric",
+        "Shadowborne"
+      ]
+    },
+    {
+      "id": "logan-crane",
+      "label": "Logan Crane",
+      "aliases": [
+        "Logan Crane",
+        "Logan",
+        "Crane"
+      ]
+    },
+    {
+      "id": "anastasia-dobrescu",
+      "label": "Anastasia Dobrescu",
+      "aliases": [
+        "Anastasia Dobrescu",
+        "Anastasia"
+      ]
+    },
+    {
+      "id": "tamara-dobrescu",
+      "label": "Tamara Dobrescu",
+      "aliases": [
+        "Tamara Dobrescu",
+        "Tamara",
+        "Angelina Pollard",
+        "Angelina",
+        "Pollard"
+      ]
+    },
+    {
+      "id": "oliver-henderson",
+      "label": "Oliver Henderson",
+      "aliases": [
+        "Oliver Henderson",
+        "Oliver",
+        "Henderson"
+      ]
+    },
+    {
+      "id": "reina-de-la-oscuridad",
+      "label": "La Reina de la Oscuridad",
+      "aliases": [
+        "La Reina de la Oscuridad",
+        "Reina de la Oscuridad",
+        "Reina",
+        "Oscuridad"
+      ]
+    },
+    {
+      "id": "rezniv-voronin",
+      "label": "Rezniv Voronin",
+      "aliases": [
+        "Rezniv Voronin",
+        "Rezniv",
+        "Voronin"
+      ]
+    },
+    {
+      "id": "aris-voronin",
+      "label": "Aris Voronin",
+      "aliases": [
+        "Aris Voronin",
+        "Aris"
+      ]
+    },
+    {
+      "id": "vova-voronin",
+      "label": "Vova Voronin",
+      "aliases": [
+        "Vova Voronin",
+        "Vova"
+      ]
+    },
+    {
+      "id": "voivoda-dobrescu",
+      "label": "Voivoda Dobrescu",
+      "aliases": [
+        "Voivoda Dobrescu",
+        "Voivoda",
+        "Padre de Anastasia",
+        "Padre de Tamara",
+        "Padre de Anastasia y Tamara"
+      ]
+    },
+    {
+      "id": "alan-mccarthy",
+      "label": "Alan McCarthy",
+      "aliases": [
+        "Alan McCarthy",
+        "Alan"
+      ]
+    },
+    {
+      "id": "jessica-mccarthy",
+      "label": "Jessica McCarthy",
+      "aliases": [
+        "Jessica McCarthy",
+        "Jessica"
+      ]
+    },
+    {
+      "id": "sra-mccarthy",
+      "label": "Sra. McCarthy",
+      "aliases": [
+        "Sra. McCarthy",
+        "Señora McCarthy",
+        "Mrs. McCarthy",
+        "Madre de Jessica"
+      ]
+    },
+    {
+      "id": "marco-gianotti",
+      "label": "Marco Gianotti",
+      "aliases": [
+        "Marco Gianotti",
+        "Marco",
+        "Gianotti"
+      ]
+    },
+    {
+      "id": "cecilia",
+      "label": "Cecilia",
+      "aliases": [
+        "Cecilia",
+        "Cecilia Amadeo"
+      ]
+    },
+    {
+      "id": "ian-zaikov",
+      "label": "Ian Zaikov",
+      "aliases": [
+        "Ian Zaikov",
+        "Ian"
+      ]
+    },
+    {
+      "id": "greta-zaikov",
+      "label": "Greta Zaikov",
+      "aliases": [
+        "Greta Zaikov",
+        "Greta"
+      ]
+    },
+    {
+      "id": "mohammed-ramses",
+      "label": "Mohammed Ramses",
+      "aliases": [
+        "Mohammed Ramses",
+        "Ramses",
+        "Mohammed"
+      ]
+    },
+    {
+      "id": "ibrahim-ramazan",
+      "label": "Ibrahim Ramazan",
+      "aliases": [
+        "Ibrahim Ramazan",
+        "Ibrahim",
+        "Ramazan"
+      ]
+    },
+    {
+      "id": "grigori",
+      "label": "Grigori",
+      "aliases": [
+        "Grigori"
+      ]
+    },
+    {
+      "id": "irene-zaikov",
+      "label": "Irene Zaikov",
+      "aliases": [
+        "Irene Zaikov",
+        "Irene"
+      ]
+    },
+    {
+      "id": "mohammed-ozturk",
+      "label": "Mohammed Ozturk",
+      "aliases": [
+        "Mohammed Ozturk",
+        "Ozturk",
+        "Özturk"
+      ]
+    },
+    {
+      "id": "milenna-zaikov",
+      "label": "Milenna Zaikov",
+      "aliases": [
+        "Milenna Zaikov",
+        "Milenna"
+      ]
+    },
+    {
+      "id": "jayson-branch",
+      "label": "Jayson Branch",
+      "aliases": [
+        "Jayson Branch",
+        "Jayson",
+        "Branch"
+      ]
+    },
+    {
+      "id": "anya",
+      "label": "Anya",
+      "aliases": [
+        "Anya"
+      ]
+    },
+    {
+      "id": "taylor",
+      "label": "Taylor",
+      "aliases": [
+        "Taylor"
+      ]
+    },
+    {
+      "id": "bryce",
+      "label": "Bryce",
+      "aliases": [
+        "Bryce"
+      ]
+    },
+    {
+      "id": "daniel",
+      "label": "Daniel",
+      "aliases": [
+        "Daniel"
+      ]
+    },
+    {
+      "id": "veronica-black",
+      "label": "Verónica Black",
+      "aliases": [
+        "Verónica Black",
+        "Veronica Black",
+        "Verónica",
+        "Veronica",
+        "Black"
+      ]
+    },
+    {
+      "id": "maisie-stewart",
+      "label": "Maisie Stewart",
+      "aliases": [
+        "Maisie Stewart",
+        "Maisie"
+      ]
+    },
+    {
+      "id": "alice",
+      "label": "Alice",
+      "aliases": [
+        "Alice"
+      ]
+    },
+    {
+      "id": "pollione-tornatore",
+      "label": "Pollione Tornatore",
+      "aliases": [
+        "Pollione Tornatore",
+        "Pollione"
+      ]
+    },
+    {
+      "id": "paciano-tornatore",
+      "label": "Paciano Tornatore",
+      "aliases": [
+        "Paciano Tornatore",
+        "Paciano"
+      ]
+    },
+    {
+      "id": "duccio-tornatore",
+      "label": "Duccio Tornatore",
+      "aliases": [
+        "Duccio Tornatore",
+        "Duccio"
+      ]
+    },
+    {
+      "id": "frederick-chapman",
+      "label": "Frederick Chapman",
+      "aliases": [
+        "Frederick Chapman",
+        "Frederick",
+        "Chapman"
+      ]
+    },
+    {
+      "id": "ryan-chapman",
+      "label": "Ryan Chapman",
+      "aliases": [
+        "Ryan Chapman",
+        "Ryan"
+      ]
+    },
+    {
+      "id": "cunada-de-frederick-chapman",
+      "label": "Cuñada de Frederick Chapman",
+      "aliases": [
+        "Cuñada de Frederick Chapman",
+        "Cuñada de Frederick",
+        "Cuñada de Chapman"
+      ]
+    },
+    {
+      "id": "andrew-sheppard",
+      "label": "Andrew Sheppard",
+      "aliases": [
+        "Andrew Sheppard",
+        "Andrew",
+        "Sheppard"
+      ]
+    },
+    {
+      "id": "susan-barnes",
+      "label": "Susan Barnes",
+      "aliases": [
+        "Susan Barnes",
+        "Susan",
+        "Barnes"
+      ]
+    },
+    {
+      "id": "devin-kirby",
+      "label": "Devin Kirby",
+      "aliases": [
+        "Devin Kirby",
+        "Devin",
+        "Kirby"
+      ]
+    },
+    {
+      "id": "erikson",
+      "label": "Erikson",
+      "aliases": [
+        "Erikson"
+      ]
+    },
+    {
+      "id": "henry-bryne",
+      "label": "Henry Bryne",
+      "aliases": [
+        "Henry Bryne",
+        "Henry",
+        "Bryne"
+      ]
+    },
+    {
+      "id": "caleb-thorne",
+      "label": "Caleb Thorne",
+      "aliases": [
+        "Caleb Thorne",
+        "Caleb"
+      ]
+    },
+    {
+      "id": "director-graham",
+      "label": "Director Graham",
+      "aliases": [
+        "Director Graham",
+        "Graham",
+        "Kingston",
+        "Director Kingston"
+      ]
+    },
+    {
+      "id": "garrison",
+      "label": "Garrison",
+      "aliases": [
+        "Garrison",
+        "Subdirector Garrison"
+      ]
+    },
+    {
+      "id": "jackson",
+      "label": "Jackson",
+      "aliases": [
+        "Jackson",
+        "Subdirector Jackson"
+      ]
+    },
+    {
+      "id": "huber",
+      "label": "Huber",
+      "aliases": [
+        "Huber",
+        "Agente Huber",
+        "Agente Especial Huber"
+      ]
+    },
+    {
+      "id": "turner",
+      "label": "Turner",
+      "aliases": [
+        "Turner",
+        "Agente Turner",
+        "Agente Especial Turner"
+      ]
+    },
+    {
+      "id": "gerard",
+      "label": "Gérard",
+      "aliases": [
+        "Gérard",
+        "Gerard"
+      ]
+    },
+    {
+      "id": "melissa",
+      "label": "Melissa",
+      "aliases": [
+        "Melissa"
+      ]
+    }
+  ],
+  "stopwords_extra": [
+    "Nueva",
+    "Ámsterdam",
+    "Amsterdam",
+    "La",
+    "El",
+    "Sra",
+    "Sr",
+    "Director",
+    "Agente",
+    "Especial",
+    "Subdirector"
+  ]
+}

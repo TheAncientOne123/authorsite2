@@ -45,7 +45,9 @@
 }
 
 /* Oculta subniveles por defecto */
-.theme-doc-sidebar-menu .menu__list .menu__list { display: none !important; }
+.theme-doc-sidebar-menu .menu__list .menu__list {
+  display: none !important;
+}
 
 /* Pero muestra el hijo activo (solo esa fila) */
 .theme-doc-sidebar-menu .menu__list .menu__list .menu__link--active {
@@ -207,6 +209,11 @@ div.crSaSoNavCard p {
 [data-theme='dark'] .crSaSoNavNote {
   background: rgba(255, 255, 255, 0.05);
   color: var(--ifm-color-emphasis-600);
+}
+
+/* Sin paginación anterior/siguiente en docs (respaldo si el swizzle no aplica) */
+.theme-doc-footer {
+  display: none !important;
 }
 
 /* ── Sección "Grafo de relaciones" en portada CrSaSo ── */

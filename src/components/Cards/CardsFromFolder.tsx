@@ -3,14 +3,17 @@ import Link from '@docusaurus/Link';
 import useBaseUrl, {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
 import {useAllDocsData, useDocsVersion} from '@docusaurus/plugin-content-docs/client';
 import Tippy from '@tippyjs/react';
+import {getCrSaSoLibroColor, normalizeCrSaSoBookFilterValue} from '@site/src/data/crSaSoBooks';
+import CardPreviewBubble from './CardPreviewBubble';
 import {
-  getCrSaSoBookByKey,
-  getCrSaSoLibroColor,
-  normalizeCrSaSoBookFilterValue,
-} from '@site/src/data/crSaSoBooks';
+  type CardPreviewMeta,
+  formatArticleDate,
+  getLibroKeyFromMeta,
+  getLibroLabel,
+  resolvePreviewImageSrc,
+} from './cardPreviewUtils';
 import styles from './cards.module.css';
 import 'tippy.js/dist/tippy.css';
-
 
 export type FilterDimension = {
   key: string;
@@ -25,11 +28,9 @@ type Props = {
   debug?: boolean;
   searchPlaceholder?: string;
   initialQuery?: string;
-  /** Dimensiones de filtro por página (mismas keys que `cards_filters` en el MDX). */
   filterDimensions?: FilterDimension[];
 };
 
-/** Entrada global de docs (useAllDocsData): solo id + path; sin title ni frontMatter. */
 type DocLike = {
   id: string;
   path?: string;
@@ -46,45 +47,6 @@ type VersionDocMeta = {
   title?: string;
   description?: string;
 };
-
-type CardPreviewMeta = {
-  excerpt?: string;
-  image?: string;
-  imageAlt?: string;
-  filters?: Record<string, string | string[]>;
-};
-
-function resolvePreviewImageSrc(path: string, withBase: (p: string) => string): string {
-  if (/^https?:\/\//i.test(path)) return path;
-  return withBase(path.startsWith('/') ? path : `/${path}`);
-}
-
-function CardPreviewBubble({
-  title,
-  meta,
-  withBaseUrl: withBase,
-}: {
-  title: string;
-  meta: CardPreviewMeta;
-  withBaseUrl: (p: string) => string;
-}) {
-  const imgSrc = meta.image ? resolvePreviewImageSrc(meta.image, withBase) : undefined;
-  return (
-    <div className={styles.previewPanel}>
-      {imgSrc ? (
-        <img
-          src={imgSrc}
-          alt={meta.imageAlt || title}
-          className={styles.previewImage}
-          loading="lazy"
-          decoding="async"
-        />
-      ) : null}
-      <div className={styles.previewTitle}>{title}</div>
-      {meta.excerpt ? <p className={styles.previewExcerpt}>{meta.excerpt}</p> : null}
-    </div>
-  );
-}
 
 type VersionLike = {
   docs?: DocLike[];
@@ -139,7 +101,6 @@ function getDescription(d: DocLike, versionDoc: VersionDocMeta | undefined, fall
   return fallback;
 }
 
-
 function normalize(text: unknown): string {
   return String(text ?? '')
     .toLowerCase()
@@ -149,8 +110,8 @@ function normalize(text: unknown): string {
 
 function formatFilterOptionLabel(filterKey: string, value: string): string {
   if (filterKey === 'libro' || filterKey === 'aparicion') {
-    const meta = getCrSaSoBookByKey(value);
-    if (meta) return meta.label;
+    const label = getLibroLabel(normalizeCrSaSoBookFilterValue(value));
+    if (label) return label;
   }
   return value;
 }
@@ -180,7 +141,6 @@ function highlight(text: string, query: string): React.ReactNode {
   const q = normalize(query).trim();
   const src = text;
   const srcNorm = normalize(src);
-  // Find all match ranges of the full query (not tokenized) for simplicity
   const ranges: [number, number][] = [];
   let idx = srcNorm.indexOf(q);
   while (idx !== -1 && q) {
@@ -245,7 +205,6 @@ export default function CardsFromFolder({
       ? (docVersion.docs as Record<string, VersionDocMeta>)
       : undefined;
 
-  // Collect and sort docs from the requested folder
   const docs = useMemo(() => {
     const list = docsRaw
       .filter((d) => {
@@ -303,7 +262,6 @@ export default function CardsFromFolder({
     [version, docs],
   );
 
-  // Build a light-weight index for search across a few fields
   const indexed = useMemo(() => {
     const computeHref = (d: DocLike): string => {
       const direct = getDocPath(d);
@@ -332,7 +290,6 @@ export default function CardsFromFolder({
     });
   }, [docs, basePrefix, versionDocsById, descriptionFallback]);
 
-  // Simple AND search over whitespace tokens
   const tokens = useMemo(() => normalize(query).split(/\s+/).filter(Boolean), [query]);
   const filteredBySearch = useMemo(() => {
     if (!tokens.length) return indexed;
@@ -403,7 +360,7 @@ export default function CardsFromFolder({
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        {query && (
+        {query ? (
           <button
             type="button"
             className={styles.clearButton ?? undefined}
@@ -412,7 +369,7 @@ export default function CardsFromFolder({
           >
             ×
           </button>
-        )}
+        ) : null}
       </div>
 
       <div className={styles.searchMeta ?? undefined}>
@@ -439,51 +396,74 @@ export default function CardsFromFolder({
               typeof (d.frontMatter as {libro?: unknown})?.libro === 'string'
                 ? (d.frontMatter as {libro: string}).libro
                 : null;
-            const filtLibro = preview?.filters?.libro;
-            const libroRaw =
-              fmLibro ??
-              (typeof filtLibro === 'string'
-                ? filtLibro
-                : Array.isArray(filtLibro) && typeof filtLibro[0] === 'string'
-                  ? filtLibro[0]
-                  : null);
-            const libroKey = libroRaw ? normalizeCrSaSoBookFilterValue(libroRaw) : null;
+            const libroKey = getLibroKeyFromMeta(preview, fmLibro);
             const accent = libroKey ? getCrSaSoLibroColor(libroKey) : undefined;
-            const showPreview = !!(preview && (preview.excerpt || preview.image));
+            const libroLabel = getLibroLabel(libroKey);
+            const dateLabel = formatArticleDate(preview?.updated ?? preview?.created);
+            const showDetails = !!(preview?.excerpt?.trim());
+            const thumbSrc = preview?.image
+              ? resolvePreviewImageSrc(preview.image, withBaseUrl)
+              : undefined;
 
-            const card = (
-              <Link
-                to={href}
-                className={styles.card}
-                style={
-                  accent
-                    ? ({['--card-libro-accent' as string]: accent} as React.CSSProperties)
-                    : undefined
-                }
-              >
-                <div className={styles.title}>{highlight(title, query)}</div>
-              </Link>
-            );
+            const shellStyle = accent
+              ? ({['--card-libro-accent' as string]: accent} as React.CSSProperties)
+              : undefined;
 
             return (
               <div key={d.id} className={styles.cardGridSlot}>
-                {showPreview ? (
-                  <Tippy
-                    className={styles.previewPopper}
-                    content={<CardPreviewBubble title={title} meta={preview} withBaseUrl={withBaseUrl} />}
-                    interactive
-                    delay={[260, 40]}
-                    placement="top"
-                    appendTo={() => document.body}
-                    maxWidth={360}
-                    trigger="mouseenter focus"
-                    hideOnClick={false}
-                  >
-                    <span className={styles.cardTippyAnchor}>{card}</span>
-                  </Tippy>
-                ) : (
-                  card
-                )}
+                <div className={styles.cardShell} style={shellStyle}>
+                  <Link to={href} className={styles.cardLink}>
+                    {thumbSrc ? (
+                      <div className={styles.cardMedia}>
+                        <img
+                          src={thumbSrc}
+                          alt={preview?.imageAlt || title}
+                          className={styles.cardThumb}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    ) : null}
+                    <div className={styles.cardBody}>
+                      <div className={styles.title}>{highlight(title, query)}</div>
+                      {dateLabel || libroLabel ? (
+                        <div className={styles.cardMeta}>
+                          {dateLabel ? <span>{dateLabel}</span> : null}
+                          {dateLabel && libroLabel ? <span aria-hidden>·</span> : null}
+                          {libroLabel ? (
+                            <span className={styles.libroBadge}>{libroLabel}</span>
+                          ) : null}
+                        </div>
+                      ) : null}
+                    </div>
+                  </Link>
+                  {showDetails ? (
+                    <div className={styles.kebabWrap}>
+                      <Tippy
+                        className={styles.previewPopper}
+                        content={
+                          <CardPreviewBubble title={title} meta={preview} />
+                        }
+                        interactive
+                        placement="bottom-end"
+                        appendTo={() => document.body}
+                        maxWidth={360}
+                        trigger="click"
+                        hideOnClick
+                      >
+                        <button
+                          type="button"
+                          className={styles.kebabBtn}
+                          aria-label={`Detalles de ${title}`}
+                          onClick={(e) => e.stopPropagation()}
+                          onMouseDown={(e) => e.preventDefault()}
+                        >
+                          ⋮
+                        </button>
+                      </Tippy>
+                    </div>
+                  ) : null}
+                </div>
               </div>
             );
           })}

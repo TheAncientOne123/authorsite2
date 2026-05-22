@@ -1,0 +1,3114 @@
+{
+  "title": "Necromancia a Medianoche",
+  "analyzed_at": "2026-05-20T23:16:45.287316+00:00",
+  "lang": "es",
+  "chapters_source": "manual_pages",
+  "global": {
+    "pages": 469,
+    "words": 146245,
+    "characters_with_spaces": 882479,
+    "characters_without_spaces": 736143,
+    "lines": 14204,
+    "sentences": 13299,
+    "paragraphs": 463,
+    "chapters_detected": 11,
+    "chapters_reliable": true,
+    "reading_time_silent_min": 585,
+    "reading_time_aloud_min": 1125,
+    "reading_time_minutes": 734,
+    "avg_words_per_sentence": 11.0,
+    "avg_words_per_paragraph": 146245.0,
+    "lexical_richness_ttr": 0.108,
+    "dialogue_ratio": 0.1999
+  },
+  "extremes": {
+    "longest_chapter": {
+      "index": 3,
+      "title": "Tercera Parte — El Castillo de Nueva Ámsterdam",
+      "words": 17448,
+      "characters": 104208,
+      "sentences": 1494,
+      "paragraphs": 53,
+      "avg_sent_len": 11.7,
+      "dialogue_ratio": 0.1912,
+      "page_start": 116,
+      "page_end": 169
+    },
+    "shortest_chapter": {
+      "index": 0,
+      "title": "Prólogo",
+      "words": 159
+    }
+  },
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Prólogo",
+      "words": 159,
+      "characters": 1085,
+      "sentences": 11,
+      "paragraphs": 1,
+      "avg_sent_len": 14.5,
+      "dialogue_ratio": 0.0,
+      "page_start": 1,
+      "page_end": 4
+    },
+    {
+      "index": 1,
+      "title": "Primera Parte — Cassian Thorne",
+      "words": 17068,
+      "characters": 103239,
+      "sentences": 1390,
+      "paragraphs": 56,
+      "avg_sent_len": 12.3,
+      "dialogue_ratio": 0.223,
+      "page_start": 5,
+      "page_end": 63
+    },
+    {
+      "index": 2,
+      "title": "Segunda Parte — Archie Woodward",
+      "words": 16627,
+      "characters": 99775,
+      "sentences": 1509,
+      "paragraphs": 51,
+      "avg_sent_len": 11.0,
+      "dialogue_ratio": 0.2098,
+      "page_start": 64,
+      "page_end": 115
+    },
+    {
+      "index": 3,
+      "title": "Tercera Parte — El Castillo de Nueva Ámsterdam",
+      "words": 17448,
+      "characters": 104208,
+      "sentences": 1494,
+      "paragraphs": 53,
+      "avg_sent_len": 11.7,
+      "dialogue_ratio": 0.1912,
+      "page_start": 116,
+      "page_end": 169
+    },
+    {
+      "index": 4,
+      "title": "Cuarta Parte — Receso de 15 minutos para el café",
+      "words": 14114,
+      "characters": 84168,
+      "sentences": 1314,
+      "paragraphs": 42,
+      "avg_sent_len": 10.7,
+      "dialogue_ratio": 0.197,
+      "page_start": 170,
+      "page_end": 212
+    },
+    {
+      "index": 5,
+      "title": "Quinta Parte — Infiltración Católica",
+      "words": 15604,
+      "characters": 94107,
+      "sentences": 1427,
+      "paragraphs": 48,
+      "avg_sent_len": 10.9,
+      "dialogue_ratio": 0.2133,
+      "page_start": 213,
+      "page_end": 261
+    },
+    {
+      "index": 6,
+      "title": "Sexta Parte — Caso Resuelto",
+      "words": 16505,
+      "characters": 100444,
+      "sentences": 1659,
+      "paragraphs": 52,
+      "avg_sent_len": 9.9,
+      "dialogue_ratio": 0.1997,
+      "page_start": 262,
+      "page_end": 314
+    },
+    {
+      "index": 7,
+      "title": "Séptima Parte — El Balneario Rushmore",
+      "words": 14674,
+      "characters": 88668,
+      "sentences": 1410,
+      "paragraphs": 45,
+      "avg_sent_len": 10.4,
+      "dialogue_ratio": 0.1691,
+      "page_start": 315,
+      "page_end": 360
+    },
+    {
+      "index": 8,
+      "title": "Octava Parte — La Mansión McCarthy",
+      "words": 15976,
+      "characters": 97246,
+      "sentences": 1567,
+      "paragraphs": 49,
+      "avg_sent_len": 10.2,
+      "dialogue_ratio": 0.2204,
+      "page_start": 361,
+      "page_end": 410
+    },
+    {
+      "index": 9,
+      "title": "Novena Parte — Necromancia a Medianoche",
+      "words": 12912,
+      "characters": 78912,
+      "sentences": 1176,
+      "paragraphs": 40,
+      "avg_sent_len": 11.0,
+      "dialogue_ratio": 0.1877,
+      "page_start": 411,
+      "page_end": 451
+    },
+    {
+      "index": 10,
+      "title": "Epílogo",
+      "words": 2456,
+      "characters": 14799,
+      "sentences": 200,
+      "paragraphs": 7,
+      "avg_sent_len": 12.3,
+      "dialogue_ratio": 0.1189,
+      "page_start": 452,
+      "page_end": 458
+    }
+  ],
+  "characters": {
+    "totals": [
+      {
+        "id": "cassian-thorne",
+        "label": "Cassian Thorne",
+        "count": 483,
+        "share_percent": 14.46,
+        "first_appearance_word": 979
+      },
+      {
+        "id": "lucia-sinclair",
+        "label": "Lucía Sinclair",
+        "count": 391,
+        "share_percent": 11.7,
+        "first_appearance_word": 186
+      },
+      {
+        "id": "archie-woodward",
+        "label": "Archie Woodward",
+        "count": 292,
+        "share_percent": 8.74,
+        "first_appearance_word": 17021
+      },
+      {
+        "id": "tamara-dobrescu",
+        "label": "Tamara Dobrescu",
+        "count": 256,
+        "share_percent": 7.66,
+        "first_appearance_word": 9339
+      },
+      {
+        "id": "oliver-henderson",
+        "label": "Oliver Henderson",
+        "count": 226,
+        "share_percent": 6.76,
+        "first_appearance_word": 12909
+      },
+      {
+        "id": "jessica-mccarthy",
+        "label": "Jessica McCarthy",
+        "count": 219,
+        "share_percent": 6.55,
+        "first_appearance_word": 6349
+      },
+      {
+        "id": "marco-gianotti",
+        "label": "Marco Gianotti",
+        "count": 165,
+        "share_percent": 4.94,
+        "first_appearance_word": 16484
+      },
+      {
+        "id": "dorian-blackwood",
+        "label": "Dorian Blackwood",
+        "count": 157,
+        "share_percent": 4.7,
+        "first_appearance_word": 1617
+      },
+      {
+        "id": "anastasia-dobrescu",
+        "label": "Anastasia Dobrescu",
+        "count": 139,
+        "share_percent": 4.16,
+        "first_appearance_word": 44788
+      },
+      {
+        "id": "rezniv-voronin",
+        "label": "Rezniv Voronin",
+        "count": 103,
+        "share_percent": 3.08,
+        "first_appearance_word": 113762
+      },
+      {
+        "id": "jayson-branch",
+        "label": "Jayson Branch",
+        "count": 103,
+        "share_percent": 3.08,
+        "first_appearance_word": 108383
+      },
+      {
+        "id": "ian-zaikov",
+        "label": "Ian Zaikov",
+        "count": 93,
+        "share_percent": 2.78,
+        "first_appearance_word": 28390
+      },
+      {
+        "id": "logan-crane",
+        "label": "Logan Crane",
+        "count": 87,
+        "share_percent": 2.6,
+        "first_appearance_word": 70779
+      },
+      {
+        "id": "reina-de-la-oscuridad",
+        "label": "La Reina de la Oscuridad",
+        "count": 83,
+        "share_percent": 2.48,
+        "first_appearance_word": 7773
+      },
+      {
+        "id": "cecilia",
+        "label": "Cecilia",
+        "count": 83,
+        "share_percent": 2.48,
+        "first_appearance_word": 80024
+      },
+      {
+        "id": "alan-mccarthy",
+        "label": "Alan McCarthy",
+        "count": 67,
+        "share_percent": 2.01,
+        "first_appearance_word": 5963
+      },
+      {
+        "id": "greta-zaikov",
+        "label": "Greta Zaikov",
+        "count": 53,
+        "share_percent": 1.59,
+        "first_appearance_word": 27788
+      },
+      {
+        "id": "frederick-chapman",
+        "label": "Frederick Chapman",
+        "count": 48,
+        "share_percent": 1.44,
+        "first_appearance_word": 1886
+      },
+      {
+        "id": "devin-kirby",
+        "label": "Devin Kirby",
+        "count": 45,
+        "share_percent": 1.35,
+        "first_appearance_word": 36751
+      },
+      {
+        "id": "mohammed-ramses",
+        "label": "Mohammed Ramses",
+        "count": 38,
+        "share_percent": 1.14,
+        "first_appearance_word": 29000
+      },
+      {
+        "id": "ibrahim-ramazan",
+        "label": "Ibrahim Ramazan",
+        "count": 28,
+        "share_percent": 0.84,
+        "first_appearance_word": 28887
+      },
+      {
+        "id": "susan-barnes",
+        "label": "Susan Barnes",
+        "count": 24,
+        "share_percent": 0.72,
+        "first_appearance_word": 36772
+      },
+      {
+        "id": "grigori",
+        "label": "Grigori",
+        "count": 21,
+        "share_percent": 0.63,
+        "first_appearance_word": 29108
+      },
+      {
+        "id": "veronica-black",
+        "label": "Verónica Black",
+        "count": 20,
+        "share_percent": 0.6,
+        "first_appearance_word": 71422
+      },
+      {
+        "id": "andrew-sheppard",
+        "label": "Andrew Sheppard",
+        "count": 19,
+        "share_percent": 0.57,
+        "first_appearance_word": 36704
+      },
+      {
+        "id": "pollione-tornatore",
+        "label": "Pollione Tornatore",
+        "count": 17,
+        "share_percent": 0.51,
+        "first_appearance_word": 68828
+      },
+      {
+        "id": "director-graham",
+        "label": "Director Graham",
+        "count": 15,
+        "share_percent": 0.45,
+        "first_appearance_word": 825
+      },
+      {
+        "id": "anya",
+        "label": "Anya",
+        "count": 11,
+        "share_percent": 0.33,
+        "first_appearance_word": 120927
+      },
+      {
+        "id": "maisie-stewart",
+        "label": "Maisie Stewart",
+        "count": 7,
+        "share_percent": 0.21,
+        "first_appearance_word": 72833
+      },
+      {
+        "id": "irene-zaikov",
+        "label": "Irene Zaikov",
+        "count": 6,
+        "share_percent": 0.18,
+        "first_appearance_word": 32200
+      },
+      {
+        "id": "ryan-chapman",
+        "label": "Ryan Chapman",
+        "count": 5,
+        "share_percent": 0.15,
+        "first_appearance_word": 1894
+      },
+      {
+        "id": "caleb-thorne",
+        "label": "Caleb Thorne",
+        "count": 5,
+        "share_percent": 0.15,
+        "first_appearance_word": 67480
+      },
+      {
+        "id": "sra-mccarthy",
+        "label": "Sra. McCarthy",
+        "count": 4,
+        "share_percent": 0.12,
+        "first_appearance_word": 82679
+      },
+      {
+        "id": "paciano-tornatore",
+        "label": "Paciano Tornatore",
+        "count": 4,
+        "share_percent": 0.12,
+        "first_appearance_word": 92640
+      },
+      {
+        "id": "alice",
+        "label": "Alice",
+        "count": 2,
+        "share_percent": 0.06,
+        "first_appearance_word": 72681
+      },
+      {
+        "id": "duccio-tornatore",
+        "label": "Duccio Tornatore",
+        "count": 2,
+        "share_percent": 0.06,
+        "first_appearance_word": 92492
+      },
+      {
+        "id": "erikson",
+        "label": "Erikson",
+        "count": 2,
+        "share_percent": 0.06,
+        "first_appearance_word": 2406
+      },
+      {
+        "id": "jackson",
+        "label": "Jackson",
+        "count": 2,
+        "share_percent": 0.06,
+        "first_appearance_word": 67184
+      },
+      {
+        "id": "huber",
+        "label": "Huber",
+        "count": 2,
+        "share_percent": 0.06,
+        "first_appearance_word": 99521
+      },
+      {
+        "id": "turner",
+        "label": "Turner",
+        "count": 2,
+        "share_percent": 0.06,
+        "first_appearance_word": 99523
+      },
+      {
+        "id": "aris-voronin",
+        "label": "Aris Voronin",
+        "count": 1,
+        "share_percent": 0.03,
+        "first_appearance_word": 114224
+      },
+      {
+        "id": "vova-voronin",
+        "label": "Vova Voronin",
+        "count": 1,
+        "share_percent": 0.03,
+        "first_appearance_word": 114225
+      },
+      {
+        "id": "voivoda-dobrescu",
+        "label": "Voivoda Dobrescu",
+        "count": 1,
+        "share_percent": 0.03,
+        "first_appearance_word": 44807
+      },
+      {
+        "id": "mohammed-ozturk",
+        "label": "Mohammed Ozturk",
+        "count": 1,
+        "share_percent": 0.03,
+        "first_appearance_word": 32243
+      },
+      {
+        "id": "milenna-zaikov",
+        "label": "Milenna Zaikov",
+        "count": 1,
+        "share_percent": 0.03,
+        "first_appearance_word": 32246
+      },
+      {
+        "id": "taylor",
+        "label": "Taylor",
+        "count": 1,
+        "share_percent": 0.03,
+        "first_appearance_word": 120920
+      },
+      {
+        "id": "bryce",
+        "label": "Bryce",
+        "count": 1,
+        "share_percent": 0.03,
+        "first_appearance_word": 120921
+      },
+      {
+        "id": "daniel",
+        "label": "Daniel",
+        "count": 1,
+        "share_percent": 0.03,
+        "first_appearance_word": 120922
+      },
+      {
+        "id": "henry-bryne",
+        "label": "Henry Bryne",
+        "count": 1,
+        "share_percent": 0.03,
+        "first_appearance_word": 12874
+      },
+      {
+        "id": "garrison",
+        "label": "Garrison",
+        "count": 1,
+        "share_percent": 0.03,
+        "first_appearance_word": 67227
+      },
+      {
+        "id": "gerard",
+        "label": "Gérard",
+        "count": 1,
+        "share_percent": 0.03,
+        "first_appearance_word": 115433
+      },
+      {
+        "id": "melissa",
+        "label": "Melissa",
+        "count": 1,
+        "share_percent": 0.03,
+        "first_appearance_word": 58584
+      },
+      {
+        "id": "cunada-de-frederick-chapman",
+        "label": "Cuñada de Frederick Chapman",
+        "count": 0,
+        "share_percent": 0.0,
+        "first_appearance_word": -1
+      }
+    ],
+    "by_chapter": [
+      {
+        "index": 0,
+        "title": "Prólogo",
+        "mentions": {
+          "cassian-thorne": {
+            "label": "Cassian Thorne",
+            "count": 0
+          },
+          "lucia-sinclair": {
+            "label": "Lucía Sinclair",
+            "count": 0
+          },
+          "dorian-blackwood": {
+            "label": "Dorian Blackwood",
+            "count": 0
+          },
+          "archie-woodward": {
+            "label": "Archie Woodward",
+            "count": 0
+          },
+          "logan-crane": {
+            "label": "Logan Crane",
+            "count": 0
+          },
+          "anastasia-dobrescu": {
+            "label": "Anastasia Dobrescu",
+            "count": 0
+          },
+          "tamara-dobrescu": {
+            "label": "Tamara Dobrescu",
+            "count": 0
+          },
+          "oliver-henderson": {
+            "label": "Oliver Henderson",
+            "count": 0
+          },
+          "reina-de-la-oscuridad": {
+            "label": "La Reina de la Oscuridad",
+            "count": 0
+          },
+          "rezniv-voronin": {
+            "label": "Rezniv Voronin",
+            "count": 0
+          },
+          "aris-voronin": {
+            "label": "Aris Voronin",
+            "count": 0
+          },
+          "vova-voronin": {
+            "label": "Vova Voronin",
+            "count": 0
+          },
+          "voivoda-dobrescu": {
+            "label": "Voivoda Dobrescu",
+            "count": 0
+          },
+          "alan-mccarthy": {
+            "label": "Alan McCarthy",
+            "count": 0
+          },
+          "jessica-mccarthy": {
+            "label": "Jessica McCarthy",
+            "count": 0
+          },
+          "sra-mccarthy": {
+            "label": "Sra. McCarthy",
+            "count": 0
+          },
+          "marco-gianotti": {
+            "label": "Marco Gianotti",
+            "count": 0
+          },
+          "cecilia": {
+            "label": "Cecilia",
+            "count": 0
+          },
+          "ian-zaikov": {
+            "label": "Ian Zaikov",
+            "count": 0
+          },
+          "greta-zaikov": {
+            "label": "Greta Zaikov",
+            "count": 0
+          },
+          "mohammed-ramses": {
+            "label": "Mohammed Ramses",
+            "count": 0
+          },
+          "ibrahim-ramazan": {
+            "label": "Ibrahim Ramazan",
+            "count": 0
+          },
+          "grigori": {
+            "label": "Grigori",
+            "count": 0
+          },
+          "irene-zaikov": {
+            "label": "Irene Zaikov",
+            "count": 0
+          },
+          "mohammed-ozturk": {
+            "label": "Mohammed Ozturk",
+            "count": 0
+          },
+          "milenna-zaikov": {
+            "label": "Milenna Zaikov",
+            "count": 0
+          },
+          "jayson-branch": {
+            "label": "Jayson Branch",
+            "count": 0
+          },
+          "anya": {
+            "label": "Anya",
+            "count": 0
+          },
+          "taylor": {
+            "label": "Taylor",
+            "count": 0
+          },
+          "bryce": {
+            "label": "Bryce",
+            "count": 0
+          },
+          "daniel": {
+            "label": "Daniel",
+            "count": 0
+          },
+          "veronica-black": {
+            "label": "Verónica Black",
+            "count": 0
+          },
+          "maisie-stewart": {
+            "label": "Maisie Stewart",
+            "count": 0
+          },
+          "alice": {
+            "label": "Alice",
+            "count": 0
+          },
+          "pollione-tornatore": {
+            "label": "Pollione Tornatore",
+            "count": 0
+          },
+          "paciano-tornatore": {
+            "label": "Paciano Tornatore",
+            "count": 0
+          },
+          "duccio-tornatore": {
+            "label": "Duccio Tornatore",
+            "count": 0
+          },
+          "frederick-chapman": {
+            "label": "Frederick Chapman",
+            "count": 0
+          },
+          "ryan-chapman": {
+            "label": "Ryan Chapman",
+            "count": 0
+          },
+          "cunada-de-frederick-chapman": {
+            "label": "Cuñada de Frederick Chapman",
+            "count": 0
+          },
+          "andrew-sheppard": {
+            "label": "Andrew Sheppard",
+            "count": 0
+          },
+          "susan-barnes": {
+            "label": "Susan Barnes",
+            "count": 0
+          },
+          "devin-kirby": {
+            "label": "Devin Kirby",
+            "count": 0
+          },
+          "erikson": {
+            "label": "Erikson",
+            "count": 0
+          },
+          "henry-bryne": {
+            "label": "Henry Bryne",
+            "count": 0
+          },
+          "caleb-thorne": {
+            "label": "Caleb Thorne",
+            "count": 0
+          },
+          "director-graham": {
+            "label": "Director Graham",
+            "count": 0
+          },
+          "garrison": {
+            "label": "Garrison",
+            "count": 0
+          },
+          "jackson": {
+            "label": "Jackson",
+            "count": 0
+          },
+          "huber": {
+            "label": "Huber",
+            "count": 0
+          },
+          "turner": {
+            "label": "Turner",
+            "count": 0
+          },
+          "gerard": {
+            "label": "Gérard",
+            "count": 0
+          },
+          "melissa": {
+            "label": "Melissa",
+            "count": 0
+          }
+        }
+      },
+      {
+        "index": 1,
+        "title": "Primera Parte — Cassian Thorne",
+        "mentions": {
+          "cassian-thorne": {
+            "label": "Cassian Thorne",
+            "count": 38
+          },
+          "lucia-sinclair": {
+            "label": "Lucía Sinclair",
+            "count": 57
+          },
+          "dorian-blackwood": {
+            "label": "Dorian Blackwood",
+            "count": 17
+          },
+          "archie-woodward": {
+            "label": "Archie Woodward",
+            "count": 1
+          },
+          "logan-crane": {
+            "label": "Logan Crane",
+            "count": 0
+          },
+          "anastasia-dobrescu": {
+            "label": "Anastasia Dobrescu",
+            "count": 0
+          },
+          "tamara-dobrescu": {
+            "label": "Tamara Dobrescu",
+            "count": 11
+          },
+          "oliver-henderson": {
+            "label": "Oliver Henderson",
+            "count": 15
+          },
+          "reina-de-la-oscuridad": {
+            "label": "La Reina de la Oscuridad",
+            "count": 1
+          },
+          "rezniv-voronin": {
+            "label": "Rezniv Voronin",
+            "count": 0
+          },
+          "aris-voronin": {
+            "label": "Aris Voronin",
+            "count": 0
+          },
+          "vova-voronin": {
+            "label": "Vova Voronin",
+            "count": 0
+          },
+          "voivoda-dobrescu": {
+            "label": "Voivoda Dobrescu",
+            "count": 0
+          },
+          "alan-mccarthy": {
+            "label": "Alan McCarthy",
+            "count": 3
+          },
+          "jessica-mccarthy": {
+            "label": "Jessica McCarthy",
+            "count": 6
+          },
+          "sra-mccarthy": {
+            "label": "Sra. McCarthy",
+            "count": 0
+          },
+          "marco-gianotti": {
+            "label": "Marco Gianotti",
+            "count": 1
+          },
+          "cecilia": {
+            "label": "Cecilia",
+            "count": 0
+          },
+          "ian-zaikov": {
+            "label": "Ian Zaikov",
+            "count": 0
+          },
+          "greta-zaikov": {
+            "label": "Greta Zaikov",
+            "count": 0
+          },
+          "mohammed-ramses": {
+            "label": "Mohammed Ramses",
+            "count": 0
+          },
+          "ibrahim-ramazan": {
+            "label": "Ibrahim Ramazan",
+            "count": 0
+          },
+          "grigori": {
+            "label": "Grigori",
+            "count": 0
+          },
+          "irene-zaikov": {
+            "label": "Irene Zaikov",
+            "count": 0
+          },
+          "mohammed-ozturk": {
+            "label": "Mohammed Ozturk",
+            "count": 0
+          },
+          "milenna-zaikov": {
+            "label": "Milenna Zaikov",
+            "count": 0
+          },
+          "jayson-branch": {
+            "label": "Jayson Branch",
+            "count": 0
+          },
+          "anya": {
+            "label": "Anya",
+            "count": 0
+          },
+          "taylor": {
+            "label": "Taylor",
+            "count": 0
+          },
+          "bryce": {
+            "label": "Bryce",
+            "count": 0
+          },
+          "daniel": {
+            "label": "Daniel",
+            "count": 0
+          },
+          "veronica-black": {
+            "label": "Verónica Black",
+            "count": 0
+          },
+          "maisie-stewart": {
+            "label": "Maisie Stewart",
+            "count": 0
+          },
+          "alice": {
+            "label": "Alice",
+            "count": 0
+          },
+          "pollione-tornatore": {
+            "label": "Pollione Tornatore",
+            "count": 0
+          },
+          "paciano-tornatore": {
+            "label": "Paciano Tornatore",
+            "count": 0
+          },
+          "duccio-tornatore": {
+            "label": "Duccio Tornatore",
+            "count": 0
+          },
+          "frederick-chapman": {
+            "label": "Frederick Chapman",
+            "count": 24
+          },
+          "ryan-chapman": {
+            "label": "Ryan Chapman",
+            "count": 5
+          },
+          "cunada-de-frederick-chapman": {
+            "label": "Cuñada de Frederick Chapman",
+            "count": 0
+          },
+          "andrew-sheppard": {
+            "label": "Andrew Sheppard",
+            "count": 0
+          },
+          "susan-barnes": {
+            "label": "Susan Barnes",
+            "count": 0
+          },
+          "devin-kirby": {
+            "label": "Devin Kirby",
+            "count": 0
+          },
+          "erikson": {
+            "label": "Erikson",
+            "count": 2
+          },
+          "henry-bryne": {
+            "label": "Henry Bryne",
+            "count": 1
+          },
+          "caleb-thorne": {
+            "label": "Caleb Thorne",
+            "count": 0
+          },
+          "director-graham": {
+            "label": "Director Graham",
+            "count": 1
+          },
+          "garrison": {
+            "label": "Garrison",
+            "count": 0
+          },
+          "jackson": {
+            "label": "Jackson",
+            "count": 0
+          },
+          "huber": {
+            "label": "Huber",
+            "count": 0
+          },
+          "turner": {
+            "label": "Turner",
+            "count": 0
+          },
+          "gerard": {
+            "label": "Gérard",
+            "count": 0
+          },
+          "melissa": {
+            "label": "Melissa",
+            "count": 0
+          }
+        }
+      },
+      {
+        "index": 2,
+        "title": "Segunda Parte — Archie Woodward",
+        "mentions": {
+          "cassian-thorne": {
+            "label": "Cassian Thorne",
+            "count": 86
+          },
+          "lucia-sinclair": {
+            "label": "Lucía Sinclair",
+            "count": 53
+          },
+          "dorian-blackwood": {
+            "label": "Dorian Blackwood",
+            "count": 10
+          },
+          "archie-woodward": {
+            "label": "Archie Woodward",
+            "count": 96
+          },
+          "logan-crane": {
+            "label": "Logan Crane",
+            "count": 0
+          },
+          "anastasia-dobrescu": {
+            "label": "Anastasia Dobrescu",
+            "count": 0
+          },
+          "tamara-dobrescu": {
+            "label": "Tamara Dobrescu",
+            "count": 24
+          },
+          "oliver-henderson": {
+            "label": "Oliver Henderson",
+            "count": 0
+          },
+          "reina-de-la-oscuridad": {
+            "label": "La Reina de la Oscuridad",
+            "count": 1
+          },
+          "rezniv-voronin": {
+            "label": "Rezniv Voronin",
+            "count": 0
+          },
+          "aris-voronin": {
+            "label": "Aris Voronin",
+            "count": 0
+          },
+          "vova-voronin": {
+            "label": "Vova Voronin",
+            "count": 0
+          },
+          "voivoda-dobrescu": {
+            "label": "Voivoda Dobrescu",
+            "count": 0
+          },
+          "alan-mccarthy": {
+            "label": "Alan McCarthy",
+            "count": 1
+          },
+          "jessica-mccarthy": {
+            "label": "Jessica McCarthy",
+            "count": 0
+          },
+          "sra-mccarthy": {
+            "label": "Sra. McCarthy",
+            "count": 0
+          },
+          "marco-gianotti": {
+            "label": "Marco Gianotti",
+            "count": 3
+          },
+          "cecilia": {
+            "label": "Cecilia",
+            "count": 0
+          },
+          "ian-zaikov": {
+            "label": "Ian Zaikov",
+            "count": 31
+          },
+          "greta-zaikov": {
+            "label": "Greta Zaikov",
+            "count": 15
+          },
+          "mohammed-ramses": {
+            "label": "Mohammed Ramses",
+            "count": 24
+          },
+          "ibrahim-ramazan": {
+            "label": "Ibrahim Ramazan",
+            "count": 11
+          },
+          "grigori": {
+            "label": "Grigori",
+            "count": 6
+          },
+          "irene-zaikov": {
+            "label": "Irene Zaikov",
+            "count": 3
+          },
+          "mohammed-ozturk": {
+            "label": "Mohammed Ozturk",
+            "count": 1
+          },
+          "milenna-zaikov": {
+            "label": "Milenna Zaikov",
+            "count": 1
+          },
+          "jayson-branch": {
+            "label": "Jayson Branch",
+            "count": 0
+          },
+          "anya": {
+            "label": "Anya",
+            "count": 0
+          },
+          "taylor": {
+            "label": "Taylor",
+            "count": 0
+          },
+          "bryce": {
+            "label": "Bryce",
+            "count": 0
+          },
+          "daniel": {
+            "label": "Daniel",
+            "count": 0
+          },
+          "veronica-black": {
+            "label": "Verónica Black",
+            "count": 0
+          },
+          "maisie-stewart": {
+            "label": "Maisie Stewart",
+            "count": 0
+          },
+          "alice": {
+            "label": "Alice",
+            "count": 0
+          },
+          "pollione-tornatore": {
+            "label": "Pollione Tornatore",
+            "count": 0
+          },
+          "paciano-tornatore": {
+            "label": "Paciano Tornatore",
+            "count": 0
+          },
+          "duccio-tornatore": {
+            "label": "Duccio Tornatore",
+            "count": 0
+          },
+          "frederick-chapman": {
+            "label": "Frederick Chapman",
+            "count": 6
+          },
+          "ryan-chapman": {
+            "label": "Ryan Chapman",
+            "count": 0
+          },
+          "cunada-de-frederick-chapman": {
+            "label": "Cuñada de Frederick Chapman",
+            "count": 0
+          },
+          "andrew-sheppard": {
+            "label": "Andrew Sheppard",
+            "count": 0
+          },
+          "susan-barnes": {
+            "label": "Susan Barnes",
+            "count": 0
+          },
+          "devin-kirby": {
+            "label": "Devin Kirby",
+            "count": 0
+          },
+          "erikson": {
+            "label": "Erikson",
+            "count": 0
+          },
+          "henry-bryne": {
+            "label": "Henry Bryne",
+            "count": 0
+          },
+          "caleb-thorne": {
+            "label": "Caleb Thorne",
+            "count": 0
+          },
+          "director-graham": {
+            "label": "Director Graham",
+            "count": 0
+          },
+          "garrison": {
+            "label": "Garrison",
+            "count": 0
+          },
+          "jackson": {
+            "label": "Jackson",
+            "count": 0
+          },
+          "huber": {
+            "label": "Huber",
+            "count": 0
+          },
+          "turner": {
+            "label": "Turner",
+            "count": 0
+          },
+          "gerard": {
+            "label": "Gérard",
+            "count": 0
+          },
+          "melissa": {
+            "label": "Melissa",
+            "count": 0
+          }
+        }
+      },
+      {
+        "index": 3,
+        "title": "Tercera Parte — El Castillo de Nueva Ámsterdam",
+        "mentions": {
+          "cassian-thorne": {
+            "label": "Cassian Thorne",
+            "count": 21
+          },
+          "lucia-sinclair": {
+            "label": "Lucía Sinclair",
+            "count": 65
+          },
+          "dorian-blackwood": {
+            "label": "Dorian Blackwood",
+            "count": 44
+          },
+          "archie-woodward": {
+            "label": "Archie Woodward",
+            "count": 79
+          },
+          "logan-crane": {
+            "label": "Logan Crane",
+            "count": 0
+          },
+          "anastasia-dobrescu": {
+            "label": "Anastasia Dobrescu",
+            "count": 5
+          },
+          "tamara-dobrescu": {
+            "label": "Tamara Dobrescu",
+            "count": 16
+          },
+          "oliver-henderson": {
+            "label": "Oliver Henderson",
+            "count": 35
+          },
+          "reina-de-la-oscuridad": {
+            "label": "La Reina de la Oscuridad",
+            "count": 5
+          },
+          "rezniv-voronin": {
+            "label": "Rezniv Voronin",
+            "count": 0
+          },
+          "aris-voronin": {
+            "label": "Aris Voronin",
+            "count": 0
+          },
+          "vova-voronin": {
+            "label": "Vova Voronin",
+            "count": 0
+          },
+          "voivoda-dobrescu": {
+            "label": "Voivoda Dobrescu",
+            "count": 1
+          },
+          "alan-mccarthy": {
+            "label": "Alan McCarthy",
+            "count": 5
+          },
+          "jessica-mccarthy": {
+            "label": "Jessica McCarthy",
+            "count": 0
+          },
+          "sra-mccarthy": {
+            "label": "Sra. McCarthy",
+            "count": 0
+          },
+          "marco-gianotti": {
+            "label": "Marco Gianotti",
+            "count": 6
+          },
+          "cecilia": {
+            "label": "Cecilia",
+            "count": 0
+          },
+          "ian-zaikov": {
+            "label": "Ian Zaikov",
+            "count": 0
+          },
+          "greta-zaikov": {
+            "label": "Greta Zaikov",
+            "count": 0
+          },
+          "mohammed-ramses": {
+            "label": "Mohammed Ramses",
+            "count": 0
+          },
+          "ibrahim-ramazan": {
+            "label": "Ibrahim Ramazan",
+            "count": 0
+          },
+          "grigori": {
+            "label": "Grigori",
+            "count": 0
+          },
+          "irene-zaikov": {
+            "label": "Irene Zaikov",
+            "count": 0
+          },
+          "mohammed-ozturk": {
+            "label": "Mohammed Ozturk",
+            "count": 0
+          },
+          "milenna-zaikov": {
+            "label": "Milenna Zaikov",
+            "count": 0
+          },
+          "jayson-branch": {
+            "label": "Jayson Branch",
+            "count": 0
+          },
+          "anya": {
+            "label": "Anya",
+            "count": 0
+          },
+          "taylor": {
+            "label": "Taylor",
+            "count": 0
+          },
+          "bryce": {
+            "label": "Bryce",
+            "count": 0
+          },
+          "daniel": {
+            "label": "Daniel",
+            "count": 0
+          },
+          "veronica-black": {
+            "label": "Verónica Black",
+            "count": 0
+          },
+          "maisie-stewart": {
+            "label": "Maisie Stewart",
+            "count": 0
+          },
+          "alice": {
+            "label": "Alice",
+            "count": 0
+          },
+          "pollione-tornatore": {
+            "label": "Pollione Tornatore",
+            "count": 0
+          },
+          "paciano-tornatore": {
+            "label": "Paciano Tornatore",
+            "count": 0
+          },
+          "duccio-tornatore": {
+            "label": "Duccio Tornatore",
+            "count": 0
+          },
+          "frederick-chapman": {
+            "label": "Frederick Chapman",
+            "count": 5
+          },
+          "ryan-chapman": {
+            "label": "Ryan Chapman",
+            "count": 0
+          },
+          "cunada-de-frederick-chapman": {
+            "label": "Cuñada de Frederick Chapman",
+            "count": 0
+          },
+          "andrew-sheppard": {
+            "label": "Andrew Sheppard",
+            "count": 18
+          },
+          "susan-barnes": {
+            "label": "Susan Barnes",
+            "count": 23
+          },
+          "devin-kirby": {
+            "label": "Devin Kirby",
+            "count": 17
+          },
+          "erikson": {
+            "label": "Erikson",
+            "count": 0
+          },
+          "henry-bryne": {
+            "label": "Henry Bryne",
+            "count": 0
+          },
+          "caleb-thorne": {
+            "label": "Caleb Thorne",
+            "count": 0
+          },
+          "director-graham": {
+            "label": "Director Graham",
+            "count": 0
+          },
+          "garrison": {
+            "label": "Garrison",
+            "count": 0
+          },
+          "jackson": {
+            "label": "Jackson",
+            "count": 0
+          },
+          "huber": {
+            "label": "Huber",
+            "count": 0
+          },
+          "turner": {
+            "label": "Turner",
+            "count": 0
+          },
+          "gerard": {
+            "label": "Gérard",
+            "count": 0
+          },
+          "melissa": {
+            "label": "Melissa",
+            "count": 0
+          }
+        }
+      },
+      {
+        "index": 4,
+        "title": "Cuarta Parte — Receso de 15 minutos para el café",
+        "mentions": {
+          "cassian-thorne": {
+            "label": "Cassian Thorne",
+            "count": 17
+          },
+          "lucia-sinclair": {
+            "label": "Lucía Sinclair",
+            "count": 33
+          },
+          "dorian-blackwood": {
+            "label": "Dorian Blackwood",
+            "count": 0
+          },
+          "archie-woodward": {
+            "label": "Archie Woodward",
+            "count": 0
+          },
+          "logan-crane": {
+            "label": "Logan Crane",
+            "count": 0
+          },
+          "anastasia-dobrescu": {
+            "label": "Anastasia Dobrescu",
+            "count": 12
+          },
+          "tamara-dobrescu": {
+            "label": "Tamara Dobrescu",
+            "count": 40
+          },
+          "oliver-henderson": {
+            "label": "Oliver Henderson",
+            "count": 31
+          },
+          "reina-de-la-oscuridad": {
+            "label": "La Reina de la Oscuridad",
+            "count": 4
+          },
+          "rezniv-voronin": {
+            "label": "Rezniv Voronin",
+            "count": 0
+          },
+          "aris-voronin": {
+            "label": "Aris Voronin",
+            "count": 0
+          },
+          "vova-voronin": {
+            "label": "Vova Voronin",
+            "count": 0
+          },
+          "voivoda-dobrescu": {
+            "label": "Voivoda Dobrescu",
+            "count": 0
+          },
+          "alan-mccarthy": {
+            "label": "Alan McCarthy",
+            "count": 0
+          },
+          "jessica-mccarthy": {
+            "label": "Jessica McCarthy",
+            "count": 24
+          },
+          "sra-mccarthy": {
+            "label": "Sra. McCarthy",
+            "count": 0
+          },
+          "marco-gianotti": {
+            "label": "Marco Gianotti",
+            "count": 0
+          },
+          "cecilia": {
+            "label": "Cecilia",
+            "count": 0
+          },
+          "ian-zaikov": {
+            "label": "Ian Zaikov",
+            "count": 0
+          },
+          "greta-zaikov": {
+            "label": "Greta Zaikov",
+            "count": 0
+          },
+          "mohammed-ramses": {
+            "label": "Mohammed Ramses",
+            "count": 0
+          },
+          "ibrahim-ramazan": {
+            "label": "Ibrahim Ramazan",
+            "count": 0
+          },
+          "grigori": {
+            "label": "Grigori",
+            "count": 0
+          },
+          "irene-zaikov": {
+            "label": "Irene Zaikov",
+            "count": 0
+          },
+          "mohammed-ozturk": {
+            "label": "Mohammed Ozturk",
+            "count": 0
+          },
+          "milenna-zaikov": {
+            "label": "Milenna Zaikov",
+            "count": 0
+          },
+          "jayson-branch": {
+            "label": "Jayson Branch",
+            "count": 0
+          },
+          "anya": {
+            "label": "Anya",
+            "count": 0
+          },
+          "taylor": {
+            "label": "Taylor",
+            "count": 0
+          },
+          "bryce": {
+            "label": "Bryce",
+            "count": 0
+          },
+          "daniel": {
+            "label": "Daniel",
+            "count": 0
+          },
+          "veronica-black": {
+            "label": "Verónica Black",
+            "count": 0
+          },
+          "maisie-stewart": {
+            "label": "Maisie Stewart",
+            "count": 0
+          },
+          "alice": {
+            "label": "Alice",
+            "count": 0
+          },
+          "pollione-tornatore": {
+            "label": "Pollione Tornatore",
+            "count": 0
+          },
+          "paciano-tornatore": {
+            "label": "Paciano Tornatore",
+            "count": 0
+          },
+          "duccio-tornatore": {
+            "label": "Duccio Tornatore",
+            "count": 0
+          },
+          "frederick-chapman": {
+            "label": "Frederick Chapman",
+            "count": 0
+          },
+          "ryan-chapman": {
+            "label": "Ryan Chapman",
+            "count": 0
+          },
+          "cunada-de-frederick-chapman": {
+            "label": "Cuñada de Frederick Chapman",
+            "count": 0
+          },
+          "andrew-sheppard": {
+            "label": "Andrew Sheppard",
+            "count": 1
+          },
+          "susan-barnes": {
+            "label": "Susan Barnes",
+            "count": 1
+          },
+          "devin-kirby": {
+            "label": "Devin Kirby",
+            "count": 0
+          },
+          "erikson": {
+            "label": "Erikson",
+            "count": 0
+          },
+          "henry-bryne": {
+            "label": "Henry Bryne",
+            "count": 0
+          },
+          "caleb-thorne": {
+            "label": "Caleb Thorne",
+            "count": 0
+          },
+          "director-graham": {
+            "label": "Director Graham",
+            "count": 6
+          },
+          "garrison": {
+            "label": "Garrison",
+            "count": 0
+          },
+          "jackson": {
+            "label": "Jackson",
+            "count": 0
+          },
+          "huber": {
+            "label": "Huber",
+            "count": 0
+          },
+          "turner": {
+            "label": "Turner",
+            "count": 0
+          },
+          "gerard": {
+            "label": "Gérard",
+            "count": 0
+          },
+          "melissa": {
+            "label": "Melissa",
+            "count": 1
+          }
+        }
+      },
+      {
+        "index": 5,
+        "title": "Quinta Parte — Infiltración Católica",
+        "mentions": {
+          "cassian-thorne": {
+            "label": "Cassian Thorne",
+            "count": 70
+          },
+          "lucia-sinclair": {
+            "label": "Lucía Sinclair",
+            "count": 31
+          },
+          "dorian-blackwood": {
+            "label": "Dorian Blackwood",
+            "count": 34
+          },
+          "archie-woodward": {
+            "label": "Archie Woodward",
+            "count": 45
+          },
+          "logan-crane": {
+            "label": "Logan Crane",
+            "count": 37
+          },
+          "anastasia-dobrescu": {
+            "label": "Anastasia Dobrescu",
+            "count": 7
+          },
+          "tamara-dobrescu": {
+            "label": "Tamara Dobrescu",
+            "count": 22
+          },
+          "oliver-henderson": {
+            "label": "Oliver Henderson",
+            "count": 14
+          },
+          "reina-de-la-oscuridad": {
+            "label": "La Reina de la Oscuridad",
+            "count": 2
+          },
+          "rezniv-voronin": {
+            "label": "Rezniv Voronin",
+            "count": 0
+          },
+          "aris-voronin": {
+            "label": "Aris Voronin",
+            "count": 0
+          },
+          "vova-voronin": {
+            "label": "Vova Voronin",
+            "count": 0
+          },
+          "voivoda-dobrescu": {
+            "label": "Voivoda Dobrescu",
+            "count": 0
+          },
+          "alan-mccarthy": {
+            "label": "Alan McCarthy",
+            "count": 0
+          },
+          "jessica-mccarthy": {
+            "label": "Jessica McCarthy",
+            "count": 1
+          },
+          "sra-mccarthy": {
+            "label": "Sra. McCarthy",
+            "count": 0
+          },
+          "marco-gianotti": {
+            "label": "Marco Gianotti",
+            "count": 31
+          },
+          "cecilia": {
+            "label": "Cecilia",
+            "count": 18
+          },
+          "ian-zaikov": {
+            "label": "Ian Zaikov",
+            "count": 0
+          },
+          "greta-zaikov": {
+            "label": "Greta Zaikov",
+            "count": 0
+          },
+          "mohammed-ramses": {
+            "label": "Mohammed Ramses",
+            "count": 0
+          },
+          "ibrahim-ramazan": {
+            "label": "Ibrahim Ramazan",
+            "count": 0
+          },
+          "grigori": {
+            "label": "Grigori",
+            "count": 0
+          },
+          "irene-zaikov": {
+            "label": "Irene Zaikov",
+            "count": 1
+          },
+          "mohammed-ozturk": {
+            "label": "Mohammed Ozturk",
+            "count": 0
+          },
+          "milenna-zaikov": {
+            "label": "Milenna Zaikov",
+            "count": 0
+          },
+          "jayson-branch": {
+            "label": "Jayson Branch",
+            "count": 0
+          },
+          "anya": {
+            "label": "Anya",
+            "count": 0
+          },
+          "taylor": {
+            "label": "Taylor",
+            "count": 0
+          },
+          "bryce": {
+            "label": "Bryce",
+            "count": 0
+          },
+          "daniel": {
+            "label": "Daniel",
+            "count": 0
+          },
+          "veronica-black": {
+            "label": "Verónica Black",
+            "count": 20
+          },
+          "maisie-stewart": {
+            "label": "Maisie Stewart",
+            "count": 7
+          },
+          "alice": {
+            "label": "Alice",
+            "count": 2
+          },
+          "pollione-tornatore": {
+            "label": "Pollione Tornatore",
+            "count": 11
+          },
+          "paciano-tornatore": {
+            "label": "Paciano Tornatore",
+            "count": 0
+          },
+          "duccio-tornatore": {
+            "label": "Duccio Tornatore",
+            "count": 0
+          },
+          "frederick-chapman": {
+            "label": "Frederick Chapman",
+            "count": 0
+          },
+          "ryan-chapman": {
+            "label": "Ryan Chapman",
+            "count": 0
+          },
+          "cunada-de-frederick-chapman": {
+            "label": "Cuñada de Frederick Chapman",
+            "count": 0
+          },
+          "andrew-sheppard": {
+            "label": "Andrew Sheppard",
+            "count": 0
+          },
+          "susan-barnes": {
+            "label": "Susan Barnes",
+            "count": 0
+          },
+          "devin-kirby": {
+            "label": "Devin Kirby",
+            "count": 0
+          },
+          "erikson": {
+            "label": "Erikson",
+            "count": 0
+          },
+          "henry-bryne": {
+            "label": "Henry Bryne",
+            "count": 0
+          },
+          "caleb-thorne": {
+            "label": "Caleb Thorne",
+            "count": 5
+          },
+          "director-graham": {
+            "label": "Director Graham",
+            "count": 2
+          },
+          "garrison": {
+            "label": "Garrison",
+            "count": 1
+          },
+          "jackson": {
+            "label": "Jackson",
+            "count": 2
+          },
+          "huber": {
+            "label": "Huber",
+            "count": 0
+          },
+          "turner": {
+            "label": "Turner",
+            "count": 0
+          },
+          "gerard": {
+            "label": "Gérard",
+            "count": 0
+          },
+          "melissa": {
+            "label": "Melissa",
+            "count": 0
+          }
+        }
+      },
+      {
+        "index": 6,
+        "title": "Sexta Parte — Caso Resuelto",
+        "mentions": {
+          "cassian-thorne": {
+            "label": "Cassian Thorne",
+            "count": 87
+          },
+          "lucia-sinclair": {
+            "label": "Lucía Sinclair",
+            "count": 52
+          },
+          "dorian-blackwood": {
+            "label": "Dorian Blackwood",
+            "count": 26
+          },
+          "archie-woodward": {
+            "label": "Archie Woodward",
+            "count": 22
+          },
+          "logan-crane": {
+            "label": "Logan Crane",
+            "count": 13
+          },
+          "anastasia-dobrescu": {
+            "label": "Anastasia Dobrescu",
+            "count": 10
+          },
+          "tamara-dobrescu": {
+            "label": "Tamara Dobrescu",
+            "count": 12
+          },
+          "oliver-henderson": {
+            "label": "Oliver Henderson",
+            "count": 14
+          },
+          "reina-de-la-oscuridad": {
+            "label": "La Reina de la Oscuridad",
+            "count": 4
+          },
+          "rezniv-voronin": {
+            "label": "Rezniv Voronin",
+            "count": 0
+          },
+          "aris-voronin": {
+            "label": "Aris Voronin",
+            "count": 0
+          },
+          "vova-voronin": {
+            "label": "Vova Voronin",
+            "count": 0
+          },
+          "voivoda-dobrescu": {
+            "label": "Voivoda Dobrescu",
+            "count": 0
+          },
+          "alan-mccarthy": {
+            "label": "Alan McCarthy",
+            "count": 7
+          },
+          "jessica-mccarthy": {
+            "label": "Jessica McCarthy",
+            "count": 29
+          },
+          "sra-mccarthy": {
+            "label": "Sra. McCarthy",
+            "count": 3
+          },
+          "marco-gianotti": {
+            "label": "Marco Gianotti",
+            "count": 57
+          },
+          "cecilia": {
+            "label": "Cecilia",
+            "count": 50
+          },
+          "ian-zaikov": {
+            "label": "Ian Zaikov",
+            "count": 0
+          },
+          "greta-zaikov": {
+            "label": "Greta Zaikov",
+            "count": 0
+          },
+          "mohammed-ramses": {
+            "label": "Mohammed Ramses",
+            "count": 0
+          },
+          "ibrahim-ramazan": {
+            "label": "Ibrahim Ramazan",
+            "count": 0
+          },
+          "grigori": {
+            "label": "Grigori",
+            "count": 0
+          },
+          "irene-zaikov": {
+            "label": "Irene Zaikov",
+            "count": 0
+          },
+          "mohammed-ozturk": {
+            "label": "Mohammed Ozturk",
+            "count": 0
+          },
+          "milenna-zaikov": {
+            "label": "Milenna Zaikov",
+            "count": 0
+          },
+          "jayson-branch": {
+            "label": "Jayson Branch",
+            "count": 0
+          },
+          "anya": {
+            "label": "Anya",
+            "count": 0
+          },
+          "taylor": {
+            "label": "Taylor",
+            "count": 0
+          },
+          "bryce": {
+            "label": "Bryce",
+            "count": 0
+          },
+          "daniel": {
+            "label": "Daniel",
+            "count": 0
+          },
+          "veronica-black": {
+            "label": "Verónica Black",
+            "count": 0
+          },
+          "maisie-stewart": {
+            "label": "Maisie Stewart",
+            "count": 0
+          },
+          "alice": {
+            "label": "Alice",
+            "count": 0
+          },
+          "pollione-tornatore": {
+            "label": "Pollione Tornatore",
+            "count": 6
+          },
+          "paciano-tornatore": {
+            "label": "Paciano Tornatore",
+            "count": 4
+          },
+          "duccio-tornatore": {
+            "label": "Duccio Tornatore",
+            "count": 2
+          },
+          "frederick-chapman": {
+            "label": "Frederick Chapman",
+            "count": 6
+          },
+          "ryan-chapman": {
+            "label": "Ryan Chapman",
+            "count": 0
+          },
+          "cunada-de-frederick-chapman": {
+            "label": "Cuñada de Frederick Chapman",
+            "count": 0
+          },
+          "andrew-sheppard": {
+            "label": "Andrew Sheppard",
+            "count": 0
+          },
+          "susan-barnes": {
+            "label": "Susan Barnes",
+            "count": 0
+          },
+          "devin-kirby": {
+            "label": "Devin Kirby",
+            "count": 0
+          },
+          "erikson": {
+            "label": "Erikson",
+            "count": 0
+          },
+          "henry-bryne": {
+            "label": "Henry Bryne",
+            "count": 0
+          },
+          "caleb-thorne": {
+            "label": "Caleb Thorne",
+            "count": 0
+          },
+          "director-graham": {
+            "label": "Director Graham",
+            "count": 0
+          },
+          "garrison": {
+            "label": "Garrison",
+            "count": 0
+          },
+          "jackson": {
+            "label": "Jackson",
+            "count": 0
+          },
+          "huber": {
+            "label": "Huber",
+            "count": 0
+          },
+          "turner": {
+            "label": "Turner",
+            "count": 0
+          },
+          "gerard": {
+            "label": "Gérard",
+            "count": 0
+          },
+          "melissa": {
+            "label": "Melissa",
+            "count": 0
+          }
+        }
+      },
+      {
+        "index": 7,
+        "title": "Séptima Parte — El Balneario Rushmore",
+        "mentions": {
+          "cassian-thorne": {
+            "label": "Cassian Thorne",
+            "count": 67
+          },
+          "lucia-sinclair": {
+            "label": "Lucía Sinclair",
+            "count": 25
+          },
+          "dorian-blackwood": {
+            "label": "Dorian Blackwood",
+            "count": 1
+          },
+          "archie-woodward": {
+            "label": "Archie Woodward",
+            "count": 5
+          },
+          "logan-crane": {
+            "label": "Logan Crane",
+            "count": 2
+          },
+          "anastasia-dobrescu": {
+            "label": "Anastasia Dobrescu",
+            "count": 45
+          },
+          "tamara-dobrescu": {
+            "label": "Tamara Dobrescu",
+            "count": 47
+          },
+          "oliver-henderson": {
+            "label": "Oliver Henderson",
+            "count": 54
+          },
+          "reina-de-la-oscuridad": {
+            "label": "La Reina de la Oscuridad",
+            "count": 4
+          },
+          "rezniv-voronin": {
+            "label": "Rezniv Voronin",
+            "count": 0
+          },
+          "aris-voronin": {
+            "label": "Aris Voronin",
+            "count": 0
+          },
+          "vova-voronin": {
+            "label": "Vova Voronin",
+            "count": 0
+          },
+          "voivoda-dobrescu": {
+            "label": "Voivoda Dobrescu",
+            "count": 0
+          },
+          "alan-mccarthy": {
+            "label": "Alan McCarthy",
+            "count": 30
+          },
+          "jessica-mccarthy": {
+            "label": "Jessica McCarthy",
+            "count": 67
+          },
+          "sra-mccarthy": {
+            "label": "Sra. McCarthy",
+            "count": 1
+          },
+          "marco-gianotti": {
+            "label": "Marco Gianotti",
+            "count": 12
+          },
+          "cecilia": {
+            "label": "Cecilia",
+            "count": 12
+          },
+          "ian-zaikov": {
+            "label": "Ian Zaikov",
+            "count": 0
+          },
+          "greta-zaikov": {
+            "label": "Greta Zaikov",
+            "count": 0
+          },
+          "mohammed-ramses": {
+            "label": "Mohammed Ramses",
+            "count": 0
+          },
+          "ibrahim-ramazan": {
+            "label": "Ibrahim Ramazan",
+            "count": 0
+          },
+          "grigori": {
+            "label": "Grigori",
+            "count": 0
+          },
+          "irene-zaikov": {
+            "label": "Irene Zaikov",
+            "count": 0
+          },
+          "mohammed-ozturk": {
+            "label": "Mohammed Ozturk",
+            "count": 0
+          },
+          "milenna-zaikov": {
+            "label": "Milenna Zaikov",
+            "count": 0
+          },
+          "jayson-branch": {
+            "label": "Jayson Branch",
+            "count": 5
+          },
+          "anya": {
+            "label": "Anya",
+            "count": 0
+          },
+          "taylor": {
+            "label": "Taylor",
+            "count": 0
+          },
+          "bryce": {
+            "label": "Bryce",
+            "count": 0
+          },
+          "daniel": {
+            "label": "Daniel",
+            "count": 0
+          },
+          "veronica-black": {
+            "label": "Verónica Black",
+            "count": 0
+          },
+          "maisie-stewart": {
+            "label": "Maisie Stewart",
+            "count": 0
+          },
+          "alice": {
+            "label": "Alice",
+            "count": 0
+          },
+          "pollione-tornatore": {
+            "label": "Pollione Tornatore",
+            "count": 0
+          },
+          "paciano-tornatore": {
+            "label": "Paciano Tornatore",
+            "count": 0
+          },
+          "duccio-tornatore": {
+            "label": "Duccio Tornatore",
+            "count": 0
+          },
+          "frederick-chapman": {
+            "label": "Frederick Chapman",
+            "count": 6
+          },
+          "ryan-chapman": {
+            "label": "Ryan Chapman",
+            "count": 0
+          },
+          "cunada-de-frederick-chapman": {
+            "label": "Cuñada de Frederick Chapman",
+            "count": 0
+          },
+          "andrew-sheppard": {
+            "label": "Andrew Sheppard",
+            "count": 0
+          },
+          "susan-barnes": {
+            "label": "Susan Barnes",
+            "count": 0
+          },
+          "devin-kirby": {
+            "label": "Devin Kirby",
+            "count": 14
+          },
+          "erikson": {
+            "label": "Erikson",
+            "count": 0
+          },
+          "henry-bryne": {
+            "label": "Henry Bryne",
+            "count": 0
+          },
+          "caleb-thorne": {
+            "label": "Caleb Thorne",
+            "count": 0
+          },
+          "director-graham": {
+            "label": "Director Graham",
+            "count": 4
+          },
+          "garrison": {
+            "label": "Garrison",
+            "count": 0
+          },
+          "jackson": {
+            "label": "Jackson",
+            "count": 0
+          },
+          "huber": {
+            "label": "Huber",
+            "count": 2
+          },
+          "turner": {
+            "label": "Turner",
+            "count": 2
+          },
+          "gerard": {
+            "label": "Gérard",
+            "count": 0
+          },
+          "melissa": {
+            "label": "Melissa",
+            "count": 0
+          }
+        }
+      },
+      {
+        "index": 8,
+        "title": "Octava Parte — La Mansión McCarthy",
+        "mentions": {
+          "cassian-thorne": {
+            "label": "Cassian Thorne",
+            "count": 35
+          },
+          "lucia-sinclair": {
+            "label": "Lucía Sinclair",
+            "count": 44
+          },
+          "dorian-blackwood": {
+            "label": "Dorian Blackwood",
+            "count": 11
+          },
+          "archie-woodward": {
+            "label": "Archie Woodward",
+            "count": 8
+          },
+          "logan-crane": {
+            "label": "Logan Crane",
+            "count": 10
+          },
+          "anastasia-dobrescu": {
+            "label": "Anastasia Dobrescu",
+            "count": 32
+          },
+          "tamara-dobrescu": {
+            "label": "Tamara Dobrescu",
+            "count": 51
+          },
+          "oliver-henderson": {
+            "label": "Oliver Henderson",
+            "count": 12
+          },
+          "reina-de-la-oscuridad": {
+            "label": "La Reina de la Oscuridad",
+            "count": 12
+          },
+          "rezniv-voronin": {
+            "label": "Rezniv Voronin",
+            "count": 39
+          },
+          "aris-voronin": {
+            "label": "Aris Voronin",
+            "count": 1
+          },
+          "vova-voronin": {
+            "label": "Vova Voronin",
+            "count": 1
+          },
+          "voivoda-dobrescu": {
+            "label": "Voivoda Dobrescu",
+            "count": 0
+          },
+          "alan-mccarthy": {
+            "label": "Alan McCarthy",
+            "count": 18
+          },
+          "jessica-mccarthy": {
+            "label": "Jessica McCarthy",
+            "count": 53
+          },
+          "sra-mccarthy": {
+            "label": "Sra. McCarthy",
+            "count": 0
+          },
+          "marco-gianotti": {
+            "label": "Marco Gianotti",
+            "count": 30
+          },
+          "cecilia": {
+            "label": "Cecilia",
+            "count": 2
+          },
+          "ian-zaikov": {
+            "label": "Ian Zaikov",
+            "count": 16
+          },
+          "greta-zaikov": {
+            "label": "Greta Zaikov",
+            "count": 27
+          },
+          "mohammed-ramses": {
+            "label": "Mohammed Ramses",
+            "count": 8
+          },
+          "ibrahim-ramazan": {
+            "label": "Ibrahim Ramazan",
+            "count": 5
+          },
+          "grigori": {
+            "label": "Grigori",
+            "count": 12
+          },
+          "irene-zaikov": {
+            "label": "Irene Zaikov",
+            "count": 2
+          },
+          "mohammed-ozturk": {
+            "label": "Mohammed Ozturk",
+            "count": 0
+          },
+          "milenna-zaikov": {
+            "label": "Milenna Zaikov",
+            "count": 0
+          },
+          "jayson-branch": {
+            "label": "Jayson Branch",
+            "count": 61
+          },
+          "anya": {
+            "label": "Anya",
+            "count": 3
+          },
+          "taylor": {
+            "label": "Taylor",
+            "count": 1
+          },
+          "bryce": {
+            "label": "Bryce",
+            "count": 1
+          },
+          "daniel": {
+            "label": "Daniel",
+            "count": 1
+          },
+          "veronica-black": {
+            "label": "Verónica Black",
+            "count": 0
+          },
+          "maisie-stewart": {
+            "label": "Maisie Stewart",
+            "count": 0
+          },
+          "alice": {
+            "label": "Alice",
+            "count": 0
+          },
+          "pollione-tornatore": {
+            "label": "Pollione Tornatore",
+            "count": 0
+          },
+          "paciano-tornatore": {
+            "label": "Paciano Tornatore",
+            "count": 0
+          },
+          "duccio-tornatore": {
+            "label": "Duccio Tornatore",
+            "count": 0
+          },
+          "frederick-chapman": {
+            "label": "Frederick Chapman",
+            "count": 0
+          },
+          "ryan-chapman": {
+            "label": "Ryan Chapman",
+            "count": 0
+          },
+          "cunada-de-frederick-chapman": {
+            "label": "Cuñada de Frederick Chapman",
+            "count": 0
+          },
+          "andrew-sheppard": {
+            "label": "Andrew Sheppard",
+            "count": 0
+          },
+          "susan-barnes": {
+            "label": "Susan Barnes",
+            "count": 0
+          },
+          "devin-kirby": {
+            "label": "Devin Kirby",
+            "count": 5
+          },
+          "erikson": {
+            "label": "Erikson",
+            "count": 0
+          },
+          "henry-bryne": {
+            "label": "Henry Bryne",
+            "count": 0
+          },
+          "caleb-thorne": {
+            "label": "Caleb Thorne",
+            "count": 0
+          },
+          "director-graham": {
+            "label": "Director Graham",
+            "count": 0
+          },
+          "garrison": {
+            "label": "Garrison",
+            "count": 0
+          },
+          "jackson": {
+            "label": "Jackson",
+            "count": 0
+          },
+          "huber": {
+            "label": "Huber",
+            "count": 0
+          },
+          "turner": {
+            "label": "Turner",
+            "count": 0
+          },
+          "gerard": {
+            "label": "Gérard",
+            "count": 1
+          },
+          "melissa": {
+            "label": "Melissa",
+            "count": 0
+          }
+        }
+      },
+      {
+        "index": 9,
+        "title": "Novena Parte — Necromancia a Medianoche",
+        "mentions": {
+          "cassian-thorne": {
+            "label": "Cassian Thorne",
+            "count": 48
+          },
+          "lucia-sinclair": {
+            "label": "Lucía Sinclair",
+            "count": 24
+          },
+          "dorian-blackwood": {
+            "label": "Dorian Blackwood",
+            "count": 13
+          },
+          "archie-woodward": {
+            "label": "Archie Woodward",
+            "count": 34
+          },
+          "logan-crane": {
+            "label": "Logan Crane",
+            "count": 24
+          },
+          "anastasia-dobrescu": {
+            "label": "Anastasia Dobrescu",
+            "count": 23
+          },
+          "tamara-dobrescu": {
+            "label": "Tamara Dobrescu",
+            "count": 29
+          },
+          "oliver-henderson": {
+            "label": "Oliver Henderson",
+            "count": 40
+          },
+          "reina-de-la-oscuridad": {
+            "label": "La Reina de la Oscuridad",
+            "count": 36
+          },
+          "rezniv-voronin": {
+            "label": "Rezniv Voronin",
+            "count": 53
+          },
+          "aris-voronin": {
+            "label": "Aris Voronin",
+            "count": 0
+          },
+          "vova-voronin": {
+            "label": "Vova Voronin",
+            "count": 0
+          },
+          "voivoda-dobrescu": {
+            "label": "Voivoda Dobrescu",
+            "count": 0
+          },
+          "alan-mccarthy": {
+            "label": "Alan McCarthy",
+            "count": 3
+          },
+          "jessica-mccarthy": {
+            "label": "Jessica McCarthy",
+            "count": 38
+          },
+          "sra-mccarthy": {
+            "label": "Sra. McCarthy",
+            "count": 0
+          },
+          "marco-gianotti": {
+            "label": "Marco Gianotti",
+            "count": 20
+          },
+          "cecilia": {
+            "label": "Cecilia",
+            "count": 0
+          },
+          "ian-zaikov": {
+            "label": "Ian Zaikov",
+            "count": 46
+          },
+          "greta-zaikov": {
+            "label": "Greta Zaikov",
+            "count": 11
+          },
+          "mohammed-ramses": {
+            "label": "Mohammed Ramses",
+            "count": 6
+          },
+          "ibrahim-ramazan": {
+            "label": "Ibrahim Ramazan",
+            "count": 12
+          },
+          "grigori": {
+            "label": "Grigori",
+            "count": 3
+          },
+          "irene-zaikov": {
+            "label": "Irene Zaikov",
+            "count": 0
+          },
+          "mohammed-ozturk": {
+            "label": "Mohammed Ozturk",
+            "count": 0
+          },
+          "milenna-zaikov": {
+            "label": "Milenna Zaikov",
+            "count": 0
+          },
+          "jayson-branch": {
+            "label": "Jayson Branch",
+            "count": 34
+          },
+          "anya": {
+            "label": "Anya",
+            "count": 8
+          },
+          "taylor": {
+            "label": "Taylor",
+            "count": 0
+          },
+          "bryce": {
+            "label": "Bryce",
+            "count": 0
+          },
+          "daniel": {
+            "label": "Daniel",
+            "count": 0
+          },
+          "veronica-black": {
+            "label": "Verónica Black",
+            "count": 0
+          },
+          "maisie-stewart": {
+            "label": "Maisie Stewart",
+            "count": 0
+          },
+          "alice": {
+            "label": "Alice",
+            "count": 0
+          },
+          "pollione-tornatore": {
+            "label": "Pollione Tornatore",
+            "count": 0
+          },
+          "paciano-tornatore": {
+            "label": "Paciano Tornatore",
+            "count": 0
+          },
+          "duccio-tornatore": {
+            "label": "Duccio Tornatore",
+            "count": 0
+          },
+          "frederick-chapman": {
+            "label": "Frederick Chapman",
+            "count": 0
+          },
+          "ryan-chapman": {
+            "label": "Ryan Chapman",
+            "count": 0
+          },
+          "cunada-de-frederick-chapman": {
+            "label": "Cuñada de Frederick Chapman",
+            "count": 0
+          },
+          "andrew-sheppard": {
+            "label": "Andrew Sheppard",
+            "count": 0
+          },
+          "susan-barnes": {
+            "label": "Susan Barnes",
+            "count": 0
+          },
+          "devin-kirby": {
+            "label": "Devin Kirby",
+            "count": 9
+          },
+          "erikson": {
+            "label": "Erikson",
+            "count": 0
+          },
+          "henry-bryne": {
+            "label": "Henry Bryne",
+            "count": 0
+          },
+          "caleb-thorne": {
+            "label": "Caleb Thorne",
+            "count": 0
+          },
+          "director-graham": {
+            "label": "Director Graham",
+            "count": 0
+          },
+          "garrison": {
+            "label": "Garrison",
+            "count": 0
+          },
+          "jackson": {
+            "label": "Jackson",
+            "count": 0
+          },
+          "huber": {
+            "label": "Huber",
+            "count": 0
+          },
+          "turner": {
+            "label": "Turner",
+            "count": 0
+          },
+          "gerard": {
+            "label": "Gérard",
+            "count": 0
+          },
+          "melissa": {
+            "label": "Melissa",
+            "count": 0
+          }
+        }
+      },
+      {
+        "index": 10,
+        "title": "Epílogo",
+        "mentions": {
+          "cassian-thorne": {
+            "label": "Cassian Thorne",
+            "count": 14
+          },
+          "lucia-sinclair": {
+            "label": "Lucía Sinclair",
+            "count": 7
+          },
+          "dorian-blackwood": {
+            "label": "Dorian Blackwood",
+            "count": 1
+          },
+          "archie-woodward": {
+            "label": "Archie Woodward",
+            "count": 2
+          },
+          "logan-crane": {
+            "label": "Logan Crane",
+            "count": 1
+          },
+          "anastasia-dobrescu": {
+            "label": "Anastasia Dobrescu",
+            "count": 5
+          },
+          "tamara-dobrescu": {
+            "label": "Tamara Dobrescu",
+            "count": 4
+          },
+          "oliver-henderson": {
+            "label": "Oliver Henderson",
+            "count": 11
+          },
+          "reina-de-la-oscuridad": {
+            "label": "La Reina de la Oscuridad",
+            "count": 14
+          },
+          "rezniv-voronin": {
+            "label": "Rezniv Voronin",
+            "count": 11
+          },
+          "aris-voronin": {
+            "label": "Aris Voronin",
+            "count": 0
+          },
+          "vova-voronin": {
+            "label": "Vova Voronin",
+            "count": 0
+          },
+          "voivoda-dobrescu": {
+            "label": "Voivoda Dobrescu",
+            "count": 0
+          },
+          "alan-mccarthy": {
+            "label": "Alan McCarthy",
+            "count": 0
+          },
+          "jessica-mccarthy": {
+            "label": "Jessica McCarthy",
+            "count": 1
+          },
+          "sra-mccarthy": {
+            "label": "Sra. McCarthy",
+            "count": 0
+          },
+          "marco-gianotti": {
+            "label": "Marco Gianotti",
+            "count": 5
+          },
+          "cecilia": {
+            "label": "Cecilia",
+            "count": 1
+          },
+          "ian-zaikov": {
+            "label": "Ian Zaikov",
+            "count": 0
+          },
+          "greta-zaikov": {
+            "label": "Greta Zaikov",
+            "count": 0
+          },
+          "mohammed-ramses": {
+            "label": "Mohammed Ramses",
+            "count": 0
+          },
+          "ibrahim-ramazan": {
+            "label": "Ibrahim Ramazan",
+            "count": 0
+          },
+          "grigori": {
+            "label": "Grigori",
+            "count": 0
+          },
+          "irene-zaikov": {
+            "label": "Irene Zaikov",
+            "count": 0
+          },
+          "mohammed-ozturk": {
+            "label": "Mohammed Ozturk",
+            "count": 0
+          },
+          "milenna-zaikov": {
+            "label": "Milenna Zaikov",
+            "count": 0
+          },
+          "jayson-branch": {
+            "label": "Jayson Branch",
+            "count": 3
+          },
+          "anya": {
+            "label": "Anya",
+            "count": 0
+          },
+          "taylor": {
+            "label": "Taylor",
+            "count": 0
+          },
+          "bryce": {
+            "label": "Bryce",
+            "count": 0
+          },
+          "daniel": {
+            "label": "Daniel",
+            "count": 0
+          },
+          "veronica-black": {
+            "label": "Verónica Black",
+            "count": 0
+          },
+          "maisie-stewart": {
+            "label": "Maisie Stewart",
+            "count": 0
+          },
+          "alice": {
+            "label": "Alice",
+            "count": 0
+          },
+          "pollione-tornatore": {
+            "label": "Pollione Tornatore",
+            "count": 0
+          },
+          "paciano-tornatore": {
+            "label": "Paciano Tornatore",
+            "count": 0
+          },
+          "duccio-tornatore": {
+            "label": "Duccio Tornatore",
+            "count": 0
+          },
+          "frederick-chapman": {
+            "label": "Frederick Chapman",
+            "count": 1
+          },
+          "ryan-chapman": {
+            "label": "Ryan Chapman",
+            "count": 0
+          },
+          "cunada-de-frederick-chapman": {
+            "label": "Cuñada de Frederick Chapman",
+            "count": 0
+          },
+          "andrew-sheppard": {
+            "label": "Andrew Sheppard",
+            "count": 0
+          },
+          "susan-barnes": {
+            "label": "Susan Barnes",
+            "count": 0
+          },
+          "devin-kirby": {
+            "label": "Devin Kirby",
+            "count": 0
+          },
+          "erikson": {
+            "label": "Erikson",
+            "count": 0
+          },
+          "henry-bryne": {
+            "label": "Henry Bryne",
+            "count": 0
+          },
+          "caleb-thorne": {
+            "label": "Caleb Thorne",
+            "count": 0
+          },
+          "director-graham": {
+            "label": "Director Graham",
+            "count": 2
+          },
+          "garrison": {
+            "label": "Garrison",
+            "count": 0
+          },
+          "jackson": {
+            "label": "Jackson",
+            "count": 0
+          },
+          "huber": {
+            "label": "Huber",
+            "count": 0
+          },
+          "turner": {
+            "label": "Turner",
+            "count": 0
+          },
+          "gerard": {
+            "label": "Gérard",
+            "count": 0
+          },
+          "melissa": {
+            "label": "Melissa",
+            "count": 0
+          }
+        }
+      }
+    ]
+  },
+  "top_words": [
+    {
+      "word": "voz",
+      "count": 534
+    },
+    {
+      "word": "mientras",
+      "count": 491
+    },
+    {
+      "word": "cassian",
+      "count": 463
+    },
+    {
+      "word": "ojos",
+      "count": 391
+    },
+    {
+      "word": "lucia",
+      "count": 344
+    },
+    {
+      "word": "tono",
+      "count": 336
+    },
+    {
+      "word": "mirada",
+      "count": 316
+    },
+    {
+      "word": "sonrisa",
+      "count": 262
+    },
+    {
+      "word": "archie",
+      "count": 259
+    },
+    {
+      "word": "respondio",
+      "count": 224
+    },
+    {
+      "word": "silencio",
+      "count": 224
+    },
+    {
+      "word": "oliver",
+      "count": 223
+    },
+    {
+      "word": "jessica",
+      "count": 219
+    },
+    {
+      "word": "palabras",
+      "count": 212
+    },
+    {
+      "word": "tamara",
+      "count": 209
+    },
+    {
+      "word": "parecia",
+      "count": 194
+    },
+    {
+      "word": "pregunto",
+      "count": 192
+    },
+    {
+      "word": "mano",
+      "count": 187
+    },
+    {
+      "word": "dije",
+      "count": 186
+    },
+    {
+      "word": "rostro",
+      "count": 186
+    },
+    {
+      "word": "jack",
+      "count": 184
+    },
+    {
+      "word": "tiempo",
+      "count": 183
+    },
+    {
+      "word": "aun",
+      "count": 181
+    },
+    {
+      "word": "uno",
+      "count": 179
+    },
+    {
+      "word": "aire",
+      "count": 167
+    },
+    {
+      "word": "marco",
+      "count": 167
+    },
+    {
+      "word": "momento",
+      "count": 158
+    },
+    {
+      "word": "dorian",
+      "count": 154
+    },
+    {
+      "word": "aqui",
+      "count": 152
+    },
+    {
+      "word": "pregunte",
+      "count": 152
+    },
+    {
+      "word": "respondi",
+      "count": 151
+    },
+    {
+      "word": "lugar",
+      "count": 150
+    },
+    {
+      "word": "paso",
+      "count": 147
+    },
+    {
+      "word": "anastasia",
+      "count": 139
+    },
+    {
+      "word": "hombre",
+      "count": 138
+    },
+    {
+      "word": "cuerpo",
+      "count": 137
+    },
+    {
+      "word": "manos",
+      "count": 137
+    },
+    {
+      "word": "podia",
+      "count": 131
+    },
+    {
+      "word": "caso",
+      "count": 128
+    },
+    {
+      "word": "tambien",
+      "count": 125
+    }
+  ]
+}

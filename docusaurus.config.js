@@ -28,7 +28,7 @@ const docsCronicas = [
     path: 'docs/CrSaSo',
     routeBasePath: 'CrSaSo',
     sidebarPath: resolve('./docs/CrSaSo/cronicas_sidebars.js'),
-    breadcrumbs: true,
+    breadcrumbs: false,
   },
 ];
 
@@ -79,6 +79,11 @@ const config = {
   i18n: {
     defaultLocale: 'es',
     locales: ['es'],
+  },
+
+  customFields: {
+    /** URL pública del chat API (Vercel, carpeta api/ en este repo). Sin secretos. */
+    chatApiUrl: process.env.CHAT_API_URL ?? '',
   },
 
   presets: [

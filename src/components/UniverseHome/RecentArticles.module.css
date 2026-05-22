@@ -1,0 +1,106 @@
+.section {
+  margin: 2rem 0 2.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+  text-decoration: none;
+  color: inherit;
+  border-left: 4px solid var(--recent-libro-accent, transparent);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  border-color: var(--recent-libro-accent, var(--ifm-color-primary));
+  background-color: color-mix(
+    in srgb,
+    var(--recent-libro-accent, var(--ifm-color-emphasis-100)) 12%,
+    var(--ifm-background-surface-color)
+  );
+}
+
+.thumbWrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--ifm-color-emphasis-100);
+  overflow: hidden;
+}
+
+.thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.thumbPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-emphasis-200),
+    var(--ifm-color-emphasis-100)
+  );
+}
+
+.body {
+  padding: 0.85rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.35;
+  margin: 0;
+  color: var(--ifm-font-color-base);
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  align-items: center;
+}
+
+.libroBadge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  background: color-mix(
+    in srgb,
+    var(--recent-libro-accent, var(--ifm-color-emphasis-300)) 22%,
+    transparent
+  );
+  color: var(--ifm-font-color-base);
+}
+
+.empty {
+  padding: 1rem;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  color: var(--ifm-color-emphasis-700);
+}

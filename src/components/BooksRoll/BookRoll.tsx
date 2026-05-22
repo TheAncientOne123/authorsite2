@@ -1,7 +1,8 @@
 ﻿import React from 'react';
 import Link from '@docusaurus/Link';
+import {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
+import {CR_SA_SO_PUBLISHED_BOOKS, type CrSaSoPublishedBook} from '@site/src/data/crSaSoPublishedBooks';
 import styles from './BookRoll.module.css';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export type Book = {
   title: string;
@@ -11,32 +12,35 @@ export type Book = {
   tagline?: string;
 };
 
-export const books: Book[] = [
-  {
-    title: 'Necromancia a Medianoche',
-    href: 'https://www.amazon.com.mx/Necromancia-Medianoche-Historias-Oscuras-Spanish/dp/B0FHBYZWRS',
-    cover: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual',
-    year: 'Desde 2025',
-    tagline: 'Nueva Ámsterdam, 1929.',
-  },
-  // Cuando haya más libros, añádelos aquí.
-];
+function toBookItem(b: CrSaSoPublishedBook): Book {
+  return {
+    title: b.label,
+    href: b.docRoute,
+    cover: b.cover,
+    year: b.year,
+    tagline: b.tagline,
+  };
+}
+
+export const books: Book[] = CR_SA_SO_PUBLISHED_BOOKS.map(toBookItem);
 
 type Props = {
   items?: Book[];
   ariaLabel?: string;
 };
 
-function BookRoll({ items = books, ariaLabel = 'Carrete de libros' }: Props) {
+function BookRoll({items = books, ariaLabel = 'Carrete de libros'}: Props) {
+  const {withBaseUrl} = useBaseUrlUtils();
+
   return (
     <div className={styles.root}>
       <div className={styles.track} role="list" aria-label={ariaLabel}>
         {items.map((b) => (
           <article role="listitem" key={b.title} className={styles.card}>
-            <Link to={b.href} className={styles.link}>
+            <Link to={withBaseUrl(b.href)} className={styles.link}>
               <img
                 loading="lazy"
-                src={useBaseUrl(b.cover)}
+                src={/^https?:\/\//i.test(b.cover) ? b.cover : withBaseUrl(b.cover)}
                 alt={`Portada de ${b.title}`}
                 className={styles.image}
               />
