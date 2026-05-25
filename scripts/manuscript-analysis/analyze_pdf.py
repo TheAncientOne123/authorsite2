@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-analyze_pdf.py  ·  v2.0
+analyze_pdf.py  ·  v2.1
 Analiza un manuscrito en PDF: estadísticas globales, por capítulo,
 menciones de personajes y gráficos.
 
@@ -13,8 +13,6 @@ Salida (por defecto en ./output/):
   charts/character_mentions_pie.png
   charts/chapter_word_counts.png
   charts/character_by_chapter.png
-  charts/top_words_bar.png          ← nuevo
-  charts/sentences_per_chapter.png  ← nuevo
 """
 from __future__ import annotations
 
@@ -46,55 +44,20 @@ DEFAULT_OUT = SCRIPT_DIR / "output"
 WPM_SILENT = 250   # lectura silenciosa adulto promedio
 WPM_ALOUD  = 130   # lectura en voz alta / audiolibro
 
-# ── Stopwords español — ampliadas ─────────────────────────────────────────────
-STOPWORDS_ES: set[str] = {
-    # artículos y determinantes
-    "el", "la", "los", "las", "un", "una", "unos", "unas",
-    # preposiciones
-    "a", "al", "ante", "bajo", "con", "contra", "de", "del", "desde",
-    "durante", "en", "entre", "hacia", "hasta", "mediante", "para",
-    "por", "según", "sin", "sobre", "tras",
-    # conjunciones
-    "e", "ni", "o", "u", "pero", "sino", "aunque", "porque", "pues",
-    "que", "qué", "como", "cuando", "donde", "si", "ya",
-    # pronombres
-    "yo", "tú", "tu", "él", "ella", "ello", "nosotros", "vosotros",
-    "ellos", "ellas", "me", "te", "se", "nos", "os", "le", "les",
-    "lo", "la", "mi", "ti", "su", "sus", "mis", "tus",
-    "cual", "cuales", "quien", "quienes",
-    # demostrativos / posesivos
-    "este", "esta", "estos", "estas", "ese", "esa", "esos", "esas",
-    "aquel", "aquella", "aquellos", "aquellas", "esto", "eso", "aquello",
-    "nuestro", "nuestra", "nuestros", "nuestras",
-    # verbos auxiliares muy frecuentes
-    "ser", "es", "era", "son", "fue", "sido", "siendo",
-    "estar", "estoy", "estás", "está", "estaba", "estaban", "estuvo",
-    "estamos", "están", "estado", "estados", "estaban",
-    "haber", "ha", "han", "he", "hemos", "había", "habia", "hubo",
-    "tener", "tiene", "tienen", "tenía", "tenia", "tuvo",
-    "hacer", "hace", "hacía", "hizo", "hecho",
-    "ir", "iba", "fue", "van", "vamos", "irse",
-    "poder", "puede", "podía", "pudo",
-    "deber", "debe", "debía",
-    "querer", "quiere", "quería",
-    "decir", "dijo", "dice", "dijo", "dicho",
-    # adverbios genéricos
-    "no", "sí", "si", "ya", "muy", "más", "mas", "tan", "tanto",
-    "también", "tampoco", "bien", "mal", "antes", "después", "ahora",
-    "siempre", "nunca", "jamás", "solo", "solamente", "además",
-    "aquí", "allí", "allá", "donde", "adonde",
-    # cuantificadores
-    "todo", "todos", "toda", "todas", "nada", "algo", "alguien",
-    "nadie", "poco", "mucho", "otro", "otros", "otra", "otras",
-    "algunos", "algunas", "algún", "alguna", "ningún", "ninguna",
-    "dos", "tres", "primero", "segunda",
-    # miscelánea muy frecuente en narrativa
-    "hay", "así", "pues", "entonces", "vez", "veces", "cada",
-    "mismo", "misma", "mismos", "mismas",
-    # formas con tilde — duplicados normalizados
-    "él", "tú", "sí", "qué", "cómo", "cuándo", "dónde",
-    "aún", "más", "ésa", "ésas", "ése", "ésos", "ésta", "éstas",
-    "éste", "éstos",
+# Palabras funcionales muy frecuentes (solo para filtrar términos de vocabulario)
+_FUNCTION_WORDS: set[str] = {
+    "el", "la", "los", "las", "un", "una", "de", "del", "al", "en", "con", "por",
+    "para", "que", "como", "pero", "sin", "sobre", "entre", "hasta", "desde",
+    "ser", "es", "son", "fue", "era", "estar", "esta", "estaba", "estaban",
+    "haber", "ha", "han", "he", "habia", "tener", "tiene", "tenia", "hacer",
+    "hace", "hacia", "ir", "iba", "poder", "puede", "decir", "dijo", "dice",
+    "yo", "tu", "el", "ella", "ellos", "ellas", "me", "te", "se", "le", "les",
+    "lo", "su", "sus", "mi", "mis", "nos", "os", "este", "esta", "estos",
+    "estas", "ese", "esa", "esos", "esas", "aquel", "aquella", "muy", "mas",
+    "tan", "ya", "no", "si", "sí", "tambien", "solo", "todo", "toda", "todos",
+    "todas", "algo", "nada", "quien", "quienes", "cual", "cuales", "donde",
+    "cuando", "aqui", "alli", "hay", "asi", "pues", "entonces", "vez", "veces",
+    "cada", "mismo", "misma", "otro", "otra", "otros", "otras",
 }
 
 
@@ -214,6 +177,8 @@ def split_chapters_by_parts(
     page_texts: list[str],
     parts: list[dict[str, Any]],
     n_pages: int,
+    trim_sparse_pages: bool = True,
+    sparse_page_min_words: int = 12,
 ) -> list[Chapter]:
     """
     Divide el manuscrito por rangos de página (1-based, inclusive).
@@ -235,18 +200,56 @@ def split_chapters_by_parts(
                 file=sys.stderr,
             )
             continue
-        pe_clamped = min(pe, n_pages)
+
+        part_trim = part.get("trim_sparse_pages", trim_sparse_pages)
+        min_words = int(part.get("sparse_page_min_words", sparse_page_min_words))
+        effective_ps, effective_pe = ps, min(pe, n_pages)
+        if part_trim:
+            effective_ps, effective_pe = _trim_sparse_boundary_pages(
+                page_texts, effective_ps, effective_pe, min_words,
+            )
+            if effective_ps > effective_pe:
+                print(
+                    f"  AVISO: «{title}» quedó vacía tras omitir páginas casi en blanco "
+                    f"({ps}-{pe})",
+                    file=sys.stderr,
+                )
+                continue
+            if (effective_ps, effective_pe) != (ps, min(pe, n_pages)):
+                print(
+                    f"  «{title}»: páginas {ps}-{pe} → contenido en {effective_ps}-{effective_pe}",
+                    file=sys.stderr,
+                )
+
+        pe_clamped = effective_pe
         if pe_clamped < pe:
             print(
                 f"  AVISO: «{title}» termina en pág {pe} pero el PDF tiene {n_pages}; "
                 f"usando hasta pág {pe_clamped}",
                 file=sys.stderr,
             )
-        body = "\n\n".join(page_texts[ps - 1 : pe_clamped]).strip()
-        chapters.append(Chapter(i, title, body, page_start=ps, page_end=pe_clamped))
+        body = "\n\n".join(page_texts[effective_ps - 1 : pe_clamped]).strip()
+        chapters.append(
+            Chapter(i, title, body, page_start=effective_ps, page_end=pe_clamped)
+        )
     if not chapters:
         raise ValueError("Ninguna parte pudo mapearse a páginas del PDF")
     return chapters
+
+
+def _trim_sparse_boundary_pages(
+    page_texts: list[str],
+    page_start: int,
+    page_end: int,
+    min_words: int,
+) -> tuple[int, int]:
+    """Omite portadas o páginas casi vacías al inicio/fin de un rango."""
+    start, end = page_start, page_end
+    while start <= end and count_words(page_texts[start - 1]) < min_words:
+        start += 1
+    while end >= start and count_words(page_texts[end - 1]) < min_words:
+        end -= 1
+    return start, end
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -375,18 +378,82 @@ def _normalize(word: str) -> str:
     return word.lower().translate(replacements)
 
 
-def top_tokens(text: str, extra_stop: set[str], n: int = 40) -> list[dict]:
-    tokens = re.findall(r"\b[\wáéíóúñüÁÉÍÓÚÑÜ]+\b", text, flags=re.UNICODE)
-    stop = STOPWORDS_ES | extra_stop
-    filtered = [
+def tokenize_words(text: str) -> list[str]:
+    return [
         _normalize(t)
-        for t in tokens
-        if len(t) > 2
-        and _normalize(t) not in stop
-        and not t.isdigit()
+        for t in re.findall(r"\b[\wáéíóúñüÁÉÍÓÚÑÜ]+\b", text, flags=re.UNICODE)
     ]
-    counter = Counter(filtered)
-    return [{"word": w, "count": c} for w, c in counter.most_common(n)]
+
+
+def is_content_token(token: str, min_len: int = 3) -> bool:
+    if len(token) < min_len:
+        return False
+    if token.isdigit():
+        return False
+    if re.fullmatch(r"(.)\1{2,}", token):
+        return False
+    return True
+
+
+def build_excluded_terms(config: dict) -> set[str]:
+    excluded: set[str] = set()
+    for c in config.get("characters", []):
+        for alias in c.get("aliases", [c.get("label", c["id"])]):
+            excluded.add(_normalize(alias))
+    for term in config.get("exclude_terms", config.get("stopwords_extra", [])):
+        excluded.add(_normalize(term))
+    return excluded
+
+
+def analyze_vocabulary(
+    raw: str,
+    chapters: list[Chapter],
+    excluded: set[str],
+) -> dict[str, Any]:
+    tokens = [t for t in tokenize_words(raw) if is_content_token(t)]
+    filtered = [t for t in tokens if t not in _FUNCTION_WORDS and t not in excluded]
+
+    global_counter = Counter(filtered)
+    token_chapters: dict[str, set[int]] = {}
+    chapter_terms: list[dict[str, Any]] = []
+
+    for ch in chapters:
+        ch_tokens = [
+            t for t in tokenize_words(ch.text)
+            if is_content_token(t) and t not in _FUNCTION_WORDS and t not in excluded
+        ]
+        ch_counter = Counter(ch_tokens)
+        for word in ch_counter:
+            token_chapters.setdefault(word, set()).add(ch.index)
+
+        unique = len(set(ch_tokens))
+        chapter_terms.append({
+            "index": ch.index,
+            "title": ch.title,
+            "unique_words": unique,
+            "lexical_richness_ttr": round(unique / max(len(ch_tokens), 1), 4),
+            "top_terms": [
+                {"word": w, "count": c}
+                for w, c in ch_counter.most_common(8)
+            ],
+        })
+
+    hapax = sum(1 for _, c in global_counter.items() if c == 1)
+    frequent_terms = [
+        {
+            "word": w,
+            "count": c,
+            "chapters": len(token_chapters.get(w, set())),
+        }
+        for w, c in global_counter.most_common(30)
+    ]
+
+    return {
+        "unique_words": len(set(filtered)),
+        "hapax_legomena": hapax,
+        "frequent_terms": frequent_terms,
+        "by_chapter": chapter_terms,
+    }
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -403,8 +470,12 @@ def analyze(pdf_path: Path, config: dict) -> dict:
         raise ValueError("No se pudo extraer texto del PDF. ¿Está escaneado sin OCR?")
 
     parts_cfg: list[dict] = config.get("parts") or []
+    trim_sparse = bool(config.get("trim_sparse_pages", True))
+    sparse_min = int(config.get("sparse_page_min_words", 12))
     if parts_cfg:
-        chapters = split_chapters_by_parts(page_texts, parts_cfg, n_pages)
+        chapters = split_chapters_by_parts(
+            page_texts, parts_cfg, n_pages, trim_sparse, sparse_min,
+        )
         chapters_source = "manual_pages"
         print(f"  Partes por páginas (config): {len(chapters)}")
     else:
@@ -414,14 +485,14 @@ def analyze(pdf_path: Path, config: dict) -> dict:
         print(f"  Capítulos detectados (regex): {len(chapters)}")
     chapters_reliable = chapters_source == "manual_pages"
 
-    extra_stop = {_normalize(s) for s in config.get("stopwords_extra", [])}
-
     # Preparar patrones de personajes
     char_patterns: list[tuple[str, str, re.Pattern]] = []
     for c in config.get("characters", []):
         aliases = c.get("aliases", [c.get("label", c["id"])])
         pat = build_character_pattern(aliases)
         char_patterns.append((c["id"], c.get("label", c["id"]), pat))
+
+    excluded_terms = build_excluded_terms(config)
 
     # ── Menciones por capítulo ─────────────────────────────────────────────
     global_mentions: dict[str, int] = {cid: 0 for cid, _, _ in char_patterns}
@@ -434,15 +505,19 @@ def analyze(pdf_path: Path, config: dict) -> dict:
         paras = count_paragraphs(ch.text)
 
         ch_mentions: dict[str, dict] = {}
+        present: list[str] = []
         for cid, label, pat in char_patterns:
             n = count_mentions(ch.text, pat)
             ch_mentions[cid] = {"label": label, "count": n}
             global_mentions[cid] += n
+            if n > 0:
+                present.append(cid)
 
         by_chapter.append({
             "index":    ch.index,
             "title":    ch.title,
             "mentions": ch_mentions,
+            "characters_present": present,
         })
         ch_row: dict[str, Any] = {
             "index":      ch.index,
@@ -487,6 +562,7 @@ def analyze(pdf_path: Path, config: dict) -> dict:
             "first_appearance_word": fp,
         })
     character_totals.sort(key=lambda x: x["count"], reverse=True)
+    vocabulary = analyze_vocabulary(raw, chapters, excluded_terms)
 
     return {
         "title":       config.get("title", pdf_path.stem),
@@ -525,7 +601,7 @@ def analyze(pdf_path: Path, config: dict) -> dict:
             "totals":     character_totals,
             "by_chapter": by_chapter,
         },
-        "top_words": top_tokens(raw, extra_stop, n=40),
+        "vocabulary": vocabulary,
     }
 
 
@@ -633,41 +709,6 @@ def write_charts(stats: dict, out_dir: Path) -> None:
         fig.savefig(charts_dir / "character_by_chapter.png", dpi=150)
         plt.close(fig)
         print(f"  ✔ character_by_chapter.png")
-
-    # ── 4. Barras horizontales: top palabras ──────────────────────────────
-    top_words = stats.get("top_words", [])[:25]
-    if top_words:
-        fig, ax = plt.subplots(figsize=(8, max(5, len(top_words) * 0.32)))
-        words_  = [t["word"] for t in reversed(top_words)]
-        counts_ = [t["count"] for t in reversed(top_words)]
-        ax.barh(words_, counts_, color="#6366f1", edgecolor="#312e81", linewidth=0.5)
-        ax.set_xlabel("Frecuencia", fontsize=10)
-        ax.set_title(f"Top 25 palabras más frecuentes — {title}", fontsize=11)
-        ax.tick_params(axis="y", labelsize=8)
-        fig.tight_layout()
-        fig.savefig(charts_dir / "top_words_bar.png", dpi=150)
-        plt.close(fig)
-        print(f"  ✔ top_words_bar.png")
-
-    # ── 5. Línea: oraciones por capítulo ─────────────────────────────────
-    if len(chapters) > 1:
-        fig, ax = plt.subplots(figsize=(max(12, len(chapters) * 0.45), 4))
-        sents = [c["sentences"] for c in chapters]
-        ax.plot(range(len(chapters)), sents, marker="o", color="#f59e0b",
-                linewidth=1.5, markersize=4)
-        ax.fill_between(range(len(chapters)), sents, alpha=0.2, color="#f59e0b")
-        ax.set_xticks(range(len(chapters)))
-        ax.set_xticklabels(
-            [c["title"][:18] + "…" if len(c["title"]) > 18 else c["title"]
-             for c in chapters],
-            rotation=60, ha="right", fontsize=6.5,
-        )
-        ax.set_ylabel("Oraciones", fontsize=10)
-        ax.set_title(f"Oraciones por capítulo — {title}", fontsize=11)
-        fig.tight_layout()
-        fig.savefig(charts_dir / "sentences_per_chapter.png", dpi=150)
-        plt.close(fig)
-        print(f"  ✔ sentences_per_chapter.png")
 
     print(f"\nGráficos en: {charts_dir}")
 

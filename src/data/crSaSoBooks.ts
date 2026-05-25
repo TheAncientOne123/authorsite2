@@ -4,7 +4,7 @@
  */
 export const CR_SA_SO_BOOKS = [
   {key: 'necromancia-medianoche', label: 'Necromancia a Medianoche', color: '#4ade80'},
-  {key: 'mujer-carmesi', label: 'La Mujer Carmesí', color: '#f87171'},
+  {key: 'mujer-carmesi', label: 'La Mujer Carmesí', color: '#A41720'},
   {key: 'canon-general', label: 'Canon / varios libros', color: '#60a5fa'},
 ] as const;
 

@@ -312,3 +312,108 @@ a.crSaSoGraphCtaBtn.button:focus {
   border-color: #3a3a3d;
   color: #ffffff;
 }
+
+/* ── Citas en markdown (estilo enciclopedia / Wikipedia) ── */
+.theme-doc-markdown blockquote,
+.markdown blockquote {
+  position: relative;
+  margin: 1.35rem 0 1.35rem 0.85rem;
+  padding: 0.2rem 0 0.2rem 2.65rem;
+  border: none;
+  border-left: none;
+  background: transparent;
+  box-shadow: none;
+  font-style: italic;
+  color: var(--ifm-font-color-base);
+}
+
+/* Apertura: en el margen izquierdo (sangría), sin invadir el texto */
+.theme-doc-markdown blockquote::before,
+.markdown blockquote::before {
+  content: '\201C';
+  position: absolute;
+  left: 0.05em;
+  top: -0.05em;
+  font-size: 3.1rem;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ifm-color-primary);
+  opacity: 0.38;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Cierre: inline al final del párrafo citado (sigue el flujo del texto) */
+.theme-doc-markdown blockquote > p:first-child::after,
+.markdown blockquote > p:first-child::after {
+  content: '\201D';
+  display: inline;
+  margin-left: 0.35em;
+  font-size: 3.1rem;
+  line-height: 0;
+  vertical-align: -0.38em;
+  font-style: normal;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--ifm-color-primary);
+  opacity: 0.38;
+  pointer-events: none;
+  user-select: none;
+}
+
+.theme-doc-markdown blockquote > :first-child,
+.markdown blockquote > :first-child {
+  margin-top: 0;
+}
+
+.theme-doc-markdown blockquote > :last-child,
+.markdown blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.theme-doc-markdown blockquote p,
+.markdown blockquote p {
+  margin: 0 0 0.55rem;
+}
+
+.theme-doc-markdown blockquote p:last-child,
+.markdown blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Atribución en la última línea (— Autor, obra, etc.) */
+.theme-doc-markdown blockquote p:last-child:not(:only-child),
+.markdown blockquote p:last-child:not(:only-child) {
+  margin-top: 0.45rem;
+  font-style: normal;
+  font-size: 0.92rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+[data-theme='dark'] .theme-doc-markdown blockquote::before,
+[data-theme='dark'] .markdown blockquote::before,
+[data-theme='dark'] .theme-doc-markdown blockquote > p:first-child::after,
+[data-theme='dark'] .markdown blockquote > p:first-child::after {
+  opacity: 0.48;
+}
+
+@media (max-width: 640px) {
+  .theme-doc-markdown blockquote,
+  .markdown blockquote {
+    margin-left: 0.5rem;
+    padding-left: 2.15rem;
+  }
+
+  .theme-doc-markdown blockquote::before,
+  .markdown blockquote::before {
+    font-size: 2.55rem;
+  }
+
+  .theme-doc-markdown blockquote > p:first-child::after,
+  .markdown blockquote > p:first-child::after {
+    font-size: 2.25rem;
+    vertical-align: -0.30em;
+  }
+}

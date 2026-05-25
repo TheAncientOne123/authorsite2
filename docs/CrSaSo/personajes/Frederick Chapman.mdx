@@ -1,7 +1,7 @@
 ---
 title: Frederick Chapman
 description: Patriarca de la familia Chapman; empresario de colchones
-updated: 2026-05-17
+updated: 2026-05-24
 type: personaje
 saga: crsaso
 libro: necromancia-medianoche
@@ -14,57 +14,104 @@ import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+# Frederick Chapman
+
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Frederick Chapman"
-    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/frederick-chapman', alt: 'Frederick Chapman' }}
-    caption="Empresario de colchones; patriarca de la familia Chapman"
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/frederick-chapman',
+      alt: 'Frederick Chapman',
+    }}
+    caption="Empresario; patriarca de los Chapman"
     rows={[
+      {
+        label: 'Estado actual',
+        value: 'Activo',
+      },
+      { label: 'Edad', value: 'No especificada (etapa adulta)' },
+      {
+        label: 'Residencia',
+        value: (
+          <>
+            Mansión en <Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link>,{' '}
+            <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>,{' '}
+            <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>
+          </>
+        ),
+      },
+      { label: 'Especie', value: 'Humano' },
       { label: 'Género', value: 'Masculino' },
-      { label: 'Estado', value: 'Activo' },
-      { label: 'Profesión', value: 'Empresario (colchones)' },
-      { label: 'Empresa', value: 'Chapman Comforts' },
-      { label: 'Residencia', value: <><Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link>, <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link></> },
-      { label: 'Hijo', value: <Link to="/CrSaSo/personajes/Ryan%20Chapman">Ryan Chapman</Link> },
-      { label: 'Vecino destacado', value: <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      {
+        label: 'Familiares clave',
+        value: (
+          <>
+            <Link to="/CrSaSo/personajes/Ryan%20Chapman">Ryan Chapman</Link> (hijo); cuñada
+            (víctima, fallecida); hermanos (no nombrados)
+          </>
+        ),
+      },
+      {
+        label: 'Ocupación',
+        value: 'Empresario; dueño de una fábrica de colchones (Chapman Comforts)',
+      },
+      {
+        label: 'Afiliación',
+        value: <Link to="/CrSaSo/familias/La%20Familia%20Chapman">Familia Chapman</Link>,
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 3
+          </>
+        ),
+      },
     ]}
   />
-
 )}
 </BrowserOnly>
 
 ## Perfil
 
-**Frederick Chapman** es el patriarca de la familia Chapman y propietario de **Chapman Comforts**, una empresa de colchones. Se define como un hombre **ajeno a la política**, aunque vive rodeado de vecinos poderosos en <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link> (fracc. <Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link>). Mantiene una imagen sobria y familiar.
+**Frederick Chapman** es un próspero hombre de negocios y el patriarca de la familia Chapman en la ciudad de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Residente de la exclusiva zona de <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>, su vida y la de su familia se ven trágicamente alteradas tras los sucesos ocurridos en su mansión de <Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link>, los cuales dieron inicio a la investigación criminal conocida mediáticamente como el <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>.
 
-## Personalidad y rasgos
+Aunque Frederick pertenece a la élite económica de la ciudad, se mantiene alejado de las esferas políticas, dedicando sus esfuerzos a la gestión de su empresa familiar Chapman Comforts.
 
-- Trato educado, **paternal** y reservado.
-- **Evita vínculos políticos**; insiste en que su familia se dedica “solo a los colchones”.
-- Preferencias domésticas: **gatos** sí; **perros no** (“arruinan los colchones”).
+## Perfil y Personalidad
 
-## Relación con el crimen
+Psicológicamente, Frederick es definido como un "hombre de familia" con un carácter protector y responsable. Tras la masacre ocurrida en su hogar, se mostró profundamente afectado por el trauma sufrido por su hijo <Link to="/CrSaSo/personajes/Ryan%20Chapman">Ryan</Link>, aunque mantuvo una disposición colaborativa con las autoridades. A pesar de su riqueza, posee una visión pragmática y un tanto humilde de su posición social, describiéndose a sí mismo como "el más humilde entre los más poderosos" de su vecindario.
 
-Durante el caso de <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>, Frederick alojó a sus **hermanos** y a su **cuñada** en su casa. La habitación de invitados estaba en remodelación, por lo que durmieron en el cuarto de su hijo, <Link to="/CrSaSo/personajes/Ryan%20Chapman">Ryan</Link>. Al amanecer, fue **Ryan** quien **encontró el cuerpo** de la víctima en el llamado “Cuarto Rojo”.
+Físicamente no cuenta con una descripción detallada en el manuscrito, más allá de la proyección de autoridad y seriedad propia de su cargo y estatus. Es un hombre que valora el orden y la limpieza, cualidades que traslada incluso a su elección de mascotas.
 
-## Frases destacadas
+## Habilidades y Equipo
 
-> “Los Chapman siempre hemos evitado la política; nos dedicamos exclusivamente a nuestra empresa de colchones.”
+Frederick no posee capacidades místicas ni entrenamiento en combate. Sus habilidades se centran en el ámbito civil:
+*   **Gestión Empresarial:** Ha logrado consolidar una empresa de colchones exitosa en un entorno competitivo.
+*   **Conocimiento del Entorno:** Posee información detallada sobre la dinámica social y los residentes de Crystal Square, lo que resultó útil para la policía.
 
-> “A veces me pregunto cómo un vendedor de colchones comparte la barda trasera con un magnate del petróleo.”
+## Biografía / Historia
 
-## Eventos relacionados
+### Necromancia a Medianoche
 
-- Entrevista clave durante <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>.
-- Su testimonio llevó a considerar la casa vecina de la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link> como pieza del contexto.
+#### <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>
+La tragedia en la vida de Frederick comenzó cuando sus hermanos asistieron a una reunión en su mansión. Debido a que la habitación de invitados estaba en remodelación, Frederick decidió que sus familiares durmieran en la habitación de su hijo <Link to="/CrSaSo/personajes/Ryan%20Chapman">Ryan</Link>. Durante esa madrugada, entre las doce y las tres de la mañana, un atacante desconocido irrumpió en la alcoba y asesinó brutalmente a su cuñada, dejando una escena de devastación y sangre que fue descubierta por el joven <Link to="/CrSaSo/personajes/Ryan%20Chapman">Ryan</Link>.
 
-## Véase también
+#### Cooperación con la investigación
+Frederick fue interrogado en el vestíbulo de su mansión por el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y la agente federal <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>. Durante el interrogatorio, Chapman proporcionó detalles sobre la falta de enemigos políticos de su familia y descartó la presencia de animales domésticos que pudieran explicar los colmillos o cabellos encontrados por los peritos. Asimismo, fue él quien señaló la cercanía de su patio trasero con la residencia de <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>, facilitando la identificación del rastro dejado por el asesino. A pesar de ser sospechoso inicial por protocolo, el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> lo consideró libre de culpa basándose en su naturaleza moral y la falta de motivos para dañar a su propia sangre.
 
-- <Link to="/CrSaSo/personajes/Ryan%20Chapman">Ryan Chapman</Link>
-- <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>
-- <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>
-- <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>
-- <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>
-- <Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link> / <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Ryan%20Chapman">**Ryan Chapman**</Link>: Su hijo. Frederick mostró una preocupación inmediata por su estado tras el descubrimiento del cadáver.
+*   <Link to="/CrSaSo/personajes/Alan%20McCarthy">**Alan McCarthy**</Link>: Su vecino. Chapman mantenía una relación de cortesía distante, asombrado por compartir linderos con un magnate del petróleo.
+*   <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link>: El detective local a quien Chapman confió su testimonio inicial y quien defendió su inocencia frente a las teorías de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>.
+*   <Link to="/CrSaSo/personajes/Jessica%20McCarthy">**Jessica McCarthy**</Link>: Cuñada (Víctima): Relación familiar política cuya muerte marcó el inicio de la cruzada legal y mística en la ciudad.
+
+## Curiosidades
+*   Frederick siente aversión por los perros debido a que, según su experiencia profesional, "arruinan los colchones". Por ello, prefiere a los gatos.
+*   Su empresa se dedica exclusivamente a la fabricación y venta de colchones, lo que lo diferencia de sus vecinos, mayoritariamente millonarios involucrados en la industria petrolera o la política.
+*   A pesar de lo dantesco de la escena del crimen, Frederick mostró un sentido del deber pragmático, apurando el interrogatorio para poder planear el funeral de su familiar fallecida.

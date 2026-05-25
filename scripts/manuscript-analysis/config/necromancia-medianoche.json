@@ -524,12 +524,10 @@
       ]
     }
   ],
-  "stopwords_extra": [
+  "exclude_terms": [
     "Nueva",
     "Ámsterdam",
     "Amsterdam",
-    "La",
-    "El",
     "Sra",
     "Sr",
     "Director",

@@ -1,7 +1,15 @@
 {
-  "generatedAt": "2026-05-22T01:14:58.601Z",
+  "generatedAt": "2026-05-24T23:23:53.424Z",
   "universe": "CrSaSo",
   "nodes": [
+    {
+      "id": "libros-portada",
+      "label": "Libros",
+      "category": "raíz",
+      "libro": null,
+      "degree": 0,
+      "excerpt": "Orden de lectura, fichas y material de referencia de las novelas de Crónicas de Sangre y Sombra."
+    },
     {
       "id": "objetos-conceptos",
       "label": "Objetos y conceptos",
@@ -201,24 +209,6 @@
       "libro": "necromancia-medianoche",
       "degree": 19,
       "excerpt": "Especie depredadora evolucionada, vulgarmente conocida como vampiros; depredadores naturales del hombre con presencia global."
-    },
-    {
-      "id": "libros/La Mujer Carmesí",
-      "label": "La Mujer Carmesí",
-      "category": "libros",
-      "libro": "mujer-carmesi",
-      "degree": 1,
-      "excerpt": "Continuación anunciada de la saga Crónicas de Sangre y Sombra. El material ampliado de esta ficha se publicará conforme avance el códice."
-    },
-    {
-      "id": "libros/Necromancia a Medianoche",
-      "label": "Necromancia a Medianoche",
-      "category": "libros",
-      "libro": "necromancia-medianoche",
-      "degree": 18,
-      "excerpt": "Novela de fantasía oscura ambientada en Nueva Ámsterdam, 1929. Un detective y una agente federal investigan una cadena de asesinatos con indicios sobrenaturales mientras corporaciones, linajes antiguos y cultos ocultos mueven sus piezas en la sombra.",
-      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual",
-      "imageAlt": "Necromancia a Medianoche"
     },
     {
       "id": "lugares/Atlantic News",
@@ -443,6 +433,24 @@
       "libro": "necromancia-medianoche",
       "degree": 3,
       "excerpt": "Club de jazz clandestino en los subniveles del Centro Histórico; acceso por contraseña semanal bajo una tienda de pianos abandonada. Neutral, con clientela de informantes y seres ambiguos."
+    },
+    {
+      "id": "libros/La Mujer Carmesí",
+      "label": "La Mujer Carmesí",
+      "category": "libros",
+      "libro": "mujer-carmesi",
+      "degree": 1,
+      "excerpt": "Continuación anunciada de la saga Crónicas de Sangre y Sombra. El material ampliado de esta ficha se publicará conforme avance el códice."
+    },
+    {
+      "id": "libros/Necromancia a Medianoche",
+      "label": "Necromancia a Medianoche",
+      "category": "libros",
+      "libro": "necromancia-medianoche",
+      "degree": 18,
+      "excerpt": "Novela de fantasía oscura ambientada en Nueva Ámsterdam, 1929. Un detective y una agente federal investigan una cadena de asesinatos con indicios sobrenaturales mientras corporaciones, linajes antiguos y cultos ocultos mueven sus piezas en la sombra.",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual",
+      "imageAlt": "Necromancia a Medianoche"
     },
     {
       "id": "objetos-conceptos/Criptidae Librum",
@@ -1850,18 +1858,6 @@
       "target": "familias/Rapax Hominum"
     },
     {
-      "source": "libros/Necromancia a Medianoche",
-      "target": "lugares/Nueva Ámsterdam"
-    },
-    {
-      "source": "libros/Necromancia a Medianoche",
-      "target": "personajes/Lucia Sinclair"
-    },
-    {
-      "source": "libros/Necromancia a Medianoche",
-      "target": "personajes/Cassian Thorne"
-    },
-    {
       "source": "lugares/Atlantic News",
       "target": "personajes/Jack Fox"
     },
@@ -2568,6 +2564,18 @@
     {
       "source": "lugares/Velvet Trumpet",
       "target": "lugares/Whispering Keys"
+    },
+    {
+      "source": "libros/Necromancia a Medianoche",
+      "target": "lugares/Nueva Ámsterdam"
+    },
+    {
+      "source": "libros/Necromancia a Medianoche",
+      "target": "personajes/Lucia Sinclair"
+    },
+    {
+      "source": "libros/Necromancia a Medianoche",
+      "target": "personajes/Cassian Thorne"
     },
     {
       "source": "objetos-conceptos/Elemento 121",

@@ -1,7 +1,7 @@
 ---
 title: Greta Zaikov
 description: Francotiradora de las “Águilas del Nido” (Familia Zaikov)
-updated: 2026-05-17
+updated: 2026-05-24
 type: personaje
 saga: crsaso
 libro: necromancia-medianoche
@@ -14,48 +14,117 @@ import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+# Greta Zaikov
+
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Greta Zaikov"
-    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/greta-zaikov', alt: 'Greta Zaikov' }}
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/greta-zaikov',
+      alt: 'Greta Zaikov',
+    }}
     caption="Francotiradora de la Familia Zaikov"
     rows={[
+      { label: 'Alias / Apodos', value: 'Integrante de «Las Águilas» del Nido' },
+      { label: 'Estado actual', value: 'Activa' },
+      { label: 'Edad', value: 'No especificada' },
+      {
+        label: 'Residencia',
+        value: (
+          <>
+            <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>,{' '}
+            <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>
+          </>
+        ),
+      },
+      { label: 'Especie', value: 'Humana' },
       { label: 'Género', value: 'Femenino' },
-      { label: 'Estado', value: 'Activa' },
-      { label: 'Rol', value: 'Francotiradora' },
-      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
-      { label: 'Hermanos', value: <><Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>, <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link></> },
-      { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      {
+        label: 'Familiares clave',
+        value: (
+          <>
+            <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori</Link> (hermanos)
+          </>
+        ),
+      },
+      {
+        label: 'Ocupación',
+        value: 'Tiradora de élite; operativa de la familia Zaikov',
+      },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link>; seguridad de
+            la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">familia McCarthy</Link> (temporal)
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 12
+          </>
+        ),
+      },
     ]}
   />
 )}
 </BrowserOnly>
 
-## Perfil general
+**Greta Zaikov** es una operativa de alto rango dentro de la <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link>, la organización conocida como "Las Águilas" que ejerce el control sobre el distrito de <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> en <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Dentro de su estructura familiar y operativa, Greta se distingue como la especialista en armamento de larga distancia y tiradora de élite, siendo una pieza fundamental en la defensa de los intereses de su linaje.
 
-Fría, letal, analítica. **Greta Zaikov** es la **francotiradora** de las “Águilas del Nido”. Habla poco y deja que su puntería marque el compás de la acción. Mantiene sus armas con una calma casi ritual y prefiere operar desde posiciones elevadas, brindando **cobertura** al resto del equipo.
+A diferencia de otros miembros de su familia, Greta mantiene un perfil bajo y una disciplina rigurosa, factores que le permiten actuar con letalidad en escenarios de alta tensión. Su participación fue decisiva durante la crisis de los *Rapax Hominum* en 1929, donde colaboró con las fuerzas del orden y otros linajes humanos para evitar el cumplimiento de profecías oscuras.
 
-## Rol en _Necromancia a Medianoche_
+## Perfil y Personalidad
 
-- **Caza de Archie en <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>**: detiene la fuga de <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> reventando la llanta del vehículo de un **disparo a distancia**, permitiendo su captura y posterior <Link to="/CrSaSo/eventos/Interrogaci%C3%B3n%20de%20Archie%20Woodward">interrogatorio</Link>.
-- **Defensa de la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>**: desplegada en altura por orden de <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link>, abre fuego con **balas de oro** hacia los puntos débiles que <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> identifica, abatiendo a varios Rapax durante el asalto de los <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>. Más tarde evacúa a Ramses herido.
-- **La batalla en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>**: Junto con su hermano <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link> apoyando con sus precisos disparos.
+Greta es descrita como una mujer de apariencia serena pero intensamente peligrosa. Físicamente, destaca por su cabellera de un rojo encendido, siendo la más pelirroja entre sus hermanos, con un tono más vibrante que el de la agente Lucía Sinclair. Suele llevar el cabello recogido en trenzas para facilitar su movilidad en combate, dejando ocasionalmente mechones libres sobre su frente.
 
-## Habilidades
+Psicológicamente, manifiesta una personalidad estoica y pragmática. Posee una paciencia de artesana, demostrada en el cuidado meticuloso que dedica al mantenimiento de su equipo. Aunque inicialmente se muestra distante y escéptica ante figuras de autoridad externa como los agentes federales, posee un sentido de lealtad familiar inquebrantable y una disposición valiente para enfrentar amenazas que superan la comprensión humana convencional.
 
-- **Tiro de precisión** a larga distancia y control de respiración.
-- **Lectura del entorno** (viento, altura, cobertura, rutas de extracción).
-- **Mantenimiento** y ajuste fino de rifles; cambios rápidos de munición **especial** (oro/plata) según el objetivo.
-- **Comunicación táctica** sobria y eficaz; coordinación por radio con tiradores y equipo terrestre.
+## Habilidades y Equipo
 
-## Véase también
+Greta Zaikov posee capacidades tácticas de nivel superior, especializadas en el apoyo balístico:
+*   **Puntería de Élite:** Es capaz de realizar disparos de precisión extrema incluso contra objetivos en movimiento a gran velocidad o que se desplazan entre sombras.
+*   **Manejo de Armamento Pesado:** Experta en fusiles de cerrojo y rifles de alta potencia.
+*   **Temple de Combate:** Demostró ser capaz de mantener la concentración necesaria para recibir guías místicas externas (vínculos de brujas) y ejecutar bajas confirmadas bajo presión extrema.
 
-- <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>
-- <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>
-- <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>
-- <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Familia Voronin</Link>
+**Equipo notable:**
+*   **Rifle de precisión:** Su arma principal, la cual limpia y calibra con la dedicación de un artesano.
+*   **Munición Especializada:** Durante la batalla en la mansión McCarthy, utilizó balas de oro para neutralizar a los machos de la facción Voronin.
+*   **Uniforme Táctico:** Adoptó un traje de etiqueta modificado para infiltrarse como personal de servicio en eventos de alta sociedad sin perder su capacidad operativa.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Caso del "Cuarto Rojo" y la captura de Archie
+Greta aparece por primera vez en el distrito de <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>, interviniendo en la persecución de <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>. Utilizando su rifle, reventó de un disparo la llanta del vehículo en el que Woodward intentaba escapar, facilitando su captura por parte del detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y la agente <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>. Posteriormente, acogió al equipo de investigación en el lujoso departamento de los Zaikov, donde se encargó de vigilar al prisionero mientras sus hermanos negociaban con las autoridades.
+
+#### El Asedio a la Mansión McCarthy
+Ante la amenaza de los Voronin, Greta fue reclutada como parte del equipo de asalto para proteger a <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>. <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link> la asignó a una posición elevada en la segunda planta de la mansión, proporcionándole una cobertura estratégica de 360 grados sobre el salón principal. Durante la fiesta de cumpleaños de Jessica, Greta fue la primera en identificar el avance de los Voronin a través de su mirilla.
+
+En el clímax del asalto, Greta experimentó una conexión mística con la agente Lucía Cassian Thorne. A través de este enlace, pudo percibir los puntos débiles de los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link> (esferas azules) y procedió a eliminar a nueve atacantes de forma consecutiva con munición dorada. Durante la refriega, fue emboscada por un Voronin que logró subir a su posición y la tomó del cabello, pero fue rescatada por la intervención de su hermano <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori</Link>.
+
+#### La Batalla en la Refinería
+Greta se unió a la misión final en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>. Junto a su hermano <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link>, tomó una posición elevada entre las estructuras industriales para cubrir el avance del equipo de demolición liderado por <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>. Desde su puesto, utilizó su rifle para contener a las oleadas de muertos que se levantaron del petróleo, permitiendo que las cargas explosivas fueron colocadas con éxito. Tras la destrucción del complejo y el sacrificio de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, Greta asistió al funeral del detective en <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> junto al resto de los supervivientes.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Ian%20Zaikov">**Ian**</Link>, <Link to="/CrSaSo/personajes/Ramses%20Zaikov">**Ramses**</Link>, <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">**Ibrahim**</Link> y <Link to="/CrSaSo/personajes/Grigori%20Zaikov">**Grigori**</Link>: Sus hermanos y compañeros de armas. Greta actúa como el soporte defensivo de la unidad familiar, manteniendo una relación de respeto mutuo, especialmente con Ian.
+*   <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucía Sinclair**</Link>: Aunque inicialmente la vio con recelo por su cargo federal, terminaron forjando un vínculo de respeto profesional tras la exitosa sincronización táctica en la mansión.
+*   <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link>: Existe un historial de favores mutuos entre la familia Zaikov y Thorne; Greta lo reconoce como un aliado competente y valora su sacrificio final.
+
+## Curiosidades
+
+*   Greta limpia su rifle con el cuidado que una madre dedica a un hijo.
+*   Fue la responsable del disparo que destruyó el neumático del coche de Lucía Sinclair, evento que los Zaikov compensaron reparando el vehículo posteriormente.
+*   A pesar de su naturaleza letal, es descrita como poseedora de una sonrisa confiada y una calidez que reserva exclusivamente para su familia.

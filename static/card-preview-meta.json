@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-22T01:14:59.083Z",
+  "generatedAt": "2026-05-24T23:34:08.758Z",
   "orbe": {
     "index": {
       "excerpt": "Bienvenido al códice del universo de El Orbe de los Destinos. La documentación detallada de este universo se irá ampliando con el tiempo; mientras tanto puedes explorar $1."
@@ -14,6 +14,9 @@
     },
     "index_c": {
       "excerpt": "Crónicas de Sangre y Sombra es un universo de intrigas góticas, corporaciones energéticas, linajes antiguos y artes ocultas. Aquí conviven familias de alto poder con brujas, Rapax Hominum y periodistas que empujan la verdad a la luz. Este portal reúne su documentación viva: libros publicados, líneas de tiempo, personajes, facciones y lugares clave. > Esta página es la portada de la documentación d"
+    },
+    "libros-portada": {
+      "excerpt": "Esta sección reúne las novelas de Crónicas de Sangre y Sombra: el orden canónico de lectura, las fichas publicadas y el espacio reservado para anotaciones y material auxiliar que se irá ampliando."
     },
     "lugares": {
       "excerpt": "Atlas de ciudades, distritos y enclaves clave de Nueva Ámsterdam y sus fronteras. Cada ficha indica ubicación, tipo de sitio, breve historia, facciones que lo controlan y eventos relevantes, con enlaces a personajes y familias relacionadas. --- Buscador"
@@ -107,40 +110,6 @@
       "filters": {
         "libro": "necromancia-medianoche",
         "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "libros/index": {
-      "excerpt": "Fichas y referencias a las novelas de Crónicas de Sangre y Sombra. - $1 - $1",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "libro",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "libros/La Mujer Carmesí": {
-      "excerpt": "Continuación anunciada de la saga Crónicas de Sangre y Sombra. El material ampliado de esta ficha se publicará conforme avance el códice.",
-      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual",
-      "imageAlt": "La Mujer Carmesí",
-      "filters": {
-        "libro": "mujer-carmesi",
-        "type": "libro",
-        "saga": "crsaso",
-        "aparicion": "mujer-carmesi"
-      },
-      "updated": "2026-05-17"
-    },
-    "libros/Necromancia a Medianoche": {
-      "excerpt": "Novela de fantasía oscura ambientada en Nueva Ámsterdam, 1929. Un detective y una agente federal investigan una cadena de asesinatos con indicios sobrenaturales mientras corporaciones, linajes antiguos y cultos ocultos mueven sus piezas en la sombra.",
-      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual",
-      "imageAlt": "Necromancia a Medianoche",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "libro",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
@@ -289,110 +258,25 @@
       },
       "updated": "2026-05-17"
     },
-    "objetos-conceptos/Criptidae Librum": {
+    "libros/La Mujer Carmesí": {
+      "excerpt": "Continuación anunciada de la saga Crónicas de Sangre y Sombra. El material ampliado de esta ficha se publicará conforme avance el códice.",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual",
+      "imageAlt": "La Mujer Carmesí",
       "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
+        "libro": "mujer-carmesi",
+        "type": "libro",
         "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
+        "aparicion": "mujer-carmesi"
       },
       "updated": "2026-05-17"
     },
-    "objetos-conceptos/Daga de Obsidiana": {
+    "libros/Necromancia a Medianoche": {
+      "excerpt": "Novela de fantasía oscura ambientada en Nueva Ámsterdam, 1929. Un detective y una agente federal investigan una cadena de asesinatos con indicios sobrenaturales mientras corporaciones, linajes antiguos y cultos ocultos mueven sus piezas en la sombra.",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual",
+      "imageAlt": "Necromancia a Medianoche",
       "filters": {
         "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Elemento 121": {
-      "excerpt": "Compuesto alquímico-bioquímico inestable sintetizado en Raven District (Prueba 121); clave en la conspiración de Nueva Ámsterdam.",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Monedas de Latón": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Munición Especial": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Profecía de la Reina de la Oscuridad": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Profecía de los Vinculados": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Recetario de las Brujas": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Reina de la Oscuridad": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Reino de las sombras": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Tomo de los Vinculados": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Vinculo de Sangre": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
+        "type": "libro",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
@@ -726,13 +610,13 @@
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/angelo-tornatore",
       "imageAlt": "Angelo Tornatore",
       "filters": {
-        "libro": "necromancia-medianoche",
+        "libro": "mujer-carmesi",
         "genero": "Masculino",
         "estado": "Activo",
         "raza": "Humano",
         "type": "personaje",
         "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
+        "aparicion": "mujer-carmesi"
       },
       "updated": "2026-05-17"
     },
@@ -1200,14 +1084,120 @@
         "aparicion": "necromancia-medianoche"
       },
       "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Criptidae Librum": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Daga de Obsidiana": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Elemento 121": {
+      "excerpt": "Compuesto alquímico-bioquímico inestable sintetizado en Raven District (Prueba 121); clave en la conspiración de Nueva Ámsterdam.",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Monedas de Latón": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Munición Especial": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Profecía de la Reina de la Oscuridad": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Profecía de los Vinculados": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Recetario de las Brujas": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Reina de la Oscuridad": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Reino de las sombras": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Tomo de los Vinculados": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Vinculo de Sangre": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
     }
   },
   "meridian": {
     "index": {
       "excerpt": "Bienvenido a la wiki de Meridian. Este espacio reúne el contenido canónico del mundo, sus reglas, facciones, razas, clases, criaturas, eventos y campañas. Su propósito es servir como una base de consulta clara y en expansión, tanto para jugadores como para directores de mesa y lectores del proyecto. Meridian es un universo de fantasía, conflicto y aventura, donde distintas especies, reinos, ideolo"
-    },
-    "campañas/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arcos narrativos o mesas de juego del universo Meridian."
     },
     "bestiario/dragones": {
       "excerpt": "Los dragones son criaturas antiguas, colosales y profundamente conectadas con las corrientes mágicas del mundo. Su sola existencia parece desafiar la separación entre bestia y fenómeno natural, pues no son únicamente animales de gran tamaño, sino entidades vivientes cuya fisiología, comportamiento y presencia alteran el entorno que habitan. En todas sus variantes, los dragones destacan por su extr",
@@ -1219,11 +1209,11 @@
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/drakon",
       "imageAlt": "Bestiario"
     },
+    "campañas/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arcos narrativos o mesas de juego del universo Meridian."
+    },
     "facciones/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de grupos, órdenes y bandos del universo Meridian."
-    },
-    "clases/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arquetipos, profesiones o vocaciones del universo Meridian."
     },
     "eventos/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la cronología y sucesos relevantes del universo Meridian."
@@ -1239,8 +1229,8 @@
     "mapa/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación geográfica y cartográfica del universo Meridian."
     },
-    "razas/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de pueblos y linajes del universo Meridian."
+    "clases/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arquetipos, profesiones o vocaciones del universo Meridian."
     },
     "personajes/aquila-milvus": {
       "excerpt": "Guerrero de la Casa Milvus, respetado por su linaje… temido por lo que oculta.",
@@ -1464,6 +1454,9 @@
         "raza": "Elfo"
       },
       "updated": "2026-04-21"
+    },
+    "razas/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de pueblos y linajes del universo Meridian."
     }
   }
 }

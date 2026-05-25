@@ -1,7 +1,7 @@
 ---
 title: Grigori Zaikov
 description: “Tanque” de las Águilas del Nido; fuerza de choque de la Familia Zaikov
-updated: 2026-05-17
+updated: 2026-05-24
 type: personaje
 saga: crsaso
 libro: necromancia-medianoche
@@ -14,52 +14,116 @@ import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+# Grigori Zaikov
+
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
-    title="Grigori Zaikov"
-    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/grigori-zaikov', alt: 'Grigori Zaikov' }}
+    title="Grigori"
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/grigori-zaikov',
+      alt: 'Grigori Zaikov',
+    }}
     caption="Fuerza de choque de la Familia Zaikov"
     rows={[
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Edad', value: 'No especificada' },
+      {
+        label: 'Residencia',
+        value: (
+          <>
+            <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>,{' '}
+            <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>
+          </>
+        ),
+      },
+      { label: 'Especie', value: 'Humano' },
       { label: 'Género', value: 'Masculino' },
-      { label: 'Estado', value: 'Activo' },
-      { label: 'Rol', value: 'Fuerza de choque; refuerzo táctico' },
-      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
-      { label: 'Hermanos', value: <><Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>, <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>, <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link></> },
-      { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
-      { label: 'Estilo de combate', value: 'Cuerpo a cuerpo; agarres, empuje y resistencia; tácticas antillanza' },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      {
+        label: 'Familiares clave',
+        value: (
+          <>
+            <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses</Link> e{' '}
+            <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim</Link> (hermanos);{' '}
+            <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta</Link> (hermana); Milenna Zaikov y
+            Mohammed Ozturk (padres, fallecidos); <Link to="/CrSaSo/personajes/Irene%20Zaikov">Irene</Link>.
+          </>
+        ),
+      },
+      {
+        label: 'Ocupación',
+        value: 'Operativo de la familia Zaikov; refuerzo táctico',
+      },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link> («Las Águilas»);
+            seguridad de la{' '}
+            <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">familia McCarthy</Link> (temporal)
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 13
+          </>
+        ),
+      },
     ]}
   />
 )}
 </BrowserOnly>
 
-## Perfil general
+**Grigori** es un miembro destacado de la <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link>, la organización criminal de origen multiétnico conocida como "Las Águilas" que controla el distrito de <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> en <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Se desempeña principalmente como la fuerza de choque y refuerzo pesado del clan debido a su imponente físico y capacidades de combate cuerpo a cuerpo.
 
-**Grigori Zaikov** es el “tanque” de las Águilas del Nido: músculo, aguante y disciplina al servicio de la <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link>. De temperamento parco y humor seco, prefiere que hablen los resultados. Su presencia impone, pero su trato con los suyos es leal y afable.
+Su participación fue fundamental durante la crisis de 1929 contra la facción Rapax de los Voronin, actuando como protector de sus hermanos y aliado estratégico de los detectives <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> en la defensa de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>.
 
-## Rol en _Necromancia a Medianoche_
+## Perfil y Personalidad
 
-- **Asignación como refuerzo táctico:** en la planificación es designado como **fuerza decisiva** para choque directo.
-- **Asalto a la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>:** durante el ataque de la <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Familia Voronin</Link> combate cuerpo a cuerpo y emplea **tácticas antillanza** (aceitado de piel para desviar impactos), manteniendo al líder enemigo entretenido mientras el resto protege a los aliados.
-- **Resistencia bajo fuego:** tras recibir un golpe que lo proyecta por el aire, logra **reportar la situación** y continuar la operación con el grupo.
+Grigori es descrito como un gigante de más de dos metros de altura, poseedor de una musculatura tan pronunciada que parece estar a punto de estallar bajo su ropa. Sus brazos están cubiertos de tatuajes y son comparados con piedra tallada. Posee una voz profunda y rasposa, acompañada de un marcado acento extranjero que otorga gravedad a sus palabras.
 
-## Habilidades
+Psicológicamente, Grigori manifiesta un pragmatismo inquietante y una naturaleza observadora. Al conocer a la agente <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>, realizó un análisis desapasionado de su genética, destacando sus rasgos atléticos y sugiriendo que sus hijos serían hermosos. A pesar de su apariencia intimidante, demuestra una lealtad absoluta hacia su familia y una calma metódica durante el combate.
 
-- **Fuerza y resistencia** superiores; control del centro de masa en empujes y bloqueos.
-- **Combate cercano**: agarres, proyecciones y uso de cobertura improvisada.
-- **Tácticas defensivas** específicas contra armas largas (lanza, pica) y ataques de embestida.
+## Habilidades y Equipo
 
-## Rasgos
+Grigori destaca por su fuerza física bruta y su resistencia en el combate directo contra seres sobrenaturales.
 
-- Imponente y musculoso; economía de palabras.
-- Camaradería marcada con sus hermanos <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta</Link>, <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link> y <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses</Link>.
+*   **Combate Cuerpo a Cuerpo:** Es capaz de enfrentar a miembros de la facción Voronin y resistir ataques que serían letales para otros humanos.
+*   **Tácticas de Supervivencia:** Durante la batalla en la mansión McCarthy, utilizó aceite sobre su cuerpo para que las estocadas de la lanza de Rezniv Voronin resbalaran al contacto, demostrando astucia en situaciones críticas.
+*   **Conocimiento del Folclore:** Posee conocimientos sobre criaturas míticas, sugiriendo en una ocasión que el asesino de Crystal Square podría ser una "Lamia" del folclore búlgaro.
 
-## Véase también
+**Equipo:** 
+*   **Armamento:** En la operación final, fue equipado con armas de alta potencia y explosivos provenientes del búnker personal de <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>.
+*   **Uniforme:** Adoptó el traje de etiqueta de seguridad diseñado por <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link> para operar de incógnito durante la fiesta de los McCarthy.
 
-- <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link>
-- <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>
-- <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Familia Voronin</Link>
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Encuentro en el Nido
+Grigori aparece tras la captura de <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> por parte de sus hermanos e interviene en la cena de hospitalidad ofrecida a los detectives <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>. Durante la velada, participa en el debate sobre la naturaleza del asesino de los Chapman, proponiendo la teoría de la Lamia, una criatura que devora corazones de jóvenes.
+
+#### El Asedio a la Mansión McCarthy
+Cuando la familia Zaikov es reclutada para proteger a <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, Grigori es asignado como refuerzo estratégico. Durante el asalto de los Voronin, Grigori rescata a su hermana <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta</Link> al embestir con la fuerza de un toro a un atacante que la sostenía por el cabello, lanzándose con él hacia la planta baja. En el clímax de la batalla, se enfrenta directamente al líder <Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv Voronin</Link>, el cuál no tuvo piedad. Grigori fue blanco de un ataque brutal por parte del líder de los Voronin, quien lo lanzó por los aires. El impacto fue de tal magnitud que Grigori terminó con heridas internas severas, siendo visto por última vez en la mansión tosiendo sangre y con dificultades para ponerse de pie.
+
+#### Aftermath del asedio
+Debido a la gravedad de sus contusiones y al estado crítico de sus otros hermanos (Ibrahim con una costilla rota y Ramses con heridas en las piernas y boca), Grigori no participó en el asalto final a la Refinería McCarthy. Mientras Ian y Greta partían con el equipo de demolición de <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>, Grigori se quedó bajo el cuidado de los paramédicos en los jardines de la mansión. Seis meses después de los eventos, se confirma su supervivencia, ya que asistió al funeral de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> en <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> junto al resto de su linaje.
+
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Ian%20Zaikov">**Ian**</Link> y <Link to="/CrSaSo/personajes/Ramses%20Zaikov">**Ramses**</Link>: Sus hermanos y líderes operativos; Grigori actúa bajo sus directrices pero con autonomía en combate.
+*   <Link to="/CrSaSo/personajes/Greta%20Zaikov">**Greta**</Link>: Su hermana menor; Grigori demostró un instinto protector feroz al salvarla de los Voronin.
+*   <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Ibrahim Zaikov**</Link>: Hermano de Grigori y figura de autoridad moral y espiritual dentro del clan de "Las Águilas".
+## Curiosidades
+
+*   Grigori tiene la costumbre de analizar la simetría facial y la complexión atlética de las personas que conoce bajo una lente biológica.
+*   Es capaz de dormir profundamente incluso en medio de la tensión previa a una batalla.
+*   Su piel y musculatura son descritas consistentemente como poseedoras de la dureza de la piedra.

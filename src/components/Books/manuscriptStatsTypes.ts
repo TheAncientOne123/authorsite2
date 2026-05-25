@@ -5,6 +5,20 @@ export type CharacterTotal = {
   share_percent: number;
 };
 
+export type VocabularyTerm = {
+  word: string;
+  count: number;
+  chapters?: number;
+};
+
+export type ChapterVocabulary = {
+  index: number;
+  title: string;
+  unique_words: number;
+  lexical_richness_ttr: number;
+  top_terms: {word: string; count: number}[];
+};
+
 export type ManuscriptStats = {
   title: string;
   analyzed_at: string;
@@ -42,7 +56,13 @@ export type ManuscriptStats = {
       index: number;
       title: string;
       mentions: Record<string, {label: string; count: number}>;
+      characters_present?: string[];
     }[];
   };
-  top_words: {word: string; count: number}[];
+  vocabulary?: {
+    unique_words: number;
+    hapax_legomena: number;
+    frequent_terms: VocabularyTerm[];
+    by_chapter: ChapterVocabulary[];
+  };
 };

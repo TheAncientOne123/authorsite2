@@ -27,7 +27,7 @@ Por defecto en `scripts/manuscript-analysis/output/`:
 
 | Archivo | Contenido |
 |---------|-----------|
-| `stats.json` | Métricas globales, por capítulo y menciones de personajes |
+| `stats.json` | Métricas globales, por capítulo, menciones de personajes y vocabulario |
 | `charts/character_mentions_pie.png` | Pastel de menciones totales |
 | `charts/chapter_word_counts.png` | Palabras por capítulo detectado |
 | `charts/character_by_chapter.png` | Mapa de calor personaje × capítulo |
@@ -49,10 +49,9 @@ Edita [`config/necromancia-medianoche.json`](config/necromancia-medianoche.json)
 
 - **`parts`** (recomendado): lista de `{ "title", "page_start", "page_end" }` con **números de página del PDF (1-based, inclusive)**. Úsalo cuando los títulos de parte son imágenes y no salen en el texto extraído.
 - **`chapter_patterns`**: expresiones regulares de respaldo si no defines `parts`.
-- **`characters`**: lista con `id`, `label` y `aliases` (variantes del nombre en el texto).
-
-Los alias cortos (`Cassian`, `Lucia`) pueden inflar el conteo si aparecen solos con otro sentido; ajusta la lista según tu manuscrito.
-
+- **`characters`**: lista con `id`, `label` y `aliases` (variantes del nombre en el texto). Los alias cortos (`Cassian`, `Lucia`) pueden inflar el conteo si aparecen solos con otro sentido; ajusta la lista según tu manuscrito.
+- **`exclude_terms`**: términos a omitir del análisis de vocabulario (nombres propios recurrentes, títulos, etc.).
+- **`trim_sparse_pages`** (default `true`): omite páginas casi vacías al inicio/fin de cada parte (portadas, blanks).
 ## Limitaciones del PDF
 
 - El texto depende de cómo esté maquetado el PDF (escaneado vs digital). PDFs escaneados sin capa de texto necesitan OCR (no incluido).

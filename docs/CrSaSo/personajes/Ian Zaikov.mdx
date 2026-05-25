@@ -1,7 +1,7 @@
 ---
 title: Ian Zaikov
 description: Especialista en cuchillos; punta de lanza de las Águilas del Nido (Familia Zaikov)
-updated: 2026-05-17
+updated: 2026-05-24
 type: personaje
 saga: crsaso
 libro: necromancia-medianoche
@@ -14,49 +14,120 @@ import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+# Ian Zaikov
+
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Ian Zaikov"
-    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ian-zaikov', alt: 'Ian Zaikov' }}
-    caption="Especialista en cuchillos de la Familia Zaikov"
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ian-zaikov',
+      alt: 'Ian Zaikov',
+    }}
+    caption="Líder operativo de la Familia Zaikov"
     rows={[
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Edad', value: 'Adultez (cabello con canas en las sienes)' },
+      {
+        label: 'Residencia',
+        value: (
+          <>
+            <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>,{' '}
+            <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>
+          </>
+        ),
+      },
+      { label: 'Especie', value: 'Humano' },
       { label: 'Género', value: 'Masculino' },
-      { label: 'Estado', value: 'Activo' },
-      { label: 'Rol', value: 'Asalto/abordaje; especialista en cuchillos' },
-      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
-      { label: 'Hermanos', value: <><Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>, <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link>, <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori Zaikov</Link></> },
-      { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
-      { label: 'Armas preferidas', value: 'Cuchillos dobles (tipo carnicero)' },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      {
+        label: 'Familiares clave',
+        value: (
+          <>
+            Mohammed Ozturk y Milenna Zaikov (padres, fallecidos);{' '}
+            <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori</Link> (hermanos);{' '}
+            <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta</Link> (hermana);{' '}
+            <Link to="/CrSaSo/personajes/Irene%20Zaikov">Irene</Link> (hermana, desaparecida)
+          </>
+        ),
+      },
+      {
+        label: 'Ocupación',
+        value: 'Líder operativo de la familia Zaikov',
+      },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link> («Las Águilas»)
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 12
+          </>
+        ),
+      },
     ]}
   />
 )}
 </BrowserOnly>
+**Ian Zaikov** es una figura prominente del bajo mundo de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>, actuando como uno de los líderes de la <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link>, organización conocida como "Las Águilas" que ejerce el control territorial del distrito de <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>. Tras una infancia marcada por la violencia de las mafias rusas y el abandono familiar, Ian consolidó el poder de su linaje junto a sus hermanos, estableciendo una relación de respeto mutuo y favores con el Departamento de Policía, específicamente con el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>.
 
-## Perfil general
+Su papel en la crisis de 1929 fue fundamental al proporcionar recursos tácticos y apoyo de combate durante el asedio a la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link> y el posterior asalto a la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link> para detener el despertar de la <Link to="/CrSaSo/familias/Reina%20de%20la%20Oscuridad">Reina de la Oscuridad</Link>.
 
-Impulsivo, valiente y resolutivo, **Ian Zaikov** encarna la **punta de lanza** de las Águilas del Nido. Su estilo directo lo lleva a ofrecerse el primero cuando la causa lo merece y a abrir camino en combate cercano, siempre coordinado con sus hermanos.
+## Perfil y Personalidad
 
-## Rol en _Necromancia a Medianoche_
+Ian es descrito físicamente como un hombre de presencia imponente, ligeramente más alto que Cassian Thorne. Destaca por su cabello castaño rojizo con canas en las sienes y una barba tipo candado arreglada con precisión. El rasgo más distintivo de su rostro son sus ojos verdes, los cuales proyectan una "locura controlada" y una autoridad innata. Suele vestir de manera informal pero pulcra, utilizando camisas blancas con las mangas arremangadas y tirantes.
 
-- **Compromiso inmediato:** en la primera reunión con los Zaikov, **clava un cuchillo en la mesa** y afirma: “Me apunto”, sellando el apoyo del clan a la causa de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link>.
-- **Organización de refuerzos:** moviliza voluntarios y coordina la salida hacia la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link> junto a aliados como <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> y <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>.
-- **Asalto y protección:** durante el clímax, forma **escudo** con aliados para proteger a <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia</Link>; en combate, sus **cuchillos dobles** resultan decisivos.
-- **Propuesta táctica final:** impulsa la solución extrema de **volar la refinería** para detener a la Reina.
+Psicológicamente, Ian es carismático, audaz y profundamente leal a sus hermanos. Posee una naturaleza hospitalaria, incluso con sus prisioneros, pero es capaz de una violencia extrema y una frialdad absoluta cuando se trata de proteger su territorio o a sus aliados. Muestra un interés coqueto y directo hacia la agente <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>, tratándola con una cordialidad que mezcla el respeto profesional con el desafío personal.
 
-## Habilidades
+## Habilidades y Equipo
 
-- **Combate cercano** con cuchillos (presa, cortes, desarmes), rapidez y contundencia.
-- **Liderazgo situacional**: recluta, motiva y coordina movimientos en momentos críticos.
-- **Disciplina operativa**: tras el combate, limpia y resguarda sus cuchillos con método.
+Como operativo de alto rango en una organización criminal de élite, Ian posee capacidades físicas y tácticas avanzadas:
+*   **Combate con Armas Blancas:** Es un maestro en el manejo de cuchillos, destacando el uso de dos cuchillos de carnicero en situaciones de combate cerrado con los que muestra una precisión letal.
+*   **Liderazgo y Negociación:** Posee la habilidad de coordinar a sus hermanos y negociar acuerdos estratégicos con otras facciones, como la seguridad de McCarthy Petroleum.
+*   **Manejo de Armamento:** Además de sus cuchillos, está entrenado en el uso de armas de fuego de alta potencia y explosivos.
 
-## Véase también
+**Equipo notable:**
+*   **Cuchillos de carnicero:** Sus armas predilectas para el combate cuerpo a cuerpo.
+*   **Traje de etiqueta modificado:** Utilizado como uniforme de seguridad durante la fiesta de los McCarthy para ocultar su armamento.
 
-- <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>
-- <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>
-- <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">La Refinería McCarthy</Link>
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### Orígenes y Tragedia Familiar
+Ian es hijo de Mohammed Ozturk y Milenna Zaikov, sobrevivientes de la Batalla de Galípoli que emigraron a Nueva Ámsterdam. Su infancia terminó cuando una mafia rusa asesinó a sus padres en <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>. Posteriormente, su hermana <Link to="/CrSaSo/personajes/Irene%20Zaikov">Irene</Link> los abandonó para huir con un millonario austríaco, un evento que marcó profundamente a Ian y a sus hermanos, generando un resentimiento persistente hacia ella. Junto a <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, los Zaikov lograron localizar a los asesinos de sus padres, lo que cimentó su alianza con el detective.
+
+#### El Caso del Cuarto Rojo y el Encuentro en el Nido
+Ian interviene tras la captura de <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>, recibiendo a <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y a la agente <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> en su lujoso departamento. A pesar de la tensión inicial por la presencia de una agente federal, Ian ofrece hospitalidad y accede a que Archie colabore con la investigación bajo amenaza de destruir su local si miente. Durante la cena, Ian participa activamente en el análisis de las teorías sobre el asesino de <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>, mostrando curiosidad por lo sobrenatural.
+
+#### La Defensa de la Mansión McCarthy
+Ante la amenaza del <Link to="/CrSaSo/familias/La%20Familia%20Voronin">clan Voronin</Link>, Ian negocia un contrato con <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link> para proporcionar seguridad a <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, ofreciendo sus habilidades . Durante la fiesta de cumpleaños de Jessica, Ian se infiltra como parte del personal de servicio. Cuando estalla el ataque, lucha en la planta baja, utilizando sus cuchillos para neutralizar a los Voronin mientras Lucia revela los puntos débiles de los atacantes. Tras la muerte de <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>, Ian ayuda a reagrupar a los defensores.
+
+#### La Batalla en la Refinería
+Ian es uno de los pocos miembros de su familia, junto a su hermana Greta, que decide marchar hacia la Refinería McCarthy para el enfrentamiento final. Participa en el asalto terrestre, protegiendo al equipo de demolición de <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> contra el ejército de muertos levantado por la Reina de la Oscuridad. Sobrevive a la explosión del complejo y, seis meses después, asiste al funeral de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> en <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link>: Aliado de larga data; Ian siente un respeto fraternal por él debido a su historia compartida y la ayuda de Thorne para vengar a sus padres.
+*   <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucía Sinclair**</Link>: Mantiene una dinámica de flirteo y respeto profesional; Ian le ofrece ayuda incondicional de parte de los Zaikov.
+*   <Link to="/CrSaSo/personajes/Ramses%20Zaikov">**Ramses**</Link>: Su hermano y estratega; Ian respeta su autoridad pero a menudo toma la iniciativa en el campo.
+*   <Link to="/CrSaSo/personajes/Greta%20Zaikov">**Greta**</Link>: Su hermana y compañera de armas en la misión final de la refinería.
+*   <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">**Ibrahim**</Link>: Su hermano mayor y guía moral; Ian acude a él en busca de consejo antes de decidir ir a la batalla final.
+*   <Link to="/CrSaSo/personajes/Grigori%20Zaikov">**Grigori**</Link>: Su hermano y compañero de armas en cualquier situación.
+
+## Curiosidades
+
+*   Ian ganó una apuesta de cinco dólares a su hermano Ramses cuando este último admitió que Lucia Sinclair era "federal".
+*   En la escala de pelirrojos de la familia, Ian es el menos rojizo, seguido de Lucia Sinclair y finalmente Greta, quien posee el tono más intenso.
+*   A pesar de su estatus criminal, Ian insiste en realizar un rezo islámico antes de las comidas familiares.
+*   Se burló de Archie Woodward llamándolo "viudo" cuando este vio a la Reina de la Oscuridad absorber el alma de un Voronin.

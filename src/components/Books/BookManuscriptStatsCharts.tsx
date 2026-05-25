@@ -203,7 +203,28 @@ export default function BookManuscriptStatsCharts() {
     [reliable],
   );
 
-  const heatmapChars = useMemo(() => topCharacters.slice(0, 8), [topCharacters]);
+  const heatmapChars = useMemo(() => {
+    const byId = new Map(topCharacters.map((c) => [c.id, c]));
+    const presentIds = new Set<string>();
+    for (const ch of stats.characters.by_chapter) {
+      for (const id of ch.characters_present ?? []) {
+        presentIds.add(id);
+      }
+      if (!ch.characters_present) {
+        for (const [id, mention] of Object.entries(ch.mentions)) {
+          if (mention.count > 0) presentIds.add(id);
+        }
+      }
+    }
+    const base = topCharacters.slice(0, 8);
+    const baseIds = new Set(base.map((c) => c.id));
+    const extras = [...presentIds]
+      .filter((id) => !baseIds.has(id))
+      .map((id) => byId.get(id))
+      .filter((c): c is (typeof topCharacters)[number] => !!c)
+      .slice(0, 4);
+    return [...base, ...extras].slice(0, 12);
+  }, [topCharacters]);
 
   const chapterMeta = useMemo(
     () => new Map(stats.chapters.map((c) => [c.index, c])),
@@ -328,6 +349,10 @@ export default function BookManuscriptStatsCharts() {
               ? 'Menciones por parte (personajes principales)'
               : 'Menciones por sección (personajes principales)'}
           </figcaption>
+          <p className={styles.chartHint}>
+            Incluye personajes con presencia en cualquier parte, no solo los más citados
+            globalmente. Las partes sin barras no contienen menciones nominales detectadas.
+          </p>
           <ResponsiveContainer width="100%" height={mentionsChartHeight}>
             <BarChart data={mentionsBySectionData} margin={{top: 8, right: 8, left: 0, bottom: 8}}>
               <CartesianGrid strokeDasharray="3 3" stroke={chartTheme.grid} />
