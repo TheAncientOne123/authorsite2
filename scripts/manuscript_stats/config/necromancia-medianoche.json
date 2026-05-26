@@ -1,61 +1,66 @@
 {
   "title": "Necromancia a Medianoche",
   "lang": "es",
+  "manuscript_pdf_pages": {
+    "start": 7,
+    "end": 465
+  },
+  "trim_sparse_pages": false,
   "parts": [
     {
       "title": "Prólogo",
-      "page_start": 1,
-      "page_end": 4
+      "page_start": 7,
+      "page_end": 10
     },
     {
       "title": "Primera Parte — Cassian Thorne",
-      "page_start": 5,
-      "page_end": 63
+      "page_start": 11,
+      "page_end": 69
     },
     {
       "title": "Segunda Parte — Archie Woodward",
-      "page_start": 64,
-      "page_end": 115
+      "page_start": 70,
+      "page_end": 121
     },
     {
       "title": "Tercera Parte — El Castillo de Nueva Ámsterdam",
-      "page_start": 116,
-      "page_end": 169
+      "page_start": 122,
+      "page_end": 175
     },
     {
       "title": "Cuarta Parte — Receso de 15 minutos para el café",
-      "page_start": 170,
-      "page_end": 212
+      "page_start": 176,
+      "page_end": 218
     },
     {
       "title": "Quinta Parte — Infiltración Católica",
-      "page_start": 213,
-      "page_end": 261
+      "page_start": 219,
+      "page_end": 267
     },
     {
       "title": "Sexta Parte — Caso Resuelto",
-      "page_start": 262,
-      "page_end": 314
+      "page_start": 268,
+      "page_end": 320
     },
     {
       "title": "Séptima Parte — El Balneario Rushmore",
-      "page_start": 315,
-      "page_end": 360
+      "page_start": 321,
+      "page_end": 366
     },
     {
       "title": "Octava Parte — La Mansión McCarthy",
-      "page_start": 361,
-      "page_end": 410
+      "page_start": 367,
+      "page_end": 416
     },
     {
       "title": "Novena Parte — Necromancia a Medianoche",
-      "page_start": 411,
-      "page_end": 451
+      "page_start": 417,
+      "page_end": 457
     },
     {
       "title": "Epílogo",
-      "page_start": 452,
-      "page_end": 458
+      "page_start": 458,
+      "page_end": 465
     }
   ],
   "chapter_patterns": [

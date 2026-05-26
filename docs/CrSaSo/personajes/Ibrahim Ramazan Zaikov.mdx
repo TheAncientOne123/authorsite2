@@ -6,7 +6,7 @@ type: personaje
 saga: crsaso
 libro: necromancia-medianoche
 genero: Masculino
-estado: Activo (lesionado durante la defensa de la mansión)
+estado: Activo
 raza: Humano
 ---
 
@@ -14,48 +14,120 @@ import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+# Ibrahim Ramazan Zaikov
+
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Ibrahim Ramazan Zaikov"
-    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ibrahim-ramazan-zaikov', alt: 'Ibrahim Ramazan Zaikov' }}
-    caption="Consejero y mayor de la Familia Zaikov"
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ibrahim-ramazan-zaikov',
+      alt: 'Ibrahim Ramazan Zaikov',
+    }}
+    caption="Guía moral de la Familia Zaikov"
     rows={[
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Edad', value: 'Adultez (figura de autoridad mayor)' },
+      {
+        label: 'Residencia',
+        value: (
+          <>
+            <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>,{' '}
+            <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>
+          </>
+        ),
+      },
+      { label: 'Especie', value: 'Humano' },
       { label: 'Género', value: 'Masculino' },
-      { label: 'Estado', value: 'Activo (lesionado durante la defensa de la mansión)' },
-      { label: 'Rol', value: 'Consejero; infiltración/mezcla; escudo en combate' },
-      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
-      { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
-      { label: 'Rasgos distintivos', value: 'Turbante; barba negra densa; talante sereno' },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      {
+        label: 'Familiares clave',
+        value: (
+          <>
+            Mohammed Ozturk (padre, fallecido); Milenna Zaikov (madre, fallecida);{' '}
+            <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori</Link> (hermanos);{' '}
+            <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta</Link> (hermana);{' '}
+            <Link to="/CrSaSo/personajes/Irene%20Zaikov">Irene</Link> (hermana)
+          </>
+        ),
+      },
+      {
+        label: 'Ocupación',
+        value: 'Operativo de alto rango de la familia Zaikov; guía moral del clan',
+      },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link> («Las Águilas»)
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 13
+          </>
+        ),
+      },
     ]}
   />
 )}
 </BrowserOnly>
 
-## Perfil general
+**Ibrahim Ramazan Zaikov** es un miembro fundamental de la familia Zaikov, la organización multiétnica conocida como "Las Águilas" que ejerce el control territorial sobre el distrito de El Nido en Nueva Ámsterdam. Actúa como la figura de autoridad moral y espiritual del clan, siendo el hermano mayor que aporta serenidad y sabiduría en la toma de decisiones estratégicas.
 
-Místico, compasivo e introspectivo, **Ibrahim Ramazan Zaikov** es el **corazón** del clan Zaikov. Más que un operador de campo, actúa como **guía espiritual** y consejero práctico de las <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Águilas del Nido</Link>. Su porte —turbante imponente y barba negra— y su trato sereno inspiran respeto en <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>.
+Su rol fue significativo durante la crisis de los *Rapax Hominum* en 1929, donde, a pesar de sufrir heridas graves, brindó apoyo logístico y consejo a sus hermanos y a los Vinculados para enfrentar la amenaza del clan Voronin.
 
-## Rol en _Necromancia a Medianoche_
+## Perfil y Personalidad
 
-- **Planificación táctica en la mansión:** <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link> lo propone, junto con <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link>, para **mezclarse entre la multitud** durante la operación; <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta</Link> queda a tiro elevado y <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori</Link> como refuerzo.
-- **Anfitrión y mediador:** encabeza la **oración** en la mesa con <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia</Link>, y sostiene el tono cooperativo entre facciones.
-- **Apoyo logístico:** facilita **vehículo** a los protagonistas tras los sucesos en <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>.
-- **Defensa y resistencia:** durante el clímax, forma **escudo** alrededor de Cassian y Lucia en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>; pese a una **costilla rota**, continúa coordinando y preguntando “¿cómo procedemos?”.
+Físicamente, Ibrahim es un hombre de presencia imponente y semblante meditativo. Sus rasgos más característicos son el uso de un **imponente turbante** y una **densa barba negra** que proyecta una imagen de sabiduría ancestral. Sus ojos cafés reflejan una calma imperturbable, incluso en entornos cargados de violencia.
 
-## Rasgos y carácter
+Psicológicamente, manifiesta una personalidad estoica y espiritual. Es el encargado de dirigir los ritos religiosos familiares, como el rezo antes de las comidas, demostrando una profunda devoción que equilibra la naturaleza criminal de las actividades del clan. Posee un sentido del humor seco y es un analista perspicaz de la conducta humana, capaz de detectar las debilidades y motivaciones de quienes lo rodean.
 
-- **Religioso sin dogmatismo**: abre y cierra reuniones con palabras de calma y propósito.
-- **Liderazgo sereno**: escucha primero, decide después; frena impulsos de los suyos sin quebrar la moral.
-- **Presencia simbólica**: su imagen —turbante, barba, voz grave— funciona como ancla emocional del grupo.
+## Habilidades y Equipo
 
-## Véase también
+Ibrahim combina capacidades de liderazgo con un conocimiento profundo de las dinámicas sociales de Nueva Ámsterdam:
+*   **Autoridad Moral:** Como hermano mayor, su palabra tiene un peso decisivo en las acciones tácticas de Ian y Ramses.
+*   **Gestión Logística:** Es responsable de recursos clave del clan, llegando a prestar vehículos personales a las autoridades para facilitar investigaciones.
+*   **Conocimiento del Ocultismo:** Posee un vasto conocimiento sobre críptidos y leyendas, teorizando sobre criaturas como el **Wendigo** para explicar fenómenos inexplicables.
+*   **Combate:** Aunque prefiere la diplomacia y el consejo, está entrenado en el uso de armamento y tácticas de defensa de territorio.
 
-- <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori Zaikov</Link>
-- <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link>
-- <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>
-- <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">La Refinería McCarthy</Link>
+**Equipo notable:**
+*   **Turbante:** Prenda distintiva de su identidad y estatus dentro de la familia.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Encuentro en el Nido
+Ibrahim aparece por primera vez recibiendo a Cassian Thorne y Lucía Sinclair en el lujoso departamento de los Zaikov. Durante la cena, actuó como el anfitrión espiritual, obligando a todos los presentes (incluidos los detectives y el prisionero Archie Woodward) a tomarse de las manos para realizar un rezo en nombre de Al-lah. En este encuentro, mostró curiosidad por los casos "extraños" de Lucía y propuso que el asesino de Crystal Square podría ser un Wendigo, una criatura de los bosques.
+
+#### El Asedio a la Mansión McCarthy
+Al estallar el conflicto con los Voronin, Ibrahim formó parte del equipo de seguridad contratado por Jayson Branch. Durante la batalla masiva en el salón de la mansión, Ibrahim luchó cuerpo a cuerpo para proteger a los invitados y los intereses de su familia. En el transcurso de la refriega, **sufrió la fractura de una costilla**, una lesión que lo obligó a ser atendido por paramédicos en el jardín tras la victoria inicial.
+
+#### Resolución del Conflicto
+Debido a la gravedad de su herida, Ibrahim no pudo participar en el asalto terrestre final a la Refinería McCarthy. Permaneció en la mansión recuperándose, pero antes de la partida de sus hermanos, mantuvo una conversación crucial con Ian, dándole su bendición para que este último marchara hacia la batalla final en busca de honor y no solo por intereses románticos. Seis meses después, se confirma su recuperación total, asistiendo al funeral de Cassian Thorne junto al resto de su linaje.
+
+## Relaciones Clave
+
+* <Link to="/CrSaSo/personajes/Ian%20Zaikov">**Ian**</Link>: Su hermano menor. Ibrahim actúa como su mentor y su principal freno emocional cuando la impulsividad de Ian amenaza con desbordarse.
+
+* <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link>: Entre ambos existe un respeto mutuo nacido de favores pasados. Ibrahim reconoce en Thorne a un hombre de honor, incluso a pesar de su placa policial.
+
+* <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucía Sinclair**</Link>: Mostró hacia ella una fascinación cortés, tratándola con la hospitalidad y el refinamiento propios de su cultura.
+
+* <Link to="/CrSaSo/personajes/Ramses%20Zaikov">**Ramses**</Link>: Su hermano menor. Junto con Ian, respeta profundamente la autoridad de Ibrahim, quien funge como mentor y figura de guía para ambos.
+
+* <Link to="/CrSaSo/personajes/Greta%20Zaikov">**Greta**</Link>: Su consentida y hermana menor. Ibrahim suele prepararle su platillo favorito: *Tikveni*, también conocido como *Banitsa* dulce.
+
+* <Link to="/CrSaSo/personajes/Grigori%20Zaikov">**Grigori**</Link>: Su hermano menor y grandulón. Es aquel con quien mantiene la relación más cercana entre todos sus hermanos. Es con él con quien más conversa y comparte confidencias.
+## Curiosidades
+
+*   Tiene el hábito de beber vino solo en situaciones de extrema tensión o para aliviar el dolor físico, como se vio tras sufrir su fractura.
+*   Su bendición antes de las comidas comienza siempre con la frase: "En el nombre de Al-lah y con las bendiciones de Al-lah".

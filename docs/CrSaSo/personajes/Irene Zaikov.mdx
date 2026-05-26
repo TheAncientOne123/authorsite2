@@ -14,48 +14,125 @@ import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+# Irene Zaikov
+
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Irene Zaikov"
-    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/irene-zaikov', alt: 'Irene Zaikov' }}
-    caption="Rama Ozturk–Zaikov; exesposa de Cassian Thorne"
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/irene-zaikov',
+      alt: 'Irene Zaikov',
+    }}
+    caption="Exesposa de Cassian Thorne"
     rows={[
+      {
+        label: 'Alias / Apodos',
+        value: (
+          <>
+            La exesposa de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Thorne</Link>
+          </>
+        ),
+      },
+      {
+        label: 'Estado actual',
+        value: 'Activa',
+      },
+      { label: 'Edad', value: 'Adulta (casada durante 3 años con Thorne)' },
+      {
+        label: 'Residencia',
+        value: (
+          <>
+            Desconocida (posiblemente Canadá o Europa); anteriormente{' '}
+            <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>,{' '}
+            <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>
+          </>
+        ),
+      },
+      { label: 'Especie', value: 'Humana' },
       { label: 'Género', value: 'Femenino' },
-      { label: 'Estado', value: 'Activa (paradero desconocido)' },
-      { label: 'Nombre legal', value: 'Irene Ozturk–Zaikov' },
-      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link> },
-      { label: 'Padres', value: 'Mohammed Ozturk y Milenna Zaikov' },
-      { label: 'Relación previa', value: <>Exesposa de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link></> },
-      { label: 'Residencia', value: <>Anterior: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>; Actual: Desconocida</> },
+      {
+        label: 'Familiares clave',
+        value: (
+          <>
+            Mohammed Ozturk (padre, fallecido); Milenna Zaikov (madre, fallecida);{' '}
+            <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori</Link> (hermanos);{' '}
+            <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta</Link> (hermana)
+          </>
+        ),
+      },
       { label: 'Ocupación', value: 'Mesera (anteriormente)' },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link> (por nacimiento)
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>{' '}
+            (mencionada, cap. 1)
+          </>
+        ),
+      },
     ]}
   />
 )}
 </BrowserOnly>
 
-## Perfil general
+**Irene Zaikov** es una figura ausente pero fundamental en la psique de los protagonistas de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Es la exesposa del detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y hermana del clan criminal <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Zaikov</Link>, conocidos como "Las Águilas" del Nido. Su decisión de abandonar a su familia y a su esposo para huir con un millonario extranjero marcó un punto de inflexión traumático para Thorne y generó un resentimiento profundo en sus hermanos.
 
-**Irene Zaikov** (legalmente **Irene Ozturk–Zaikov**) pertenece por línea materna a la <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">familia Zaikov</Link>. Nacida y criada en <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>, trabajó como mesera en el puesto familiar y siempre mostró ambición por salir de ese entorno.
+Aunque Irene no participa directamente en los eventos de la crisis de los *<Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>* en 1929, su sombra define el escepticismo inicial de Thorne y la dinámica de desconfianza entre el detective y el bajo mundo de El Nido.
 
-## Parentesco y relaciones
+## Perfil y Personalidad
 
-- **Padres:** Mohammed Ozturk y Milenna Zaikov (viudos que unieron familias al emigrar).
-- **Relación previa:** estuvo casada con <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>; el matrimonio terminó cuando Irene lo dejó por “un millonario austríaco”.
-- **Vínculo con los Zaikov:** el manuscrito la nombra como parte de los **Zaikov**, aunque no especifica su grado exacto de parentesco con <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta</Link>, <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link>, <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori</Link>, <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim</Link> o <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses</Link>.
+Físicamente, Irene es descrita a través de los recuerdos de Cassian Thorne como una mujer de belleza impactante, con profundos ojos cafés, piel blanquecina y una elegancia natural. Durante su tiempo en Nueva Ámsterdam, solía vestir con estilo, destacando sus vestidos negros ajustados y tacones de punta afilada.
 
-## Rasgos y motivaciones
+Psicológicamente, Irene era una mujer marcada por el trauma y la ambición. Tras presenciar el asesinato de sus padres a manos de una mafia rusa en El Nido, desarrolló una necesidad desesperada por escapar de la miseria y la violencia del barrio. Aunque Thorne la percibía como alguien "indefensa e inocente" al conocerla, otros advirtieron tempranamente sobre su naturaleza calculadora y sus "pasatiempos". Poseía una mente aguda y curiosa, dedicada a estudiar las dinámicas de la alta sociedad para infiltrarse en ella. Su abandono sin previo aviso revela una personalidad pragmática capaz de sacrificar vínculos afectivos profundos por la promesa de seguridad económica y estatus.
 
-- **Ambiciosa y pragmática**: busca movilidad social y no teme romper lazos si percibe una oportunidad mayor.
-- **Reservada**: mantiene su vida personal fuera del foco público del clan.
+## Habilidades y Equipo
 
-## Estado actual
+Irene no poseía capacidades de combate, pero destacaba en habilidades de observación social y mimetismo:
+*   **Análisis de Clase Social:** Experta en identificar el estatus de las personas a través de su vestimenta y comportamiento; conocimientos que transmitió a Thorne.
+*   **Protocolo de Alta Sociedad:** Lectora voraz de textos sobre etiqueta y círculos aristocráticos.
+*   **Manejo de Apariencias:** Capacidad para proyectar vulnerabilidad para atraer protección y favores.
 
-Tras su separación de Cassian, Irene **abandonó El Nido** y su **paradero es desconocido** dentro de la cronología publicada.
+**Equipo notable:**
+*   **Indumentaria de gala:** Utilizada como herramienta de ascenso social en las fiestas de Nueva Ámsterdam.
 
-## Véase también
+## Biografía / Historia
 
-- <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>
-- <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link>
-- <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>
+### Necromancia a Medianoche
+
+#### Orígenes en El Nido
+Irene nació en el seno de una familia de inmigrantes; sus padres, Mohammed Ozturk y Milenna Zaikov, eran viudos de la Batalla de Galípoli que se conocieron camino a América. Su infancia terminó cuando una mafia rusa tomó el control de El Nido y asesinó a sus padres, dejando a los hermanos Zaikov en la orfandad. Irene trabajó durante años como mesera en el puesto de comida familiar, alimentando un resentimiento creciente hacia su entorno.
+
+#### El Matrimonio con Cassian Thorne
+Thorne la conoció en un parque, donde ella sollozaba vestida con un diseño azul que acentuaba su aparente fragilidad. A pesar de las advertencias de sus colegas y de su jefe Dorian Blackwood, Thorne se casó con ella. Durante tres años, Irene trabajó en la cafetería *Donna's Place* mientras la pareja ahorraba cada centavo con la esperanza de mudarse a Canadá o Europa.
+
+#### El Abandono (1928)
+Una noche, cuando Thorne fue a recogerla al trabajo como de costumbre, descubrió que Irene se había marchado. Se reveló que había conocido a un millonario austríaco en la cafetería y vio en él la oportunidad de una huida definitiva. Irene no solo dejó a su esposo, sino que también cortó lazos con sus hermanos, desapareciendo de la ciudad y dejando a Thorne sumido en un duelo que afectaría su desempeño profesional y personal durante el <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">Caso del Cuarto Rojo</Link>.
+
+#### Legado en la Investigación
+Durante la investigación de 1929, el nombre de Irene surge como una herida abierta. Ramses Zaikov prohíbe explícitamente mencionarla, considerándola una traidora a la sangre. Thorne, por su parte, admite ante Lucía Sinclair que su desconfianza hacia los vínculos emocionales y su reticencia a volver a El Nido se deben al fantasma de Irene.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link>: Su exesposo. Ella es la razón principal de su aislamiento emocional y su obsesión con los "detalles" que delatan la traición.
+*   <Link to="/CrSaSo/personajes/Ian%20Zaikov">**Ian**</Link> y <Link to="/CrSaSo/personajes/Ramses%20Zaikov">**Ramses**</Link>: Sus hermanos. Ian reconoce que su ambición fue su perdición familiar, mientras que Ramses guarda un rencor letal hacia ella.
+*   **Millonario Austríaco:** El catalizador de su partida; representaba el escape definitivo de la vida en Nueva Ámsterdam.
+
+## Curiosidades
+
+*   Irene creía que ser una mujer casada era una ventaja estratégica, pues atraía más miradas y atención en los círculos sociales que ser soltera.
+*   Fue ella quien enseñó a Cassian Thorne a clasificar a los asistentes de las fiestas en "viejos ricos", "nuevos ricos" y "desesperados" basándose en la ostentación de sus ropajes.
+*   A pesar de su deseo de lujo, fue capaz de vivir de forma austera durante tres años mientras ahorraba con Thorne, lo que demuestra su capacidad de planificación a largo plazo.

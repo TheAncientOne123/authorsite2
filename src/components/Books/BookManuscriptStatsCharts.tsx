@@ -5,6 +5,8 @@ import {
   CartesianGrid,
   Cell,
   Legend,
+  Line,
+  LineChart,
   Pie,
   PieChart,
   ResponsiveContainer,
@@ -17,10 +19,10 @@ import type {PieSectorDataItem} from 'recharts/types/polar/Pie';
 import statsData from '@site/src/data/necromancia-manuscript-stats.json';
 import type {ManuscriptStats} from './manuscriptStatsTypes';
 import {
-  CHART_COLORS,
   chapterLabel,
   chapterTooltipTitle,
   chaptersReliable,
+  characterLegendShortLabel,
   getCharacterPieColor,
 } from './manuscriptStatsUtils';
 import styles from './BookManuscriptStats.module.css';
@@ -75,6 +77,8 @@ function tooltipStyle(theme: ChartTheme): React.CSSProperties {
 }
 
 const PIE_TOP_N = 12;
+const LONGEST_BAR_FILL = '#22c55e';
+const DEFAULT_BAR_FILL = '#4ade80';
 
 type PieSlice = {
   id?: string;
@@ -91,6 +95,12 @@ type ChapterBarRow = {
   words: number;
   fullTitle: string;
   pages?: string;
+  isLongest?: boolean;
+};
+
+type VocabGrowthPoint = {
+  words_read: number;
+  unique_types: number;
 };
 
 function CharacterPieTooltip({
@@ -132,8 +142,34 @@ function ChapterWordsTooltip({
   return (
     <div style={tooltipStyle(theme)}>
       <strong>{row.fullTitle}</strong>
+      {row.isLongest ? (
+        <div style={{opacity: 0.85, fontSize: 12}}>Parte más larga del manuscrito</div>
+      ) : null}
       {row.pages ? <div style={{opacity: 0.85, fontSize: 12}}>{row.pages}</div> : null}
       <div>{row.words.toLocaleString('es')} palabras</div>
+    </div>
+  );
+}
+
+function VocabGrowthTooltip({
+  active,
+  payload,
+  theme,
+  totalTokens,
+}: {
+  active?: boolean;
+  payload?: {payload: VocabGrowthPoint}[];
+  theme: ChartTheme;
+  totalTokens: number;
+}) {
+  if (!active || !payload?.length) return null;
+  const row = payload[0].payload;
+  return (
+    <div style={tooltipStyle(theme)}>
+      <div>
+        Palabra {row.words_read.toLocaleString('es')} de {totalTokens.toLocaleString('es')}
+      </div>
+      <div>{row.unique_types.toLocaleString('es')} tipos únicos acumulados</div>
     </div>
   );
 }
@@ -153,14 +189,49 @@ function pieActiveShape(
   );
 }
 
-export default function BookManuscriptStatsCharts() {
-  const chartTheme = useChartTheme();
+function ChapterSectionTick({
+  x,
+  y,
+  payload,
+  fill,
+  fontSize,
+  longestSection,
+}: {
+  x?: number;
+  y?: number;
+  payload?: {value: string};
+  fill: string;
+  fontSize: number;
+  longestSection: string | null;
+}) {
+  const label = payload?.value ?? '';
+  const isLongest = longestSection != null && label === longestSection;
+  return (
+    <text
+      x={x}
+      y={y}
+      dy={4}
+      textAnchor="end"
+      fill={fill}
+      fontSize={fontSize}
+    >
+      {isLongest ? `👑 ${label}` : label}
+    </text>
+  );
+}
+
+function useManuscriptChartData() {
   const reliable = chaptersReliable(stats);
-  const [pieActiveIndex, setPieActiveIndex] = useState<number | undefined>(undefined);
+  const longestChapterIndex = stats.extremes.longest_chapter?.index;
 
   const topCharacters = useMemo(
     () => stats.characters.totals.filter((c) => c.count > 0),
     [],
+  );
+
+  const topChartCharacters = useMemo(
+    () => topCharacters.slice(0, PIE_TOP_N),
+    [topCharacters],
   );
 
   const pieData = useMemo((): PieSlice[] => {
@@ -199,32 +270,20 @@ export default function BookManuscriptStatsCharts() {
           ch.page_start != null && ch.page_end != null
             ? `Páginas ${ch.page_start}–${ch.page_end}`
             : undefined,
+        isLongest: longestChapterIndex != null && ch.index === longestChapterIndex,
       })),
-    [reliable],
+    [reliable, longestChapterIndex],
   );
 
-  const heatmapChars = useMemo(() => {
-    const byId = new Map(topCharacters.map((c) => [c.id, c]));
-    const presentIds = new Set<string>();
-    for (const ch of stats.characters.by_chapter) {
-      for (const id of ch.characters_present ?? []) {
-        presentIds.add(id);
-      }
-      if (!ch.characters_present) {
-        for (const [id, mention] of Object.entries(ch.mentions)) {
-          if (mention.count > 0) presentIds.add(id);
-        }
-      }
-    }
-    const base = topCharacters.slice(0, 8);
-    const baseIds = new Set(base.map((c) => c.id));
-    const extras = [...presentIds]
-      .filter((id) => !baseIds.has(id))
-      .map((id) => byId.get(id))
-      .filter((c): c is (typeof topCharacters)[number] => !!c)
-      .slice(0, 4);
-    return [...base, ...extras].slice(0, 12);
-  }, [topCharacters]);
+  const longestSectionLabel = useMemo(
+    () => chapterBarData.find((row) => row.isLongest)?.section ?? null,
+    [chapterBarData],
+  );
+
+  const vocabGrowthData = useMemo(
+    () => stats.lexical?.vocabulary_growth ?? [],
+    [],
+  );
 
   const chapterMeta = useMemo(
     () => new Map(stats.chapters.map((c) => [c.index, c])),
@@ -242,32 +301,146 @@ export default function BookManuscriptStatsCharts() {
           meta?.page_end,
         ),
       };
-      for (const c of heatmapChars) {
+      for (const c of topChartCharacters) {
         row[c.id] = ch.mentions[c.id]?.count ?? 0;
       }
       return row;
     });
-  }, [heatmapChars, reliable, chapterMeta]);
+  }, [topChartCharacters, reliable, chapterMeta]);
+
+  return {
+    reliable,
+    topChartCharacters,
+    pieData,
+    chapterBarData,
+    longestSectionLabel,
+    vocabGrowthData,
+    mentionsBySectionData,
+  };
+}
+
+export function ChapterWordsChart() {
+  const chartTheme = useChartTheme();
+  const {reliable, chapterBarData, longestSectionLabel} = useManuscriptChartData();
+
+  if (chapterBarData.length === 0) return null;
 
   const chapterChartHeight = Math.max(280, chapterBarData.length * 42 + 48);
-  const chapterAxisWidth = reliable ? 200 : 120;
-  const mentionsChartHeight = Math.max(280, mentionsBySectionData.length * 40 + 80);
+  const chapterAxisWidth = reliable ? 220 : 140;
 
   return (
-    <div className={styles.chartsGrid}>
-      <figure className={`${styles.chartCard} ${styles.chartCardPie}`}>
-        <figcaption className={styles.chartTitle}>Menciones por personaje</figcaption>
-        <p className={styles.chartHint}>
-          Los {PIE_TOP_N} personajes más citados; el resto se agrupa en «Otros».
-        </p>
-        <div className={styles.chartPieWrap}>
+    <figure className={`${styles.chartCard} ${reliable ? styles.chartCardWide : ''}`}>
+      <figcaption className={styles.chartTitle}>
+        {reliable ? 'Palabras por parte' : 'Palabras por sección detectada'}
+      </figcaption>
+      <ResponsiveContainer width="100%" height={chapterChartHeight}>
+        <BarChart
+          data={chapterBarData}
+          layout="vertical"
+          margin={{left: 4, right: 20, top: 8, bottom: 8}}
+        >
+          <CartesianGrid strokeDasharray="3 3" stroke={chartTheme.grid} horizontal={false} />
+          <XAxis type="number" tick={{fill: chartTheme.tick, fontSize: 11}} />
+          <YAxis
+            type="category"
+            dataKey="section"
+            width={chapterAxisWidth}
+            tick={
+              <ChapterSectionTick
+                fill={chartTheme.tick}
+                fontSize={reliable ? 9 : 10}
+                longestSection={longestSectionLabel}
+              />
+            }
+          />
+          <Tooltip content={<ChapterWordsTooltip theme={chartTheme} />} />
+          <Bar dataKey="words" radius={[0, 4, 4, 0]} name="Palabras">
+            {chapterBarData.map((row) => (
+              <Cell
+                key={row.section}
+                fill={row.isLongest ? LONGEST_BAR_FILL : DEFAULT_BAR_FILL}
+              />
+            ))}
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
+    </figure>
+  );
+}
+
+export function VocabularyGrowthChart() {
+  const chartTheme = useChartTheme();
+  const {vocabGrowthData} = useManuscriptChartData();
+
+  if (vocabGrowthData.length === 0) return null;
+
+  return (
+    <figure className={`${styles.chartCard} ${styles.chartCardWide}`}>
+      <figcaption className={styles.chartTitle}>
+        Crecimiento acumulado del vocabulario
+      </figcaption>
+      <p className={styles.chartHint}>
+        Avance cronológico del texto (eje X) frente al número de palabras únicas
+        acumuladas (eje Y).
+      </p>
+      <ResponsiveContainer width="100%" height={320}>
+        <LineChart
+          data={vocabGrowthData}
+          margin={{top: 8, right: 16, left: 8, bottom: 8}}
+        >
+          <CartesianGrid strokeDasharray="3 3" stroke={chartTheme.grid} />
+          <XAxis
+            dataKey="words_read"
+            tick={{fill: chartTheme.tick, fontSize: 11}}
+            tickFormatter={(v: number) => v.toLocaleString('es')}
+          />
+          <YAxis
+            dataKey="unique_types"
+            tick={{fill: chartTheme.tick, fontSize: 11}}
+            tickFormatter={(v: number) => v.toLocaleString('es')}
+          />
+          <Tooltip
+            content={
+              <VocabGrowthTooltip
+                theme={chartTheme}
+                totalTokens={stats.lexical?.total_tokens ?? stats.global.words}
+              />
+            }
+          />
+          <Line
+            type="monotone"
+            dataKey="unique_types"
+            stroke="#60a5fa"
+            strokeWidth={2}
+            dot={false}
+            name="Tipos únicos"
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </figure>
+  );
+}
+
+export function CharacterMentionsPieChart() {
+  const chartTheme = useChartTheme();
+  const {pieData} = useManuscriptChartData();
+  const [pieActiveIndex, setPieActiveIndex] = useState<number | undefined>(undefined);
+
+  return (
+    <figure className={`${styles.chartCard} ${styles.chartCardPie}`}>
+      <figcaption className={styles.chartTitle}>Menciones por personaje</figcaption>
+      <p className={styles.chartHint}>
+        Los {PIE_TOP_N} personajes más citados; el resto se agrupa en «Otros».
+      </p>
+      <div className={styles.chartPieLayout}>
+        <div className={styles.chartPieCanvas}>
           <ResponsiveContainer width="100%" height={440}>
             <PieChart margin={{top: 12, right: 8, bottom: 12, left: 8}}>
               <Pie
                 data={pieData}
                 dataKey="value"
                 nameKey="name"
-                cx="38%"
+                cx="50%"
                 cy="50%"
                 outerRadius={175}
                 innerRadius={0}
@@ -290,96 +463,96 @@ export default function BookManuscriptStatsCharts() {
                 ))}
               </Pie>
               <Tooltip content={<CharacterPieTooltip theme={chartTheme} />} />
-              <Legend
-                layout="vertical"
-                verticalAlign="middle"
-                align="right"
-                wrapperStyle={{
-                  fontSize: 11,
-                  color: chartTheme.tick,
-                  lineHeight: 1.45,
-                  maxHeight: 400,
-                  overflowY: 'auto',
-                }}
-                formatter={(value, entry) => {
-                  const row = entry.payload as PieSlice | undefined;
-                  if (!row) return value;
-                  return `${value} (${row.value})`;
-                }}
-                onMouseEnter={(_entry, index) => setPieActiveIndex(index)}
-                onMouseLeave={() => setPieActiveIndex(undefined)}
-              />
             </PieChart>
           </ResponsiveContainer>
         </div>
-      </figure>
-
-      {chapterBarData.length > 0 ? (
-        <figure
-          className={`${styles.chartCard} ${reliable ? styles.chartCardWide : ''}`}
-        >
-          <figcaption className={styles.chartTitle}>
-            {reliable ? 'Palabras por parte' : 'Palabras por sección detectada'}
-          </figcaption>
-          <ResponsiveContainer width="100%" height={chapterChartHeight}>
-            <BarChart
-              data={chapterBarData}
-              layout="vertical"
-              margin={{left: 4, right: 20, top: 8, bottom: 8}}
+        <ul className={styles.pieLegend} aria-label="Leyenda del gráfico circular">
+          {pieData.map((slice, i) => (
+            <li
+              key={slice.name}
+              className={`${styles.pieLegendItem}${
+                pieActiveIndex === i ? ` ${styles.pieLegendItemActive}` : ''
+              }${pieActiveIndex !== undefined && pieActiveIndex !== i ? ` ${styles.pieLegendItemDimmed}` : ''}`}
+              onMouseEnter={() => setPieActiveIndex(i)}
+              onMouseLeave={() => setPieActiveIndex(undefined)}
+              onFocus={() => setPieActiveIndex(i)}
+              onBlur={() => setPieActiveIndex(undefined)}
+              tabIndex={0}
             >
-              <CartesianGrid strokeDasharray="3 3" stroke={chartTheme.grid} horizontal={false} />
-              <XAxis type="number" tick={{fill: chartTheme.tick, fontSize: 11}} />
-              <YAxis
-                type="category"
-                dataKey="section"
-                width={chapterAxisWidth}
-                tick={{fill: chartTheme.tick, fontSize: reliable ? 9 : 10}}
+              <span
+                className={styles.pieLegendSwatch}
+                style={{backgroundColor: slice.color}}
+                aria-hidden
               />
-              <Tooltip content={<ChapterWordsTooltip theme={chartTheme} />} />
-              <Bar dataKey="words" fill="#4ade80" radius={[0, 4, 4, 0]} name="Palabras" />
-            </BarChart>
-          </ResponsiveContainer>
-        </figure>
-      ) : null}
+              <span className={styles.pieLegendLabel}>
+                {slice.name}{' '}
+                <span className={styles.pieLegendValue}>
+                  ({slice.value.toLocaleString('es')})
+                </span>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </figure>
+  );
+}
 
-      {mentionsBySectionData.length > 0 && heatmapChars.length > 0 ? (
-        <figure className={`${styles.chartCard} ${styles.chartCardWide}`}>
-          <figcaption className={styles.chartTitle}>
-            {reliable
-              ? 'Menciones por parte (personajes principales)'
-              : 'Menciones por sección (personajes principales)'}
-          </figcaption>
-          <p className={styles.chartHint}>
-            Incluye personajes con presencia en cualquier parte, no solo los más citados
-            globalmente. Las partes sin barras no contienen menciones nominales detectadas.
-          </p>
-          <ResponsiveContainer width="100%" height={mentionsChartHeight}>
-            <BarChart data={mentionsBySectionData} margin={{top: 8, right: 8, left: 0, bottom: 8}}>
-              <CartesianGrid strokeDasharray="3 3" stroke={chartTheme.grid} />
-              <XAxis
-                dataKey="section"
-                tick={{fill: chartTheme.tick, fontSize: 9}}
-                interval={0}
-                angle={-28}
-                textAnchor="end"
-                height={72}
-              />
-              <YAxis tick={{fill: chartTheme.tick, fontSize: 11}} allowDecimals={false} />
-              <Tooltip contentStyle={tooltipStyle(chartTheme)} />
-              <Legend wrapperStyle={{fontSize: 11, color: chartTheme.tick}} />
-              {heatmapChars.map((c, i) => (
-                <Bar
-                  key={c.id}
-                  dataKey={c.id}
-                  name={c.label.split(' ')[0]}
-                  fill={CHART_COLORS[i % CHART_COLORS.length]}
-                  radius={[2, 2, 0, 0]}
-                />
-              ))}
-            </BarChart>
-          </ResponsiveContainer>
-        </figure>
-      ) : null}
+export function MentionsBySectionChart() {
+  const chartTheme = useChartTheme();
+  const {reliable, topChartCharacters, mentionsBySectionData} = useManuscriptChartData();
+
+  if (mentionsBySectionData.length === 0 || topChartCharacters.length === 0) return null;
+
+  const mentionsChartHeight = Math.max(280, mentionsBySectionData.length * 40 + 80);
+
+  return (
+    <figure className={`${styles.chartCard} ${styles.chartCardWide}`}>
+      <figcaption className={styles.chartTitle}>
+        {reliable
+          ? 'Menciones por parte (personajes principales)'
+          : 'Menciones por sección (personajes principales)'}
+      </figcaption>
+      <p className={styles.chartHint}>
+        Los mismos {PIE_TOP_N} personajes más citados que en el gráfico circular. Las partes
+        sin barras no contienen menciones nominales detectadas para ninguno de ellos.
+      </p>
+      <ResponsiveContainer width="100%" height={mentionsChartHeight}>
+        <BarChart data={mentionsBySectionData} margin={{top: 8, right: 8, left: 0, bottom: 8}}>
+          <CartesianGrid strokeDasharray="3 3" stroke={chartTheme.grid} />
+          <XAxis
+            dataKey="section"
+            tick={{fill: chartTheme.tick, fontSize: 9}}
+            interval={0}
+            angle={-28}
+            textAnchor="end"
+            height={72}
+          />
+          <YAxis tick={{fill: chartTheme.tick, fontSize: 11}} allowDecimals={false} />
+          <Tooltip contentStyle={tooltipStyle(chartTheme)} />
+          <Legend wrapperStyle={{fontSize: 11, color: chartTheme.tick}} />
+          {topChartCharacters.map((c) => (
+            <Bar
+              key={c.id}
+              dataKey={c.id}
+              name={characterLegendShortLabel(c.label)}
+              fill={getCharacterPieColor(c.id)}
+              radius={[2, 2, 0, 0]}
+            />
+          ))}
+        </BarChart>
+      </ResponsiveContainer>
+    </figure>
+  );
+}
+
+export default function BookManuscriptStatsCharts() {
+  return (
+    <div className={styles.chartsStack}>
+      <ChapterWordsChart />
+      <VocabularyGrowthChart />
+      <CharacterMentionsPieChart />
+      <MentionsBySectionChart />
     </div>
   );
 }

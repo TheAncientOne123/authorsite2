@@ -1,0 +1,44 @@
+.root {
+  --wiki-figure-border: #a2a9b1;
+  float: left;
+  clear: left;
+  width: 220px;
+  max-width: min(45%, 280px);
+  margin: 0 1.25rem 0.75rem 0;
+  border: 1px solid var(--wiki-figure-border);
+  border-radius: 2px;
+  background: var(--ifm-background-surface-color);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.rootRight {
+  float: right;
+  clear: right;
+  margin: 0 0 0.75rem 1.25rem;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.caption {
+  padding: 6px 8px 8px;
+  text-align: center;
+  color: var(--ifm-color-emphasis-700);
+  border-top: 1px solid var(--wiki-figure-border);
+}
+
+@media (max-width: 768px) {
+  .root,
+  .rootRight {
+    float: none;
+    clear: both;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 1rem;
+  }
+}

@@ -1,7 +1,7 @@
 ---
 title: Jayson Branch
-description: Jefe de seguridad de la Familia McCarthy; coordinador táctico durante Necromancia a Medianoche
-updated: 2026-05-17
+description: Jefe de seguridad de la Familia McCarthy; estratega y coordinador táctico durante la crisis de 1929
+updated: 2026-05-25
 type: personaje
 saga: crsaso
 libro: necromancia-medianoche
@@ -10,65 +10,115 @@ estado: Activo
 raza: Humano
 ---
 
-
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+
+# Jayson Branch
 
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Jayson Branch"
-    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jayson-branch', alt: 'Jayson Branch' }}
-    caption="Jefe de Seguridad de la Familia McCarthy"
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jayson-branch',
+      alt: 'Jayson Branch',
+    }}
+    caption="Jefe de seguridad de la Familia McCarthy"
     rows={[
+      { label: 'Estado actual', value: 'Activo (superviviente del conflicto)' },
+      { label: 'Edad', value: 'No especificada (etapa adulta)' },
+      {
+        label: 'Residencia',
+        value: (
+          <>
+            <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>,{' '}
+            <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>
+          </>
+        ),
+      },
+      { label: 'Especie', value: 'Humana' },
       { label: 'Género', value: 'Masculino' },
-      { label: 'Estado', value: 'Activo' },
-      { label: 'Profesión', value: 'Jefe de seguridad; táctico operativo' },
-      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">La Familia McCarthy</Link> },
-      { label: 'Mano derecha', value: 'Anya' },
-      { label: 'Equipo', value: 'Taylor, Bryce, Daniel (unidad previa)' },
-      { label: 'Base', value: <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link> },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      {
+        label: 'Familiares clave',
+        value: 'Su unidad táctica (Nicholas, Olsen, Luka, Emmett —fallecidos—)',
+      },
+      { label: 'Ocupación', value: 'Jefe de seguridad de McCarthy Petroleum' },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>; equipo
+            de defensa contra los{' '}
+            <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 49
+          </>
+        ),
+      },
     ]}
   />
 )}
 </BrowserOnly>
 
-## Perfil general
 
-**Jayson Branch** es un veterano con entrenamiento táctico, convertido en el **responsable de proteger a los McCarthy**. Metódico y sobrio, evalúa escenarios con frialdad operativa y prioriza la **supervivencia del equipo** por encima del lucimiento personal. Su lealtad, inicialmente incuestionable, se vuelve **estratégica** cuando el caso **Jessica–Elemento 121** se descontrola.
+**Jayson Branch** es el encargado de la seguridad personal del magnate <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> y su familia en Nueva Ámsterdam. Es un hombre de formación táctica y pragmatismo absoluto, cuya lealtad a los McCarthy lo llevó a coordinar una alianza sin precedentes entre fuerzas policiales, criminales y entidades sobrenaturales.
 
-## Relación con la familia McCarthy
+Tras el asesinato de Alan McCarthy, Branch asumió la responsabilidad de proteger a <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, convirtiéndose en el coordinador operativo de los defensores humanos durante el asedio de la facción Voronin y el despertar de la <Link to="/CrSaSo/objetos-conceptos/Reina%20de%20la%20Oscuridad">Reina de la Oscuridad</Link>.
 
-Llegó como escolta de <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> y terminó asumiendo un rol casi **paternal** respecto a <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link>. La pérdida de efectivos de su unidad (Nicholas, Olsen, Luka, Emmett) y el vínculo con su **mano derecha, Anya**, marcan sus decisiones durante la crisis.
+## Perfil y Personalidad
 
-## Eventos destacados
+Físicamente, Jayson Branch proyecta una presencia intimidante y sólida. Se le describe con una mirada afilada, ceño fruncido y cabello oscuro algo desordenado, rasgos que le otorgan un aire de autoridad constante.
 
-### Organización en la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>
-- Reúne a su equipo (Anya, Taylor, Bryce, Daniel) y establece **centro de mando en la segunda planta**.  
-- Divide vigilancia entre salón, jardín y salas; objetivo: **ganar tiempo** y dar a <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia</Link> **un tiro limpio** contra intrusos.  
-- Estandariza “uniformes” (trajes de camarero) para **camuflar** a los suyos entre los asistentes.
+Psicológicamente, Branch es definido por su profesionalismo y un sentido del deber inquebrantable. Aunque inicialmente se mostró escéptico ante las fuerzas místicas, posee la flexibilidad mental necesaria para adaptar sus tácticas a amenazas sobrenaturales. Carga con un profundo sentimiento de culpa por la pérdida de casi toda su unidad táctica, lo que refuerza su determinación de proteger a los supervivientes bajo su mando, especialmente a su mano derecha, <Link to="/CrSaSo/personajes/Anya%20Rudzki">Anya</Link>. Valora el orden militar, exigiendo incluso que sus aliados externos utilicen trajes como «uniformes» para mantener la disciplina operativa.
 
-### Arsenal de los McCarthy
-- Abre el **búnker** y libera el armamento pesado (“tomen lo que necesiten”) tras una primera fase de reparto **restrictiva** (solo armas cortas).
+## Habilidades y Equipo
 
-### Intervenciones clave
-- **Contiene** a <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> en un arrebato; llega a perder el arma cuando <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> lo desarma con rapidez.  
-- Intenta **proteger** a Anya y mantenerla fuera de la línea de fuego; ella acaba **herida** durante el asalto a la mansión.
+Como especialista en seguridad de alto nivel, Branch posee capacidades de combate y mando avanzadas:
 
-### <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">La Refinería McCarthy</Link>
-- Coordina **apoyo móvil** desde la furgoneta de <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link>, dando órdenes a <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> (acercamientos/retiros).  
-- Mantiene presión táctica (“se vuelve más fuerte”) y organiza **extracciones**; llega tarde para salvar a Jessica, pero su contención evita más bajas.
+*   **Combate cuerpo a cuerpo:** Demostró una precisión asombrosa al enfrentar a Oliver (un Rapax), logrando esquivar ataques letales y mantener una guardia perfecta gracias a su destreza técnica.
+*   **Liderazgo y estrategia:** Capaz de coordinar grupos heterogéneos y asignar roles basados en habilidades específicas bajo presión extrema.
+*   **Manejo de armas de fuego:** Experto en el uso de pistolas y revólveres, demostrando una calma metódica incluso en tiroteos masivos.
 
-## Legado
+**Equipo notable:**
 
-Más que un guardaespaldas, **Jayson Branch** es la **última línea** entre el caos y el orden dentro de _Necromancia a Medianoche_: planifica, arma, coordina y sostiene la operación aun con su equipo diezmado.
+*   **Arsenal de McCarthy:** Acceso exclusivo a un búnker de alta seguridad con rifles de potencia, granadas, explosivos y máscaras de gas.
+*   **Pistola de servicio:** Su arma principal, la cual maneja con precisión clínica.
 
-## Véase también
+## Biografía / Historia
 
-- <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> · <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>  
-- <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> · <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>  
-- <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> · <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>  
-- <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> · <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>  
-- <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link> · <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">La Refinería McCarthy</Link> · <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">El Balneario Rushmore</Link>
+### Necromancia a Medianoche
+
+#### El conflicto en el Balneario Rushmore
+
+Branch aparece por primera vez intentando recuperar a Jessica McCarthy en el <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">Balneario Rushmore</Link>. Allí establece una alianza táctica con el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> tras presenciar la transformación de Jessica en una bestia. Durante la escaramuza, Branch enfrenta a <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver</Link> en un duelo de combate cercano, logrando sobrevivir a zarpazos que habrían sido fatales para otros humanos gracias a su técnica impecable.
+
+#### El asedio a la Mansión McCarthy
+
+Tras la muerte de su empleador, Jayson toma el mando de la defensa en la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">mansión</Link>. Organiza una gala como cobertura táctica para que las hermanas Dobrescu intenten una cura ritual en Jessica. Bajo su dirección, integra a los hermanos <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Zaikov</Link>, a los <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link> y a <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link> en una unidad de respuesta contra los Voronin. Durante la batalla masiva en el salón, salva a varios aliados y lucha hasta el agotamiento antes de que el enemigo secuestre a Jessica.
+
+#### La batalla en la Refinería
+
+Branch lidera el asalto terrestre final a la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link> para detener la <Link to="/CrSaSo/objetos-conceptos/Profec%C3%ADa%20de%20la%20Reina%20de%20la%20Oscuridad">profecía</Link>. Actúa como punta de lanza en la protección de <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> mientras este coloca explosivos en las instalaciones. En el clímax del enfrentamiento, descarga su armamento contra el patriarca <Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv</Link> en un intento desesperado por cubrir a los protagonistas. Tras la explosión y la caída de la Reina, sobrevive al colapso de la refinería.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Alan%20McCarthy">**Alan McCarthy**</Link>: Su empleador. Branch siente que le falló al no evitar su muerte, lo que motiva su devoción absoluta por salvar a Jessica.
+*   <Link to="/CrSaSo/personajes/Anya%20Rudzki">**Anya Rudzki**</Link>: Su mano derecha y única sobreviviente de su equipo original. Branch manifiesta una vulnerabilidad inusual hacia ella, ordenándole quedarse atrás en la batalla final para no perder el último vínculo con su unidad.
+*   <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucía Sinclair**</Link>: Aliados tácticos. Aunque inicialmente desconfiaba de sus métodos, termina reconociendo su importancia crítica para el éxito de la misión.
+*   <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">**Anastasia Dobrescu**</Link>: A pesar de su naturaleza depredadora, Branch confía en ella para la defensa. Se documenta que en una ocasión su presencia le provocó un rubor de admiración o incomodidad.
+
+## Curiosidades
+
+*   Es extremadamente escéptico; inicialmente se negó a armar a los Zaikov con el arsenal del búnker porque no confiaba en su lealtad.
+*   A pesar de su cargo, suele fumar en momentos de tensión mientras supervisa los perímetros.
+*   Fue él quien impuso el uso de trajes de etiqueta como «uniforme» de seguridad para la fiesta de los McCarthy para garantizar la identificación visual entre aliados.

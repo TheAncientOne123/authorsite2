@@ -1,85 +1,142 @@
 ---
 title: Familia Zaikov
-description: Clan mafioso balcánico que gobierna El Nido con mano firme y fachada comunitaria; aliados tácticos de Cassian Thorne en momentos clave.
-updated: 2026-05-17
+description: Clan criminal de El Nido («Las Águilas»); control territorial, lealtad fraternal y aliados tácticos de Cassian Thorne
+updated: 2026-05-24
 type: familia
 saga: crsaso
 libro: necromancia-medianoche
 ---
 
-
 import Infobox from '@site/src/components/Infobox';
+import FamilyMemberGrid from '@site/src/components/FamilyMemberGrid';
 import Link from '@docusaurus/Link';
 
 # Familia Zaikov
 
 <Infobox
   title="Familia Zaikov"
-  caption="«El barrio primero; lo demás después»"
+  caption="Las Águilas del Nido"
   rows={[
-    { label: 'Tipo', value: 'Familia criminal con fachada cultural/comunitaria' },
-    { label: 'Alias', value: 'Las Águilas del Nido' },
-    { label: 'Sede / Territorio', value: <>El <Link to="/CrSaSo/lugares/El%20Nido">Nido</Link> (Nueva Ámsterdam)</> },
-    { label: 'Liderazgo', value: <>Consejo familiar; cabecilla operativo: <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link></> },
-    { label: 'Ámbito', value: 'Seguridad del barrio, mercado informal, resolución de disputas, información, armas y protección “vecinal”' },
-    { label: 'Aliados', value: <>Alianza táctica con <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>.</> },
-    { label: 'Rivales', value: <>Intrusos y facciones externas en <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>; choques históricos con <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Tornatore</Link>/<Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Santorelli</Link> por territorio; hostilidad abierta a <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link></> },
-    { label: 'Estado', value: 'Activo (alta influencia local)' },
-    { label: 'Eventos clave', value: <>
-      Refuerzos en la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>; 
-      equipo voluntario rumbo a la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>; 
-      participación tangencial durante <Link to="/CrSaSo/eventos/La%20Semana%20Negra">La Semana Negra</Link>
-    </> },
-    { label: 'Miembros notables', value: <>
-      <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>; 
-      <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>; 
-      <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link>; 
-      <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim Ramazan Zaikov</Link>; 
-      <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori Zaikov</Link>; 
-      <Link to="/CrSaSo/personajes/Irene%20Zaikov">Irene Zaikov</Link> (no afiliada)
-    </> },
+    { label: 'Alias / Apodos', value: 'Las Águilas del Nido' },
+    { label: 'Estado actual', value: 'Activa' },
+    {
+      label: 'Residencia',
+      value: (
+        <>
+          Distrito de <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>,{' '}
+          <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>
+        </>
+      ),
+    },
+    { label: 'Especie', value: 'Humana' },
+    {
+      label: 'Miembros clave',
+      value: (
+        <>
+          <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link>,{' '}
+          <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses</Link>,{' '}
+          <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim</Link>,{' '}
+          <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori</Link>,{' '}
+          <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta</Link> e{' '}
+          <Link to="/CrSaSo/personajes/Irene%20Zaikov">Irene</Link>
+        </>
+      ),
+    },
+    {
+      label: 'Ocupación',
+      value: 'Control territorial criminal; seguridad privada especializada',
+    },
+    {
+      label: 'Afiliación',
+      value: (
+        <>
+          Independiente; aliados del detective{' '}
+          <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>
+        </>
+      ),
+    },
+    {
+      label: 'Primera aparición',
+      value: (
+        <>
+          <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+            <em>Necromancia a Medianoche</em>
+          </Link>
+          , cap. 12
+        </>
+      ),
+    },
   ]}
 />
 
-## Perfil general
+La **Familia Zaikov**, conocida en el bajo mundo como **«Las Águilas»**, es la organización criminal dominante en el distrito de <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>, <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>. De origen multiétnico y forjada en la tragedia de la inmigración, la familia opera bajo una estructura de lealtad inquebrantable entre hermanos, manteniendo un control férreo sobre su territorio a la vez que sostienen una relación de respeto y favores mutuos con ciertos sectores de la policía local.
 
-La **Familia Zaikov** gobierna el <Link to="/CrSaSo/lugares/El%20Nido">Nido</Link> como una **fraternidad tribal** de raíces balcánicas y folklore oriental combinada con **estructura mafiosa**. Controlan seguridad, rutas de información y buena parte del **mercado informal**, mientras sostienen una **fachada comunitaria**: patrocinan festivales, reparten comida y arbitran disputas vecinales. Son **respetados**, **temidos** y, a ratos, **venerados** por el barrio.
+Durante la crisis de 1929, los Zaikov trascendieron su rol delictivo para actuar como una fuerza de defensa fundamental de la humanidad, proporcionando apoyo táctico, logístico y de combate contra la amenaza de los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>. Su intervención fue decisiva tanto en el asedio a la mansión McCarthy como en el asalto final a la refinería petrolera.
 
-Aunque su portafolio incluye **armas, extorsión y protección**, su política pública es **diplomática**: “el Nido se cuida en casa”.
+## Perfil y Personalidad
 
-## Integrantes principales
+La familia se distingue por una amalgama de culturas y tradiciones, siendo hijos de **Mohammed Ozturk** y **Milenna Zaikov**, sobrevivientes de la Batalla de Galípoli. Psicológicamente, los Zaikov se rigen por un código de honor estricto y una hospitalidad que contrasta con su naturaleza violenta; son capaces de ofrecer una cena ritual a sus prisioneros mientras deciden su destino.
 
-### <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link> — Cabecilla / diplomático / estratega  
-Carismático y calculador, alterna la **cena** y la **sentencia** con la misma elegancia. Historial de **favores cruzados** con <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>.  
-**Frase:** “¿En serio me estás pidiendo eso?”
+Físicamente, comparten rasgos genéticos distintivos, siendo el **cabello rojizo** una marca característica en varios de sus miembros (Greta, Ian y Ramses), en una escala de intensidad que los personajes comparan con la de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>. La familia es profundamente religiosa, practicando rezos islámicos antes de las comidas bajo la guía de Ibrahim. Mantienen un resentimiento profundo hacia la traición, personificado en el odio visceral que profesan hacia su hermana Irene tras su abandono.
 
-### <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link> — Francotiradora / ejecutora  
-Silenciosa y precisa; **segunda al mando** de facto. Desdén por las autoridades, **lealtad férrea** a la tradición.  
-**Frase:** “Esa era su naturaleza.”
+## Miembros
+<FamilyMemberGrid
+  pluginId="cronicas"
+  members={[
+    'personajes/Ian Zaikov',
+    'personajes/Ramses Zaikov',
+    'personajes/Ibrahim Ramazan Zaikov',
+    'personajes/Grigori Zaikov',
+    'personajes/Greta Zaikov',
+    'personajes/Irene Zaikov',
+  ]}
+/>
 
-### <Link to="/CrSaSo/personajes/Ramses%20Zaikov">Ramses Zaikov</Link> — Logística / finanzas / armas  
-Suspicioso y explosivo; equilibra **paranoia operativa** y **fidelidad** a Ian. Desconfía de **agentes federales**.  
-**Frase:** “Ni te atrevas a mencionar su nombre.”
+## Habilidades y Equipo
 
-### <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim Ramazan Zaikov</Link> — Cocinero, místico y conciliador  
-Consejero espiritual y **médico improvisado**; cocina ritual y escucha paciente antes del disparo.  
-**Frase:** “Vamos a rezar.”
+Los Zaikov operan como una unidad de combate de élite, donde cada miembro desempeña un rol especializado:
 
-### <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori Zaikov</Link> — Fuerza bruta / seguridad  
-Coloso tatuado de **pocos palabras** y muchos resultados; pragmático con toques de **folklore eslavo**.  
-**Frase:** “Tienes buena genética. Tus hijos serían hermosos.”
+*   **Ian (liderazgo y combate cerrado):** Maestro en el uso de cuchillos de carnicero.
+*   **Ramses (estrategia):** El cerebro táctico encargado de la planificación y detección de infiltrados.
+*   **Ibrahim (guía moral):** Autoridad espiritual y gestor logístico.
+*   **Grigori (fuerza de choque):** Combatiente cuerpo a cuerpo con fuerza sobrehumana.
+*   **Greta (tiradora de élite):** Especialista en armas de largo alcance y puntería de precisión.
 
-### <Link to="/CrSaSo/personajes/Irene%20Zaikov">Irene Zaikov</Link> — Hija menor (no afiliada)  
-Considerada **traidora** tras abandonar a su familia y a su entonces esposo **Cassian** por un empresario austríaco. Su memoria es **tabú** en la casa Zaikov, salvo para Cassian, que carga la herida.
+**Equipo notable:**
 
-## Relaciones y alianzas
+*   **Armamento pesado:** Tras su alianza con los McCarthy, obtuvieron acceso a un búnker con rifles de alta potencia, granadas y ametralladoras Gatling.
+*   **Munición especializada:** Emplean balas de oro y plata proporcionadas por los <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link> para neutralizar a los Rapax.
+*   **Monedas de latón:** Poseen artefactos de enlace místico para comunicación y detección de enemigos.
 
-- **Cassian Thorne**: alianza **ocasional** basada en favores y respeto mutuo.  
-- **Facciones italianas** (<Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Tornatore</Link> / <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Santorelli</Link>): **tensión estructural** por incursiones en el Nido.  
-- **Voronin**: **enemistad abierta** durante el asedio a la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link> y el clímax en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>.
+## Biografía / Historia
 
-## Rol en la trama
+### Necromancia a Medianoche
 
-- Acuden como **refuerzos** al asedio de la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>.  
-- Integran el **escuadrón voluntario** que se arma en el depósito McCarthy y se dirige a la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>, donde la **cobertura** y la **puntería** de sus miembros resultan decisivas.  
-- Mantienen el **orden interno** del <Link to="/CrSaSo/lugares/El%20Nido">Nido</Link> durante <Link to="/CrSaSo/eventos/La%20Semana%20Negra">La Semana Negra</Link>, evitando que el conflicto italo–italiano desborde su territorio.
+#### Orígenes y ascenso en El Nido
+
+Tras la muerte de sus padres a manos de una mafia rusa, los hermanos Zaikov quedaron huérfanos y desprotegidos en El Nido. Bajo el liderazgo de Ian y Ramses, y con la ayuda estratégica del entonces oficial <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, lograron localizar a los asesinos de sus padres y erradicar la influencia rusa del barrio, estableciéndose como los nuevos soberanos del distrito.
+
+#### El caso del Cuarto Rojo
+
+En 1929, la familia interviene en la persecución de <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>, capturándolo después de que Greta reventara un neumático del vehículo de Lucía Sinclair por error. En su departamento de lujo, ofrecen hospitalidad a los detectives Thorne y Sinclair, analizando el caso desde una perspectiva folclórica y comprometiéndose a ayudar debido a su deuda histórica con Cassian.
+
+#### El asedio a la Mansión McCarthy
+
+Los Zaikov son contratados por <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link> para proteger a <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link> durante su fiesta de cumpleaños. Durante el ataque de los <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>, la familia sufre bajas y heridas graves: Ibrahim termina con una costilla rota, Ramses con heridas en boca y piernas, y Grigori es gravemente contusionado tras ser lanzado por el aire por el líder enemigo. Greta logra confirmar la eliminación de nueve atacantes mediante la guía mística de Lucía.
+
+#### La batalla en la Refinería
+
+A pesar de las heridas del clan, Ian y Greta deciden marchar hacia la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link> para el enfrentamiento final. Ian actúa protegiendo al equipo de demolición de Archie Woodward, mientras Greta proporciona cobertura desde las alturas. Tras la explosión del complejo y la presunta muerte de Cassian Thorne, toda la familia asiste al funeral del detective en Nueva Ámsterdam como señal de respeto final.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link>: Aliado de honor. La familia le debe su posición actual y el haber vengado a sus padres.
+*   <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucía Sinclair**</Link>: Ian muestra un interés romántico y respeto profesional hacia ella, otorgándole el apoyo incondicional de los Zaikov.
+*   <Link to="/CrSaSo/personajes/Jayson%20Branch">**Jayson Branch**</Link>: Aliado táctico y empleador temporal durante la crisis de los McCarthy.
+
+## Curiosidades
+
+*   La familia tiene la costumbre de realizar apuestas de cinco dólares sobre eventos inciertos, como la identidad profesional de Lucía.
+*   Ibrahim insiste en que todos los presentes en su mesa se tomen de las manos para rezar, sin importar si son prisioneros o agentes federales.
+*   Grigori posee la peculiaridad de analizar a las personas basándose exclusivamente en su «calidad genética» y potencial reproductivo.
+*   Los Zaikov repararon el coche de Lucía Sinclair después de que Greta le disparara a la llanta durante la persecución de Archie.

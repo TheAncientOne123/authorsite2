@@ -1,7 +1,7 @@
 ---
 title: Ramses Zaikov
-description: Estratega y cerebro operativo de la Familia Zaikov; colíder de las “Águilas del Nido”
-updated: 2026-05-17
+description: Estratega y colíder de las Águilas del Nido; «Ram», cerebro operativo de la Familia Zaikov
+updated: 2026-05-24
 type: personaje
 saga: crsaso
 libro: necromancia-medianoche
@@ -10,57 +10,124 @@ estado: Activo
 raza: Humano
 ---
 
-
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
+# Ramses Zaikov
+
 <BrowserOnly fallback={<div />}>
-  {() => (
-    <Infobox
-      title="Ramses Zaikov"
-      image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/Ramses-Zaikov', alt: 'Ramses Zaikov' }}
-      caption="Cerebro operativo de la Familia Zaikov"
-      rows={[
-        { label: 'Género', value: 'Masculino' },
-        { label: 'Estado', value: 'Activo' },
-        { label: 'Rol', value: 'Estratega; colíder de las Águilas del Nido' },
-        { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> },
-        { label: 'Hermanos', value: <>
-            <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>,{' '}
-            <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>,{' '}
-            <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori Zaikov</Link>,{' '}
-            <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim Ramazan Zaikov</Link>
+{()=>(
+  <Infobox
+    title="Mohammed Ramses Zaikov"
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/Ramses-Zaikov',
+      alt: 'Mohammed Ramses Zaikov',
+    }}
+    caption="Estratega de la Familia Zaikov"
+    rows={[
+      { label: 'Alias / Apodos', value: 'Ram, El cerebro de los Zaikov' },
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Edad', value: 'Adulta' },
+      {
+        label: 'Residencia',
+        value: (
+          <>
+            <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>,{' '}
+            <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>
           </>
-        },
-        { label: 'Base', value: <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> },
-        { label: 'Apariencia', value: 'Cabello castaño rojizo con canas en sienes; ojos verdes; barba en candado' },
-        { label: 'Estilo', value: 'Camisa blanca con tirantes; botones superiores desabrochados' },
-        { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
-      ]}
-    />
-  )}
+        ),
+      },
+      { label: 'Especie', value: 'Humano' },
+      { label: 'Género', value: 'Masculino' },
+      {
+        label: 'Familiares clave',
+        value: (
+          <>
+            Mohammed Ozturk y Milenna Zaikov (padres, fallecidos);{' '}
+            <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim</Link>,{' '}
+            <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori</Link> (hermanos);{' '}
+            <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta</Link> e{' '}
+            <Link to="/CrSaSo/personajes/Irene%20Zaikov">Irene</Link> (hermanas)
+          </>
+        ),
+      },
+      {
+        label: 'Ocupación',
+        value: 'Operativo y estratega criminal',
+      },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link> («Las Águilas»)
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 13
+          </>
+        ),
+      },
+    ]}
+  />
+)}
 </BrowserOnly>
 
-Reservado, desconfiado, calculador. **Ramses Zaikov** es el otro colíder de la familia, contraparte y contrapeso de su hermano <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian</Link>. Donde Ian ve una oportunidad, Ramses ve una amenaza. Es el **estratega** que mantiene la estructura, el **protector del núcleo familiar**, el hombre que nunca sonríe sin motivo.
+**Mohammed Ramses**, conocido comúnmente como **Ram**, es uno de los líderes de la <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">familia Zaikov</Link>, organización que ejerce un control absoluto sobre el distrito de <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>. Dentro de la estructura de «Las Águilas», Ramses es reconocido como el estratega del grupo, aportando una mentalidad analítica y precavida que equilibra la impulsividad de su hermano Ian.
 
-Desconfía abiertamente de figuras externas —en especial de autoridades federales— y prioriza la logística, los perímetros y las reglas de enfrentamiento. Su historial de pérdidas (como la huida de su hermana **Irene**) lo vuelve metódico y obsesivo con el control; en años recientes ha aprendido a **ceder margen al caos** cuando Ian puede canalizarlo sin destruirlo todo.
+Su participación en la crisis de 1929 fue crucial para la organización de la defensa de la familia McCarthy, aunque su capacidad operativa se vio limitada tras sufrir heridas de gravedad durante el asedio del clan Voronin a la mansión petrolera.
 
-En sus pasiones —carpintería, lecturas estratégicas, rituales y cocina familiar— es perfeccionista. Esa obsesión por la precisión lo convierte en un **organizador brillante** y en una figura temida, pero también muy respetada por su clan.
+## Perfil y Personalidad
 
-## Hechos notables
+Físicamente, Ramses posee rasgos distintivos que lo separan de sus hermanos: luce un bigote similar al de <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>, complementado con una barba poco cuidada y una pequeña coleta. Como rasgo de estilo personal, porta un largo arete de oro en su oreja izquierda.
 
-- **Águilas del Nido.** Se presenta como el **cerebro de la operación** y “supuesto líder” del grupo; reparte puestos y dicta reglas.  
-- **Intervención contra Archie.** Llega con los Zaikov cuando detienen a <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>; Cassian reconoce al equipo como las “Águilas del Nido”.  
-- **Despliegue táctico.** Suele **observar desde la segunda planta** y asignar a <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta</Link> posiciones elevadas de francotiro.  
-- **Relación con la policía.** Negocia con <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian</Link> y <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian</Link> solo bajo términos estrictos y con garantías operativas.
+Psicológicamente, es descrito como un hombre escéptico, observador y extremadamente protector de la privacidad familiar. Posee una mente aguda para la detección de amenazas, siendo el primero en notar que Lucía Sinclair era una agente federal tras analizar su lenguaje corporal y el contexto de su llegada. Ramses carga con un resentimiento profundo y violento hacia su hermana Irene, prohibiendo terminantemente que se mencione su nombre debido a la traición que supuso su abandono. A pesar de su dureza, mantiene una relación de camaradería con Ian, con quien suele realizar apuestas sobre eventos cotidianos.
 
-## Véase también
+## Habilidades y Equipo
 
-- <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> ·
-  <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link> ·
-  <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link> ·
-  <Link to="/CrSaSo/personajes/Grigori%20Zaikov">Grigori Zaikov</Link> ·
-  <Link to="/CrSaSo/personajes/Ibrahim%20Ramazan%20Zaikov">Ibrahim Ramazan Zaikov</Link>  
-- <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> ·
-  <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>
+Ramses destaca principalmente por sus capacidades intelectuales aplicadas al combate y la gestión criminal:
+
+*   **Planificación táctica:** Encargado de asignar posiciones estratégicas a sus hermanos según sus habilidades (por ejemplo, ubicar a Greta en puntos elevados).
+*   **Detección de infiltrados:** Capacidad analítica para identificar el rango y la afiliación de agentes externos mediante la observación.
+*   **Manejo de armas:** Entrenado, como el resto de su linaje, en armas de fuego y tácticas de guerrilla urbana.
+
+**Equipo notable:**
+
+*   **Armamento del búnker McCarthy:** Durante la crisis final, accedió a rifles y munición especializada del arsenal privado de Alan McCarthy.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El encuentro en El Nido
+
+Ramses aparece por primera vez en el lujoso departamento de la familia en El Nido, donde interrumpe la cena de hospitalidad para cuestionar la presencia de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>. Tras un intercambio tenso, revela su desconfianza hacia los federales, aunque acepta colaborar debido a la deuda de honor que su familia mantiene con <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>. Durante la velada, Ramses propone que el asesino de Crystal Square podría ser un hombre lobo, participando en el debate sobre la naturaleza de los Rapax.
+
+#### El asedio a la Mansión McCarthy
+
+Cuando los Zaikov son contratados por <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link> para proteger a <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, Ramses asume un rol de coordinador. Sin embargo, la brutalidad del ataque de los <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link> lo obliga a entrar en combate directo. Durante la refriega en el salón principal, Ramses sufre heridas considerables en las piernas y la boca, quedando visiblemente mermado físicamente. A pesar de sus lesiones, intenta mantenerse al mando hasta que el grupo de <Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv Voronin</Link> se retira para cambiar de objetivo.
+
+#### Resolución y consecuencias
+
+Debido a la gravedad de sus heridas, Ramses no pudo marchar hacia la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link> para la batalla final. Permaneció en la mansión bajo cuidado médico, delegando la representación de los Zaikov en Ian y Greta. Seis meses después de los eventos, se confirma su recuperación, asistiendo al funeral de Cassian Thorne en Nueva Ámsterdam junto al resto de sus hermanos supervivientes.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Ian%20Zaikov">**Ian Zaikov**</Link>: Su hermano y contraparte operativa. Ramses actúa como el «cerebro» mientras Ian es el brazo ejecutor.
+*   <Link to="/CrSaSo/personajes/Irene%20Zaikov">**Irene Zaikov**</Link>: Su hermana. Ramses siente un odio visceral por ella tras su huida con un millonario austríaco, considerándola muerta para la familia.
+*   <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link>: Aliado respetado. La relación se basa en el favor que Thorne les hizo al encontrar a los asesinos de sus padres.
+*   <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucía Sinclair**</Link>: Inicialmente la trata con hostilidad por su placa federal, aunque termina aceptando su presencia bajo la insistencia de sus hermanos.
+
+## Curiosidades
+
+*   Perdió una apuesta de cinco dólares contra Ian al confirmar que Lucía Sinclair era, efectivamente, una agente federal.
+*   Es el único de los hermanos Zaikov que utiliza un arete de oro como marca distintiva de su apariencia.
+*   Propuso la teoría del hombre lobo para explicar los crímenes del Cuarto Rojo, demostrando un interés por el folclore similar al de Archie Woodward.

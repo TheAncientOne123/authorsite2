@@ -1,68 +1,157 @@
 ﻿---
 title: Jessica McCarthy
-description: Heredera de la fortuna McCarthy; portadora del Elemento 121
-updated: 2026-05-17
+description: Heredera McCarthy e híbrida del Elemento 121; recipiente de la Reina de la Oscuridad en la crisis de 1929
+updated: 2026-05-25
 type: personaje
 saga: crsaso
 libro: necromancia-medianoche
 genero: Femenino
-estado: Fallecida / Transformada (Reina de la Oscuridad)
-raza: Humano
+estado: Fallecida
+raza: Híbrida
 ---
-
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+
+# Jessica McCarthy
 
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Jessica McCarthy"
     images={[
-      { src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jessica-mccarthy', alt: 'Jessica McCarthy', label: 'Humana' },
-      { src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jessica-monstruo', alt: 'Jessica transformada', label: 'Monstruo' },
-    ]}  caption="Heredera de McCarthy Petroleum; eje de la profecía"
+      {
+        src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jessica-mccarthy',
+        alt: 'Jessica McCarthy',
+        label: 'Humana',
+      },
+      {
+        src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jessica-monstruo',
+        alt: 'Jessica transformada',
+        label: 'Monstruo',
+      },
+    ]}
+    caption="Heredera de McCarthy Petroleum; eje de la profecía"
     rows={[
+      {
+        label: 'Alias / Apodos',
+        value: 'Princesa de la Oscuridad, La nacida de la oscuridad',
+      },
+      {
+        label: 'Estado actual',
+        value: 'Fallecida / Consumida por la Reina de la Oscuridad',
+      },
+      { label: 'Edad', value: '21 años (cercana a los 22)' },
+      {
+        label: 'Residencia',
+        value: (
+          <>
+            <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>,{' '}
+            <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>,{' '}
+            <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>
+          </>
+        ),
+      },
+      {
+        label: 'Especie',
+        value: (
+          <>
+            Híbrida (Humana / <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link> vía{' '}
+            <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>)
+          </>
+        ),
+      },
       { label: 'Género', value: 'Femenino' },
-      { label: 'Estado', value: 'Fallecida / Transformada (Reina de la Oscuridad)' },
-      { label: 'Profesión', value: 'Estudiante de medicina' },
-      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">La Familia McCarthy</Link> },
-      { label: 'Padres', value: <> <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> y Griselda Puckett </> },
-      { label: 'Vínculos', value: <><Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> (relación), <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> (pretendiente)</> },
-      { label: 'Particularidad', value: <>Portadora del <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>; collar de cuarzo como regulador</> },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      {
+        label: 'Familiares clave',
+        value: (
+          <>
+            <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> (padre, fallecido);
+            Sra. McCarthy (madre)
+          </>
+        ),
+      },
+      { label: 'Ocupación', value: 'Estudiante de medicina' },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">McCarthy Petroleum</Link>; los{' '}
+            <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link> (recipiente ritual)
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 4
+          </>
+        ),
+      },
     ]}
   />
-
 )}
 </BrowserOnly>
 
 
-## Resumen biográfico
+**Jessica McCarthy** fue una estudiante de medicina y la única heredera del magnate <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>. Su vida estuvo marcada por un secreto médico de origen alquímico: al nacer con una malformación cardíaca congénita grave, su padre le inyectó el <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link> (un derivado de sangre Rapax), salvando su vida pero alterando su biología permanentemente.
 
-**Jessica McCarthy** es la hija del industrial <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>. Para salvarla al nacer, su padre ordenó inyectarle el <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>, decisión que la ató a una **profecía** y a transformaciones monstruosas activadas por emociones intensas. En su vida cotidiana era **estudiosa y empática**, una joven universitaria de medicina que ayudaba a su comunidad y portaba un **collar de cuarzo** como amuleto regulador.
+A lo largo de los eventos de 1929, Jessica transitó de ser una joven de la alta sociedad a convertirse en el recipiente físico para la resurrección de la <Link to="/CrSaSo/objetos-conceptos/Reina%20de%20la%20Oscuridad">Reina de la Oscuridad</Link>, tras ser identificada por las facciones sobrenaturales como el equilibrio perfecto entre luz y sombra.
 
-## Relaciones y manipulación
+## Perfil y Personalidad
 
-Fue cortejada por <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> tras conocerse en el hospital, mientras mantenía un lazo afectivo complejo con <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>, quien acabaría siendo pieza clave —y a la vez peligrosa— en su destino.  
-Bajo los recursos de su familia, <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> la convirtió en **sujeto de experimentación** para estudiar y moldear el 121.
+Físicamente, en su forma humana, Jessica es descrita como una mujer de facciones delicadas, cabello castaño oscuro que cae en ondas suaves y ojos verdes que reflejan una inteligencia analítica. Psicológicamente, manifestaba una personalidad empática y dedicada al estudio, aunque vivía bajo una constante tensión emocional debido a ataques de pánico que, más tarde se descubriría, eran los preámbulos de su transformación.
 
-## Eventos clave
+Su forma bestial, sin embargo, era una amalgama de pesadillas: una criatura de casi tres metros con hocico lobuno, melena de oso, piel reptiliana cubierta de escamas relucientes y garras capaces de desgarrar metal. En este estado, sus ojos brillaban con un tono verde azulado intenso y exhalaba un vapor tóxico del mismo color.
 
-- **<Link to="/CrSaSo/lugares/Monte%20Galbrook">Monte Galbrook</Link>** (Desaparición): durante una cita con Jack, una criatura vuelca el Cadillac y **Jessica es raptada**.  
-- **<Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">El Balneario Rushmore</Link>**: permanece **bajo custodia** de Tamara; el 121 se estudia y explota.  
-- **<Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>**: rechaza definitivamente a Jack y se muestra el conflicto emocional con Oliver.  
-- **<Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>**: instrumentalizada en la masacre como arma de la conspiración.  
-- **<Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">La Refinería McCarthy</Link>**: clímax de la obra; su poder ligado al petróleo convierte el lugar en el escenario más peligroso.
+## Habilidades y Equipo
 
-## Destino
+Como híbrida experimental, Jessica poseía capacidades que superaban tanto a humanos como a Rapax convencionales:
 
-En el enfrentamiento final con <Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv Voronin</Link> y los <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>, Jessica **perece** al tiempo que **asciende** como la anunciada **Reina de la Oscuridad**, cumpliendo la profecía que la marcó desde el nacimiento.
+*   **Transformación traumática:** Su cambio a forma bestial era gatillado por emociones intensas como el miedo, la rabia o el dolor físico.
+*   **Fuerza y regeneración sobrenatural:** En su forma de monstruo, demostró fuerza para volcar vehículos de lujo y la capacidad de regenerar extremidades amputadas casi instantáneamente.
+*   **Afinidad sombría:** Como «nacida de la oscuridad», su cuerpo era el único recipiente capaz de canalizar la esencia de la Reina de la Oscuridad.
 
-## Véase también
+**Equipo notable:**
 
-- <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> · <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>  
-- <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> · <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>  
-- <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link> · <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral</Link>  
-- <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">Balneario Rushmore</Link> · <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link> · <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>
+*   **Collar de cuarzo:** Un colgante pentagonal de cristal diseñado para regular su flujo energético y contener a la bestia en su interior. El mineral terminó desgastado por la acumulación de energía negativa.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Caso del Cuarto Rojo y el secreto de Alan
+
+Jessica aparece inicialmente como una testigo colateral en la investigación del asesinato en la casa de los Chapman durante el <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">Caso del Cuarto Rojo</Link>. No obstante, los detectives <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> dedujeron que ella fue la autora material del crimen tras sufrir una transformación incontrolada provocada por una situación incómoda durante una feria. Se reveló que su padre, Alan, utilizó el Elemento 121 —proporcionado por <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>— para tratar su Tetralogía de Fallot al nacer, un acto que la condenó a una naturaleza dual.
+
+#### Desaparición en el Monte Galbrook
+
+Durante una cita con <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, el vehículo en el que viajaban fue volcado por una fuerza sobrehumana (<Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>) en el <Link to="/CrSaSo/lugares/Monte%20Galbrook">Monte Galbrook</Link>. En medio del pánico y para proteger a Jack, Jessica se transformó por primera vez de forma visible ante testigos, huyendo hacia el bosque antes de ser rescatada por Oliver y <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>.
+
+#### El refugio en el Balneario Rushmore
+
+Jessica se ocultó en el <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">Balneario Rushmore</Link> junto a Oliver Henderson, con quien inició una relación sentimental basada en su mutua naturaleza sobrenatural. En este lugar, rechazó definitivamente a Jack Fox, argumentando que él nunca podría entender su condición. Oliver, buscando forzar el cumplimiento de la <Link to="/CrSaSo/objetos-conceptos/Profec%C3%ADa%20de%20la%20Reina%20de%20la%20Oscuridad">profecía</Link>, la besó y luego atravesó su pecho con el brazo, provocando una transformación masiva y violenta en la bestia de tres metros.
+
+#### El asedio a la Mansión y el sacrificio en la Refinería
+
+Tras ser recuperada por su padre, fue llevada a la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">mansión McCarthy</Link>, donde las hermanas Dobrescu intentaron extraer la «sangre negra» de su cuerpo mediante un proceso doloroso que casi le cuesta la vida. Durante el ataque de los Voronin a la mansión, fue secuestrada nuevamente por Oliver.
+
+Finalmente, en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>, el patriarca <Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv Voronin</Link> la apuñaló con una daga de obsidiana ancestral. Este acto abrió un abismo bajo sus pies, y Jessica fue arrastrada por brazos viscosos hacia las profundidades, sirviendo como el molde físico para la manifestación de la Reina de la Oscuridad. Su conciencia fue extinguida o aprisionada permanentemente durante el proceso.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Alan%20McCarthy">**Alan McCarthy**</Link>: Su padre, cuya ambición por salvarla la convirtió en un monstruo. Jessica lo amaba, pero sentía que sus decisiones la habían privado de una vida normal.
+*   <Link to="/CrSaSo/personajes/Oliver%20Henderson">**Oliver Henderson**</Link>: Su amante y captor. Jessica lo eligió porque era «como ella», aunque Oliver terminó manipulándola para cumplir los planes de los Voronin.
+*   <Link to="/CrSaSo/personajes/Jack%20Fox">**Jack Fox**</Link>: Interés romántico humano. Jessica lo rechazó al comprender que la brecha biológica entre ambos era insalvable.
+*   <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">**Tamara Dobrescu**</Link>: Investigadora que buscaba estabilizar el Elemento 121 en su sangre para sus propios fines científicos.
+
+## Curiosidades
+
+*   Jessica estaba a solo tres días de cumplir 22 años antes del incidente final en la refinería; planeaba celebrarlo en Suecia.
+*   Su transformación liberaba un humo azul turquesa y un líquido viscoso que desafiaban las leyes de la física y la biología convencional.
+*   El collar de cuarzo que portaba desde niña fue un regalo de su madre para «protegerla de las maldades del mundo», desconociendo que la verdadera amenaza estaba en su propia sangre.

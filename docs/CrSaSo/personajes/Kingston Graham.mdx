@@ -1,7 +1,7 @@
 ---
 title: Kingston Graham
-description: Alto funcionario del Buró; operador clave del programa secreto y reclutador de Lucia Sinclair
-updated: 2026-05-17
+description: Subdirector adjunto del FBI; impulsor del programa secreto y supervisor de Lucía Sinclair
+updated: 2026-05-25
 type: personaje
 saga: crsaso
 libro: necromancia-medianoche
@@ -10,65 +10,117 @@ estado: Activo
 raza: Humano
 ---
 
-
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+
+# Kingston Graham
 
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Kingston Graham"
-    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/kingston-graham', alt: 'Kingston Graham' }}
-    caption="Operador clave del Buró Federal de Investigación"
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/kingston-graham',
+      alt: 'Kingston Graham',
+    }}
+    caption="Mano derecha del Director General del FBI"
     rows={[
+      { label: 'Alias / Apodos', value: 'Director Graham, La mano derecha del director' },
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Edad', value: 'No especificada (adulta)' },
+      { label: 'Residencia', value: 'Washington D.C.' },
+      {
+        label: 'Especie',
+        value: (
+          <>
+            Humana (vínculo con los{' '}
+            <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link> sugerido)
+          </>
+        ),
+      },
       { label: 'Género', value: 'Masculino' },
-      { label: 'Estado', value: 'Activo' },
-      { label: 'Cargo', value: 'Alto funcionario; mano derecha del Director' },
-      { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link> },
-      { label: 'Sede', value: <Link to="/CrSaSo/lugares/Washington%20D.%20C.">Washington D. C.</Link> },
-      { label: 'Programa', value: 'Reclutamiento Secreto (apoyo de Hoover; vínculos con MI5)' },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      { label: 'Familiares clave', value: 'No mencionados' },
+      {
+        label: 'Ocupación',
+        value: 'Subdirector adjunto / Mano derecha del Director General del FBI',
+      },
+      {
+        label: 'Afiliación',
+        value: (
+          <>
+            <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">
+              Buró Federal de Investigación (FBI)
+            </Link>
+            ; Programa Secreto de Capacitación
+          </>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , Prólogo
+          </>
+        ),
+      },
     ]}
   />
-
-
 )}
 </BrowserOnly>
 
-**Alias conocidos:** “Director Graham”, “mano derecha del Director General del Buró”  
-**Afiliaciones:** <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link>  
-**Casos vinculados:** <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>, <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>, <Link to="/CrSaSo/eventos/La%20Semana%20Negra">La Semana Negra</Link>, Programa de Reclutamiento Secreto
+Como documentalista de **El Códice**, presento el artículo detallado de **Kingston Graham**, figura clave dentro de las altas esferas del <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link> y supervisor del Proyecto Secreto de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>.
 
-## Resumen general
+**Kingston Graham** es un alto mando del Buró Federal de Investigación en Washington D.C., desempeñándose como la mano derecha del Director General de la organización. Su función inicial en los registros es la supervisión y evaluación de informes de campo, específicamente aquellos redactados por la agente especial <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> tras la crisis de Nueva Ámsterdam en 1929.
 
-**Kingston Graham** preside la junta en Washington donde <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> rinde su informe sobre los sucesos de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Con un tono escéptico pero calculador, se muestra como **operador político** del Buró: equilibra la imagen institucional con la necesidad de encarar lo anómalo. Su influencia excede la burocracia formal.
+Graham se distingue por ser el principal impulsor de un programa de capacitación de agentes fuera del marco oficial del FBI, operando bajo un nivel de clasificación tan alto que solo es conocido por él, el presidente y el director Hoover.
 
-Aunque **suspende** a Lucia y la **releva del cargo**, luego revela que la medida es parte de un plan mayor: **reclutarla** para un **programa secreto** —respaldado por Hoover y con puentes hacia el **MI5**— destinado a formar agentes que operen en la “zona gris” entre lo tangible y lo sobrenatural.
+## Perfil y Personalidad
 
-También gestiona un **paquete de <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>** con la **cinta de la refinería** (única sobreviviente), que sugiere la posible supervivencia de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>.
+Psicológicamente, Kingston Graham se proyecta como un individuo analítico, orgulloso y con una mentalidad estratégica superior. Posee una voz seria y uniforme, capaz de mantener la compostura incluso frente a relatos que otros directivos tildan de fantasiosos. Graham manifiesta un carácter enigmático y críptico, revelando información solo cuando es estrictamente necesario para sus planes de reclutamiento.
 
-## Rol durante _Necromancia a Medianoche_
+A pesar de su posición formal, demuestra una apertura inusual hacia teorías mitológicas y fenómenos inexplicables, valorando el talento único de sus agentes sobre la lógica convencional del Buró. En entornos menos formales, prefiere ser llamado por su nombre de pila, Kingston, y muestra un respeto calculado por los antecedentes académicos y militares de sus subordinados.
 
-- **Audiencia federal:** dirige la sesión, marca distancia pública con las afirmaciones sobrenaturales y, a la vez, evita el descrédito total de Lucia.  
-- **Reclutamiento encubierto:** convierte la sanción en **oferta** para integrarla al programa secreto con recursos extrainstitucionales.  
-- **Custodia de evidencia:** centraliza la cinta enviada por Jack y la usa para orientar las siguientes acciones del Buró.
+## Habilidades y Equipo
 
-## Personalidad y métodos
+Como alto directivo federal, Graham posee un conjunto de habilidades centradas en la inteligencia y la gestión operativa:
 
-- **Táctico y persuasivo**, con trato casi paternal cuando le conviene.  
-- Dosifica la información para **preservar el orden** y mantener margen de maniobra.  
-- Se define como **“mano derecha del Director”**, pero actúa como **arquitecto operativo** dentro del Buró.
+*   **Gestión de operaciones clasificadas:** Dirige reclutamientos estratégicos para misiones que operan fuera de la jurisdicción estándar del FBI.
+*   **Análisis forense y de inteligencia:** Es capaz de identificar patrones en grabaciones borrosas y conectar piezas de información fragmentada para formular teorías operativas.
+*   **Conexiones internacionales:** Mantiene alianzas activas con agencias de inteligencia extranjeras, notablemente con el MI5 en Inglaterra.
 
-## Conexiones clave
+**Equipo notable:**
 
-- **<Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>:** la considera pieza estratégica del nuevo programa.  
-- **<Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>:** centra esfuerzos en confirmar su destino tras la refinería.  
-- **<Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>:** fuente de la cinta; Graham asegura su integridad archivística.  
-- **Hoover / MI5:** respaldo político y cooperación internacional para el programa.
+*   **Moneda de latón:** Posee un artefacto de enlace místico idéntico al de los Vinculados, lo que sugiere que conoce o pertenece a la estirpe de cazadores y brujas.
+*   **Equipo de proyección:** Utiliza tecnología de reproducción cinematográfica para analizar evidencias recolectadas en el campo.
 
-## Véase también
+## Biografía / Historia
 
-- <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link>  
-- <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> · <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>  
-- <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> · <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">La Refinería McCarthy</Link>
+### Necromancia a Medianoche
+
+#### La audiencia de Washington
+
+Graham presidió la sesión evaluadora donde se cuestionó la validez del informe de Lucía Sinclair sobre el <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">Caso del Cuarto Rojo</Link>. A diferencia de sus colegas, otorgó a Sinclair el beneficio de la duda y exigió escuchar su versión de los hechos, centrada en profecías y seres sobrenaturales. Durante esta fase, Graham observó con detenimiento las capacidades de la agente, midiendo su potencial para proyectos de mayor envergadura.
+
+#### La suspensión y el reclutamiento secreto
+
+Seis meses después de los eventos en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">refinería</Link>, Graham procedió a suspender indefinidamente a Lucía Sinclair del Buró oficial. No obstante, este movimiento fue una maniobra calculada para integrarla en un programa secreto liderado por J. Edgar Hoover. Graham le reveló que había recibido una cinta de <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> conteniendo evidencia visual de la refinería, lo que confirmaba gran parte de su relato.
+
+#### El programa MI5
+
+En la etapa final de los registros, Graham ofrece a Lucía recursos y contactos en Europa a través del MI5 para continuar la lucha contra la guerra secreta de los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax</Link>. Al mostrarle su propia moneda de latón, Graham confirma que comparte la teoría de que el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> sigue con vida y es la pieza fundamental para ganar el conflicto.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucía Sinclair**</Link>: Su agente más efectiva. Aunque la relega oficialmente, Graham la ve como la operativa ideal para combatir amenazas extraordinarias.
+*   **Director Hoover:** Su superior directo y co-arquitecto del programa de agentes capacitados fuera del marco oficial.
+*   <Link to="/CrSaSo/personajes/Jack%20Fox">**Jack Fox**</Link>: Remitente de la evidencia física que permitió a Graham validar el informe de Nueva Ámsterdam.
+
+## Curiosidades
+
+*   Graham posee un registro de efectividad de sus agentes extremadamente riguroso, destacando que Lucía resolvió 20 de 21 casos.
+*   A pesar de su rango, no duda en interactuar directamente con agentes de campo en áreas comunes como los dispensadores de agua para tantear su lealtad.
+*   Su conocimiento sobre el MI5 y la situación en Europa sugiere que la trama de los Vinculados se extiende a un nivel global más allá de Nueva Ámsterdam.

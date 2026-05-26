@@ -19,6 +19,21 @@ export type ChapterVocabulary = {
   top_terms: {word: string; count: number}[];
 };
 
+export type VocabularyGrowthPoint = {
+  words_read: number;
+  unique_types: number;
+};
+
+export type LexicalStats = {
+  total_tokens: number;
+  unique_types: number;
+  ttr_traditional: number;
+  mattr: number;
+  mattr_window: number;
+  lexical_density_percent: number;
+  vocabulary_growth: VocabularyGrowthPoint[];
+};
+
 export type ManuscriptStats = {
   title: string;
   analyzed_at: string;
@@ -34,9 +49,14 @@ export type ManuscriptStats = {
     avg_words_per_sentence: number;
     chapters_detected: number;
     chapters_reliable?: boolean;
+    pdf_pages?: number;
+    manuscript_pages?: number;
+    pages?: number;
+    lexical_richness_ttr?: number;
+    dialogue_ratio?: number;
   };
   extremes: {
-    longest_chapter: {title: string; words: number} | null;
+    longest_chapter: {index?: number; title: string; words: number} | null;
     longest_paragraph_words: number;
     longest_paragraph_preview: string;
     longest_sentence_words: number;
@@ -65,4 +85,5 @@ export type ManuscriptStats = {
     frequent_terms: VocabularyTerm[];
     by_chapter: ChapterVocabulary[];
   };
+  lexical?: LexicalStats;
 };

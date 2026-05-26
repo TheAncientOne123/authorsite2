@@ -128,6 +128,18 @@ export function getCharacterPieColor(
   return '#94a3b8';
 }
 
+/** Etiqueta corta para leyendas de gráficos (evita «La», «Director», etc.). */
+export function characterLegendShortLabel(label: string): string {
+  const parts = label.trim().split(/\s+/);
+  if (parts.length === 1) return parts[0];
+  if (/^la\s+reina/i.test(label)) return 'Reina Oscuridad';
+  const genericFirst = /^(la|el|los|las|director|sra\.?|sr\.?|subdirector|agente)$/i;
+  if (genericFirst.test(parts[0]) && parts.length >= 2) {
+    return parts.length === 2 ? parts[1] : `${parts[1]} ${parts[2] ?? ''}`.trim();
+  }
+  return parts[0];
+}
+
 export const PERSONAJE_PATHS: Record<string, string> = {
   'cassian-thorne': '/CrSaSo/personajes/Cassian%20Thorne',
   'lucia-sinclair': '/CrSaSo/personajes/Lucia%20Sinclair',

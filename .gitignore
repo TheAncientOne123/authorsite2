@@ -12,7 +12,7 @@ data/lore-corpus.json
 
 # Cloudinary upload manifest (local)
 scripts/output/
-scripts/manuscript-analysis/output/
+scripts/manuscript_stats/output/
 
 # Misc
 .DS_Store

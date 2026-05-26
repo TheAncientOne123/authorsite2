@@ -148,14 +148,6 @@ export default function ChatWidget() {
 
   return (
     <div className={styles.panel}>
-      {!apiConfigured && (
-        <p className={styles.configNotice} role="status">
-          El chat está listo en la interfaz, pero falta conectar la API. Configura{' '}
-          <code>CHAT_API_URL</code> (GitHub Actions variable o <code>.env</code> local) con la URL
-          de Vercel de este repo, p. ej. <code>/api/chat</code>.
-        </p>
-      )}
-
       <div className={styles.messages} aria-live="polite">
         {messages.length === 0 && !loading && (
           <p className={styles.emptyState}>

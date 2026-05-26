@@ -1,177 +1,183 @@
 {
   "title": "Necromancia a Medianoche",
-  "analyzed_at": "2026-05-20T23:16:45.287316+00:00",
+  "analyzed_at": "2026-05-26T04:38:29.219204+00:00",
   "lang": "es",
   "chapters_source": "manual_pages",
   "global": {
-    "pages": 469,
-    "words": 146245,
-    "characters_with_spaces": 882479,
-    "characters_without_spaces": 736143,
-    "lines": 14204,
-    "sentences": 13299,
-    "paragraphs": 463,
+    "pdf_pages": 469,
+    "manuscript_pages": 459,
+    "pages": 459,
+    "words": 145364,
+    "characters_with_spaces": 877374,
+    "characters_without_spaces": 731476,
+    "lines": 15012,
+    "sentences": 13363,
+    "paragraphs": 449,
     "chapters_detected": 11,
     "chapters_reliable": true,
-    "reading_time_silent_min": 585,
-    "reading_time_aloud_min": 1125,
-    "reading_time_minutes": 734,
-    "avg_words_per_sentence": 11.0,
-    "avg_words_per_paragraph": 146245.0,
-    "lexical_richness_ttr": 0.108,
-    "dialogue_ratio": 0.1999
+    "reading_time_silent_min": 581,
+    "reading_time_aloud_min": 1118,
+    "reading_time_minutes": 581,
+    "avg_words_per_sentence": 10.9,
+    "avg_words_per_paragraph": 323.8,
+    "lexical_richness_ttr": 0.1076,
+    "dialogue_ratio": 0.2012
   },
   "extremes": {
     "longest_chapter": {
-      "index": 3,
-      "title": "Tercera Parte — El Castillo de Nueva Ámsterdam",
-      "words": 17448,
-      "characters": 104208,
-      "sentences": 1494,
-      "paragraphs": 53,
-      "avg_sent_len": 11.7,
-      "dialogue_ratio": 0.1912,
-      "page_start": 116,
-      "page_end": 169
+      "index": 1,
+      "title": "Primera Parte — Cassian Thorne",
+      "words": 17792,
+      "characters": 107167,
+      "sentences": 1445,
+      "paragraphs": 57,
+      "avg_sent_len": 12.3,
+      "dialogue_ratio": 0.2179,
+      "page_start": 11,
+      "page_end": 69
     },
     "shortest_chapter": {
       "index": 0,
       "title": "Prólogo",
-      "words": 159
-    }
+      "words": 1116
+    },
+    "longest_paragraph_words": 409,
+    "longest_paragraph_preview": "—Cuando quieras, Cassian.\nMe bebí lo que quedaba del vaso y solté un par de billetes sobre la barra.\nPensaba sentarme en una de las mesas centrales, cerca del escenario para\nescuchar un par de conversaciones, pero la función había comenzado.\nLas luces se apagaron, dejando encendido solo el foco circ…",
+    "longest_sentence_words": 60,
+    "longest_sentence_preview": "La primera sección pertenecía a los policías de campo, aquellos\nque arriesgan su vida en un robo de mano armada, en un enfrentamiento\nde las mafias o de una situación de rehenes; más allá, los detectives, los\nresolutores de casos, los halladores del culpable y los exploradores del\nmisterio, y en las…"
   },
   "chapters": [
     {
       "index": 0,
       "title": "Prólogo",
-      "words": 159,
-      "characters": 1085,
-      "sentences": 11,
-      "paragraphs": 1,
-      "avg_sent_len": 14.5,
-      "dialogue_ratio": 0.0,
-      "page_start": 1,
-      "page_end": 4
+      "words": 1116,
+      "characters": 6808,
+      "sentences": 84,
+      "paragraphs": 4,
+      "avg_sent_len": 13.3,
+      "dialogue_ratio": 0.1983,
+      "page_start": 7,
+      "page_end": 10
     },
     {
       "index": 1,
       "title": "Primera Parte — Cassian Thorne",
-      "words": 17068,
-      "characters": 103239,
-      "sentences": 1390,
-      "paragraphs": 56,
+      "words": 17792,
+      "characters": 107167,
+      "sentences": 1445,
+      "paragraphs": 57,
       "avg_sent_len": 12.3,
-      "dialogue_ratio": 0.223,
-      "page_start": 5,
-      "page_end": 63
+      "dialogue_ratio": 0.2179,
+      "page_start": 11,
+      "page_end": 69
     },
     {
       "index": 2,
       "title": "Segunda Parte — Archie Woodward",
-      "words": 16627,
-      "characters": 99775,
-      "sentences": 1509,
+      "words": 16665,
+      "characters": 100174,
+      "sentences": 1566,
       "paragraphs": 51,
-      "avg_sent_len": 11.0,
-      "dialogue_ratio": 0.2098,
-      "page_start": 64,
-      "page_end": 115
+      "avg_sent_len": 10.6,
+      "dialogue_ratio": 0.2204,
+      "page_start": 70,
+      "page_end": 121
     },
     {
       "index": 3,
       "title": "Tercera Parte — El Castillo de Nueva Ámsterdam",
-      "words": 17448,
-      "characters": 104208,
-      "sentences": 1494,
+      "words": 17502,
+      "characters": 104591,
+      "sentences": 1477,
       "paragraphs": 53,
-      "avg_sent_len": 11.7,
-      "dialogue_ratio": 0.1912,
-      "page_start": 116,
-      "page_end": 169
+      "avg_sent_len": 11.8,
+      "dialogue_ratio": 0.1878,
+      "page_start": 122,
+      "page_end": 175
     },
     {
       "index": 4,
       "title": "Cuarta Parte — Receso de 15 minutos para el café",
-      "words": 14114,
-      "characters": 84168,
-      "sentences": 1314,
+      "words": 14054,
+      "characters": 83979,
+      "sentences": 1309,
       "paragraphs": 42,
       "avg_sent_len": 10.7,
-      "dialogue_ratio": 0.197,
-      "page_start": 170,
-      "page_end": 212
+      "dialogue_ratio": 0.1922,
+      "page_start": 176,
+      "page_end": 218
     },
     {
       "index": 5,
       "title": "Quinta Parte — Infiltración Católica",
-      "words": 15604,
-      "characters": 94107,
-      "sentences": 1427,
+      "words": 15300,
+      "characters": 92507,
+      "sentences": 1433,
       "paragraphs": 48,
-      "avg_sent_len": 10.9,
-      "dialogue_ratio": 0.2133,
-      "page_start": 213,
-      "page_end": 261
+      "avg_sent_len": 10.7,
+      "dialogue_ratio": 0.2243,
+      "page_start": 219,
+      "page_end": 267
     },
     {
       "index": 6,
       "title": "Sexta Parte — Caso Resuelto",
-      "words": 16505,
-      "characters": 100444,
-      "sentences": 1659,
+      "words": 16857,
+      "characters": 102372,
+      "sentences": 1664,
       "paragraphs": 52,
-      "avg_sent_len": 9.9,
-      "dialogue_ratio": 0.1997,
-      "page_start": 262,
-      "page_end": 314
+      "avg_sent_len": 10.1,
+      "dialogue_ratio": 0.1871,
+      "page_start": 268,
+      "page_end": 320
     },
     {
       "index": 7,
       "title": "Séptima Parte — El Balneario Rushmore",
-      "words": 14674,
-      "characters": 88668,
-      "sentences": 1410,
+      "words": 14822,
+      "characters": 89344,
+      "sentences": 1458,
       "paragraphs": 45,
-      "avg_sent_len": 10.4,
-      "dialogue_ratio": 0.1691,
-      "page_start": 315,
-      "page_end": 360
+      "avg_sent_len": 10.2,
+      "dialogue_ratio": 0.1871,
+      "page_start": 321,
+      "page_end": 366
     },
     {
       "index": 8,
       "title": "Octava Parte — La Mansión McCarthy",
-      "words": 15976,
-      "characters": 97246,
-      "sentences": 1567,
+      "words": 15654,
+      "characters": 95402,
+      "sentences": 1488,
       "paragraphs": 49,
-      "avg_sent_len": 10.2,
-      "dialogue_ratio": 0.2204,
-      "page_start": 361,
-      "page_end": 410
+      "avg_sent_len": 10.5,
+      "dialogue_ratio": 0.2033,
+      "page_start": 367,
+      "page_end": 416
     },
     {
       "index": 9,
       "title": "Novena Parte — Necromancia a Medianoche",
-      "words": 12912,
-      "characters": 78912,
-      "sentences": 1176,
+      "words": 13322,
+      "characters": 81301,
+      "sentences": 1195,
       "paragraphs": 40,
-      "avg_sent_len": 11.0,
-      "dialogue_ratio": 0.1877,
-      "page_start": 411,
-      "page_end": 451
+      "avg_sent_len": 11.1,
+      "dialogue_ratio": 0.1791,
+      "page_start": 417,
+      "page_end": 457
     },
     {
       "index": 10,
       "title": "Epílogo",
-      "words": 2456,
-      "characters": 14799,
-      "sentences": 200,
-      "paragraphs": 7,
-      "avg_sent_len": 12.3,
-      "dialogue_ratio": 0.1189,
-      "page_start": 452,
-      "page_end": 458
+      "words": 2280,
+      "characters": 13709,
+      "sentences": 244,
+      "paragraphs": 8,
+      "avg_sent_len": 9.3,
+      "dialogue_ratio": 0.2464,
+      "page_start": 458,
+      "page_end": 465
     }
   ],
   "characters": {
@@ -179,366 +185,366 @@
       {
         "id": "cassian-thorne",
         "label": "Cassian Thorne",
-        "count": 483,
-        "share_percent": 14.46,
-        "first_appearance_word": 979
+        "count": 492,
+        "share_percent": 14.58,
+        "first_appearance_word": 805
       },
       {
         "id": "lucia-sinclair",
         "label": "Lucía Sinclair",
-        "count": 391,
-        "share_percent": 11.7,
-        "first_appearance_word": 186
+        "count": 397,
+        "share_percent": 11.76,
+        "first_appearance_word": 12
       },
       {
         "id": "archie-woodward",
         "label": "Archie Woodward",
         "count": 292,
-        "share_percent": 8.74,
-        "first_appearance_word": 17021
+        "share_percent": 8.65,
+        "first_appearance_word": 16847
       },
       {
         "id": "tamara-dobrescu",
         "label": "Tamara Dobrescu",
         "count": 256,
-        "share_percent": 7.66,
-        "first_appearance_word": 9339
+        "share_percent": 7.59,
+        "first_appearance_word": 9165
       },
       {
         "id": "oliver-henderson",
         "label": "Oliver Henderson",
-        "count": 226,
-        "share_percent": 6.76,
-        "first_appearance_word": 12909
+        "count": 227,
+        "share_percent": 6.73,
+        "first_appearance_word": 12735
       },
       {
         "id": "jessica-mccarthy",
         "label": "Jessica McCarthy",
         "count": 219,
-        "share_percent": 6.55,
-        "first_appearance_word": 6349
+        "share_percent": 6.49,
+        "first_appearance_word": 6175
       },
       {
         "id": "marco-gianotti",
         "label": "Marco Gianotti",
-        "count": 165,
-        "share_percent": 4.94,
-        "first_appearance_word": 16484
+        "count": 166,
+        "share_percent": 4.92,
+        "first_appearance_word": 16310
       },
       {
         "id": "dorian-blackwood",
         "label": "Dorian Blackwood",
-        "count": 157,
-        "share_percent": 4.7,
-        "first_appearance_word": 1617
+        "count": 159,
+        "share_percent": 4.71,
+        "first_appearance_word": 1443
       },
       {
         "id": "anastasia-dobrescu",
         "label": "Anastasia Dobrescu",
         "count": 139,
-        "share_percent": 4.16,
-        "first_appearance_word": 44788
+        "share_percent": 4.12,
+        "first_appearance_word": 44614
       },
       {
         "id": "rezniv-voronin",
         "label": "Rezniv Voronin",
         "count": 103,
-        "share_percent": 3.08,
-        "first_appearance_word": 113762
+        "share_percent": 3.05,
+        "first_appearance_word": 113588
       },
       {
         "id": "jayson-branch",
         "label": "Jayson Branch",
         "count": 103,
-        "share_percent": 3.08,
-        "first_appearance_word": 108383
+        "share_percent": 3.05,
+        "first_appearance_word": 108209
       },
       {
         "id": "ian-zaikov",
         "label": "Ian Zaikov",
         "count": 93,
-        "share_percent": 2.78,
-        "first_appearance_word": 28390
+        "share_percent": 2.76,
+        "first_appearance_word": 28216
       },
       {
         "id": "logan-crane",
         "label": "Logan Crane",
         "count": 87,
-        "share_percent": 2.6,
-        "first_appearance_word": 70779
+        "share_percent": 2.58,
+        "first_appearance_word": 70605
       },
       {
         "id": "reina-de-la-oscuridad",
         "label": "La Reina de la Oscuridad",
         "count": 83,
-        "share_percent": 2.48,
-        "first_appearance_word": 7773
+        "share_percent": 2.46,
+        "first_appearance_word": 7599
       },
       {
         "id": "cecilia",
         "label": "Cecilia",
         "count": 83,
-        "share_percent": 2.48,
-        "first_appearance_word": 80024
+        "share_percent": 2.46,
+        "first_appearance_word": 79850
       },
       {
         "id": "alan-mccarthy",
         "label": "Alan McCarthy",
         "count": 67,
-        "share_percent": 2.01,
-        "first_appearance_word": 5963
+        "share_percent": 1.99,
+        "first_appearance_word": 5789
       },
       {
         "id": "greta-zaikov",
         "label": "Greta Zaikov",
         "count": 53,
-        "share_percent": 1.59,
-        "first_appearance_word": 27788
+        "share_percent": 1.57,
+        "first_appearance_word": 27614
       },
       {
         "id": "frederick-chapman",
         "label": "Frederick Chapman",
         "count": 48,
-        "share_percent": 1.44,
-        "first_appearance_word": 1886
+        "share_percent": 1.42,
+        "first_appearance_word": 1712
       },
       {
         "id": "devin-kirby",
         "label": "Devin Kirby",
-        "count": 45,
-        "share_percent": 1.35,
-        "first_appearance_word": 36751
+        "count": 46,
+        "share_percent": 1.36,
+        "first_appearance_word": 36577
       },
       {
         "id": "mohammed-ramses",
         "label": "Mohammed Ramses",
         "count": 38,
-        "share_percent": 1.14,
-        "first_appearance_word": 29000
+        "share_percent": 1.13,
+        "first_appearance_word": 28826
       },
       {
         "id": "ibrahim-ramazan",
         "label": "Ibrahim Ramazan",
         "count": 28,
-        "share_percent": 0.84,
-        "first_appearance_word": 28887
+        "share_percent": 0.83,
+        "first_appearance_word": 28713
+      },
+      {
+        "id": "director-graham",
+        "label": "Director Graham",
+        "count": 27,
+        "share_percent": 0.8,
+        "first_appearance_word": 651
       },
       {
         "id": "susan-barnes",
         "label": "Susan Barnes",
         "count": 24,
-        "share_percent": 0.72,
-        "first_appearance_word": 36772
+        "share_percent": 0.71,
+        "first_appearance_word": 36598
       },
       {
         "id": "grigori",
         "label": "Grigori",
         "count": 21,
-        "share_percent": 0.63,
-        "first_appearance_word": 29108
+        "share_percent": 0.62,
+        "first_appearance_word": 28934
       },
       {
         "id": "veronica-black",
         "label": "Verónica Black",
         "count": 20,
-        "share_percent": 0.6,
-        "first_appearance_word": 71422
+        "share_percent": 0.59,
+        "first_appearance_word": 71248
       },
       {
         "id": "andrew-sheppard",
         "label": "Andrew Sheppard",
         "count": 19,
-        "share_percent": 0.57,
-        "first_appearance_word": 36704
+        "share_percent": 0.56,
+        "first_appearance_word": 36530
       },
       {
         "id": "pollione-tornatore",
         "label": "Pollione Tornatore",
         "count": 17,
-        "share_percent": 0.51,
-        "first_appearance_word": 68828
-      },
-      {
-        "id": "director-graham",
-        "label": "Director Graham",
-        "count": 15,
-        "share_percent": 0.45,
-        "first_appearance_word": 825
+        "share_percent": 0.5,
+        "first_appearance_word": 68654
       },
       {
         "id": "anya",
         "label": "Anya",
         "count": 11,
         "share_percent": 0.33,
-        "first_appearance_word": 120927
+        "first_appearance_word": 120753
       },
       {
         "id": "maisie-stewart",
         "label": "Maisie Stewart",
         "count": 7,
         "share_percent": 0.21,
-        "first_appearance_word": 72833
+        "first_appearance_word": 72659
       },
       {
         "id": "irene-zaikov",
         "label": "Irene Zaikov",
         "count": 6,
         "share_percent": 0.18,
-        "first_appearance_word": 32200
+        "first_appearance_word": 32026
       },
       {
         "id": "ryan-chapman",
         "label": "Ryan Chapman",
         "count": 5,
         "share_percent": 0.15,
-        "first_appearance_word": 1894
+        "first_appearance_word": 1720
       },
       {
         "id": "caleb-thorne",
         "label": "Caleb Thorne",
         "count": 5,
         "share_percent": 0.15,
-        "first_appearance_word": 67480
+        "first_appearance_word": 67306
       },
       {
         "id": "sra-mccarthy",
         "label": "Sra. McCarthy",
         "count": 4,
         "share_percent": 0.12,
-        "first_appearance_word": 82679
+        "first_appearance_word": 82505
       },
       {
         "id": "paciano-tornatore",
         "label": "Paciano Tornatore",
         "count": 4,
         "share_percent": 0.12,
-        "first_appearance_word": 92640
+        "first_appearance_word": 92466
+      },
+      {
+        "id": "huber",
+        "label": "Huber",
+        "count": 3,
+        "share_percent": 0.09,
+        "first_appearance_word": 99347
+      },
+      {
+        "id": "turner",
+        "label": "Turner",
+        "count": 3,
+        "share_percent": 0.09,
+        "first_appearance_word": 99349
       },
       {
         "id": "alice",
         "label": "Alice",
         "count": 2,
         "share_percent": 0.06,
-        "first_appearance_word": 72681
+        "first_appearance_word": 72507
       },
       {
         "id": "duccio-tornatore",
         "label": "Duccio Tornatore",
         "count": 2,
         "share_percent": 0.06,
-        "first_appearance_word": 92492
+        "first_appearance_word": 92318
       },
       {
         "id": "erikson",
         "label": "Erikson",
         "count": 2,
         "share_percent": 0.06,
-        "first_appearance_word": 2406
+        "first_appearance_word": 2232
       },
       {
         "id": "jackson",
         "label": "Jackson",
         "count": 2,
         "share_percent": 0.06,
-        "first_appearance_word": 67184
-      },
-      {
-        "id": "huber",
-        "label": "Huber",
-        "count": 2,
-        "share_percent": 0.06,
-        "first_appearance_word": 99521
-      },
-      {
-        "id": "turner",
-        "label": "Turner",
-        "count": 2,
-        "share_percent": 0.06,
-        "first_appearance_word": 99523
+        "first_appearance_word": 67010
       },
       {
         "id": "aris-voronin",
         "label": "Aris Voronin",
         "count": 1,
         "share_percent": 0.03,
-        "first_appearance_word": 114224
+        "first_appearance_word": 114050
       },
       {
         "id": "vova-voronin",
         "label": "Vova Voronin",
         "count": 1,
         "share_percent": 0.03,
-        "first_appearance_word": 114225
+        "first_appearance_word": 114051
       },
       {
         "id": "voivoda-dobrescu",
         "label": "Voivoda Dobrescu",
         "count": 1,
         "share_percent": 0.03,
-        "first_appearance_word": 44807
+        "first_appearance_word": 44633
       },
       {
         "id": "mohammed-ozturk",
         "label": "Mohammed Ozturk",
         "count": 1,
         "share_percent": 0.03,
-        "first_appearance_word": 32243
+        "first_appearance_word": 32069
       },
       {
         "id": "milenna-zaikov",
         "label": "Milenna Zaikov",
         "count": 1,
         "share_percent": 0.03,
-        "first_appearance_word": 32246
+        "first_appearance_word": 32072
       },
       {
         "id": "taylor",
         "label": "Taylor",
         "count": 1,
         "share_percent": 0.03,
-        "first_appearance_word": 120920
+        "first_appearance_word": 120746
       },
       {
         "id": "bryce",
         "label": "Bryce",
         "count": 1,
         "share_percent": 0.03,
-        "first_appearance_word": 120921
+        "first_appearance_word": 120747
       },
       {
         "id": "daniel",
         "label": "Daniel",
         "count": 1,
         "share_percent": 0.03,
-        "first_appearance_word": 120922
+        "first_appearance_word": 120748
       },
       {
         "id": "henry-bryne",
         "label": "Henry Bryne",
         "count": 1,
         "share_percent": 0.03,
-        "first_appearance_word": 12874
+        "first_appearance_word": 12700
       },
       {
         "id": "garrison",
         "label": "Garrison",
         "count": 1,
         "share_percent": 0.03,
-        "first_appearance_word": 67227
+        "first_appearance_word": 67053
       },
       {
         "id": "gerard",
         "label": "Gérard",
         "count": 1,
         "share_percent": 0.03,
-        "first_appearance_word": 115433
+        "first_appearance_word": 115259
       },
       {
         "id": "melissa",
         "label": "Melissa",
         "count": 1,
         "share_percent": 0.03,
-        "first_appearance_word": 58584
+        "first_appearance_word": 58410
       },
       {
         "id": "cunada-de-frederick-chapman",
@@ -555,11 +561,11 @@
         "mentions": {
           "cassian-thorne": {
             "label": "Cassian Thorne",
-            "count": 0
+            "count": 1
           },
           "lucia-sinclair": {
             "label": "Lucía Sinclair",
-            "count": 0
+            "count": 20
           },
           "dorian-blackwood": {
             "label": "Dorian Blackwood",
@@ -739,7 +745,7 @@
           },
           "director-graham": {
             "label": "Director Graham",
-            "count": 0
+            "count": 1
           },
           "garrison": {
             "label": "Garrison",
@@ -765,7 +771,12 @@
             "label": "Melissa",
             "count": 0
           }
-        }
+        },
+        "characters_present": [
+          "cassian-thorne",
+          "lucia-sinclair",
+          "director-graham"
+        ]
       },
       {
         "index": 1,
@@ -777,7 +788,7 @@
           },
           "lucia-sinclair": {
             "label": "Lucía Sinclair",
-            "count": 57
+            "count": 37
           },
           "dorian-blackwood": {
             "label": "Dorian Blackwood",
@@ -797,7 +808,7 @@
           },
           "tamara-dobrescu": {
             "label": "Tamara Dobrescu",
-            "count": 11
+            "count": 20
           },
           "oliver-henderson": {
             "label": "Oliver Henderson",
@@ -837,7 +848,7 @@
           },
           "marco-gianotti": {
             "label": "Marco Gianotti",
-            "count": 1
+            "count": 2
           },
           "cecilia": {
             "label": "Cecilia",
@@ -957,7 +968,7 @@
           },
           "director-graham": {
             "label": "Director Graham",
-            "count": 1
+            "count": 0
           },
           "garrison": {
             "label": "Garrison",
@@ -983,7 +994,23 @@
             "label": "Melissa",
             "count": 0
           }
-        }
+        },
+        "characters_present": [
+          "cassian-thorne",
+          "lucia-sinclair",
+          "dorian-blackwood",
+          "archie-woodward",
+          "tamara-dobrescu",
+          "oliver-henderson",
+          "reina-de-la-oscuridad",
+          "alan-mccarthy",
+          "jessica-mccarthy",
+          "marco-gianotti",
+          "frederick-chapman",
+          "ryan-chapman",
+          "erikson",
+          "henry-bryne"
+        ]
       },
       {
         "index": 2,
@@ -991,11 +1018,11 @@
         "mentions": {
           "cassian-thorne": {
             "label": "Cassian Thorne",
-            "count": 86
+            "count": 90
           },
           "lucia-sinclair": {
             "label": "Lucía Sinclair",
-            "count": 53
+            "count": 63
           },
           "dorian-blackwood": {
             "label": "Dorian Blackwood",
@@ -1015,11 +1042,11 @@
           },
           "tamara-dobrescu": {
             "label": "Tamara Dobrescu",
-            "count": 24
+            "count": 16
           },
           "oliver-henderson": {
             "label": "Oliver Henderson",
-            "count": 0
+            "count": 1
           },
           "reina-de-la-oscuridad": {
             "label": "La Reina de la Oscuridad",
@@ -1055,7 +1082,7 @@
           },
           "marco-gianotti": {
             "label": "Marco Gianotti",
-            "count": 3
+            "count": 2
           },
           "cecilia": {
             "label": "Cecilia",
@@ -1201,7 +1228,27 @@
             "label": "Melissa",
             "count": 0
           }
-        }
+        },
+        "characters_present": [
+          "cassian-thorne",
+          "lucia-sinclair",
+          "dorian-blackwood",
+          "archie-woodward",
+          "tamara-dobrescu",
+          "oliver-henderson",
+          "reina-de-la-oscuridad",
+          "alan-mccarthy",
+          "marco-gianotti",
+          "ian-zaikov",
+          "greta-zaikov",
+          "mohammed-ramses",
+          "ibrahim-ramazan",
+          "grigori",
+          "irene-zaikov",
+          "mohammed-ozturk",
+          "milenna-zaikov",
+          "frederick-chapman"
+        ]
       },
       {
         "index": 3,
@@ -1209,11 +1256,11 @@
         "mentions": {
           "cassian-thorne": {
             "label": "Cassian Thorne",
-            "count": 21
+            "count": 18
           },
           "lucia-sinclair": {
             "label": "Lucía Sinclair",
-            "count": 65
+            "count": 69
           },
           "dorian-blackwood": {
             "label": "Dorian Blackwood",
@@ -1229,19 +1276,19 @@
           },
           "anastasia-dobrescu": {
             "label": "Anastasia Dobrescu",
-            "count": 5
+            "count": 8
           },
           "tamara-dobrescu": {
             "label": "Tamara Dobrescu",
-            "count": 16
+            "count": 18
           },
           "oliver-henderson": {
             "label": "Oliver Henderson",
-            "count": 35
+            "count": 34
           },
           "reina-de-la-oscuridad": {
             "label": "La Reina de la Oscuridad",
-            "count": 5
+            "count": 6
           },
           "rezniv-voronin": {
             "label": "Rezniv Voronin",
@@ -1369,11 +1416,11 @@
           },
           "andrew-sheppard": {
             "label": "Andrew Sheppard",
-            "count": 18
+            "count": 19
           },
           "susan-barnes": {
             "label": "Susan Barnes",
-            "count": 23
+            "count": 24
           },
           "devin-kirby": {
             "label": "Devin Kirby",
@@ -1393,7 +1440,7 @@
           },
           "director-graham": {
             "label": "Director Graham",
-            "count": 0
+            "count": 6
           },
           "garrison": {
             "label": "Garrison",
@@ -1419,7 +1466,25 @@
             "label": "Melissa",
             "count": 0
           }
-        }
+        },
+        "characters_present": [
+          "cassian-thorne",
+          "lucia-sinclair",
+          "dorian-blackwood",
+          "archie-woodward",
+          "anastasia-dobrescu",
+          "tamara-dobrescu",
+          "oliver-henderson",
+          "reina-de-la-oscuridad",
+          "voivoda-dobrescu",
+          "alan-mccarthy",
+          "marco-gianotti",
+          "frederick-chapman",
+          "andrew-sheppard",
+          "susan-barnes",
+          "devin-kirby",
+          "director-graham"
+        ]
       },
       {
         "index": 4,
@@ -1427,11 +1492,11 @@
         "mentions": {
           "cassian-thorne": {
             "label": "Cassian Thorne",
-            "count": 17
+            "count": 16
           },
           "lucia-sinclair": {
             "label": "Lucía Sinclair",
-            "count": 33
+            "count": 25
           },
           "dorian-blackwood": {
             "label": "Dorian Blackwood",
@@ -1451,15 +1516,15 @@
           },
           "tamara-dobrescu": {
             "label": "Tamara Dobrescu",
-            "count": 40
+            "count": 49
           },
           "oliver-henderson": {
             "label": "Oliver Henderson",
-            "count": 31
+            "count": 45
           },
           "reina-de-la-oscuridad": {
             "label": "La Reina de la Oscuridad",
-            "count": 4
+            "count": 3
           },
           "rezniv-voronin": {
             "label": "Rezniv Voronin",
@@ -1483,7 +1548,7 @@
           },
           "jessica-mccarthy": {
             "label": "Jessica McCarthy",
-            "count": 24
+            "count": 25
           },
           "sra-mccarthy": {
             "label": "Sra. McCarthy",
@@ -1587,11 +1652,11 @@
           },
           "andrew-sheppard": {
             "label": "Andrew Sheppard",
-            "count": 1
+            "count": 0
           },
           "susan-barnes": {
             "label": "Susan Barnes",
-            "count": 1
+            "count": 0
           },
           "devin-kirby": {
             "label": "Devin Kirby",
@@ -1611,15 +1676,15 @@
           },
           "director-graham": {
             "label": "Director Graham",
-            "count": 6
+            "count": 2
           },
           "garrison": {
             "label": "Garrison",
-            "count": 0
+            "count": 1
           },
           "jackson": {
             "label": "Jackson",
-            "count": 0
+            "count": 2
           },
           "huber": {
             "label": "Huber",
@@ -1637,7 +1702,20 @@
             "label": "Melissa",
             "count": 1
           }
-        }
+        },
+        "characters_present": [
+          "cassian-thorne",
+          "lucia-sinclair",
+          "anastasia-dobrescu",
+          "tamara-dobrescu",
+          "oliver-henderson",
+          "reina-de-la-oscuridad",
+          "jessica-mccarthy",
+          "director-graham",
+          "garrison",
+          "jackson",
+          "melissa"
+        ]
       },
       {
         "index": 5,
@@ -1645,35 +1723,35 @@
         "mentions": {
           "cassian-thorne": {
             "label": "Cassian Thorne",
-            "count": 70
+            "count": 88
           },
           "lucia-sinclair": {
             "label": "Lucía Sinclair",
-            "count": 31
+            "count": 26
           },
           "dorian-blackwood": {
             "label": "Dorian Blackwood",
-            "count": 34
+            "count": 36
           },
           "archie-woodward": {
             "label": "Archie Woodward",
-            "count": 45
+            "count": 50
           },
           "logan-crane": {
             "label": "Logan Crane",
-            "count": 37
+            "count": 44
           },
           "anastasia-dobrescu": {
             "label": "Anastasia Dobrescu",
-            "count": 7
+            "count": 4
           },
           "tamara-dobrescu": {
             "label": "Tamara Dobrescu",
-            "count": 22
+            "count": 13
           },
           "oliver-henderson": {
             "label": "Oliver Henderson",
-            "count": 14
+            "count": 0
           },
           "reina-de-la-oscuridad": {
             "label": "La Reina de la Oscuridad",
@@ -1709,11 +1787,11 @@
           },
           "marco-gianotti": {
             "label": "Marco Gianotti",
-            "count": 31
+            "count": 44
           },
           "cecilia": {
             "label": "Cecilia",
-            "count": 18
+            "count": 31
           },
           "ian-zaikov": {
             "label": "Ian Zaikov",
@@ -1829,15 +1907,15 @@
           },
           "director-graham": {
             "label": "Director Graham",
-            "count": 2
+            "count": 0
           },
           "garrison": {
             "label": "Garrison",
-            "count": 1
+            "count": 0
           },
           "jackson": {
             "label": "Jackson",
-            "count": 2
+            "count": 0
           },
           "huber": {
             "label": "Huber",
@@ -1855,7 +1933,26 @@
             "label": "Melissa",
             "count": 0
           }
-        }
+        },
+        "characters_present": [
+          "cassian-thorne",
+          "lucia-sinclair",
+          "dorian-blackwood",
+          "archie-woodward",
+          "logan-crane",
+          "anastasia-dobrescu",
+          "tamara-dobrescu",
+          "reina-de-la-oscuridad",
+          "jessica-mccarthy",
+          "marco-gianotti",
+          "cecilia",
+          "irene-zaikov",
+          "veronica-black",
+          "maisie-stewart",
+          "alice",
+          "pollione-tornatore",
+          "caleb-thorne"
+        ]
       },
       {
         "index": 6,
@@ -1863,39 +1960,39 @@
         "mentions": {
           "cassian-thorne": {
             "label": "Cassian Thorne",
-            "count": 87
+            "count": 85
           },
           "lucia-sinclair": {
             "label": "Lucía Sinclair",
-            "count": 52
+            "count": 53
           },
           "dorian-blackwood": {
             "label": "Dorian Blackwood",
-            "count": 26
+            "count": 24
           },
           "archie-woodward": {
             "label": "Archie Woodward",
-            "count": 22
+            "count": 18
           },
           "logan-crane": {
             "label": "Logan Crane",
-            "count": 13
+            "count": 6
           },
           "anastasia-dobrescu": {
             "label": "Anastasia Dobrescu",
-            "count": 10
+            "count": 34
           },
           "tamara-dobrescu": {
             "label": "Tamara Dobrescu",
-            "count": 12
+            "count": 14
           },
           "oliver-henderson": {
             "label": "Oliver Henderson",
-            "count": 14
+            "count": 20
           },
           "reina-de-la-oscuridad": {
             "label": "La Reina de la Oscuridad",
-            "count": 4
+            "count": 7
           },
           "rezniv-voronin": {
             "label": "Rezniv Voronin",
@@ -1919,7 +2016,7 @@
           },
           "jessica-mccarthy": {
             "label": "Jessica McCarthy",
-            "count": 29
+            "count": 31
           },
           "sra-mccarthy": {
             "label": "Sra. McCarthy",
@@ -1927,11 +2024,11 @@
           },
           "marco-gianotti": {
             "label": "Marco Gianotti",
-            "count": 57
+            "count": 49
           },
           "cecilia": {
             "label": "Cecilia",
-            "count": 50
+            "count": 42
           },
           "ian-zaikov": {
             "label": "Ian Zaikov",
@@ -2011,7 +2108,7 @@
           },
           "frederick-chapman": {
             "label": "Frederick Chapman",
-            "count": 6
+            "count": 7
           },
           "ryan-chapman": {
             "label": "Ryan Chapman",
@@ -2073,7 +2170,27 @@
             "label": "Melissa",
             "count": 0
           }
-        }
+        },
+        "characters_present": [
+          "cassian-thorne",
+          "lucia-sinclair",
+          "dorian-blackwood",
+          "archie-woodward",
+          "logan-crane",
+          "anastasia-dobrescu",
+          "tamara-dobrescu",
+          "oliver-henderson",
+          "reina-de-la-oscuridad",
+          "alan-mccarthy",
+          "jessica-mccarthy",
+          "sra-mccarthy",
+          "marco-gianotti",
+          "cecilia",
+          "pollione-tornatore",
+          "paciano-tornatore",
+          "duccio-tornatore",
+          "frederick-chapman"
+        ]
       },
       {
         "index": 7,
@@ -2081,11 +2198,11 @@
         "mentions": {
           "cassian-thorne": {
             "label": "Cassian Thorne",
-            "count": 67
+            "count": 54
           },
           "lucia-sinclair": {
             "label": "Lucía Sinclair",
-            "count": 25
+            "count": 26
           },
           "dorian-blackwood": {
             "label": "Dorian Blackwood",
@@ -2101,11 +2218,11 @@
           },
           "anastasia-dobrescu": {
             "label": "Anastasia Dobrescu",
-            "count": 45
+            "count": 22
           },
           "tamara-dobrescu": {
             "label": "Tamara Dobrescu",
-            "count": 47
+            "count": 45
           },
           "oliver-henderson": {
             "label": "Oliver Henderson",
@@ -2113,19 +2230,19 @@
           },
           "reina-de-la-oscuridad": {
             "label": "La Reina de la Oscuridad",
-            "count": 4
+            "count": 7
           },
           "rezniv-voronin": {
             "label": "Rezniv Voronin",
-            "count": 0
+            "count": 4
           },
           "aris-voronin": {
             "label": "Aris Voronin",
-            "count": 0
+            "count": 1
           },
           "vova-voronin": {
             "label": "Vova Voronin",
-            "count": 0
+            "count": 1
           },
           "voivoda-dobrescu": {
             "label": "Voivoda Dobrescu",
@@ -2133,11 +2250,11 @@
           },
           "alan-mccarthy": {
             "label": "Alan McCarthy",
-            "count": 30
+            "count": 32
           },
           "jessica-mccarthy": {
             "label": "Jessica McCarthy",
-            "count": 67
+            "count": 69
           },
           "sra-mccarthy": {
             "label": "Sra. McCarthy",
@@ -2145,11 +2262,11 @@
           },
           "marco-gianotti": {
             "label": "Marco Gianotti",
-            "count": 12
+            "count": 9
           },
           "cecilia": {
             "label": "Cecilia",
-            "count": 12
+            "count": 7
           },
           "ian-zaikov": {
             "label": "Ian Zaikov",
@@ -2185,7 +2302,7 @@
           },
           "jayson-branch": {
             "label": "Jayson Branch",
-            "count": 5
+            "count": 6
           },
           "anya": {
             "label": "Anya",
@@ -2229,7 +2346,7 @@
           },
           "frederick-chapman": {
             "label": "Frederick Chapman",
-            "count": 6
+            "count": 5
           },
           "ryan-chapman": {
             "label": "Ryan Chapman",
@@ -2291,7 +2408,32 @@
             "label": "Melissa",
             "count": 0
           }
-        }
+        },
+        "characters_present": [
+          "cassian-thorne",
+          "lucia-sinclair",
+          "dorian-blackwood",
+          "archie-woodward",
+          "logan-crane",
+          "anastasia-dobrescu",
+          "tamara-dobrescu",
+          "oliver-henderson",
+          "reina-de-la-oscuridad",
+          "rezniv-voronin",
+          "aris-voronin",
+          "vova-voronin",
+          "alan-mccarthy",
+          "jessica-mccarthy",
+          "sra-mccarthy",
+          "marco-gianotti",
+          "cecilia",
+          "jayson-branch",
+          "frederick-chapman",
+          "devin-kirby",
+          "director-graham",
+          "huber",
+          "turner"
+        ]
       },
       {
         "index": 8,
@@ -2299,7 +2441,7 @@
         "mentions": {
           "cassian-thorne": {
             "label": "Cassian Thorne",
-            "count": 35
+            "count": 33
           },
           "lucia-sinclair": {
             "label": "Lucía Sinclair",
@@ -2311,39 +2453,39 @@
           },
           "archie-woodward": {
             "label": "Archie Woodward",
-            "count": 8
+            "count": 12
           },
           "logan-crane": {
             "label": "Logan Crane",
-            "count": 10
+            "count": 15
           },
           "anastasia-dobrescu": {
             "label": "Anastasia Dobrescu",
-            "count": 32
+            "count": 38
           },
           "tamara-dobrescu": {
             "label": "Tamara Dobrescu",
-            "count": 51
+            "count": 55
           },
           "oliver-henderson": {
             "label": "Oliver Henderson",
-            "count": 12
+            "count": 17
           },
           "reina-de-la-oscuridad": {
             "label": "La Reina de la Oscuridad",
-            "count": 12
+            "count": 7
           },
           "rezniv-voronin": {
             "label": "Rezniv Voronin",
-            "count": 39
+            "count": 49
           },
           "aris-voronin": {
             "label": "Aris Voronin",
-            "count": 1
+            "count": 0
           },
           "vova-voronin": {
             "label": "Vova Voronin",
-            "count": 1
+            "count": 0
           },
           "voivoda-dobrescu": {
             "label": "Voivoda Dobrescu",
@@ -2351,11 +2493,11 @@
           },
           "alan-mccarthy": {
             "label": "Alan McCarthy",
-            "count": 18
+            "count": 16
           },
           "jessica-mccarthy": {
             "label": "Jessica McCarthy",
-            "count": 53
+            "count": 55
           },
           "sra-mccarthy": {
             "label": "Sra. McCarthy",
@@ -2363,7 +2505,7 @@
           },
           "marco-gianotti": {
             "label": "Marco Gianotti",
-            "count": 30
+            "count": 29
           },
           "cecilia": {
             "label": "Cecilia",
@@ -2371,7 +2513,7 @@
           },
           "ian-zaikov": {
             "label": "Ian Zaikov",
-            "count": 16
+            "count": 17
           },
           "greta-zaikov": {
             "label": "Greta Zaikov",
@@ -2387,7 +2529,7 @@
           },
           "grigori": {
             "label": "Grigori",
-            "count": 12
+            "count": 14
           },
           "irene-zaikov": {
             "label": "Irene Zaikov",
@@ -2403,7 +2545,7 @@
           },
           "jayson-branch": {
             "label": "Jayson Branch",
-            "count": 61
+            "count": 64
           },
           "anya": {
             "label": "Anya",
@@ -2509,7 +2651,36 @@
             "label": "Melissa",
             "count": 0
           }
-        }
+        },
+        "characters_present": [
+          "cassian-thorne",
+          "lucia-sinclair",
+          "dorian-blackwood",
+          "archie-woodward",
+          "logan-crane",
+          "anastasia-dobrescu",
+          "tamara-dobrescu",
+          "oliver-henderson",
+          "reina-de-la-oscuridad",
+          "rezniv-voronin",
+          "alan-mccarthy",
+          "jessica-mccarthy",
+          "marco-gianotti",
+          "cecilia",
+          "ian-zaikov",
+          "greta-zaikov",
+          "mohammed-ramses",
+          "ibrahim-ramazan",
+          "grigori",
+          "irene-zaikov",
+          "jayson-branch",
+          "anya",
+          "taylor",
+          "bryce",
+          "daniel",
+          "devin-kirby",
+          "gerard"
+        ]
       },
       {
         "index": 9,
@@ -2517,31 +2688,31 @@
         "mentions": {
           "cassian-thorne": {
             "label": "Cassian Thorne",
-            "count": 48
+            "count": 58
           },
           "lucia-sinclair": {
             "label": "Lucía Sinclair",
-            "count": 24
+            "count": 26
           },
           "dorian-blackwood": {
             "label": "Dorian Blackwood",
-            "count": 13
+            "count": 14
           },
           "archie-woodward": {
             "label": "Archie Woodward",
-            "count": 34
+            "count": 31
           },
           "logan-crane": {
             "label": "Logan Crane",
-            "count": 24
+            "count": 20
           },
           "anastasia-dobrescu": {
             "label": "Anastasia Dobrescu",
-            "count": 23
+            "count": 21
           },
           "tamara-dobrescu": {
             "label": "Tamara Dobrescu",
-            "count": 29
+            "count": 26
           },
           "oliver-henderson": {
             "label": "Oliver Henderson",
@@ -2549,11 +2720,11 @@
           },
           "reina-de-la-oscuridad": {
             "label": "La Reina de la Oscuridad",
-            "count": 36
+            "count": 49
           },
           "rezniv-voronin": {
             "label": "Rezniv Voronin",
-            "count": 53
+            "count": 50
           },
           "aris-voronin": {
             "label": "Aris Voronin",
@@ -2573,7 +2744,7 @@
           },
           "jessica-mccarthy": {
             "label": "Jessica McCarthy",
-            "count": 38
+            "count": 32
           },
           "sra-mccarthy": {
             "label": "Sra. McCarthy",
@@ -2581,15 +2752,15 @@
           },
           "marco-gianotti": {
             "label": "Marco Gianotti",
-            "count": 20
+            "count": 24
           },
           "cecilia": {
             "label": "Cecilia",
-            "count": 0
+            "count": 1
           },
           "ian-zaikov": {
             "label": "Ian Zaikov",
-            "count": 46
+            "count": 45
           },
           "greta-zaikov": {
             "label": "Greta Zaikov",
@@ -2605,7 +2776,7 @@
           },
           "grigori": {
             "label": "Grigori",
-            "count": 3
+            "count": 1
           },
           "irene-zaikov": {
             "label": "Irene Zaikov",
@@ -2621,7 +2792,7 @@
           },
           "jayson-branch": {
             "label": "Jayson Branch",
-            "count": 34
+            "count": 33
           },
           "anya": {
             "label": "Anya",
@@ -2665,7 +2836,7 @@
           },
           "frederick-chapman": {
             "label": "Frederick Chapman",
-            "count": 0
+            "count": 1
           },
           "ryan-chapman": {
             "label": "Ryan Chapman",
@@ -2727,7 +2898,32 @@
             "label": "Melissa",
             "count": 0
           }
-        }
+        },
+        "characters_present": [
+          "cassian-thorne",
+          "lucia-sinclair",
+          "dorian-blackwood",
+          "archie-woodward",
+          "logan-crane",
+          "anastasia-dobrescu",
+          "tamara-dobrescu",
+          "oliver-henderson",
+          "reina-de-la-oscuridad",
+          "rezniv-voronin",
+          "alan-mccarthy",
+          "jessica-mccarthy",
+          "marco-gianotti",
+          "cecilia",
+          "ian-zaikov",
+          "greta-zaikov",
+          "mohammed-ramses",
+          "ibrahim-ramazan",
+          "grigori",
+          "jayson-branch",
+          "anya",
+          "frederick-chapman",
+          "devin-kirby"
+        ]
       },
       {
         "index": 10,
@@ -2735,43 +2931,43 @@
         "mentions": {
           "cassian-thorne": {
             "label": "Cassian Thorne",
-            "count": 14
+            "count": 11
           },
           "lucia-sinclair": {
             "label": "Lucía Sinclair",
-            "count": 7
+            "count": 8
           },
           "dorian-blackwood": {
             "label": "Dorian Blackwood",
-            "count": 1
+            "count": 2
           },
           "archie-woodward": {
             "label": "Archie Woodward",
-            "count": 2
+            "count": 0
           },
           "logan-crane": {
             "label": "Logan Crane",
-            "count": 1
+            "count": 0
           },
           "anastasia-dobrescu": {
             "label": "Anastasia Dobrescu",
-            "count": 5
+            "count": 0
           },
           "tamara-dobrescu": {
             "label": "Tamara Dobrescu",
-            "count": 4
+            "count": 0
           },
           "oliver-henderson": {
             "label": "Oliver Henderson",
-            "count": 11
+            "count": 1
           },
           "reina-de-la-oscuridad": {
             "label": "La Reina de la Oscuridad",
-            "count": 14
+            "count": 0
           },
           "rezniv-voronin": {
             "label": "Rezniv Voronin",
-            "count": 11
+            "count": 0
           },
           "aris-voronin": {
             "label": "Aris Voronin",
@@ -2791,7 +2987,7 @@
           },
           "jessica-mccarthy": {
             "label": "Jessica McCarthy",
-            "count": 1
+            "count": 0
           },
           "sra-mccarthy": {
             "label": "Sra. McCarthy",
@@ -2799,11 +2995,11 @@
           },
           "marco-gianotti": {
             "label": "Marco Gianotti",
-            "count": 5
+            "count": 1
           },
           "cecilia": {
             "label": "Cecilia",
-            "count": 1
+            "count": 0
           },
           "ian-zaikov": {
             "label": "Ian Zaikov",
@@ -2839,7 +3035,7 @@
           },
           "jayson-branch": {
             "label": "Jayson Branch",
-            "count": 3
+            "count": 0
           },
           "anya": {
             "label": "Anya",
@@ -2883,7 +3079,7 @@
           },
           "frederick-chapman": {
             "label": "Frederick Chapman",
-            "count": 1
+            "count": 0
           },
           "ryan-chapman": {
             "label": "Ryan Chapman",
@@ -2903,7 +3099,7 @@
           },
           "devin-kirby": {
             "label": "Devin Kirby",
-            "count": 0
+            "count": 1
           },
           "erikson": {
             "label": "Erikson",
@@ -2919,7 +3115,7 @@
           },
           "director-graham": {
             "label": "Director Graham",
-            "count": 2
+            "count": 14
           },
           "garrison": {
             "label": "Garrison",
@@ -2931,11 +3127,11 @@
           },
           "huber": {
             "label": "Huber",
-            "count": 0
+            "count": 1
           },
           "turner": {
             "label": "Turner",
-            "count": 0
+            "count": 1
           },
           "gerard": {
             "label": "Gérard",
@@ -2945,170 +3141,1795 @@
             "label": "Melissa",
             "count": 0
           }
-        }
+        },
+        "characters_present": [
+          "cassian-thorne",
+          "lucia-sinclair",
+          "dorian-blackwood",
+          "oliver-henderson",
+          "marco-gianotti",
+          "devin-kirby",
+          "director-graham",
+          "huber",
+          "turner"
+        ]
       }
     ]
   },
-  "top_words": [
-    {
-      "word": "voz",
-      "count": 534
-    },
-    {
-      "word": "mientras",
-      "count": 491
-    },
-    {
-      "word": "cassian",
-      "count": 463
-    },
-    {
-      "word": "ojos",
-      "count": 391
-    },
-    {
-      "word": "lucia",
-      "count": 344
-    },
-    {
-      "word": "tono",
-      "count": 336
-    },
-    {
-      "word": "mirada",
-      "count": 316
-    },
-    {
-      "word": "sonrisa",
-      "count": 262
-    },
-    {
-      "word": "archie",
-      "count": 259
-    },
-    {
-      "word": "respondio",
-      "count": 224
-    },
-    {
-      "word": "silencio",
-      "count": 224
-    },
-    {
-      "word": "oliver",
-      "count": 223
-    },
-    {
-      "word": "jessica",
-      "count": 219
-    },
-    {
-      "word": "palabras",
-      "count": 212
-    },
-    {
-      "word": "tamara",
-      "count": 209
-    },
-    {
-      "word": "parecia",
-      "count": 194
-    },
-    {
-      "word": "pregunto",
-      "count": 192
-    },
-    {
-      "word": "mano",
-      "count": 187
-    },
-    {
-      "word": "dije",
-      "count": 186
-    },
-    {
-      "word": "rostro",
-      "count": 186
-    },
-    {
-      "word": "jack",
-      "count": 184
-    },
-    {
-      "word": "tiempo",
-      "count": 183
-    },
-    {
-      "word": "aun",
-      "count": 181
-    },
-    {
-      "word": "uno",
-      "count": 179
-    },
-    {
-      "word": "aire",
-      "count": 167
-    },
-    {
-      "word": "marco",
-      "count": 167
-    },
-    {
-      "word": "momento",
-      "count": 158
-    },
-    {
-      "word": "dorian",
-      "count": 154
-    },
-    {
-      "word": "aqui",
-      "count": 152
-    },
-    {
-      "word": "pregunte",
-      "count": 152
-    },
-    {
-      "word": "respondi",
-      "count": 151
-    },
-    {
-      "word": "lugar",
-      "count": 150
-    },
-    {
-      "word": "paso",
-      "count": 147
-    },
-    {
-      "word": "anastasia",
-      "count": 139
-    },
-    {
-      "word": "hombre",
-      "count": 138
-    },
-    {
-      "word": "cuerpo",
-      "count": 137
-    },
-    {
-      "word": "manos",
-      "count": 137
-    },
-    {
-      "word": "podia",
-      "count": 131
-    },
-    {
-      "word": "caso",
-      "count": 128
-    },
-    {
-      "word": "tambien",
-      "count": 125
-    }
-  ]
+  "vocabulary": {
+    "unique_words": 15028,
+    "hapax_legomena": 7711,
+    "frequent_terms": [
+      {
+        "word": "voz",
+        "count": 534,
+        "chapters": 11
+      },
+      {
+        "word": "mientras",
+        "count": 489,
+        "chapters": 11
+      },
+      {
+        "word": "ojos",
+        "count": 390,
+        "chapters": 11
+      },
+      {
+        "word": "antes",
+        "count": 342,
+        "chapters": 10
+      },
+      {
+        "word": "tono",
+        "count": 336,
+        "chapters": 10
+      },
+      {
+        "word": "mirada",
+        "count": 316,
+        "chapters": 11
+      },
+      {
+        "word": "sonrisa",
+        "count": 262,
+        "chapters": 11
+      },
+      {
+        "word": "ahora",
+        "count": 243,
+        "chapters": 11
+      },
+      {
+        "word": "respondio",
+        "count": 224,
+        "chapters": 11
+      },
+      {
+        "word": "silencio",
+        "count": 224,
+        "chapters": 11
+      },
+      {
+        "word": "eso",
+        "count": 211,
+        "chapters": 11
+      },
+      {
+        "word": "palabras",
+        "count": 211,
+        "chapters": 10
+      },
+      {
+        "word": "aunque",
+        "count": 198,
+        "chapters": 11
+      },
+      {
+        "word": "parecia",
+        "count": 194,
+        "chapters": 10
+      },
+      {
+        "word": "pregunto",
+        "count": 192,
+        "chapters": 10
+      },
+      {
+        "word": "mano",
+        "count": 187,
+        "chapters": 11
+      },
+      {
+        "word": "esto",
+        "count": 187,
+        "chapters": 11
+      },
+      {
+        "word": "bien",
+        "count": 186,
+        "chapters": 11
+      },
+      {
+        "word": "dije",
+        "count": 186,
+        "chapters": 10
+      },
+      {
+        "word": "rostro",
+        "count": 186,
+        "chapters": 10
+      },
+      {
+        "word": "jack",
+        "count": 184,
+        "chapters": 7
+      },
+      {
+        "word": "tiempo",
+        "count": 182,
+        "chapters": 10
+      },
+      {
+        "word": "aun",
+        "count": 181,
+        "chapters": 11
+      },
+      {
+        "word": "uno",
+        "count": 179,
+        "chapters": 10
+      },
+      {
+        "word": "nosotros",
+        "count": 174,
+        "chapters": 9
+      },
+      {
+        "word": "aire",
+        "count": 167,
+        "chapters": 10
+      },
+      {
+        "word": "momento",
+        "count": 158,
+        "chapters": 10
+      },
+      {
+        "word": "pregunte",
+        "count": 152,
+        "chapters": 10
+      },
+      {
+        "word": "respondi",
+        "count": 151,
+        "chapters": 10
+      },
+      {
+        "word": "dos",
+        "count": 151,
+        "chapters": 10
+      }
+    ],
+    "by_chapter": [
+      {
+        "index": 0,
+        "title": "Prólogo",
+        "unique_words": 453,
+        "lexical_richness_ttr": 0.8177,
+        "top_terms": [
+          {
+            "word": "informe",
+            "count": 6
+          },
+          {
+            "word": "hombre",
+            "count": 5
+          },
+          {
+            "word": "señor",
+            "count": 5
+          },
+          {
+            "word": "buro",
+            "count": 4
+          },
+          {
+            "word": "ver",
+            "count": 4
+          },
+          {
+            "word": "jefe",
+            "count": 4
+          },
+          {
+            "word": "asiento",
+            "count": 4
+          },
+          {
+            "word": "bien",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "title": "Primera Parte — Cassian Thorne",
+        "unique_words": 4106,
+        "lexical_richness_ttr": 0.4605,
+        "top_terms": [
+          {
+            "word": "mientras",
+            "count": 65
+          },
+          {
+            "word": "sonrisa",
+            "count": 45
+          },
+          {
+            "word": "antes",
+            "count": 35
+          },
+          {
+            "word": "bien",
+            "count": 31
+          },
+          {
+            "word": "ojos",
+            "count": 31
+          },
+          {
+            "word": "hombre",
+            "count": 29
+          },
+          {
+            "word": "aun",
+            "count": 28
+          },
+          {
+            "word": "uno",
+            "count": 28
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "title": "Segunda Parte — Archie Woodward",
+        "unique_words": 3919,
+        "lexical_richness_ttr": 0.4793,
+        "top_terms": [
+          {
+            "word": "mientras",
+            "count": 65
+          },
+          {
+            "word": "tono",
+            "count": 43
+          },
+          {
+            "word": "ojos",
+            "count": 41
+          },
+          {
+            "word": "voz",
+            "count": 37
+          },
+          {
+            "word": "antes",
+            "count": 35
+          },
+          {
+            "word": "mirada",
+            "count": 35
+          },
+          {
+            "word": "silencio",
+            "count": 31
+          },
+          {
+            "word": "eso",
+            "count": 31
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "title": "Tercera Parte — El Castillo de Nueva Ámsterdam",
+        "unique_words": 4149,
+        "lexical_richness_ttr": 0.4807,
+        "top_terms": [
+          {
+            "word": "ojos",
+            "count": 53
+          },
+          {
+            "word": "mientras",
+            "count": 47
+          },
+          {
+            "word": "voz",
+            "count": 46
+          },
+          {
+            "word": "castillo",
+            "count": 38
+          },
+          {
+            "word": "mirada",
+            "count": 36
+          },
+          {
+            "word": "antes",
+            "count": 33
+          },
+          {
+            "word": "rostro",
+            "count": 32
+          },
+          {
+            "word": "jack",
+            "count": 32
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "title": "Cuarta Parte — Receso de 15 minutos para el café",
+        "unique_words": 3356,
+        "lexical_richness_ttr": 0.4794,
+        "top_terms": [
+          {
+            "word": "voz",
+            "count": 88
+          },
+          {
+            "word": "antes",
+            "count": 40
+          },
+          {
+            "word": "mientras",
+            "count": 39
+          },
+          {
+            "word": "ojos",
+            "count": 38
+          },
+          {
+            "word": "sombras",
+            "count": 38
+          },
+          {
+            "word": "mirada",
+            "count": 36
+          },
+          {
+            "word": "podia",
+            "count": 33
+          },
+          {
+            "word": "ahora",
+            "count": 32
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "title": "Quinta Parte — Infiltración Católica",
+        "unique_words": 3659,
+        "lexical_richness_ttr": 0.4797,
+        "top_terms": [
+          {
+            "word": "voz",
+            "count": 54
+          },
+          {
+            "word": "tono",
+            "count": 52
+          },
+          {
+            "word": "antes",
+            "count": 41
+          },
+          {
+            "word": "sonrisa",
+            "count": 40
+          },
+          {
+            "word": "mientras",
+            "count": 38
+          },
+          {
+            "word": "ojos",
+            "count": 35
+          },
+          {
+            "word": "ahora",
+            "count": 34
+          },
+          {
+            "word": "respondio",
+            "count": 34
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "title": "Sexta Parte — Caso Resuelto",
+        "unique_words": 3937,
+        "lexical_richness_ttr": 0.4664,
+        "top_terms": [
+          {
+            "word": "mientras",
+            "count": 66
+          },
+          {
+            "word": "voz",
+            "count": 63
+          },
+          {
+            "word": "antes",
+            "count": 49
+          },
+          {
+            "word": "ojos",
+            "count": 49
+          },
+          {
+            "word": "esto",
+            "count": 44
+          },
+          {
+            "word": "tono",
+            "count": 40
+          },
+          {
+            "word": "mirada",
+            "count": 37
+          },
+          {
+            "word": "jack",
+            "count": 35
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "title": "Séptima Parte — El Balneario Rushmore",
+        "unique_words": 3481,
+        "lexical_richness_ttr": 0.4702,
+        "top_terms": [
+          {
+            "word": "voz",
+            "count": 82
+          },
+          {
+            "word": "jack",
+            "count": 47
+          },
+          {
+            "word": "mientras",
+            "count": 45
+          },
+          {
+            "word": "ojos",
+            "count": 39
+          },
+          {
+            "word": "tono",
+            "count": 36
+          },
+          {
+            "word": "parecia",
+            "count": 29
+          },
+          {
+            "word": "ahora",
+            "count": 28
+          },
+          {
+            "word": "podia",
+            "count": 28
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "title": "Octava Parte — La Mansión McCarthy",
+        "unique_words": 3671,
+        "lexical_richness_ttr": 0.4672,
+        "top_terms": [
+          {
+            "word": "voz",
+            "count": 74
+          },
+          {
+            "word": "mientras",
+            "count": 66
+          },
+          {
+            "word": "ojos",
+            "count": 52
+          },
+          {
+            "word": "antes",
+            "count": 50
+          },
+          {
+            "word": "silencio",
+            "count": 47
+          },
+          {
+            "word": "tono",
+            "count": 47
+          },
+          {
+            "word": "mirada",
+            "count": 47
+          },
+          {
+            "word": "pregunto",
+            "count": 33
+          }
+        ]
+      },
+      {
+        "index": 9,
+        "title": "Novena Parte — Necromancia a Medianoche",
+        "unique_words": 3257,
+        "lexical_richness_ttr": 0.4918,
+        "top_terms": [
+          {
+            "word": "voz",
+            "count": 51
+          },
+          {
+            "word": "mientras",
+            "count": 50
+          },
+          {
+            "word": "ojos",
+            "count": 48
+          },
+          {
+            "word": "mirada",
+            "count": 34
+          },
+          {
+            "word": "tono",
+            "count": 31
+          },
+          {
+            "word": "antes",
+            "count": 30
+          },
+          {
+            "word": "refineria",
+            "count": 29
+          },
+          {
+            "word": "ahora",
+            "count": 27
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "title": "Epílogo",
+        "unique_words": 842,
+        "lexical_richness_ttr": 0.7451,
+        "top_terms": [
+          {
+            "word": "voz",
+            "count": 10
+          },
+          {
+            "word": "sonrisa",
+            "count": 7
+          },
+          {
+            "word": "mientras",
+            "count": 6
+          },
+          {
+            "word": "silencio",
+            "count": 6
+          },
+          {
+            "word": "hizo",
+            "count": 6
+          },
+          {
+            "word": "pregunte",
+            "count": 6
+          },
+          {
+            "word": "respondio",
+            "count": 6
+          },
+          {
+            "word": "mano",
+            "count": 6
+          }
+        ]
+      }
+    ]
+  },
+  "lexical": {
+    "total_tokens": 145364,
+    "unique_types": 15637,
+    "ttr_traditional": 0.1076,
+    "mattr": 0.5007,
+    "mattr_window": 1000,
+    "lexical_density_percent": 57.14,
+    "vocabulary_growth": [
+      {
+        "words_read": 1,
+        "unique_types": 1
+      },
+      {
+        "words_read": 500,
+        "unique_types": 287
+      },
+      {
+        "words_read": 1000,
+        "unique_types": 502
+      },
+      {
+        "words_read": 1500,
+        "unique_types": 694
+      },
+      {
+        "words_read": 2000,
+        "unique_types": 885
+      },
+      {
+        "words_read": 2500,
+        "unique_types": 1062
+      },
+      {
+        "words_read": 3000,
+        "unique_types": 1205
+      },
+      {
+        "words_read": 3500,
+        "unique_types": 1349
+      },
+      {
+        "words_read": 4000,
+        "unique_types": 1476
+      },
+      {
+        "words_read": 4500,
+        "unique_types": 1607
+      },
+      {
+        "words_read": 5000,
+        "unique_types": 1720
+      },
+      {
+        "words_read": 5500,
+        "unique_types": 1870
+      },
+      {
+        "words_read": 6000,
+        "unique_types": 1993
+      },
+      {
+        "words_read": 6500,
+        "unique_types": 2117
+      },
+      {
+        "words_read": 7000,
+        "unique_types": 2246
+      },
+      {
+        "words_read": 7500,
+        "unique_types": 2348
+      },
+      {
+        "words_read": 8000,
+        "unique_types": 2507
+      },
+      {
+        "words_read": 8500,
+        "unique_types": 2630
+      },
+      {
+        "words_read": 9000,
+        "unique_types": 2739
+      },
+      {
+        "words_read": 9500,
+        "unique_types": 2866
+      },
+      {
+        "words_read": 10000,
+        "unique_types": 2955
+      },
+      {
+        "words_read": 10500,
+        "unique_types": 3035
+      },
+      {
+        "words_read": 11000,
+        "unique_types": 3133
+      },
+      {
+        "words_read": 11500,
+        "unique_types": 3249
+      },
+      {
+        "words_read": 12000,
+        "unique_types": 3430
+      },
+      {
+        "words_read": 12500,
+        "unique_types": 3524
+      },
+      {
+        "words_read": 13000,
+        "unique_types": 3618
+      },
+      {
+        "words_read": 13500,
+        "unique_types": 3723
+      },
+      {
+        "words_read": 14000,
+        "unique_types": 3822
+      },
+      {
+        "words_read": 14500,
+        "unique_types": 3895
+      },
+      {
+        "words_read": 15000,
+        "unique_types": 3968
+      },
+      {
+        "words_read": 15500,
+        "unique_types": 4042
+      },
+      {
+        "words_read": 16000,
+        "unique_types": 4115
+      },
+      {
+        "words_read": 16500,
+        "unique_types": 4191
+      },
+      {
+        "words_read": 17000,
+        "unique_types": 4270
+      },
+      {
+        "words_read": 17500,
+        "unique_types": 4325
+      },
+      {
+        "words_read": 18000,
+        "unique_types": 4395
+      },
+      {
+        "words_read": 18500,
+        "unique_types": 4478
+      },
+      {
+        "words_read": 19000,
+        "unique_types": 4558
+      },
+      {
+        "words_read": 19500,
+        "unique_types": 4636
+      },
+      {
+        "words_read": 20000,
+        "unique_types": 4708
+      },
+      {
+        "words_read": 20500,
+        "unique_types": 4791
+      },
+      {
+        "words_read": 21000,
+        "unique_types": 4857
+      },
+      {
+        "words_read": 21500,
+        "unique_types": 4949
+      },
+      {
+        "words_read": 22000,
+        "unique_types": 5022
+      },
+      {
+        "words_read": 22500,
+        "unique_types": 5103
+      },
+      {
+        "words_read": 23000,
+        "unique_types": 5173
+      },
+      {
+        "words_read": 23500,
+        "unique_types": 5239
+      },
+      {
+        "words_read": 24000,
+        "unique_types": 5309
+      },
+      {
+        "words_read": 24500,
+        "unique_types": 5400
+      },
+      {
+        "words_read": 25000,
+        "unique_types": 5466
+      },
+      {
+        "words_read": 25500,
+        "unique_types": 5536
+      },
+      {
+        "words_read": 26000,
+        "unique_types": 5612
+      },
+      {
+        "words_read": 26500,
+        "unique_types": 5682
+      },
+      {
+        "words_read": 27000,
+        "unique_types": 5768
+      },
+      {
+        "words_read": 27500,
+        "unique_types": 5846
+      },
+      {
+        "words_read": 28000,
+        "unique_types": 5933
+      },
+      {
+        "words_read": 28500,
+        "unique_types": 6005
+      },
+      {
+        "words_read": 29000,
+        "unique_types": 6080
+      },
+      {
+        "words_read": 29500,
+        "unique_types": 6141
+      },
+      {
+        "words_read": 30000,
+        "unique_types": 6212
+      },
+      {
+        "words_read": 30500,
+        "unique_types": 6294
+      },
+      {
+        "words_read": 31000,
+        "unique_types": 6367
+      },
+      {
+        "words_read": 31500,
+        "unique_types": 6424
+      },
+      {
+        "words_read": 32000,
+        "unique_types": 6485
+      },
+      {
+        "words_read": 32500,
+        "unique_types": 6548
+      },
+      {
+        "words_read": 33000,
+        "unique_types": 6610
+      },
+      {
+        "words_read": 33500,
+        "unique_types": 6678
+      },
+      {
+        "words_read": 34000,
+        "unique_types": 6738
+      },
+      {
+        "words_read": 34500,
+        "unique_types": 6798
+      },
+      {
+        "words_read": 35000,
+        "unique_types": 6842
+      },
+      {
+        "words_read": 35500,
+        "unique_types": 6884
+      },
+      {
+        "words_read": 36000,
+        "unique_types": 6962
+      },
+      {
+        "words_read": 36500,
+        "unique_types": 7023
+      },
+      {
+        "words_read": 37000,
+        "unique_types": 7087
+      },
+      {
+        "words_read": 37500,
+        "unique_types": 7153
+      },
+      {
+        "words_read": 38000,
+        "unique_types": 7208
+      },
+      {
+        "words_read": 38500,
+        "unique_types": 7256
+      },
+      {
+        "words_read": 39000,
+        "unique_types": 7297
+      },
+      {
+        "words_read": 39500,
+        "unique_types": 7345
+      },
+      {
+        "words_read": 40000,
+        "unique_types": 7434
+      },
+      {
+        "words_read": 40500,
+        "unique_types": 7520
+      },
+      {
+        "words_read": 41000,
+        "unique_types": 7586
+      },
+      {
+        "words_read": 41500,
+        "unique_types": 7638
+      },
+      {
+        "words_read": 42000,
+        "unique_types": 7701
+      },
+      {
+        "words_read": 42500,
+        "unique_types": 7760
+      },
+      {
+        "words_read": 43000,
+        "unique_types": 7803
+      },
+      {
+        "words_read": 43500,
+        "unique_types": 7855
+      },
+      {
+        "words_read": 44000,
+        "unique_types": 7912
+      },
+      {
+        "words_read": 44500,
+        "unique_types": 7971
+      },
+      {
+        "words_read": 45000,
+        "unique_types": 8042
+      },
+      {
+        "words_read": 45500,
+        "unique_types": 8116
+      },
+      {
+        "words_read": 46000,
+        "unique_types": 8188
+      },
+      {
+        "words_read": 46500,
+        "unique_types": 8252
+      },
+      {
+        "words_read": 47000,
+        "unique_types": 8308
+      },
+      {
+        "words_read": 47500,
+        "unique_types": 8347
+      },
+      {
+        "words_read": 48000,
+        "unique_types": 8409
+      },
+      {
+        "words_read": 48500,
+        "unique_types": 8465
+      },
+      {
+        "words_read": 49000,
+        "unique_types": 8524
+      },
+      {
+        "words_read": 49500,
+        "unique_types": 8583
+      },
+      {
+        "words_read": 50000,
+        "unique_types": 8620
+      },
+      {
+        "words_read": 50500,
+        "unique_types": 8658
+      },
+      {
+        "words_read": 51000,
+        "unique_types": 8710
+      },
+      {
+        "words_read": 51500,
+        "unique_types": 8763
+      },
+      {
+        "words_read": 52000,
+        "unique_types": 8808
+      },
+      {
+        "words_read": 52500,
+        "unique_types": 8852
+      },
+      {
+        "words_read": 53000,
+        "unique_types": 8904
+      },
+      {
+        "words_read": 53500,
+        "unique_types": 8956
+      },
+      {
+        "words_read": 54000,
+        "unique_types": 9002
+      },
+      {
+        "words_read": 54500,
+        "unique_types": 9043
+      },
+      {
+        "words_read": 55000,
+        "unique_types": 9090
+      },
+      {
+        "words_read": 55500,
+        "unique_types": 9137
+      },
+      {
+        "words_read": 56000,
+        "unique_types": 9193
+      },
+      {
+        "words_read": 56500,
+        "unique_types": 9241
+      },
+      {
+        "words_read": 57000,
+        "unique_types": 9293
+      },
+      {
+        "words_read": 57500,
+        "unique_types": 9349
+      },
+      {
+        "words_read": 58000,
+        "unique_types": 9387
+      },
+      {
+        "words_read": 58500,
+        "unique_types": 9431
+      },
+      {
+        "words_read": 59000,
+        "unique_types": 9488
+      },
+      {
+        "words_read": 59500,
+        "unique_types": 9537
+      },
+      {
+        "words_read": 60000,
+        "unique_types": 9586
+      },
+      {
+        "words_read": 60500,
+        "unique_types": 9640
+      },
+      {
+        "words_read": 61000,
+        "unique_types": 9703
+      },
+      {
+        "words_read": 61500,
+        "unique_types": 9757
+      },
+      {
+        "words_read": 62000,
+        "unique_types": 9798
+      },
+      {
+        "words_read": 62500,
+        "unique_types": 9835
+      },
+      {
+        "words_read": 63000,
+        "unique_types": 9878
+      },
+      {
+        "words_read": 63500,
+        "unique_types": 9918
+      },
+      {
+        "words_read": 64000,
+        "unique_types": 9954
+      },
+      {
+        "words_read": 64500,
+        "unique_types": 10002
+      },
+      {
+        "words_read": 65000,
+        "unique_types": 10045
+      },
+      {
+        "words_read": 65500,
+        "unique_types": 10079
+      },
+      {
+        "words_read": 66000,
+        "unique_types": 10122
+      },
+      {
+        "words_read": 66500,
+        "unique_types": 10177
+      },
+      {
+        "words_read": 67000,
+        "unique_types": 10218
+      },
+      {
+        "words_read": 67500,
+        "unique_types": 10267
+      },
+      {
+        "words_read": 68000,
+        "unique_types": 10305
+      },
+      {
+        "words_read": 68500,
+        "unique_types": 10356
+      },
+      {
+        "words_read": 69000,
+        "unique_types": 10410
+      },
+      {
+        "words_read": 69500,
+        "unique_types": 10462
+      },
+      {
+        "words_read": 70000,
+        "unique_types": 10494
+      },
+      {
+        "words_read": 70500,
+        "unique_types": 10535
+      },
+      {
+        "words_read": 71000,
+        "unique_types": 10587
+      },
+      {
+        "words_read": 71500,
+        "unique_types": 10628
+      },
+      {
+        "words_read": 72000,
+        "unique_types": 10659
+      },
+      {
+        "words_read": 72500,
+        "unique_types": 10714
+      },
+      {
+        "words_read": 73000,
+        "unique_types": 10759
+      },
+      {
+        "words_read": 73500,
+        "unique_types": 10785
+      },
+      {
+        "words_read": 74000,
+        "unique_types": 10809
+      },
+      {
+        "words_read": 74500,
+        "unique_types": 10856
+      },
+      {
+        "words_read": 75000,
+        "unique_types": 10893
+      },
+      {
+        "words_read": 75500,
+        "unique_types": 10933
+      },
+      {
+        "words_read": 76000,
+        "unique_types": 10972
+      },
+      {
+        "words_read": 76500,
+        "unique_types": 11015
+      },
+      {
+        "words_read": 77000,
+        "unique_types": 11069
+      },
+      {
+        "words_read": 77500,
+        "unique_types": 11105
+      },
+      {
+        "words_read": 78000,
+        "unique_types": 11139
+      },
+      {
+        "words_read": 78500,
+        "unique_types": 11176
+      },
+      {
+        "words_read": 79000,
+        "unique_types": 11230
+      },
+      {
+        "words_read": 79500,
+        "unique_types": 11276
+      },
+      {
+        "words_read": 80000,
+        "unique_types": 11351
+      },
+      {
+        "words_read": 80500,
+        "unique_types": 11389
+      },
+      {
+        "words_read": 81000,
+        "unique_types": 11420
+      },
+      {
+        "words_read": 81500,
+        "unique_types": 11465
+      },
+      {
+        "words_read": 82000,
+        "unique_types": 11503
+      },
+      {
+        "words_read": 82500,
+        "unique_types": 11528
+      },
+      {
+        "words_read": 83000,
+        "unique_types": 11573
+      },
+      {
+        "words_read": 83500,
+        "unique_types": 11618
+      },
+      {
+        "words_read": 84000,
+        "unique_types": 11651
+      },
+      {
+        "words_read": 84500,
+        "unique_types": 11697
+      },
+      {
+        "words_read": 85000,
+        "unique_types": 11740
+      },
+      {
+        "words_read": 85500,
+        "unique_types": 11765
+      },
+      {
+        "words_read": 86000,
+        "unique_types": 11796
+      },
+      {
+        "words_read": 86500,
+        "unique_types": 11815
+      },
+      {
+        "words_read": 87000,
+        "unique_types": 11850
+      },
+      {
+        "words_read": 87500,
+        "unique_types": 11885
+      },
+      {
+        "words_read": 88000,
+        "unique_types": 11922
+      },
+      {
+        "words_read": 88500,
+        "unique_types": 11952
+      },
+      {
+        "words_read": 89000,
+        "unique_types": 11987
+      },
+      {
+        "words_read": 89500,
+        "unique_types": 12022
+      },
+      {
+        "words_read": 90000,
+        "unique_types": 12058
+      },
+      {
+        "words_read": 90500,
+        "unique_types": 12107
+      },
+      {
+        "words_read": 91000,
+        "unique_types": 12140
+      },
+      {
+        "words_read": 91500,
+        "unique_types": 12186
+      },
+      {
+        "words_read": 92000,
+        "unique_types": 12235
+      },
+      {
+        "words_read": 92500,
+        "unique_types": 12274
+      },
+      {
+        "words_read": 93000,
+        "unique_types": 12311
+      },
+      {
+        "words_read": 93500,
+        "unique_types": 12390
+      },
+      {
+        "words_read": 94000,
+        "unique_types": 12419
+      },
+      {
+        "words_read": 94500,
+        "unique_types": 12460
+      },
+      {
+        "words_read": 95000,
+        "unique_types": 12497
+      },
+      {
+        "words_read": 95500,
+        "unique_types": 12527
+      },
+      {
+        "words_read": 96000,
+        "unique_types": 12555
+      },
+      {
+        "words_read": 96500,
+        "unique_types": 12592
+      },
+      {
+        "words_read": 97000,
+        "unique_types": 12619
+      },
+      {
+        "words_read": 97500,
+        "unique_types": 12658
+      },
+      {
+        "words_read": 98000,
+        "unique_types": 12689
+      },
+      {
+        "words_read": 98500,
+        "unique_types": 12703
+      },
+      {
+        "words_read": 99000,
+        "unique_types": 12736
+      },
+      {
+        "words_read": 99500,
+        "unique_types": 12769
+      },
+      {
+        "words_read": 100000,
+        "unique_types": 12829
+      },
+      {
+        "words_read": 100500,
+        "unique_types": 12870
+      },
+      {
+        "words_read": 101000,
+        "unique_types": 12903
+      },
+      {
+        "words_read": 101500,
+        "unique_types": 12935
+      },
+      {
+        "words_read": 102000,
+        "unique_types": 12959
+      },
+      {
+        "words_read": 102500,
+        "unique_types": 12996
+      },
+      {
+        "words_read": 103000,
+        "unique_types": 13037
+      },
+      {
+        "words_read": 103500,
+        "unique_types": 13069
+      },
+      {
+        "words_read": 104000,
+        "unique_types": 13112
+      },
+      {
+        "words_read": 104500,
+        "unique_types": 13147
+      },
+      {
+        "words_read": 105000,
+        "unique_types": 13194
+      },
+      {
+        "words_read": 105500,
+        "unique_types": 13234
+      },
+      {
+        "words_read": 106000,
+        "unique_types": 13266
+      },
+      {
+        "words_read": 106500,
+        "unique_types": 13300
+      },
+      {
+        "words_read": 107000,
+        "unique_types": 13324
+      },
+      {
+        "words_read": 107500,
+        "unique_types": 13353
+      },
+      {
+        "words_read": 108000,
+        "unique_types": 13379
+      },
+      {
+        "words_read": 108500,
+        "unique_types": 13400
+      },
+      {
+        "words_read": 109000,
+        "unique_types": 13444
+      },
+      {
+        "words_read": 109500,
+        "unique_types": 13481
+      },
+      {
+        "words_read": 110000,
+        "unique_types": 13507
+      },
+      {
+        "words_read": 110500,
+        "unique_types": 13537
+      },
+      {
+        "words_read": 111000,
+        "unique_types": 13566
+      },
+      {
+        "words_read": 111500,
+        "unique_types": 13597
+      },
+      {
+        "words_read": 112000,
+        "unique_types": 13628
+      },
+      {
+        "words_read": 112500,
+        "unique_types": 13653
+      },
+      {
+        "words_read": 113000,
+        "unique_types": 13684
+      },
+      {
+        "words_read": 113500,
+        "unique_types": 13714
+      },
+      {
+        "words_read": 114000,
+        "unique_types": 13744
+      },
+      {
+        "words_read": 114500,
+        "unique_types": 13781
+      },
+      {
+        "words_read": 115000,
+        "unique_types": 13818
+      },
+      {
+        "words_read": 115500,
+        "unique_types": 13833
+      },
+      {
+        "words_read": 116000,
+        "unique_types": 13864
+      },
+      {
+        "words_read": 116500,
+        "unique_types": 13880
+      },
+      {
+        "words_read": 117000,
+        "unique_types": 13925
+      },
+      {
+        "words_read": 117500,
+        "unique_types": 13952
+      },
+      {
+        "words_read": 118000,
+        "unique_types": 13974
+      },
+      {
+        "words_read": 118500,
+        "unique_types": 14011
+      },
+      {
+        "words_read": 119000,
+        "unique_types": 14035
+      },
+      {
+        "words_read": 119500,
+        "unique_types": 14065
+      },
+      {
+        "words_read": 120000,
+        "unique_types": 14089
+      },
+      {
+        "words_read": 120500,
+        "unique_types": 14123
+      },
+      {
+        "words_read": 121000,
+        "unique_types": 14157
+      },
+      {
+        "words_read": 121500,
+        "unique_types": 14195
+      },
+      {
+        "words_read": 122000,
+        "unique_types": 14234
+      },
+      {
+        "words_read": 122500,
+        "unique_types": 14261
+      },
+      {
+        "words_read": 123000,
+        "unique_types": 14291
+      },
+      {
+        "words_read": 123500,
+        "unique_types": 14316
+      },
+      {
+        "words_read": 124000,
+        "unique_types": 14349
+      },
+      {
+        "words_read": 124500,
+        "unique_types": 14387
+      },
+      {
+        "words_read": 125000,
+        "unique_types": 14417
+      },
+      {
+        "words_read": 125500,
+        "unique_types": 14465
+      },
+      {
+        "words_read": 126000,
+        "unique_types": 14490
+      },
+      {
+        "words_read": 126500,
+        "unique_types": 14529
+      },
+      {
+        "words_read": 127000,
+        "unique_types": 14551
+      },
+      {
+        "words_read": 127500,
+        "unique_types": 14577
+      },
+      {
+        "words_read": 128000,
+        "unique_types": 14614
+      },
+      {
+        "words_read": 128500,
+        "unique_types": 14639
+      },
+      {
+        "words_read": 129000,
+        "unique_types": 14672
+      },
+      {
+        "words_read": 129500,
+        "unique_types": 14704
+      },
+      {
+        "words_read": 130000,
+        "unique_types": 14744
+      },
+      {
+        "words_read": 130500,
+        "unique_types": 14770
+      },
+      {
+        "words_read": 131000,
+        "unique_types": 14794
+      },
+      {
+        "words_read": 131500,
+        "unique_types": 14834
+      },
+      {
+        "words_read": 132000,
+        "unique_types": 14859
+      },
+      {
+        "words_read": 132500,
+        "unique_types": 14879
+      },
+      {
+        "words_read": 133000,
+        "unique_types": 14909
+      },
+      {
+        "words_read": 133500,
+        "unique_types": 14939
+      },
+      {
+        "words_read": 134000,
+        "unique_types": 14971
+      },
+      {
+        "words_read": 134500,
+        "unique_types": 14997
+      },
+      {
+        "words_read": 135000,
+        "unique_types": 15027
+      },
+      {
+        "words_read": 135500,
+        "unique_types": 15058
+      },
+      {
+        "words_read": 136000,
+        "unique_types": 15082
+      },
+      {
+        "words_read": 136500,
+        "unique_types": 15124
+      },
+      {
+        "words_read": 137000,
+        "unique_types": 15165
+      },
+      {
+        "words_read": 137500,
+        "unique_types": 15197
+      },
+      {
+        "words_read": 138000,
+        "unique_types": 15228
+      },
+      {
+        "words_read": 138500,
+        "unique_types": 15259
+      },
+      {
+        "words_read": 139000,
+        "unique_types": 15284
+      },
+      {
+        "words_read": 139500,
+        "unique_types": 15305
+      },
+      {
+        "words_read": 140000,
+        "unique_types": 15328
+      },
+      {
+        "words_read": 140500,
+        "unique_types": 15355
+      },
+      {
+        "words_read": 141000,
+        "unique_types": 15388
+      },
+      {
+        "words_read": 141500,
+        "unique_types": 15413
+      },
+      {
+        "words_read": 142000,
+        "unique_types": 15447
+      },
+      {
+        "words_read": 142500,
+        "unique_types": 15475
+      },
+      {
+        "words_read": 143000,
+        "unique_types": 15498
+      },
+      {
+        "words_read": 143500,
+        "unique_types": 15537
+      },
+      {
+        "words_read": 144000,
+        "unique_types": 15561
+      },
+      {
+        "words_read": 144500,
+        "unique_types": 15587
+      },
+      {
+        "words_read": 145000,
+        "unique_types": 15621
+      },
+      {
+        "words_read": 145364,
+        "unique_types": 15637
+      }
+    ]
+  }
 }

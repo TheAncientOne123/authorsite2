@@ -1,7 +1,7 @@
 ---
 title: Logan Crane
-description: Detective de la Policía de Nueva Ámsterdam; enlace operativo del equipo Thorne–Sinclair
-updated: 2026-05-17
+description: Detective de la policía de Nueva Ámsterdam; aliado táctico de Cassian Thorne y los Vinculados
+updated: 2026-05-25
 type: personaje
 saga: crsaso
 libro: necromancia-medianoche
@@ -10,45 +10,108 @@ estado: Activo
 raza: Humano
 ---
 
-
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+
+# Logan Crane
 
 <BrowserOnly fallback={<div />}>
 {()=>(
   <Infobox
     title="Logan Crane"
-    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/logan-crane', alt: 'Logan Crane' }}
-    caption="Detective de la Policía de Nueva Ámsterdam"
+    image={{
+      src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/logan-crane',
+      alt: 'Logan Crane',
+    }}
+    caption="Detective del Departamento de Policía de Nueva Ámsterdam"
     rows={[
+      { label: 'Alias / Apodos', value: 'Soquete de Queenston' },
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Edad', value: 'Adultez temprana (contemporáneo a Cassian Thorne)' },
+      {
+        label: 'Residencia',
+        value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>,
+      },
+      { label: 'Especie', value: 'Humana' },
       { label: 'Género', value: 'Masculino' },
-      { label: 'Estado', value: 'Activo' },
-      { label: 'Profesión', value: 'Detective' },
-      { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">La Comisaría de Nueva Ámsterdam</Link> },
-      { label: 'Superior', value: <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link> },
-      { label: 'Rasgos', value: 'Pragmático, sarcástico, cumplidor' },
-      { label: 'Primera Aparición', value: 'Necromancia a Medianoche' },
+      { label: 'Familiares clave', value: 'No mencionados' },
+      { label: 'Ocupación', value: 'Detective de policía' },
+      {
+        label: 'Afiliación',
+        value: (
+          <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">
+            Departamento de Policía de Nueva Ámsterdam
+          </Link>
+        ),
+      },
+      {
+        label: 'Primera aparición',
+        value: (
+          <>
+            <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+              <em>Necromancia a Medianoche</em>
+            </Link>
+            , cap. 32
+          </>
+        ),
+      },
     ]}
   />
 )}
 </BrowserOnly>
 
-## Perfil general
+Este artículo detalla la trayectoria y el perfil operativo de **Logan Crane**, detective del Departamento de Policía de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> y aliado clave en la resolución del caso de los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>.
 
-Logan Crane es uno de los detectives de la <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">Comisaría de Nueva Ámsterdam</Link> y forma parte de la unidad especial de <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>. Procura tomar siempre la **decisión correcta** según la ley: es recto, de buena moral, **puntual** y **cumplidor**. Aunque no busca liderar, es el primero en **ofrecerse** a misiones y respaldar a sus compañeros.  
-Pese al desgaste de la vida policial, su sentido del **deber** lo mantiene en activo. Es compañero y amigo cercano de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>.
+**Logan Crane** es un detective de la policía de Nueva Ámsterdam, reconocido por su pericia técnica y su estrecha relación con el jefe de detectives <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>. A diferencia de otros oficiales, Crane posee una mentalidad pragmática y una disposición audaz que lo llevó a involucrarse en los aspectos más oscuros y sobrenaturales del <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">Caso del Cuarto Rojo</Link>.
 
-## Rol en _Necromancia a Medianoche_
+A lo largo de la crisis de 1929, Logan transitó de sus deberes oficiales a una participación voluntaria en operaciones encubiertas y asaltos tácticos contra la facción de los <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>. Su intervención fue determinante para la supervivencia del equipo de los <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link>, especialmente durante el enfrentamiento final en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>.
 
-- **Ingreso al equipo.** Presentado por Dorian como “el detective Logan Crane”, se integra como apoyo directo de Cassian y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia</Link>.  
-- **La Infiltración Católica.** Sirve de **pareja de cobertura** de Lucia en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>; mantiene una actitud **escéptica** respecto a la fe (“lobos y ovejas”) y pelea junto a Cassian y <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>. Véase: <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>.  
-- **Italian’s Boot.** Canaliza información con la comisaría y **conduce** a los protagonistas al múltiple homicidio en <Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">Italian’s Boot</Link>.  
-- **Mansión McCarthy.** Cuando <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link> abre el búnker, Logan toma equipo y se suma a la defensa en la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>, soltando una arenga desafiante contra la **Reina de la Oscuridad**.  
-- **Apoyo táctico.** Actúa como **enlace operativo**: transmite órdenes de Dorian, solicita refuerzos y mantiene comunicaciones durante los despliegues.
+## Perfil y Personalidad
 
-## Véase también
+Logan Crane se presenta como un hombre con un aire casual pero permanentemente alerta. Físicamente, destaca por llevar una barba rasposa y mantener una postura erguida que proyecta confianza. Es un individuo dotado de un humor sarcástico y una franqueza que puede resultar dolorosa para sus allegados.
 
-- <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> · <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> · <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>  
-- <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link> · <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>  
-- <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link> · <Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">Italian’s Boot</Link> · <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>
+Psicológicamente, Logan es un escéptico absoluto en materia religiosa, considerando la fe como un «cuento para niños» tras haber sido testigo de la crudeza criminal de Nueva Ámsterdam. Es un observador agudo de la conducta humana, siendo el primero en notar y señalar el vínculo emocional emergente entre <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>. A pesar de su cinismo superficial, posee una lealtad inquebrantable hacia sus compañeros y un sentido del deber que lo empuja a arriesgar su carrera y su vida por causas que considera justas.
+
+## Habilidades y Equipo
+
+Logan Crane es un operativo de campo altamente cualificado con capacidades que equilibran la investigación y el combate:
+
+*   **Combate táctico y cuerpo a cuerpo:** Demostró gran destreza durante el altercado en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>, enfrentándose a múltiples oponentes simultáneamente.
+*   **Manejo de armamento pesado:** Posee la capacidad técnica para operar ametralladoras de alto calibre, como la Gatling montada en el equipo de <Link to="/CrSaSo/lugares/Atlantic%20News"><em>Atlantic News</em></Link>.
+*   **Infiltración y vigilancia:** Experto en técnicas de vigilancia encubierta, logrando pasar desapercibido en entornos hostiles o ceremoniales.
+
+**Equipo notable:**
+
+*   **Armamento policial:** Porta su pistola reglamentaria de servicio.
+*   **Equipo de asalto McCarthy:** Tras acceder al búnker de <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>, se equipó con armas de fuego de alta potencia para enfrentar la amenaza Rapax.
+*   **Ametralladora Gatling:** Su arma principal de cobertura durante el asalto terrestre a la refinería.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El caso de la Catedral de Santa Regina
+
+Logan es convocado por Dorian Blackwood para apoyar a Cassian y Lucía tras el fracaso de los intentos iniciales de vigilancia en la catedral. Para facilitar la entrada de Lucía en el recinto, Logan asume el papel encubierto de su «esposo preocupado», logrando engañar a la seguridad del sacerdote <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>. Durante la misión, se ve envuelto en una riña masiva contra falsos feligreses armados, logrando contener a la multitud hasta que Cassian extrae a Lucía.
+
+#### El asedio a la Mansión McCarthy
+
+Durante la fiesta de cumpleaños de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, Logan es asignado a la vigilancia del piso superior. Junto a <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>, defiende los pasillos de las incursiones de los Voronin, utilizando su arma de servicio para repeler a los atacantes mientras <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> intenta rescatar a Jessica. Fue testigo presencial de la resistencia física sobrenatural de <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> durante el asalto.
+
+#### La batalla en la Refinería y resolución
+
+Ante la orden de Dorian de suspender el caso, Logan decide entregar su placa y arma oficial para unirse a los Vinculados como civil. En la refinería, asume el control de la ametralladora Gatling en la furgoneta de <em>Atlantic News</em>, despejando hordas de muertos de petróleo y permitiendo que Archie coloque los explosivos necesarios. Tras la explosión del complejo y la desaparición de Cassian Thorne, Logan actúa como soporte emocional para el equipo superviviente. Seis meses después, continúa en activo, informando a Lucía sobre la captura de criminales en la ciudad.
+
+## Relaciones Clave
+
+*   <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link>: Su amigo cercano y rival profesional. Existe un respeto mutuo forjado en peleas pasadas y casos compartidos; Logan es el confidente de Cassian respecto a sus inseguridades sentimentales.
+*   <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucía Sinclair**</Link>: Desarrolla un respeto profesional por ella, encontrándola una mujer «interesante» debido a su intelecto y métodos inusuales.
+*   <Link to="/CrSaSo/personajes/Dorian%20Blackwood">**Dorian Blackwood**</Link>: Su superior directo. Aunque Logan respeta su autoridad, está dispuesto a desafiar sus órdenes directas si considera que el bien mayor está en juego.
+
+## Curiosidades
+
+*   Logan y Cassian participaron en una riña estando ebrios en un local llamado *Embers*, evento que recordaron durante el combate en la catedral.
+*   Fue el responsable de heredar el puesto de «esposo» en la infiltración, bromeando sobre lo «interesante» que sería la vida con una federal.
+*   Tiene la costumbre de comer sándwiches de pollo fríos durante las largas guardias de vigilancia.
+*   Cassian suele llamarlo con desdén «soquete de Queenston».

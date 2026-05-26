@@ -1,51 +1,134 @@
 ---
 title: Familia Voronin
-description: Clan vampírico ancestral de raíz carpática; culto profético devoto de la Reina de la Oscuridad y antagonista central en la crisis McCarthy.
-updated: 2026-05-17
+description: Facción sectaria de Rapax Hominum de los Cárpatos; culto a la Reina de la Oscuridad y antagonista de la crisis de 1929
+updated: 2026-05-24
 type: familia
 saga: crsaso
 libro: necromancia-medianoche
 ---
 
-
 import Infobox from '@site/src/components/Infobox';
+import FamilyMemberGrid from '@site/src/components/FamilyMemberGrid';
 import Link from '@docusaurus/Link';
 
 # Familia Voronin
 
 <Infobox
   title="Familia Voronin"
-  caption="«La profecía no se interpreta: se cumple»"
+  caption="La facción sectaria de los Cárpatos"
   rows={[
-    { label: 'Tipo', value: 'Clan vampírico ancestral / Culto profético' },
-    { label: 'Sede / Territorio', value: <>Origen: Tierras altas de los Cárpatos (Besarabia). Célula operativa en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>.</> },
-    { label: 'Liderazgo', value: <><Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv Voronin</Link> (patriarca); lugartenientes: Aris y Vova Voronin</> },
-    { label: 'Ámbito', value: 'Cumplimiento literal de la Profecía de los Primeros Nigromantes; persecución del “recipiente” de la Reina de la Oscuridad' },
-    { label: 'Aliados', value: 'Alianzas históricas con casas Basarab y Dobrescu (época antigua); sin aliados confiables en la era moderna' },
-    { label: 'Rivales', value: <><Link to="/CrSaSo/familias/Brujas">Brujas</Link>, <Link to="/CrSaSo/familias/Cazadores">Cazadores</Link>, <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>, <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>, <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara</Link> y <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link></> },
-    { label: 'Estado', value: <>Célula de Nueva Ámsterdam: aniquilada en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>; situación global: desconocida</> },
-    { label: 'Eventos clave', value: <>
-      <Link to="/CrSaSo/eventos/Desaparicion%20de%20Jessica%20McCarthy">Desaparición de Jessica McCarthy</Link>; 
-      asedio a la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>; 
-      clímax en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>
-    </> },
-    { label: 'Miembros notables', value: <><Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv Voronin</Link>; Aris Voronin; Vova Voronin</> },
+    { label: 'Estado actual', value: 'Decimada / Inactiva' },
+    {
+      label: 'Residencia',
+      value: (
+        <>
+          Tierras altas de los Cárpatos (Besarabia);{' '}
+          <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>{' '}
+          (temporal)
+        </>
+      ),
+    },
+    {
+      label: 'Especie',
+      value: <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>,
+    },
+    {
+      label: 'Miembros clave',
+      value: (
+        <>
+          <Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv Voronin</Link> (patriarca), Aris,
+          Vova
+        </>
+      ),
+    },
+    {
+      label: 'Ocupación',
+      value: 'Secta religiosa; liderazgo de los Rapax tradicionales',
+    },
+    {
+      label: 'Afiliación',
+      value: (
+        <>
+          Leales a la{' '}
+          <Link to="/CrSaSo/objetos-conceptos/Reina%20de%20la%20Oscuridad">Reina de la Oscuridad</Link>
+        </>
+      ),
+    },
+    {
+      label: 'Primera aparición',
+      value: (
+        <>
+          <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">
+            <em>Necromancia a Medianoche</em>
+          </Link>
+          , cap. 52
+        </>
+      ),
+    },
   ]}
 />
 
-## Resumen General
-La **Familia Voronin** es una de las casas vampíricas más antiguas, enraizada en los **Cárpatos** (Besarabia). Aliados en la antigüedad con los **Basarab** y, por periodos, con ramas de los **Dobrescu**, integraron un triángulo de poder que reguló —con sangre y pactos— el equilibrio entre lo humano y lo monstruoso. En la era moderna, los Voronin se **radicalizaron** hasta convertirse en un **culto** empeñado en **cumplir literalmente** la **Profecía de los Primeros Nigromantes**.
+Esta entrada del Códice detalla la historia y naturaleza de la **Familia Voronin**, una de las facciones más antiguas y peligrosas de los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>, cuya obsesión mística desencadenó la crisis de 1929 en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>.
 
-## Ideología
-Su dogma venera a la **Reina de la Oscuridad**, matriz mítica de los **Rapax Hominum**. Según sus crónicas, la Reina **regresará** a través de un **recipiente híbrido**. En Nueva Ámsterdam, los Voronin identifican a **<Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>** como ese recipiente y consagran recursos a **perseguirla** y **forzar su transformación**. La instrumentación del rito se realiza con **arma ritual ancestral** (en las crónicas aparece como *cuchillo de los primeros nigromantes*; en manos de **Rezniv** se manifiesta como **lanza ceremonial**).
+La **Familia Voronin** es una estirpe de Rapax Hominum (vampiros) originaria de los Cárpatos que, a diferencia de otros linajes que buscaron la asimilación o el progreso científico, se transformó en una secta obsesionada con la necromancia. Actúan bajo la guía fanática de su patriarca, <Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv Voronin</Link>, con el objetivo único de cumplir las antiguas <Link to="/CrSaSo/objetos-conceptos/Profec%C3%ADa%20de%20la%20Reina%20de%20la%20Oscuridad">profecías</Link> para restaurar el reinado de la Reina de la Oscuridad en el mundo terrenal.
 
-## Liderazgo y estructura
-El patriarca **<Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv Voronin</Link>** conduce una jerarquía **vertical** de obediencia ciega, sostenida en **rituales herméticos** y disciplina paramilitar. Sus lugartenientes —**Aris** y **Vova Voronin**— actúan como manos ejecutoras. La “catequesis” del clan inculca sacrificio absoluto en nombre de la Reina.
+Durante los eventos de 1929, los Voronin se posicionaron como el bando antagónico principal, manipulando a nuevos miembros de su especie como <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> para localizar a <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, a quien consideraban el recipiente necesario para su ritual de sangre. Su intervención provocó enfrentamientos masivos contra las fuerzas del orden, las mafias locales y los linajes de los <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link>.
 
-## Operaciones en Nueva Ámsterdam
-- **Desaparición de Jessica McCarthy**: la persecución del “recipiente” desata una cadena de choques con autoridades y facciones ocultas.  
-- **Asedio a la Mansión McCarthy**: Rezniv abre la ofensiva **atravesando a <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>** con su **lanza ceremonial**, precipitando el colapso del orden familiar.  
-- **Refinería McCarthy (clímax)**: al invocar a la **Reina de la Oscuridad**, los Voronin **se ofrecen en sacrificio**, fortaleciendo a la entidad. El contraataque de **<Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara</Link>** y **<Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>** culmina con la **muerte de la Reina** y la **destrucción de la célula local**; **Rezniv** cae tras **atravesar a <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>**, quien destruye el arma en su último disparo.
+## Perfil y Personalidad
 
-## Legado
-Los Voronin encarnan el **extremismo dogmático** del vampirismo: rechazo a toda convivencia y sumisión total a una fe **apocalíptica**. Tras su derrota en la refinería, la **célula de Nueva Ámsterdam queda aniquilada**; el estado del **linaje global** es **incierto**. Su paso deja un rastro de **sacrificios rituales**, **alianzas rotas** y un aviso: **cuando la profecía manda, la razón se vuelve irrelevante**.
+Psicológicamente, los Voronin se definen por un fanatismo religioso extremo y un desprecio absoluto por la vida humana y la evolución moderna de su propia especie. Se consideran los «hijos fieles» de una madre eterna, viendo sus capacidades de depredación no como una ventaja evolutiva, sino como un don divino que debe ser usado para purgar el mundo. Son calculadores, despiadados y carentes de empatía, capaces de sacrificar a sus propios miembros en favor de sus metas místicas.
+
+Físicamente, los miembros de esta familia mantienen una estética anacrónica y solemne. Suelen vestir gabardinas oscuras, sombreros de ala ancha y ropajes que evocan el Viejo Continente, evitando la moda de la época para resaltar su distinción como seres antiguos. El patriarca Rezniv es descrito con una piel extremadamente pálida, cabello largo y una barba blanca como la nieve, proyectando una imagen de autoridad ancestral y peligrosa.
+
+## Miembros Destacados
+
+<FamilyMemberGrid
+  pluginId="cronicas"
+  members={['personajes/Rezniv Voronin']}
+/>
+
+Aris y Vova integraron el séquito de Rezniv en Nueva Ámsterdam; no disponen de ficha propia en el Códice.
+
+## Habilidades y Equipo
+
+Como Rapax de linaje antiguo, los Voronin poseen capacidades físicas y místicas superiores:
+
+*   **Capacidades físicas:** Fuerza sobrehumana capaz de lanzar hombres a grandes distancias y una regeneración celular acelerada que les permite sanar heridas de bala convencionales casi instantáneamente.
+*   **Desplazamiento sombrío:** Maestría en el uso del reino de las sombras para viajar a grandes velocidades y aparecer de forma imprevista.
+*   **Telepatía aumentada:** Habilidad mística que les permite comunicarse a largas distancias con otros de su especie, técnica que utilizaron para reclutar y guiar a Oliver Henderson.
+
+**Equipo notable:**
+
+*   **La lanza de Rezniv:** Una lanza mohosa y sangrienta que puede dividirse en dos para el combate cercano. Está conectada al patriarca por un líquido viscoso y pestilente que permite su retorno automático y es donde reside su punto débil metafísico (una esfera azul).
+*   **Daga de obsidiana:** Reliquia antigua con un filo que absorbe la luz, utilizada ritualmente para «abrir el abismo» y facilitar el regreso de la Reina de la Oscuridad.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El despertar de la secta
+
+Tras siglos de relativo aislamiento en Besarabia, los Voronin detectaron la presencia de una «nacida de la oscuridad» en Nueva Ámsterdam: Jessica McCarthy. Rezniv Voronin estableció contacto telepático con Oliver Henderson, aprovechando su inexperiencia y resentimiento tras ser convertido por <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>, para infiltrar a su familia en la ciudad y asegurar el control de la joven y la daga de obsidiana.
+
+#### El asedio a la Mansión McCarthy
+
+Durante la fiesta de cumpleaños de Jessica, Rezniv lideró un asalto directo contra la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">mansión</Link>. En el caos, el patriarca asesinó a <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> atravesándolo con su lanza ante la mirada de los invitados. A pesar de perder a nueve de sus miembros bajo el fuego de precisión de <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link> y el apoyo místico de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>, los Voronin lograron que Oliver Henderson extrajera a Jessica de la mansión para llevarla al lugar del sacrificio final.
+
+#### El ritual en la Refinería y la caída
+
+La familia se reagrupó en la Refinería McCarthy, un lugar con abundancia de materia orgánica muerta (petróleo) para potenciar su magia. Allí, Rezniv apuñaló a Jessica con la daga de obsidiana, permitiendo el surgimiento de la Reina de la Oscuridad y levantando un ejército de esqueletos de petróleo.
+
+En el clímax de la batalla, tras la decapitación de la Reina por las hermanas Dobrescu, Rezniv intentó asesinar a Lucía Sinclair, pero fue interceptado por el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>. Thorne recibió la estocada mortal de la lanza, pero en un último esfuerzo disparó directamente a la esfera azul del arma, destruyendo el vínculo vital de Rezniv y reduciendo al patriarca y a los Voronin restantes a cenizas de forma instantánea.
+
+## Relaciones Clave
+
+*   **La Reina de la Oscuridad:** Su deidad y madre eterna; los Voronin viven y mueren únicamente para servir a su voluntad.
+*   <Link to="/CrSaSo/familias/La%20Familia%20Dobrescu">**Familia Dobrescu**</Link>: Antiguos aliados de la casa Basarab; en la actualidad son sus rivales ideológicos y físicos en la lucha por el destino de Jessica McCarthy.
+*   <Link to="/CrSaSo/personajes/Oliver%20Henderson">**Oliver Henderson**</Link>: Utilizado por Rezniv como herramienta estratégica y «aprendiz» para facilitar la captura del recipiente de la Reina.
+*   <Link to="/CrSaSo/personajes/Jessica%20McCarthy">**Jessica McCarthy**</Link>: Vista por la familia no como una persona, sino como una «impura» pero necesaria herramienta para cumplir su destino místico.
+
+## Curiosidades
+
+*   Rezniv sostenía la filosofía de que las lágrimas de los Rapax valen «más que diez kilos de diamantes», simbolizando la importancia del dolor en su doctrina.
+*   La lanza de los Voronin emite un hedor a podredumbre tan potente que puede ser detectado por los sentidos humanos antes de la aparición física del atacante.
+*   A pesar de su inmenso poder, los Voronin son considerados por otros Rapax como «una sombra de lo que fueron», una familia que se perdió en sus propias leyendas.

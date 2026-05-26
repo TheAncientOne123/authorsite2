@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-24T23:34:08.758Z",
+  "generatedAt": "2026-05-26T05:25:53.037Z",
   "orbe": {
     "index": {
       "excerpt": "Bienvenido al códice del universo de El Orbe de los Destinos. La documentación detallada de este universo se irá ampliando con el tiempo; mientras tanto puedes explorar $1."
@@ -13,7 +13,7 @@
       "excerpt": "Directorio de linajes, clanes, órdenes y corporaciones que mueven los hilos del mundo. Cada ficha resume su origen, estructura, líderes, territorios de influencia y rivalidades, con enlaces a personajes y eventos relacionados. --- Buscador"
     },
     "index_c": {
-      "excerpt": "Crónicas de Sangre y Sombra es un universo de intrigas góticas, corporaciones energéticas, linajes antiguos y artes ocultas. Aquí conviven familias de alto poder con brujas, Rapax Hominum y periodistas que empujan la verdad a la luz. Este portal reúne su documentación viva: libros publicados, líneas de tiempo, personajes, facciones y lugares clave. > Esta página es la portada de la documentación d"
+      "excerpt": "Crónicas de Sangre y Sombra es un universo de intrigas góticas, corporaciones energéticas, linajes antiguos y artes ocultas. Aquí conviven familias de alto poder con brujas, Rapax Hominum y periodistas que empujan la verdad a la luz. Este portal reúne su documentación viva: libros publicados, líneas de tiempo, personajes, facciones y lugares clave. Libros del universo"
     },
     "libros-portada": {
       "excerpt": "Esta sección reúne las novelas de Crónicas de Sangre y Sombra: el orden canónico de lectura, las fichas publicadas y el espacio reservado para anotaciones y material auxiliar que se irá ampliando."
@@ -209,24 +209,24 @@
       "updated": "2026-05-17"
     },
     "familias/La Familia Voronin": {
-      "excerpt": "Clan vampírico ancestral de raíz carpática; culto profético devoto de la Reina de la Oscuridad y antagonista central en la crisis McCarthy.",
+      "excerpt": "Facción sectaria de Rapax Hominum de los Cárpatos; culto a la Reina de la Oscuridad y antagonista de la crisis de 1929",
       "filters": {
         "libro": "necromancia-medianoche",
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-24"
     },
     "familias/La Familia Zaikov": {
-      "excerpt": "Clan mafioso balcánico que gobierna El Nido con mano firme y fachada comunitaria; aliados tácticos de Cassian Thorne en momentos clave.",
+      "excerpt": "Clan criminal de El Nido («Las Águilas»); control territorial, lealtad fraternal y aliados tácticos de Cassian Thorne",
       "filters": {
         "libro": "necromancia-medianoche",
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-24"
     },
     "familias/Los Vinculados": {
       "excerpt": "Orden secreta de brujas y cazadores unida por un vínculo arcano para erradicar a los Rapax (vampiros); su célula en Nueva Ámsterdam cayó en la Masacre de la Catedral.",
@@ -678,7 +678,7 @@
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-24"
     },
     "personajes/Cecilia Amadeo": {
       "excerpt": "Bruja vinculada a la Catedral de Santa Regina; mentora de Cassian y Lucia",
@@ -753,7 +753,7 @@
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-24"
     },
     "personajes/Greta Zaikov": {
       "excerpt": "Francotiradora de las “Águilas del Nido” (Familia Zaikov)",
@@ -768,7 +768,7 @@
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-24"
     },
     "personajes/Grigori Zaikov": {
       "excerpt": "“Tanque” de las Águilas del Nido; fuerza de choque de la Familia Zaikov",
@@ -783,7 +783,7 @@
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-24"
     },
     "personajes/Ian Zaikov": {
       "excerpt": "Especialista en cuchillos; punta de lanza de las Águilas del Nido (Familia Zaikov)",
@@ -798,7 +798,7 @@
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-24"
     },
     "personajes/Ibrahim Ramazan Zaikov": {
       "excerpt": "Mayor consejero de las Águilas del Nido; corazón espiritual de la Familia Zaikov",
@@ -807,7 +807,7 @@
       "filters": {
         "libro": "necromancia-medianoche",
         "genero": "Masculino",
-        "estado": "Activo (lesionado durante la defensa de la mansión)",
+        "estado": "Activo",
         "raza": "Humano",
         "type": "personaje",
         "saga": "crsaso",
@@ -831,7 +831,7 @@
       "updated": "2026-05-17"
     },
     "personajes/Jack Fox": {
-      "excerpt": "Director y productor de Atlantic News; heredero del medio; testigo clave de Necromancia a Medianoche",
+      "excerpt": "Director de Atlantic News; heredero del medio y aliado impulsivo en la crisis sobrenatural de 1929",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jack-fox",
       "imageAlt": "Jack Fox",
       "filters": {
@@ -843,10 +843,10 @@
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-25"
     },
     "personajes/Jayson Branch": {
-      "excerpt": "Jefe de seguridad de la Familia McCarthy; coordinador táctico durante Necromancia a Medianoche",
+      "excerpt": "Jefe de seguridad de la Familia McCarthy; estratega y coordinador táctico durante la crisis de 1929",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jayson-branch",
       "imageAlt": "Jayson Branch",
       "filters": {
@@ -858,25 +858,25 @@
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-25"
     },
     "personajes/Jessica McCarthy": {
-      "excerpt": "Heredera de la fortuna McCarthy; portadora del Elemento 121",
+      "excerpt": "Heredera McCarthy e híbrida del Elemento 121; recipiente de la Reina de la Oscuridad en la crisis de 1929",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/jessica-mccarthy",
       "imageAlt": "Jessica McCarthy",
       "filters": {
         "libro": "necromancia-medianoche",
         "genero": "Femenino",
-        "estado": "Fallecida / Transformada (Reina de la Oscuridad)",
-        "raza": "Humano",
+        "estado": "Fallecida",
+        "raza": "Híbrida",
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-25"
     },
     "personajes/Kingston Graham": {
-      "excerpt": "Alto funcionario del Buró; operador clave del programa secreto y reclutador de Lucia Sinclair",
+      "excerpt": "Subdirector adjunto del FBI; impulsor del programa secreto y supervisor de Lucía Sinclair",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/kingston-graham",
       "imageAlt": "Kingston Graham",
       "filters": {
@@ -888,10 +888,10 @@
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-25"
     },
     "personajes/Logan Crane": {
-      "excerpt": "Detective de la Policía de Nueva Ámsterdam; enlace operativo del equipo Thorne–Sinclair",
+      "excerpt": "Detective de la policía de Nueva Ámsterdam; aliado táctico de Cassian Thorne y los Vinculados",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/logan-crane",
       "imageAlt": "Logan Crane",
       "filters": {
@@ -903,7 +903,7 @@
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-25"
     },
     "personajes/Lucia Sinclair": {
       "excerpt": "Agente especial del Buró; co-protagonista y eje federal de la investigación en Nueva Ámsterdam",
@@ -921,7 +921,7 @@
       "updated": "2026-05-17"
     },
     "personajes/Maisie Stewart": {
-      "excerpt": "Hostess/encargada y mano derecha de Verónica Black en el Club Palace; apoyo clave durante la Infiltración Católica",
+      "excerpt": "Asistente administrativa y operativa del Club Palace; mano derecha de Verónica Black y apoyo clave durante la Infiltración Católica",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/maisie-stewart",
       "imageAlt": "Maisie Stewart",
       "filters": {
@@ -936,13 +936,13 @@
       "updated": "2026-05-17"
     },
     "personajes/Marco Giannotti": {
-      "excerpt": "Cazador clandestino y táctico de los Vinculados; mentor temporal de Cassian y Lucia",
+      "excerpt": "Sacerdote y médico ginecólogo vinculado a la Catedral de Santa Regina; mentor de Cassian Thorne y Lucía Sinclair durante la crisis de 1929",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/marco-giannotti",
       "imageAlt": "Marco Giannotti",
       "filters": {
         "libro": "necromancia-medianoche",
         "genero": "Masculino",
-        "estado": "Activo",
+        "estado": "Desaparecido",
         "raza": "Humano",
         "type": "personaje",
         "saga": "crsaso",
@@ -951,14 +951,14 @@
       "updated": "2026-05-17"
     },
     "personajes/Oliver Henderson": {
-      "excerpt": "Reportero de Atlantic News; vampirizado tras el Castillo; catalizador del destino de Jessica",
+      "excerpt": "Reportero de Atlantic News; vampirizado tras el incidente del Castillo de Nueva Ámsterdam y catalizador de la tragedia de Jessica McCarthy",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/oliver-henderson",
       "imageAlt": "Oliver Henderson",
       "filters": {
         "libro": "necromancia-medianoche",
         "genero": "Masculino",
-        "estado": "Fallecido (absorbido por la Reina de la Oscuridad en la Refinería McCarthy)",
-        "raza": "Humano",
+        "estado": "Fallecido",
+        "raza": "Rapax Hominum",
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
@@ -996,7 +996,7 @@
       "updated": "2026-05-17"
     },
     "personajes/Ramses Zaikov": {
-      "excerpt": "Estratega y cerebro operativo de la Familia Zaikov; colíder de las “Águilas del Nido”",
+      "excerpt": "Estratega y colíder de las Águilas del Nido; «Ram», cerebro operativo de la Familia Zaikov",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/Ramses-Zaikov",
       "imageAlt": "Ramses Zaikov",
       "filters": {
@@ -1008,7 +1008,7 @@
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-24"
     },
     "personajes/Rezniv Voronin": {
       "excerpt": "Patriarca de la Familia Voronin; fanático de la Reina de la Oscuridad y antagonista del clímax en la refinería",
@@ -1017,16 +1017,16 @@
       "filters": {
         "libro": "necromancia-medianoche",
         "genero": "Masculino",
-        "estado": "Fallecido (abatido en la Refinería McCarthy)",
-        "raza": "Vampiro (linaje ancestral / rapax hominum)",
+        "estado": "Fallecido",
+        "raza": "Rapax Hominum",
         "type": "personaje",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-24"
     },
     "personajes/Ryan Chapman": {
-      "excerpt": "Hijo de Frederick Chapman; testigo clave del caso “El Cuarto Rojo”",
+      "excerpt": "Estudiante universitario e hijo de Frederick Chapman; testigo clave del caso «El Cuarto Rojo»",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/ryan-chapman",
       "imageAlt": "Ryan Chapman",
       "filters": {
@@ -1041,13 +1041,13 @@
       "updated": "2026-05-17"
     },
     "personajes/Susan Barnes": {
-      "excerpt": "Ingeniera de sonido de Atlantic News; miembro del equipo del documental del Castillo de Nueva Ámsterdam",
+      "excerpt": "Ingeniera de sonido de Atlantic News y miembro del documental del Castillo de Nueva Ámsterdam",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/susan-barnes",
       "imageAlt": "Susan Barnes",
       "filters": {
         "libro": "necromancia-medianoche",
         "genero": "Femenino",
-        "estado": "Fallecida (catacumbas del Castillo de Nueva Ámsterdam)",
+        "estado": "Fallecida",
         "raza": "Humano",
         "type": "personaje",
         "saga": "crsaso",
@@ -1071,7 +1071,7 @@
       "updated": "2026-05-17"
     },
     "personajes/Veronica Black": {
-      "excerpt": "Dueña y “madame” del Club Palace; operadora influyente con acuerdos tácticos con la comisaría",
+      "excerpt": "Dueña y regente del Club Palace; figura influyente del distrito histórico y aliada estratégica durante la Infiltración Católica",
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/veronica-black",
       "imageAlt": "Verónica Black",
       "filters": {
@@ -1209,11 +1209,11 @@
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/drakon",
       "imageAlt": "Bestiario"
     },
+    "clases/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arquetipos, profesiones o vocaciones del universo Meridian."
+    },
     "campañas/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arcos narrativos o mesas de juego del universo Meridian."
-    },
-    "facciones/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de grupos, órdenes y bandos del universo Meridian."
     },
     "eventos/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la cronología y sucesos relevantes del universo Meridian."
@@ -1225,12 +1225,6 @@
     "eventos/La_Gran_Fiesta_Del_Baron_Matadragones": {
       "excerpt": "Hace ochenta años, la guerra que transformó Meridian llegó a su fin… pero no todas sus consecuencias murieron con ella. Durante el conflicto, los elfos recurrieron a una estrategia desesperada: la producción masiva de dragones. Criaturas nacidas para la guerra, criadas sin el tiempo, la disciplina ni el desarrollo que un dragón requiere para convertirse en algo más que un arma. Mientras la guerra ",
       "updated": "2026-04-22"
-    },
-    "mapa/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación geográfica y cartográfica del universo Meridian."
-    },
-    "clases/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arquetipos, profesiones o vocaciones del universo Meridian."
     },
     "personajes/aquila-milvus": {
       "excerpt": "Guerrero de la Casa Milvus, respetado por su linaje… temido por lo que oculta.",
@@ -1454,6 +1448,12 @@
         "raza": "Elfo"
       },
       "updated": "2026-04-21"
+    },
+    "facciones/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de grupos, órdenes y bandos del universo Meridian."
+    },
+    "mapa/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación geográfica y cartográfica del universo Meridian."
     },
     "razas/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de pueblos y linajes del universo Meridian."
