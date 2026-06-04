@@ -1,66 +1,158 @@
 ---
 title: Los Vinculados
-description: Orden secreta de brujas y cazadores unida por un vínculo arcano para erradicar a los Rapax (vampiros); su célula en Nueva Ámsterdam cayó en la Masacre de la Catedral.
-updated: 2026-05-17
+description: Orden ancestral compuesta por Cazadores y Brujas dedicada a combatir a los Rapax Hominum
+updated: 2026-05-27
 type: familia
 saga: crsaso
 libro: necromancia-medianoche
+estado: Activo
 ---
-
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+import FamilyMemberGrid from '@site/src/components/FamilyMemberGrid';
 
-# Los Vinculados
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Los Vinculados"
+    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/q_auto/f_auto/v1779938580/los-vinculados_dsju2w.png', alt: 'Los Vinculados' }}
+    caption="«Nosotros somos su resistencia.» — Cecilia Amadeo"
+    rows={[
+      { label: 'Tipo', value: 'Orden secreta / Linaje espiritual y militar' },
+      { label: 'Estado actual', value: 'Activos; debilitados en Nueva Ámsterdam' },
+      { label: 'Objetivo', value: 'Erradicación y contención de Rapax Hominum' },
+      { label: 'Estructura', value: 'Cazadores y Brujas' },
+      { label: 'Sede histórica', value: <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> },
+      { label: 'Integrantes destacados', value: <><Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>; <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link>; <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>; <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link></> },
+      { label: 'Aliados', value: <><Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Familia Santorelli</Link></> },
+      { label: 'Enemigos', value: <><Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>; clan Voronin</> },
+      { label: 'Objetos asociados', value: <><Link to="/CrSaSo/objetos-conceptos/Tomo%20de%20los%20Vinculados">Tomo de los Vinculados</Link>; <Link to="/CrSaSo/objetos-conceptos/Monedas%20de%20Lat%C3%B3n">Monedas de Latón</Link>; <Link to="/CrSaSo/objetos-conceptos/Recetario%20de%20las%20Brujas">Recetario de las Brujas</Link></> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 36</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Los Vinculados"
-  caption="«Dos mitades, un solo filo»"
-  rows={[
-    { label: 'Tipo', value: 'Orden secreta / Sociedad ancestral (bruja + cazador vinculados)' },
-    { label: 'Sede / Territorio', value: <>Red transnacional; célula en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link> con centro operativo en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link></> },
-    { label: 'Liderazgo', value: <>Gobernanza por consejo arcano; en Nueva Ámsterdam: <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> y <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link></> },
-    { label: 'Ámbito', value: 'Caza y erradicación de Rapax (vampiros); contención anómala; custodia del Tomo de los Vinculados' },
-    { label: 'Aliados', value: <>Parejas de <Link to="/CrSaSo/familias/Cazadores">Cazadores</Link> y <Link to="/CrSaSo/familias/Brujas">Brujas</Link>; apoyo táctico de la <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Familia Santorelli</Link></> },
-    { label: 'Rivales', value: <>Rapax y clanes vampíricos (p. ej. <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>); conspiradores y células corrompidas</> },
-    { label: 'Estado', value: <>Orden activa (clandestina); célula de Nueva Ámsterdam aniquilada en la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral</Link></> },
-    { label: 'Eventos clave', value: <>
-      <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>; 
-      <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>; 
-      <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>; 
-      clímax en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>
-    </> },
-    { label: 'Miembros notables', value: <>
-      <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> (custodio del Tomo); 
-      <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link> (autoridad espiritual); 
-      <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> (herederos involuntarios del legado)
-    </> },
-  ]}
+Los **Vinculados** son una orden ancestral compuesta por humanos con facultades espirituales y tácticas desarrolladas específicamente para combatir a los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>. Su estructura se basa en la unión complementaria entre dos figuras inseparables: el **Cazador** y la **Bruja**.
+
+La organización sostiene que ningún individuo puede derrotar por sí solo a los Rapax. El verdadero poder nace del “Vínculo”, una conexión metafísica que sincroniza emociones, percepción y combate entre ambas partes.
+
+Su existencia permaneció oculta durante siglos y solo salió parcialmente a la luz durante los acontecimientos de <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, particularmente tras <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link> y la posterior <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>.
+
+## Origen y Propósito
+
+Según el Tomo de los Vinculados, la orden surgió durante los periodos inquisitoriales europeos, cuando los ataques de los Rapax comenzaron a superar la capacidad de respuesta de las instituciones humanas tradicionales.
+
+Frente a esta amenaza, dos linajes distintos —las brujas y los cazadores— abandonaron antiguas rivalidades para formar una única resistencia.
+
+> “Cuando la luna reine en la cima de la noche, los vinculados, aquellos que han superado los límites de la naturaleza humana y se han unido como un solo ser, serán los únicos capaces de destruir la corona sombría…”  
+> — *Tomo de los Vinculados*
+
+La filosofía de la orden sostiene que los Rapax pueden imitar fuerza, inteligencia o longevidad, pero jamás la conexión emocional absoluta que existe entre un cazador y una bruja vinculados.
+
+## Estructura Interna
+
+Los Vinculados se dividen en varias ramas, pero las dos más importantes son las Brujas y los Cazadores.
+
+### Ramas de los Vinculados
+<FamilyMemberGrid
+  pluginId="cronicas"
+  members={['familias/Brujas', 'familias/Cazadores']}
 />
 
-### Origen y propósito
-Orden secreta dedicada a la erradicación de los **_Rapax Hominum_** (vampiros). Su mito fundacional remite a tiempos inquisitoriales, cuando la depredación vampírica exigió la unión de dos linajes: **acero** (cazador) y **sangre** (bruja). La doctrina y jerarquías se preservan en el **Tomo de los Vinculados**, manuscrito sagrado que consigna ritos, señales y profecías.
 
-> “Cuando la luna reine en la cima de la noche, los vinculados, aquellos que han superado los límites de la naturaleza humana y se han unido como un solo ser, serán los únicos capaces de destruir la corona sombría…” — *Tomo de los Vinculados*
 
-### Estructura interna
-- **<Link to="/CrSaSo/familias/Brujas">Brujas</Link>**: percepción del plano de sombras, lectura de símbolos, alquimia y mediación con animales guía; pueden detectar el punto débil de un Rapax.  
-- **<Link to="/CrSaSo/familias/Cazadores">Cazadores</Link>**: ejecución táctica con armas consagradas y formación en teología/ciencias/forense.
+### El Vínculo
 
-El **ritual de vínculo** (sangre + **monedas de latón**) forja la pareja operativa y permite comunicación, rastreo y sinergia en combate.
+El ritual del vínculo se realiza mediante sangre y monedas de latón grabadas con símbolos solares y lunares.
 
-### Armamento y tácticas
-- **Balas de plata** (eficaces contra Rapax femeninos).  
-- **Balas de oro** (diseñadas para Rapax masculinos).  
-- **Monedas de latón**: brújula arcana, canal de mensajes y sello del vínculo.
+Una vez enlazados, ambos Vinculados pueden:
 
-### Filosofía
-El poder de los Vinculados no reside solo en el armamento sino en el **lazo metafísico** cazador–bruja: la única fuerza que los Rapax no pueden replicar.
+* Comunicarse emocionalmente.
+* Detectar la presencia del otro.
+* Coordinar ataques con precisión extrema.
+* Potenciar mutuamente sus capacidades.
 
-> “Nosotros somos su resistencia.” — <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link>
+La organización considera este vínculo más fuerte que cualquier relación humana convencional.
 
-### Célula de Estados Unidos y su caída
-En <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>, la célula local operaba desde la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>, dirigida por **Marco** y **Cecilia Amadeo**, con **protección logística** de la <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Familia Santorelli</Link>. Durante los hechos de <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, la célula fue **aniquilada** en la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral</Link>, desencadenada por <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> tras haber sometido al monstruo del caso <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>.
+## Armamento y Artefactos
 
-### Legado y situación actual
-La caída supuso un **golpe estratégico** para la costa Este. Persisten células en otras regiones, pero el vacío en Nueva Ámsterdam obliga a **<Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>** y **<Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>** a encarar el legado como **posibles continuadores** del vínculo en un tablero donde los Rapax y sus aliados siguen moviéndose en la sombra.
+Los Vinculados emplean herramientas especializadas diseñadas específicamente para enfrentar Rapax Hominum.
+
+### Munición Especializada
+
+* **Balas de plata:** Más efectivas contra Rapax femeninos.
+* **Balas de oro:** Diseñadas para neutralizar Rapax masculinos.
+* **Munición consagrada:** Capaz de ralentizar regeneración celular sobrenatural.
+
+### Monedas de Latón
+
+Las monedas funcionan como:
+
+* Brújulas arcanas.
+* Detectores de Rapax.
+* Canales de comunicación espiritual.
+* Sellos del vínculo entre parejas operativas.
+
+Durante el proceso de sincronización, las monedas pueden vibrar y emitir un resplandor rojizo.
+
+### Textos Sagrados
+
+* <Link to="/CrSaSo/objetos-conceptos/Tomo%20de%20los%20Vinculados">Tomo de los Vinculados</Link>: Manuscrito doctrinal y profético de la orden.
+* <Link to="/CrSaSo/objetos-conceptos/Recetario%20de%20las%20Brujas">Recetario de las Brujas</Link>: Compendio alquímico utilizado por las brujas.
+
+## Historia
+
+### Necromancia a Medianoche
+
+#### La “Cruz”
+
+Durante las primeras etapas de la investigación de Cassian Thorne y Lucía Sinclair, ambos comenzaron a referirse informalmente como “La Cruz” a una red clandestina de individuos relacionados con símbolos religiosos y operaciones encubiertas.
+
+Este nombre surgió antes de que comprendieran la verdadera naturaleza de la organización.
+
+Posteriormente se reveló que “La Cruz” no era una facción independiente, sino simplemente el nombre provisional utilizado por Cassian y Lucía para identificar a la célula de Vinculados que operaba desde Santa Regina bajo el liderazgo de Marco Giannotti y Cecilia Amadeo.
+
+El término dejó de utilizarse tras los eventos de <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>.
+
+### La Célula de Santa Regina
+
+En Nueva Ámsterdam, la principal base operativa de Los Vinculados de los Estados Unidos, se encontraba en la Catedral de Santa Regina, protegida logísticamente por la Familia Santorelli.
+
+Desde allí, Marco y Cecilia entrenaban nuevos miembros y coordinaban operaciones contra Rapax Hominum activos en la costa Este.
+
+Fue en este contexto donde Cassian Thorne y Lucía Sinclair descubrieron que ellos mismos formaban parte del linaje de los Vinculados.
+
+### La Masacre de la Catedral
+
+Durante los acontecimientos de 1929, la célula de Santa Regina fue destruida casi por completo durante la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>.
+
+El ataque fue ejecutado por Jessica McCarthy bajo manipulación de Tamara Dobrescu y el clan Voronin.
+
+La masacre provocó la muerte de Cecilia Amadeo y de al menos dieciséis miembros adicionales de la orden.
+
+## Filosofía
+
+Los Vinculados consideran que el verdadero poder no reside en las armas ni en la magia individual, sino en la unión espiritual absoluta entre dos personas.
+
+> “Nosotros somos su resistencia.”  
+> — Cecilia Amadeo
+
+La doctrina sostiene que los Rapax representan la corrupción de la humanidad, mientras que el vínculo entre cazador y bruja representa la capacidad humana de trascender el miedo mediante confianza y sacrificio mutuo.
+
+## Legado y Situación Actual
+
+La caída de la célula de Santa Regina representó uno de los golpes estratégicos más severos sufridos por Los Vinculados en la costa Este de Estados Unidos.
+Aun así, diversas células continúan operando alrededor del mundo. Entre los sobrevivientes persiste la esperanza de reconstruir la organización utilizando a nuevos Vinculados capaces de continuar el legado de Marco y Cecilia.
+Tras los sucesos de <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">La Masacre de la Catedral de Santa Regina</Link>, <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> quedaron posicionados como posibles herederos naturales de la orden dentro de Nueva Ámsterdam.
+
+## Curiosidades
+
+* Las monedas de latón absorben literalmente la sangre utilizada durante el ritual de vínculo.
+* Los Vinculados consideran que grupos demasiado grandes terminan corrompiéndose por ego y ambición, razón por la que la unidad básica suele ser una pareja.
+* Kingston Graham poseía su propia moneda de latón vinculada a operaciones secretas relacionadas con el MI5.
+* El Recetario de las Brujas advierte que muchas de sus fórmulas resultan inútiles para personas que no pertenecen al vínculo.
+* La profecía principal del Tomo fue interpretada erróneamente durante años; finalmente, las figuras relacionadas con la “corona sombría” terminaron siendo Anastasia y Tamara Dobrescu.
+

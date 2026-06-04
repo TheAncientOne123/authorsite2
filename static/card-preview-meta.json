@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T05:25:53.037Z",
+  "generatedAt": "2026-06-04T05:17:33.939Z",
   "orbe": {
     "index": {
       "excerpt": "Bienvenido al códice del universo de El Orbe de los Destinos. La documentación detallada de este universo se irá ampliando con el tiempo; mientras tanto puedes explorar $1."
@@ -13,7 +13,7 @@
       "excerpt": "Directorio de linajes, clanes, órdenes y corporaciones que mueven los hilos del mundo. Cada ficha resume su origen, estructura, líderes, territorios de influencia y rivalidades, con enlaces a personajes y eventos relacionados. --- Buscador"
     },
     "index_c": {
-      "excerpt": "Crónicas de Sangre y Sombra es un universo de intrigas góticas, corporaciones energéticas, linajes antiguos y artes ocultas. Aquí conviven familias de alto poder con brujas, Rapax Hominum y periodistas que empujan la verdad a la luz. Este portal reúne su documentación viva: libros publicados, líneas de tiempo, personajes, facciones y lugares clave. Libros del universo"
+      "excerpt": "Crónicas de Sangre y Sombra es un universo de fantasía oscura, crimen sobrenatural y conspiraciones familiares ambientado en una Nueva Ámsterdam alternativa de 1929. Entre callejones húmedos, catedrales ensangrentadas, clanes vampíricos, periodistas obstinados y detectives marcados por la culpa, la ciudad se convierte en el escenario de una guerra secreta entre linajes antiguos, órdenes ocultas y "
     },
     "libros-portada": {
       "excerpt": "Esta sección reúne las novelas de Crónicas de Sangre y Sombra: el orden canónico de lectura, las fichas publicadas y el espacio reservado para anotaciones y material auxiliar que se irá ampliando."
@@ -27,9 +27,26 @@
     "personajes": {
       "excerpt": "Los personajes son el eje narrativo de toda historia y Crónicas de Sangre y Sombra no es la excepción. Cada figura aquí registrada incluye datos biográficos, afiliaciones y su papel en los acontecimientos principales. Este directorio está organizados en fichas individuales, que pueden contener información reveladora de la trama. El lector encontrará: - Protagonistas y antagonistas, con su evolució"
     },
-    "eventos/Batalla en la Refinería McCarthy": {
+    "eventos/Asedio en la Mansión McCarthy": {
+      "excerpt": "Ataque del clan Voronin durante la fiesta de cumpleaños de Jessica McCarthy en Crystal Square",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/q_auto/f_auto/v1779851575/asedio-mansion-mccarthy_vjpfyz.png",
+      "imageAlt": "Asedio en la Mansión McCarthy",
       "filters": {
         "libro": "necromancia-medianoche",
+        "estado": "Finalizado",
+        "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "eventos/Batalla en la Refinería McCarthy": {
+      "excerpt": "Enfrentamiento final de la crisis de los Rapax Hominum de 1929 entre los Vinculados y la Familia Voronin",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/q_auto/f_auto/v1779851931/batalla-refineria-mccarthy_r99zst.png",
+      "imageAlt": "Batalla en la refinería McCarthy",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "estado": "Finalizado",
         "type": "evento",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
@@ -37,19 +54,23 @@
       "updated": "2026-05-17"
     },
     "eventos/Caso resuelto": {
-      "excerpt": "Cierre policial del “Cuarto Rojo”; pizza de celebración, visita al Oliver transformado y ataque en el departamento de Cassian que anticipa la masacre en Santa Regina.",
+      "excerpt": "Resolución del caso «El Cuarto Rojo» y descubrimiento de la verdadera naturaleza de Jessica McCarthy",
       "filters": {
         "libro": "necromancia-medianoche",
+        "estado": "Resuelto",
         "type": "evento",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-26"
     },
     "eventos/Desaparicion de Jessica McCarthy": {
-      "excerpt": "Abducción en Monte Galbrook; giro que reorienta la investigación hacia lo sobrenatural",
+      "excerpt": "Suceso ocurrido en Monte Galbrook que reveló la naturaleza híbrida de Jessica McCarthy y aceleró la crisis de los Rapax Hominum",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/eventos/desaparicion-jessica-mccarthy",
+      "imageAlt": "La Desaparición de Jessica McCarthy",
       "filters": {
         "libro": "necromancia-medianoche",
+        "estado": "Finalizado",
         "type": "evento",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
@@ -57,38 +78,38 @@
       "updated": "2026-05-17"
     },
     "eventos/El Cuarto Rojo": {
-      "excerpt": "Escena del crimen inicial del caso",
+      "excerpt": "Investigación criminal y sobrenatural del homicidio ocurrido en Villa Lobos durante la crisis de los Rapax Hominum",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/q_auto/f_auto/v1779936019/cuarto-rojo_v49kc9.png",
+      "imageAlt": "El Cuarto Rojo",
       "filters": {
         "libro": "necromancia-medianoche",
+        "estado": "Resuelto (extraoficialmente)",
         "type": "evento",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-26"
     },
     "eventos/El Incidente de Raven District": {
+      "excerpt": "Explosión y sabotaje ocurrido en los laboratorios de McCarthy Petroleum que dio origen a la crisis del Elemento 121",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/eventos/incidente-raven-district",
+      "imageAlt": "El Incidente de Raven District",
       "filters": {
         "libro": "necromancia-medianoche",
+        "estado": "Clasificado",
         "type": "evento",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
-    },
-    "eventos/Interrogación de Archie Woodward": {
-      "excerpt": "Entrevista táctica en la comisaría; confirma alias “Aldric Shadowborne” y abre la pista hacia la Infiltración Católica",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "evento",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
+      "updated": "2026-05-26"
     },
     "eventos/La Infiltración Católica": {
-      "excerpt": "Operación encubierta en la Catedral de Santa Regina para identificar y penetrar a la célula de “La Cruz”",
+      "excerpt": "Operación encubierta realizada en la Catedral de Santa Regina que condujo al descubrimiento de Los Vinculados",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/eventos/infiltracion-catolica",
+      "imageAlt": "La Infiltración Católica",
       "filters": {
         "libro": "necromancia-medianoche",
+        "estado": "Concluida",
         "type": "evento",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
@@ -96,9 +117,12 @@
       "updated": "2026-05-17"
     },
     "eventos/La Semana Negra": {
-      "excerpt": "Semana de violencia urbana desatada tras el ataque en Italian’s Boot; conocida popularmente como “La Guerra de las Pizzas”",
+      "excerpt": "Crisis de violencia urbana y guerra mafiosa encubierta ocurrida en Nueva Ámsterdam durante la expansión de los Rapax Hominum",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/eventos/semana-negra",
+      "imageAlt": "La Semana Negra",
       "filters": {
         "libro": "necromancia-medianoche",
+        "estado": "Concluida",
         "type": "evento",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
@@ -106,10 +130,37 @@
       "updated": "2026-05-17"
     },
     "eventos/Masacre de la Catedral de Santa Regina": {
-      "excerpt": "Asalto devastador contra la célula de Los Vinculados; punto de quiebre tras la Semana Negra",
+      "excerpt": "Asalto sobrenatural contra la célula de Los Vinculados que marcó el fin de la Semana Negra",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/eventos/masacre-catedral-santa-regina",
+      "imageAlt": "La Masacre de la Catedral de Santa Regina",
       "filters": {
         "libro": "necromancia-medianoche",
+        "estado": "Encubierto oficialmente",
         "type": "evento",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "libros/La Mujer Carmesí": {
+      "excerpt": "Continuación anunciada de la saga Crónicas de Sangre y Sombra. El material ampliado de esta ficha se publicará conforme avance el códice.",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual",
+      "imageAlt": "La Mujer Carmesí",
+      "filters": {
+        "libro": "mujer-carmesi",
+        "type": "libro",
+        "saga": "crsaso",
+        "aparicion": "mujer-carmesi"
+      },
+      "updated": "2026-05-17"
+    },
+    "libros/Necromancia a Medianoche": {
+      "excerpt": "Novela de fantasía oscura ambientada en Nueva Ámsterdam, 1929. Un detective y una agente federal investigan una cadena de asesinatos con indicios sobrenaturales mientras corporaciones, linajes antiguos y cultos ocultos mueven sus piezas en la sombra.",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual",
+      "imageAlt": "Necromancia a Medianoche",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "libro",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
@@ -158,18 +209,10 @@
       },
       "updated": "2026-05-17"
     },
-    "familias/La Cruz": {
-      "excerpt": "Alias provisional usado por Cassian y Lucía para identificar a una red clandestina de signo religioso; luego asociada formalmente con “Los Vinculados”.",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "familia",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
     "familias/La Familia Chapman": {
-      "excerpt": "Dinastía empresarial de la alta residencial de Nueva Ámsterdam; dueños de una firma de colchones de lujo y eje del caso “El Cuarto Rojo”.",
+      "excerpt": "Familia empresarial de Crystal Square y propietarios de Chapman Conforts; protagonistas involuntarios del caso “El Cuarto Rojo”",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/familias/familia-chapman",
+      "imageAlt": "Familia Chapman",
       "filters": {
         "libro": "necromancia-medianoche",
         "type": "familia",
@@ -229,14 +272,17 @@
       "updated": "2026-05-24"
     },
     "familias/Los Vinculados": {
-      "excerpt": "Orden secreta de brujas y cazadores unida por un vínculo arcano para erradicar a los Rapax (vampiros); su célula en Nueva Ámsterdam cayó en la Masacre de la Catedral.",
+      "excerpt": "Orden ancestral compuesta por Cazadores y Brujas dedicada a combatir a los Rapax Hominum",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/q_auto/f_auto/v1779938580/los-vinculados_dsju2w.png",
+      "imageAlt": "Los Vinculados",
       "filters": {
         "libro": "necromancia-medianoche",
+        "estado": "Activo",
         "type": "familia",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
-      "updated": "2026-05-17"
+      "updated": "2026-05-27"
     },
     "familias/McCarthy Petroleum": {
       "excerpt": "Conglomerado petrolero de la familia McCarthy; eje industrial de Nueva Ámsterdam y foco de la conspiración del Elemento 121.",
@@ -253,30 +299,6 @@
       "filters": {
         "libro": "necromancia-medianoche",
         "type": "raza",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "libros/La Mujer Carmesí": {
-      "excerpt": "Continuación anunciada de la saga Crónicas de Sangre y Sombra. El material ampliado de esta ficha se publicará conforme avance el códice.",
-      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual",
-      "imageAlt": "La Mujer Carmesí",
-      "filters": {
-        "libro": "mujer-carmesi",
-        "type": "libro",
-        "saga": "crsaso",
-        "aparicion": "mujer-carmesi"
-      },
-      "updated": "2026-05-17"
-    },
-    "libros/Necromancia a Medianoche": {
-      "excerpt": "Novela de fantasía oscura ambientada en Nueva Ámsterdam, 1929. Un detective y una agente federal investigan una cadena de asesinatos con indicios sobrenaturales mientras corporaciones, linajes antiguos y cultos ocultos mueven sus piezas en la sombra.",
-      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/portadaNMLowQual",
-      "imageAlt": "Necromancia a Medianoche",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "libro",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
@@ -555,6 +577,115 @@
       "filters": {
         "libro": "necromancia-medianoche",
         "type": "lugar",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Criptidae Librum": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Daga de Obsidiana": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Elemento 121": {
+      "excerpt": "Compuesto alquímico-bioquímico inestable sintetizado en Raven District (Prueba 121); clave en la conspiración de Nueva Ámsterdam.",
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Monedas de Latón": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Munición Especial": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Profecía de la Reina de la Oscuridad": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Profecía de los Vinculados": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Recetario de las Brujas": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Reina de la Oscuridad": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Reino de las sombras": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Tomo de los Vinculados": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
+        "saga": "crsaso",
+        "aparicion": "necromancia-medianoche"
+      },
+      "updated": "2026-05-17"
+    },
+    "objetos-conceptos/Vinculo de Sangre": {
+      "filters": {
+        "libro": "necromancia-medianoche",
+        "type": "objeto-concepto",
         "saga": "crsaso",
         "aparicion": "necromancia-medianoche"
       },
@@ -892,7 +1023,7 @@
     },
     "personajes/Logan Crane": {
       "excerpt": "Detective de la policía de Nueva Ámsterdam; aliado táctico de Cassian Thorne y los Vinculados",
-      "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/personajes/logan-crane",
+      "image": "https://res.cloudinary.com/dtntllea5/image/upload/q_auto/f_auto/v1779748013/authorsite/cronicas-sangre/personajes/logan-crane.jpg",
       "imageAlt": "Logan Crane",
       "filters": {
         "libro": "necromancia-medianoche",
@@ -1084,115 +1215,6 @@
         "aparicion": "necromancia-medianoche"
       },
       "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Criptidae Librum": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Daga de Obsidiana": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Elemento 121": {
-      "excerpt": "Compuesto alquímico-bioquímico inestable sintetizado en Raven District (Prueba 121); clave en la conspiración de Nueva Ámsterdam.",
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Monedas de Latón": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Munición Especial": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Profecía de la Reina de la Oscuridad": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Profecía de los Vinculados": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Recetario de las Brujas": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Reina de la Oscuridad": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Reino de las sombras": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Tomo de los Vinculados": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
-    },
-    "objetos-conceptos/Vinculo de Sangre": {
-      "filters": {
-        "libro": "necromancia-medianoche",
-        "type": "objeto-concepto",
-        "saga": "crsaso",
-        "aparicion": "necromancia-medianoche"
-      },
-      "updated": "2026-05-17"
     }
   },
   "meridian": {
@@ -1209,9 +1231,6 @@
       "image": "https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/drakon",
       "imageAlt": "Bestiario"
     },
-    "clases/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arquetipos, profesiones o vocaciones del universo Meridian."
-    },
     "campañas/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arcos narrativos o mesas de juego del universo Meridian."
     },
@@ -1225,6 +1244,15 @@
     "eventos/La_Gran_Fiesta_Del_Baron_Matadragones": {
       "excerpt": "Hace ochenta años, la guerra que transformó Meridian llegó a su fin… pero no todas sus consecuencias murieron con ella. Durante el conflicto, los elfos recurrieron a una estrategia desesperada: la producción masiva de dragones. Criaturas nacidas para la guerra, criadas sin el tiempo, la disciplina ni el desarrollo que un dragón requiere para convertirse en algo más que un arma. Mientras la guerra ",
       "updated": "2026-04-22"
+    },
+    "clases/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de arquetipos, profesiones o vocaciones del universo Meridian."
+    },
+    "mapa/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación geográfica y cartográfica del universo Meridian."
+    },
+    "facciones/index": {
+      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de grupos, órdenes y bandos del universo Meridian."
     },
     "personajes/aquila-milvus": {
       "excerpt": "Guerrero de la Casa Milvus, respetado por su linaje… temido por lo que oculta.",
@@ -1448,12 +1476,6 @@
         "raza": "Elfo"
       },
       "updated": "2026-04-21"
-    },
-    "facciones/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de grupos, órdenes y bandos del universo Meridian."
-    },
-    "mapa/index": {
-      "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación geográfica y cartográfica del universo Meridian."
     },
     "razas/index": {
       "excerpt": "Esta ficha es un marcador de posición. Aquí irá la documentación de pueblos y linajes del universo Meridian."

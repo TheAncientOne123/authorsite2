@@ -1,61 +1,109 @@
 ---
 title: La Infiltración Católica
-description: Operación encubierta en la Catedral de Santa Regina para identificar y penetrar a la célula de “La Cruz”
+description: Operación encubierta realizada en la Catedral de Santa Regina que condujo al descubrimiento de Los Vinculados
 updated: 2026-05-17
 type: evento
 saga: crsaso
 libro: necromancia-medianoche
+estado: Concluida
 ---
-
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="La Infiltración Católica"
-  caption="Operación encubierta en la Catedral de Santa Regina"
-  rows={[
-    { label: 'Fecha', value: 'Primavera de 1929 (tarde–noche)' },
-    { label: 'Lugar', value: <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> },
-    { label: 'Objetivo', value: 'Identificar a la célula de La Cruz e infiltrarse en su red' },
-    { label: 'Equipo', value: <><Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, <Link to="/CrSaSo/personajes/Logan%20Crane">Logan Crane</Link></> },
-    { label: 'Apoyos', value: <><Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>, <Link to="/CrSaSo/personajes/Veronica%20Black">Verónica Black</Link>, <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link></> },
-    { label: 'Cobertura', value: 'Identidad de feligresa (vestuario/maquillaje por Verónica Black)' },
-    { label: 'Estado', value: 'Operación completada; derivó en alianza con Los Vinculados' },
-    { label: 'Consecuencia', value: <>Despertar arcano de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia</Link>; puente hacia <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link> y preludio de la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral</Link></> },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="La Infiltración Católica"
+    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/eventos/infiltracion-catolica', alt: 'La Infiltración Católica' }}
+    caption="Operación encubierta realizada en la Catedral de Santa Regina"
+    rows={[
+      { label: 'Nombre completo', value: 'Infiltración en la Catedral de Santa Regina' },
+      { label: 'Alias/Apodos', value: 'Operación Caballo de Troya' },
+      { label: 'Fecha', value: 'Primavera de 1929 (tarde–noche)' },
+      { label: 'Lugar', value: <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> },
+      { label: 'Objetivo', value: 'Investigar a Marco Giannotti y penetrar la red de La Cruz' },
+      { label: 'Operativos principales', value: <><Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>; <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>; <Link to="/CrSaSo/personajes/Logan%20Crane">Logan Crane</Link></> },
+      { label: 'Apoyos estratégicos', value: <><Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>; <Link to="/CrSaSo/personajes/Veronica%20Black">Verónica Black</Link>; <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link></> },
+      { label: 'Resultado', value: <>Alianza con <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>; despertar arcano de Lucía Sinclair</> },
+      { label: 'Consecuencia', value: <>Preludio de la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link></> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 31</> },
+    ]}
+  />
+)}
+</BrowserOnly>
+
+La **Infiltración Católica** fue una operación encubierta desarrollada durante la crisis de los Rapax Hominum de 1929 con el objetivo inicial de investigar al sacerdote <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>, sospechoso de participar en actividades vinculadas a asesinatos sobrenaturales y a la organización conocida como <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>.
+
+La misión terminó convirtiéndose en el primer contacto formal entre los investigadores de Nueva Ámsterdam y <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>, revelando la existencia de una guerra secreta contra los Rapax Hominum.
 
 ## Contexto
 
-Ante la falta de pistas directas tras <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>, <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian</Link> recurre a <Link to="/CrSaSo/personajes/Pollione%20Tornatore">Pollione Tornatore</Link> para perfilar al liderazgo de <Link to="/CrSaSo/familias/La%20Cruz">La Cruz</Link>. Las rutas confluyen en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>, foco de “milagros” sospechosos y tráfico de favores.
+Tras los acontecimientos de <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>, Cassian Thorne comenzó a investigar las conexiones religiosas y mafiosas asociadas a la Catedral de Santa Regina. Diversos rumores sobre “milagros” relacionados con infertilidad femenina y curaciones imposibles terminaron apuntando directamente hacia Marco Giannotti.
 
-## Preparativos y cobertura
+Los intentos iniciales de vigilancia convencional fracasaron. Cassian fue identificado rápidamente por los hombres de Giannotti y añadido a una lista negra informal dentro de la catedral, obligando a Dorian Blackwood a aprobar una operación encubierta dirigida por Lucía Sinclair.
 
-<Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link> activa apoyo policial (incluyendo a <Link to="/CrSaSo/personajes/Logan%20Crane">Logan Crane</Link>) y, por consejo de <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>, el equipo contacta a <Link to="/CrSaSo/personajes/Veronica%20Black">Verónica Black</Link> en el <Link to="/CrSaSo/lugares/Club%20Palace">Club Palace</Link>. Verónica diseña una **identidad de feligresa** para <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia</Link> (vestuario, maquillaje, protocolo social) y coordina accesos discretos.
+## Planificación y Cobertura
 
-Durante la vigilancia previa, Lucia tiene un **primer cruce** con <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> (alias *Angelina Pollard*), quien intenta atraerla a su agenda. Lucia declina.
+La estrategia de infiltración fue diseñada para explotar el perfil de las mujeres que acudían regularmente al templo. Lucía Sinclair asumiría el papel de una devota vulnerable que buscaba ayuda espiritual.
 
-## Ejecución de la infiltración
+Por recomendación de Archie Woodward, el equipo acudió al <Link to="/CrSaSo/lugares/Club%20Palace">Club Palace</Link>, donde Verónica Black y <Link to="/CrSaSo/personajes/Maisie%20Stewart">Maisie Stewart</Link> desarrollaron una transformación estética completa para Lucía.
 
-En el templo, la inmersión de Lucia se apoya en lecturas del entorno y **protocolos de infiltración**. Paralelamente, <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link> facilita una **experiencia guiada** que cataliza el **despertar latente** de Lucia como bruja, permitiéndole detectar tensiones energéticas y señales de manipulación en el recinto. En medio del trance, Lucia “roza” la presencia de Cassian, intuyendo que la operación corre peligro.
+El operativo incluyó:
 
-## Confrontación y desescalada
+* **Cambio de imagen:** Corte de cabello, maquillaje y vestimenta religiosa.
+* **Entrenamiento social:** Protocolos de comportamiento para encajar entre los feligreses.
+* **Armamento oculto:** Pistola Walther compacta y un lápiz labial con hoja retráctil.
+* **Cobertura secundaria:** Logan Crane asumió el rol de esposo preocupado para reforzar la credibilidad de la infiltración.
 
-Confundida por el despertar, Lucia intenta usar a **Cecilia** como rehén para forzar la rendición de <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>. Cecilia se libera con un hechizo y Marco la reduce con precisión. La situación se **desescala** cuando Cassian interviene, deteniendo el choque entre bandos.
+Durante la vigilancia previa, Lucía tuvo un breve encuentro con <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, quien intentó atraerla hacia su propia agenda antes de que la operación comenzara oficialmente.
 
-## Resultado: puente con Los Vinculados
+## Historia
 
-Tras el intercambio, Marco y Cecilia **reconocen el potencial** de la dupla: proponen su integración con <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>.  
-- **Cassian** es perfilado como **cazador**.  
-- **Lucia** es aceptada como **bruja**, iniciando con un recetario y prácticas de protección.
+### Necromancia a Medianoche
 
-Esta alianza abre el **siguiente arco** de entrenamiento y cooperación, y prepara el terreno para los eventos que culminarán en la **<Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>**.
+#### El Ingreso a la Catedral
 
----
+Una vez dentro de la Catedral de Santa Regina, Lucía fue recibida por Marco Giannotti y derivada a una sala privada donde la esperaba <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link>.
 
-### Véase también
-- <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>  
-- <Link to="/CrSaSo/personajes/Veronica%20Black">Verónica Black</Link> · <Link to="/CrSaSo/lugares/Club%20Palace">Club Palace</Link>  
-- <Link to="/CrSaSo/familias/La%20Cruz">La Cruz</Link> · <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>  
-- <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> · <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link>
+El recinto estaba diseñado para intimidar psicológicamente a los visitantes: iluminación tenue, incienso denso y recipientes metálicos utilizados durante rituales vinculados a la energía espiritual.
+
+#### El Ritual de Cecilia
+
+Durante el procedimiento, Cecilia realizó un ritual utilizando lodo oscuro, copas metálicas e invocaciones relacionadas con la percepción energética.
+
+La experiencia provocó el primer despertar arcano de Lucía Sinclair, quien logró proyectarse parcialmente fuera de su cuerpo y detectar la presencia de Cassian Thorne en el exterior de la catedral.
+
+El fenómeno confirmó que Lucía poseía capacidades de bruja latente.
+
+#### La Confrontación
+
+Confundida y asustada por el despertar, Lucía reaccionó violentamente e intentó tomar a Cecilia como rehén utilizando su arma oculta.
+
+Marco Giannotti intervino inmediatamente y logró inmovilizarla con una fuerza física superior a la esperada para un sacerdote convencional. Simultáneamente, Cassian irrumpió en la biblioteca tras provocar una pelea generalizada entre los feligreses y los hombres de seguridad del templo.
+
+El enfrentamiento terminó desescalándose cuando ambas partes comprendieron que compartían el mismo objetivo: combatir a los Rapax Hominum.
+
+#### La Alianza de los Vinculados
+
+Tras la tregua, Marco y Cecilia revelaron la existencia de Los Vinculados, una organización secreta formada por cazadores y brujas dedicada a enfrentar amenazas sobrenaturales.
+
+Cassian Thorne fue identificado como un potencial cazador, mientras que Lucía Sinclair fue reconocida como una bruja luminosa. Ambos recibieron monedas de latón y acceso al <Link to="/CrSaSo/objetos-conceptos/Tomo%20de%20los%20Vinculados">Tomo de los Vinculados</Link>, iniciando formalmente su integración en la organización.
+
+La operación marcó el inicio de un nuevo arco de entrenamiento y cooperación que desembocaría posteriormente en la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>.
+
+## Relaciones Clave
+
+* <Link to="/CrSaSo/personajes/Lucia%20Sinclair">**Lucía Sinclair**</Link> y <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">**Cecilia Amadeo**</Link>: Su encuentro desencadenó el despertar mágico de Lucía.
+* <Link to="/CrSaSo/personajes/Marco%20Giannotti">**Marco Giannotti**</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">**Cassian Thorne**</Link>: Pasaron de enemigos circunstanciales a aliados estratégicos.
+* <Link to="/CrSaSo/personajes/Veronica%20Black">**Verónica Black**</Link>: Arquitecta estética y logística de toda la operación encubierta.
+* <Link to="/CrSaSo/personajes/Logan%20Crane">**Logan Crane**</Link>: Actuó como respaldo táctico y cobertura social para Lucía.
+
+## Curiosidades
+
+* Durante el ritual de Cecilia, el lodo oscuro utilizado en la ceremonia se transformó brevemente en agua cristalina.
+* Las copas metálicas del ritual quedaron deformadas tras la conexión espiritual de Lucía Sinclair.
+* Logan Crane comentó posteriormente que Lucía resultaba “demasiado convincente” actuando como esposa.
+* Verónica Black comparó la operación con el episodio del Caballo de Troya de la *Odisea*.
+* La infiltración reveló que la Catedral de Santa Regina funcionaba parcialmente como centro de entrenamiento para monjes guerreros protegidos por la <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Familia Santorelli</Link>.

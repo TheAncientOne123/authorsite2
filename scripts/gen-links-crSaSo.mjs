@@ -138,7 +138,6 @@ const aliasRows = [
       ['familias', 'Brujas', 'Brujas'],
     ],
   ],
-  ['La Cruz (Secta)', 'familias', 'La Cruz', 'La Cruz'],
   ['Departamento de Policía', 'lugares', 'La Comisaría de Nueva Ámsterdam', 'La Comisaría de Nueva Ámsterdam'],
   ['FBI', 'lugares', 'Buró Federal de Investigación', 'Buró Federal de Investigación'],
   ['Castillo de Nueva Ámsterdam', 'lugares', 'El Castillo de Nueva Ámsterdam', 'El Castillo de Nueva Ámsterdam'],

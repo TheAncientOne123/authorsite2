@@ -16,31 +16,79 @@ import BookRoll from '@site/src/components/BooksRoll/BookRoll';
 
 import RecentArticles from '@site/src/components/UniverseHome/RecentArticles';
 
-
+import WikiFloatFigure from '@site/src/components/WikiFloatFigure/WikiFloatFigure';
+import CardTicker from '@site/src/components/CardTicker/CardTicker';
+import FeaturedArticle from '@site/src/components/FeaturedArticle';
 
 {/* Intro del universo */}
 
 # Crónicas de Sangre y Sombra
 
+Crónicas de Sangre y Sombra es un universo de fantasía oscura, crimen sobrenatural y conspiraciones familiares ambientado en una Nueva Ámsterdam alternativa de 1929. Entre callejones húmedos, catedrales ensangrentadas, clanes vampíricos, periodistas obstinados y detectives marcados por la culpa, la ciudad se convierte en el escenario de una guerra secreta entre linajes antiguos, órdenes ocultas y monstruos que han aprendido a esconderse entre los hombres.
 
+<WikiFloatFigure
+  src="https://res.cloudinary.com/dtntllea5/image/upload/q_auto/f_auto/v1780546180/vista-monte-galbrook_pbyreo.png"
+  alt="Vista aérea de Nueva Ámsterdam"
+  subtitle="Vista de Nueva Ámsterdam desde el Monte Galbrook"
+  align="center"
+  size="xl"
+/>
 
-Crónicas de Sangre y Sombra es un universo de intrigas góticas, corporaciones energéticas, linajes antiguos y artes ocultas. Aquí conviven familias de alto poder con brujas, Rapax Hominum y periodistas que empujan la verdad a la luz. Este portal reúne su documentación viva: libros publicados, líneas de tiempo, personajes, facciones y lugares clave.
+Este portal reúne la documentación viva del universo: libros publicados, líneas de tiempo, personajes, familias, eventos, lugares, objetos y conceptos clave. Es una guía para lectores que desean explorar el trasfondo de la saga, seguir sus misterios y comprender las conexiones que sostienen la sombra de Nueva Ámsterdam.
 
-
-
-
-
+> Tanto la fe como el miedo exigen que creas en algo que no puedes ver
 
 ## Libros del universo
 
-
-
 <BookRoll />
 
+## Por dónde empezar
 
+<CardTicker
+  cards={[
+    {
+      icon: '📖',
+      title: 'Leer la saga',
+      text: 'Libros publicados y orden de lectura recomendado.',
+      to: '/CrSaSo/libros',
+    },
+    {
+      icon: '🏙️',
+      title: 'Conocer la ciudad',
+      text: 'Nueva Ámsterdam, sus barrios y zonas de influencia.',
+      to: '/CrSaSo/lugares',
+    },
+    {
+      icon: '📋',
+      title: 'Seguir los eventos',
+      text: 'Los hitos de la crisis sobrenatural de 1929.',
+      to: '/CrSaSo/eventos',
+    },
+    {
+      icon: '🧛',
+      title: 'Explorar personajes',
+      text: 'Protagonistas, vampiros, brujas, detectives y más.',
+      to: '/CrSaSo/personajes',
+    },
+    {
+      icon: '🏛️',
+      title: 'Ver familias',
+      text: 'Linajes, mafias, órdenes y facciones.',
+      to: '/CrSaSo/familias',
+    },
+    {
+      icon: '🔮',
+      title: 'Objetos y conceptos',
+      text: 'Artefactos, profecías y elementos clave del lore.',
+      to: '/CrSaSo/objetos-conceptos',
+    },
+  ]}
+/>
+
+
+
+
+
+<FeaturedArticle docId="personajes/Logan Crane" />
 
 <RecentArticles pluginId="cronicas" limit={3} />
-
-
-
-

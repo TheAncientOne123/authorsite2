@@ -37,7 +37,6 @@ import Link from '@docusaurus/Link';
 | Familia De Fazio | <Link to="/CrSaSo/familias/Familia%20De%20Fazio">Familia De Fazio</Link> |
 | Familia Zaikov (Águilas del Nido) | <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link> |
 | Los Vinculados (Cazadores y Brujas) | <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link> · <Link to="/CrSaSo/familias/Cazadores">Cazadores</Link> · <Link to="/CrSaSo/familias/Brujas">Brujas</Link> |
-| La Cruz (Secta) | <Link to="/CrSaSo/familias/La%20Cruz">La Cruz</Link> |
 | Departamento de Policía | <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">La Comisaría de Nueva Ámsterdam</Link> |
 | FBI | <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link> |
 | Castillo de Nueva Ámsterdam | <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">El Castillo de Nueva Ámsterdam</Link> |
@@ -55,7 +54,6 @@ import Link from '@docusaurus/Link';
 <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>
 <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>
 <Link to="/CrSaSo/personajes/Andrew%20Sheppard">Andrew Sheppard</Link>
-<Link to="/CrSaSo/personajes/Angelina%20Pollard">Angelina Pollard</Link>
 <Link to="/CrSaSo/personajes/Angelo%20Tornatore">Angelo Tornatore</Link>
 <Link to="/CrSaSo/personajes/Anya%20Rudzki">Anya Rudzki</Link>
 <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>
@@ -91,12 +89,12 @@ import Link from '@docusaurus/Link';
 
 ## Eventos
 
-<Link to="/CrSaSo/eventos/Batalla%20en%20la%20Refiner%C3%ADa%20McCarthy">Batalla en la Refinería McCarthy</Link>
+<Link to="/CrSaSo/eventos/Asedio%20en%20la%20Mansi%C3%B3n%20McCarthy">Asedio en la Mansión McCarthy</Link>
+<Link to="/CrSaSo/eventos/Batalla%20en%20la%20Refiner%C3%ADa%20McCarthy">Batalla en la refinería McCarthy</Link>
 <Link to="/CrSaSo/eventos/Caso%20resuelto">Caso Resuelto</Link>
 <Link to="/CrSaSo/eventos/Desaparicion%20de%20Jessica%20McCarthy">La Desaparición de Jessica McCarthy</Link>
 <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>
 <Link to="/CrSaSo/eventos/El%20Incidente%20de%20Raven%20District">El Incidente de Raven District</Link>
-<Link to="/CrSaSo/eventos/Interrogaci%C3%B3n%20de%20Archie%20Woodward">La interrogación de Archie Woodward</Link>
 <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>
 <Link to="/CrSaSo/eventos/La%20Semana%20Negra">La Semana Negra</Link>
 <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">La Masacre de la Catedral de Santa Regina</Link>
@@ -107,8 +105,8 @@ import Link from '@docusaurus/Link';
 <Link to="/CrSaSo/familias/Cazadores">Cazadores</Link>
 <Link to="/CrSaSo/familias/Familia%20De%20Fazio">Familia De Fazio</Link>
 <Link to="/CrSaSo/familias/Familia%20Puckett">Familia Puckett</Link>
-<Link to="/CrSaSo/familias/La%20Cruz">La Cruz</Link>
 <Link to="/CrSaSo/familias/La%20Familia%20Chapman">Familia Chapman</Link>
+<Link to="/CrSaSo/familias/La%20Familia%20Dobrescu">La Familia Dobrescu</Link>
 <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>
 <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Familia Santorelli</Link>
 <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link>
@@ -117,7 +115,6 @@ import Link from '@docusaurus/Link';
 <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>
 <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link>
 <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>
-
 
 ## Lugares
 

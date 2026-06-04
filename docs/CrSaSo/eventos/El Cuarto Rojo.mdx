@@ -1,88 +1,110 @@
 ---
 title: El Cuarto Rojo
-description: Escena del crimen inicial del caso
-updated: 2026-05-17
+description: Investigación criminal y sobrenatural del homicidio ocurrido en Villa Lobos durante la crisis de los Rapax Hominum
+updated: 2026-05-26
 type: evento
 saga: crsaso
 libro: necromancia-medianoche
+estado: Resuelto (extraoficialmente)
 ---
-
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="El Cuarto Rojo"
-  caption="Homicidio anómalo en Villa Lobos"
-  rows={[
-    { label: 'Fecha', value: 'Primavera de 1929 (madrugada)' },
-    { label: 'Lugar', value: <><Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link>, <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link></> },
-    { label: 'Investigación', value: <><Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia</Link></> },
-    { label: 'Estado', value: <Link to="/CrSaSo/eventos/Caso%20resuelto">Resuelto (extraoficial)</Link> },
-    { label: 'Conexiones', value: <><Link to="/CrSaSo/personajes/Archie%20Woodward">Archie</Link>, <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link>, <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">McCarthy</Link></> },
-    { label: 'Consecuencia', value: <>Desencadena <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">Infiltración Católica</Link></> },
-  ]}
-/>
-- **Ubicación principal:** [Villa Lobos](/CrSaSo/lugares/Villa%20Lobos), sector residencial de [Crystal Square](/CrSaSo/lugares/Crystal%20Square), [Nueva Ámsterdam](/CrSaSo/lugares/Nueva%20Ámsterdam)
-- **Investigadores a cargo:** [Cassian Thorne](/CrSaSo/personajes/Cassian%20Thorne) y [Lucia Sinclair](/CrSaSo/personajes/Lucia%20Sinclair)
-- **Estado:** [Caso resuelto](/CrSaSo/eventos/Caso%20resuelto) de manera extraoficial
-- **Conexiones clave:** [Archie Woodward](/CrSaSo/personajes/Archie%20Woodward), [Jessica McCarthy](/CrSaSo/personajes/Jessica%20McCarthy), [La Cruz](/CrSaSo/familias/La%20Cruz), [La Familia McCarthy](/CrSaSo/familias/La%20Familia%20McCarthy), [La Familia Chapman](/CrSaSo/familias/La%20Familia%20Chapman)
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="El Cuarto Rojo"
+    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/q_auto/f_auto/v1779936019/cuarto-rojo_v49kc9.png', alt: 'El Cuarto Rojo' }}
+    caption="Primer caso oficial relacionado con los Rapax Hominum en Nueva Ámsterdam"
+    rows={[
+      { label: 'Nombre del caso', value: 'El Cuarto Rojo' },
+      { label: 'Alias/Apodos', value: 'Asesinato en Villa Lobos' },
+      { label: 'Estado actual', value: 'Resuelto (extraoficialmente); Sin resolver (oficial)' },
+      { label: 'Ubicación', value: <><Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link>, Crystal Square, Nueva Ámsterdam</> },
+      { label: 'Víctima(s)', value: 'Cuñada de Frederick Chapman (tía de Ryan Chapman)' },
+      { label: 'Culpable real', value: <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link> },
+      { label: 'Investigadores', value: <><Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link></> },
+      { label: 'Causa del deceso', value: 'Politraumatismo severo y desmembramiento' },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 1</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-## Descripción General
+El **Caso del Cuarto Rojo** fue un homicidio de naturaleza anómala ocurrido en una residencia de <Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link>, dentro del exclusivo sector de Crystal Square, en Nueva Ámsterdam. El crimen marcó el inicio de la cooperación formal entre el Departamento de Policía de Nueva Ámsterdam y el Buró Federal de Investigación durante la crisis de los Rapax Hominum de 1929.
 
-El llamado **Caso de El Cuarto Rojo** fue un **homicidio brutal de naturaleza anómala** ocurrido en el interior de una mansión ubicada en el fraccionamiento [Villa Lobos](/CrSaSo/lugares/Villa%20Lobos), conocido por su alta densidad de familias influyentes en [Nueva Ámsterdam](/CrSaSo/lugares/Nueva%20Ámsterdam). El nombre proviene del estado en que fue encontrada la habitación del crimen: completamente bañada en sangre, con paredes, cama y mobiliario cubiertos por restos biológicos, formando lo que parecía una escena deliberadamente compuesta como mensaje o advertencia.
+El caso es considerado el primer registro moderno documentado de actividad Rapax en la ciudad y el evento que unió profesionalmente a Cassian Thorne y Lucía Sinclair.
 
-Fue el primer caso en unir formalmente a la agente federal [Lucia Sinclair](/CrSaSo/personajes/Lucia%20Sinclair) y al detective [Cassian Thorne](/CrSaSo/personajes/Cassian%20Thorne) como fuerza conjunta entre el [Buró Federal de Investigación](/CrSaSo/lugares/Buró%20Federal%20de%20Investigación) y la [La Comisaría de Nueva Ámsterdam](/CrSaSo/lugares/La%20Comisaría%20de%20Nueva%20Ámsterdam), bajo la supervisión del jefe de detectives [Dorian Blackwood](/CrSaSo/personajes/Dorian%20Blackwood).
+## Perfil del Crimen
 
-### Naturaleza del crimen
+La escena del crimen fue descrita por los investigadores como una devastación absoluta. La habitación de Ryan Chapman, originalmente impecable, quedó completamente cubierta de sangre y restos biológicos.
 
-> _“Las paredes, antes blancas, ahora eran el lienzo de un asesinato grotesco y brutal. [...] La sangre goteaba lentamente por las paredes, similar a las gotas de lluvia que corrían por las ventanas.”_ — Testimonio de Lucía Sinclair
+La violencia del ataque superaba cualquier capacidad humana convencional. La víctima fue aplastada contra la cama con tal fuerza que fragmentos de hueso y tejido quedaron incrustados en la madera del mobiliario.
 
-La escena del crimen mostraba una violencia inusual: la víctima, presumiblemente una mujer, había sido aplastada contra la cama con una fuerza inhumana, al punto que fragmentos de hueso y piel quedaron incrustados en la estructura del mueble. Se recuperaron elementos biológicos incompatibles con humanos, como **un colmillo** (de aspecto canino) y **un mechón de pelo endurecido** no perteneciente a especie doméstica reconocida. Ambos **se degradaron o desintegraron** inexplicablemente poco después de ser recolectados.
+> _“Las paredes, antes blancas, ahora eran el lienzo de un asesinato grotesco y brutal. [...] La sangre goteaba lentamente por las paredes, similar a las gotas de lluvia que corrían por las ventanas.”_  
+> — Testimonio de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>
 
-### Cronología de los eventos
+El hedor metálico y orgánico presente en la habitación provocó náuseas inmediatas en múltiples oficiales de primera respuesta.
 
-#### 1) **Descubrimiento del crimen**
-Los oficiales locales, liderados por el oficial Erikson, hallaron la escena en la habitación del joven [Ryan Chapman](/CrSaSo/personajes/Ryan%20Chapman). El hallazgo llevó al jefe [Dorian Blackwood](/CrSaSo/personajes/Dorian%20Blackwood) a **solicitar intervención federal**.
+## Evidencias y Metodología
 
-#### 2) **Llegada de los federales**
-[Lucia Sinclair](/CrSaSo/personajes/Lucia%20Sinclair) arriba con el equipo forense y es asignada a trabajar junto al detective [Cassian Thorne](/CrSaSo/personajes/Cassian%20Thorne). La relación entre ambos inicia con tensión profesional, pero evoluciona a medida que comparten hallazgos.
+La resolución del caso combinó criminalística tradicional con investigación de fenómenos ocultos.
 
-#### 3) **Interrogatorio a la familia Chapman**
-El patriarca [Frederick Chapman](/CrSaSo/personajes/Frederick%20Chapman) explica que, por remodelaciones, sus hermanos y cuñada **durmieron en la habitación de Ryan** durante la visita. La víctima es identificada como **su cuñada**. Aunque niega enemigos, reconoce tensiones políticas en el vecindario.
+Las evidencias clave incluyeron:
 
-#### 4) **Descubrimientos en la escena**
-- **Colmillo** que **se desintegra** en manos de Sinclair.  
-- **Dedo femenino** con esmalte azul.  
-- **Cabello** de raíz negra y puntas blancas (posible origen anómalo).  
-- **Cuerpo parcialmente fusionado** con la cama por presión extrema.  
-- **Huellas** que **cruzan el jardín** hacia la residencia vecina: la propiedad de [La Familia McCarthy](/CrSaSo/familias/La%20Familia%20McCarthy).
+* **Evidencia dental:** Un colmillo de aspecto canino encontrado en la alfombra que se desintegró poco después de ser manipulado.
+* **Análisis capilar:** Mechones de cabello endurecido con raíces negras y puntas claras incompatibles con registros animales conocidos.
+* **Rastros de pisadas:** Huellas profundas dirigidas hacia la propiedad vecina de la familia McCarthy.
+* **Collar de cuarzo:** Objeto identificado posteriormente como regulador energético utilizado por Jessica McCarthy para contener su transformación.
 
-#### 5) **Interrogatorio en la Mansión McCarthy**
-Con respaldo federal, Thorne y Sinclair **acceden a la [Mansión McCarthy](/CrSaSo/lugares/Mansión%20McCarthy)**. [Alan McCarthy](/CrSaSo/personajes/Alan%20McCarthy) coopera formalmente; las coartadas de **Griselda** y **[Jessica McCarthy](/CrSaSo/personajes/Jessica%20McCarthy)** se sostienen. Pese a la **fachada impecable**, no se obtiene evidencia directa para vincularlos.
+## Historia
 
-#### 6) **Separación de líneas**
-Ante la falta de pistas consistentes:
-- [Cassian Thorne](/CrSaSo/personajes/Cassian%20Thorne) se dirige al [Centro Histórico](/CrSaSo/lugares/Centro%20Histórico).  
-- [Lucia Sinclair](/CrSaSo/personajes/Lucia%20Sinclair) consulta en la [La Biblioteca de Nueva Ámsterdam](/CrSaSo/lugares/La%20Biblioteca%20de%20Nueva%20Ámsterdam).
+### Necromancia a Medianoche
 
-#### 7) **Coincidencia de sospechoso**
-Al compartir hallazgos, ambos descubren que **seguían al mismo sospechoso**: [Archie Woodward](/CrSaSo/personajes/Archie%20Woodward). Las pistas conectan el caso con **círculos ocultistas** y al alias **“Aldric Shadowborne”**.
+#### El Hallazgo en Villa Lobos
 
-#### 8) **Operativo en la residencia de Woodward**
-Se realiza un **ingreso no autorizado** a la casa de Archie, donde hallan **un sótano oculto** que conduce a líneas de investigación en [El Nido](/CrSaSo/lugares/El%20Nido). Poco después, **Archie es capturado** y se realiza la [Interrogación de Archie Woodward](/CrSaSo/eventos/Interrogación%20de%20Archie%20Woodward), sin resultados conclusivos inmediatos.
+El cuerpo fue descubierto durante la madrugada por <Link to="/CrSaSo/personajes/Ryan%20Chapman">Ryan Chapman</Link>, quien había cedido temporalmente su habitación a familiares visitantes debido a remodelaciones internas en la residencia.
 
-### Implicaciones y conexiones
+El jefe de detectives <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>, al reconocer la naturaleza anómala del crimen, solicitó apoyo federal. La agente Lucía Sinclair fue asignada al caso y obligada a colaborar con Cassian Thorne pese a las tensiones iniciales entre ambos investigadores.
 
-- **Vínculo con La Cruz:** la metodología sugiere **intereses de la organización** en objetos y personas relacionadas con el crimen.  
-- **McCarthy Petroleum / Elemento 121:** el rastro paralelo conduce a **tramas corporativas** y **experimentos** que más tarde impactarán en [Jessica McCarthy](/CrSaSo/personajes/Jessica%20McCarthy).  
-- **Efecto dominó:** este caso **desencadena** la [Infiltración Católica](/CrSaSo/eventos/La%20Infiltración%20Católica), la [Masacre de la Catedral de Santa Regina](/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina) y, finalmente, [La Semana Negra](/CrSaSo/eventos/La%20Semana%20Negra).
+#### Interrogatorio a la Familia Chapman
 
-### Resolución
+Durante las primeras entrevistas, <Link to="/CrSaSo/personajes/Frederick%20Chapman">Frederick Chapman</Link> confirmó que la víctima era su cuñada y que se encontraba ocupando la habitación de Ryan de manera temporal.
 
-El equipo logra **identificar responsables** y establecer **conexiones operativas**, pero la resolución se mantiene **extraoficial** por razones tácticas y de **encubrimiento** vinculadas a acuerdos mayores (véase [Caso Resuelto](/CrSaSo/eventos/Caso%20resuelto)).
+Aunque Chapman negó tener enemigos directos, admitió que existían tensiones empresariales y políticas entre familias influyentes del sector.
 
----
+#### La Conexión McCarthy
 
-**Véase también:**  
-[Interrogación de Archie Woodward](/CrSaSo/eventos/Interrogación%20de%20Archie%20Woodward) · [Infiltración Católica](/CrSaSo/eventos/La%20Infiltración%20Católica) · [Masacre de la Catedral de Santa Regina](/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina) · [La Semana Negra](/CrSaSo/eventos/La%20Semana%20Negra)
+Las huellas halladas en el jardín condujeron a la propiedad de <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">la familia McCarthy</Link>. Allí, Cassian y Lucía conocieron a <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> y a Jessica McCarthy.
+
+Aunque la familia aparentaba normalidad, Lucía detectó múltiples inconsistencias emocionales y conductuales, especialmente relacionadas con Jessica y con el comportamiento evasivo de Alan.
+
+#### Archie Woodward y el Elemento 121
+
+La investigación terminó conectando el caso con <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>, antiguo científico vinculado a McCarthy Petroleum y al misterioso <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>.
+
+Posteriormente, Cassian y Lucía descubrieron que Jessica McCarthy sufría Tetralogía de Fallot al nacer y que Alan McCarthy había utilizado un derivado experimental del Elemento 121 para salvarle la vida, alterando permanentemente su biología.
+
+#### Resolución del Caso
+
+Finalmente, los investigadores concluyeron que Jessica McCarthy era la responsable material de los asesinatos cometidos bajo una transformación bestial inducida por desbordamientos emocionales extremos.
+
+El detonante del primer asesinato habría sido una acumulación de estrés y humillación social sufrida durante una salida con Ryan Chapman y sus amigos días antes del ataque.
+
+Aunque el caso fue resuelto extraoficialmente por Thorne y Sinclair, las autoridades federales decidieron encubrir la naturaleza sobrenatural del incidente para evitar el caos social.
+
+## Relaciones Clave
+
+* **Cassian Thorne y Lucía Sinclair:** El caso marcó el inicio de su alianza profesional y sentimental.
+* **Jessica McCarthy:** Responsable material de los asesinatos bajo una condición híbrida relacionada con el Elemento 121.
+* **Alan McCarthy:** Responsable indirecto de la transformación de Jessica.
+* **Archie Woodward:** Proporcionó la explicación científica necesaria para comprender la biología de los Rapax.
+
+## Curiosidades
+
+* El nombre “El Cuarto Rojo” surgió del morbo popular y de filtraciones de prensa, no de documentos oficiales.
+* Un dedo anular con esmalte azul claro fue uno de los pocos restos humanos recuperados intactos en la escena.
+* Cassian Thorne insistía en utilizar estambre morado —y no rojo— para conectar pistas en su pizarrón de investigación.
+* El expediente oficial del caso permanece archivado como “sin resolver” dentro de los registros federales.

@@ -8,14 +8,55 @@
   border: 1px solid var(--wiki-figure-border);
   border-radius: 2px;
   background: var(--ifm-background-surface-color);
-  font-size: 0.9rem;
-  line-height: 1.35;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+.sizeMd {
+  width: 280px;
+  max-width: min(50%, 320px);
+}
+
+.sizeLg {
+  width: 360px;
+  max-width: min(55%, 420px);
+}
+
+.sizeXl {
+  width: 420px;
+  max-width: min(60%, 480px);
 }
 
 .rootRight {
   float: right;
   clear: right;
   margin: 0 0 0.75rem 1.25rem;
+}
+
+.rootCenter {
+  float: none;
+  clear: both;
+  width: 100%;
+  max-width: min(90%, 480px);
+  margin: 1.25rem auto 1.5rem;
+}
+
+.rootCenter.sizeMd {
+  max-width: min(92%, 520px);
+}
+
+.rootCenter.sizeLg {
+  max-width: min(92%, 640px);
+}
+
+.rootCenter.sizeXl {
+  max-width: min(94%, 760px);
+}
+
+.imageWrap {
+  border-bottom: 1px solid var(--wiki-figure-border);
+  background: var(--ifm-background-color);
 }
 
 .img {
@@ -25,20 +66,41 @@
   vertical-align: middle;
 }
 
-.caption {
+.footer {
+  margin: 0;
   padding: 6px 8px 8px;
   text-align: center;
   color: var(--ifm-color-emphasis-700);
-  border-top: 1px solid var(--wiki-figure-border);
+}
+
+.credit {
+  font-size: 0.8125rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 0.2rem;
+}
+
+.creditLink {
+  color: var(--ifm-link-color);
+  text-decoration: none;
+}
+
+.creditLink:hover {
+  text-decoration: underline;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-800);
 }
 
 @media (max-width: 768px) {
   .root,
-  .rootRight {
+  .rootRight,
+  .rootCenter {
     float: none;
     clear: both;
     width: 100%;
-    max-width: 280px;
+    max-width: min(100%, 360px);
     margin: 0 auto 1rem;
   }
 }

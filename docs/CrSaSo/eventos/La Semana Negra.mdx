@@ -1,58 +1,103 @@
 ---
 title: La Semana Negra
-description: Semana de violencia urbana desatada tras el ataque en Italian’s Boot; conocida popularmente como “La Guerra de las Pizzas”
+description: Crisis de violencia urbana y guerra mafiosa encubierta ocurrida en Nueva Ámsterdam durante la expansión de los Rapax Hominum
 updated: 2026-05-17
 type: evento
 saga: crsaso
 libro: necromancia-medianoche
+estado: Concluida
 ---
-
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="La Semana Negra"
-  caption="Crisis urbana tras el ataque en Italian’s Boot"
-  rows={[
-    { label: 'Fecha', value: 'Primavera de 1929 (una semana)' },
-    { label: 'Lugares', value: <>Centro histórico, <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>, <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link>, alrededores de la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link></> },
-    { label: 'Alias', value: '“La Guerra de las Pizzas” (apodo popular)' },
-    { label: 'Detonante', value: <>Ataque en <Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">Italian’s Boot</Link></> },
-    { label: 'Actores visibles', value: <><Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link>, <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Familia Santorelli</Link>, <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">Comisaría</Link></> },
-    { label: 'Investigación', value: <><Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, coordinación de <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link></> },
-    { label: 'Estado', value: 'Contenida; tregua táctica entre familias' },
-    { label: 'Consecuencias', value: <>Preludio de la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral</Link>; reconfiguración de alianzas</> },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="La Semana Negra"
+    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/eventos/semana-negra', alt: 'La Semana Negra' }}
+    caption="Periodo de violencia urbana durante la crisis de 1929"
+    rows={[
+      { label: 'Nombre del evento', value: 'La Semana Negra' },
+      { label: 'Alias/Apodos', value: 'La Guerra de las Pizzas' },
+      { label: 'Estado actual', value: 'Concluida; tregua táctica posterior a la Masacre de la Catedral' },
+      { label: 'Fecha', value: 'Primavera de 1929 (aprox. una semana)' },
+      { label: 'Ubicación', value: <>Nueva Ámsterdam; principalmente el Distrito Italiano y alrededores de la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link></> },
+      { label: 'Detonante', value: <>Ataque en <Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">Italian’s Boot</Link></> },
+      { label: 'Participantes visibles', value: <><Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link>; <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Familia Santorelli</Link>; Mafia polaca; Comisaría de Nueva Ámsterdam</> },
+      { label: 'Investigadores', value: <><Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>; <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>; coordinación de <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link></> },
+      { label: 'Resultado', value: 'Parálisis social de la ciudad; tregua mafiosa; encubrimiento federal' },
+      { label: 'Consecuencia', value: <>Preludio directo de la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link></> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-## Descripción general
+La **Semana Negra** fue uno de los periodos más violentos en la historia moderna de Nueva Ámsterdam. El conflicto comenzó tras la masacre ocurrida en <Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">Italian’s Boot</Link>, establecimiento vinculado a la Familia Tornatore, y rápidamente escaló hacia una guerra urbana entre facciones mafiosas rivales.
 
-La **Semana Negra** fue un período de **violencia sostenida** en <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> que estalló tras el ataque al restaurante-bar <Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">Italian’s Boot</Link>, propiedad de la <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link>. La calle bautizó aquellos días como **“La Guerra de las Pizzas”**: tiroteos, asaltos y represalias cruzadas que **desbordaron a la policía** y sembraron pánico en la población.
+Aunque la narrativa oficial atribuyó los acontecimientos a disputas territoriales entre organizaciones criminales italianas y polacas, investigaciones posteriores realizadas por Cassian Thorne y Lucía Sinclair revelaron que gran parte del caos fue provocado deliberadamente como cortina de humo para encubrir movimientos relacionados con los Rapax Hominum y la profecía de la Reina de la Oscuridad.
 
-Aunque el enfrentamiento **parecía estrictamente mafioso**, los **patrones de daño** del detonante —heridas con **trazas de garras** y fuerza no humana— sugirieron la presencia de **factores anómalos** ajenos a una guerra convencional entre familias.
+La crisis terminó únicamente después de la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>, evento que forzó una tregua táctica entre las familias criminales y desplazó el foco del conflicto hacia la amenaza sobrenatural.
 
-## Cronología abreviada
+## Perfil y Contexto
 
-1. **Ataque en Italian’s Boot.** Víctimas múltiples y escena incompatible con un solo tirador; se registran lesiones que apuntan a **agresores no humanos**.  
-2. **Escalada ciudadana.** Días de **tiroteos y ajustes de cuentas** entre facciones vinculadas a Tornatore y Santorelli; hospitales y comisaría saturados.  
-3. **Contención operativa.** <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link> prioriza **cordones y descompresión** del conflicto, mientras <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia</Link> siguen el rastro de lo **no humano** tras bambalinas.  
-4. **Desenlace parcial.** La violencia **cede** por presión institucional y **treguas discretas**; el foco se desplaza hacia la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>, donde **estalla** la posterior <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre</Link>.
+Durante la Semana Negra, Nueva Ámsterdam experimentó un colapso parcial de la seguridad pública. Las calles permanecían vacías durante gran parte del día, mientras que por las noches los tiroteos, incendios y persecuciones se volvieron constantes en el distrito italiano y zonas cercanas al centro histórico.
 
-## Actores y líneas en conflicto
+La situación obligó al Departamento de Policía a establecer perímetros de contención y considerar incluso apoyo militar. El miedo colectivo provocó cierres masivos de restaurantes y negocios asociados a familias mafiosas italianas, dando origen al apodo popular de “La Guerra de las Pizzas”.
 
-- **Facciones visibles:** <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Tornatore</Link> vs. <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Santorelli</Link>, con **acusaciones cruzadas** por el ataque inicial.  
-- **Operadores en la sombra:** señales que conectan la crisis con **maniobras sobrenaturales** y con agendas de terceros (véase <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>).  
-- **Respuesta institucional:** <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">Comisaría</Link> y **coordinación** de <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Blackwood</Link>; seguimiento paralelo de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Sinclair</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">Thorne</Link> a **indicios no humanos**.
+A nivel oculto, Tamara Dobrescu utilizó la violencia mafiosa como distracción estratégica para debilitar a los protectores de la familia Santorelli y avanzar los preparativos relacionados con Jessica McCarthy.
 
-## Impacto y legado
+## Tácticas y Metodología
 
-- **Reconfiguración del equilibrio** entre familias y **tregua tensa**.  
-- **Normalización aparente** del orden público, mientras la **amenaza real** se desplaza hacia la esfera **sobrenatural**.  
-- **Antesala directa** de la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral</Link>, que cristaliza los hilos ocultos que la Semana Negra apenas insinuaba.
+La Semana Negra combinó tácticas criminales tradicionales con intervención sobrenatural:
 
----
+* **Encubrimiento balístico:** Escenas alteradas con armas de fuego para ocultar heridas provocadas por Rapax Hominum.
+* **Desinformación criminal:** Uso de mafias polacas y conflictos territoriales para desviar la atención federal.
+* **Cordones de exclusión:** Patrullajes simultáneos de policías y escoltas mafiosos que bloquearon zonas enteras de la ciudad.
+* **Ataques selectivos:** Eliminación quirúrgica de figuras vinculadas a los Santorelli y a Los Vinculados.
 
-### Véase también
-- <Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">Italian’s Boot</Link> · <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link> · <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Familia Santorelli</Link>  
-- <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link> · <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link> · <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>
+## Historia
+
+### Necromancia a Medianoche
+
+#### La Masacre del Italian’s Boot
+
+El inicio oficial de la crisis ocurrió cuando Cassian Thorne y Lucía Sinclair investigaron el ataque al restaurante Italian’s Boot. La escena mostraba ocho cadáveres con lesiones incompatibles con armas convencionales: cráneos aplastados, torsos deformados y marcas de garras profundas.
+
+Aunque los agresores intentaron simular un tiroteo mafioso, la evidencia apuntaba a entidades con fuerza física no humana.
+
+#### Escalada de la Guerra Mafiosa
+
+Tras el ataque, <Link to="/CrSaSo/personajes/Paciano%20Tornatore">Paciano Tornatore</Link> y otros líderes criminales iniciaron represalias abiertas contra facciones asociadas a los Santorelli y a grupos polacos.
+
+Durante varios días, Nueva Ámsterdam quedó atrapada en una cadena de asesinatos, secuestros y tiroteos. El comisionado de policía llegó a discutir la posibilidad de desplegar al ejército para recuperar el control urbano.
+
+Mientras tanto, Cassian y Lucía continuaron investigando patrones sobrenaturales detrás de las masacres.
+
+#### Intervención Federal
+
+Los agentes Huber y Turner, enviados por el FBI, rechazaron las teorías sobrenaturales presentadas por Lucía Sinclair y atribuyeron oficialmente el conflicto a una alianza criminal entre mafias extranjeras y la <Link to="/CrSaSo/familias/Familia%20De%20Fazio">Familia De Fazio</Link>.
+
+Como consecuencia, Cassian Thorne y Logan Crane fueron suspendidos temporalmente por insistir en continuar investigaciones relacionadas con los Rapax Hominum.
+
+#### La Masacre de la Catedral y el Fin de la Crisis
+
+La violencia disminuyó abruptamente después de la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>. La destrucción parcial de Los Vinculados y la reorganización de prioridades entre las familias mafiosas forzaron una tregua táctica.
+
+Posteriormente, el FBI integró retroactivamente los sucesos de la catedral dentro del mismo marco narrativo de guerra mafiosa para evitar el pánico público y simplificar la versión oficial de los hechos.
+
+## Relaciones Clave
+
+* **Familia Tornatore:** Víctimas iniciales del ataque en Italian’s Boot y principal fuerza de represalia durante la guerra.
+* **Familia Santorelli:** Señalados como responsables indirectos del conflicto por múltiples facciones rivales.
+* **Cassian Thorne y Lucía Sinclair:** Investigadores que descubrieron el componente sobrenatural detrás de la crisis.
+* **Tamara Dobrescu:** Operadora encubierta que aprovechó el caos urbano para avanzar la profecía de la Reina de la Oscuridad.
+
+## Curiosidades
+
+* El apodo “La Guerra de las Pizzas” surgió por la ironía popular ante el cierre masivo de restaurantes italianos durante el conflicto.
+* La pizzería <Link to="/CrSaSo/lugares/Pizzas'%20Juan">Pizzas' Juan</Link> se volvió uno de los pocos establecimientos que continuaron operando con normalidad durante la crisis.
+* Lucía Sinclair descubrió durante esta semana que Cassian Thorne podía identificar distintos tipos de cloro de alberca basándose únicamente en el olor.
+* El informe federal final integró los acontecimientos de la Catedral de Santa Regina dentro de la misma narrativa criminal para ocultar toda referencia a actividad Rapax.
+* Muchos habitantes de Nueva Ámsterdam recuerdan la Semana Negra como el momento en que la ciudad “dejó de dormir por las noches”.

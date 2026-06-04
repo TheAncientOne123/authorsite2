@@ -1,55 +1,120 @@
 ---
 title: La Masacre de la Catedral de Santa Regina
-description: Asalto devastador contra la célula de Los Vinculados; punto de quiebre tras la Semana Negra
+description: Asalto sobrenatural contra la célula de Los Vinculados que marcó el fin de la Semana Negra
 updated: 2026-05-17
 type: evento
 saga: crsaso
 libro: necromancia-medianoche
+estado: Encubierto oficialmente
 ---
-
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-<Infobox
-  title="La Masacre de la Catedral de Santa Regina"
-  caption="Asalto mortal a la célula de Los Vinculados"
-  rows={[
-    { label: 'Fecha', value: 'Primavera de 1929 (noche)' },
-    { label: 'Lugar', value: <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> },
-    { label: 'Responsable', value: <>Acción de <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> canalizando el monstruo interior de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link></> },
-    { label: 'Víctimas', value: <>Mín. 16 miembros de <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>, incl. <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo (†)</Link></> },
-    { label: 'Supervivientes destacados', value: <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> },
-    { label: 'Estado', value: 'Encubierto públicamente; sin responsables oficiales' },
-    { label: 'Consecuencias', value: <>Disolución de la célula de Santa Regina; deriva hacia <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">El Balneario Rushmore</Link></> },
-  ]}
-/>
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="La Masacre de la Catedral de Santa Regina"
+    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/eventos/masacre-catedral-santa-regina', alt: 'Masacre de la Catedral de Santa Regina' }}
+    caption="Asalto devastador contra la célula de Los Vinculados"
+    rows={[
+      { label: 'Conflicto', value: <>Crisis de los Rapax Hominum (1929); <Link to="/CrSaSo/eventos/La%20Semana%20Negra">Semana Negra</Link></> },
+      { label: 'Lugar', value: <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> },
+      {
+        label: 'Perpetrador material',
+        value: (
+          <>
+            <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link> (bajo
+            influencia externa)
+          </>
+        ),
+      },
+      { label: 'Perpetrador intelectual', value: <><Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> y el clan Voronin</> },
+      { label: 'Bajas confirmadas', value: <>16 miembros de <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>, incluyendo a <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link></> },
+      { label: 'Superviviente principal', value: <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> },
+      { label: 'Culpable oficial', value: <>Alianza entre mafia polaca y <Link to="/CrSaSo/familias/Familia%20De%20Fazio">Familia De Fazio</Link></> },
+      { label: 'Consecuencia', value: <>Fin de la Semana Negra; destrucción de la célula de Santa Regina</> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 38</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-## Contexto
-Tras la <Link to="/CrSaSo/eventos/La%20Semana%20Negra">Semana Negra</Link> y el cierre operativo del caso <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>, las tensiones entre mafias y la investigación de fenómenos anómalos escalaron. En ese escenario, <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> —decidida a avanzar sus experimentos y su agenda— dirigió su golpe contra la **célula de Los Vinculados** que operaba desde la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>, núcleo táctico en la resistencia contra los *rapax hominum*.
+La **Masacre de la Catedral de Santa Regina** fue el evento más sangriento ocurrido durante la crisis de los Rapax Hominum de 1929 en Nueva Ámsterdam. El ataque consistió en un asalto sobrenatural dirigido contra la célula principal de <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>, organización compuesta por cazadores y brujas encargada de combatir amenazas anómalas dentro de la ciudad.
 
-## Desarrollo del evento
-La irrupción dentro del templo derivó en una **carnicería**. La fuerza canalizada a través de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link> arrasó con los presentes.  
-Cuando llegaron <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> y <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>, la nave principal estaba cubierta de sangre y restos.  
-En los escalones del altar, **Marco Giannotti** sostenía el cuerpo sin vida de su hermana **Cecilia**, en estado de shock. Poco después perdió el conocimiento, símbolo del colapso total de la célula.
+La masacre marcó el verdadero final de la <Link to="/CrSaSo/eventos/La%20Semana%20Negra">Semana Negra</Link>, ya que tras el ataque las familias criminales y las autoridades federales establecieron treguas y narrativas oficiales para contener el caos social y evitar el pánico colectivo.
 
-## Víctimas y supervivientes
-- **Víctimas:** al menos **16 vinculados**, entre ellos <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link>.  
-- **Supervivientes:** <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> (evacuado). Otros supervivientes, si los hubo, no quedaron en condiciones operativas.
+## Perfil y Contexto
 
-## Investigación y encubrimiento
-La **versión pública** redirigió responsabilidades hacia el conflicto entre familias criminales, diluyendo cualquier rastro sobrenatural. <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia</Link> quedó **apartada** de la conducción oficial del expediente, manteniendo líneas **no oficiales** junto a <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian</Link>.  
-El episodio aceleró decisiones internas en la comisaría bajo <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link> y reforzó la necesidad de **colaboración informal** con operadores no estatales.
+Bajo la dirección de Marco Giannotti, la Catedral de Santa Regina funcionaba simultáneamente como refugio espiritual, centro de entrenamiento y base operativa para monjes guerreros vinculados a la protección de Nueva Ámsterdam.
+
+Tras descubrir que Los Vinculados preparaban acciones contra sus planes, Tamara Dobrescu decidió eliminar la célula completa utilizando a Jessica McCarthy como arma biológica y sobrenatural.
+
+Cuando Cassian Thorne y Lucía Sinclair llegaron al recinto, encontraron una escena descrita posteriormente como una “carnicería ritual”: bancos destruidos, paredes cubiertas de sangre y cuerpos posicionados en formas imposibles alrededor del altar principal.
+
+## Naturaleza del Ataque
+
+La violencia observada en Santa Regina superaba ampliamente la capacidad física de cualquier organización criminal convencional:
+
+* **Fuerza descomunal:** Cráneos colapsados y torsos aplastados mediante fuerza física extrema.
+* **Desgarramientos bestiales:** Marcas de garras profundas incompatibles con armas humanas.
+* **Encubrimiento balístico:** Uso parcial de armas de fuego para simular un enfrentamiento mafioso.
+* **Uso de Jessica McCarthy:** Transformada y utilizada por Tamara Dobrescu como principal fuerza de asalto.
+
+El ataque no buscaba únicamente destruir a Los Vinculados, sino quebrar moralmente a los supervivientes y eliminar cualquier resistencia organizada antes del despertar de la Reina de la Oscuridad.
+
+## Historia
+
+### Necromancia a Medianoche
+
+#### El Contexto de la Semana Negra
+
+La masacre ocurrió durante el punto más crítico de la violencia mafiosa en Nueva Ámsterdam. Mientras la policía y el FBI concentraban recursos en contener la guerra entre facciones criminales, los Voronin aprovecharon la distracción para atacar Santa Regina.
+
+El conflicto mafioso funcionó efectivamente como una cortina de humo para ocultar movimientos sobrenaturales dentro de la ciudad.
+
+#### El Descubrimiento de la Catedral
+
+Tras resolver parcialmente las pistas relacionadas con Jessica McCarthy, <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link> condujo a Cassian Thorne y Lucía Sinclair hasta la catedral.
+
+En la entrada encontraron a un guardia mortalmente herido que falleció pocos segundos después de intentar pedir ayuda. En el interior, ambos investigadores descubrieron dieciséis cadáveres distribuidos entre la nave principal y los alrededores del altar.
+
+El aire estaba impregnado de un hedor metálico insoportable y el suelo había sido cubierto por una mezcla de sangre, restos orgánicos y ceniza.
+
+#### Marco y Cecilia
+
+Bajo el altar principal, Cassian y Lucía hallaron a Marco Giannotti sosteniendo el cuerpo sin vida de <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link> mientras cantaba una canción de cuna italiana en un estado de disociación psicológica severa.
+
+La muerte de Cecilia destruyó emocionalmente a Marco y redefinió completamente su participación posterior en el conflicto contra los Voronin.
+
+#### El Encubrimiento Federal
+
+Horas después del incidente, los agentes Huber y Turner tomaron control absoluto de la escena.
+
+El FBI integró oficialmente la masacre dentro de la narrativa criminal de la Semana Negra, atribuyendo el ataque a una alianza entre mafia polaca y la Familia De Fazio. Toda referencia a Rapax Hominum, a Jessica McCarthy o a actividad sobrenatural fue eliminada de los reportes públicos.
+
+Como consecuencia de negarse a aceptar esta versión oficial, Lucía Sinclair fue suspendida indefinidamente del Buró Federal de Investigación.
 
 ## Consecuencias
-- **Destrucción de la célula** de Los Vinculados en Santa Regina y **vacío táctico** en la región.  
-- **Radicalización** de la investigación hacia actores vampíricos y manipuladores (Dobrescu).  
-- **Deriva** de los protagonistas hacia <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">El Balneario Rushmore</Link>, donde continuaría la cacería y se revelarían nuevas capas del complot.
 
----
+* Destrucción total de la célula de Los Vinculados en Santa Regina.
+* Radicalización definitiva de Cassian Thorne y Lucía Sinclair contra los Rapax Hominum.
+* Colapso emocional y físico de Marco Giannotti.
+* Repliegue táctico hacia <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">El Balneario Rushmore</Link>.
+* Fin operativo de la Semana Negra mediante treguas mafiosas y encubrimiento federal.
 
-### Véase también
-- <Link to="/CrSaSo/eventos/La%20Semana%20Negra">La Semana Negra</Link>  
-- <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>  
-- <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link> · <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>  
-- <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> · <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link> · <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>
+## Relaciones Clave
+
+* **Marco Giannotti y Cecilia Amadeo:** La pérdida de Cecilia impulsó el posterior deseo suicida y redentor de Marco durante la batalla final.
+* **Tamara Dobrescu:** Arquitecta intelectual del ataque y principal beneficiaria estratégica del caos.
+* **Jessica McCarthy:** Utilizada como instrumento destructivo debido a su condición híbrida.
+* **Cassian Thorne y Lucía Sinclair:** El horror presenciado en la catedral consolidó definitivamente su identidad como Vinculados.
+
+## Curiosidades
+
+* El FBI nunca logró justificar técnicamente cómo una “mafia polaca” habría podido causar daños físicos tan extremos en los cuerpos encontrados.
+* Lucía Sinclair recordó posteriormente el zumbido constante de las moscas congregadas sobre las heridas abiertas como el sonido más perturbador de toda la escena.
+* Algunas zonas del altar conservaron manchas oscuras imposibles de remover incluso después de múltiples procesos de limpieza.
+* Marco Giannotti continuó cantando la misma canción italiana durante horas después del ataque antes de perder el conocimiento.
+* La masacre es considerada por muchos Vinculados sobrevivientes como el momento exacto en que Nueva Ámsterdam perdió definitivamente cualquier sensación de normalidad.

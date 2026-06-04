@@ -1,0 +1,118 @@
+.root {
+  margin: 2rem 0 2.5rem;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.headerText {
+  min-width: 0;
+}
+
+/* "Artículo destacado" → título grande */
+.sectionTitle {
+  margin: 0 0 0.15rem;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Nombre del artículo → subtítulo discreto */
+.docName {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-600);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.fullLink {
+  flex-shrink: 0;
+  align-self: flex-end;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.fullLink:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor con altura máxima y fade de corte */
+.previewWrap {
+  position: relative;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  /* Altura máxima del preview: ~4 párrafos equivalentes */
+  max-height: 420px;
+}
+
+.preview {
+  display: flow-root;
+  padding: 1.25rem 1.35rem;
+}
+
+/* Fade-out al fondo para sugerir que hay más contenido */
+.previewFade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--ifm-background-surface-color)
+  );
+  pointer-events: none;
+}
+
+/* Botón centrado sobre el fade */
+.readMoreWrap {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.preview :global(h1:first-of-type) {
+  display: none;
+}
+
+.error {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--ifm-color-danger);
+  border-radius: 8px;
+  color: var(--ifm-color-danger);
+  font-size: 0.9375rem;
+}
+
+@media (max-width: 576px) {
+  .preview {
+    padding: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fullLink {
+    align-self: flex-start;
+  }
+}
