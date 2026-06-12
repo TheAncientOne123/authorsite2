@@ -10,44 +10,106 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Gilded Cat
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Gilded Cat"
+    caption="El Gato Dorado"
+    rows={[
+      { label: 'Alias/Apodos', value: 'El Gato Dorado' },
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Ubicación', value: <><Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link>, <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Tipo', value: 'Salón de apuestas, club nocturno y punto de encuentro social' },
+      { label: 'Propietario', value: 'Anónimo (presunto inversionista extranjero)' },
+      { label: 'Población clave', value: 'Detectives, informantes, empresarios, apostadores y depredadores urbanos' },
+      { label: 'Afiliación', value: <>Independiente; circuito de ocio del <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link></> },
+      { label: 'Primera mención', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 5</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Gilded Cat"
-  caption="Apuestas elegantes, favores discretos"
-  rows={[
-    { label: 'Tipo', value: 'Salón de apuestas y juegos de azar' },
-    { label: 'Ubicación', value: <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link> },
-    { label: 'Dueño', value: 'Anónimo (presunto propietario extranjero)' },
-    { label: 'Afiliaciones', value: 'Sin filiación formal con familias conocidas; relaciones diplomáticas con varias facciones' },
-    { label: 'Política de la casa', value: 'Anonimato absoluto; armas no visibles; deudas garantizadas por recomendación' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Reputación', value: 'Elegante, confiable; “ni tan público para escándalos, ni tan clandestino para sospechas”' },
-  ]}
-/>
+El **Gilded Cat** es un establecimiento nocturno de relevancia estratégica situado en el <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link> de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Aunque oficialmente opera como un salón de apuestas y juegos de azar, en la práctica funciona como uno de los principales puntos de intercambio de información del submundo urbano.
 
-**Tipo:** Salón de apuestas y juegos de azar  
-**Ubicación:** <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link>  
-**Dueño:** Anónimo (presunto propietario extranjero)  
-**Afiliaciones:** No afiliado directamente a ninguna familia conocida
+Para investigadores, informantes y operadores criminales, el local constituye mucho más que un espacio de entretenimiento. Su reputación de discreción, sumada a la diversidad de su clientela, lo convierte en un lugar ideal para reuniones privadas, negociaciones informales y obtención de inteligencia.
 
-El **Gilded Cat** opera en el corazón del Centro Histórico con un equilibrio calculado: alfombras de terciopelo mostaza, lámparas de cobre cepillado y una orquesta mínima (pianista por las noches) que suaviza el rumor de las mesas. La administración protege el **anonimato** de su clientela, lo que atrae a empresarios, operadores políticos menores y figuras del hampa que prefieren hablar con fichas en la mano.
+Junto con el <Link to="/CrSaSo/lugares/Velvet%20Trumpet">Velvet Trumpet</Link> y el <Link to="/CrSaSo/lugares/Whispering%20Keys">Whispering Keys</Link>, forma parte del circuito de establecimientos frecuentados por detectives y observadores del bajo mundo durante los acontecimientos de *Necromancia a Medianoche*.
 
-Mantiene un **perfil medio**: visible, con licencias en regla, pero discreto en su contabilidad de salones privados. Ese tono evita auditorías agresivas y, a la vez, lo mantiene útil como punto de encuentro para **intercambio de favores e información**.
+## Perfil y atmósfera
 
-## Juegos y disposición
-- Mesas de ruleta, blackjack, dados y baccarat; torneos cortos de póker en fines de semana.  
-- Barra lateral con whisky escocés envejecido y coctelería clásica.  
-- Dos salones privados con cortinas pesadas y servicio de “mensajería interna” (recados escritos, sin teléfonos).
+Ubicado en pleno corazón del Centro Histórico, el Gilded Cat combina la elegancia de un casino clásico con la decadencia característica de la vida nocturna de Nueva Ámsterdam.
 
-## Protocolos
-- Identidad no solicitada si llega con **recomendación**; de lo contrario, registro mínimo.  
-- **Armas no visibles**; los conflictos se trasladan fuera del local.  
-- Deudas respaldadas por un garante; la casa no “rompe piernas”, pero veta a quien no cumple.
+El interior está decorado con alfombras de terciopelo color mostaza, lámparas de cobre cepillado y mobiliario de madera oscura. Por las noches, un pianista acompaña discretamente el sonido constante de las conversaciones y las apuestas.
 
-## Rumores y relaciones
-Existen versiones que vinculan al Gilded Cat con un **propietario extranjero** y con redes financieras que prefieren no figurar. También circula el nombre de una familia del sur, aunque no hay evidencia firme. En la práctica, el local mantiene **puentes con todas las facciones** y evita tomar partido.
+La administración protege de manera estricta el anonimato de sus visitantes, lo que atrae a empresarios, políticos menores, figuras del crimen organizado y ciudadanos que prefieren mantenerse lejos de los focos públicos.
 
-## Conexiones narrativas
-- Funciona como **punto de vigilancia e intercambio** dentro del <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link>, en paralelo a clubes como Scarlet Horn y Velvet Trumpet.  
+La atmósfera del local permite que detectives y observadores se mezclen fácilmente entre la multitud. Como señalaba <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, lugares como el Gilded Cat permiten que un investigador desaparezca entre la gente "como humo en una habitación mal ventilada".
+
+## Instalaciones y servicios
+
+El establecimiento cuenta con:
+
+- Mesas de ruleta, blackjack, baccarat y dados.
+- Torneos periódicos de póker.
+- Barra especializada en whisky escocés y coctelería clásica.
+- Salones privados reservados para reuniones discretas.
+- Servicio interno de mensajería mediante notas escritas y recados personales.
+
+Su combinación de ocio y privacidad ha convertido al local en un punto habitual para la negociación de favores, intercambio de información y acuerdos extraoficiales.
+
+## Protocolos internos
+
+La administración mantiene una serie de normas destinadas a preservar el orden y la discreción:
+
+- Los clientes recomendados pueden ingresar sin proporcionar demasiada información personal.
+- Las armas visibles están prohibidas dentro del establecimiento.
+- Los conflictos deben resolverse fuera del local.
+- Las deudas importantes requieren aval o garantía.
+- Los incumplimientos suelen derivar en vetos permanentes más que en represalias violentas.
+
+Estas reglas han contribuido a mantener la reputación del Gilded Cat como territorio neutral dentro del Centro Histórico.
+
+## Función dentro del ecosistema urbano
+
+Como infraestructura social, el Gilded Cat ofrece:
+
+- **Logística de inteligencia:** circulación constante de rumores e información criminal.
+- **Cobertura social:** posibilidad de mantener reuniones sin levantar sospechas.
+- **Rotación táctica:** punto alternativo para detectives e informantes que buscan evitar patrones predecibles.
+- **Neutralidad informal:** mantiene relaciones funcionales con prácticamente todas las facciones importantes de la ciudad sin alinearse públicamente con ninguna.
+
+## Historia
+
+### Necromancia a Medianoche
+
+#### El Caso del Cuarto Rojo
+
+Durante la investigación de los asesinatos relacionados con **El Cuarto Rojo**, el detective Cassian Thorne identificó al Gilded Cat como uno de los principales lugares donde podía obtener información útil para el caso.
+
+Tras varias búsquedas infructuosas en otros establecimientos del Centro Histórico, el detective contempló utilizar la red informal de contactos presente en el local para rastrear a Angelina Pollard y reconstruir los movimientos de diversos sospechosos vinculados a la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">familia McCarthy</Link>.
+
+Durante los días de tensión entre las mafias italianas, el establecimiento permaneció abierto y relativamente neutral, sirviendo como refugio temporal para quienes buscaban mantenerse alejados de la violencia de la llamada **Semana Negra**.
+
+## Relaciones clave
+
+* **<Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>:** frecuenta el local como punto de observación y obtención de información.
+* **<Link to="/CrSaSo/lugares/Velvet%20Trumpet">Velvet Trumpet</Link>:** establecimiento del mismo circuito nocturno.
+* **<Link to="/CrSaSo/lugares/Whispering%20Keys">Whispering Keys</Link>:** local frecuentado por informantes y músicos.
+* **<Link to="/CrSaSo/lugares/Scarlet%20Horn">Scarlet Horn</Link>:** otro de los puntos habituales de búsqueda utilizados por investigadores.
+* **<Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>:** se sospecha que algunos miembros de esta especie utilizan el anonimato del lugar para mezclarse con la población civil.
+
+## Rumores
+
+Diversas versiones afirman que el verdadero propietario del Gilded Cat es un inversionista extranjero con conexiones financieras fuera de Nueva Ámsterdam.
+
+También circulan rumores sobre posibles vínculos con ciertas familias criminales del sur, aunque nunca se ha presentado evidencia concluyente. La política oficial del establecimiento consiste en mantener relaciones cordiales con todas las facciones sin comprometerse con ninguna.
+
+## Curiosidades
+
+* Cassian Thorne considera al Gilded Cat una parada casi obligatoria durante cualquier investigación importante en el Centro Histórico.
+* El local se encuentra cerca de un pequeño parque frecuentado por parejas y escenario recurrente de tragedias urbanas.
+* A diferencia de otros establecimientos del distrito, el Gilded Cat ha logrado mantenerse operativo durante guerras mafiosas, redadas policiales y crisis económicas sin sufrir daños significativos.
+* Su reputación se basa más en la información que circula entre sus mesas que en las ganancias generadas por el juego.
+* Aunque oficialmente es un casino, muchos clientes habituales afirman que los acuerdos más importantes nunca ocurren frente a las mesas de apuestas, sino detrás de las cortinas de los salones privados.

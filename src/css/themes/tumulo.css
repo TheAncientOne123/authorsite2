@@ -1,0 +1,85 @@
+/*
+ * El Túmulo de las Cataratas Lúgubres — frío, nórdico, archivo húmedo
+ * Sensación claro: niebla matutina, pizarra y agua de catarata.
+ * Sensación oscuro: noche nórdica, hielo y silencio de tumba.
+ */
+
+/* ── MODO CLARO ──────────────────────────────────────────── */
+html[data-universe='tumulo'][data-theme='light'] {
+  /* Fondos */
+  --ifm-background-color: #e6eaef;
+  --ifm-background-surface-color: #f2f5f8;
+
+  /* Primario (azul pizarra) */
+  --ifm-color-primary: #4a5f78;
+  --ifm-color-primary-dark: #405469;
+  --ifm-color-primary-darker: #394b5e;
+  --ifm-color-primary-darkest: #2c3b4a;
+  --ifm-color-primary-light: #556c87;
+  --ifm-color-primary-lighter: #5d7492;
+  --ifm-color-primary-lightest: #6f88a6;
+
+  /* Tipografía */
+  --ifm-font-color-base: #111820;
+  --ifm-font-color-secondary: #3a4552;
+
+  /* Énfasis */
+  --ifm-color-emphasis-0:   #f2f5f8;
+  --ifm-color-emphasis-100: #e0e6ec;
+  --ifm-color-emphasis-200: #c8d2dc;
+  --ifm-color-emphasis-300: #aeb9c6;
+  --ifm-color-emphasis-400: #8e9dac;
+  --ifm-color-emphasis-500: #718290;
+  --ifm-color-emphasis-600: #576472;
+  --ifm-color-emphasis-700: #3f4c58;
+  --ifm-color-emphasis-800: #28343e;
+  --ifm-color-emphasis-900: #111820;
+
+  /* Enlaces */
+  --ifm-link-color: #35688a;
+  --ifm-link-hover-color: #29587a;
+  --ifm-link-visited-color: #35688a;
+
+  /* Código */
+  --docusaurus-highlighted-code-line-bg: rgba(74, 95, 120, 0.1);
+}
+
+/* ── MODO OSCURO ─────────────────────────────────────────── */
+html[data-universe='tumulo'][data-theme='dark'] {
+  /* Fondos */
+  --ifm-background-color: #0a0e14;
+  --ifm-background-surface-color: #121820;
+
+  /* Primario (hielo/acero frío) */
+  --ifm-color-primary: #9eb8cf;
+  --ifm-color-primary-dark: #8aaabf;
+  --ifm-color-primary-darker: #7c9eb5;
+  --ifm-color-primary-darkest: #618699;
+  --ifm-color-primary-light: #b2c6d9;
+  --ifm-color-primary-lighter: #bfcfdf;
+  --ifm-color-primary-lightest: #d2dee9;
+
+  /* Tipografía */
+  --ifm-font-color-base: #d8e2ec;
+  --ifm-font-color-secondary: #8fa4b8;
+
+  /* Énfasis */
+  --ifm-color-emphasis-0:   #0a0e14;
+  --ifm-color-emphasis-100: #121820;
+  --ifm-color-emphasis-200: #1a2330;
+  --ifm-color-emphasis-300: #243040;
+  --ifm-color-emphasis-400: #334455;
+  --ifm-color-emphasis-500: #4a5d70;
+  --ifm-color-emphasis-600: #6a8098;
+  --ifm-color-emphasis-700: #92aabe;
+  --ifm-color-emphasis-800: #b8ccda;
+  --ifm-color-emphasis-900: #d8e2ec;
+
+  /* Enlaces */
+  --ifm-link-color: #6eb5d4;
+  --ifm-link-hover-color: #88c4de;
+  --ifm-link-visited-color: #6eb5d4;
+
+  /* Código */
+  --docusaurus-highlighted-code-line-bg: rgba(158, 184, 207, 0.1);
+}

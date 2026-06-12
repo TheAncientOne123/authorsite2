@@ -23,7 +23,13 @@ const universes = [
     title: 'Meridian',
     description: 'Facciones, razas, campañas y un mapa en expansión: el códice de un mundo por descubrir.',
     image: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/meridian-contenidos/meridian-portada',
-    path: '/Meridian',
+    comingSoon: true,
+  },
+  {
+    title: 'El Túmulo de las Cataratas Lúgubres',
+    description: 'Ensayos y libros standalone que no forman parte de un universo mayor.',
+    image: 'https://res.cloudinary.com/dtntllea5/image/upload/q_auto/f_auto/v1780631262/tcl-portada_l9ji9y.png',
+    path: '/Tumulo',
     comingSoon: false,
   },
 ];

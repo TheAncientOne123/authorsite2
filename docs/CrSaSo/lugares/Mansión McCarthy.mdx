@@ -10,77 +10,68 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Mansión McCarthy
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Mansión McCarthy"
+    caption="La residencia McCarthy"
+    rows={[
+      { label: 'Estado actual', value: 'Escena de conflicto / En reconstrucción' },
+      { label: 'Residencia', value: <><Link to="/CrSaSo/lugares/Villa%20Lobos">Fraccionamiento Villa Lobos</Link>, <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link></> },
+      { label: 'Tipo', value: 'Residencia de lujo / Base de operaciones tácticas' },
+      { label: 'Propietario', value: <><Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> (fallecido)</> },
+      { label: 'Residentes clave', value: <><Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>; <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>; <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link></> },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 4</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Mansión McCarthy"
-  caption="Poder discreto, protocolo de defensa y guerra en los pasillos"
-  rows={[
-    { label: 'Ubicación', value: <>Distrito Norte de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link></> },
-    { label: 'Propietarios', value: <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">La Familia McCarthy</Link> },
-    { label: 'Arquitectura', value: 'Elegancia sobria y funcional; simetrías, tonos neutros y arte clásico' },
-    { label: 'Seguridad', value: 'Protocolo de defensa interno; búnker y armería subterránea' },
-    { label: 'Estado actual', value: 'Funcional; parcialmente destruida tras el asedio Voronin' },
-    { label: 'Eventos clave', value: <>
-      Asedio de la <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Familia Voronin</Link>; 
-      intento de estabilización del <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link> en <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link>; 
-      preludio de la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>
-    </> },
-    { label: 'Personajes relacionados', value: <>
-      <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>, 
-      <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>, 
-      <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, 
-      <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, 
-      <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, 
-      <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>, 
-      <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>, 
-      <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, 
-      <Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv Voronin</Link>
-    </> },
-  ]}
-/>
+La **Mansión McCarthy** es una propiedad de alta gama situada en el exclusivo distrito de <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>. A diferencia de otras propiedades del sector, esta residencia no solo funcionó como hogar familiar, sino como un bastión de seguridad y laboratorio clandestino para las investigaciones relacionadas con el <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link> y la contención de la naturaleza de Jessica McCarthy. Durante la crisis de 1929, la mansión se convirtió en el cuartel general de la alianza entre los <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link> y las hermanas Dobrescu.
 
-## Información General
-La **mansión McCarthy** se erige como símbolo de **poder discreto**. A diferencia del derroche barroco de otras casas señoriales, aquí domina la **elegancia sobria y funcional**: escaleras simétricas, mobiliario en tonos neutros, iluminación tenue y arte clásico curado al milímetro. Cada estancia parece pensada para impresionar y **vigilar**, como si la casa supiera dónde estás.
+## Arquitectura y Ambiente
 
----
+Arquitectónicamente, la mansión se define por una "elegancia discreta" que contrasta con la opulencia ostentosa de sus vecinos, los Chapman. El exterior está protegido por una barda de metal negro con relieves elegantes y picos afilados para disuadir intrusos. El acceso principal cuenta con escaleras de ladrillo rojo que guían a los visitantes hacia puertas monumentales con bisagras diseñadas para emitir un sonido imperioso al abrirse.
 
-## Inicio del conflicto
+En su interior, las paredes están pintadas en tonos crema y adornadas con obras de arte clásicas. El recibidor conduce a una sala de invitados equipada con extensas librerías, chimeneas y mobiliario de madera tallada que otorga una atmósfera de calidez y habitabilidad. La segunda planta alberga habitaciones privadas y salas de estar que fueron utilizadas como base de mando durante la defensa contra los Voronin.
 
-Tras los sucesos del <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">Balneario Rushmore</Link>, <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> revela que <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> ha traicionado su causa y planea huir con <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link>. Ante el riesgo de un ataque de la <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Familia Voronin</Link>, <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link> activa el **protocolo de defensa**, y con el apoyo de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> reúne un **grupo reducido** para resistir.
+## Instalaciones y Seguridad
 
-### Refuerzos convocados
-- <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link>  
-- <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>  
-- <Link to="/CrSaSo/personajes/Logan%20Crane">Logan Crane</Link>
+La mansión posee recursos defensivos y científicos que superan los estándares residenciales:
+*   **Búnker de Armamento:** Un nivel subterráneo accesible mediante puertas de acero que custodia una vasta colección de rifles de alta potencia, explosivos, granadas y munición especializada de oro y plata.
+*   **Laboratorio de Alquimia Moderna:** Una sala adaptada por <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> equipada con máquinas de registro de pulsos, camillas de atadura y dispositivos tecnológicos diseñados para la extracción de "sangre oscura".
+*   **Cuerpo de Seguridad de Élite:** La propiedad estaba resguardada permanentemente por hombres de traje bajo el mando de Jayson Branch, utilizando sistemas de intercomunicación y protocolos de vigilancia estricta.
+*   **Jardín y Áreas Exteriores:** Cuenta con un arco de enredaderas, robles majestuosos y una zona de fogatas que sirvió como punto de reunión táctica.
 
----
+## Biografía / Historia
 
-## La batalla
+### Necromancia a Medianoche
 
-El asalto inicia con precisión quirúrgica. **<Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv Voronin</Link>** lanza su **lanza ceremonial** al pecho de <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>, **matándolo al instante**.  
-Los Voronin **emergen como sombras** por múltiples accesos, abriendo frentes simultáneos y **buscando a Jessica** en cada ala.
+#### El Caso del Cuarto Rojo (Infiltración Inicial)
+En marzo de 1929, tras el asesinato en la casa Chapman, la agente <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> y el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> visitaron la mansión para interrogar a Alan McCarthy. En esta fase, la mansión proyectaba una fachada de normalidad y probidad moral, ocultando que Jessica McCarthy ya estaba bajo la influencia del Elemento 121. Durante la visita, los investigadores notaron que Alan McCarthy utilizaba la supuesta presencia de "mapaches" para justificar ruidos inusuales en la propiedad.
 
-En paralelo, **<Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia</Link> y <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara</Link>** intentan **estabilizar el <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>** en Jessica mediante un procedimiento experimental. El choque entre ambas frustra la operación y **Jessica huye para reunirse con Oliver**, encendiendo la mecha del último tramo de la profecía y dirigiendo la acción hacia la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>.
+#### El Asedio de la Gala de Cumpleaños
+Bajo la fachada de una fiesta de despedida y cumpleaños para Jessica, Alan McCarthy reunió a la élite de la ciudad como una maniobra de distracción coordinada por Jayson Branch. La mansión fue transformada con decoraciones florales masivas para ocultar el despliegue de los Zaikov, los Vinculados y las hermanas Dobrescu.
 
-Las hermanas Dobrescu **despliegan una fuerza devastadora** contra los Voronin; pero al tratarse de clanes vampíricos, el choque no es decisivo y los atacantes **se repliegan**. La mansión queda **parcialmente arrasada**: muros perforados, vitrales rotos y pasillos ennegrecidos por el combate.
+El conflicto estalló cuando los Voronin, liderados por Rezniv, infiltraron el salón principal. Alan McCarthy fue asesinado en el atril principal al ser atravesado por una lanza. La batalla se extendió por los dos niveles de la casa, resultando en la destrucción de gran parte del mobiliario y la muerte de dieciocho atacantes, cuyos restos fueron catalogados oficialmente como "pilas de carbón" por las autoridades.
 
----
+#### El Intento de Extracción
+Previo a la batalla final, <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia</Link> y Tamara Dobrescu utilizaron una sala adaptada en la mansión para intentar extraer la sangre oscura de Jessica. El proceso falló debido a la resistencia de la materia orgánica, provocando que Jessica convulsionara y finalmente escapara hacia la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">refinería</Link>, marcando el fin de la mansión como refugio seguro.
 
-## Después del caos
+## Relaciones Clave
 
-La policía llega tarde. Con la casa dañada, los supervivientes organizan una **fuerza voluntaria** para recuperar a Jessica y enfrentar a la Reina de la Oscuridad.
+*   **<Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>:** Dueño original; utilizó su hogar para ocultar la transformación de su hija.
+*   **<Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>:** La "Nacida de la Oscuridad" y razón principal por la cual la mansión fue fortificada.
+*   **<Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>:** Jefe de seguridad cuya lealtad a la propiedad se mantuvo incluso tras la muerte del patriarca.
+*   **<Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>:** Colaboró con Alan para convertir secciones de la casa en laboratorios de investigación avanzada.
+*   **Familia Chapman:** Vecinos que compartían la barda trasera y cuyas tragedias iniciaron el escrutinio policial sobre la mansión.
 
-### El escuadrón voluntario
-- <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>  
-- <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>  
-- <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>  
-- <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>  
-- <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>  
-- <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>  
-- <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>  
-- <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>  
-- <Link to="/CrSaSo/personajes/Logan%20Crane">Logan Crane</Link>
+## Curiosidades
 
-Acceden al **almacén subterráneo privado de armas** de los McCarthy, se **arman hasta los dientes** y parten hacia la refinería a bordo de la **furgoneta blindada de <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link>** que <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin</Link> pone a disposición del equipo.
+*   Alan McCarthy afirmaba que sus sillones eran más cómodos que las camas de invitados, una hospitalidad irónica dada la tensión del lugar.
+*   La mansión es descrita como una de las pocas propiedades en Villa Lobos que se siente como una "casa para vivir" en lugar de un objeto para presumir riqueza.
+*   Durante el entrenamiento de los Vinculados en el atrio, se reveló que la mansión podía albergar discretamente a un sastre profesional para confeccionar uniformes en tiempo récord.
+*   Tras la batalla contra los Voronin, la sala principal quedó tan destrozada que Cassian Thorne bromeó sobre su necesidad de una remodelación total.

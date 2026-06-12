@@ -1,62 +1,79 @@
 ---
 title: Nueva Ámsterdam
 description: Ciudad ficticia en la costa noreste de EE. UU.; núcleo gótico-noir donde se entrelazan poder institucional y raíces ocultistas. Escenario central de Necromancia a Medianoche.
-updated: 2026-05-17
+updated: 2026-06-08
 type: lugar
 saga: crsaso
 libro: necromancia-medianoche
 ---
 
-
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Nueva Ámsterdam
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Nueva Ámsterdam"
+    caption="Ciudad de Sangre y Sombra"
+    rows={[
+      { label: 'Alias', value: 'Ciudad de Sangre y Sombra; Capital de los Migrantes; Terreno de Caza' },
+      { label: 'Estado actual', value: 'Activa (bajo reconstrucción tras la crisis de 1929)' },
+      { label: 'Fundación', value: 'c. 1624 (asentamiento holandés); 1652 (era Dobrescu)' },
+      { label: 'Ubicación', value: 'Costa Este, Estados Unidos de América' },
+      { label: 'Especies presentes', value: <><Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link> (vampiros); <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link> (cazadores y brujas)</> },
+      { label: 'Gobernanza', value: 'Alcaldía local y estado soberano (dentro de la Unión)' },
+      { label: 'Población clave', value: <><Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>; <Link to="/CrSaSo/familias/La%20Familia%20Dobrescu">Familia Dobrescu</Link>; mafias italianas (<Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Tornatore</Link>, <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Santorelli</Link>, <Link to="/CrSaSo/familias/Familia%20De%20Fazio">De Fazio</Link>); <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link></> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Prólogo</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Nueva Ámsterdam"
-  caption="Puerta entre la razón cívica y lo inexplicable"
-  rows={[
-    { label: 'Ubicación', value: 'Costa noreste de los Estados Unidos' },
-    { label: 'Fundación', value: '1624 (colonos neerlandeses)' },
-    { label: 'Llegada Dobrescu/Dobrestein', value: '1650; construcción del castillo (1652 a 1660)' },
-    { label: 'Autonomía política', value: '1664 a 1795 (acuerdo con la Corona británica); integración voluntaria a EE. UU. en 1795' },
-    { label: 'Estilo urbano', value: 'Neogótico, art déco y neón; atmósfera noir y lluviosa' },
-    { label: 'Clima', value: 'Húmedo y brumoso; lluvias frecuentes' },
-    { label: 'Lugares emblemáticos', value: <>
-      <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>; 
-      <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link>; 
-      <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">Castillo</Link>; 
-      <Link to="/CrSaSo/lugares/La%20Biblioteca%20de%20Nueva%20Ámsterdam">Biblioteca</Link>; 
-      <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">Comisaría</Link></> },
-    { label: 'Estado', value: 'Activa (metrópoli gótico-noir)' },
-  ]}
-/>
+**Nueva Ámsterdam** es una de las ciudades más influyentes de los Estados Unidos durante la década de 1920. Se distingue por un estatus político único de autonomía que ha mantenido desde la era colonial. Es un epicentro de contrastes donde la opulencia de las corporaciones energéticas como <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link> convive con la decadencia de sus distritos históricos y la influencia del crimen organizado.
 
-**Nueva Ámsterdam** es una ciudad ficticia ubicada en la costa noreste de los Estados Unidos y constituye el principal escenario de los acontecimientos de _Necromancia a Medianoche_. Con una atmósfera sombría, arquitectura gótica y un trasfondo histórico cargado de leyendas, la ciudad representa una intersección entre el poder institucional moderno y las raíces ocultistas que la han moldeado desde su fundación.
+La ciudad es descrita como un "hervidero de actividad" donde las almas perdidas se mezclan con depredadores urbanos. Su identidad está intrínsecamente ligada al petróleo, no solo como motor económico, sino como un elemento místico que <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> describe como el "sistema de defensa del planeta".
 
-## Fundación y origen colonial
-La ciudad fue establecida inicialmente por colonos neerlandeses en **1624** como un pequeño puesto comercial. En **1650**, veintiséis años después de la fundación oficial del asentamiento, se documenta la llegada de una familia procedente de Valaquia —la familia **Dobrestein** (también registrada como **Dobrescu**)— que se instaló a las afueras del núcleo colonial original.
+## Perfil y Apariencia
 
-Entre **1652 y 1660**, la familia emprendió la construcción de una fortaleza privada con rasgos renacentistas y góticos, que eventualmente se convertiría en el <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">Castillo de Nueva Ámsterdam</Link>. El proyecto, inusualmente ambicioso, atrajo mano de obra inglesa y francesa, alterando la demografía y la economía del asentamiento.
+Nueva Ámsterdam posee una estética de Cine Negro (Noir) y Gótica. El paisaje urbano está dominado por rascacielos modernos que eclipsan estructuras antiguas y solemnes como la <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">Comisaría de Policía</Link> o la <Link to="/CrSaSo/lugares/La%20Biblioteca%20de%20Nueva%20%C3%81msterdam">Biblioteca de Nueva Ámsterdam</Link>.
 
-## Autonomía política
-En **1664**, durante la expansión británica en América, Nueva Ámsterdam evitó la ocupación directa. Mediante una negociación —atribuida en parte a la mediación política y económica de los Dobrescu— la colonia obtuvo el derecho a conservar su **autonomía** a cambio de un tributo anual. Operó fuera del control directo británico hasta **1795**, cuando se integró voluntariamente a los Estados Unidos.
+*   **Atmósfera:** La ciudad se caracteriza por un clima crudo, con inviernos largos y veranos breves. Durante marzo y abril de 1929, fue azotada por lluvias intensas y semanas nubladas que bañaban el pavimento de un resplandor clandestino.
+*   **Paisaje Nocturno:** De noche, la urbe se transforma en un mosaico de luces de neón parpadeantes, letreros en cursiva y marquesinas que anuncian espectáculos de jazz y blues. Los taxis amarillos congestionan las avenidas principales mientras el humo de los cigarrillos Marlore flota en el aire frío.
+*   **Contrastes Sociales:** Existe una división marcada entre la "discreta elegancia" de distritos residenciales como <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link> (<Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link>), protegidos por bardas de metal y seguridad privada, y el caos vibrante de <Link to="/CrSaSo/lugares/El%20Nido">El Nido</Link> o el barrio italiano del <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link>, donde el orden es impuesto por las mafias.
 
-## Desaparición de los Dobrescu
-Hacia **1804**, expediciones al <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">castillo</Link> encontraron el lugar abandonado, con indicios de evacuación súbita pero organizada. La desaparición de la familia dio pie a leyendas urbanas persistentes: maldiciones ancestrales, avistamientos **vampíricos** y otras entidades vinculadas al linaje.
+## Recursos e Infraestructura
 
-{/* ## Ubicaciones (hacer algo especial aquí, como un carrete o algo así)**/}
+Como potencia industrial y cultural, la ciudad cuenta con activos estratégicos:
+*   **Poder Energético:** La <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Gran Refinería McCarthy</Link>, inaugurada en 1929, es el complejo industrial más grande del país, gestionando el flujo masivo de crudo.
+*   **Seguridad y Ley:** La NYAPD (<Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">Comisaría de Nueva Ámsterdam</Link>) tiene jurisdicción sobre el centro y los suburbios, operando bajo un pacto de respeto con los poderes fácticos.
+*   **Prensa:** El diario <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link>, propiedad de la familia Fox, moldea la opinión pública y documenta la crónica negra de la ciudad.
+*   **Cultura y Ocultismo:** La <Link to="/CrSaSo/lugares/La%20Biblioteca%20de%20Nueva%20%C3%81msterdam">Biblioteca</Link> custodia archivos históricos sobre la <Link to="/CrSaSo/familias/La%20Familia%20Dobrescu">familia Dobrescu</Link>, mientras que sectores como China Town (<Link to="/CrSaSo/lugares/Cool%20Oriental">Cool Oriental</Link>) y El Nido sirven de refugio para prácticas de ocultismo, tarot y alquimia.
 
-## Clima y estilo
-El clima es predominantemente **húmedo y brumoso**, con lluvias frecuentes y cielos nublados. Estas condiciones, sumadas a la **arquitectura neogótica** y al peso de lo institucional, refuerzan el tono **noir** que domina el relato.
+## Historia / Cronología
 
-## Relevancia narrativa
-Nueva Ámsterdam es **un personaje más** de la historia. Su pasado colonial, su red de poder y sus secretos enterrados sostienen una trama donde lo **sobrenatural**, lo **político** y lo **humano** se entrelazan. Aquí se desarrolla la relación entre <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>; se ejecutan operaciones como <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>; ocurre el clímax en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link> y se encadenan eventos como:
+### Era Colonial y Autonomía (1650 - 1801)
+Fundada originalmente por holandeses, la ciudad experimentó un giro decisivo en 1652 con la llegada de la <Link to="/CrSaSo/familias/La%20Familia%20Dobrescu">familia Dobrescu</Link> de Valaquia, quienes financiaron la construcción del <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">castillo</Link> y trajeron artesanos cualificados de Europa. En 1664, la familia medió ante la corona inglesa para asegurar la autonomía de Nueva Ámsterdam a cambio de tributos comerciales. En 1795, la ciudad se integró a los Estados Unidos como un estado soberano, conservando privilegios únicos.
 
-- **<Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">La Masacre de la Catedral de Santa Regina</Link>**: punto de quiebre que abre el último acto de la <Link to="/CrSaSo/eventos/La%20Semana%20Negra">Semana Negra</Link>.  
-- **<Link to="/CrSaSo/eventos/La%20Semana%20Negra">La Semana Negra</Link>**: guerra entre <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link> y <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Familia Santorelli</Link>, con desapariciones, explosiones y tiroteos.  
-- **<Link to="/CrSaSo/eventos/Desaparicion%20de%20Jessica%20McCarthy">Desaparición de Jessica McCarthy</Link>**: bisagra entre el caso inicial y la espiral sobrenatural.  
-- **<Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>**: investigación detonante vinculada a los Chapman.  
-- **<Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>**: testimonio que deja más preguntas que respuestas.  
-- **<Link to="/CrSaSo/eventos/Caso%20resuelto">Caso Resuelto</Link>**: cierre formal del expediente inicial sin aplacar la amenaza latente.
+### El Siglo XIX y el Incidente de Raven (1899)
+A finales del siglo XIX, la ciudad se consolidó como un centro industrial. En enero de 1899, se registró el <Link to="/CrSaSo/eventos/El%20Incidente%20de%20Raven%20District">Incidente de Raven District</Link>: una explosión en los laboratorios de <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link> que mató a nueve científicos y fue encubierta como un accidente menor para ocultar el descubrimiento del <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>.
+
+### La Crisis de 1929 (Necromancia a Medianoche)
+*   **El Caso del Cuarto Rojo:** En marzo, el asesinato brutal de la cuñada de <Link to="/CrSaSo/personajes/Frederick%20Chapman">Frederick Chapman</Link> en Villa Lobos fracturó la sensación de seguridad de la élite.
+*   **La Semana Negra:** Tras una masacre en <Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">The Italian's Boot</Link>, estalló la "Guerra de las Pizzas" entre las mafias <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Tornatore</Link> y <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Santorelli</Link>, paralizando la actividad comercial y social.
+*   **La Masacre de la Catedral:** Una facción de los Rapax Hominum, utilizando a la heredera <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, ejecutó a dieciséis miembros de la orden de los Vinculados en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>.
+*   **Batalla en la Refinería:** El conflicto culminó en la Gran Refinería con el alzamiento de la <Link to="/CrSaSo/objetos-conceptos/Reina%20de%20la%20Oscuridad">Reina de la Oscuridad</Link>. Una operación de demolición coordinada por aliados humanos y las hermanas <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Dobrescu</Link> resultó en una explosión masiva que destruyó el complejo para contener la amenaza.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/familias/La%20Familia%20Dobrescu">Familia Dobrescu</Link>:** Arquitectos históricos y protectores (o captores) de la oscuridad en la ciudad.
+*   **<Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>:** Magnates que financiaron el progreso a costa de desestabilizar el orden biológico humano.
+*   **Facciones sobrenaturales:** La ciudad es el campo de batalla entre los <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link> (cazadores y brujas que operan desde la catedral) y los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link> (depredadores que se ocultan en clubes de jazz).
+*   **<Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link>:** Interviene en 1929 ante el riesgo de expansión regional de la violencia, aunque oficialmente mantiene una postura de encubrimiento.
+
+## Curiosidades
+
+*   El <Link to="/CrSaSo/lugares/Monte%20Galbrook">Monte Galbrook</Link>, el mirador de la ciudad, es un destino popular para citas que terminó marcado por el accidente del Cadillac rojo de <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>.
+*   A pesar de la Prohibición, el alcohol fluye libremente en establecimientos como el <Link to="/CrSaSo/lugares/Scarlet%20Horn">Scarlet Horn</Link> o The Italian's Boot, protegidos por las mafias.
+*   Durante la crisis de 1929, la parálisis de los restaurantes italianos permitió el auge de <Link to="/CrSaSo/lugares/Pizzas'%20Juan">Pizzas' Juan</Link>, una pizzería de temática mexicana con una bandera modificada.
+*   Se dice que si una ciudad no tiene crímenes menores, algo mucho peor está por ocurrir, una regla no escrita del detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>.

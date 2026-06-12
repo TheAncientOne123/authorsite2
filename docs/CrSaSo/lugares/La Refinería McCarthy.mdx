@@ -1,7 +1,7 @@
 ---
 title: Refinería McCarthy
 description: Antiguo bastión industrial de la Familia McCarthy; escenario del clímax con la Reina de la Oscuridad y la caída de Cassian Thorne.
-updated: 2026-05-17
+updated: 2026-06-08
 type: lugar
 saga: crsaso
 libro: necromancia-medianoche
@@ -10,48 +10,72 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Refinería McCarthy
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="La Gran Refinería McCarthy"
+    caption="Refinería de McCarthy Petroleum"
+    rows={[
+      { label: 'Nombre completo', value: 'La Gran Refinería McCarthy / Refinería de McCarthy Petroleum' },
+      { label: 'Tipo', value: 'Complejo industrial energético' },
+      { label: 'Ubicación', value: <>Periferia de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Estado actual', value: 'Destruida (en ruinas tras la Gran Explosión)' },
+      { label: 'Fundador / Líder', value: <><Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> (dueño de <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link>, fallecido)</> },
+      { label: 'Especies presentes', value: 'Humanos (seguridad), Rapax Hominum, Esqueletos de petróleo' },
+      { label: 'Uso principal', value: 'Refinamiento de crudo; Centro del ritual de los necromantes' },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 1 (mención en prensa)</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Refinería McCarthy"
-  caption="Del emblema industrial al campo de ruinas"
-  rows={[
-    { label: 'Tipo de ubicación', value: 'Complejo petroquímico / Refinería' },
-    { label: 'Ubicación', value: 'Cinturón industrial de Nueva Ámsterdam (periferia)' },
-    { label: 'Propiedad histórica', value: <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link> },
-    { label: 'Estado actual', value: 'En ruinas; fuera de operación tras explosiones e incendio' },
-    { label: 'Eventos clave', value: <>Clímax de <em>Necromancia a Medianoche</em>; despertar y caída de la Reina de la Oscuridad; muerte de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link></> },
-    { label: 'Consecuencias', value: 'Destrucción del complejo; disolución del frente Voronin; reconfiguración del equilibrio criminal y sobrenatural de la ciudad' },
-  ]}
-/>
+La **Gran Refinería McCarthy** fue el coloso industrial de <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link>, inaugurada en marzo de 1929 como el logro de ingeniería más grande del país en el sector energético. Representaba la culminación de la visión estratégica de Alan McCarthy, aunque su función pública ocultaba una conexión profunda con la materia orgánica ancestral del petróleo y el cumplimiento de profecías místicas.
 
-### Resumen general
+Tras ser el epicentro de la batalla final contra la Reina de la Oscuridad, el complejo fue reducido a escombros para contener la amenaza biológica y sobrenatural que amenazaba con expandirse a la ciudad.
 
-Antiguo bastión industrial de la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>, la Refinería McCarthy se convierte en el escenario del clímax más devastador de <em>Necromancia a Medianoche</em>. Lo que alguna vez fue un símbolo de poder económico termina como un campo de ruinas, fuego y muerte. Aquí culminan décadas de conspiraciones, traiciones, profecías incumplidas y sacrificios inevitables.
+## Perfil y Paisaje Urbano
 
-### Clímax
+Físicamente, la refinería se alzaba como un coloso de torres y chimeneas industriales que parecían tocar la luna. El complejo presentaba un diseño abierto que permitía observar una vasta infraestructura de tuberías, maquinaria y válvulas, protegida por casetas de guardias distribuidas estratégicamente. Estaba situada sobre una explanada de concreto grisáceo, un terreno inerte donde antiguamente existieron bosques de pinos y vida silvestre, simbolizando la victoria del progreso industrial sobre la naturaleza.
 
-Tras los eventos en la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>, <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> y <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link> deciden romper con sus destinos y huir juntos. El plan fracasa cuando <Link to="/CrSaSo/personajes/Rezniv%20Voronin">Rezniv Voronin</Link>, al descubrir la traición, ataca para forzar la profecía, usando el ancestral cuchillo de los primeros necromantes para sacrificar a Jessica. De su cuerpo, devorado por la tierra contaminada, emerge la Reina de la Oscuridad.
+Atmosféricamente, el sitio era un espacio desolado y silencioso antes de su activación total. Durante la crisis final, el ambiente se cargó con el hedor del petróleo crudo, humo azul turquesa y cenizas, transformando el sitio en un cementerio industrial de dimensiones colosales.
 
-Desde ese momento, la refinería se transforma en un infierno. Los muertos reviven desde los depósitos de petróleo, invocados por la Reina, que se fortalece al absorber el alma de sus súbditos mediante besos rituales. La <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Familia Voronin</Link>, en entrega fanática, se ofrece uno por uno a su soberana.
+## Infraestructura y Recursos
 
-### Los aliados se reúnen
+Como centro neurálgico de McCarthy Petroleum, el lugar contaba con recursos técnicos y defensivos superiores:
+*   **Chimeneas y Depósitos:** Estructuras de almacenamiento de crudo que alimentaron la invocación de seres necrománticos.
+*   **Generadores de Energía:** Sistemas de alto voltaje que zumbaban constantemente, capaces de ocultar ruidos de combate.
+*   **Zona en Construcción:** Instalaciones en desarrollo que sirvieron como puntos de infiltración táctica para los Vinculados y los Voronin.
+*   **Materia Orgánica (Petróleo):** Identificado por la agente Lucía Sinclair como el repositorio de "muertos" más grande del mundo, permitiendo a la Reina levantar un ejército de esqueletos de crudo.
 
-Mientras <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian</Link> se ven rodeados, una furgoneta de <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link> irrumpe en la escena. En ella viajan:  
-<Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>, <Link to="/CrSaSo/personajes/Logan%20Crane">Logan Crane</Link>, <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>, <Link to="/CrSaSo/personajes/Ian%20Zaikov">Ian Zaikov</Link>, <Link to="/CrSaSo/personajes/Greta%20Zaikov">Greta Zaikov</Link>, <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link> y <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>.  
-Ofrecen cobertura con una Gatling montada y convierten el vehículo en un puesto móvil de mando y refugio.
+## Biografía / Historia
 
-La Reina, sin embargo, no muestra debilidades visibles. El plan de seguir la profecía vinculada a Lucía y Cassian fracasa. Es Ian quien propone un nuevo curso: explotar la refinería para destruir la fuente física del poder de la Reina.
+### Necromancia a Medianoche
 
-### La verdad de la profecía
+#### Inauguración y Auge (1929)
+La refinería fue inaugurada el 25 de marzo de 1929, tras cinco años de construcción incesante. La prensa local, particularmente el <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link>, la calificó como un hito estratégico para el desarrollo industrial y económico de la nación.
 
-En medio del caos, Oliver regresa —ahora del lado de los protagonistas— ofreciendo su ayuda para recuperar a Jessica, si es que aún queda algo de ella. Su presencia es aceptada por necesidad. Pronto llegan también las hermanas Dobrescu, y tras discutir el nuevo plan, Lucía comprende la verdad: ella y Cassian nunca fueron los elegidos. Las verdaderas Vinculadas eran <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> y <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>, quienes unen fuerzas una vez más para cumplir su destino.
+#### El Escenario de la Profecía
+Tras la captura de Jessica McCarthy por parte de <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> y la secta Voronin, <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> dedujo que la refinería era el lugar ideal para iniciar el apocalipsis de la Reina de la Oscuridad. Debido a que el petróleo es materia orgánica antigua ("sangre que llama a la sangre"), la refinería funcionaba como un cementerio masivo del cual la entidad podía extraer su ejército.
 
-### Caída de la Reina de la Oscuridad
+#### El Alzamiento de la Reina
+En la refinería, Rezniv Voronin apuñaló a Jessica McCarthy con una daga de obsidiana, activando la profecía. Jessica fue arrastrada al abismo por manos negras, y de allí emergió la Reina de la Oscuridad, quien utilizó las tuberías y chimeneas para invocar esqueletos moldeados en petróleo.
 
-El golpe final llega cuando las hermanas atacan al unísono: sus poderes combinados atraviesan el cráneo de la Reina y destruyen su corona de sombras. La entidad muere en un torrente viscoso; sus huestes se desintegran en charcos de petróleo, y la refinería queda en ruinas, bañada en llamas y silencio.
+#### La Gran Explosión y Destrucción
+Para detener el avance de la oscuridad, un grupo de aliados (los Vinculados, la <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">familia Zaikov</Link>, Jayson Branch y <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>) coordinó una operación de demolición. Mientras las hermanas Dobrescu luchaban contra la Reina, Archie Woodward colocó cargas explosivas en las chimeneas principales. La explosión resultante creó un infierno de fuego que consumió a la Reina y a sus esbirros. Durante este evento, el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> fue atravesado por la lanza de Rezniv y desapareció entre las llamas tras hacer estallar el arma del monstruo.
 
-### Último sacrificio
+## Relaciones Clave
 
-En el cierre de la batalla
+*   **<Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>:** Dueño y fundador; murió en la mansión tras ser atacado por los Voronin antes de que el conflicto se trasladara a la refinería.
+*   **<Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link> / La Reina:** Jessica fue el recipiente biológico utilizado en la refinería para manifestar a la entidad oscura.
+*   **<Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>:** El ingeniero responsable de diseñar las cargas explosivas que destruyeron el complejo.
+*   **<Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>:** Detective cuyo sacrificio final tuvo lugar entre los restos en llamas del complejo industrial.
+*   **Rezniv Voronin:** Líder de los necromantes que orquestó el ritual en la planta industrial.
+
+## Curiosidades
+
+*   Archie Woodward teorizó que la refinería estaba extrayendo inadvertidamente el "sistema de defensa del planeta" (petróleo) y que el crudo era una forma de quimioterapia natural de la Tierra.
+*   La refinería contenía un esqueleto de petróleo por cada resto orgánico procesado, convirtiéndola en el cementerio más densamente poblado de la historia.
+*   A pesar de la magnitud de la explosión, nunca se encontró el cuerpo de Cassian Thorne, aunque se le realizó un funeral simbólico en la ciudad.
+*   Oficialmente, el <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">FBI</Link> cerró el caso alegando que las explosiones fueron el resultado de un sabotaje por parte de una "mafia polaca" aliada con la <Link to="/CrSaSo/familias/Familia%20De%20Fazio">familia De Fazio</Link>.

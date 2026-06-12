@@ -1,7 +1,7 @@
 ﻿---
 title: McCarthy Petroleum
 description: Conglomerado petrolero de la familia McCarthy; eje industrial de Nueva Ámsterdam y foco de la conspiración del Elemento 121.
-updated: 2026-05-17
+updated: 2026-06-07
 type: familia
 saga: crsaso
 libro: necromancia-medianoche
@@ -10,52 +10,106 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# McCarthy Petroleum
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="McCarthy Petroleum"
+    caption="Petróleo, poder industrial y el secreto del Elemento 121"
+    rows={[
+      { label: 'Tipo', value: 'Corporación energética (Petróleo y derivados)' },
+      { label: 'Estado actual', value: 'Activa (infraestructura parcialmente reconstruida)' },
+      { label: 'Fundación', value: 'Siglo XIX' },
+      { label: 'Sede', value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> },
+      { label: 'Fundador', value: <><Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> (†)</> },
+      { label: 'Dirección posterior', value: 'Ejecutivos designados por Alan McCarthy antes de su muerte' },
+      { label: 'Personal clave', value: <><Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>; <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>; <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> (ex-investigadora)</> },
+      { label: 'Eventos clave', value: <><Link to="/CrSaSo/eventos/El%20Incidente%20de%20Raven%20District">Incidente de Raven District</Link>; <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Crisis del Elemento 121</Link>; <Link to="/CrSaSo/eventos/Batalla%20en%20la%20Refiner%C3%ADa%20McCarthy">Batalla en la Refinería McCarthy</Link></> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 3</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="McCarthy Petroleum"
-  caption="«Oro negro, secretos viejos»"
-  rows={[
-    { label: 'Tipo', value: 'Corporación energética (petrolera)' },
-    { label: 'Sede / Territorio', value: <>Cinturón industrial de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>; activos principales: <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link> y el histórico <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link></> },
-    { label: 'Liderazgo', value: <><Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> (presidente y propietario; fallecido durante el asedio Voronin)</> },
-    { label: 'Ámbito', value: 'Refinación y logística de derivados del petróleo; seguridad privada; lobby local' },
-    { label: 'Aliados', value: <>Vínculo por matrimonio con la <Link to="/CrSaSo/familias/Familia%20Puckett">Familia Puckett</Link> (uso del <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">Balneario Rushmore</Link>); redes empresariales y políticas locales</> },
-    { label: 'Estado', value: 'Operación crítica tras la destrucción de la Refinería; liderazgo en transición' },
-    { label: 'Eventos clave', value: <>
-      Explosión de <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link> (1899); 
-      <Link to="/CrSaSo/eventos/Desaparicion%20de%20Jessica%20McCarthy">Desaparición de Jessica McCarthy</Link>; 
-      asedio a la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">Mansión McCarthy</Link>; 
-      clímax en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>
-    </> },
-    { label: 'Miembros notables', value: <>
-      <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> (propietario); 
-      <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> (ingeniero prodigio, etapa de investigación); 
-      <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> (colaboración clandestina en I+D)
-    </> },
-  ]}
-/>
+**McCarthy Petroleum** es una de las corporaciones energéticas más importantes de la Costa Este y el principal activo económico de la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>. Durante décadas dominó la extracción, refinación y distribución de petróleo en <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>, convirtiéndose en una pieza fundamental del crecimiento industrial de la ciudad.
 
-## Perfil general
-**McCarthy Petroleum** es el brazo industrial de la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>. Bajo la dirección de <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan</Link>, la compañía consolidó **refinación, transporte y seguridad** alrededor del cinturón industrial de la ciudad. Tras la crisis reciente, la corporación mantiene su **influencia económica** pero con infraestructura **gravemente dañada** y una cadena de mando en disputa.
+Bajo la dirección de <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>, la empresa financió investigaciones científicas de vanguardia que culminaron en el descubrimiento del <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>, una sustancia capaz de alterar profundamente la biología humana. Dichas investigaciones terminarían conectando a la corporación con algunos de los acontecimientos más trascendentales de la crisis sobrenatural de 1929.
 
-## Historia y operaciones
-- **Raven District (1899):** instalación experimental donde <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> y <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> desarrollaron el **<Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>**; el sitio estalló en un incidente encubierto.  
-- **Refinería McCarthy:** núcleo productivo y escenario del **clímax** de _Necromancia a Medianoche_, con daños catastróficos que paralizan la operación.  
-- **Balneario Rushmore:** predio de la <Link to="/CrSaSo/familias/Familia%20Puckett">familia Puckett</Link> utilizado **clandestinamente** para ensayos de estabilización del Elemento 121.
+Aunque la destrucción de la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Gran Refinería McCarthy</Link> supuso uno de los mayores desastres industriales de la historia local, la empresa sobrevivió a la caída de su familia fundadora y continúa operando gracias a su enorme capacidad financiera, su red de contactos y las medidas administrativas implementadas antes de la muerte de Alan McCarthy.
 
-## Controversias y seguridad
-La compañía operó con **cinturones de seguridad privada** dirigidos por <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>. A la par de su imagen filantrópica, arrastra **acusaciones veladas** de experimentación no ética y **encubrimiento** de incidentes industriales.
+## Perfil y Filosofía Corporativa
 
-## Rol en la trama
-El poder corporativo de McCarthy Petroleum es el **andamiaje** de la conspiración del **Elemento 121** y la **guerra abierta** con los <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>. La **desaparición de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link>**, el **asedio** a la mansión y la **catástrofe** de la refinería atraviesan directamente su estructura y legado.
+McCarthy Petroleum se definió por una búsqueda implacable de progreso e innovación, operando a menudo en los límites de la ética industrial. Tras la fachada de una empresa respetable y patriótica, la corporación mantenía un estricto régimen de secreto, especialmente en lo referente a sus laboratorios de investigación avanzada.
 
----
+Psicológicamente, la empresa reflejaba la ambición de su dueño, Alan McCarthy: una entidad pragmática dispuesta a silenciar incidentes (como el de <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link> en 1899) mediante sobornos y compensaciones generosas para evitar el escrutinio público. La empresa consideraba el petróleo no solo como combustible, sino como una fuente de poder absoluto y trascendencia biológica.
 
-### Artículos relacionados
-- <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">La Refinería McCarthy</Link>  
-- <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link>  
-- <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>  
-- <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>  
-- <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">La Familia McCarthy</Link>
+## Habilidades y Equipo
+
+La corporación poseía recursos tecnológicos y tácticos que superaban a las instituciones gubernamentales de la época:
+*   **Investigación Química Superior:** Capacidad para aislar compuestos moleculares complejos, como el <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>, que otorgaba regeneración celular extrema.
+*   **Infraestructura de Gran Escala:** Poseía laboratorios en el <Link to="/CrSaSo/lugares/Raven%20District">Distrito Raven</Link> y la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Gran Refinería</Link>, equipada con tecnología de punta para la época.
+*   **División de Seguridad de Élite:** Un cuerpo de seguridad privada liderado por <Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>, equipado con armamento sofisticado, incluyendo un búnker privado con rifles de alta potencia y munición especializada.
+*   **Logística Corporativa:** Capacidad para influir en los medios (como el <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link>) y en la política local para encubrir sus actividades.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Descubrimiento del Elemento 121 (1897-1899)
+
+A finales del siglo XIX, McCarthy Petroleum nombró a <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> como jefe de científicos. Junto a su asistente, <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> (conocida entonces como Angelina), descubrieron una propiedad inusual en las moléculas internas del petróleo que permitía la regeneración celular acelerada. Este descubrimiento fue denominado **Elemento 121**.
+
+#### El Incidente de Raven District (1899)
+
+En enero de 1899, Tamara Dobrescu provocó una explosión premeditada en los laboratorios avanzados de <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link> para destruir el <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>, considerándolo un riesgo para la humanidad. McCarthy Petroleum registró oficialmente el <Link to="/CrSaSo/eventos/El%20Incidente%20de%20Raven%20District">incidente</Link> como un "accidente menor" sin víctimas, a pesar de que murieron nueve científicos. <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> logró conservar una última muestra recuperada por Woodward.
+
+#### La Crisis de 1929 y la Gran Refinería
+
+En marzo de 1929, la empresa inauguró su refinería más ambiciosa, marcando un hito en la industria energética nacional. Durante este periodo, se reveló que Alan McCarthy había utilizado el Elemento 121 años antes para salvar la vida de su hija <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link>, lo que indirectamente conectó a la empresa con los brutales asesinatos cometidos por la joven en su forma bestial.
+
+#### El Asedio y Destrucción Final
+
+Durante el clímax de la crisis de los *<Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>*, la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link> fue identificada como el lugar donde Jessica, la denominada "Nacida de la Oscuridad", podría ser utilizada por los <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link> para resucitar a la <Link to="/CrSaSo/objetos-conceptos/Reina%20de%20la%20Oscuridad">Reina de la Oscuridad</Link> debido a la afinidad de su sangre con la materia orgánica del crudo.
+
+En la <Link to="/CrSaSo/eventos/Batalla%20en%20la%20Refiner%C3%ADa%20McCarthy">batalla final</Link>, un grupo de aliados liderado por <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> y Archie Woodward colocó cargas explosivas en las chimeneas y depósitos del complejo.
+
+La detonación consumió al ejército de muertos, destruyó la manifestación física de la Reina de la Oscuridad y redujo gran parte de la infraestructura industrial a escombros.
+
+La pérdida de la Gran Refinería McCarthy representó uno de los mayores desastres industriales en la historia de Nueva Ámsterdam. Sin embargo, gracias a diversas pólizas de seguro y a la continuidad administrativa establecida antes de la muerte de Alan McCarthy, la empresa logró sobrevivir y conservar una parte significativa de su influencia dentro del sector energético.
+
+#### La Sucesión Corporativa
+
+Poco antes de los acontecimientos finales de 1929, Alan McCarthy preparó la transferencia administrativa de la empresa con la intención de abandonar Nueva Ámsterdam y comenzar una nueva vida en Suecia junto a su familia una vez resuelta la crisis de Jessica.
+
+La muerte de Alan impidió que dichos planes se concretaran. Sin embargo, el proceso de sucesión ya había sido iniciado, permitiendo que la corporación permaneciera operativa tras la desaparición de la familia fundadora.
+
+Los ejecutivos designados por Alan heredaron una empresa golpeada por la destrucción de su principal instalación industrial, pero respaldada por importantes seguros corporativos, contratos energéticos vigentes y una extensa red de relaciones financieras. Gracias a ello, McCarthy Petroleum evitó el colapso económico que muchos observadores consideraban inevitable.
+
+Aunque la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">familia McCarthy</Link> perdió a su fundador y a su heredera, la empresa continuó operando bajo una nueva administración, conservando buena parte de su presencia dentro de la industria petrolera de la Costa Este.
+
+#### El Encubrimiento Federal
+
+Tras la muerte de Alan McCarthy y Jessica McCarthy, el <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link> participó activamente en la construcción de una versión oficial de los acontecimientos destinada a ocultar cualquier referencia a los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>, al Elemento 121 y a los sucesos sobrenaturales ocurridos en la refinería.
+
+Según los registros públicos, Alan McCarthy y su hija fallecieron como consecuencia de un accidente automovilístico. Ambos recibieron funerales oficiales y la documentación corporativa fue ajustada para garantizar una transición ordenada del liderazgo empresarial.
+
+La mayoría de los empleados, inversionistas y directivos de McCarthy Petroleum conocen únicamente esta versión de los hechos. Para el ojo público, la destrucción parcial de la refinería fue el resultado de un accidente industrial excepcionalmente grave, mientras que la muerte de Alan y Jessica quedó registrada como una tragedia familiar sin relación con el incidente.
+
+Este encubrimiento permitió proteger tanto la estabilidad económica de la empresa como el secreto que rodeaba la existencia del <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link> y de las entidades sobrenaturales involucradas en la crisis de 1929.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>:** Fundador y principal arquitecto del crecimiento corporativo moderno. Su obsesión por salvar a Jessica definió muchas de las decisiones secretas de la empresa y alteró para siempre su legado.
+*   **<Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>:** El intelecto científico detrás de los mayores logros y tragedias de la petrolera.
+*   **<Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> (Angelina):** Ex-investigadora que saboteó a la empresa desde dentro para evitar el uso del Elemento 121.
+*   **<Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>:** Jefe de seguridad cuya lealtad a los McCarthy se mantuvo hasta la caída final del complejo.
+*   **<Link to="/CrSaSo/familias/La%20Familia%20Chapman">Familia Chapman</Link>:** Vecinos de Alan McCarthy y víctimas indirectas de los experimentos biológicos de la corporación.
+
+## Curiosidades
+
+*   El <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link> nunca pudo ser replicado por McCarthy Petroleum tras la explosión de 1899, a pesar de los recursos ilimitados invertidos por Alan.
+*   La <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Gran Refinería</Link> fue construida sobre una explanada inerte donde antes existían pinos y vida silvestre, simbolizando la victoria industrial sobre la naturaleza.
+*   <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> teorizó que el petróleo era el "sistema de defensa del planeta" contra la humanidad, y que la empresa estaba extrayendo inadvertidamente una forma de quimioterapia natural de la Tierra.
+*   El apellido de la madre de Jessica, Puckett, vinculó a la petrolera con el <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">Balneario Rushmore</Link>, propiedad de la <Link to="/CrSaSo/familias/Familia%20Puckett">familia Puckett</Link> utilizada como escondite y laboratorio clandestino durante la crisis final.
+*   Contrario a la creencia popular, la destrucción de la Gran Refinería McCarthy no provocó la quiebra de la corporación; los seguros industriales y la planificación sucesoria permitieron que la empresa continuara operando tras la muerte de Alan McCarthy.

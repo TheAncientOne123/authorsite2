@@ -1,7 +1,7 @@
 ---
 title: Bronze Fish
 description: "Restaurante de mariscos en el centro de Nueva Ámsterdam, punto de encuentro clave entre Lucía Sinclair y Oliver Henderson."
-updated: 2026-05-17
+updated: 2026-06-08
 type: lugar
 saga: crsaso
 libro: necromancia-medianoche
@@ -10,36 +10,60 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Bronze Fish
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="The Bronze Fish"
+    caption="Restaurante de mariscos de alta gama"
+    rows={[
+      { label: 'Tipo', value: 'Restaurante de mariscos' },
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Residencia', value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> },
+      { label: 'Ubicación', value: 'Sector concurrido (cerca del centro histórico)' },
+      { label: 'Especie', value: 'Establecimiento comercial' },
+      { label: 'Ocupación', value: 'Gastronomía de lujo y servicios de eventos' },
+      { label: 'Afiliación', value: 'Élite y fuerzas de seguridad de Nueva Ámsterdam' },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 8</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Bronze Fish"
-  caption="El mejor marisco de Nueva Ámsterdam"
-  rows={[
-    { label: 'Tipo', value: 'Restaurante' },
-    { label: 'Ubicación', value: <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Zona Céntrica de Nueva Ámsterdam</Link>},
-    { label: 'Especialidad', value: 'Mariscos frescos y cocina costera contemporánea' },
-    { label: 'Reputación', value: 'Alta entre periodistas, académicos y funcionarios' },
-    { label: 'Estado', value: 'Activo' },
-  ]}
-/>
+**The Bronze Fish** es reconocido como el restaurante que ofrece el mejor marisco de toda <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Es un punto de reunión habitual para la clase alta, empresarios y oficiales de policía, destacándose por su ambiente animado pero elegante. Históricamente, el lugar es recordado con amargura por el Departamento de Policía debido a un atentado que cobró la vida de uno de sus héroes más condecorados.
 
-El **Bronze Fish** es un restaurante de prestigio discreto, conocido por servir **el mejor marisco de toda <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>**, según sus clientes habituales. Su ambiente elegante pero acogedor lo convierte en una parada recurrente para profesionales de alto perfil que buscan una cena tranquila sin renunciar al buen gusto.  
+## Perfil y Atmósfera
 
-Desde los coches estacionados por franeleros diligentes hasta sus manteles blancos impecables, recipientes metálicos pulidos y servicio ágil, el local proyecta una mezcla de **clase media-alta y tradición funcional**, sin caer en el esnobismo ostentoso de otros restaurantes.
+El establecimiento se distingue por una operación logística impecable que incluye servicios de valet parking (franeleros) para gestionar la gran afluencia de vehículos de lujo. El interior presenta una estética clásica y pulcra, caracterizada por mesas vestidas con manteles blancos impecables, recipientes metálicos relucientes para salsas y una disposición esmerada de la mantelería.
 
----
+Aunque el ambiente suele ser animado, no llega a ser bullicioso, manteniendo una sobriedad que lo hace apto tanto para celebraciones oficiales como para reuniones privadas de investigación. La rapidez en el servicio es una de sus insignias operativas.
 
-## Eventos relevantes
+## Servicios y Especialidades
 
-El **Bronze Fish** fue escenario de una **cena clave entre <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> y <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>**, tras su visita a la biblioteca.  
+Como centro neurálgico de la gastronomía marina en la ciudad, el restaurante cuenta con:
+*   **Especialidad en Mariscos:** Su menú se centra en pescados y productos del mar de alta calidad.
+*   **Infraestructura para Eventos:** Capacidad para albergar celebraciones de gran escala, como festejos tras operativos policiales exitosos.
+*   **Ubicación Estratégica:** Situado en una zona que permite el despliegue rápido hacia el hospital central y la comisaría.
 
-Durante esa cena:  
-- Intercambiaron teorías sobre el **castillo de Nueva Ámsterdam**.  
-- Conversaron sobre las **familias Dobrescu/Dobrestein** y la **corrupción eclesiástica**.  
-- Oliver expuso fragmentos de su **trauma familiar** y su **odio visceral hacia las mafias**.  
+## Historia / Eventos Clave
 
-El diálogo fue crucial para Lucía, pues le permitió atisbar que las intenciones de Oliver podían ser **más complejas de lo que aparentaba**.  
+### Necromancia a Medianoche
 
-Asimismo, en este encuentro se dejó ver por primera vez la **conexión emocional incipiente entre ambos personajes**, marcada por una mezcla de respeto mutuo, tensión intelectual y dolor compartido.
+#### El Atentado contra Caleb Thorne
+Años antes de la trama principal, el restaurante fue el escenario de una de las mayores tragedias policiales de Nueva Ámsterdam. Los oficiales <Link to="/CrSaSo/personajes/Caleb%20Thorne">Caleb Thorne</Link> y <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link> se encontraban celebrando una redada exitosa contra una red de tráfico de opio. Mientras festejaban, un vehículo pasó frente a la fachada y abrió fuego con una ametralladora Browning. Caleb Thorne murió en el lugar tras utilizar su cuerpo como escudo para salvar la vida de Dorian Blackwood.
+
+#### La Investigación de los Dobrescu
+En 1929, la agente federal <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> y el reportero <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> cenaron en *The Bronze Fish* para discutir los hallazgos sobre el <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">Castillo de Nueva Ámsterdam</Link>. Durante esta cena, se revelaron datos cruciales sobre la familia Dobrescu, su origen en Valaquia y los rumores de fuerzas sobrenaturales en el castillo. Fue en este lugar donde Lucía Sinclair reveló oficialmente a Henderson que se encontraba en la ciudad investigando el "Caso del Cuarto Rojo".
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/personajes/Caleb%20Thorne">Caleb Thorne</Link>:** El lugar quedó marcado permanentemente por su sacrificio.
+*   **<Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>:** Sobreviviente del atentado en el restaurante; mantiene una relación de respeto y melancolía con el sitio.
+*   **Lucía Sinclair y Oliver Henderson:** Utilizaron el local como oficina improvisada para conectar el pasado místico de la ciudad con los asesinatos actuales.
+
+## Curiosidades
+
+*   El reportero Oliver Henderson es un cliente habitual y convencido de que la calidad de los mariscos de este lugar no tiene competencia en la región.
+*   A pesar del tiroteo masivo sufrido años atrás, el restaurante fue remodelado y mantuvo su estatus como uno de los sitios más concurridos, borrando las huellas físicas de la violencia.
+*   Durante la cena entre Sinclair y Henderson, se discutió la ironía de que la Iglesia Católica comprara el castillo de los Dobrescu en 1910 solo para abandonarlo un año después por supuesta falta de fondos, aunque Sinclair teorizó en este restaurante que se debió a un hallazgo sobrenatural.

@@ -1,8 +1,11 @@
-import React, {useMemo} from 'react';
+import React, {useLayoutEffect, useMemo, useRef} from 'react';
 import Link from '@docusaurus/Link';
 import {useAllDocsData, useDocsVersion} from '@docusaurus/plugin-content-docs/client';
-import {resolveFeaturedDoc} from './resolveFeaturedDoc';
+import {useExtraDocTocRegistrar} from './extraDocToc';
+import {getPluginDocsDir, resolveFeaturedDoc} from './resolveFeaturedDoc';
 import styles from './FeaturedArticle.module.css';
+
+const EXTRA_TOC_KEY = 'featured-article';
 
 type DocLike = {
   id: string;
@@ -49,6 +52,8 @@ export default function FeaturedArticle({
   to: toOverride,
   className,
 }: FeaturedArticleProps) {
+  const previewRef = useRef<HTMLDivElement>(null);
+  const {register, unregister} = useExtraDocTocRegistrar();
   const all = useAllDocsData();
   const docVersion = useDocsVersion();
 
@@ -61,6 +66,16 @@ export default function FeaturedArticle({
     () => resolveFeaturedDoc(pluginId, docId),
     [pluginId, docId],
   );
+
+  useLayoutEffect(() => {
+    if (!Doc) {
+      unregister(EXTRA_TOC_KEY);
+      return undefined;
+    }
+    return () => {
+      unregister(EXTRA_TOC_KEY);
+    };
+  }, [Doc, register, unregister]);
 
   const {title, href} = useMemo(() => {
     const plugin = (all as Record<string, {versions?: unknown}>)[pluginId];
@@ -88,34 +103,30 @@ export default function FeaturedArticle({
 
   const rootClass = className ? `${styles.root} ${className}` : styles.root;
 
-  const header = (
-    <header className={styles.header}>
-      <div className={styles.headerText}>
-        <h2 id="featured-article-heading" className={styles.sectionTitle}>
-          Artículo destacado
-        </h2>
-        <h3 className={styles.docName}>{title}</h3>
-      </div>
-    </header>
-  );
+  const subtitle = <p className={styles.docName}>{title}</p>;
 
   if (!Doc) {
     return (
-      <section className={rootClass} aria-labelledby="featured-article-heading">
-        {header}
+      <section className={rootClass}>
+        {subtitle}
         <p className={styles.error}>
           No se pudo cargar la vista previa de <code>{docId}</code>. Comprueba el{' '}
-          <code>docId</code> (ruta relativa al MDX en <code>docs/CrSaSo/</code>).
+          <code>docId</code> (ruta relativa al MDX en{' '}
+          <code>{getPluginDocsDir(pluginId)}/</code>) y el <code>pluginId</code> (
+          <code>{pluginId}</code>).
         </p>
       </section>
     );
   }
 
   return (
-    <section className={rootClass} aria-labelledby="featured-article-heading">
-      {header}
+    <section className={rootClass}>
+      {subtitle}
       <div className={styles.previewWrap}>
-        <div className={`${styles.preview} theme-doc-markdown markdown`}>
+        <div
+          ref={previewRef}
+          className={`${styles.preview} theme-doc-markdown markdown`}
+        >
           <Doc />
         </div>
         <div className={styles.previewFade} aria-hidden />

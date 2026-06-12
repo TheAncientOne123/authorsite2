@@ -1,0 +1,23 @@
+---
+id: ensayos-portada
+title: Ensayos
+slug: /ensayos
+description: Reflexiones, análisis y argumentos sobre literatura, escritura y mundo.
+---
+
+import CardsFromFolder from '@site/src/components/Cards/CardsFromFolder';
+
+# Ensayos
+
+Reflexiones, análisis y argumentos sobre literatura, escritura, narrativa y cualquier tema que valga la pena explorar con cierta profundidad. Los ensayos del Túmulo son piezas autónomas: pueden leerse en cualquier orden y no requieren contexto previo de otras obras.
+
+---
+
+<CardsFromFolder
+  folder="ensayos"
+  pluginId="tumulo"
+  filterDimensions={[
+    { key: 'type', label: 'Tipo' },
+  ]}
+  descriptionFallback="Sin descripción disponible."
+/>

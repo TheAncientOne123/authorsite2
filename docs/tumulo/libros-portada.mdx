@@ -1,0 +1,23 @@
+---
+id: libros-portada
+title: Libros standalone
+slug: /libros
+description: Novelas y obras largas que no forman parte de una saga mayor.
+---
+
+import CardsFromFolder from '@site/src/components/Cards/CardsFromFolder';
+
+# Libros standalone
+
+Novelas y obras de mayor extensión que se leen de forma independiente: no pertenecen a ninguna saga ni requieren libros anteriores. Cada uno es un punto de entrada autónomo al mundo del autor.
+
+---
+
+<CardsFromFolder
+  folder="libros"
+  pluginId="tumulo"
+  filterDimensions={[
+    { key: 'genero', label: 'Género' },
+  ]}
+  descriptionFallback="Sin descripción disponible."
+/>

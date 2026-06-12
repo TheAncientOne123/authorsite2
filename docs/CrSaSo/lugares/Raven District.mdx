@@ -1,49 +1,72 @@
 ﻿---
 title: Raven District
 description: Complejo industrial periférico de McCarthy Petroleum; laboratorio subterráneo donde Tamara Dobrescu y Archie Woodward sintetizaron por primera vez el Elemento 121. Destruido en 1899.
-updated: 2026-05-17
+updated: 2026-06-08
 type: lugar
 saga: crsaso
 libro: necromancia-medianoche
 ---
 
-
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Raven District
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Raven District"
+    caption="Laboratorio industrial donde nació el Elemento 121"
+    rows={[
+      { label: 'Nombre completo', value: 'Raven District (Distrito Raven)' },
+      { label: 'Tipo', value: 'Sector industrial / Centro de investigación' },
+      { label: 'Estado actual', value: 'Reconstruido tras el incidente de 1899; activo' },
+      { label: 'Ubicación', value: <>Periferia del estado de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> (afueras)</> },
+      { label: 'Distancia', value: 'Aproximadamente 1–2 horas de la ciudad de Nueva Ámsterdam' },
+      { label: 'Residentes clave', value: <><Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> (histórico); <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> (histórica)</> },
+      { label: 'Ocupación', value: 'Extracción y refinamiento de crudo; investigación molecular' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link> },
+      { label: 'Eventos clave', value: <><Link to="/CrSaSo/eventos/El%20Incidente%20de%20Raven%20District">El Incidente de Raven District</Link>; primera síntesis del <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link></> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 17 (mención en expediente)</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Raven District"
-  caption="Refinería tapadera y laboratorio subterráneo (1899)"
-  rows={[
-    { label: 'Tipo', value: 'Complejo industrial' },
-    { label: 'Ubicación', value: <>Afueras de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link> (zona industrial periférica)</> },
-    { label: 'Propietario', value: <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link> },
-    { label: 'Cobertura oficial', value: 'Refinería secundaria' },
-    { label: 'Propósito real', value: 'Investigación alquímico-científica con derivados del petróleo' },
-    { label: 'Estado actual', value: 'Destruido' },
-    { label: 'Fecha del incidente', value: 'Enero de 1899' },
-    { label: 'Hitos', value: <>Primera síntesis del <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link> por <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> y <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link></> },
-    { label: 'Vínculos', value: <><Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>; <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>; <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link></> },
-  ]}
-/>
+**Raven District** es una zona industrial situada en las afueras de la ciudad de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>, dentro de los límites del estado homónimo. El distrito se encuentra retirado del núcleo urbano, a un trayecto de entre una y dos horas, lo que históricamente permitió a <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link> realizar operaciones de gran envergadura y experimentación científica lejos del escrutinio público y de las zonas residenciales de <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>.
 
-**Tipo:** Complejo industrial  
-**Ubicación:** Afueras de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>, zona industrial periférica  
-**Propietario:** <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link>  
-**Estado actual:** Destruido  
-**Fecha del incidente:** Enero de 1899
+Es conocido internacionalmente por ser el escenario del <Link to="/CrSaSo/eventos/El%20Incidente%20de%20Raven%20District">Incidente de Raven District</Link> en 1899, un evento catastrófico que, aunque fue encubierto como un accidente laboral menor, marcó el inicio de la era del <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link> y sus consecuencias sobrenaturales.
 
-## Resumen
-El **Raven District** operó como instalación industrial con fachada de **refinería secundaria**, pero en realidad albergó uno de los **laboratorios subterráneos** más avanzados de su tiempo, dedicado a la **manipulación de compuestos orgánicos derivados del crudo**. Allí, <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, con el apoyo técnico del joven prodigio <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>, sintetizó por primera vez el **<Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>**: un compuesto inestable con propiedades extraordinarias.
+## Perfil y Apariencia
 
-## Instalaciones y propósito oculto
-Aunque su perfil exterior era convencional, bajo la superficie funcionaban **laboratorios confidenciales** financiados en parte por la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>. El objetivo secreto: **replicar la longevidad vampírica sin transformación completa**, combinando **tecnología, alquimia, necromancia y prácticas prohibidas**. Muchas fases del proyecto se mantuvieron **ocultas incluso para** <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>, interesado en aplicaciones **militares** y de **conservación genética**.
+El distrito proyecta una atmósfera de reserva y aislamiento industrial. Se compone de vastos laboratorios, torres de extracción y almacenes diseñados para la disección de las propiedades internas del petróleo. La lejanía de la zona respecto a la ciudad favorece un microclima de silencio corporativo, donde el zumbido de la maquinaria solo es interrumpido por protocolos de seguridad estrictos. Tras la reconstrucción posterior al incendio de 1899, las instalaciones fueron modernizadas para mantener la fachada de eficiencia energética, ocultando las ruinas de los laboratorios donde se descubrió la "fuente de la juventud".
 
-## El incidente de 1899
-En **enero de 1899**, una **explosión** arrasó el núcleo del complejo y desató un **incendio químico** visible desde la ciudad. La prensa local lo redujo a una **“fuga menor contenida”**, pero documentación interna suprimida por **McCarthy Petroleum** señala un **desastre total** del laboratorio.  
-No hubo víctimas **oficiales**, aunque múltiples indicios sugieren que **Tamara** **provocó** el siniestro al constatar la **inestabilidad** y peligrosidad del Elemento 121.
+## Habilidades y Equipo
 
-## Legado y conexiones
-Tras el incendio, **Tamara desapareció** del foco público y **Archie** fue relegado dentro de la empresa, hasta **reaparecer décadas después** en los eventos de _Necromancia a Medianoche_. El Raven District quedó como **precedente técnico** de los experimentos que, más tarde, convergerían en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link> y en los sucesos que sacudirían a la ciudad.
+Raven District albergaba la infraestructura más avanzada de McCarthy Petroleum a finales del siglo XIX:
+*   **Laboratorios de Alquimia Industrial:** Centros de investigación donde se aislaron moléculas capaces de regenerar células humanas.
+*   **Sistemas de Refinamiento Especializado:** Maquinaria de alta potencia para la extracción de yacimientos profundos, optimizada por ingenieros del MIT.
+*   **Protocolos de Contención:** Debido a su ubicación aislada, el distrito cuenta con capacidad para gestionar incidentes de gran escala sin alertar a la prensa metropolitana, permitiendo reparaciones y el control total de la narrativa oficial.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Incidente de Raven District (1899)
+En enero de 1899, una explosión premeditada destruyó los laboratorios centrales del distrito. El suceso mató a nueve de los quince científicos de élite que trabajaban allí y dejó a otro sobreviviente permanentemente desfigurado. <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>, dueño del lugar, silenció el evento mediante indemnizaciones generosas y declaraciones falsas a los medios científicos, catalogando la tragedia como un error accidental en las reparaciones.
+
+#### El Descubrimiento del Elemento 121
+Antes del incendio, el jefe de científicos <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> y su asistente <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> (bajo el nombre de Angelina) descubrieron en este distrito un compuesto en el petróleo que otorgaba la inmortalidad. Tamara, consciente de que Alan McCarthy utilizaría este Elemento 121 sin considerar sus riesgos biológicos, provocó la explosión para borrar cualquier rastro de la fórmula. A pesar de sus esfuerzos, una pequeña muestra sobrevivió en manos de Archie, la cual Alan inyectaría posteriormente a su hija <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link> en un intento desesperado por salvar su vida tras un parto traumático.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>:** Propietario del distrito y principal responsable del encubrimiento de las muertes de 1899 para proteger sus intereses corporativos.
+*   **<Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>:** Antiguo jefe de científicos del distrito que vivió la época dorada y la caída del complejo.
+*   **<Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>:** Su paso por Raven District definió su papel como destructora de la tecnología McCarthy y protectora (en sus propios términos) de la humanidad frente al Elemento 121.
+*   **<Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>:** Su naturaleza actual como "nacida de la oscuridad" tiene su raíz en los compuestos descubiertos y refinados en este distrito.
+
+## Curiosidades
+
+*   El distrito se encuentra a una distancia de 1 a 2 horas de la ciudad, lo que para <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> simbolizaba la frontera entre el orden legal y la impunidad corporativa.
+*   Archie Woodward describe el tiempo pasado en Raven District como el hallazgo de un "manual perdido de una máquina que llevaba siglos olvidada".
+*   La prensa local de finales de siglo calificó al distrito como un hito que marcaría un antes y un después en la industria energética del país.
+*   Oficialmente, las "pilas de carbón" encontradas en incidentes posteriores en la ciudad de Nueva Ámsterdam fueron comparadas por algunos veteranos con los restos carbonizados de la explosión de 1899 en Raven.

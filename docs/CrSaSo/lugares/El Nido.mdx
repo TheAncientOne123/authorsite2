@@ -1,7 +1,7 @@
 ---
 title: El Nido
 description: "Barrio densamente poblado y núcleo cultural de Nueva Ámsterdam; control comunitario con tolerancia ambigua, economía informal y conexiones con la Familia Zaikov."
-updated: 2026-05-17
+updated: 2026-06-08
 type: lugar
 saga: crsaso
 libro: necromancia-medianoche
@@ -10,60 +10,68 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# El Nido
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="El Nido"
+    caption="El barrio de los gitanos, El óleo de colores"
+    rows={[
+      { label: 'Alias/Apodos', value: 'El barrio de los gitanos, El óleo de colores' },
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Ubicación', value: <>Periferia del centro de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Especie', value: 'Barrio urbano / Enclave étnico' },
+      { label: 'Población clave', value: <><Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link>, gitanos, vendedores, místicos</> },
+      { label: 'Ocupación', value: 'Comercio ambulante, ocultismo, mercado negro' },
+      { label: 'Afiliación', value: <>Independiente (bajo el mando de los <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Zaikov</Link>)</> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 11</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="El Nido"
-  caption="Enjambre urbano entre el Mercado Viejo y el tranvía elevado"
-  rows={[
-    { label: 'Ubicación', value: <>Centro-sureste de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>, entre el <Link to="/CrSaSo/lugares/Mercado%20Viejo">Mercado Viejo</Link> y las vías del tranvía elevado</> },
-    { label: 'Tipo', value: 'Barrio densamente poblado / Núcleo cultural / Zona de tolerancia ambigua' },
-    { label: 'Control práctico', value: <><Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link> (redes vecinales y “arbitraje” local)</> },
-    { label: 'Estado', value: 'Activo, caótico, resiliente' },
-    { label: 'Densidad y traza', value: 'Edificación casi vertical, pasajes y terrazas conectadas; escaleras y puentes improvisados' },
-    { label: 'Puntos de interés', value: <><Link to="/CrSaSo/lugares/Mercado%20Viejo">Mercado Viejo</Link>; Las Ruinas (periferia); Mirador del Tranvía</> },
-    { label: 'Economía', value: 'Comercio popular, talleres, trueque y mercado gris (talismanes, mecánica, copias alquímicas)' },
-    { label: 'Personajes relacionados', value: <><Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link>; <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link></> },
-  ]}
-/>
+**El Nido** es el principal barrio gitano de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> y un centro neurálgico para actividades que oscilan entre el comercio tradicional y el misticismo clandestino. Se le describe como un mundo ajeno pero fascinante dentro de la urbe, caracterizado por una explosión de tonalidades vibrantes, sonidos incesantes y una vida social que desborda las estructuras arquitectónicas.
 
-Ubicación: Centro-sureste de Nueva Ámsterdam, entre el barrio del Mercado Viejo y las vías del tranvía elevado  
-Tipo: Barrio densamente poblado / Núcleo cultural / Zona de tolerancia ambigua  
-Estado actual: Activo, caótico, resiliente
+Este sector es reconocido en "El Códice" por albergar a la <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">familia Zaikov</Link>, conocidos como "Las Águilas", quienes ejercen el control fáctico del territorio y mantienen una relación de respeto pragmático con la policía local.
 
-Personajes Relacionados:  
-<Link to="/CrSaSo/familias/La%20Familia%20Zaikov">La Familia Zaikov</Link>  
-<Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>
+## Perfil y Personalidad
 
-#### Descripción general
+Físicamente, El Nido es un laberinto estrecho de calles reducidas por la presencia constante de carromatos y puestos de venta. La arquitectura del barrio se define por edificios apilados unos sobre otros con balcones tan próximos que apenas permiten el paso de la luz, creando una red de tendederos que conectan las fachadas. Las paredes, originalmente grises y desgastadas, han sido transformadas en coloridos murales por sus habitantes.
 
-El Nido es el barrio más vivo, ruidoso y visualmente saturado de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>. Su nombre no nace de una oscuridad subterránea, sino de su arquitectura casi vertical: edificios apilados, terrazas interconectadas y pasajes que recuerdan a un gran nido urbano donde la vida crece en capas. Es controlado en la práctica por la <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link> a través de redes vecinales y acuerdos informales.
+Atmosféricamente, el lugar está impregnado de un denso aroma a incienso que suele erizar los sentidos de los forasteros. Psicológicamente, el barrio proyecta una dualidad: mientras las calles principales se mantienen sorprendentemente limpias para atraer turistas y curiosos, los callejones y la zona de "Las Ruinas" acumulan basura y restos de incendios. Es un lugar donde los "depredadores urbanos" y los desesperados conviven con niños que juegan descalzos entre perros callejeros.
 
-Es un sitio donde el caos tiene su propio orden. La belleza surge del ingenio popular y de la abundancia de color, textura y sonido: vendedores que gritan, niños jugando, música híbrida (cumbia con ecos balcánicos), turistas confundidos y locales que marcan el ritmo de la calle.
+## Habilidades y Equipo
 
-#### Características clave
+Como infraestructura urbana y social, El Nido posee recursos únicos:
+*   **Centro de Ocultismo:** Es el punto geográfico donde se concentran las prácticas de tarot, muñecos vudú, adivinación y lectura de cartas.
+*   **Bazar Central:** Un mercado masivo encajonado entre grandes edificios donde se comercializan productos que van desde alimentos frescos hasta mercancía del mercado negro.
+*   **Red de Vigilancia Informal:** Los vendedores y residentes actúan como informantes; mientras algunos parecen absortos en crucigramas, monitorean activamente quién entra y sale del barrio.
+*   **Seguridad de "Las Águilas":** El clan Zaikov posee un búnker de armas sofisticadas y hombres entrenados para defender el territorio de cualquier incursión externa.
 
-- Arquitectura y estética: balcones encimados, ropa tendida cruzando calles, murales en casi cada fachada, escaleras entre techos y vegetación colgante en macetas recicladas.  
-- Población: mezcla de trabajadores, inmigrantes, artistas, disidentes políticos y comerciantes tradicionales. Identidad colectiva fuerte y autogestión cotidiana.  
-- Ambiente: las avenidas principales lucen limpias y decoradas; los callejones y periferias —como Las Ruinas— exponen la otra cara: escombros, incendios pasados y peligro latente.  
-- Economía informal y resistencia: mercado autosuficiente; se venden frutas exóticas, talismanes y tecnología reacondicionada. Muchos dicen que si algo no se encuentra en El Nido, es porque no existe.
+## Biografía / Historia
 
-#### Zonas y conexiones
+### Necromancia a Medianoche
 
-- Mercado Viejo: corazón comercial y punto de acceso desde el Centro Histórico.  
-- Las Ruinas: perímetro deteriorado usado para escondites, bodegas y ensayos clandestinos.  
-- Mirador del Tranvía: pasarela elevada con vista a los techos; ruta de escape habitual cuando hay redadas.  
-- Pasajes interiores: red de corredores que solo los vecinos dominan; entrada y salida controlada por “porteros” informales.
+#### El Cambio de Régimen
+Históricamente, El Nido era gobernado por una "cruel mafia rusa" que sometía a la población a condiciones de vida deplorables. Tras el asesinato de los patriarcas Zaikov (Mohammed Ozturk y Milenna Zaikov), sus hijos tomaron el control del barrio, instaurando un nuevo orden basado en la lealtad familiar y la prosperidad económica del sector.
 
-#### Seguridad y reglas no escritas
+#### El Refugio de Aldric Shadowborne
+Durante la crisis de 1929, el científico <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> se ocultó en El Nido bajo la identidad del mago Aldric Shadowborne. Allí operaba una tienda de adivinación rústica y colorida que servía de fachada para sus investigaciones sobre el <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link> y la profecía de la Reina de la Oscuridad.
 
-- La policía rara vez entra sin coordinación; el “arbitraje” lo ejercen matriarcas de pasaje y operadores Zaikov.  
-- Regla de convivencia: nada de sangre en pasillos comunes; los conflictos se mueven a las terrazas periféricas.  
-- Forasteros: bienvenidos si consumen y respetan; vigilados si hacen preguntas.
+#### La Persecución del Bazar (Arcos de Woodward y Zaikov)
+Los agentes Cassian Thorne y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> localizaron a Woodward en su establecimiento del barrio. Tras ser detectados, se desató una persecución a través del Bazar Central, donde Thorne y Woodward terminaron forcejeando entre puestos de comida. La intervención de Greta e Ian Zaikov detuvo el conflicto mediante disparos a los neumáticos de un vehículo policial que Woodward intentaba robar. Tras la captura, los Zaikov ofrecieron asilo y hospitalidad a los agentes en su lujoso apartamento dentro del barrio, sellando una alianza táctica contra los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>.
 
-#### Conexiones narrativas
+## Relaciones Clave
 
-- Archie Woodward mantiene lazos con informantes del Nido y conoce rutas internas que el resto de la ciudad ignora.  
-- El barrio sirve como corredor entre el <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link> y zonas industriales, y como refugio temporal de personajes en fuga o en vigilancia.
+*   **<Link to="/CrSaSo/familias/La%20Familia%20Zaikov">Familia Zaikov</Link>:** Guardianes y líderes absolutos del barrio.
+*   **<Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>:** Residente y antiguo jefe de científicos que encontró en el barrio el único lugar para ejercer el ocultismo sin ser cuestionado.
+*   **<Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>:** Mantiene una relación de gratitud con el barrio, aunque evita visitarlo porque le recuerda a su exesposa Irene, quien abandonó a su familia (los Zaikov) en El Nido por un hombre millonario.
+*   **<Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>:** Reconocida por los Zaikov como una aliada valiosa, siendo la primera federal en recibir la hospitalidad de "la casa" sin deudas pendientes.
 
+## Curiosidades
+
+*   El barrio cuenta con un sistema de identificación de sospechosos mediante la observación de "monchas grises" (hombres de traje) que destacan entre el colorido habitual de la zona.
+*   Los residentes utilizan idiomas diversos; durante conflictos, se pueden escuchar insultos hasta en cinco lenguas diferentes de forma simultánea.
+*   A pesar de su fama de peligrosidad, para Cassian Thorne es el único lugar en Nueva Ámsterdam donde se puede encontrar un "óleo de colores" auténtico.
+*   En los callejones de El Nido, el mercado negro permite conseguir información clasificada de la ciudad con un simple soborno.

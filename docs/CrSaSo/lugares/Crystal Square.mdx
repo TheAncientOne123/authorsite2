@@ -10,27 +10,64 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Crystal Square
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Crystal Square"
+    caption="El suburbio de los privilegiados, Barrio de los poderosos"
+    rows={[
+      { label: 'Alias/Apodos', value: 'El suburbio de los privilegiados, Barrio de los poderosos' },
+      { label: 'Estado actual', value: 'Activo (bajo vigilancia tras la crisis de 1929)' },
+      { label: 'Residencia', value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> },
+      { label: 'Especie', value: 'Distrito residencial de alta sociedad / Suburbio' },
+      { label: 'Residentes clave', value: <><Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>; Familia Chapman</> },
+      { label: 'Ocupación', value: 'Enclave residencial de lujo e influencia política' },
+      { label: 'Afiliación', value: 'Élite socioeconómica de Nueva Ámsterdam' },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 1</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Crystal Square"
-  caption="Suburbio planificado al sur de la ciudad"
-  rows={[
-    { label: 'Tipo de ubicación', value: 'Zona residencial de clase media-alta; distrito suburbano' },
-    { label: 'Ubicación', value: <>Periferia sur de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link></> },
-    { label: 'Urbanismo', value: 'Fraccionamientos cerrados, áreas verdes vigiladas, escuelas privadas' },
-    { label: 'Conectividad', value: <>Accesos rápidos al <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link> y zonas industriales</> },
-    { label: 'Subzonas', value: <><Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link> (residencial cerrado)</> },
-    { label: 'Primera aparición', value: <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link> },
-    { label: 'Eventos importantes', value: <><Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link> (en Villa Lobos)</> },
-    { label: 'Seguridad reportada', value: 'Baja (oficial); incidentes aislados y discretos' },
-    { label: 'Estado', value: 'Activo' },
-  ]}
-/>
+**Crystal Square** es el distrito residencial de mayor estatus en <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Se caracteriza por albergar a la clase alta, magnates industriales y figuras políticas influyentes de la nación durante la década de 1920. Su área más reconocida es el fraccionamiento de lujo <Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link>, un sector que se promocionaba como el lugar más seguro y moralmente íntegro de la ciudad antes del estallido de la crisis de los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>.
 
+## Perfil y Personalidad
 
-## Descripción general
-Crystal Square es una de las zonas residenciales de clase media-alta ubicadas en la periferia sur de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>. Reconocido por su arquitectura suburbana moderna, áreas verdes vigiladas y una baja incidencia delictiva reportada, el sector se considera uno de los más tranquilos de la ciudad, al menos en apariencia.
+Físicamente, Crystal Square se define por su arquitectura opulenta y variada, que oscila entre la "discreta elegancia" de los McCarthy y la "opulencia ostentosa" de los Chapman. Las propiedades consisten en mansiones de gran escala protegidas por jardines privados y bardas de metal negro con picos afilados diseñadas para disuadir intrusos. Los interiores son ejemplos de lujo de la época: suelos de mármol, escaleras de caracol bajo candelabros majestuosos, mobiliario de madera finlandesa y extensas bibliotecas.
 
-Su planificación urbana incluye fraccionamientos cerrados, escuelas privadas, pequeños centros comerciales y acceso rápido a arterias principales que conectan con el <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link> y zonas industriales. Pese a su fachada apacible, Crystal Square se convirtió en un punto clave dentro de la investigación de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, al ser el escenario del caso de <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>, localizado en el fraccionamiento <Link to="/CrSaSo/lugares/Villa%20Lobos">Villa Lobos</Link>.
+Psicológicamente, el distrito proyecta una imagen de invulnerabilidad y superioridad. Sus habitantes se describen como "personas honestas y con buenos valores", manteniendo un hermetismo social que separa la vida de los suburbios del caos del <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">centro histórico</Link>. Existe, sin embargo, una jerarquía interna de poder donde magnates del petróleo y vendedores de colchones comparten linderos, reflejando la diversidad de la fortuna industrial de la ciudad.
+
+## Habilidades y Equipo
+
+Al ser un enclave de la élite, Crystal Square posee recursos defensivos y estéticos superiores:
+*   **Seguridad Privada de Élite:** Las mansiones cuentan con cuerpos de guardia armados y protocolos de acceso estrictos que incluyen intercomunicadores y vigilancia perimetral.
+*   **Infraestructura Paisajística:** El área está rodeada de bosques de pinos, robles y acacias, manteniendo un microclima de serenidad alejado del zumbido industrial de la refinería.
+*   **Búnkeres y Áreas Seguras:** Ciertas propiedades poseen instalaciones subterráneas reforzadas y arsenales personales capaces de sostener enfrentamientos de gran escala.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Incidente del Cuarto Rojo
+En marzo de 1929, la tranquilidad de Crystal Square fue destruida por el asesinato de la cuñada de Frederick Chapman en el fraccionamiento Villa Lobos. La brutalidad de la escena, donde la víctima fue "fusionada" con el mueble de la cama debido a una fuerza sobrehumana, marcó la primera vez que la violencia del bajo mundo —o de naturaleza mística— penetraba las murallas del distrito.
+
+#### El Quiebre de la Seguridad
+Tras el incidente inicial, el diario <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link> publicó el titular "¿Es Crystal Square tan seguro como parece?", sembrando la desconfianza entre los ciudadanos y reportando un aumento en la percepción de corrupción y colusión entre las autoridades y grupos criminales dentro del sector.
+
+#### La Gala McCarthy y la Caída de la Élite
+El distrito fue el escenario del clímax social de la crisis cuando la secta de los Voronin infiltró la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">mansión McCarthy</Link> durante la fiesta de cumpleaños de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link>. El evento terminó en una masacre que resultó en la muerte de <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> y la transformación definitiva de su hija, forzando a los supervivientes de la élite a considerar el abandono definitivo del distrito para escapar de la amenaza de la Reina de la Oscuridad.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>:** El linaje dominante del distrito, cuya fortuna petrolera y secretos científicos vinculan a Crystal Square con el <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>.
+*   **Familia Chapman:** Vecinos directos de los McCarthy; su tragedia doméstica sirvió como el catalizador para la investigación federal de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>.
+*   **<Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>:** Heredero del imperio mediático Atlantic News y visitante frecuente del distrito, cuya relación con Jessica McCarthy lo vinculó a los sucesos de la zona.
+
+## Curiosidades
+
+*   A pesar de su estatus, el distrito sufre de una "plaga de mapaches" que los residentes utilizan a menudo como explicación para ruidos inusuales en la noche.
+*   Frederick Chapman se considera el vecino "más humilde" entre los poderosos, a pesar de poseer una de las mansiones más grandes de Villa Lobos.
+*   Las mansiones están tan próximas que los investigadores pudieron rastrear huellas no humanas que cruzaban directamente desde el patio de los Chapman hacia la propiedad de los McCarthy.
+*   El diseño de ciertas piscinas en el sector, con decoraciones de mármol y figuras clásicas, contrastaba irónicamente con el abandono del <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">Balneario Rushmore</Link>, propiedad de la familia política de los McCarthy.

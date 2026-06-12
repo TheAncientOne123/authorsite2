@@ -1,7 +1,7 @@
 ---
 title: Buró Federal
 description: Institución de investigación criminal y seguridad nacional de EE.UU. con atribuciones extendidas a lo sobrenatural y conspirativo.
-updated: 2026-05-17
+updated: 2026-06-08
 type: lugar
 saga: crsaso
 libro: necromancia-medianoche
@@ -10,59 +10,69 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Buró Federal
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Buró Federal de Investigación (FBI)"
+    caption="La oficina federal, El Buró"
+    rows={[
+      { label: 'Alias/Apodos', value: 'La oficina federal, El Buró' },
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Sede', value: 'Washington D.C.' },
+      { label: 'Especie', value: 'Organización gubernamental humana' },
+      { label: 'Integrantes clave', value: <><Link to="/CrSaSo/personajes/Kingston%20Graham">Kingston Graham</Link> (director adjunto); <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> (agente especial); agentes Huber y Turner</> },
+      { label: 'Ocupación', value: 'Investigación criminal, inteligencia y seguridad nacional' },
+      { label: 'Afiliación', value: 'Gobierno de los Estados Unidos de América' },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Prólogo</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Buró Federal"
-  caption="El organismo que trasciende lo criminal y lo sobrenatural"
-  rows={[
-    { label: 'Fundación', value: 'Principios del siglo XX' },
-    { label: 'Jurisdicción', value: 'Estados Unidos (casos criminales, conspirativos y paranormales)' },
-    { label: 'Sede', value: 'Washington D.C.' },
-    { label: 'Estructura', value: 'Agencia federal con divisiones especializadas' },
-    { label: 'Agentes destacados', value: <><Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, <Link to="/CrSaSo/personajes/Kingston%20Graham">Kingston Graham</Link></> },
-    { label: 'Estado', value: 'Activo' },
-  ]}
-/>
+El **Buró Federal de Investigación** (FBI) es la agencia federal encargada de resolver los casos más complejos y extraños que desafían la lógica convencional en los Estados Unidos. En 1929, la organización mantiene una fachada de escepticismo absoluto ante lo paranormal, priorizando el mantenimiento de las apariencias políticas y sociales sobre la verdad mística.
 
-El **Buró Federal** es la principal institución de investigación criminal y seguridad nacional de los Estados Unidos en el universo de _Necromancia a Medianoche_. Aunque guarda semejanzas con el **FBI** del mundo real, en este universo posee **atribuciones mucho más amplias**, que incluyen la intervención en crímenes de naturaleza **paranormal, conspirativa o existencial**, con competencias que alcanzan lo oculto, lo religioso y lo inexplicable.  
+Bajo la dirección del director Hoover y su mano derecha, <Link to="/CrSaSo/personajes/Kingston%20Graham">Kingston Graham</Link>, el Buró opera un programa secreto de capacitación para enfrentar la guerra secreta contra los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>, colaborando con servicios de inteligencia extranjeros como el MI5.
 
-Buena parte de estas investigaciones son estrictamente **clasificadas**, reservadas a un puñado de agentes y directivos.
+## Perfil y Personalidad
 
----
+El Buró se define por una cultura institucional de rigor, burocracia y un marcado dominio masculino en sus rangos superiores. Sus oficinas en Washington D.C. son descritas como un laberinto de agentes en constante movimiento, impregnadas por un aroma persistente a cigarrillos y cafeína rancia.
 
-## Funciones principales
+Psicológicamente, la alta dirección del Buró es pragmática y escéptica, calificando los informes sobre vampiros y profecías como "fantasías sacadas de un libro barato" para evitar el pánico social. No obstante, existe una dualidad interna: mientras la cara pública de la agencia desacredita lo sobrenatural, el sector liderado por Kingston Graham reconoce la existencia de los <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link> y busca reclutar individuos con habilidades únicas para misiones clasificadas.
 
-- Investigación de crímenes de alta complejidad, incluyendo asesinatos múltiples, desapariciones masivas y corrupción a gran escala.  
-- Vigilancia y contención de **fenómenos anómalos o sobrenaturales**.  
-- Infiltración en organizaciones criminales nacionales e internacionales.  
-- Coordinación con cuerpos policiales locales en situaciones de emergencia o jurisdicción cruzada.  
-- Manejo de **archivos clasificados**, tecnología experimental y casos sellados por seguridad nacional.  
+## Habilidades y Equipo
 
----
+Como potencia de investigación federal, el Buró cuenta con recursos técnicos y tácticos avanzados:
+*   **Inteligencia Interagencial:** Capacidad de coordinar operaciones con policías locales y otras agencias de seguridad.
+*   **Equipos Forenses de Élite:** Personal altamente capacitado para procesar escenas del crimen de alta complejidad, como "El Cuarto Rojo".
+*   **División Especial de Conflictos Interagenciales:** Una rama dedicada a manejar casos con riesgo de expansión regional o municipal.
+*   **Recursos del Programa Secreto:** Acceso a entrenamiento especializado en Europa, contactos internacionales y uso de herramientas místicas como las monedas de latón de los Vinculados.
+*   **Protocolos de Identificación:** Sistema de matrículas funcionales y transferencias seguras de información.
 
-## Cultura y estructura
+## Biografía / Historia
 
-El Buró Federal se caracteriza por su **rigidez institucional, secretismo y jerarquía estricta**.  
+### Necromancia a Medianoche
 
-- Sus agentes son seleccionados no solo por su desempeño y lealtad, sino también por su capacidad de **operar bajo condiciones extremas** o escenarios no convencionales.  
-- Aunque de manera oficial **no reconocen lo sobrenatural**, en la práctica gran parte de sus expedientes internos lidian con lo inexplicable.  
+#### El Caso de Nueva Ámsterdam (1929)
+El Buró interviene en la crisis de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> tras la solicitud de ayuda del jefe de detectives <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link> por la naturaleza perturbadora del asesinato en la mansión Chapman. La agencia envía a la agente especial Lucía Sinclair para liderar la investigación federal en el campo.
 
----
+#### La Resolución Oficial de la "Semana Negra"
+Tras la Masacre en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>, los agentes especiales Huber y Turner toman el control total del caso. Para evitar el escándalo, el Buró emite un informe oficial que atribuye toda la violencia de la "Semana Negra" a una alianza entre una pequeña mafia polaca y la familia De Fazio, ignorando deliberadamente las pruebas de actividad Rapax Hominum. Como parte de este encubrimiento, Lucía Sinclair es suspendida indefinidamente por incluir "historias fantásticas" en su reporte.
 
-## Agentes destacados
+#### El Programa Secreto y la Nueva Era
+Seis meses después de la crisis, Kingston Graham revela a Sinclair que su suspensión fue una maniobra para reclutarla en un programa ultra-clasificado liderado por el director Hoover. El Buró comienza a operar fuera del marco oficial para capacitar agentes en Inglaterra (MI5), reconociendo a <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> como una pieza clave para terminar la guerra secreta y preparando al personal para una fase de tensiones globales.
 
-- **<Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>**: Una de las agentes más jóvenes y brillantes, reconocida por su capacidad analítica y valentía frente a lo desconocido. Su participación en el caso de <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link> junto al detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> fue polémica por su método poco ortodoxo.  
+## Relaciones Clave
 
-- **<Link to="/CrSaSo/personajes/Kingston%20Graham">Kingston Graham</Link>**: Mano derecha del director general del buró y principal encargado de dar seguimiento al informe de Lucía sobre los eventos de Nueva Ámsterdam.  
+*   **<Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>:** Una de sus agentes más efectivas, cuyo portafolio de 20 casos resueltos la convierte en la candidata ideal para el programa secreto de Hoover.
+*   **<Link to="/CrSaSo/personajes/Kingston%20Graham">Kingston Graham</Link>:** Director adjunto y mano derecha del director general; actúa como el enlace entre el Buró oficial y el mundo de los Vinculados.
+*   **<Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>:** Detective local inicialmente despreciado por los altos mandos, pero luego identificado secretamente como un elemento vital para la organización.
+*   **Agentes Huber y Turner:** Representantes de la rama del Buró que prioriza el encubrimiento administrativo y la lógica criminal convencional.
 
----
+## Curiosidades
 
-## Reputación
-
-La reputación del Buró Federal es ambivalente:  
-
-- Para las policías locales, su llegada es señal de que algo **sumamente grave** está ocurriendo.  
-- Su tendencia a **sellar casos o desviar responsabilidades** despierta recelo y sospechas.  
-- Sin embargo, su **eficacia operativa** resulta difícil de cuestionar, lo que refuerza tanto su prestigio como su carácter temido.
+*   A pesar de su imagen pública de rectitud, el Buró es capaz de invalidar testimonios de sobrevivientes y censurar material visual (como las grabaciones de <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>) para mantener el *statu quo*.
+*   El director Kingston Graham posee su propia moneda de latón de los Vinculados, lo que sugiere que el alto mando del Buró está infiltrado o aliado con esta estirpe ancestral.
+*   El Buró utiliza las "excesivas menciones" a compañeros (como la relación de Sinclair con Thorne) para desacreditar la profesionalidad de sus agentes en sesiones de revisión.
+*   El programa secreto de entrenamiento en Europa se basa en la idea de que los agentes deben saber moverse entre lo extraordinario y lo tangible.

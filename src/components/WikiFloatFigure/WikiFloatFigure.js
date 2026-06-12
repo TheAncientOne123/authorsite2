@@ -52,6 +52,7 @@ const SIZE_CLASS = {
 
 export default function WikiFloatFigure({
   src,
+  image,
   alt = '',
   subtitle,
   caption,
@@ -65,7 +66,28 @@ export default function WikiFloatFigure({
   className,
 }) {
   const {withBaseUrl} = useBaseUrlUtils();
-  const resolvedSrc = src?.startsWith('http') ? src : withBaseUrl(src);
+
+  const rawSrc =
+    typeof src === 'string' && src.trim()
+      ? src.trim()
+      : typeof image === 'string' && image.trim()
+        ? image.trim()
+        : image && typeof image === 'object' && typeof image.src === 'string'
+          ? image.src.trim()
+          : '';
+
+  const resolvedAlt =
+    alt ||
+    (image && typeof image === 'object' && typeof image.alt === 'string'
+      ? image.alt
+      : '');
+
+  const resolvedSrc = rawSrc
+    ? rawSrc.startsWith('http')
+      ? rawSrc
+      : withBaseUrl(rawSrc)
+    : undefined;
+
   const resolvedSubtitle = subtitle ?? caption;
   const resolvedCredit = credit ?? author ?? source;
   const hasFooter = Boolean(resolvedSubtitle || resolvedCredit);
@@ -80,15 +102,21 @@ export default function WikiFloatFigure({
         className,
       )}
       style={width ? {width, maxWidth: width} : undefined}
-      aria-label={alt || resolvedSubtitle || undefined}>
+      aria-label={resolvedAlt || resolvedSubtitle || undefined}>
       <div className={styles.imageWrap}>
+        {resolvedSrc ? (
         <img
           src={resolvedSrc}
-          alt={alt}
+          alt={resolvedAlt}
           className={styles.img}
           loading="lazy"
           decoding="async"
         />
+        ) : (
+          <div className={styles.missing} role="status">
+            Falta la imagen (<code>src</code> o <code>image</code>).
+          </div>
+        )}
       </div>
       {hasFooter && (
         <figcaption className={styles.footer}>

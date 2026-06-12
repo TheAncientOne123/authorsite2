@@ -1,54 +1,91 @@
 ---
 title: Familia Santorelli
 description: Mafia italiana de perfil discreto y estrategia diplomática; protectores oficiosos de la célula de los Vinculados en Nueva Ámsterdam.
-updated: 2026-05-17
+updated: 2026-06-07
 type: familia
 saga: crsaso
 libro: necromancia-medianoche
 ---
 
-
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Familia Santorelli
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Familia Santorelli"
+    caption="Discreción mafiosa al servicio de un pacto centenario con Los Vinculados"
+    rows={[
+      { label: 'Tipo', value: 'Familia criminal / Organización mafiosa' },
+      { label: 'Alias', value: 'El clan Santorelli' },
+      { label: 'Estado actual', value: 'Activos (bajo reconstrucción tras la Masacre de la Catedral)' },
+      { label: 'Territorio', value: <><Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>; <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link></> },
+      { label: 'Especie', value: 'Humanos' },
+      { label: 'Actividad', value: 'Crimen organizado; protección de recintos sagrados' },
+      { label: 'Aliados', value: <><Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>; <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link></> },
+      { label: 'Rivales principales', value: <><Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link>; <Link to="/CrSaSo/familias/Familia%20De%20Fazio">Familia De Fazio</Link></> },
+      { label: 'Eventos clave', value: <><Link to="/CrSaSo/eventos/La%20Semana%20Negra">La Semana Negra</Link>; <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>; <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link></> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 31 (mencionados)</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Familia Santorelli"
-  caption="«La paz es negociación bajo amenaza»"
-  rows={[
-    { label: 'Tipo', value: 'Familia criminal (mafia italiana)' },
-    { label: 'Sede / Territorio', value: <>Nueva Ámsterdam; influencia en <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link>, corredores funerarios, templos y red hospitalaria</> },
-    { label: 'Liderazgo', value: 'Capo Santorelli y consejo familiar (nombres no divulgados en el manuscrito)' },
-    { label: 'Ámbito', value: 'Protección, contrabando selectivo, lavado, mediación política y eclesiástica' },
-    { label: 'Aliados', value: <><Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link> (cobertura logística a los hermanos Giannotti); contactos en clero y gremios funerarios</> },
-    { label: 'Rivales', value: <><Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link> (rivalidad histórica); tensión instrumental con redes asociadas a De Fazio y una mafia polaca secundaria</> },
-    { label: 'Estado', value: 'Activo (bajo perfil público)' },
-    { label: 'Eventos clave', value: <>
-      <Link to="/CrSaSo/eventos/La%20Semana%20Negra">La Semana Negra</Link>; 
-      <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>; 
-      tregua impuesta por el <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal</Link> tras el atentado en <Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">Italian’s Boot</Link>
-    </> },
-    { label: 'Miembros notables', value: 'No públicos en el manuscrito (capo y consiglieri reservados)' },
-  ]}
-/>
+La **Familia Santorelli** es una de las tres organizaciones criminales italianas más influyentes y poderosas que operan en la ciudad de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> durante la década de 1920. Junto a los clanes <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Tornatore</Link> y <Link to="/CrSaSo/familias/Familia%20De%20Fazio">De Fazio</Link>, forman el triunvirato que domina las actividades ilícitas y el control territorial de la urbe.
 
-## Perfil general
+A diferencia de sus rivales, los Santorelli poseen una identidad marcada por su estrecha relación con la fe católica y el misticismo, sirviendo como los protectores oficiales de la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> y de la orden secreta de cazadores y brujas conocida como <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>.
 
-La **Familia Santorelli** es una de las dos grandes mafias italianas que operan en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>, en tensión histórica con los <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Tornatore</Link>. A diferencia del estilo ostentoso y la violencia inmediata de sus rivales, los Santorelli privilegian **discreción, diplomacia y viejos vínculos con instituciones políticas y religiosas**. Su influencia recorre **juzgados, templos, funerarias y hospitales**, más visible en expedientes y favores que en titulares.
+## Perfil y Personalidad
 
-Bajo su paraguas de “protección”, ofrecieron **cobertura logística** a la célula local de <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>, operativa desde la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> y guiada por los hermanos <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco</Link> y <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link>.
+El clan Santorelli se caracteriza por una mentalidad que fusiona el código de honor de la mafia con una profunda tradición religiosa. Mientras que los <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Tornatore</Link> suelen asociarse con la ostentación, la intimidación directa y la expansión agresiva de sus negocios, los Santorelli privilegian la discreción, la diplomacia y la construcción de redes de influencia duraderas.
 
-## Enfrentamiento con los Tornatore
+Su poder se manifiesta menos en demostraciones públicas de fuerza y más en su capacidad para movilizar contactos dentro de parroquias, hospitales, funerarias, juzgados y otras instituciones tradicionales de Nueva Ámsterdam. Esta combinación de influencia social y autoridad moral les ha permitido consolidar una posición única dentro del bajo mundo de la ciudad.
 
-El conflicto con los Tornatore escaló al rojo vivo durante **<Link to="/CrSaSo/eventos/La%20Semana%20Negra">La Semana Negra</Link>**, especialmente tras el ataque al <Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">Italian’s Boot</Link> (propiedad Tornatore). La **<Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>**, recinto bajo su **amparo** a través de los Giannotti, se percibió como una afrenta directa.
+La familia proyecta una imagen de solemnidad y respeto por las tradiciones. Bajo su protección, la Catedral de Santa Regina no solo funcionó como un recinto religioso, sino también como refugio, centro de entrenamiento y base operativa para Los Vinculados. Su lealtad hacia esta organización fue tal que permitieron que generaciones de cazadores y brujas fueran entrenadas bajo su amparo.
 
-En una maniobra política de alto calibre, Santorelli y Tornatore **concertaron culpar** a una **mafia polaca secundaria** (relacionada con redes de **De Fazio**) para **enfriar el frente** bajo una **paz impuesta por el <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal</Link>**. La tregua sostuvo la fachada de equilibrio mientras los verdaderos responsables se diluían en la sombra.
+## Habilidades y Equipo
 
-## Relaciones y modus operandi
+Al ser un bloque de poder implacable, los Santorelli cuentan con recursos militares y logísticos de gran escala:
+*   **Capacidad Operativa:** Poseen contingentes de hombres armados, conocidos como "guardianes", capaces de sostener riñas masivas y proteger perímetros urbanos.
+*   **Logística de Camuflaje:** Han perfeccionado el uso de personal eclesiástico (monaguillos y sacerdotes) como seguridad encubierta.
+*   **Recintos Fortificados:** La <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> cuenta con bibliotecas y oficinas secretas blindadas, diseñadas para ocultar la actividad de los cazadores.
 
-- **Iglesia y servicios**: influencia en parroquias, funerarias y hospitales que facilita **movimientos discretos** de personas e información.  
-- **Vinculados (Giannotti)**: alianza táctica basada en **intercambio de protección** y **mutuo beneficio** contra amenazas anómalas y el descontrol urbano.  
-- **Tornatore**: rivalidad estructural; el equilibrio depende de pactos y líneas rojas tácitas.  
+## Biografía / Historia
 
-La **Familia Santorelli** se mantiene como **actor clave** del tablero nocturno: menos estruendo, más **palancas**.
+### Necromancia a Medianoche
+
+#### El Triunvirato y la Semana Negra
+Durante 1929, los Santorelli formaban parte del equilibrio de poder que mantenía a Nueva Ámsterdam bajo un control criminal estable. Sin embargo, el estallido de la <Link to="/CrSaSo/eventos/La%20Semana%20Negra">Semana Negra</Link> (o Guerra de las Pizzas) rompió este balance. Los <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>, bajo la influencia de <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, orquestaron ataques para que las familias italianas se culparan entre sí, forzando a los Santorelli a prepararse para una guerra civil mafiosa contra los Tornatore.
+
+#### Infiltración y Alianza
+
+En medio de la crisis, la catedral fue objeto de una investigación por parte de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>. Tras una confrontación inicial, ambos descubrieron que los Santorelli protegían a <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> y a la célula local de Los Vinculados.
+
+La relación entre ambas organizaciones se había desarrollado durante décadas bajo un esquema de cooperación mutua: los Santorelli proporcionaban protección logística, recursos y cobertura institucional, mientras que los Vinculados mantenían bajo control amenazas sobrenaturales capaces de alterar el equilibrio de la ciudad.
+
+El descubrimiento de esta alianza transformó la investigación en una colaboración estratégica contra los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link> y los intereses del clan Voronin.
+
+#### La Masacre de la Catedral
+El clan sufrió su golpe más devastador cuando <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, utilizando el poder desbordado de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, asaltó la catedral. El evento, conocido como la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>, resultó en la muerte de dieciséis miembros de la orden protegida por los Santorelli, incluyendo a la bruja <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link>. Este ataque diezmó la capacidad defensiva de la familia y marcó el fin de la distracción orquestada por los Voronin.
+
+#### Consecuencias y Encubrimiento Federal
+
+Tras la masacre, los Santorelli sufrieron una de las mayores pérdidas de su historia reciente. La destrucción de la célula local de Los Vinculados eliminó una pieza fundamental de su estructura de influencia y debilitó considerablemente su capacidad de respuesta ante amenazas sobrenaturales.
+
+En el ámbito político, la tragedia estuvo a punto de desencadenar una guerra abierta contra la <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link>. Sin embargo, ambas organizaciones terminaron aceptando una versión oficial impulsada por el <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">Buró Federal de Investigación</Link>, según la cual una pequeña mafia polaca vinculada a redes de los <Link to="/CrSaSo/familias/Familia%20De%20Fazio">De Fazio</Link> habría sido responsable de la violencia.
+
+Esta narrativa permitió establecer una tregua forzada entre las principales familias italianas de Nueva Ámsterdam, poniendo fin a la Semana Negra y preservando un equilibrio que, aunque frágil, evitó una guerra mafiosa de gran escala. Mientras los archivos oficiales registraban una disputa criminal convencional, los verdaderos responsables permanecieron ocultos en las sombras.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>:** Su principal activo y protegido místico; los Santorelli le brindaron los recursos para operar su escuela de cazadores.
+*   **<Link to="/CrSaSo/familias/Familia%20De%20Fazio">Familia De Fazio</Link>:** Acusados oficialmente de haber atacado los recintos sagrados de los Santorelli.
+*   **<Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link>:** Rivales comerciales que estuvieron a punto de iniciar una guerra total contra ellos tras la masacre del <Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">Italian's Boot</Link>.
+*   **<Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>:** Los Santorelli actúan como el brazo humano que financia y protege la guerra secreta de esta estirpe contra los <Link to="/CrSaSo/familias/Rapax%20Hominum">vampiros</Link>.
+
+## Curiosidades
+
+*   La catedral bajo su protección es la estructura más antigua e imponente del sector, eclipsando incluso a los rascacielos corporativos en importancia cultural.
+*   Se rumorea que el estatus de autonomía de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> en 1664 permitió a familias como los Santorelli consolidar su poder sin interferencia británica directa por más de un siglo.
+*   Durante el entrenamiento de los nuevos Vinculados, se reveló que los Santorelli custodian el <Link to="/CrSaSo/objetos-conceptos/Tomo%20de%20los%20Vinculados">Tomo de los Vinculados</Link>, el manifiesto original que rige la jerarquía de cazadores y brujas.

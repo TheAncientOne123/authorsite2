@@ -10,43 +10,71 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Monte Galbrook
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Monte Galbrook"
+    caption="El mirador de la ciudad"
+    rows={[
+      { label: 'Alias/Apodos', value: 'El mirador de la ciudad' },
+      { label: 'Estado actual', value: 'Escena de crimen bajo custodia policial' },
+      { label: 'Ubicación', value: <>Periferia de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> (10 minutos del centro)</> },
+      { label: 'Especie', value: 'Área natural / Bosque' },
+      { label: 'Población clave', value: 'Mapaches (fauna local)' },
+      { label: 'Uso principal', value: 'Mirador romántico y recreativo' },
+      { label: 'Afiliación', value: <>Jurisdicción de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 38</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Monte Galbrook"
-  caption="Bosque de pinos y mirador en niebla"
-  rows={[
-    { label: 'Tipo', value: 'Zona natural / Mirador rural' },
-    { label: 'Ubicación', value: <>A ~10 minutos al norte de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>, límite con la reserva estatal Wendell Pines</> },
-    { label: 'Entorno', value: 'Bosque de pino alto, niebla matutina, fauna menor (mapaches)' },
-    { label: 'Puntos destacados', value: 'Mirador, senderos, registros históricos de desapariciones' },
-    { label: 'Eventos notables', value: <><Link to="/CrSaSo/eventos/Desaparicion%20de%20Jessica%20McCarthy">Desaparición de Jessica McCarthy</Link></> },
-    { label: 'Estado', value: 'Acceso parcialmente restringido durante pesquisas; uso recreativo intermitente' },
-    { label: 'Personajes vinculados', value: <><Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>, <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link></> },
-  ]}
-/>
+El **Monte Galbrook** es un mirador natural situado en las afueras de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>, caracterizado por su elevación, sus densos bosques de pinos y una vista panorámica de la metrópolis. Históricamente, el sitio ha sido un destino popular para parejas jóvenes que buscan privacidad, aunque su atmósfera serena fue destruida en 1929 tras un violento incidente que involucró a miembros de la élite de la ciudad.
 
-**Tipo:** Zona natural / Mirador rural  
-**Ubicación:** Diez minutos al norte de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>, límite con la reserva estatal <Link to="/CrSaSo/lugares/Wendell%20Pines">Wendell Pines</Link>  
-**Puntos destacados:** Mirador forestal, senderos de pino alto, registros históricos de desapariciones  
-**Eventos notables:** <Link to="/CrSaSo/eventos/Desaparicion%20de%20Jessica%20McCarthy">Desaparición de Jessica McCarthy</Link>
+A nivel narrativo, el monte funciona como el escenario donde los investigadores <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> encuentran las pruebas físicas definitivas que vinculan los asesinatos urbanos con la naturaleza biológica de la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">familia McCarthy</Link>.
 
-## Descripción general
-El Monte Galbrook es un mirador elevado cubierto por densos bosques de pinos centenarios, a menudo envuelto en niebla matutina y reverenciado por su belleza agreste. Durante décadas fue sitio de caminatas, avistamiento de aves y encuentros discretos. Tras el caso McCarthy, su reputación se tornó siniestra.
+## Perfil y Paisaje Urbano
 
-Su vegetación silvestre, la presencia constante de mapaches y la calma del entorno contrastan con haber sido escenario de uno de los eventos más desconcertantes asociados al <Link to="/CrSaSo/eventos/La%20Semana%20Negra">inicio y cierre de la Semana Negra</Link>, ligado al <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link> y a la familia <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">McCarthy</Link>.
+El Monte Galbrook se define por una geografía accidentada y una vegetación dominada por pinos de gran altura. El acceso se realiza a través de un camino de grava que serpentea por la colina, culminando en un área de descanso que ofrece una vista impresionante de la ciudad.
 
-## Caso: Desaparición de Jessica McCarthy
-Fue el último lugar donde se avistó a <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, hija del magnate <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> y pieza clave en los experimentos del <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>.
+Psicológicamente, el lugar proyecta una dualidad: durante el día y las primeras horas de la noche, es percibido como un refugio romántico; sin embargo, tras el accidente de los McCarthy, se transformó en un entorno hostil de sombras espesas, hierba húmeda y un silencio denso interrumpido únicamente por el murmullo de la fauna local, como los mapaches que observan desde la penumbra.
 
-**Hallazgos iniciales**
-- Un **Cadillac rojo** completamente destruido, volcado boca arriba en la base del monte.  
-- Restos de sangre y huellas parciales.  
-- Patrón de daños **incompatible** con un accidente automovilístico convencional.
+## Habilidades y Equipo (Infraestructura)
 
-**Hipótesis consideradas**
-- Ataque de violencia extrema (no humano).  
-- Intervención ligada a fuerzas anómalas.
+A pesar de ser una zona natural, el monte cuenta con ciertos elementos logísticos:
+*   **Zona de Mirador:** Una explanada diseñada para el estacionamiento de vehículos recreativos.
+*   **Vías de Acceso:** Caminos de tierra y grava que requieren neumáticos en buen estado, especialmente tras las lluvias frecuentes de la región.
+*   **Perímetro de Seguridad:** Durante la crisis, el Departamento de Policía de Nueva Ámsterdam estableció un cerco con cintas amarillas y patrullas para proteger la escena del Cadillac volcado.
 
-El área fue acordonada; no se publicó conclusión oficial. Al final de la ronda de búsqueda, se localizó a <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> en los bosques colindantes. Las pesquisas posteriores involucraron a <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> dentro de la línea de investigación que desembocaría en los hechos mayores de la ciudad.
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Incidente del Cadillac Rojo
+En las vísperas del cumpleaños de <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, ella y <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> acudieron al mirador en un Cadillac rojo de lujo. Durante la velada, el coche fue embestido y volcado con una fuerza sobrehumana, dejando el vehículo boca arriba y destrozado como si hubiera sido atacado por una estampida. Jack Fox relató posteriormente haber visto a un "monstruo" de garras enormes y ojos verdes intensos antes de huir hacia el bosque.
+
+#### La Operación de Búsqueda
+Tras la denuncia de desaparición por parte de <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> y la familia Fox, se desplegó una unidad de búsqueda masiva liderada por el jefe de detectives <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>, la agente federal Lucía Sinclair y el detective Cassian Thorne. La búsqueda se extendió durante la noche bajo condiciones climáticas adversas, con el bosque volviéndose cada vez más denso y difícil de transitar.
+
+#### Hallazgos Críticos
+Durante la inspección del área circundante al Cadillac, los investigadores realizaron descubrimientos fundamentales para el caso:
+1.  **Huellas No Humanas:** Lucía Sinclair identificó pisadas irregulares en el lodo, idénticas a las halladas anteriormente en la residencia de la familia Chapman en <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>.
+2.  **El Collar de Cuarzo:** Cassian Thorne recuperó entre el barro una cadena dorada con un pentágono de cristal que contenía cuarzo blanco. El análisis de <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> confirmó que este objeto servía para regular flujos de energía negativa, revelando que Jessica McCarthy usaba el cristal para contener al monstruo en su interior.
+
+#### El Rescate de Jack Fox
+La operación en el monte concluyó con el hallazgo de Jack Fox por parte de un oficial de policía. Fox fue encontrado en un estado de debilidad extrema, cubierto de lodo y pálido, siendo trasladado de inmediato a la comisaría para su interrogatorio.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>:** La víctima principal del secuestro en el sitio y cuya naturaleza bestial fue confirmada mediante los hallazgos en el monte.
+*   **<Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>:** Sobreviviente del ataque y testigo presencial de la transformación ocurrida en el mirador.
+*   **Cassian Thorne y Lucía Sinclair:** Investigadores que utilizaron el monte como laboratorio de campo para conectar la profecía con los hechos biológicos de los McCarthy.
+*   **<Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>:** Lideró personalmente la búsqueda de su hija en el lugar, mostrando una desesperación que ocultaba su culpabilidad por haberle inyectado el Elemento 121.
+
+## Curiosidades
+
+*   El Monte Galbrook es el lugar donde Lucía Sinclair y Cassian Thorne compartieron un momento de camaradería tras la tensión del caso, sellando una apuesta para ir a cenar al restaurante *Vermont*.
+*   A pesar de la opulencia del Cadillac rojo de Jack Fox, el detective Thorne señaló la imprudencia de poseer un vehículo sin techo en una ciudad con inviernos tan crudos como Nueva Ámsterdam.
+*   Los mapaches del monte son descritos como "curiosos", sirviendo como los únicos testigos silenciosos de los eventos sobrenaturales que allí ocurren.

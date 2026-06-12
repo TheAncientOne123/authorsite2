@@ -29,6 +29,7 @@ const PLUGINS = [
   { id: 'orbe', contentDir: 'docs/orbe' },
   { id: 'cronicas', contentDir: 'docs/CrSaSo' },
   { id: 'meridian', contentDir: 'docs/meridian' },
+  { id: 'tumulo', contentDir: 'docs/tumulo' },
 ];
 
 function posix(p) {
@@ -234,6 +235,12 @@ function buildPreviewPart(data, content, raw, titleFallback) {
   if (typeof data.image === 'string' && data.image.trim()) {
     image = data.image.trim();
     imageAlt = typeof data.image_alt === 'string' && data.image_alt.trim() ? data.image_alt.trim() : titleFallback;
+  } else if (typeof data.youtube_id === 'string' && data.youtube_id.trim()) {
+    const vid = data.youtube_id.trim();
+    if (/^[\w-]{11}$/.test(vid)) {
+      image = `https://img.youtube.com/vi/${vid}/hqdefault.jpg`;
+      imageAlt = titleFallback;
+    }
   } else {
     const inf = extractInfoboxImage(raw);
     if (inf.image) {

@@ -1,5 +1,5 @@
 .root {
-  --wiki-figure-border: #a2a9b1;
+  --wiki-figure-border: var(--ifm-color-emphasis-300);
   float: left;
   clear: left;
   width: 220px;
@@ -64,6 +64,13 @@
   width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+.missing {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
 }
 
 .footer {

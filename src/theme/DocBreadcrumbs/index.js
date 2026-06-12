@@ -2,23 +2,21 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import {useLocation} from '@docusaurus/router';
 import {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
+import DOC_UNIVERSES from '@site/src/data/docUniverses';
 
 const UNIVERSE_SELECTOR = '/universes';
-
-/** @type {{ path: string; label: string }[]} */
-const DOC_UNIVERSES = [
-  {path: '/CrSaSo', label: 'Crónicas de Sangre y Sombra'},
-  {path: '/Meridian', label: 'Meridian'},
-  {path: '/orbe', label: 'El Orbe de los Destinos'},
-];
 
 const LABELS = {
   bestiario: 'Bestiario',
   campañas: 'Campañas',
   clases: 'Clases',
+  ensayos: 'Ensayos',
   eventos: 'Eventos',
   facciones: 'Facciones',
   familias: 'Familias y Organizaciones',
+  libros: 'Libros',
+  'libros-portada': 'Libros',
+  'objetos-conceptos': 'Objetos y conceptos',
   lugares: 'Lugares',
   mapa: 'Mapa',
   otros: 'Otros',
@@ -57,11 +55,6 @@ export default function DocBreadcrumbs() {
   }
 
   if (!resolvedBase) {
-    return null;
-  }
-
-  // CrSaSo: breadcrumbs desactivados (portada y fichas del universo).
-  if (docsBasePath === '/CrSaSo') {
     return null;
   }
 

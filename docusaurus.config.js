@@ -28,7 +28,7 @@ const docsCronicas = [
     path: 'docs/CrSaSo',
     routeBasePath: 'CrSaSo',
     sidebarPath: resolve('./docs/CrSaSo/cronicas_sidebars.js'),
-    breadcrumbs: false,
+    breadcrumbs: true,
   },
 ];
 
@@ -40,6 +40,18 @@ const docsMeridian = [
     path: 'docs/meridian',
     routeBasePath: 'Meridian',
     sidebarPath: resolve('./meridian_sidebars.js'),
+    breadcrumbs: true,
+  },
+];
+
+/**@type {[string, import('@docusaurus/plugin-content-docs').Options]} */
+const docsTumulo = [
+  '@docusaurus/plugin-content-docs',
+  {
+    id: 'tumulo',
+    path: 'docs/tumulo',
+    routeBasePath: 'Tumulo',
+    sidebarPath: resolve('./tumulo_sidebars.js'),
     breadcrumbs: true,
   },
 ];
@@ -99,12 +111,17 @@ const config = {
     ],
   ],
 
-  plugins: [docsOrbe, docsCronicas, docsMeridian],
+  plugins: [docsOrbe, docsCronicas, docsMeridian, docsTumulo],
 
   themeConfig:
 
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
       docs: {
         sidebar: {
           hideable: true,

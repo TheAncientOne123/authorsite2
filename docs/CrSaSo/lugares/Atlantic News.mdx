@@ -1,7 +1,7 @@
 ---
 title: Atlantic News
 description: "Principal corporación periodística de Nueva Ámsterdam, fundada por la familia Fox y núcleo informativo de la costa este."
-updated: 2026-05-17
+updated: 2026-06-08
 type: lugar
 saga: crsaso
 libro: necromancia-medianoche
@@ -10,26 +10,72 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Atlantic News
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Atlantic News"
+    caption="El diario de la ciudad"
+    rows={[
+      { label: 'Nombre completo', value: 'Atlantic News' },
+      { label: 'Alias/Apodos', value: 'El diario de la ciudad' },
+      { label: 'Estado actual', value: 'Activo (con personal desaparecido)' },
+      { label: 'Ubicación', value: <>Mural Street, <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Sede', value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> },
+      { label: 'Especie', value: 'Organización / Corporación de medios' },
+      { label: 'Familiares clave', value: <><Link to="/CrSaSo/personajes/Jack%20Fox">Familia Fox</Link> (propietarios)</> },
+      { label: 'Ocupación', value: 'Periodismo, cinematografía y documentales' },
+      { label: 'Afiliación', value: <><Link to="/CrSaSo/personajes/Jack%20Fox">Familia Fox</Link>; Sociedad de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Prólogo (cabecera de prensa)</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Atlantic News"
-  caption="La voz informativa de Nueva Ámsterdam"
-  rows={[
-    { label: 'Fundación', value: 'Finales del siglo XIX' },
-    { label: 'Fundadores', value: <Link to="/CrSaSo/personajes/Jack%20Fox">Familia Fox</Link> },
-    { label: 'Sede', value: <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link> },
-    { label: 'Tipo', value: 'Cadena periodística y mediática' },
-    { label: 'Influencia', value: 'Principal medio de la costa este de EE.UU.' },
-    { label: 'Personajes Relacionados', value: <><Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>, <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>, <Link to="/CrSaSo/personajes/Susan%20Barnes">Susan Barnes</Link>, <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link></> },
-  ]}
-/>
+**Atlantic News** es el consorcio periodístico más influyente de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> durante la década de 1920. Propiedad de la poderosa <Link to="/CrSaSo/personajes/Jack%20Fox">familia Fox</Link>, el diario no solo informa sobre los hitos industriales y sociales de la ciudad, sino que actúa como un agente activo en la investigación de la corrupción y el crimen organizado.
 
-**Atlantic News** es la principal cadena de medios y comunicación de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>, una corporación periodística con décadas de trayectoria.  
+Durante la crisis de los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link> en 1929, los equipos de investigación de Atlantic News se convirtieron en testigos accidentales de eventos sobrenaturales, logrando capturar las únicas evidencias visuales de la existencia de linajes antiguos en la ciudad.
 
-Fundada por la familia Fox a finales del siglo XIX, Atlantic se consolidó como el pilar informativo de la ciudad y de la costa este de los Estados Unidos. Su prestigio se construyó sobre una mezcla de oportunismo, inversiones estratégicas y la capacidad de moldear la opinión pública.  
+## Perfil y Personalidad
 
-En el manuscrito aparece como escenario laboral de personajes clave —como <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> y <Link to="/CrSaSo/personajes/Susan%20Barnes">Susan Barnes</Link>—, además de plataforma de influencia para editores y directores como <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>.  
+Atlantic News se proyecta como una institución de "probidad y búsqueda de la verdad", aunque su enfoque editorial a menudo refleja los intereses y la curiosidad de sus propietarios. El diario tiene un costo de 3 centavos por ejemplar y su sede en Mural Street es el epicentro de la opinión pública.
 
-El edificio de Atlantic es también un símbolo de poder en Nueva Ámsterdam: un rascacielos imponente con salas de redacción que nunca descansan, desde donde se controla la narrativa pública de los eventos más oscuros de la ciudad.
+Organizativamente, la empresa fomenta un espíritu de investigación audaz, permitiendo que reporteros como <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link> se infiltren en redes de tráfico y mafias para obtener exclusivas. Sin embargo, bajo la dirección de <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link>, el medio también ha incursionado en la producción de documentales históricos de alto riesgo, mostrando una faceta más aventurera y, en ocasiones, imprudente.
+
+## Habilidades y Equipo
+
+Como potencia mediática, Atlantic News cuenta con recursos técnicos avanzados para la época:
+*   **Poder de Difusión:** Capacidad para moldear la narrativa urbana, cubriendo eventos masivos como la inauguración de la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>.
+*   **Equipo Cinematográfico:** Cámaras de video, equipo de sonido profesional y laboratorios de revelado que permitieron registrar el primer documental sobre el <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">Castillo de Nueva Ámsterdam</Link>.
+*   **Logística de Transporte:** Furgonetas de alta velocidad diseñadas para el despliegue rápido de reporteros y equipo técnico, las cuales resultaron ser herramientas tácticas vitales durante enfrentamientos armados.
+*   **Armamento (Excepcional):** Durante la batalla en la refinería, una de sus furgonetas fue equipada con una ametralladora Gatling para la defensa contra el ejército de muertos.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### Auge Industrial y Crimen Organizado
+En marzo de 1929, Atlantic News dedicó su portada principal a la inauguración de la Gran Refinería de <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link>, calificándola como un hito estratégico para el país. Simultáneamente, el diario reportó el aumento de la tensión entre las familias mafiosas y cuestionó la seguridad de barrios exclusivos como <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link> tras el incidente en la residencia Chapman.
+
+#### El Documental del Castillo
+Bajo la producción de Jack Fox, un equipo técnico (<Link to="/CrSaSo/personajes/Susan%20Barnes">Susan Barnes</Link> y <Link to="/CrSaSo/personajes/Devin%20Kirby">Devin Kirby</Link>) y el historiador <Link to="/CrSaSo/personajes/Andrew%20Sheppard">Andrew Sheppard</Link> se trasladaron al Castillo de Nueva Ámsterdam para filmar un documental. La expedición culminó en tragedia cuando el equipo descubrió la tumba de <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>; el ataque de la vampiresa resultó en la muerte de Susan y Andrew, evento que Jack Fox intentó procesar a través de su labor periodística.
+
+#### La "Guerra de las Pizzas"
+Durante la denominada "Semana Negra", Atlantic News cubrió la parálisis social de la ciudad provocada por la guerra de mafias. Sus reporteros fueron los primeros en documentar el cierre de establecimientos italianos y el caos civil, mientras el FBI intentaba censurar cualquier filtración que apuntara a causas no humanas en los asesinatos.
+
+#### Batalla en la Refinería y Evidencia Perdida
+En el clímax del conflicto, la furgoneta de la agencia sirvió como transporte para los <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link> y sus aliados, siendo fundamental para el despliegue de explosivos que destruirían el complejo industrial. Tras la batalla, gran parte del material filmado desapareció junto con el camarógrafo Devin Kirby. Meses después, Jack Fox envió a <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> una cinta recuperada que contenía pruebas de la supervivencia de ciertos individuos en la explosión, lo que inició una nueva fase de investigaciones secretas.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/personajes/Jack%20Fox">Familia Fox</Link>:** Dueños y principales financistas de la organización.
+*   **<Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>:** Reportero estrella cuya transformación en *Rapax* y posterior caída marcaron un punto oscuro en la historia del diario.
+*   **<Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link>:** Su principal sujeto de cobertura corporativa y económica.
+*   **<Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>:** Colaboradora externa a quien Jack Fox confió la última evidencia visual de la crisis de 1929.
+
+## Curiosidades
+
+*   El diario publica un pronóstico del clima que resultó ser profético sobre las intensas lluvias de marzo y abril de 1929.
+*   La furgoneta de producción es conocida por ser capaz de transportar a grandes grupos de personas y equipos pesados más rápido que las patrullas policiales estándar.
+*   Atlantic News es la única organización que posee (o poseyó) grabaciones reales de la Reina de la Oscuridad, aunque oficialmente el gobierno atribuyó todo a montajes de mafias extranjeras.

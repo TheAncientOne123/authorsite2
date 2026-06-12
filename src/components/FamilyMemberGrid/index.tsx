@@ -24,6 +24,49 @@ function getInitials(name: string): string {
     .toUpperCase();
 }
 
+function MemberCard({
+  title,
+  href,
+  image,
+  imageAlt,
+}: {
+  title: string;
+  href: string;
+  image?: string;
+  imageAlt: string;
+}) {
+  const [imgFailed, setImgFailed] = useState(false);
+  const showImage = Boolean(image) && !imgFailed;
+
+  return (
+    <Link
+      to={href}
+      className={styles.cardLink}
+      role="listitem"
+      aria-label={`Ver ficha de ${title}`}>
+      <article className={styles.card}>
+        <div className={styles.media}>
+          {showImage ? (
+            <img
+              className={styles.img}
+              src={image}
+              alt={imageAlt}
+              loading="lazy"
+              decoding="async"
+              onError={() => setImgFailed(true)}
+            />
+          ) : (
+            <span className={styles.initials} aria-hidden="true">
+              {getInitials(title)}
+            </span>
+          )}
+        </div>
+        <h3 className={styles.title}>{title}</h3>
+      </article>
+    </Link>
+  );
+}
+
 export default function FamilyMemberGrid({members, pluginId = 'cronicas'}: Props) {
   const {withBaseUrl} = useBaseUrlUtils();
   const previewJsonUrl = useBaseUrl('/card-preview-meta.json');
@@ -77,31 +120,13 @@ export default function FamilyMemberGrid({members, pluginId = 'cronicas'}: Props
   return (
     <div className={styles.grid} role="list">
       {items.map(({id, title, href, image, imageAlt}) => (
-        <Link
+        <MemberCard
           key={id}
-          to={href}
-          className={styles.cardLink}
-          role="listitem"
-          aria-label={`Ver ficha de ${title}`}>
-          <article className={styles.card}>
-            <div className={styles.media}>
-              {image ? (
-                <img
-                  className={styles.img}
-                  src={image}
-                  alt={imageAlt}
-                  loading="lazy"
-                  decoding="async"
-                />
-              ) : (
-                <span className={styles.initials} aria-hidden="true">
-                  {getInitials(title)}
-                </span>
-              )}
-            </div>
-            <h3 className={styles.title}>{title}</h3>
-          </article>
-        </Link>
+          title={title}
+          href={href}
+          image={image}
+          imageAlt={imageAlt}
+        />
       ))}
     </div>
   );

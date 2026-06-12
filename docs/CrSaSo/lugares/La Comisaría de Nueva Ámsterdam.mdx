@@ -1,7 +1,7 @@
 ---
 title: La Comisaría de Nueva Ámsterdam
 description: "Sede principal de la policía local; centro operativo de investigaciones, interrogatorios y forense. Epicentro narrativo durante El Cuarto Rojo y la antesala de la Semana Negra."
-updated: 2026-05-17
+updated: 2026-06-08
 type: lugar
 saga: crsaso
 libro: necromancia-medianoche
@@ -10,51 +10,71 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# La Comisaría de Nueva Ámsterdam
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Comisaría de Policía de Nueva Ámsterdam (NYAPD)"
+    caption="La central, segunda casa (para Cassian Thorne)"
+    rows={[
+      { label: 'Alias/Apodos', value: 'La central, Segunda casa (para Cassian Thorne)' },
+      { label: 'Estado actual', value: 'Activa' },
+      { label: 'Ubicación', value: <>Centro de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> (cerca del distrito moderno y rascacielos)</> },
+      { label: 'Jurisdicción', value: <>Centro histórico, distrito moderno y suburbios (incluyendo <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>)</> },
+      { label: 'Especie', value: 'Organización gubernamental humana' },
+      { label: 'Personal clave', value: <><Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link> (jefe de detectives); <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> (detective, suspendido); <Link to="/CrSaSo/personajes/Logan%20Crane">Logan Crane</Link> (detective)</> },
+      { label: 'Ocupación', value: 'Aplicación de la ley y mantenimiento del orden público' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Ciudad de Nueva Ámsterdam</Link> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 10</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="La Comisaría de Nueva Ámsterdam"
-  caption="Centro operativo de la policía local"
-  rows={[
-    { label: 'Tipo de ubicación', value: 'Instalación policial / Centro operativo' },
-    { label: 'Ubicación', value: <>Distrito administrativo del <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link></> },
-    { label: 'Arquitectura', value: 'Brutalista funcional con detalles góticos discretos' },
-    { label: 'Divisiones', value: 'Homicidios, Forense, Inteligencia, Interrogatorios, Archivo' },
-    { label: 'Estado', value: 'Activo' },
-    { label: 'Eventos importantes', value: <>
-      <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>; 
-      <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>; 
-      Interrogatorio de <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> (post <Link to="/CrSaSo/eventos/Desaparicion%20de%20Jessica%20McCarthy">Desaparición de Jessica McCarthy</Link>); 
-      coordinación previa a la <Link to="/CrSaSo/eventos/La%20Semana%20Negra">Semana Negra</Link>
-    </> },
-    { label: 'Personajes relacionados', value: <>
-      <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>; 
-      <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>; 
-      <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>; 
-      <Link to="/CrSaSo/personajes/Logan%20Crane">Logan Crane</Link>; 
-      <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>
-    </> },
-  ]}
-/>
+La **Comisaría de Policía de Nueva Ámsterdam** es la institución principal encargada de la seguridad pública y la investigación criminal en la metrópolis. Históricamente, el edificio fue la estructura más imponente de la ciudad, aunque en la actualidad se encuentra rodeado y eclipsado por los rascacielos modernos del centro. Funciona como el centro de operaciones donde se coordinaron los esfuerzos legales frente a la crisis de los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link> en 1929.
 
+A pesar de su fachada de orden, la comisaría opera en un equilibrio precario entre la ley y el poder de las mafias locales, manteniendo pactos de respeto mutuo para garantizar la estabilidad de los distritos. Es también un lugar de memoria histórica, albergando monumentos a sus oficiales caídos.
 
-## Descripción General 
-La Comisaría de Nueva Ámsterdam es la sede principal de la policía local y uno de los epicentros narrativos más importantes de _Necromancia a Medianoche_. Desde aquí se coordinan investigaciones, se realizan interrogatorios, se analizan pruebas forenses y se resguardan detenidos bajo sospecha de crímenes sobrenaturales o de alta complejidad.
+## Perfil y Personalidad
 
-Su arquitectura mezcla funcionalidad brutalista con elementos góticos discretos, reflejando la tensión entre la modernidad institucional y la tradición oscura de la ciudad. Internamente opera con jerarquía rígida; sin embargo, los procedimientos suelen verse entorpecidos por corrupción, presiones políticas o simple falta de preparación ante fenómenos paranormales.
+Físicamente, el edificio presenta una arquitectura antigua y solemne. El recibidor corporativo está diseñado para una bienvenida neutral, con un escritorio principal donde tres oficiales atienden tanto a ciudadanos desesperados como a reportes de crímenes menores. Los pasillos interiores son laberínticos y están impregnados del aroma a café y cigarrillos, con suelos de baldosas grises que refuerzan una atmósfera fría y funcional.
 
-## Eventos importantes
-- Base de trabajo de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> y <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> durante <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>.  
-- Sede de interrogatorios clave: <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> y la de <Link to="/CrSaSo/personajes/Jack%20Fox">Jack Fox</Link> tras la <Link to="/CrSaSo/eventos/Desaparicion%20de%20Jessica%20McCarthy">Desaparición de Jessica McCarthy</Link>.  
-- Centro de operaciones en la recta final de la investigación y antesala de la <Link to="/CrSaSo/eventos/La%20Semana%20Negra">Semana Negra</Link>.
+Organizativamente, el espacio está rígidamente dividido: la primera sección pertenece a los policías de campo (asaltos y rehenes), seguida por la sección de detectives e investigadores de casos complejos, y culmina en las oficinas de los altos mandos, donde reside la jefatura de Dorian Blackwood. Las paredes están decoradas con tableros de conexiones, retratos de los fundadores de la ciudad y cuadros históricos que documentan el pasado de Nueva Ámsterdam.
 
-## Personajes relacionados
-- <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> (detective adscrito a la oficina principal).  
-- <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> (agente del Buró Federal; colaboración temporal).  
-- <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link> (superior directo de Thorne).  
-- <Link to="/CrSaSo/personajes/Logan%20Crane">Logan Crane</Link> (compañero de Thorne).  
-- <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> (Consejero temporal).
+## Habilidades y Equipo
 
-## Estilo y atmósfera
-Fría, burocrática y a ratos opresiva. Oficinas con expedientes antiguos, fluorescentes parpadeantes y vitrales opacos que apenas dejan entrar la lluvia constante. En los sótanos, celdas y salas de interrogatorio revelan la cara más oscura del sistema judicial local.
+La comisaría cuenta con los recursos estándar de una fuerza de seguridad urbana de la época, además de instalaciones especializadas:
+*   **División de Detectives:** Personal capacitado para resolver casos de alta complejidad que desafían la lógica convencional.
+*   **Infraestructura de Interrogatorio:** Salas equipadas con vidrios de doble visión para la observación táctica de sospechosos.
+*   **Archivos y Expedientes:** Una dirección centralizada de registros que custodia la historia criminal y civil de los ciudadanos, incluyendo datos de nacimiento y antecedentes médicos.
+*   **Atrio de los Héroes:** Un espacio verde en la parte trasera, flanqueado por macetas y ventanales, que contiene esculturas de bronce de oficiales destacados, como <Link to="/CrSaSo/personajes/Caleb%20Thorne">Caleb Thorne</Link>.
+*   **Transporte y Armamento:** Flota de patrullas oficiales y armamento reglamentario, incluyendo rifles para unidades de asalto y revólveres de servicio.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Caso del Cuarto Rojo (1929)
+La comisaría se convirtió en el punto de encuentro entre la policía local y el <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">FBI</Link> cuando Dorian Blackwood solicitó ayuda federal tras el perturbador asesinato en la mansión Chapman. Durante este periodo, se asignó un escritorio temporal a la agente <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>, permitiendo una colaboración estrecha pero tensa con el detective Cassian Thorne.
+
+#### La Crisis de la "Semana Negra"
+Tras la masacre en el restaurante <Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">The Italian's Boot</Link>, la comisaría fue rodeada por reporteros y se convirtió en el epicentro de la toma de decisiones políticas frente a la guerra de mafias. El comisionado de policía y los agentes federales Huber y Turner intentaron tomar el control total, desplazando las teorías "fantásticas" de Sinclair y Thorne a favor de una narrativa de conflicto territorial mafioso.
+
+#### La Operación Encubierta y la Refinería
+Debido a la presión política y la presencia federal, el jefe Dorian Blackwood se vio obligado a suspender formalmente a Thorne y Logan Crane. Este acto permitió que los detectives operaran fuera del marco oficial para enfrentar la amenaza de los Voronin. Antes de la batalla final, los aliados utilizaron el búnker de armamento privado de la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">familia McCarthy</Link>, ya que la comisaría no podía comprometer sus recursos oficiales sin alertar a los agentes federales.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>:** Jefe de detectives y figura de autoridad moral en la estación; protector del legado de Caleb Thorne.
+*   **<Link to="/CrSaSo/personajes/Caleb%20Thorne">Caleb Thorne</Link>:** Héroe póstumo de la comisaría cuya estatua en el atrio sirve como recordatorio del costo de la rectitud en la ciudad.
+*   **<Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">FBI</Link>:** Existe una relación de desconfianza mutua; los oficiales locales a menudo ven a los federales como burócratas ajenos a la realidad de las calles.
+*   **<Link to="/CrSaSo/personajes/Veronica%20Black">Verónica Black</Link>:** Mantiene un "acuerdo no dicho" con la jefatura de detectives que garantiza la paz en el <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">centro histórico</Link> a cambio de cierta autonomía para su club.
+
+## Curiosidades
+
+*   La oficina de Dorian Blackwood tiene la placa "Detective Dorian Blackwood" grabada en vidrio esmerilado.
+*   La estatua de Caleb Thorne especifica que fue un "Héroe de la Comisaría de Nueva Ámsterdam y de los Estados Unidos de América".
+*   Cassian Thorne evita visitar el atrio de las estatuas, afirmando que no necesita piedra para recordar a su padre.
+*   Lucía Sinclair prefería estudiar en su escritorio de la comisaría debido a que sus vecinos en su residencia eran demasiado ruidosos.
+*   A pesar de los rascacielos que la rodean, el interior del edificio conserva un estilo antiguo que evoca un "relicario" de otra época.

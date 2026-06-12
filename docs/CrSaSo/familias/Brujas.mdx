@@ -1,77 +1,98 @@
 ---
 title: Brujas
-description: "Linaje arcano de mujeres vinculadas a un cazador; magia de pacto, revelación y protección que opera en la sombra de Nueva Ámsterdam."
+description: Rama espiritual de Los Vinculados especializada en percepción sobrenatural, alquimia y combate estratégico contra los Rapax Hominum.
 updated: 2026-05-17
 type: familia
 saga: crsaso
 libro: necromancia-medianoche
+estado: Activas
 ---
 
-
 import Infobox from '@site/src/components/Infobox';
+import FamilyMemberGrid from '@site/src/components/FamilyMemberGrid';
 import Link from '@docusaurus/Link';
-
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Brujas
-
 <BrowserOnly fallback={<div />}>
-  {() => (
-    <Infobox
-      title="Brujas"
-      caption="«Sin vínculo no hay poder que perdure»"
-      image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/simbolos/luna', alt: 'Luna' }}
-      rows={[
-        { label: 'Tipo', value: 'Linaje arcano / Orden esotérica (Brujas Vinculadas)' },
-        { label: 'Sede / Territorio', value: <>Red descentralizada en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>; nodos en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> y herbolarias del <Link to="/CrSaSo/lugares/El%20Nido">Nido</Link></> },
-        { label: 'Liderazgo', value: 'Consejo laxo de matriarcas y maestras de círculo; tutorías individuales' },
-        { label: 'Ámbito', value: 'Magia de vínculo con cazadores; revelación, protección, rituales de sangre, herbolaria y alquimia' },
-        { label: 'Aliados', value: <><Link to="/CrSaSo/familias/Cazadores">Cazadores</Link> (pareja vinculada); alianzas puntuales con investigadores y prensa independiente</> },
-        { label: 'Rivales', value: <>Rapax Hominum (p. ej. <Link to="/CrSaSo/familias/La%20Familia%20Voronin">Voronin</Link>, <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>)</> },
-        { label: 'Estado', value: 'Activo (clandestino)' },
-        { label: 'Eventos clave', value: <>
-          Entrenamiento básico en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>; 
-          <Link to="/CrSaSo/eventos/La%20Infiltraci%C3%B3n%20Cat%C3%B3lica">La Infiltración Católica</Link>; 
-          señales de despertar en el <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">Balneario Rushmore</Link>; 
-          clímax en la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>
-        </> },
-        { label: 'Miembros notables', value: <><Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> (bruja en formación); <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link> (bruja experimentada)</> },
-      ]}
-    />
-  )}
+{() => (
+  <Infobox
+    title="Brujas"
+    image={{ src: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/cronicas-sangre/simbolos/luna', alt: 'Brujas Vinculadas' }}
+    caption="«Sin vínculo no hay poder que perdure.»"
+    rows={[
+      { label: 'Tipo', value: 'Rama espiritual de Los Vinculados' },
+      { label: 'Estado actual', value: 'Activas' },
+      { label: 'Naturaleza', value: 'Humanas con facultades místicas desarrolladas' },
+      { label: 'Función principal', value: 'Percepción sobrenatural y apoyo estratégico' },
+      { label: 'Organización', value: <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link> },
+      { label: 'Sede histórica', value: <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> },
+      { label: 'Miembros destacados', value: <><Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link>; <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link></> },
+      { label: 'Objetos asociados', value: <><Link to="/CrSaSo/objetos-conceptos/Recetario%20de%20las%20Brujas">Recetario de las Brujas</Link>; <Link to="/CrSaSo/objetos-conceptos/Monedas%20de%20Lat%C3%B3n">Monedas de Latón</Link></> },
+      { label: 'Primera aparición', value: <>Cecilia Amadeo en <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 31</> },
+    ]}
+  />
+)}
 </BrowserOnly>
 
-## Resumen General
+Las **Brujas** constituyen una de las dos ramas fundamentales de <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>, una orden ancestral creada para combatir a los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>. Su función dentro de la organización es proporcionar percepción sobrenatural, guía espiritual y apoyo táctico a los <Link to="/CrSaSo/familias/Cazadores">cazadores</Link>.
 
-Las **Brujas Vinculadas** son herederas de un linaje que enlaza **sangre, tierra y memoria**. Su magia se fundamenta en **pactos** con fuerzas elementales, **animales guías** y espíritus antiguos. Por designio profético, cada bruja está llamada a formar **vínculo** con un <Link to="/CrSaSo/familias/Cazadores">cazador</Link>; juntos constituyen una pareja operativa capaz de enfrentar amenazas como la **Reina de la Oscuridad** o clanes familiares de los Rapax Hominum.
+A diferencia de la imagen popular asociada a la hechicería oscura, las Brujas Vinculadas son conocidas como **Brujas Luminosas**, mujeres capaces de interactuar con el <Link to="/CrSaSo/objetos-conceptos/Reino%20de%20las%20sombras">Reino de las Sombras</Link> y detectar amenazas que permanecen invisibles para los seres humanos ordinarios.
 
-A la par de su formación mística, las brujas estudian **química, alquimia, medicina** y **defensa personal**. La preparación es pragmática: ante enemigos como los **Rapax**, la supervivencia exige cabeza fría y recursos tangibles. Su **poder florece con el vínculo**: sin él, su magia contra depredadores específicos (p. ej. Rapax) es limitada.
+Dentro de la doctrina de Los Vinculados, una bruja nunca opera completamente sola. Su verdadero potencial solo se manifiesta cuando establece un vínculo con un cazador.
 
-## Características y poder
+## Filosofía
 
-- **Sensibilidad espiritual aumentada**: percepción de velos, lectura de símbolos y detección de maldiciones.  
-- **Mediación animal**: diálogo con guías (cuervos, ranas, lobos, ciervos) que orientan o advierten.  
-- **Magia estratégica**: menos destructiva que **reveladora/protectora** (sellos, consagraciones, sangre como contrato).  
-- **Alquimia y herbolaria**: talismanes, ungüentos y tónicos de campo; soporte a rituales.  
+Las Brujas consideran que la percepción es tan importante como la fuerza. Mientras los cazadores ejecutan la acción física, ellas proporcionan información, orientación y comprensión del mundo sobrenatural.
 
-**Límites y condiciones del poder**  
-- El **vínculo con su cazador** amplifica y estabiliza los dones: permite **ver habilidades enemigas**, **quebrar maleficios** y **desarmar oponentes por contacto**.  
-- Sin vínculo activo, la magia contra ciertas criaturas (como los **Rapax**) **no alcanza su plenitud**.
+Según las enseñanzas del <Link to="/CrSaSo/objetos-conceptos/Tomo%20de%20los%20Vinculados">Tomo de los Vinculados</Link>, la unión entre ambos constituye una sola entidad operativa capaz de enfrentar a los Rapax Hominum.
 
-## Formación y estructura
+Las capacidades de una bruja alcanzan su máximo potencial cuando esta forma un vínculo con un cazador. Sin dicho vínculo, muchas de sus facultades permanecen limitadas o incompletas.
 
-- **Círculos** discretos con **mentoras**; aprendizaje mixto (teórico, ritual y operativo).  
-- Entrenamientos básicos registrados en dependencias de la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> (criptas, salas laterales).  
-- Recursos distribuidos en herbolarias del <Link to="/CrSaSo/lugares/El%20Nido">Nido</Link> y archivos no oficiales de la <Link to="/CrSaSo/lugares/La%20Biblioteca%20de%20Nueva%20Ámsterdam">Biblioteca</Link>.
+Para una explicación detallada del fenómeno, véase: <Link to="/CrSaSo/objetos-conceptos/Vinculo%20de%20Sangre">Vínculo de Sangre</Link>.
 
-## Relaciones
+## Capacidades
+Las capacidades de las brujas se manifiestan principalmente en el plano etéreo y la manipulación energética:
+*   **Visión de Sombras:** Permite percibir el Reino de las Sombras y localizar el punto débil (esfera azulada) de un *Rapax Hominum*.
+*   **Proyección y Desdoblamiento:** Capacidad de separar la conciencia del cuerpo físico para guiar al cazador o realizar consultas espirituales.
+*   **Conexión Natural:** Los animales (como cuervos y ranas) actúan como mentores y guías, comunicándose directamente con ellas para revelar secretos ocultos.
+*   **Alquimia de Sanación:** Conocimiento para preparar ungüentos y pociones que extraen venenos sobrenaturales o potencian las capacidades físicas de los Vinculados.
 
-- **Con los Cazadores**: relación simbiótica (pareja vinculada).  
-- **Con clanes Rapax**: Enemigos principales de la organización de los <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link>
+**Equipo notable:**
+*   **<Link to="/CrSaSo/objetos-conceptos/Recetario%20de%20las%20Brujas">Recetario de Brujas</Link>:** Un tomo antiguo que contiene fórmulas místicas que solo surten efecto bajo el contexto de un vínculo activo.
+*   **<Link to="/CrSaSo/objetos-conceptos/Monedas%20de%20Lat%C3%B3n">Monedas de Latón</Link>:** Artefactos grabados con un sol y una luna que sirven como detectores de enemigos y brújulas de localización entre compañeros.
 
-## Rol en la trama
+## Brujas notables
 
-- **Lucia Sinclair**: bruja vinculada en formación; dialoga con animales, descifra maldiciones y **protege a su vínculo** (Cassian) mediante **rituales de sangre**. Señales de consolidación del vínculo aparecen en el <Link to="/CrSaSo/lugares/El%20Balneario%20Rushmore">Balneario Rushmore</Link>.  
-- **Tamara Dobrescu**: bruja de linaje cuya trayectoria entre alquimia, necromancia y tácticas de sombra la coloca en el eje de varios eventos (de <Link to="/CrSaSo/lugares/Raven%20District">Raven District</Link> a la <Link to="/CrSaSo/lugares/La%20Refiner%C3%ADa%20McCarthy">Refinería McCarthy</Link>).  
-- En el clímax, la **magia de vínculo** resulta determinante para oponerse a la **Reina de la Oscuridad** y reconfigurar el destino de Nueva Ámsterdam.
+<FamilyMemberGrid
+  pluginId="cronicas"
+  members={[
+    'personajes/Lucia Sinclair',
+    'personajes/Cecilia Amadeo',
+  ]}
+/>
 
+## Biografía / Historia
+
+### Necromancia a Medianoche 
+
+#### El Despertar en la Catedral
+La presencia de las brujas en <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> se mantuvo en secreto bajo la fachada de la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>. <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link>, operando bajo la protección de la <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Familia Santorelli</Link>, realizaba rituales de "limpieza espiritual" para identificar a otras de su especie entre la población. Durante una operación de infiltración, Cecilia detecta el potencial de <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>, intentando convencerla de su propósito antes de que el asalto de los *Rapax* destruyera la orden.
+
+#### La Caída de Cecilia y la Sucesión
+Tras la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">masacre de la Catedral de Santa Regina</Link>, perpetrada por una <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link> transformada, Cecilia fallece en brazos de <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>. Esto deja a Lucía Sinclair como la única bruja activa capaz de enfrentar la profecía de la <Link to="/CrSaSo/objetos-conceptos/Reina%20de%20la%20Oscuridad">Reina de la Oscuridad</Link>. Lucía debe aprender de manera acelerada a utilizar el Recetario de las Brujas y a confiar en su vínculo con el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> para sobrevivir.
+
+#### El Clímax en la Refinería
+En la <Link to="/CrSaSo/eventos/Batalla%20en%20la%20Refiner%C3%ADa%20McCarthy">batalla final de la Refinería McCarthy</Link>, Lucía Sinclair demuestra el máximo potencial de una bruja al proyectarse etéreamente y crear múltiples "clones" de sí misma para guiar la puntería de Thorne contra el traidor <Link to="/CrSaSo/personajes/Oliver%20Henderson">Oliver Henderson</Link>. Aunque inicialmente se creía que Lucía y Cassian eran los protagonistas de la profecía, se revela que su papel fue facilitar que las hermanas <Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia</Link> y <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> —vinculadas por sangre— realizaran el sacrificio final para decapitar a la Reina.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/familias/Cazadores">Cazadores</Link>:** Existe una interdependencia absoluta; las brujas proporcionan la visión y el cazador la ejecución física.
+*   **<Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>:** Son sus depredadores naturales. Los Rapax, como Tamara Dobrescu, respetan y temen el potencial de las brujas, intentando reclutarlas o eliminarlas antes de que el vínculo se fortalezca.
+*   **<Link to="/CrSaSo/personajes/Anastasia%20Dobrescu">Anastasia Dobrescu</Link>:** Actuó como mentora externa para Lucía, sanando sus heridas y empujándola a aceptar su rol dentro del equilibrio entre luz y sombra.
+
+## Curiosidades
+
+*   Las brujas nacen con una "pieza única" que las hace sentir inadaptadas en la sociedad humana convencional hasta que encuentran a su cazador.
+*   El enlace místico de sus herramientas (como las monedas) requiere un ritual de sangre compartida.
+*   Según la mitología interna, las brujas no están aisladas en el bosque, sino que cuentan con la compañía constante de la naturaleza a través de sus aliados animales.
+*   Lucía Sinclair descubrió que su cabello rojizo brillaba con un fulgor inquebrantable ("como el sol de verano") al manifestarse en el plano de las sombras.

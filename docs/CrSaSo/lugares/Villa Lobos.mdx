@@ -10,31 +10,66 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Villa Lobos
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Fraccionamiento Villa Lobos"
+    caption="El suburbio de los privilegiados; el sector más seguro"
+    rows={[
+      { label: 'Alias/Apodos', value: 'El suburbio de los privilegiados; El sector más seguro' },
+      { label: 'Estado actual', value: 'Activo (bajo vigilancia tras la crisis de 1929)' },
+      { label: 'Residencia', value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> },
+      { label: 'Ubicación', value: <><Link to="/CrSaSo/lugares/Crystal%20Square">Distrito de Crystal Square</Link></> },
+      { label: 'Especie', value: 'Zona residencial de alta sociedad' },
+      { label: 'Residentes clave', value: <><Link to="/CrSaSo/familias/La%20Familia%20McCarthy">Familia McCarthy</Link>; Familia Chapman</> },
+      { label: 'Ocupación', value: 'Enclave habitacional de la élite industrial y política' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Ciudad de Nueva Ámsterdam</Link> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 1</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Villa Lobos"
-  caption="Residencial cerrado de Crystal Square"
-  rows={[
-    { label: 'Tipo de ubicación', value: 'Fraccionamiento cerrado' },
-    { label: 'Ubicación', value: <>Sector <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>, <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link></> },
-    { label: 'Acceso', value: 'Caseta de seguridad, control de visitas y placas' },
-    { label: 'Seguridad', value: 'Vigilancia perimetral, cámaras en accesos y rotondas' },
-    { label: 'Infraestructura', value: 'Casas unifamiliares con jardín privado; vialidades internas y áreas verdes' },
-    { label: 'Primera aparición', value: <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link> },
-    { label: 'Eventos importantes', value: <><Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link></> },
-    { label: 'Residentes relacionados', value: <><Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>; <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>; <Link to="/CrSaSo/familias/La%20Familia%20Chapman">La Familia Chapman</Link></> },
-    { label: 'Estado', value: 'Activo (con notoriedad por antecedentes criminales)' },
-  ]}
-/>
+**Villa Lobos** es un fraccionamiento de lujo ubicado dentro del distrito de <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>. Es reconocido por ser el hogar de los ciudadanos más influyentes de la nación, incluyendo a magnates del petróleo y empresarios destacados. Hasta marzo de 1929, el sector se promocionaba como el lugar más seguro y moralmente íntegro de la ciudad, una percepción que fue destruida tras una serie de incidentes de violencia no humana.
 
-**Tipo de ubicación:** Fraccionamiento cerrado.  
-**Primera aparición:** <Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>  
-**Eventos Importantes:** <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>  
-**Residentes Relacionados:** <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>, <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, <Link to="/CrSaSo/familias/La%20Familia%20Chapman">La Familia Chapman</Link>
+## Perfil y Atmósfera
 
-## Descripción General
-**Villa Lobos** es un fraccionamiento residencial cerrado dentro del sector de <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link> en <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>. El conjunto está compuesto por **casas unifamiliares** con **jardín privado**, **vigilancia perimetral** y **acceso restringido** mediante **caseta de seguridad** y registro de visitas.
+Físicamente, Villa Lobos se caracteriza por una arquitectura opulenta y variada, que oscila entre la "discreta elegancia" de la <Link to="/CrSaSo/lugares/Mansi%C3%B3n%20McCarthy">mansión McCarthy</Link> y la "opulencia ostentosa" de los Chapman. Las propiedades están resguardadas por bardas de metal negro con relieves elegantes y picos afilados diseñados para disuadir intrusos. Los interiores son ejemplos de lujo de la época, con suelos de mármol, escaleras de caracol, candelabros majestuosos y mobiliario de madera finlandesa.
 
-Pese a su perfil discreto y apariencia de normalidad, Villa Lobos se convirtió en un **punto clave** de la narrativa cuando <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> investigaron el **asesinato múltiple** conocido como <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>. La escena del crimen —con **indicios de naturaleza sobrenatural**— marcó un **punto de inflexión** en _<Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>_, dejando a Villa Lobos con una reputación ambigua: **exclusividad residencial** por fuera, **memoria oscura** por dentro.
+Psicológicamente, el fraccionamiento proyectaba una imagen de invulnerabilidad. Sus habitantes se describían a sí mismos como "personas honestas y con buenos valores", manteniendo un hermetismo social que separaba la vida suburbana del caos del <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link>. Sin embargo, tras el "Caso del Cuarto Rojo", el ambiente se cargó de sospecha y desconfianza, sugiriendo que incluso los barrios más exclusivos eran inmunes a los conflictos que acechaban a la ciudad.
+
+## Infraestructura y Seguridad
+
+Como enclave de la élite, Villa Lobos cuenta con recursos superiores:
+*   **Mansiones Fortificadas**: Propiedades como la de los McCarthy incluyen búnkeres de armamento subterráneos y laboratorios adaptados con tecnología avanzada.
+*   **Seguridad Privada**: Cuerpos de guardia armados con protocolos de acceso estrictos que incluyen intercomunicadores y vigilancia perimetral constante.
+*   **Entorno Natural**: La zona está integrada por jardines con robles, acacias y arbustos de hojas rojas, además de estar rodeada por los bosques de pinos de la periferia, lo que proporciona una barrera acústica contra el zumbido industrial.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Incidente del Cuarto Rojo (1929)
+La tranquilidad de Villa Lobos se quebró en marzo de 1929 con el asesinato de la cuñada de Frederick Chapman. La brutalidad de la escena, donde la víctima fue encontrada fusionada con el mueble de la cama debido a una fuerza física imposible para un humano, marcó la primera vez que la violencia mística penetró las murallas del fraccionamiento. El diario <Link to="/CrSaSo/lugares/Atlantic%20News">Atlantic News</Link> cuestionó públicamente si Crystal Square era tan seguro como parecía, sembrando dudas sobre la efectividad de las instituciones.
+
+#### La Investigación de los McCarthy
+Durante el peritaje oficial, el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y la agente federal <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> descubrieron huellas no humanas en el lodo de los jardines de Villa Lobos. Estos rastros conectaban directamente el patio trasero de los Chapman con la mansión McCarthy, revelando que el origen de la amenaza se encontraba dentro de los límites del mismo fraccionamiento. Se determinó que <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> utilizaba la supuesta presencia de "mapaches" como cobertura para ocultar los ruidos y disturbios causados por la naturaleza de su hija, <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica</Link>.
+
+#### La Gala Final y la Caída de la Élite
+Villa Lobos fue el escenario del clímax social de la crisis cuando la mansión McCarthy organizó una fiesta de despedida para Jessica. La secta de los Voronin infiltró el evento, asesinando a Alan McCarthy en su propio salón. La batalla resultante, que involucró a los <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link> y la <Link to="/CrSaSo/familias/La%20Familia%20Zaikov">familia Zaikov</Link>, dejó el sector marcado por lo que las autoridades catalogaron como "pilas de carbón" (restos de Voronin consumidos), forzando a la élite sobreviviente a considerar el abandono definitivo del distrito.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link>:** El residente más influyente, cuya fortuna y secretos científicos convirtieron su hogar en Villa Lobos en un búnker de contención.
+*   **Frederick Chapman:** Vecino de los McCarthy; aunque se consideraba a sí mismo "el más humilde entre los poderosos", su tragedia personal expuso las vulnerabilidades del fraccionamiento.
+*   **<Link to="/CrSaSo/personajes/Jayson%20Branch">Jayson Branch</Link>:** Jefe de seguridad encargado de mantener la hermética paz del sector y de coordinar la defensa de la mansión McCarthy.
+*   **<Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>:** La "Nacida de la Oscuridad", cuyos impulsos biológicos incontrolables causaron los disturbios que la administración McCarthy intentó encubrir como problemas de fauna local.
+
+## Curiosidades
+
+*   El fraccionamiento sufre de una plaga de mapaches que los residentes utilizan a menudo como explicación para ruidos inusuales o movimientos bruscos en la noche.
+*   La distribución de los terrenos permite que un fabricante de colchones comparta la barda trasera con el dueño de <Link to="/CrSaSo/familias/McCarthy%20Petroleum">McCarthy Petroleum</Link>, una ironía social destacada por Frederick Chapman.
+*   A pesar de la Prohibición, se sabe que en las mansiones de Villa Lobos se consume alcohol de alta calidad bajo la protección de pactos discretos con las mafias locales.
+*   Tras la batalla contra los Voronin, el fraccionamiento quedó prácticamente desierto debido al éxodo masivo de empresarios que temían por su seguridad.

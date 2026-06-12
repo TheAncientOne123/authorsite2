@@ -1,0 +1,85 @@
+/*
+ * Meridian — fantasía, campañas, códice vivo
+ * Sensación claro: pergamino y cartografía antigua.
+ * Sensación oscuro: noche de taberna, constelaciones y tinta.
+ */
+
+/* ── MODO CLARO ──────────────────────────────────────────── */
+html[data-universe='meridian'][data-theme='light'] {
+  /* Fondos */
+  --ifm-background-color: #f5f0e6;
+  --ifm-background-surface-color: #fffdf8;
+
+  /* Primario (verde bosque) */
+  --ifm-color-primary: #1f5c47;
+  --ifm-color-primary-dark: #1a4f3d;
+  --ifm-color-primary-darker: #174537;
+  --ifm-color-primary-darkest: #12362b;
+  --ifm-color-primary-light: #256a53;
+  --ifm-color-primary-lighter: #28735a;
+  --ifm-color-primary-lightest: #2e8468;
+
+  /* Tipografía */
+  --ifm-font-color-base: #1c1a14;
+  --ifm-font-color-secondary: #4a4436;
+
+  /* Énfasis (sidebar, bordes, cards) */
+  --ifm-color-emphasis-0:   #fffdf8;
+  --ifm-color-emphasis-100: #f0ebe0;
+  --ifm-color-emphasis-200: #ddd6c5;
+  --ifm-color-emphasis-300: #c5bca8;
+  --ifm-color-emphasis-400: #a8a08f;
+  --ifm-color-emphasis-500: #8c8475;
+  --ifm-color-emphasis-600: #6e6757;
+  --ifm-color-emphasis-700: #524b3c;
+  --ifm-color-emphasis-800: #38322a;
+  --ifm-color-emphasis-900: #1c1a14;
+
+  /* Enlaces */
+  --ifm-link-color: #1a5f8a;
+  --ifm-link-hover-color: #145177;
+  --ifm-link-visited-color: #1a5f8a;
+
+  /* Código */
+  --docusaurus-highlighted-code-line-bg: rgba(31, 92, 71, 0.1);
+}
+
+/* ── MODO OSCURO ─────────────────────────────────────────── */
+html[data-universe='meridian'][data-theme='dark'] {
+  /* Fondos */
+  --ifm-background-color: #0e1218;
+  --ifm-background-surface-color: #171f2a;
+
+  /* Primario (ámbar/dorado de candela) */
+  --ifm-color-primary: #d4a84b;
+  --ifm-color-primary-dark: #c09438;
+  --ifm-color-primary-darker: #b08630;
+  --ifm-color-primary-darkest: #8e6b24;
+  --ifm-color-primary-light: #ddb85e;
+  --ifm-color-primary-lighter: #e2c070;
+  --ifm-color-primary-lightest: #ead193;
+
+  /* Tipografía */
+  --ifm-font-color-base: #e8e2d5;
+  --ifm-font-color-secondary: #b0a892;
+
+  /* Énfasis */
+  --ifm-color-emphasis-0:   #0e1218;
+  --ifm-color-emphasis-100: #171f2a;
+  --ifm-color-emphasis-200: #1f2a38;
+  --ifm-color-emphasis-300: #2a3848;
+  --ifm-color-emphasis-400: #3a4d60;
+  --ifm-color-emphasis-500: #526880;
+  --ifm-color-emphasis-600: #7892a8;
+  --ifm-color-emphasis-700: #a0b4c4;
+  --ifm-color-emphasis-800: #c8d4dc;
+  --ifm-color-emphasis-900: #e8e2d5;
+
+  /* Enlaces */
+  --ifm-link-color: #7ec8e3;
+  --ifm-link-hover-color: #9dd4ea;
+  --ifm-link-visited-color: #7ec8e3;
+
+  /* Código */
+  --docusaurus-highlighted-code-line-bg: rgba(212, 168, 75, 0.12);
+}

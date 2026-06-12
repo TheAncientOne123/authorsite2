@@ -1,0 +1,85 @@
+/*
+ * El Orbe de los Destinos — reino amurallado, historia y magia arcana
+ * Sensación claro: marfil, pergamino violáceo y tinta índigo.
+ * Sensación oscuro: cosmos profundo, cristal encantado y oro arcano.
+ */
+
+/* ── MODO CLARO ──────────────────────────────────────────── */
+html[data-universe='orbe'][data-theme='light'] {
+  /* Fondos */
+  --ifm-background-color: #f3f0f8;
+  --ifm-background-surface-color: #faf9fd;
+
+  /* Primario (índigo) */
+  --ifm-color-primary: #4a3f7a;
+  --ifm-color-primary-dark: #40366c;
+  --ifm-color-primary-darker: #392f60;
+  --ifm-color-primary-darkest: #2c254c;
+  --ifm-color-primary-light: #564988;
+  --ifm-color-primary-lighter: #5e5191;
+  --ifm-color-primary-lightest: #7066a3;
+
+  /* Tipografía */
+  --ifm-font-color-base: #120f1e;
+  --ifm-font-color-secondary: #3d3558;
+
+  /* Énfasis */
+  --ifm-color-emphasis-0:   #faf9fd;
+  --ifm-color-emphasis-100: #edeaf6;
+  --ifm-color-emphasis-200: #d8d3ec;
+  --ifm-color-emphasis-300: #beb6e0;
+  --ifm-color-emphasis-400: #9e96cd;
+  --ifm-color-emphasis-500: #7e77b2;
+  --ifm-color-emphasis-600: #5f5990;
+  --ifm-color-emphasis-700: #453f6b;
+  --ifm-color-emphasis-800: #2c2846;
+  --ifm-color-emphasis-900: #120f1e;
+
+  /* Enlaces */
+  --ifm-link-color: #5b4d9e;
+  --ifm-link-hover-color: #4d4088;
+  --ifm-link-visited-color: #5b4d9e;
+
+  /* Código */
+  --docusaurus-highlighted-code-line-bg: rgba(74, 63, 122, 0.1);
+}
+
+/* ── MODO OSCURO ─────────────────────────────────────────── */
+html[data-universe='orbe'][data-theme='dark'] {
+  /* Fondos */
+  --ifm-background-color: #100d18;
+  --ifm-background-surface-color: #1a1528;
+
+  /* Primario (oro arcano) */
+  --ifm-color-primary: #c9a84a;
+  --ifm-color-primary-dark: #b5953c;
+  --ifm-color-primary-darker: #a58733;
+  --ifm-color-primary-darkest: #836b28;
+  --ifm-color-primary-light: #d4b65e;
+  --ifm-color-primary-lighter: #dbc070;
+  --ifm-color-primary-lightest: #e5cf90;
+
+  /* Tipografía */
+  --ifm-font-color-base: #e2d8f5;
+  --ifm-font-color-secondary: #a898c8;
+
+  /* Énfasis */
+  --ifm-color-emphasis-0:   #100d18;
+  --ifm-color-emphasis-100: #1a1528;
+  --ifm-color-emphasis-200: #241d38;
+  --ifm-color-emphasis-300: #30264a;
+  --ifm-color-emphasis-400: #44365e;
+  --ifm-color-emphasis-500: #604e80;
+  --ifm-color-emphasis-600: #8872a8;
+  --ifm-color-emphasis-700: #b09ace;
+  --ifm-color-emphasis-800: #cfc4e4;
+  --ifm-color-emphasis-900: #e2d8f5;
+
+  /* Enlaces */
+  --ifm-link-color: #a8d4f0;
+  --ifm-link-hover-color: #bedcea;
+  --ifm-link-visited-color: #a8d4f0;
+
+  /* Código */
+  --docusaurus-highlighted-code-line-bg: rgba(201, 168, 74, 0.12);
+}

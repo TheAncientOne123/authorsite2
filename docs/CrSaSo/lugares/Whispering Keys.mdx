@@ -10,42 +10,102 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Whispering Keys
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Whispering Keys"
+    caption="Club de jazz clandestino"
+    rows={[
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Ubicación', value: <><Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link>, <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Tipo', value: 'Club de jazz clandestino y establecimiento de entretenimiento nocturno' },
+      { label: 'Propietario', value: 'Desconocido' },
+      { label: 'Afiliación', value: <>Independiente; circuito nocturno del <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link></> },
+      { label: 'Población clave', value: 'Músicos, informantes, detectives, agentes dobles y clientes anónimos' },
+      { label: 'Primera mención', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 5</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Whispering Keys"
-  caption="Jazz subterráneo en clave de susurro"
-  rows={[
-    { label: 'Tipo', value: 'Club de jazz clandestino' },
-    { label: 'Ubicación', value: <>Subniveles del <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link>, sector 3B</> },
-    { label: 'Acceso', value: 'Entrada oculta bajo una tienda de pianos abandonada; contraseña semanal' },
-    { label: 'Dueño', value: 'Desconocido' },
-    { label: 'Afiliaciones', value: 'Neutral (no adscrito a familias ni mafias)' },
-    { label: 'Atracción principal', value: 'Pianista enmascarado; sets que alteran la percepción del tiempo' },
-    { label: 'Política de la casa', value: 'Anonimato; sin grabaciones; sin armas visibles; conflictos fuera' },
-    { label: 'Estado', value: 'Activo' },
-  ]}
-/>
+**Whispering Keys** es uno de los establecimientos nocturnos más discretos y enigmáticos de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Situado bajo los niveles del <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link>, forma parte del circuito de locales frecuentados por investigadores, informantes y figuras del bajo mundo para intercambiar información lejos de la vigilancia pública.
 
-**Tipo:** Club de jazz clandestino  
-**Ubicación:** Subniveles del Centro Histórico, sector 3B  
-**Dueño:** Desconocido  
-**Afiliaciones:** Neutral
+Junto con el <Link to="/CrSaSo/lugares/Gilded%20Cat">Gilded Cat</Link> y el <Link to="/CrSaSo/lugares/Velvet%20Trumpet">Velvet Trumpet</Link>, integra la red informal de puntos de observación utilizada por detectives como <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> durante los acontecimientos de *Necromancia a Medianoche*. Su combinación de anonimato, música en vivo y estricta neutralidad lo ha convertido en uno de los pocos lugares donde individuos de facciones opuestas pueden coexistir temporalmente sin provocar enfrentamientos abiertos.
 
-El **Whispering Keys** es un club subterráneo de jazz, célebre por su **atmósfera íntima y envolvente**. Oculto bajo una **tienda de pianos abandonada**, su entrada requiere **contraseña que cambia cada semana**, lo que lo convierte en refugio de quienes necesitan **desaparecer de la superficie** durante unas horas.
+## Perfil y atmósfera
 
-A diferencia de otros locales del distrito con vínculos mafiosos, el Whispering Keys mantiene una **neutralidad estricta**. Aun así, su clientela habitual mezcla **informantes**, **agentes dobles** y **criaturas de origen incierto** que respetan el código del lugar.
+Whispering Keys se encuentra oculto bajo una antigua tienda de pianos abandonada. Su acceso restringido y la ausencia de señalización exterior contribuyen a mantener el carácter clandestino del establecimiento.
 
-## Escenario y música
-- Tarima mínima con **piano vertical** y luz tenue.  
-- El **pianista enmascarado** —de identidad nunca revelada— encabeza veladas donde el **tempo** y la **sensación del tiempo** parecen **dilatarse** entre acordes y silencios.  
-- Programación centrada en **tríos reducidos** y sesiones tardías.
+El local posee una atmósfera íntima y envolvente. La iluminación tenue, el humo suspendido sobre las mesas y el sonido constante del jazz crean una sensación de aislamiento respecto al resto de la ciudad. Mientras en las calles del Centro Histórico predominan las luces de neón y el ruido urbano, dentro del club reina una calma extraña que invita a la observación silenciosa.
+
+Para muchos visitantes, el establecimiento representa un refugio temporal frente a las tensiones de Nueva Ámsterdam. Para otros, es un lugar ideal para intercambiar secretos sin llamar la atención.
+
+Cassian Thorne llegó a describirlo como el último destino de una jornada de investigación: el lugar donde un detective podía sentarse, beber algo fuerte y ordenar mentalmente las piezas de un caso antes de regresar a las calles.
+
+## Música y programación
+
+La identidad del local gira en torno a la música.
+
+* Presentaciones de jazz en formato reducido.
+* Sesiones nocturnas de improvisación.
+* Actuaciones centradas en piano y pequeños ensambles.
+* Veladas de ritmo lento orientadas a la conversación y la contemplación.
+
+El escenario consiste en una pequeña tarima dominada por un piano vertical iluminado por focos cálidos. La figura más conocida del establecimiento es un pianista enmascarado cuya identidad jamás ha sido revelada públicamente.
+
+Entre los clientes habituales existe la creencia de que las actuaciones del pianista alteran la percepción del tiempo, haciendo que las noches parezcan más largas de lo que realmente son.
 
 ## Reglas y acceso
-- **Contraseña semanal** susurrada en el mostrador de la tienda clausurada; sin cartel exterior.  
-- **Anonimato** por encima de todo: nombres de pila y notas en servilletas.  
-- **Prohibidas** las grabaciones y las armas visibles; los conflictos se resuelven fuera del local.
 
-## Conexiones del distrito
-Integrado en la red nocturna del <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link>, el Whispering Keys funciona como **punto de paso** para intercambios discretos y escuchas atentas, complementando la escena junto a locales como <Link to="/CrSaSo/lugares/Scarlet%20Horn">Scarlet Horn</Link> y <Link to="/CrSaSo/lugares/Velvet%20Trumpet">Velvet Trumpet</Link>.
+Whispering Keys opera bajo normas estrictas destinadas a preservar su neutralidad:
+
+* El acceso requiere una contraseña que cambia periódicamente.
+* No existe publicidad ni señalización exterior.
+* Se privilegia el anonimato de los clientes.
+* Están prohibidas las grabaciones dentro del local.
+* Las armas visibles no son permitidas.
+* Los conflictos deben resolverse fuera del establecimiento.
+
+Estas reglas son respetadas incluso por individuos asociados a organizaciones criminales, lo que ha permitido al local mantenerse al margen de numerosas disputas territoriales.
+
+## Función dentro del ecosistema urbano
+
+Además de su papel como club nocturno, Whispering Keys cumple varias funciones dentro del submundo de Nueva Ámsterdam:
+
+* **Logística de inteligencia:** circulación constante de rumores e información sensible.
+* **Punto de encuentro neutral:** espacio donde pueden coincidir individuos de facciones enfrentadas.
+* **Observación discreta:** facilita el trabajo encubierto de investigadores e informantes.
+* **Intercambio de favores:** lugar habitual para negociaciones de bajo perfil.
+
+Su reputación de neutralidad lo distingue de otros establecimientos del distrito y explica su supervivencia durante periodos de violencia generalizada.
+
+## Historia
+
+### Necromancia a Medianoche
+
+#### El Caso del Cuarto Rojo
+
+Durante la investigación de **El Cuarto Rojo**, Cassian Thorne consideró a Whispering Keys una parada obligatoria dentro de su circuito habitual de vigilancia.
+
+Tras varias búsquedas poco fructíferas en otros establecimientos del Centro Histórico, el detective contempló utilizar nuevamente la red formada por Whispering Keys, Velvet Trumpet y Gilded Cat para obtener información relacionada con **Angelina Pollard**, identidad utilizada por <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, y con los acontecimientos que rodeaban a la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">familia McCarthy</Link>.
+
+Durante la **Semana Negra**, el establecimiento continuó operando a pesar de la violencia entre las familias criminales italianas. Su condición de territorio neutral permitió que siguiera funcionando como punto de observación para detectar movimientos de mafias, investigadores, miembros de **La Cruz** y posibles actividades relacionadas con los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>.
+
+## Relaciones clave
+
+* **<Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>:** utiliza el local como punto de observación e intercambio de información.
+* **<Link to="/CrSaSo/lugares/Gilded%20Cat">Gilded Cat</Link>:** establecimiento asociado al mismo circuito de inteligencia informal.
+* **<Link to="/CrSaSo/lugares/Velvet%20Trumpet">Velvet Trumpet</Link>:** local complementario dentro de la red nocturna del Centro Histórico.
+* **<Link to="/CrSaSo/lugares/Scarlet%20Horn">Scarlet Horn</Link>:** otro punto de referencia habitual para investigadores y observadores.
+* **Familias mafiosas de Nueva Ámsterdam:** respetan la neutralidad del establecimiento y evitan convertirlo en escenario de disputas abiertas.
+
+## Curiosidades
+
+* El nombre *Whispering Keys* ("Teclas Susurrantes") hace referencia tanto al piano que domina el escenario como al intercambio constante de secretos entre sus clientes.
+* La identidad del pianista principal nunca ha sido revelada públicamente.
+* Existen rumores de que algunas criaturas sobrenaturales frecuentan el local debido a su política de anonimato.
+* Cassian Thorne consideraba al Whispering Keys el lugar ideal para cerrar una jornada de investigación.
+* A pesar de la Prohibición, el establecimiento nunca parece quedarse sin licor de calidad.
+* Ninguna de las grandes familias criminales ha logrado imponer un control permanente sobre el club, circunstancia excepcional dentro del Centro Histórico.

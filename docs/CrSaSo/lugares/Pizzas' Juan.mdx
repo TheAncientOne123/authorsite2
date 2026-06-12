@@ -10,35 +10,61 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Pizzas’ Juan
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Pizzas' Juan"
+    caption="Pizzería de temática mexicana"
+    rows={[
+      { label: 'Tipo', value: 'Pizzería de temática mexicana' },
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Ubicación', value: <>Frente al departamento de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Especie', value: 'Establecimiento comercial' },
+      { label: 'Personal clave', value: 'Mesera (no identificada por nombre)' },
+      { label: 'Ocupación', value: 'Gastronomía rápida y fusión' },
+      { label: 'Afiliación', value: 'Independiente' },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 42</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Pizzas’ Juan"
-  caption="Mitad tradicional · mitad mexicana"
-  rows={[
-    { label: 'Tipo de local', value: 'Restaurante de comida rápida (pizzería mexicana de barrio)' },
-    { label: 'Ubicación', value: <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link> },
-    { label: 'Ambiente', value: 'Modesto, familiar; música baja, mesas estrechas, servicio rápido' },
-    { label: 'Especialidad', value: 'Pizzas mitad tradicional / mitad mexicana; salsas caseras' },
-    { label: 'Apariciones clave', value: <><Link to="/CrSaSo/eventos/Caso%20resuelto">Caso Resuelto</Link></> },
-    { label: 'Personajes', value: <><Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link></> },
-    { label: 'Estado', value: 'Activo' },
-  ]}
-/>
+**Pizzas' Juan** es un modesto puesto de comida que adquirió notoriedad durante la denominada "Guerra de las Pizzas". Ante el cierre masivo de restaurantes italianos tradicionales debido a las tensiones entre las mafias <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Tornatore</Link> y <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Santorelli</Link>, este local se convirtió en un refugio para los ciudadanos y agentes de la ley que buscaban alimento en una urbe sitiada por el crimen.
 
-**Tipo de local:** Restaurante de comida rápida
+## Perfil y Atmósfera
 
-## Descripción general
-En **Pizzas’ Juan**, un pequeño restaurante mexicano de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>, <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia</Link> encuentran un **respiro emocional** en medio del caso. Mientras comparten una **pizza mitad tradicional y mitad mexicana**, conversan con franqueza: Cassian alude a su **matrimonio fallido** y ambos reflexionan sobre las **contradicciones sociales** y los límites del trabajo policial/federal.
+Físicamente, el local es descrito como un puesto humilde con una marquesina llamativa que ondea una bandera italiana modificada: en el centro presenta un águila sobre un nopal devorando a una serpiente, símbolo nacional de México. El establecimiento cuenta con apenas unas pocas mesas metálicas en su interior, pero su popularidad durante la crisis de 1929 provocó que las filas para ordenar se extendieran considerablemente, asemejándose a la distribución de raciones de pan en tiempos de escasez.
 
-La charla no sólo fortalece su **vínculo personal**: también sirve para **atar cabos del expediente**, en especial sobre el rol de <Link to="/CrSaSo/personajes/Alan%20McCarthy">Alan McCarthy</Link> y la cadena de implicaciones del <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>. El tono ligero del momento contrasta con lo que vendrá después esa misma noche.
+Psicológicamente, el lugar representa un "oasis gastronómico" de luces cálidas frente a la atmósfera pálida y gris de la ciudad. Su operatividad bajo condiciones extremas lo posicionó como un símbolo de la adaptabilidad humana frente al caos social y la Ley Seca.
 
-## Conexiones narrativas
-**Relaciones importantes:**  
-- <Link to="/CrSaSo/eventos/La%20Semana%20Negra">La Semana Negra</Link>  
-- <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>  
-- <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>  
-- <Link to="/CrSaSo/eventos/Caso%20resuelto">Caso Resuelto</Link>
+## Habilidades y Equipo (Menú)
 
-En el orden de los hechos, esta parada en Pizzas’ Juan pertenece al episodio **<Link to="/CrSaSo/eventos/Caso%20resuelto">Caso Resuelto</Link>**, previo al giro sobrenatural que precipita la **<Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral de Santa Regina</Link>**.
+Como centro de servicios alimenticios, Pizzas' Juan destaca por una oferta simplificada pero altamente demandada:
+*   **Especialización de Menú:** Ofrece únicamente tres variedades de pizza: tradicional, mexicana y francesa.
+*   **Logística Adaptable:** El personal tiene la capacidad de personalizar pedidos, permitiendo la división de ingredientes (como mitad tradicional y mitad mexicana) en una sola pieza para satisfacer gustos variados.
+*   **Fusión Culinaria:** Su pizza mexicana se caracteriza por el uso generoso de queso derretido, carne bien sazonada y una mezcla de especias picantes que definen su identidad distintiva.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### La Guerra de las Pizzas (1929)
+Durante la denominada "Semana Negra", la ciudad de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link> sufrió una parálisis comercial debido a los tiroteos y la vendetta entre las familias mafiosas. El cierre de locales protegidos por los Tornatore permitió que Pizzas' Juan captara a la clientela huérfana de opciones gastronómicas, desafiando la hegemonía de la cocina italiana clásica con su propuesta mexicana.
+
+#### El Análisis de los Detectives
+En la noche del tercer día de la crisis, el detective Cassian Thorne y la agente federal <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> visitaron el establecimiento para cenar mientras repasaban las pistas del caso de Jessica McCarthy. Durante esta estancia, ambos utilizaron el ambiente relajado del local para discutir la naturaleza de sus familias y sus propias inseguridades respecto al futuro. Fue en este sitio donde los investigadores finalmente conectaron los puntos clave sobre la identidad de la bestia de <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link>, concluyendo que <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link> era el monstruo creado por el <Link to="/CrSaSo/objetos-conceptos/Elemento%20121">Elemento 121</Link>.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>:** Cliente habitual debido a la proximidad del local con su residencia; defiende la calidad del establecimiento frente al escepticismo de forasteros.
+*   **<Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>:** Visitante estratégica que, tras probar la pizza mexicana, validó la efectividad del local como centro de reunión y reflexión para los Vinculados.
+*   **Familias Tornatore y Santorelli:** Su conflicto territorial fue la causa indirecta del auge comercial del establecimiento.
+
+## Curiosidades
+
+*   El detective Thorne teoriza que los mexicanos y los italianos comparten una excelencia gastronómica basada en el uso del queso y las especias.
+*   La agente Sinclair cuestionó inicialmente la legalidad del establecimiento debido a su bandera híbrida, aunque terminó reconociendo su valor como punto de encuentro.
+*   El local sirvió como escenario para que Cassian recordara sus conocimientos sobre moda y comportamiento social, adquiridos a través de su exesposa Irene.
+*   A pesar del caos exterior y las sirenas policiales, el local mantuvo una operación constante, convirtiéndose en un punto de referencia para los habitantes de los suburbios cercanos al centro.

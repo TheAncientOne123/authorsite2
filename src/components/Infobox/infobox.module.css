@@ -1,5 +1,5 @@
 :root {
-  --ibox-border: #a2a9b1;            /* gris wiki */
+  --ibox-border: var(--ifm-color-emphasis-300);
   --ibox-header-bg: var(--ifm-background-surface-color);
   --ibox-label-bg: var(--ifm-background-surface-color);
   --ibox-text: var(--ifm-font-color-base);

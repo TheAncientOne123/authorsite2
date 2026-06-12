@@ -10,43 +10,74 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Centro Histórico
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Centro Histórico de Nueva Ámsterdam"
+    caption="El corazón de la ciudad, terreno de caza"
+    rows={[
+      { label: 'Alias/Apodos', value: 'El corazón de la ciudad, Terreno de caza' },
+      { label: 'Estado actual', value: 'Activo (bajo reconstrucción tras la crisis de 1929)' },
+      { label: 'Ubicación', value: <>Núcleo urbano de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Especie', value: 'Distrito metropolitano' },
+      { label: 'Población clave', value: 'Mafias italianas, Rapax Hominum, clase trabajadora y turistas' },
+      { label: 'Afiliación', value: <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Ciudad de Nueva Ámsterdam</Link> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 4</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Centro Histórico"
-  caption="Corazón nocturno de Nueva Ámsterdam"
-  rows={[
-    { label: 'Ubicación', value: <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link> },
-    { label: 'Tipo', value: 'Distrito urbano (núcleo nocturno)' },
-    { label: 'Estilo', value: 'Art déco, neón, noir lluvioso' },
-    { label: 'Relevancia', value: <>Nodo de clubes, corrupción y tráfico de información; base de operaciones informales durante <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link></> },
-    { label: 'Lugares emblemáticos', value: <><Link to="/CrSaSo/lugares/Scarlet%20Horn">Scarlet Horn</Link>; <Link to="/CrSaSo/lugares/Whispering%20Keys">Whispering Keys</Link>; <Link to="/CrSaSo/lugares/Gilded%20Cat">Gilded Cat</Link>; <Link to="/CrSaSo/lugares/Velvet%20Trumpet">Velvet Trumpet</Link>; <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>; Parque Central del Distrito</> },
-    { label: 'Facciones presentes', value: <>Redes del hampa y mafias; células de <Link to="/CrSaSo/familias/Cazadores">Cazadores</Link> y <Link to="/CrSaSo/familias/Brujas">Brujas</Link> en la sombra; operadores de <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link></> },
-    { label: 'Estado', value: 'Activo' },
-  ]}
-/>
+El **Centro Histórico** es el núcleo fundacional, comercial y cultural de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Se define como un espacio de contrastes extremos donde la opulencia de los clubes de jazz y teatros convive con la decadencia de callejones oscuros y la actividad criminal. Durante la noche, el distrito se transforma en un "terreno de caza" para los depredadores urbanos conocidos como <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>, quienes utilizan el bullicio y la iluminación artificial para ocultar sus actividades.
 
-**Tipo de ubicación**: Distrito urbano. Núcleo Nocturno.
+A pesar de ser el centro de la ley y el orden, con la comisaría principal ubicada en sus inmediaciones, el Centro Histórico es un área donde la autoridad de las mafias locales suele ser la fuerza dominante en la vida cotidiana de sus establecimientos.
 
-## Descripción General
-El **Centro Histórico** de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link> representa el corazón decadente de la ciudad: una zona vibrante y caótica, marcada por el contraste entre lujo aparente y criminalidad estructural. Con arquitectura art déco, luces de neón, clubes nocturnos y calles perpetuamente húmedas por la lluvia, funciona como punto de encuentro para artistas, informantes y figuras del hampa. Tras bambalinas se negocian apuestas clandestinas, tráfico de información y favores políticos. La presencia cercana de la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link> añade una capa de poder simbólico y tensión moral.
+## Perfil y Apariencia
 
-**Eventos importantes:**
-- Primera investigación independiente de <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> durante el caso de <Link to="/CrSaSo/eventos/El%20Cuarto%20Rojo">El Cuarto Rojo</Link>.
-- Contacto inicial con <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Angelina Pollard</Link>.
-- Recolección de información en bares como <Link to="/CrSaSo/lugares/Scarlet%20Horn">Scarlet Horn</Link>.
+Físicamente, el distrito se caracteriza por un paisaje urbano de fachadas altas y rascacielos que proyectan sombras incluso bajo el sol de mediodía. La atmósfera nocturna está dominada por un mosaico de luces de neón vibrantes, el zumbido constante de motores y el eco de orquestas que resuenan desde los teatros. El ambiente suele estar cargado de una energía eléctrica y, en ocasiones, por el aroma metálico de la sangre o el humo de cigarrillo.
+
+El distrito incluye subsectores específicos como **China Town**, un enclave fascinante decorado con caracteres asiáticos y globos de papel de seda que crean una atmósfera etérea en medio del caos visual. Psicológicamente, el centro es descrito como un lugar para los "desprevenidos", donde las almas perdidas se mezclan con intenciones sombrías y juegos mortales de engaño.
+
+## Lugares y Establecimientos Clave
+
+El Centro Histórico alberga diversos sitios de importancia estratégica y social:
+*   **<Link to="/CrSaSo/lugares/Italian%E2%80%99s%20Boot">The Italian's Boot</Link>:** Restaurante-bar en el corazón del distrito italiano y base de operaciones de la <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">familia Tornatore</Link>.
+*   **<Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>:** Estructura religiosa imponente que funciona secretamente como sede de los <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link> y escuela de monjes guerreros.
+*   **<Link to="/CrSaSo/lugares/Scarlet%20Horn">Scarlet Horn</Link>:** Famoso club de jazz con fachada roja vibrante, conocido por su música en vivo y por albergar actividades clandestinas como apuestas y prostitución de lujo.
+*   **<Link to="/CrSaSo/lugares/Club%20Palace">Club Palace</Link>:** Establecimiento elegante y base de operaciones de <Link to="/CrSaSo/personajes/Veronica%20Black">Verónica Black</Link>, utilizado como punto de infiltración mística.
+*   **<Link to="/CrSaSo/lugares/Cool%20Oriental">Cool Oriental</Link>:** Restaurante en China Town con decoración asiática antigua, frecuentado por agentes de la ley y reporteros.
+
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Inicio de la Crisis
+En 1929, el Centro Histórico se convirtió en el escenario principal de una escalada de violencia sobrenatural y criminal. Lo que comenzó como una investigación detectivesca en clubes nocturnos reveló una red de depredadores infiltrados en la sociedad. El detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> utilizó locales como el Scarlet Horn y el <Link to="/CrSaSo/lugares/Gilded%20Cat">Gilded Cat</Link> para rastrear el paradero de la vampiresa Tamara Dobrescu, quien operaba bajo la identidad de la cantante Angelina Pollard.
+
+#### La Semana Negra y la Guerra de las Pizzas
+El distrito sufrió una parálisis social tras la masacre en The Italian's Boot, donde ocho personas fueron ejecutadas con brutalidad no humana. Este evento desencadenó una guerra abierta entre las familias Tornatore y <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Santorelli</Link>, lo que llevó al cierre masivo de locales italianos y al surgimiento de establecimientos alternativos como <Link to="/CrSaSo/lugares/Pizzas'%20Juan">Pizzas' Juan</Link>. Durante este periodo, el Centro Histórico fue descrito como una "larga resaca" de sirenas policiales y tiroteos distantes.
+
+#### La Masacre de la Catedral
+El clímax de la tragedia urbana ocurrió en la Catedral de Santa Regina. Una facción de los Rapax Hominum, utilizando a la heredera <Link to="/CrSaSo/personajes/Jessica%20McCarthy">Jessica McCarthy</Link>, irrumpió en el recinto sagrado y asesinó a dieciséis miembros de la orden de los Vinculados, dejando el pasillo central convertido en un "río carmesí". Este evento forzó a las autoridades federales a intervenir y cerrar el distrito bajo una narrativa de guerra de mafias para encubrir la verdad mística.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>:** Detective local que conoce profundamente los rincones del distrito, moviéndose con eficacia entre sus cantinas y callejones.
+*   **<Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link>:** Clan criminal que protege y controla gran parte de la distribución de alcohol en el barrio italiano del centro.
+*   **<Link to="/CrSaSo/personajes/Veronica%20Black">Verónica Black</Link>:** Madame influyente del Club Palace que mantiene un pacto de respeto con la comisaría central para la estabilidad del distrito.
+*   **<Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link>:** Organización secreta que utilizaba la infraestructura eclesiástica del centro como bastión espiritual y táctico.
+
+## Curiosidades
+
+*   El centro histórico alberga un pequeño parque que es considerado un refugio para amantes y escenario frecuente de tragedias personales.
+*   Las banquetas mojadas por la lluvia constante suelen proyectar el resplandor clandestino de los locales, creando un efecto visual típico del Cine Negro.
+*   En el atrio trasero de la <Link to="/CrSaSo/lugares/La%20Comisar%C3%ADa%20de%20Nueva%20%C3%81msterdam">comisaría del centro</Link> se encuentra una estatua de <Link to="/CrSaSo/personajes/Caleb%20Thorne">Caleb Thorne</Link>, héroe local y padre del detective Cassian Thorne.
+*   A pesar de la Prohibición, el alcohol se consume abiertamente en locales del centro bajo la protección de las mafias, declarándolo irónicamente como "100% legal".
 
 **Lugares emblemáticos:**
 - <Link to="/CrSaSo/lugares/Scarlet%20Horn">Scarlet Horn</Link>: Club de jazz reconocido por su música en vivo y su fachada carmesí. Punto clave de información subterránea.
 - <Link to="/CrSaSo/lugares/Whispering%20Keys">Whispering Keys</Link>: Bar frecuentado por músicos y buscadores de secretos.
 - <Link to="/CrSaSo/lugares/Gilded%20Cat">Gilded Cat</Link> y <Link to="/CrSaSo/lugares/Velvet%20Trumpet">Velvet Trumpet</Link>: Locales de reputación ambigua; sirven como puntos de vigilancia e intercambio de favores.
 - Parque Central del Distrito: Zona de paso habitual, donde convergen figuras clave y se realizan vigilancias discretas.
-
-## Estilo y atmosfera
-Noir urbano con fuerte influencia de los años 30s: humo, lluvia, faroles parpadeantes, jazz y una tensión constante entre hedonismo y violencia.
-
-## Eventos de Necromancia a Medianoche
-Durante la investigación del caso **El Cuarto Rojo**, el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> visitó el Centro Histórico para rastrear pistas. En el <Link to="/CrSaSo/lugares/Scarlet%20Horn">Scarlet Horn</Link> se reunió con su informante Ricky, y allí emergió la figura de la cantante <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Angelina Pollard</Link>, cuya actuación de “Nobody but Me” (Blue Harlem) marcó el inicio de su vínculo con el detective. Tras la función, Angelina se acercó a Cassian, reveló conocer su caso y ofreció información a cambio de protección.
-
-Ambos atravesaron el distrito rumbo a Chinatown para despistar a un perseguidor. En el trayecto, Angelina señaló como sospechoso clave a <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link>, facilitando incluso una dirección. Más tarde, un atacante con la insignia de <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link> irrumpió en el departamento de Angelina; Cassian logró repelerlo, pero el episodio selló la peligrosidad del caso y la complejidad emocional entre ambos.

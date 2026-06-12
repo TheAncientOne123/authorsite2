@@ -10,45 +10,70 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Catedral de Santa Regina
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Catedral de Santa Regina"
+    caption="La casa de los milagros; refugio de los Vinculados"
+    rows={[
+      { label: 'Alias/Apodos', value: 'La casa de los milagros; Refugio de los Vinculados' },
+      { label: 'Estado actual', value: 'Escena del crimen clausurada; inactiva tras la masacre' },
+      { label: 'Ubicación', value: <>Distrito Italiano / <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link>, <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Especie', value: 'Recinto eclesiástico y fortaleza mística' },
+      { label: 'Uso principal', value: 'Culto religioso; escuela de monjes guerreros; sede de los Vinculados' },
+      { label: 'Afiliación', value: <>Iglesia Católica; <Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Familia Santorelli</Link> (protección); <Link to="/CrSaSo/familias/Los%20Vinculados">Los Vinculados</Link></> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 31</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Catedral de Santa Regina"
-  caption="El corazón espiritual —y oscuro— de Nueva Ámsterdam"
-  rows={[
-    { label: 'Ubicación', value: <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link> },
-    { label: 'Tipo', value: 'Catedral católica' },
-    { label: 'Fundación', value: 'Finales del siglo XIX' },
-    { label: 'Afiliación', value: 'Iglesia Católica' },
-    { label: 'Relevancia', value: <>Escenario de la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral</Link>, nodo de intrigas eclesiásticas y entrenamiento básico de facciones</> },
-    { label: 'Personajes vinculados', value: <><Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>, <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>, <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link></> },
-    { label: 'Estado', value: 'Activo (marcado por la tragedia)' },
-  ]}
-/>
+La **Catedral de Santa Regina** es la estructura religiosa más emblemática de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Más allá de su fachada como centro de devoción católica, funcionó secretamente como el cuartel general de la estirpe de los <Link to="/CrSaSo/familias/Los%20Vinculados">Vinculados</Link> (cazadores y brujas) durante la crisis de 1929. Bajo la regencia de <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>, la catedral se ganó la reputación de ser un lugar de "milagros" médicos y espirituales, lo que servía de cobertura para identificar a potenciales individuos con el don de la visión mística.
 
-La Catedral de Santa Regina es el principal templo de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link>. Su arquitectura gótica domina el centro y concentra tanto devoción como poder. 
-Y en donde <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link> recibieron un entrenamiento básico dentro de las fuerzas de los <Link to="/CrSaSo/familias/Cazadores">Cazadores</Link> y <Link to="/CrSaSo/familias/Brujas">Brujas</Link>, lo suficiente para crear su vínculo.
+El lugar cobró notoriedad histórica al ser el escenario de la **Masacre de Santa Regina**, un ataque perpetrado por facciones de los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link> que resultó en la eliminación casi total de la presencia de los Vinculados en la ciudad.
 
----
+## Perfil y Arquitectura
 
-## Historia y relevancia
+La catedral se caracteriza por una arquitectura solemne que impone respeto y distancia. Posee altas puertas de madera, un suelo de baldosas grises y naves laterales que conducen a espacios restringidos. El complejo no solo alberga el área de culto, sino que integra una vasta biblioteca donde se custodian textos antiguos en latín y una escuela para monjes guerreros.
 
-- Centro de influencia de la Iglesia en la ciudad y punto de convergencia de facciones como los <Link to="/CrSaSo/familias/Cazadores">Cazadores</Link> y las <Link to="/CrSaSo/familias/Brujas">Brujas</Link>.  
-- Pasadizos y dependencias laterales se han usado para reuniones, rituales y adiestramientos discretos.  
-- Epicentro de la <Link to="/CrSaSo/eventos/Masacre%20de%20la%20Catedral%20de%20Santa%20Regina">Masacre de la Catedral</Link>, que reconfiguró el equilibrio entre lo policial y lo sobrenatural.
+Psicológicamente, el recinto proyecta una atmósfera de misticismo y paranoia controlada. La seguridad es absoluta, compuesta por personal eclesiástico (monaguillos y sacerdotes) que en realidad son guardianes encubiertos entrenados para detectar amenazas. En su interior se encuentra una habitación lúgubre, iluminada solo por velas y cargada de aroma a incienso, utilizada por la bruja <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia</Link> para realizar rituales de conexión espiritual y análisis de vínculos.
 
----
+## Funciones y Recursos
 
-## Figuras vinculadas
+Como centro neurálgico de la resistencia humana, la catedral contaba con:
+*   **El Tomo de los Vinculados:** Un manifiesto antiguo envuelto en cuero que contiene la jerarquía, tradiciones y profecías de la orden.
+*   **Arsenal Especializado:** Reservas de munición de oro y plata, junto con las monedas de latón utilizadas para la detección de enemigos y comunicación mística.
+*   **Capacitación Táctica:** Un atrio trasero con un cuadrado de arena diseñado para el entrenamiento en combate cuerpo a cuerpo y la sincronización de parejas vinculadas.
+*   **Laboratorio Alquímico:** Un recetario de brujas con fórmulas para ungüentos, pociones y alimentos potenciadores.
 
-- <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>: laico influyente y figura de referencia para la administración cotidiana del templo y su red de contactos.  
-- <Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia Amadeo</Link>: referente de patronazgo y articulación con la feligresía; su nombre aparece asociado a actividades culturales y al resguardo de archivos sacros.  
-- <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucia Sinclair</Link>: entrenados en dependencias de la catedral, forjaron aquí el vínculo que marcaría su destino.
+## Biografía / Historia
 
----
+### Necromancia a Medianoche
 
-## Eventos destacados
+#### El Proyecto Fallido (1910-1911)
+Originalmente, la Iglesia Católica adquirió el <Link to="/CrSaSo/lugares/El%20Castillo%20de%20Nueva%20%C3%81msterdam">castillo de la familia Dobrescu</Link> en 1910 para convertirlo en una catedral majestuosa. Sin embargo, el proyecto fue cancelado abruptamente tras un año. Aunque la versión oficial alegó falta de fondos y la encarcelación de un obispo vinculado a la mafia, rumores locales sugerían el hallazgo de una "fuerza sobrenatural" en las entrañas del edificio.
 
-- Entrenamiento inicial de Cassian y Lucía bajo supervisión de contactos ligados a Cazadores y Brujas.  
-- Masacre de la Catedral: punto de quiebre que expone la dimensión sobrenatural de los conflictos en Nueva Ámsterdam.
+#### El Auge de los Milagros (1929)
+Bajo la protección de la familia Santorelli, Marco Giannotti operaba como ginecólogo y sacerdote, atendiendo a mujeres jóvenes que buscaban soluciones a problemas de infertilidad. Estas consultas eran en realidad un filtro para encontrar a la "Bruja Luminosa" necesaria para enfrentar la profecía de la Reina de la Oscuridad, lo que llevó finalmente a la identificación de la agente <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>.
+
+#### La Masacre de la Catedral
+Durante el clímax de la "Semana Negra", Tamara Dobrescu utilizó a Jessica McCarthy para asaltar el recinto. El ataque fue una carnicería quirúrgica diseñada para eliminar la resistencia de los cazadores. Dieciséis personas murieron, incluida la bruja Cecilia, dejando a Marco Giannotti como el único sobreviviente en un estado de shock profundo.
+
+#### Resolución Oficial y Encubrimiento
+Tras el incidente, el <Link to="/CrSaSo/lugares/Bur%C3%B3%20Federal%20de%20Investigaci%C3%B3n">FBI</Link> (agentes Huber y Turner) clausuró el lugar y emitió un informe oficial que atribuía la masacre a una "pequeña mafia polaca" aliada con la <Link to="/CrSaSo/familias/Familia%20De%20Fazio">familia De Fazio</Link>, ignorando deliberadamente toda evidencia de actividad no humana. El recinto quedó marcado por pilas de ceniza que la policía local no pudo explicar.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link>:** Sacerdote regente y líder de los cazadores locales.
+*   **<Link to="/CrSaSo/personajes/Cecilia%20Amadeo">Cecilia</Link>:** Monja y bruja veterana encargada de la guía espiritual.
+*   **<Link to="/CrSaSo/familias/La%20Familia%20Santorelli">Familia Santorelli</Link>:** Clan mafioso encargado del financiamiento y la protección armada del lugar.
+*   **<Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link>:** Clan rival que tenía prohibida la entrada al recinto tras años de conflictos territoriales.
+
+## Curiosidades
+
+*   La catedral poseía una lista negra de "inadaptados religiosos" donde figuraban Cassian Thorne y <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>.
+*   A pesar de su antigüedad, el interior cuenta con una infraestructura tecnológica avanzada oculta en la biblioteca.
+*   La monja Cecilia utilizaba una mezcla de lodo, incienso y hierbas para inducir estados de proyección astral en sus sujetos de prueba.
+*   La masacre fue tan violenta que el pasillo central fue descrito por los investigadores como un "río carmesí de muerte".

@@ -10,43 +10,65 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Scarlet Horn
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Scarlet Horn"
+    caption="Club de jazz del Centro Histórico"
+    rows={[
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Ubicación', value: <><Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link>, <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Especie', value: 'Establecimiento comercial (club de jazz / bar)' },
+      { label: 'Personal clave', value: 'Ricky (cantinero veterano)' },
+      { label: 'Ocupación', value: 'Entretenimiento musical y nodo de recolección de inteligencia' },
+      { label: 'Afiliación', value: <><Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link> (protección)</> },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 5</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Scarlet Horn"
-  caption="Jazz en luz ámbar y secretos entre bambalinas"
-  rows={[
-    { label: 'Tipo', value: 'Club de jazz; bar clandestino' },
-    { label: 'Ubicación', value: <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link> },
-    { label: 'Estética', value: 'Art déco; luz ámbar; terciopelo burdeos; humo y murmullos' },
-    { label: 'Afiliaciones', value: <Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link> },
-    { label: 'Política de la casa', value: 'Anonimato discreto; conflictos fuera; propinas sellan bocas' },
-    { label: 'Eventos relevantes', value: <>Primer encuentro entre <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> (bajo el alias <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Angelina Pollard</Link>)</> },
-    { label: 'Estado', value: 'Activo' },
-  ]}
-/>
+El **Scarlet Horn** es el club de jazz más famoso y vibrante del <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link> de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Es reconocido por la calidad de sus espectáculos de música en vivo y por servir como un refugio de "riesgo y placer" en una ciudad sumida en la decadencia gótica. Para el Departamento de Policía, el local es un punto estratégico de vigilancia, formando parte de la tríada de establecimientos esenciales para la recolección de información en el bajo mundo.
 
-**Tipo:** Club de jazz, bar clandestino  
-**Ubicación:** <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link>  
-**Afiliaciones:** Red de locales semilegales del Centro Histórico  
-**Eventos relevantes:** Primer encuentro entre <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> y <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link> (como <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Angelina Pollard</Link>)
+## Perfil y Atmósfera
 
-El **Scarlet Horn** es un club nocturno emblemático por su curaduría musical y su estética **art déco**: sillones de terciopelo burdeos, lámparas cálidas y un escenario bañado en **luz ámbar** donde el jazz vibra entre humo y murmullos. Es punto de encuentro de amantes del género, cazatalentos y figuras nocturnas.
+Físicamente, el club destaca por su fachada de un rojo intenso y brillante que resalta entre las sombras de la noche. Su marquesina está adornada con focos rojos que parpadean al ritmo de la música, iluminando una entrada con suelos de madera carmesí. El interior se caracteriza por una iluminación cenital suave, sillones de alta calidad y una limpieza inusual en sus instalaciones sanitarias, lo cual es motivo de su fama local.
 
-Tras el telón, el local mantiene una **red discreta** de actividades: apuestas, tráfico de información, compañía de lujo y **sobornos silenciosos**. Todo se sostiene por un **código tácito de silencio**: aquí los brindis suenan más fuerte si se calla lo que se ha visto.
+Psicológicamente, el establecimiento proyecta una dualidad marcada: en la superficie es un santuario para el jazz y el blues donde los artistas florecen, pero tras bambalinas alberga apuestas clandestinas, prostitución de lujo y el flujo constante de sobornos. El ambiente está cargado de una energía eléctrica y el aroma persistente a tabaco y whiskey importado.
 
-## Noche clave
-En busca de distracción y respuestas, **Cassian** escucha a la cantante **“Angelina Pollard”** —identidad bajo la que opera **Tamara Dobrescu**—. Su actuación y el contacto posterior con Cassian marcan el **primer cruce directo** entre ambos, detonando una cadena de engaños y descubrimientos que impactarán el curso de la investigación en el <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link>.
+## Infraestructura y Servicios
 
-## Estilo y atmósfera
-- Jazz clásico y sets de virtuosos locales.  
-- Baños inusualmente impecables para el distrito.  
-- Servicio que **recuerda caras pero olvida nombres**.
+Como centro neurálgico del ocio y la inteligencia, el Scarlet Horn ofrece:
+*   **Escenario de Clase Mundial:** Equipado con piano, saxofón, trompetas y batería para presentaciones de alto nivel.
+*   **Bar de Élite:** Cuenta con personal altamente capacitado, como el veterano Ricky, capaz de servir whiskey importado y gin con precisión coreográfica.
+*   **Seguridad de la Mafia:** El local goza de la protección directa de la familia Tornatore, lo que garantiza el control de la distribución de alcohol y cierta inmunidad frente a disturbios menores.
+*   **Nodo de Información:** Es un sitio imperativo para detectives e informantes, donde los datos sobre el crimen organizado se intercambian como moneda corriente.
 
-## Reglas no escritas
-- **Anonimato**: nombres de pila y notas en servilletas, nada más.  
-- **Sin violencia visible**: los arreglos se procesan fuera del salón.  
-- **Propinas**: sellan favores y conversaciones.
+## Historia
 
-> En el Scarlet Horn, quien sabe escuchar oye más que jazz.
+### Necromancia a Medianoche
+
+#### El Circuito de Inteligencia (1929)
+Durante la crisis de los <Link to="/CrSaSo/familias/Rapax%20Hominum">Rapax Hominum</Link>, el detective <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link> utilizó el Scarlet Horn como su primera parada en una rotación táctica para obtener pistas sobre el asesinato de la familia Chapman. En la barra del club, Thorne recolectó rumores sobre las alianzas entre familias ricas y mafias, confirmando que la violencia en <Link to="/CrSaSo/lugares/Crystal%20Square">Crystal Square</Link> estaba siendo interpretada inicialmente como una advertencia del bajo mundo.
+
+#### El Debut de Angelina Pollard
+El local fue el escenario de la presentación de "Angelina Pollard" (identidad falsa de <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>). Ante un público cautivado, interpretó la pieza *Nobody but Me*, utilizando su magnetismo y voz para capturar la atención del detective Thorne. Este evento marcó el inicio de la conexión entre el investigador y la estirpe de los Dobrescu.
+
+#### El Encuentro Thorne-Dobrescu
+Tras su actuación, Tamara abordó a Cassian en la barra del club. Bajo la premisa de estar siendo seguida por un hombre de la facción de La Cruz, Tamara utilizó la atmósfera del Scarlet Horn para negociar protección a cambio de información sobre el asesino de Crystal Square. Este encuentro fue el catalizador que sacó a Thorne del Scarlet Horn para internarse en los secretos más profundos de la ciudad.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link>:** Protectores del establecimiento; su dominio sobre el alcohol garantiza la operatividad del local a pesar de la Prohibición.
+*   **<Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>:** Cliente habitual y detective que considera el club su fuente más efectiva para sonsacar información.
+*   **Ricky:** Cantinero y pieza clave del local; posee un conocimiento profundo de los movimientos criminales en el distrito.
+*   **<Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>:** Utilizó el escenario del club para infiltrarse en la vida de Thorne bajo el alias de Angelina Pollard.
+
+## Curiosidades
+
+*   El alcohol que se sirve en el club es declarado por sus protectores como "100% legal", a pesar de las leyes de Prohibición vigentes.
+*   El club es considerado un lugar donde los visores de talentos vienen a descubrir a los futuros grandes del jazz.
+*   Cassian Thorne describe su movimiento dentro del club como el de una "pitón en un pantano", aprovechando que los clientes suelen estar demasiado absortos en la música para notar su presencia.
+*   A diferencia de la mayoría de las cantinas del centro, el Scarlet Horn destaca por la inusual higiene de sus baños.

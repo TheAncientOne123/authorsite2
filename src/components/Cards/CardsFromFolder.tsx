@@ -5,9 +5,11 @@ import {useAllDocsData, useDocsVersion} from '@docusaurus/plugin-content-docs/cl
 import Tippy from '@tippyjs/react';
 import {getCrSaSoLibroColor, normalizeCrSaSoBookFilterValue} from '@site/src/data/crSaSoBooks';
 import CardPreviewBubble from './CardPreviewBubble';
+import CardSearchToolbar, {type SortKey} from './CardSearchToolbar';
 import {
   type CardPreviewMeta,
   formatArticleDate,
+  getActivityTimestamp,
   getLibroKeyFromMeta,
   getLibroLabel,
   resolvePreviewImageSrc,
@@ -171,6 +173,7 @@ export default function CardsFromFolder({
 }: Props) {
   const [query, setQuery] = useState(initialQuery);
   const [filterSelections, setFilterSelections] = useState<Record<string, string>>({});
+  const [sortBy, setSortBy] = useState<SortKey>('title');
   const [previewPayload, setPreviewPayload] = useState<Record<string, unknown> | null>(null);
   const {withBaseUrl} = useBaseUrlUtils();
   const previewJsonUrl = useBaseUrl('/card-preview-meta.json');
@@ -296,7 +299,7 @@ export default function CardsFromFolder({
     return indexed.filter((row) => tokens.every((t) => row.norm.includes(t)));
   }, [indexed, tokens]);
 
-  const filtered = useMemo(() => {
+  const filteredByDimensions = useMemo(() => {
     if (!filterDimensions.length) return filteredBySearch;
     return filteredBySearch.filter((row) => {
       const f = previewByDocId?.[row.d.id]?.filters;
@@ -308,6 +311,23 @@ export default function CardsFromFolder({
       return true;
     });
   }, [filteredBySearch, filterDimensions, filterSelections, previewByDocId]);
+
+  const filtered = useMemo(() => {
+    if (sortBy === 'title') return filteredByDimensions;
+    const withTs = filteredByDimensions.map((row) => ({
+      row,
+      ts: getActivityTimestamp(previewByDocId?.[row.d.id]),
+    }));
+    withTs.sort((a, b) => {
+      if (sortBy === 'recent') return b.ts - a.ts;
+      // oldest: fechas ascendentes; sin fecha (ts === 0) al final
+      if (a.ts === 0 && b.ts === 0) return 0;
+      if (a.ts === 0) return 1;
+      if (b.ts === 0) return -1;
+      return a.ts - b.ts;
+    });
+    return withTs.map((x) => x.row);
+  }, [filteredByDimensions, sortBy, previewByDocId]);
 
   if (!plugin) {
     if (debug) console.warn(`[CardsFromFolder] pluginId "${pluginId}" no encontrado`);
@@ -321,68 +341,22 @@ export default function CardsFromFolder({
 
   return (
     <div className={styles.wrapper ?? undefined}>
-      {visibleFilterDimensions.length > 0 ? (
-        <div className={styles.filterBar ?? undefined}>
-          {visibleFilterDimensions.map((dim) => {
-            const opts = filterOptionSets.get(dim.key);
-            const options = opts ? [...opts].sort((a, b) => a.localeCompare(b, 'es')) : [];
-            if (options.length === 0) return null;
-            return (
-              <label key={dim.key} className={styles.filterField}>
-                <span className={styles.filterLabel}>{dim.label}</span>
-                <select
-                  className={styles.filterSelect}
-                  value={filterSelections[dim.key] ?? ''}
-                  onChange={(e) =>
-                    setFilterSelections((prev) => ({...prev, [dim.key]: e.target.value}))
-                  }
-                  aria-label={`Filtrar por ${dim.label}`}
-                >
-                  <option value="">Todos</option>
-                  {options.map((v) => (
-                    <option key={v} value={v}>
-                      {formatFilterOptionLabel(dim.key, v)}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            );
-          })}
-        </div>
-      ) : null}
-
-      <div className={styles.searchBar ?? undefined}>
-        <input
-          aria-label="Buscar tarjetas"
-          className={styles.searchInput ?? undefined}
-          type="text"
-          placeholder={searchPlaceholder}
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-        {query ? (
-          <button
-            type="button"
-            className={styles.clearButton ?? undefined}
-            onClick={() => setQuery('')}
-            aria-label="Limpiar búsqueda"
-          >
-            ×
-          </button>
-        ) : null}
-      </div>
-
-      <div className={styles.searchMeta ?? undefined}>
-        {tokens.length ? (
-          <span>
-            {filtered.length} resultado{filtered.length === 1 ? '' : 's'}
-          </span>
-        ) : (
-          <span>
-            {filtered.length} elemento{filtered.length === 1 ? '' : 's'}
-          </span>
-        )}
-      </div>
+      <CardSearchToolbar
+        query={query}
+        onQueryChange={setQuery}
+        placeholder={searchPlaceholder}
+        filterDimensions={visibleFilterDimensions}
+        filterOptionSets={filterOptionSets}
+        filterSelections={filterSelections}
+        onFilterChange={(key, value) =>
+          setFilterSelections((prev) => ({...prev, [key]: value}))
+        }
+        formatOptionLabel={formatFilterOptionLabel}
+        sortBy={sortBy}
+        onSortChange={setSortBy}
+        resultCount={filtered.length}
+        hasSearchTokens={tokens.length > 0}
+      />
 
       {filtered.length === 0 ? (
         <div className={styles.noResults ?? undefined}>

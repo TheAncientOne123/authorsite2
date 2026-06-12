@@ -10,31 +10,65 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Club Palace
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Club Palace"
+    caption="Cabaret y centro de inteligencia informal"
+    rows={[
+      { label: 'Nombre completo', value: 'Club Palace' },
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Residencia', value: <><Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link>, <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Tipo', value: 'Club nocturno / Centro de inteligencia informal' },
+      { label: 'Propietario', value: <><Link to="/CrSaSo/personajes/Veronica%20Black">Verónica Black</Link> (Madame)</> },
+      { label: 'Personal clave', value: 'Maisie Stewart (asistente), Alice' },
+      { label: 'Ocupación', value: 'Entretenimiento, servicios de disfraz y manipulación' },
+      { label: 'Afiliación', value: 'Independiente (pacto de respeto con el NYAPD)' },
+      { label: 'Primera aparición', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 33</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Club Palace"
-  caption="Zona neutral del distrito nocturno"
-  rows={[
-    { label: 'Tipo', value: 'Cabaret, salón de espectáculos y zona neutral' },
-    { label: 'Ubicación', value: <>Distrito nocturno, Centro Histórico de <Link to="/CrSaSo/lugares/Nueva%20Ámsterdam">Nueva Ámsterdam</Link></> },
-    { label: 'Propietaria', value: <Link to="/CrSaSo/personajes/Veronica%20Black">Veronica Black</Link> },
-    { label: 'Afiliaciones', value: <>Neutral; acuerdos no escritos con <Link to="/CrSaSo/lugares/La%20Comisaría%20de%20Nueva%20Ámsterdam">La Comisaría de Nueva Ámsterdam</Link></> },
-    { label: 'Apariciones clave', value: <><Link to="/CrSaSo/eventos/La%20Infiltración%20Católica">La Infiltración Católica</Link> (preparación de Lucía Sinclair)</> },
-    { label: 'Estado', value: 'Activo' },
-  ]}
-/>
+El **Club Palace** es el consorcio de entretenimiento más sofisticado del <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">centro histórico</Link> de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Más allá de su fachada como un club de lujo, funciona como un santuario para la información y una escuela práctica de camuflaje social. Es reconocido por las autoridades como un "veneno que la ciudad no ha podido erradicar", pero cuya existencia garantiza cierta estabilidad en su territorio gracias a los acuerdos privados de su regente.
 
+## Perfil y Personalidad
 
-El Club Palace es uno de los establecimientos más icónicos del distrito nocturno, célebre por su arquitectura art déco, su iluminación teatral y su código de conducta. Bajo la dirección de <Link to="/CrSaSo/personajes/Veronica%20Black">Veronica Black</Link>, el lugar se ha consolidado como mucho más que un cabaret: es una fortaleza social, una casa de transformaciones y un santuario para quienes saben guardar secretos.
+El establecimiento proyecta una imagen de elegancia provocadora y misterio. Su exterior destaca por un letrero de neón en cursiva acompañado por la figura de una mujer en pose seductora; un truco visual diseñado para que, durante la noche, parezca levantar la pierna de forma coqueta.
 
-Desde el exterior, el Palace proyecta una estética elegante y contenida: marquesina dorada, neón discreto y alfombra roja. En el interior, terciopelo rojo, columnas de mármol y luces cálidas que difuminan tensiones. El escenario principal se reserva para cantantes, bailarinas y músicos de primer nivel, mientras que las secciones privadas —protegidas por cortinas pesadas y protocolos de confidencialidad— sirven para negociaciones delicadas, favores o confesiones.
+El interior se caracteriza por un orden meticuloso y una iluminación amarillenta que baña muebles de diseño clásico y escaleras de mármol. Psicológicamente, el club opera bajo un código de lealtad y justicia hacia sus aliados, manteniendo un hermetismo absoluto sobre los negocios que se gestionan tras sus puertas de vaivén. La atmósfera es descrita como una mezcla de riesgo y placer, donde la manipulación y el engaño son elevados a la categoría de arte.
 
-Muchos entran buscando anonimato, asesoría o una nueva identidad. Con su séquito de estilistas, maquilladoras, costureras y escoltas, Veronica ofrece una experiencia de renacimiento. Aquí <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link> fue transformada para infiltrarse en una secta religiosa: entrenamiento en estética, defensa, ocultación de armas y manipulación psicológica, según las necesidades de la misión.
+## Habilidades y Equipo
 
-## Zonas y protocolos
+El Club Palace no es solo un local comercial, sino una base de operaciones tácticas equipada para la infiltración:
+*   **Maestría en el Disfraz:** El personal, liderado por Maisie Stewart, posee la capacidad de transformar radicalmente la apariencia de un individuo para misiones encubiertas, incluyendo peluquería, maquillaje profesional y sastrería a medida.
+*   **Armamento Especializado:** El club provee a sus aliados con equipo de defensa personal oculto, como el "lápiz labial-navaja" (una hoja afilada oculta en un envase cosmético) y pistolas Walther modificadas de calibre compacto.
+*   **Inteligencia y Redes:** Gracias a la gestión de Verónica Black, el club posee información sobre figuras clave de la ciudad, como el sacerdote <Link to="/CrSaSo/personajes/Marco%20Giannotti">Marco Giannotti</Link> y sus actividades en la catedral.
 
-- Sala principal y palcos: espectáculos y reuniones visibles.  
-- Salones privados: tratos y conversaciones discretas.  
-- Camerinos y taller: vestuario, caracterización y logística.  
+## Biografía / Historia
+
+### Necromancia a Medianoche
+
+#### El Pacto con la Comisaría
+Históricamente, el Club Palace ha mantenido un "acuerdo no dicho" con el jefe de detectives <Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>. Este pacto permite que el club opere sin interferencia policial constante a cambio de mantener el distrito tranquilo y servir como fuente de inteligencia ocasional.
+
+#### Operación Infiltración Católica
+Durante la crisis de los *Rapax Hominum* en 1929, el club sirvió como base preparatoria para la misión de infiltración en la <Link to="/CrSaSo/lugares/Catedral%20de%20Santa%20Regina">Catedral de Santa Regina</Link>. <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, <Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>, <Link to="/CrSaSo/personajes/Archie%20Woodward">Archie Woodward</Link> y <Link to="/CrSaSo/personajes/Logan%20Crane">Logan Crane</Link> acudieron al club buscando el apoyo de Verónica Black para identificar a Marco Giannotti.
+
+Bajo la supervisión de Verónica, el equipo del club llevó a cabo la transformación de la agente federal Lucía Sinclair. El proceso incluyó el corte de su cabello y la selección de un vestido azul claro diseñado para proyectar la imagen de una devota católica inocente. En este recinto, Sinclair recibió entrenamiento básico en el uso de armas ocultas antes de partir hacia la catedral.
+
+## Relaciones Clave
+
+*   **<Link to="/CrSaSo/personajes/Veronica%20Black">Verónica Black</Link>:** La Madame del club. Es la autoridad máxima y quien decide el nivel de colaboración con las fuerzas del orden.
+*   **<Link to="/CrSaSo/personajes/Dorian%20Blackwood">Dorian Blackwood</Link>:** Existe un respeto mutuo y una relación de larga data que ha permitido la supervivencia del club frente a las presiones políticas.
+*   **<Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>:** Thorne respeta el territorio del club y reconoce a Verónica como una persona justa dentro de sus propios términos legales.
+*   **<Link to="/CrSaSo/personajes/Lucia%20Sinclair">Lucía Sinclair</Link>:** Fue la "paciente" de la transformación más notable documentada en el club, pasando de una apariencia militar/federal a una civil devota.
+
+## Curiosidades
+
+*   A la luz del día, el truco visual del letrero de neón desaparece, revelando la simplicidad del dibujo original.
+*   El club cuenta con un sastre interno capaz de confeccionar uniformes eclesiásticos o de gala en tiempo récord.
+*   Maisie Stewart, la asistente principal, considera que un cabello corto es tácticamente superior para evitar ser sujetada durante un enfrentamiento.
+*   Verónica Black posee un sistema de armas con una jerarquía de uso: la primera bala es de advertencia y la quinta es "por si acaso".

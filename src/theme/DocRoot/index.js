@@ -14,6 +14,7 @@ const DEFAULT_SIDEBAR_BY_PLUGIN = {
   cronicas: 'CrSaSoSidebar',
   meridian: 'meridianSidebar',
   orbe: 'orbeSidebar',
+  tumulo: 'tumuloSidebar',
 };
 
 export default function DocRoot(props) {

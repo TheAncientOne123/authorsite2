@@ -10,39 +10,88 @@ libro: necromancia-medianoche
 
 import Infobox from '@site/src/components/Infobox';
 import Link from '@docusaurus/Link';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-# Velvet Trumpet
+<BrowserOnly fallback={<div />}>
+{()=>(
+  <Infobox
+    title="Velvet Trumpet"
+    caption="Bar-lounge y salón de música en vivo"
+    rows={[
+      { label: 'Estado actual', value: 'Activo' },
+      { label: 'Ubicación', value: <><Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link>, <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link></> },
+      { label: 'Tipo', value: 'Bar-lounge, club nocturno y salón de música en vivo' },
+      { label: 'Afiliación', value: <>Independiente; circuito de inteligencia informal del <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link></> },
+      { label: 'Población clave', value: 'Músicos, artistas, detectives, informantes, empresarios y figuras del bajo mundo' },
+      { label: 'Primera mención', value: <><Link to="/CrSaSo/libros/Necromancia%20a%20Medianoche">Necromancia a Medianoche</Link>, Capítulo 5</> },
+    ]}
+  />
+)}
+</BrowserOnly>
 
-<Infobox
-  title="Velvet Trumpet"
-  caption="Melancolía, piano y voces en ámbar"
-  rows={[
-    { label: 'Tipo', value: 'Bar-lounge y salón de música en vivo' },
-    { label: 'Ubicación', value: <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link> },
-    { label: 'Afiliaciones', value: 'Independiente; clientela diversa' },
-    { label: 'Estética', value: 'Luz tenue ámbar, fotografías de jazzistas, grabados surrealistas, poemas anónimos rotativos' },
-    { label: 'Escenario', value: 'Tarima semicircular, piano vertical siempre afinado' },
-    { label: 'Barra', value: 'Madera negra; barman discreto con memoria selectiva' },
-    { label: 'Programación', value: 'Tríos de jazz, boleros íntimos, noches de poesía y jams esporádicas' },
-    { label: 'Política de la casa', value: 'Anonimato cordial; cero violencia visible; lista negra a soplones' },
-    { label: 'Rol en la trama', value: <>Punto de vigilancia e intercambio de favores dentro del <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link></> },
-    { label: 'Estado', value: 'Activo' },
-  ]}
-/>
+El **Velvet Trumpet** es uno de los establecimientos nocturnos más reconocidos del <Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link> de <Link to="/CrSaSo/lugares/Nueva%20%C3%81msterdam">Nueva Ámsterdam</Link>. Conocido por su música en vivo, su ambiente melancólico y su clientela heterogénea, el local ocupa una posición singular dentro de la vida nocturna de la ciudad.
 
-**Tipo:** Bar-lounge y salón de música en vivo  
-**Ubicación:** <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link>  
-**Afiliaciones:** Independiente, clientela diversa
+Junto con el <Link to="/CrSaSo/lugares/Gilded%20Cat">Gilded Cat</Link> y el <Link to="/CrSaSo/lugares/Whispering%20Keys">Whispering Keys</Link>, forma parte de la red informal de establecimientos frecuentados por investigadores, periodistas, informantes y criminales. Para figuras como <Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>, estos locales constituyen una herramienta de trabajo tan importante como los archivos policiales o las entrevistas formales.
 
-El **Velvet Trumpet** es un bar de renombre por su **curaduría de música en vivo**, su **ambiente melancólico** y tragos de ejecución cuidada. Comparte el pulso nocturno del Centro Histórico: en sus mesas coinciden artistas y forajidos, ejecutivos y mecánicos, románticos empedernidos y solitarios en fuga.
+## Perfil y atmósfera
 
-El espacio gira en torno a una **tarima semicircular** y un **piano vertical** que rara vez pierde la afinación. La barra de **madera negra** la atiende un barman que sabe escuchar y **olvidar nombres**. Las paredes exhiben **fotografías de jazzistas**, **grabados surrealistas** y **poemas anónimos** que cambian cada mes, marcando el tono del lugar.
+El Velvet Trumpet se encuentra en una de las zonas más activas del Centro Histórico, donde las luces de neón, la lluvia constante y el bullicio nocturno crean un escenario ideal para encuentros discretos.
 
-## Programación y atmósfera
-- Noches de **tríos de jazz** y sets vocales íntimos.  
-- **Boleros** y **baladas** en horarios tardíos.  
-- **Jam sessions** esporádicas con músicos del distrito.  
-- Carta de **clásicos de coctelería** y reservas selectas.
+El establecimiento gira alrededor de una tarima semicircular destinada a espectáculos musicales y de un piano vertical que rara vez permanece en silencio. La barra principal, construida en madera oscura, está atendida por camareros acostumbrados a escuchar historias sin formular preguntas.
 
-## Conexiones del distrito
-Sin adscribirse a ninguna familia, el Velvet Trumpet se integra a la **red informal de locales** del <Link to="/CrSaSo/lugares/Centro%20Histórico">Centro Histórico</Link>. Funciona como **punto de vigilancia e intercambio de favores**, a medio camino entre la visibilidad pública y la discreción que exige la noche.
+Las paredes exhiben fotografías de jazzistas, grabados surrealistas y poemas anónimos que son reemplazados periódicamente. El resultado es una atmósfera elegante pero nostálgica, donde artistas, trabajadores nocturnos, detectives y delincuentes pueden compartir el mismo espacio sin llamar la atención.
+
+Para muchos habitantes de Nueva Ámsterdam, el Velvet Trumpet representa el equilibrio perfecto entre riesgo y refugio: un lugar donde cualquiera puede desaparecer entre la multitud durante unas horas.
+
+## Programación y servicios
+
+El establecimiento es especialmente conocido por su oferta musical:
+
+* Presentaciones de tríos de jazz.
+* Sets vocales íntimos.
+* Boleros y baladas durante la madrugada.
+* Jam sessions ocasionales con músicos locales.
+* Coctelería clásica y reservas selectas de licores.
+
+La música constituye el eje de la identidad del local y actúa como una cobertura natural para conversaciones privadas y reuniones discretas.
+
+## Función dentro del ecosistema urbano
+
+Más allá de su papel como club nocturno, el Velvet Trumpet desempeña funciones importantes dentro de la red social del Centro Histórico:
+
+* **Logística de inteligencia:** punto habitual para la circulación de rumores e información extraoficial.
+* **Cobertura social:** facilita reuniones discretas entre personas de distintos estratos sociales.
+* **Intercambio de favores:** numerosos acuerdos políticos, económicos y criminales comienzan o terminan en sus mesas.
+* **Observación encubierta:** permite a investigadores y agentes mezclarse fácilmente entre la clientela.
+
+Su neutralidad relativa le ha permitido mantener relaciones funcionales con múltiples facciones sin quedar asociado públicamente a ninguna de ellas.
+
+## Historia
+
+### Necromancia a Medianoche
+
+#### El Caso del Cuarto Rojo
+
+Durante la investigación relacionada con **El Cuarto Rojo**, el detective Cassian Thorne identificó al Velvet Trumpet como uno de los puntos esenciales de su red de recolección de información.
+
+Thorne sostenía que la mejor forma de evitar que los informantes se sintieran vigilados consistía en alternar constantemente entre distintos establecimientos del Centro Histórico. Por esta razón, el Velvet Trumpet era visitado regularmente junto con el Gilded Cat y el Whispering Keys.
+
+Tras varios intentos fallidos de obtener información en otros locales del distrito, el detective contempló utilizar nuevamente esta red para localizar pistas relacionadas con **Angelina Pollard**, identidad utilizada por <Link to="/CrSaSo/personajes/Tamara%20Dobrescu">Tamara Dobrescu</Link>, y profundizar en los misterios que rodeaban a la <Link to="/CrSaSo/familias/La%20Familia%20McCarthy">familia McCarthy</Link>.
+
+Durante los acontecimientos de la **Semana Negra**, el establecimiento permaneció abierto y relativamente neutral, convirtiéndose en uno de los pocos espacios donde aún era posible intercambiar información sin quedar atrapado directamente en el conflicto entre las familias criminales de la ciudad.
+
+## Relaciones clave
+
+* **<Link to="/CrSaSo/personajes/Cassian%20Thorne">Cassian Thorne</Link>:** utiliza el local como punto habitual de observación e intercambio de información.
+* **<Link to="/CrSaSo/lugares/Gilded%20Cat">Gilded Cat</Link>:** establecimiento asociado al mismo circuito informal de inteligencia.
+* **<Link to="/CrSaSo/lugares/Whispering%20Keys">Whispering Keys</Link>:** tercer punto de reunión frecuentado por informantes y observadores.
+* **<Link to="/CrSaSo/lugares/Centro%20Hist%C3%B3rico">Centro Histórico</Link>:** forma parte de la red nocturna que articula gran parte de la vida social y criminal del distrito.
+* **<Link to="/CrSaSo/familias/La%20Familia%20Tornatore">Familia Tornatore</Link>:** mantiene influencia indirecta sobre diversos establecimientos del sector, aunque no existe evidencia de control directo sobre el Velvet Trumpet.
+
+## Curiosidades
+
+* El nombre del local hace referencia a la tradición del jazz y del blues que caracteriza la vida nocturna de Nueva Ámsterdam.
+* Cassian Thorne consideraba su visita prácticamente obligatoria durante investigaciones complejas.
+* Muchos clientes habituales afirman que las mejores fuentes de información no se encuentran en la barra, sino entre los músicos que actúan regularmente en el escenario.
+* Las decoraciones poéticas de las paredes cambian cada mes y rara vez se conserva registro de sus autores.
+* A pesar de encontrarse en una de las zonas más conflictivas de la ciudad, el Velvet Trumpet ha sobrevivido a guerras mafiosas, redadas y crisis económicas sin perder su reputación como refugio neutral.
