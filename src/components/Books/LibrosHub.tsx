@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
-import {CR_SA_SO_SAGA_BOOKS} from '@site/src/data/crSaSoSagaBooks';
+import {useSagaBooks} from '@site/src/data/useBooks';
 import styles from './LibrosHub.module.css';
 
 export default function LibrosHub() {
-  const published = CR_SA_SO_SAGA_BOOKS.filter((b) => b.published);
-  const ordered = [...CR_SA_SO_SAGA_BOOKS].sort((a, b) => a.order - b.order);
+  const saga = useSagaBooks();
+  const published = saga.filter((b) => b.published && b.docRoute);
+  const ordered = [...saga].sort((a, b) => a.order - b.order);
 
   return (
     <div className={styles.root}>

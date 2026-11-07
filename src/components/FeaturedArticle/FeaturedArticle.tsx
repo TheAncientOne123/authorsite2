@@ -2,6 +2,7 @@ import React, {useLayoutEffect, useMemo, useRef} from 'react';
 import Link from '@docusaurus/Link';
 import {useAllDocsData, useDocsVersion} from '@docusaurus/plugin-content-docs/client';
 import {useExtraDocTocRegistrar} from './extraDocToc';
+import useCodiceData from '@site/src/data/useCodiceData';
 import {getPluginDocsDir, resolveFeaturedDoc} from './resolveFeaturedDoc';
 import styles from './FeaturedArticle.module.css';
 
@@ -62,9 +63,11 @@ export default function FeaturedArticle({
       ? (docVersion.docs as Record<string, VersionDocMeta>)
       : undefined;
 
+  // Carpeta del universo según el admin (null → carpeta heredada).
+  const docsDir = useCodiceData()?.universes.find((u) => u.pluginId === pluginId)?.docsDir;
   const Doc = useMemo(
-    () => resolveFeaturedDoc(pluginId, docId),
-    [pluginId, docId],
+    () => resolveFeaturedDoc(pluginId, docId, docsDir),
+    [pluginId, docId, docsDir],
   );
 
   useLayoutEffect(() => {
@@ -112,7 +115,7 @@ export default function FeaturedArticle({
         <p className={styles.error}>
           No se pudo cargar la vista previa de <code>{docId}</code>. Comprueba el{' '}
           <code>docId</code> (ruta relativa al MDX en{' '}
-          <code>{getPluginDocsDir(pluginId)}/</code>) y el <code>pluginId</code> (
+          <code>{getPluginDocsDir(pluginId, docsDir)}/</code>) y el <code>pluginId</code> (
           <code>{pluginId}</code>).
         </p>
       </section>

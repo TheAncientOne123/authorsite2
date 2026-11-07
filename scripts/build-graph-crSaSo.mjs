@@ -83,6 +83,12 @@ function extractInfoboxImage(raw) {
   return {};
 }
 
+// Con datos de Códice Admin, los grafos los genera scripts/sync-from-db.mjs desde la base de datos.
+if (fs.existsSync(path.join(root, 'src', 'generated', 'codice-data.json'))) {
+  console.log('[build-graph-crSaSo] datos del admin presentes: grafos generados por sync-from-db, se omite.');
+  process.exit(0);
+}
+
 const files = await fg('**/*.{mdx,md}', { cwd: crSaSoDir, absolute: true });
 const idToMeta = new Map();
 

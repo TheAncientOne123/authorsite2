@@ -3,63 +3,55 @@ import type {TocHeading} from './extraDocToc';
 
 type DocModule = {default: ComponentType; toc?: TocHeading[]};
 
-/** MDX por plugin de docs (rutas estáticas para require.context). */
-const PLUGIN_CONTEXTS: Record<string, __WebpackModuleApi.RequireContext> = {
-  cronicas: require.context('@site/docs/CrSaSo', true, /\.mdx$/),
-  tumulo: require.context('@site/docs/tumulo', true, /\.mdx$/),
-  meridian: require.context('@site/docs/meridian', true, /\.mdx$/),
-  orbe: require.context('@site/docs/orbe', true, /\.mdx$/),
-};
+/**
+ * Todos los MDX de docs/ (un único require.context: sirve para cualquier universo,
+ * también los creados desde Códice Admin).
+ */
+const ALL_DOCS: __WebpackModuleApi.RequireContext = require.context('@site/docs', true, /\.mdx$/);
 
-const PLUGIN_DIRS: Record<string, string> = {
-  cronicas: 'docs/CrSaSo',
-  tumulo: 'docs/tumulo',
-  meridian: 'docs/meridian',
-  orbe: 'docs/orbe',
+/** Carpeta de cada plugin cuando no hay datos del admin (docusaurus.config.js heredado). */
+const LEGACY_PLUGIN_DIRS: Record<string, string> = {
+  cronicas: 'CrSaSo',
+  tumulo: 'tumulo',
+  meridian: 'meridian',
+  orbe: 'orbe',
 };
 
 const moduleCache = new Map<string, DocModule>();
 
-function loadFeaturedModule(pluginId: string, docId: string): DocModule | null {
-  const ctx = PLUGIN_CONTEXTS[pluginId];
-  if (!ctx) {
-    return null;
-  }
+function dirFor(pluginId: string, docsDir?: string): string {
+  return docsDir ?? LEGACY_PLUGIN_DIRS[pluginId] ?? pluginId;
+}
 
-  const relativePath = `./${docId}.mdx`;
-  if (!ctx.keys().includes(relativePath)) {
+function loadFeaturedModule(pluginId: string, docId: string, docsDir?: string): DocModule | null {
+  const key = `./${dirFor(pluginId, docsDir)}/${docId}.mdx`;
+  if (!ALL_DOCS.keys().includes(key)) {
     if (typeof console !== 'undefined') {
-      console.warn(
-        `[FeaturedArticle] No existe ${relativePath} en plugin "${pluginId}". Disponibles: ${ctx.keys().join(', ')}`,
-      );
+      console.warn(`[FeaturedArticle] No existe ${key} (plugin "${pluginId}").`);
     }
     return null;
   }
-
-  const cacheKey = `${pluginId}:${relativePath}`;
-  let mod = moduleCache.get(cacheKey);
+  let mod = moduleCache.get(key);
   if (!mod) {
-    mod = ctx(relativePath) as DocModule;
-    moduleCache.set(cacheKey, mod);
+    mod = ALL_DOCS(key) as DocModule;
+    moduleCache.set(key, mod);
   }
   return mod;
 }
 
 /**
  * Resuelve el componente MDX a partir del docId del plugin (p. ej. `personajes/Logan Crane`).
+ * `docsDir`: carpeta del universo bajo docs/ (de los datos del admin); si falta, se usa la heredada.
  */
-export function resolveFeaturedDoc(
-  pluginId: string,
-  docId: string,
-): ComponentType | null {
-  return loadFeaturedModule(pluginId, docId)?.default ?? null;
+export function resolveFeaturedDoc(pluginId: string, docId: string, docsDir?: string): ComponentType | null {
+  return loadFeaturedModule(pluginId, docId, docsDir)?.default ?? null;
 }
 
 /** TOC compilado del MDX embebido (exportado por el loader de Docusaurus). */
-export function getFeaturedDocToc(pluginId: string, docId: string): TocHeading[] {
-  return loadFeaturedModule(pluginId, docId)?.toc ?? [];
+export function getFeaturedDocToc(pluginId: string, docId: string, docsDir?: string): TocHeading[] {
+  return loadFeaturedModule(pluginId, docId, docsDir)?.toc ?? [];
 }
 
-export function getPluginDocsDir(pluginId: string): string {
-  return PLUGIN_DIRS[pluginId] ?? `docs/${pluginId}`;
+export function getPluginDocsDir(pluginId: string, docsDir?: string): string {
+  return `docs/${dirFor(pluginId, docsDir)}`;
 }

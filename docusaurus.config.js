@@ -5,8 +5,17 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import {existsSync, readFileSync} from 'node:fs';
 import {resolve } from 'node:path';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+/**
+ * Datos de Códice Admin (escritos por `npm run sync`). Si no existen, el sitio se
+ * construye como antes, con los docs y sidebars del repositorio.
+ */
+const GENERATED = resolve('./src/generated/codice-data.json');
+const codice = existsSync(GENERATED) ? JSON.parse(readFileSync(GENERATED, 'utf8')) : null;
+const site = codice?.site ?? {};
 
 /**@type {[string, import('@docusaurus/plugin-content-docs').Options]} */
 const docsOrbe = [
@@ -56,11 +65,44 @@ const docsTumulo = [
   },
 ];
 
+/** Un plugin de docs por universo publicado desde el admin. */
+function docsPluginsFromAdmin() {
+  return codice.universes.map((u) => [
+    '@docusaurus/plugin-content-docs',
+    {
+      id: u.pluginId,
+      path: `docs/${u.docsDir}`,
+      routeBasePath: u.routeBase,
+      sidebarPath: resolve(`./src/generated/sidebars/${u.pluginId}.js`),
+      breadcrumbs: true,
+    },
+  ]);
+}
+
+const docsPlugins = codice ? docsPluginsFromAdmin() : [docsOrbe, docsCronicas, docsMeridian, docsTumulo];
+
+const announcementBar = codice
+  ? site.announcement?.enabled
+    ? {
+        id: site.announcement.id,
+        content: site.announcement.content,
+        backgroundColor: '#1f2937',
+        textColor: '#e5e7eb',
+        isCloseable: true,
+      }
+    : undefined
+  : {
+      id: 'spoiler_notice_v1',
+      content: 'Este códice contiene spoilers de las obras. Se recomienda leer los libros antes de consultar.',
+      backgroundColor: '#1f2937',
+      textColor: '#e5e7eb',
+      isCloseable: true,
+    };
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'El Códice',
-  tagline: 'Compendio de obras, personajes y universos de Héctor Sánchez.',
+  title: site.title || 'El Códice',
+  tagline: site.tagline || 'Compendio de obras, personajes y universos de Héctor Sánchez.',
   favicon: 'img/flavicon/favicon.ico',
 
 
@@ -111,7 +153,7 @@ const config = {
     ],
   ],
 
-  plugins: [docsOrbe, docsCronicas, docsMeridian, docsTumulo],
+  plugins: [...docsPlugins, './plugins/codice-data'],
 
   themeConfig:
 
@@ -129,7 +171,7 @@ const config = {
       },
       image: 'img/flavicon/logoDark.png',
       navbar: {
-        title: 'El Códice',
+        title: site.title || 'El Códice',
         logo: {
           alt: 'El Códice — logotipo',
           src: 'img/flavicon/logoDark.png',
@@ -143,13 +185,7 @@ const config = {
         ],
       },
 
-      announcementBar:{
-        id: 'spoiler_notice_v1',
-        content: 'Este códice contiene spoilers de las obras. Se recomienda leer los libros antes de consultar.',
-        backgroundColor: '#1f2937',
-        textColor: '#e5e7eb',
-        isCloseable: true,
-      },
+      announcementBar,
 
 
       footer: {

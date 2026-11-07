@@ -25,3 +25,6 @@ scripts/manuscript_stats/output/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Generado por `npm run sync` desde Códice Admin
+/src/generated/

@@ -4,6 +4,7 @@ import useBaseUrl, {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
 import {useAllDocsData, useDocsVersion} from '@docusaurus/plugin-content-docs/client';
 import Tippy from '@tippyjs/react';
 import {getCrSaSoLibroColor, normalizeCrSaSoBookFilterValue} from '@site/src/data/crSaSoBooks';
+import {useBookLookup} from '@site/src/data/useBooks';
 import CardPreviewBubble from './CardPreviewBubble';
 import CardSearchToolbar, {type SortKey} from './CardSearchToolbar';
 import {
@@ -191,6 +192,8 @@ export default function CardsFromFolder({
     };
   }, [previewJsonUrl]);
 
+  // Color y título de libro desde el admin (si hay datos), con respaldo en crSaSoBooks.
+  const bookLookup = useBookLookup();
   const previewByDocId = useMemo(() => {
     if (!previewPayload) return undefined;
     const m = previewPayload[pluginId];
@@ -371,8 +374,9 @@ export default function CardsFromFolder({
                 ? (d.frontMatter as {libro: string}).libro
                 : null;
             const libroKey = getLibroKeyFromMeta(preview, fmLibro);
-            const accent = libroKey ? getCrSaSoLibroColor(libroKey) : undefined;
-            const libroLabel = getLibroLabel(libroKey);
+            const adminBook = bookLookup(libroKey);
+            const accent = libroKey ? adminBook?.color ?? getCrSaSoLibroColor(libroKey) : undefined;
+            const libroLabel = adminBook?.label ?? getLibroLabel(libroKey);
             const dateLabel = formatArticleDate(preview?.updated ?? preview?.created);
             const showDetails = !!(preview?.excerpt?.trim());
             const thumbSrc = preview?.image

@@ -1,10 +1,12 @@
-﻿import React from 'react';
+import React from 'react';
 import clsx from 'clsx';
 import styles from './UniverseSelector.module.css';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import useCodiceData from '@site/src/data/useCodiceData';
 
-const universes = [
+/** Lista usada cuando el sitio se construye sin datos del admin. */
+const LEGACY_UNIVERSES = [
   {
     title: 'El Orbe de los Destinos',
     description: 'Un reino amurallado por la historia y la magia, donde los destinos se entrelazan.',
@@ -35,6 +37,17 @@ const universes = [
 ];
 
 export default function UniverseSelector() {
+  const codice = useCodiceData();
+  // Con datos del admin: orden, textos y visibilidad vienen de la página «Universos».
+  const universes = codice
+    ? codice.universes.map((u) => ({
+        title: u.label,
+        description: u.description ?? '',
+        image: u.cover ?? '',
+        path: `/${u.routeBase}`,
+        comingSoon: u.visibility === 'proximamente',
+      }))
+    : LEGACY_UNIVERSES;
   return (
     <section className={clsx('container', styles.universeSection)}>
       <div className="row">

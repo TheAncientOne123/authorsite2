@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useBaseUrl, {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
 import {useAllDocsData, useDocsVersion} from '@docusaurus/plugin-content-docs/client';
 import {getCrSaSoLibroColor} from '@site/src/data/crSaSoBooks';
+import {useBookLookup} from '@site/src/data/useBooks';
 import {
   type CardPreviewMeta,
   formatArticleDate,
@@ -44,6 +45,7 @@ function getTitle(d: DocLike, vd?: VersionDocMeta): string {
 }
 
 export default function RecentArticles({pluginId = 'cronicas', limit = 4}: Props) {
+  const bookLookup = useBookLookup();
   const [previewPayload, setPreviewPayload] = useState<Record<string, unknown> | null>(null);
   const {withBaseUrl} = useBaseUrlUtils();
   const previewJsonUrl = useBaseUrl('/card-preview-meta.json');
@@ -132,7 +134,7 @@ export default function RecentArticles({pluginId = 'cronicas', limit = 4}: Props
       <h2 id="recent-articles-heading">Artículos recientes</h2>
       <div className={styles.grid}>
         {recent.map((item) => {
-          const accent = item.libroKey ? getCrSaSoLibroColor(item.libroKey) : undefined;
+          const accent = item.libroKey ? bookLookup(item.libroKey)?.color ?? getCrSaSoLibroColor(item.libroKey) : undefined;
           const imgSrc = item.meta?.image
             ? resolvePreviewImageSrc(item.meta.image, withBaseUrl)
             : undefined;

@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import {useLocation} from '@docusaurus/router';
 import {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
 import DOC_UNIVERSES from '@site/src/data/docUniverses';
+import useCodiceData from '@site/src/data/useCodiceData';
 
 const UNIVERSE_SELECTOR = '/universes';
 
@@ -36,20 +37,44 @@ function isUnderDocsBase(pathname, base) {
   return pathname === base || pathname === `${base}/` || pathname.startsWith(`${base}/`);
 }
 
+/** Universos con su ruta, etiquetas de categoría y grafo (admin si hay datos; si no, los del repo). */
+function useUniverseList() {
+  const codice = useCodiceData();
+  if (codice) {
+    return codice.universes.map((u) => ({
+      path: `/${u.routeBase}`,
+      label: u.label,
+      categories: Object.fromEntries(u.categories.map((c) => [c.slug, c.label])),
+      graphSlug: u.graph?.routeSlug ?? null,
+      graphTitle: u.graph?.title ?? 'Grafo de relaciones',
+    }));
+  }
+  return DOC_UNIVERSES.map((u) => ({
+    path: u.path,
+    label: u.label,
+    categories: LABELS,
+    graphSlug: u.path === '/CrSaSo' ? 'sangre-y-sombra' : null,
+    graphTitle: 'Grafo de relaciones',
+  }));
+}
+
 export default function DocBreadcrumbs() {
   const {withBaseUrl} = useBaseUrlUtils();
   const location = useLocation();
+  const universes = useUniverseList();
 
   let docsBasePath = '';
   let universeLabel = '';
   let resolvedBase = '';
+  let universe = null;
 
-  for (const u of DOC_UNIVERSES) {
+  for (const u of universes) {
     const base = withBaseUrl(u.path);
     if (isUnderDocsBase(location.pathname, base)) {
       docsBasePath = u.path;
       universeLabel = u.label;
       resolvedBase = base;
+      universe = u;
       break;
     }
   }
@@ -74,24 +99,25 @@ export default function DocBreadcrumbs() {
   }
 
   const categorySlug = segments[0];
-  const categoryLabel = categorySlug ? LABELS[categorySlug] || prettify(categorySlug) : null;
+  const categoryLabel = categorySlug ? universe.categories[categorySlug] || LABELS[categorySlug] || prettify(categorySlug) : null;
   const categoryHref = categorySlug ? withBaseUrl(`${docsBasePath}/${categorySlug}`) : null;
 
-  const fromCrSaSoGraph =
-    docsBasePath === '/CrSaSo' &&
-    (location.state?.fromCrSaSoGraph === true ||
+  // El lector llegó desde el grafo de este universo (estado de navegación o sesión).
+  const fromGraph =
+    !!universe.graphSlug &&
+    (location.state?.fromGraph === universe.graphSlug ||
       (typeof window !== 'undefined' &&
-        window.sessionStorage?.getItem('crSaSoFromGraph') === '1'));
+        window.sessionStorage?.getItem('codiceFromGraph') === universe.graphSlug));
 
   const items = [
     {label: 'Inicio', href: withBaseUrl('/')},
     {label: 'Universos', href: withBaseUrl(UNIVERSE_SELECTOR)},
   ];
 
-  if (fromCrSaSoGraph) {
+  if (fromGraph) {
     items.push({
-      label: 'Grafo de relaciones',
-      href: withBaseUrl('/grafos/sangre-y-sombra'),
+      label: universe.graphTitle,
+      href: withBaseUrl(`/grafos/${universe.graphSlug}`),
     });
   }
 

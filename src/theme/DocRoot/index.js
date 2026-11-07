@@ -28,7 +28,9 @@ export default function DocRoot(props) {
   let {docElement, sidebarName, sidebarItems} = currentDocRouteMetadata;
 
   if (!sidebarName) {
-    const fallback = DEFAULT_SIDEBAR_BY_PLUGIN[version.pluginId];
+    // Sidebar heredado por nombre o, con datos del admin, el único sidebar del universo.
+    const named = DEFAULT_SIDEBAR_BY_PLUGIN[version.pluginId];
+    const fallback = named && version.docsSidebars[named] ? named : Object.keys(version.docsSidebars)[0];
     if (fallback && version.docsSidebars[fallback]) {
       sidebarName = fallback;
       sidebarItems = version.docsSidebars[fallback];

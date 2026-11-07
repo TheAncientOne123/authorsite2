@@ -10,6 +10,7 @@ export const CR_SA_SO_GRAPH_LEGEND = [
   {key: 'lugares', label: 'Lugares', color: '#c084fc'},
   {key: 'eventos', label: 'Eventos', color: '#fbbf24'},
   {key: 'familias', label: 'Familias / grupos', color: '#f472b6'},
+  {key: 'objetos-conceptos', label: 'Objetos / conceptos', color: '#34d399'},
 ] as const;
 
 /** Orden al agrupar conexiones bajo el grafo. */
@@ -18,6 +19,7 @@ export const CR_SA_SO_CATEGORY_SORT_ORDER = [
   'lugares',
   'eventos',
   'familias',
+  'objetos-conceptos',
   'libros',
   'otros',
   'raíz',

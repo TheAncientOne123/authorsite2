@@ -25,12 +25,18 @@ const EXCERPT_MAX = 400;
 const LEGACY_FILTER_KEYS = ['libro', 'genero', 'estado', 'raza', 'type', 'saga'];
 
 /** @type {{ id: string; contentDir: string }[]} */
-const PLUGINS = [
+const LEGACY_PLUGINS = [
   { id: 'orbe', contentDir: 'docs/orbe' },
   { id: 'cronicas', contentDir: 'docs/CrSaSo' },
   { id: 'meridian', contentDir: 'docs/meridian' },
   { id: 'tumulo', contentDir: 'docs/tumulo' },
 ];
+
+/** Con datos de Códice Admin (npm run sync), los universos salen de src/generated/codice-data.json. */
+const GENERATED = path.join(root, 'src', 'generated', 'codice-data.json');
+const PLUGINS = fs.existsSync(GENERATED)
+  ? JSON.parse(fs.readFileSync(GENERATED, 'utf8')).universes.map((u) => ({ id: u.pluginId, contentDir: `docs/${u.docsDir}` }))
+  : LEGACY_PLUGINS;
 
 function posix(p) {
   return p.split(path.sep).join('/');

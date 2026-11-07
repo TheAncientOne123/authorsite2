@@ -1,7 +1,8 @@
-﻿import React from 'react';
+import React from 'react';
 import Link from '@docusaurus/Link';
 import {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
 import {CR_SA_SO_PUBLISHED_BOOKS, type CrSaSoPublishedBook} from '@site/src/data/crSaSoPublishedBooks';
+import {useSagaBooks} from '@site/src/data/useBooks';
 import styles from './BookRoll.module.css';
 
 export type Book = {
@@ -29,7 +30,13 @@ type Props = {
   ariaLabel?: string;
 };
 
-function BookRoll({items = books, ariaLabel = 'Carrete de libros'}: Props) {
+function BookRoll({items, ariaLabel = 'Carrete de libros'}: Props) {
+  // Libros publicados del universo (admin) o la lista del repositorio.
+  const saga = useSagaBooks();
+  const fromSaga = saga
+    .filter((b) => b.published && b.docRoute && b.cover)
+    .map((b) => toBookItem(b as CrSaSoPublishedBook));
+  items = items ?? (fromSaga.length ? fromSaga : books);
   const {withBaseUrl} = useBaseUrlUtils();
 
   return (

@@ -23,6 +23,15 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+      # Contenido publicado desde Códice Admin. Solo si las variables del repo están definidas;
+      # si no, el sitio se construye con los docs del repositorio (como antes).
+      # La clave anónima es pública por diseño: RLS solo deja leer lo publicado.
+      - name: Sincronizar contenido desde Códice Admin
+        if: ${{ vars.SUPABASE_URL != '' }}
+        run: npm run sync
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
       - run: npm run build
         env:
           CHAT_API_URL: ${{ vars.CHAT_API_URL }}

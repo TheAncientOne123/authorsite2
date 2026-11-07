@@ -1,7 +1,8 @@
-﻿import clsx from 'clsx';
+import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import useCodiceData from '@site/src/data/useCodiceData';
 
 const FeatureList = [
   {
@@ -50,11 +51,14 @@ function Feature({image, title, description}) {
 }
 
 export default function HomepageFeatures() {
+  // Con datos del admin, las tarjetas vienen de la página «Portada».
+  const fromAdmin = useCodiceData()?.site.features;
+  const features = fromAdmin?.length ? fromAdmin : FeatureList;
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
+          {features.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>

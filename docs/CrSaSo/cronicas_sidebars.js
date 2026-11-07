@@ -10,6 +10,7 @@ const sidebars = {
     {type: 'doc', id: 'personajes-portada', label: 'Personajes'},
     {type: 'doc', id: 'objetos-conceptos-portada', label: 'Objetos y conceptos'},
     {type: 'doc', id: 'libros-portada', label: 'Libros'},
+    {type: 'link', label: 'Grafo de relaciones', href: '/grafos/sangre-y-sombra', className: 'sidebarGraphLink',}
   ],
 };
 

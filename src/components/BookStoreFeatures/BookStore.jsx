@@ -1,9 +1,11 @@
-﻿import React from 'react';
+import React from 'react';
 import clsx from 'clsx';
 import styles from './BookStore.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import useCodiceData from '@site/src/data/useCodiceData';
 
-const books = [
+/** Tienda cuando el sitio se construye sin datos del admin. */
+const LEGACY_BOOKS = [
   {
     title: 'El Orbe de los Destinos',
     cover: 'https://res.cloudinary.com/dtntllea5/image/upload/f_auto,q_auto/v1/authorsite/orbe/portadaLowQual',
@@ -18,11 +20,18 @@ const books = [
 ];
 
 export default function BookStoreGrid() {
+  const codice = useCodiceData();
+  // Con datos del admin: libros marcados «En la tienda» en la página «Libros».
+  const books = codice
+    ? codice.books.filter((b) => b.inStore && b.buyUrl).map((b) => ({title: b.label, cover: b.cover, link: b.buyUrl}))
+    : LEGACY_BOOKS;
+  const title = codice?.site.storeTitle || 'Adquiere mis libros';
+  if (!books.length) return null;
   return (
     <section className={clsx('container', styles.bookStore)}>
       <div className="row">
         <div className="col col--8 col--offset-2 text--center">
-          <h2>Adquiere mis libros</h2>
+          <h2>{title}</h2>
         </div>
         <div className="row" style={{ justifyContent: 'center', gap: '2rem', marginTop: '2rem' }}>
           {books.map((book, idx) => (
